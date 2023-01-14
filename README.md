@@ -1,0 +1,2 @@
+# waytoni.github.io
+WayToNi
