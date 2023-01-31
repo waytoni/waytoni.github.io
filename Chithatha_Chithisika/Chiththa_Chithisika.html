@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiththa and Chithisika</title>
+
+    <style type="text/css">
+        .frame {
+            height: 200px;
+            width: 200px;
+            overflow: hidden;
+        }
+        
+        .zoomin img {
+            height: 200px;
+            width: 200px;
+            -webkit-transition: all 2s ease;
+            -moz-transition: all 2s ease;
+            -ms-transition: all 2s ease;
+            transition: all 2s ease;
+        }
+        
+        .zoomin img:hover {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+    <script>
+        function zoomIn() {
+            var pic = document.getElementById("pic");
+            var width = pic.clientWidth;
+            pic.style.width = width + 100 + "px";
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Chiththa and Chithisika</h1>
+
+    <div class="zoomin frame">
+        <img src="../documents/All Bhuddha Dhamma A Side.jpg" title="Side A" />
+    </div>
+
+    <div class="zoomin frame">
+        <img src="../documents/Low Reso All Bhuddha Dhamma.jpg" title="Chart" />
+    </div>
+
+    <h2>Chart</h2>
+    <center>
+        <img id="pic" src="../documents/Low Reso All Bhuddha Dhamma.jpg" alt="" width="500px" />
+        <button onclick="zoomIn()">Zoom-In</button>
+        <button onclick="zoomOut()">Zoom-Out</button>
+    </center>
+</body>
+
+</html>
