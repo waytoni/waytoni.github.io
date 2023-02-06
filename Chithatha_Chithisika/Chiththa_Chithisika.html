@@ -7,53 +7,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chiththa and Chithisika</title>
 
-    <style type="text/css">
-        .frame {
-            height: 200px;
-            width: 200px;
-            overflow: hidden;
-        }
-        
-        .zoomin img {
-            height: 200px;
-            width: 200px;
-            -webkit-transition: all 2s ease;
-            -moz-transition: all 2s ease;
-            -ms-transition: all 2s ease;
-            transition: all 2s ease;
-        }
-        
-        .zoomin img:hover {
-            width: 300px;
-            height: 300px;
-        }
-    </style>
-    <script>
-        function zoomIn() {
-            var pic = document.getElementById("pic");
-            var width = pic.clientWidth;
-            pic.style.width = width + 100 + "px";
-        }
+    <link rel="stylesheet" href="cc_styles.css">
+
     </script>
 </head>
 
+<style>
+    img {
+        transform-origin: center;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+</style>
+
 <body>
-    <h1>Chiththa and Chithisika</h1>
+    <h1>චිත්ත සහ චෛතිසික </h1>
 
-    <div class="zoomin frame">
-        <img src="../documents/All Bhuddha Dhamma A Side.jpg" title="Side A" />
+    <div id="zoomControl">
+        <h3>Zoom Control</h3>
+        <input type="range" min="1" max="4" value="2" id="zoomRange">
+        <input type="text" value="2" size="1" id="zoomText">
     </div>
 
-    <div class="zoomin frame">
-        <img src="../documents/Low Reso All Bhuddha Dhamma.jpg" title="Chart" />
+    <div class="container">
+        <img id="chart" src="LowResoChart.jpg" width="500px" height="300px">
+        <img id="sideA1" src="SideA1.jpg" width="500px" height="300px">
+        <img id="sideA2" src="SideA2.jpg" width="300px" height="500px">
+
     </div>
 
-    <h2>Chart</h2>
-    <center>
-        <img id="pic" src="../documents/Low Reso All Bhuddha Dhamma.jpg" alt="" width="500px" />
-        <button onclick="zoomIn()">Zoom-In</button>
-        <button onclick="zoomOut()">Zoom-Out</button>
-    </center>
+
+    <script>
+        const container = document.getElementById("container");
+        const chart = document.getElementById("chart");
+        const sideA2 = document.getElementById("sideA2");
+
+        var zoomRange = document.getElementById("zoomRange");
+        var zoomText = document.getElementById("zoomText");
+
+        chart.addEventListener("mousemove", (e) => {
+            const x = e.clientX - e.target.offsetLeft;
+            const y = e.clientY - e.target.offsetTop;
+
+            const z = parseInt(zoomRange.value);
+            zoomText.value = zoomRange.value;
+
+            console.log(x, y, z);
+
+            chart.style.transformOrigin = `${x}px ${y}px`;
+            chart.style.transform = "scale(" + z + ") ";
+        });
+
+        sizeA2.addEventListener("mousemove", (e) => {
+            const x = e.clientX - e.target.offsetLeft;
+            const y = e.clientY - e.target.offsetTop;
+
+            const z = parseInt(zoomRange.value);
+            zoomText.value = zoomRange.value;
+
+            console.log(x, y, z);
+
+            sideA2.style.transformOrigin = `${x}px ${y}px`;
+            sideA2.style.transform = "scale(" + z + ") ";
+        });
+
+        chart.addEventListener("touchmove", (e) => {
+            const x = e.clientX - e.target.offsetLeft;
+            const y = e.clientY - e.target.offsetTop;
+
+            const z = parseInt(zoomRange.value);
+            zoomText.value = zoomRange.value;
+
+            console.log(x, y, z);
+
+            img.style.transformOrigin = `${x}px ${y}px`;
+            img.style.transform = "scale(" + z + ") ";
+        });
+    </script>
+
+
+
+
 </body>
 
 </html>
