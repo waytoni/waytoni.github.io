@@ -46,7 +46,8 @@ h4 {
 
 select,
 option,
-a {
+a,
+p {
     font-size: 1.333em;
 }
 
