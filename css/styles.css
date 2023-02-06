@@ -55,6 +55,7 @@ nav ul li a {
     text-decoration: none;
     background-color: rgb(241, 243, 245);
     font-family: sans-serif;
+    font-size: medium;
 }
 
 nav ul ul {
