@@ -1,3 +1,7 @@
+h1 {
+    font-size: x-large;
+}
+
 p {
     font-size: 14pt
 }
@@ -14,6 +18,10 @@ li {
     padding: 10;
 }
 
+ul li {
+    font-size: 14pt;
+}
+
 body {
     background-color: #fff;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -22,7 +30,7 @@ body {
 
 nav {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: medium;
+    font-size: large;
 }
 
 nav ul ul {
@@ -55,7 +63,7 @@ nav ul li a {
     text-decoration: none;
     background-color: rgb(241, 243, 245);
     font-family: sans-serif;
-    font-size: medium;
+    font-size: large;
 }
 
 nav ul ul {
@@ -72,4 +80,9 @@ nav ul ul li {
 
 nav ul ul li a:hover {
     background: rgb(92, 129, 165);
+}
+
+.address p {
+    font-size: 10pt;
+    padding: 0;
 }
