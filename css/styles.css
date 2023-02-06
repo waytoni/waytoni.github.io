@@ -48,12 +48,17 @@ nav ul:after {
 
 nav ul li {
     float: left;
+    color: rgb(26, 182, 122);
     position: relative;
     list-style-type: none;
+    font-family: sans-serif;
+    font-size: large;
 }
 
 nav ul li:hover a {
     color: rgb(17, 60, 204);
+    font-family: sans-serif;
+    font-size: 16pt;
 }
 
 nav ul li a {
@@ -61,9 +66,9 @@ nav ul li a {
     padding: 20px 30px;
     color: #080101;
     text-decoration: none;
-    background-color: rgb(241, 243, 245);
+    background-color: rgb(220, 226, 231);
     font-family: sans-serif;
-    font-size: large;
+    font-size: 14pt;
 }
 
 nav ul ul {
@@ -76,6 +81,9 @@ nav ul ul {
 nav ul ul li {
     float: none;
     position: relative;
+    color: rgb(26, 182, 122);
+    font-family: sans-serif;
+    font-size: large;
 }
 
 nav ul ul li a:hover {
