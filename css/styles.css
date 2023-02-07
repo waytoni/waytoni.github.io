@@ -94,3 +94,38 @@ nav ul ul li a:hover {
     font-size: 10pt;
     padding: 0;
 }
+
+.cols {
+    text-align: center;
+}
+
+.col1 {
+    float: left;
+    width: 34%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.col2 {
+    float: left;
+    width: 33%;
+    text-align: center;
+    margin-top: 10px;
+    color: #1f0b0b;
+}
+
+.col3 {
+    float: left;
+    width: 33%;
+    text-align: center;
+    margin-top: 90px;
+}
+
+@media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    .col1,
+    .col2,
+    .col3 {
+        width: 100%;
+    }
+}
