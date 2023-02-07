@@ -1,0 +1,104 @@
+import io
+import shutil
+
+with open('youtube_links.txt', 'r') as fp:
+    utubelink_lines = [line.strip().split() for line in fp.readlines()]
+
+idx = [row[0] for row in utubelink_lines]
+urls = [row[1] for row in utubelink_lines]
+dates = [row[2] for row in utubelink_lines]
+N = len(idx)
+
+option_n = []
+p4 = []
+option_text = []
+
+text_filename = 'utube_html_dropdown.txt'
+html_filename = 'kaluthara_Bodhiya_A_series.html'
+with open(text_filename, 'w', encoding="utf-8") as fp:
+    fp.write('<html>\n<head>\n')
+    fp.write('<meta name="viewport" content="width=device-width, initial-scale=1.0">\n')
+    fp.write('<link rel="stylesheet" href="A_series.css">\n')
+    fp.write('<a href="..">home</a>\n')
+    fp.write('</head>\n<body>\n')
+    fp.write('<h1>තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය - දේශනා</h1>\n')
+
+    fp.write('<p></p>\n')
+
+    fp.write('<a href="https://www.youtube.com/playlist?list=PLqESXbJ82aIip-TA7Efg5JjwmEDJ95kAx">Full playlist in YouTube</a>\n')
+    
+    fp.write('<p></p>\n<p>Select the video from the dropdown menu</p>    <p></p>\n')
+
+    fp.write('<select id="video_list">\n')
+    
+    print('xxxxx ',dates[0])
+    print('yyyyy', dates[100])
+    for n in range(1, N+1):
+        url_val = urls[n-1]
+        date_val = dates[n-1]
+        url_video_val = ''
+        idx_val = idx[n-1]
+
+        if len(idx_val) > 2:
+            idx_val = 'A' + idx_val
+        elif len(idx_val) > 1:
+            idx_val = 'A0' + idx_val
+        else:
+            idx_val = 'A00' + idx_val
+
+        if len(url_val) > 0:
+            url_val_split = url_val.split('=')
+            url_video_val = url_val_split[1]
+
+        p0_short = f"{date_val} තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය - දේශනා අංක {idx_val}"
+
+        option_text.append(p0_short)
+        print(option_text[n-1])
+        
+        print(' ' , idx[n-1] ,' ' , dates[n-1] ,' p0_short= ' , p0_short)
+        if len(url_video_val) > 1:
+            p1 = f'<iframe width="560" height="315" src="https://www.youtube.com/embed/{url_video_val}"'
+            p2 = ' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in- picture; web-share"'
+            p3 = ' allowfullscreen></iframe>'
+            p4_s = p1 + p2 + p3
+        else:
+            p4_s = ' '
+
+        p4.append(p4_s)
+        option_s = f'option{n}'
+        option_n.append(option_s)
+        print('n = ' , n,' len option_n =' , len(option_n), ' ' , option_s )
+        # print('n = ' , n,' len option_n=' , len(option_n), ' ' , option_s , ' ' , p4[n])
+        #print('\t <option value="' + option_n[n-1] + '">' + p0_short + '\n')
+
+        #with open('utube_html_dropdown.txt', 'a', encoding="utf-8") as fp:
+        if n == N:
+            fp.write('\t<option value="' + option_n[n-1] +'" selected>' + option_text[n-1] +  '</option>\n')
+        else:
+            fp.write('\t<option value="' + option_n[n-1] +'">' + option_text[n-1] +  '</option>\n')
+
+    fp.write('</select>\n')
+    fp.write('<div id="content"></div>\n')
+    fp.write('<script>\n')
+    fp.write('\tconst select = document.querySelector(\'#video_list\');\n')
+    fp.write('\tconst content = document.querySelector(\'#content\');\n')
+    fp.write('\t\t\tcontent.innerHTML = \'<p></p>' + p4[N-1] + '\';\n')
+    
+    fp.write('\tselect.addEventListener(\'change\', function() {\n')
+    fp.write('\t\tif (this.value === \'option1\') {\n')
+    fp.write('\t\t\tcontent.innerHTML = \'<p></p>' + p4[0] + '\';\n')
+            
+#with open('utube_html_dropdown.txt', 'a', encoding="utf-8") as fp:
+    for n in range(2, N+1):
+        # print(n,' ',option_n[n-1])
+        fp.write('\t\t} else if (this.value === \'' + option_n[n-1] + '\'){\n')
+        fp.write('\t\t\tcontent.innerHTML = \'<p></p>' + p4[n-1] + '\';\n')
+
+    fp.write('\t}\n')
+    fp.write('});\n')
+    fp.write('</script>\n')
+    fp.write('</body>\n')
+    fp.write('</html>\n')
+    fp.close()
+
+shutil.copy2(text_filename, html_filename, follow_symlinks=False)
