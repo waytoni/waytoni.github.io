@@ -1,7 +1,8 @@
 import io
 import shutil
 
-with open('youtube_links.txt', 'r') as fp:
+# with open('youtube_links.txt', 'r') as fp:
+with open('Kaluthara_Bodhiya_A_series/youtube_links.txt', 'r') as fp:
     utubelink_lines = [line.strip().split() for line in fp.readlines()]
 
 idx = [row[0] for row in utubelink_lines]
@@ -13,20 +14,36 @@ option_n = []
 p4 = []
 option_text = []
 
-text_filename = 'utube_html_dropdown.txt'
-html_filename = 'kaluthara_Bodhiya_A_series.html'
+#text_filename = 'utube_html_dropdown.txt'
+#html_filename = 'Kaluthara_Bodhiya_A_series_dev.html'
+text_filename = 'Kaluthara_Bodhiya_A_series/utube_html_dropdown.txt'
+html_filename = 'Kaluthara_Bodhiya_A_series/Kaluthara_Bodhiya_A_series_dev.html'
 
 with open(text_filename, 'w', encoding="utf-8") as fp:
     fp.write('<html>\n<head>\n')
     fp.write('<meta name="viewport" content="width=device-width, initial-scale=1.0">\n')
-    fp.write('<link rel="stylesheet" href="A_series.css">\n')
-    fp.write('<a href="..">home</a>\n')
+    fp.write('<link rel="stylesheet" type="text/css" href="A_series.css">\n')
+    fp.write('<link rel="stylesheet" type="text/css" href="../css/nav_menu.css">\n')
+    fp.write('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">\n')
+    fp.write('<script src="../scripts/menu_function.js"></script>')
+    
     fp.write('</head>\n<body>\n')
+    
+    fp.write('<div class="topnav" id="Topnavbar">\n')
+    fp.write('<a href="https://waytoni.github.io/" class="active">Home </a>\n') 
+    fp.write('<a href="../Kaluthara_Bodhiya_A_Series/Kaluthara_Bodhiya_A_series.html">Online Video </a>\n \
+        <a href="../Paramartha_Video/Paramartha_Video.html">Paramartha Video </a>\n \
+        <a href="../Zoom_Info/zoom_info.html">Join Zoom Live Class </a>\n \
+        <a href="../Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html">අනිච්ච, දුක්ඛ, අනත්ත </a>\n \
+        <a href="../Chithatha_Chithisika/Chiththa_Chithisika.html">චිත්ත සහ චෛතිසික  </a>\n')
+    fp.write('<a href="javascript:void(0);" class="icon" onclick="navFunction()"> <i class="fa fa-bars"></i></a>\n')
+    fp.write('</div>\n')
+    
     fp.write('<h1>තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය - දේශනා</h1>\n')
 
     fp.write('<p></p>\n')
 
-    fp.write('<a href="https://www.youtube.com/playlist?list=PLqESXbJ82aIip-TA7Efg5JjwmEDJ95kAx">Full playlist in YouTube</a>\n')
+    fp.write('<a href="https://www.youtube.com/playlist?list=PLqESXbJ82aIip-TA7Efg5JjwmEDJ95kAx">Watch full playlist in YouTube</a>\n')
     
     fp.write('<p></p>\n<p>Select the video from the dropdown menu</p>    <p></p>\n')
 
@@ -52,12 +69,12 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
         p0_short = f"{date_val} තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය - දේශනා අංක {idx_val}"
 
         option_text.append(p0_short)
-        print(option_text[n-1])
+        # print(option_text[n-1])
+        # print(' ' , idx[n-1] ,' ' , dates[n-1] ,' p0_short= ' , p0_short)
         
-        print(' ' , idx[n-1] ,' ' , dates[n-1] ,' p0_short= ' , p0_short)
         if len(url_video_val) > 1:
             p1 = f'<iframe width="560" height="315" src="https://www.youtube.com/embed/{url_video_val}"'
-            p2 = ' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in- picture; web-share"'
+            p2 = ' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"'
             p3 = ' allowfullscreen></iframe>'
             p4_s = p1 + p2 + p3
         else:
@@ -66,11 +83,11 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
         p4.append(p4_s)
         option_s = f'option{n}'
         option_n.append(option_s)
-        print('n = ' , n,' len option_n =' , len(option_n), ' ' , option_s )
+        # print('n = ' , n,' len option_n =' , len(option_n), ' ' , option_s )
         # print('n = ' , n,' len option_n=' , len(option_n), ' ' , option_s , ' ' , p4[n])
-        #print('\t <option value="' + option_n[n-1] + '">' + p0_short + '\n')
+        # print('\t <option value="' + option_n[n-1] + '">' + p0_short + '\n')
 
-        #with open('utube_html_dropdown.txt', 'a', encoding="utf-8") as fp:
+        # with open('utube_html_dropdown.txt', 'a', encoding="utf-8") as fp:
         if n == N:
             fp.write('\t<option value="' + option_n[n-1] +'" selected>' + option_text[n-1] +  '</option>\n')
         else:
@@ -87,7 +104,7 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
     fp.write('\t\tif (this.value === \'option1\') {\n')
     fp.write('\t\t\tcontent.innerHTML = \'<p></p>' + p4[0] + '\';\n')
             
-#with open('utube_html_dropdown.txt', 'a', encoding="utf-8") as fp:
+    #with open('utube_html_dropdown.txt', 'a', encoding="utf-8") as fp:
     for n in range(2, N+1):
         # print(n,' ',option_n[n-1])
         fp.write('\t\t} else if (this.value === \'' + option_n[n-1] + '\'){\n')
@@ -101,4 +118,4 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
     fp.close()
 
 shutil.copy2(text_filename, html_filename, follow_symlinks=False)
-# html still needs renaming, change k to K
+# html file still needs renaming, change Kaluthara_Bodhiya_A_series_dev.html to Kaluthara_Bodhiya_A_series.html
