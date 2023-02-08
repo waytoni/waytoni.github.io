@@ -1,7 +1,7 @@
 import io
 import shutil
 
-with open('youtube_links.txt', 'r') as fp:
+with open('./youtube_links.txt', 'r') as fp:
     utubelink_lines = [line.strip().split() for line in fp.readlines()]
 
 idx = [row[0] for row in utubelink_lines]
@@ -31,8 +31,6 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
 
     fp.write('<select id="video_list">\n')
     
-    print('xxxxx ',dates[0])
-    print('yyyyy', dates[100])
     for n in range(1, N+1):
         url_val = urls[n-1]
         date_val = dates[n-1]
@@ -53,9 +51,8 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
         p0_short = f"{date_val} තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය - දේශනා අංක {idx_val}"
 
         option_text.append(p0_short)
-        print(option_text[n-1])
         
-        print(' ' , idx[n-1] ,' ' , dates[n-1] ,' p0_short= ' , p0_short)
+        # print(' ' , idx[n-1] ,' ' , dates[n-1] ,' p0_short= ' , p0_short)
         if len(url_video_val) > 1:
             p1 = f'<iframe width="560" height="315" src="https://www.youtube.com/embed/{url_video_val}"'
             p2 = ' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in- picture; web-share"'
@@ -67,9 +64,9 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
         p4.append(p4_s)
         option_s = f'option{n}'
         option_n.append(option_s)
-        print('n = ' , n,' len option_n =' , len(option_n), ' ' , option_s )
+     
         # print('n = ' , n,' len option_n=' , len(option_n), ' ' , option_s , ' ' , p4[n])
-        #print('\t <option value="' + option_n[n-1] + '">' + p0_short + '\n')
+        # print('\t <option value="' + option_n[n-1] + '">' + p0_short + '\n')
 
         #with open('utube_html_dropdown.txt', 'a', encoding="utf-8") as fp:
         if n == N:
