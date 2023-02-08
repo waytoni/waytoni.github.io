@@ -1,9 +1,9 @@
 h1 {
-    font-size: x-large;
+    font-size: 24pt;
 }
 
-p {
-    font-size: 14pt
+h2 {
+    font-size: 16pt;
 }
 
 body,
@@ -16,21 +16,9 @@ ol,
 li {
     margin: 10;
     padding: 10;
-}
-
-ul li {
     font-size: 14pt;
-}
-
-img {
-    max-width: 100%;
-    display: block;
-}
-
-body {
-    background-color: #fff;
+    background-color: #ffffff;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    /*font-size:100%;*/
 }
 
 .address p {
@@ -54,7 +42,7 @@ body {
     width: 33%;
     text-align: center;
     margin-top: 10px;
-    color: #1f0b0b;
+    color: #00000b;
 }
 
 .col3 {
