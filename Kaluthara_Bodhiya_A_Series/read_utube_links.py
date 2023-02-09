@@ -21,6 +21,18 @@ html_filename = 'Kaluthara_Bodhiya_A_series/Kaluthara_Bodhiya_A_series_dev.html'
 
 with open(text_filename, 'w', encoding="utf-8") as fp:
     fp.write('<html>\n<head>\n')
+    
+    fp.write('<!-- Google tag (gtag.js) -->\n \
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R16Z1KQE8C"></script>\n \
+    <script>\n \
+        window.dataLayer = window.dataLayer || [];\n \
+        function gtag() {\n \
+            dataLayer.push(arguments);\n \
+        } \n \
+        gtag(''js'', new Date()); \n \
+        gtag(''config'', ''G-R16Z1KQE8C''); \
+    </script>\n \
+    <!-- End Google Tag Manager -->\n ')
     fp.write('<meta name="viewport" content="width=device-width, initial-scale=1.0">\n')
     fp.write('<link rel="stylesheet" type="text/css" href="A_series.css">\n')
     fp.write('<link rel="stylesheet" type="text/css" href="../css/nav_menu.css">\n')
