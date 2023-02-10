@@ -1,20 +1,22 @@
 <html>
 <head>
-<!-- Google tag (gtag.js) -->
-     <script async src="https://www.googletagmanager.com/gtag/js?id=G-R16Z1KQE8C"></script>
-     <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag() {
-             dataLayer.push(arguments);
-         } 
-         gtag(js, new Date()); 
-         gtag(config, G-R16Z1KQE8C);     </script>
+	<!-- Google tag (gtag.js) -->
+     	<script async src="https://www.googletagmanager.com/gtag/js?id=G-R16Z1KQE8C"></script>
+     	<script>
+         		window.dataLayer = window.dataLayer || [];
+         		function gtag() {
+             			dataLayer.push(arguments);
+         		} 
+         	gtag(js, new Date()); 
+         		gtag(config, G-R16Z1KQE8C);     	</script>
      <!-- End Google Tag Manager -->
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="A_series.css">
-<link rel="stylesheet" type="text/css" href="../css/nav_menu.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="../scripts/menu_function.js"></script></head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="A_series.css">
+	<link rel="stylesheet" type="text/css" href="../css/nav_menu.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="../scripts/menu_function.js"></script>
+	<title>තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය - දේශනා</title>
+</head>
 <body>
 <div class="topnav" id="Topnavbar">
 <a href="https://waytoni.github.io/" class="active">Home </a>
