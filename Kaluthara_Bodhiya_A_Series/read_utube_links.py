@@ -20,7 +20,7 @@ text_filename = 'Kaluthara_Bodhiya_A_series/utube_html_dropdown.txt'
 html_filename = 'Kaluthara_Bodhiya_A_series/Kaluthara_Bodhiya_A_series_dev.html'
 
 # Uncomment the following line only if everything is okay
-#html_filename = 'Kaluthara_Bodhiya_A_series/Kaluthara_Bodhiya_A_series.html'
+html_filename = 'Kaluthara_Bodhiya_A_series/Kaluthara_Bodhiya_A_series.html'
 
 with open(text_filename, 'w', encoding="utf-8") as fp:
     fp.write('<html>\n<head>\n')
