@@ -89,11 +89,10 @@ def prepare_html_block(block_id, in_file, playlist_title, outfile, playlist_url,
         fp.write('<br>\n')
         fp.close()
 
-
+    return None
 ##############################################################################
 
-#text_filename = 'utube_html_dropdown.txt'
-#html_filename = 'Kaluthara_Bodhiya_A_series_dev.html'
+
 text_filename = 'All_Playlists/utube_html_dropdown_1.txt'
 html_filename = 'All_Playlists/series_dev_1.html'
 
@@ -156,7 +155,7 @@ prepare_html_block(2, playlist_2, playlist_title_2, text_filename, playlist_url_
 ######## tail #########
 with open(text_filename, 'a', encoding="utf-8") as fp:
     fp.write('<br>\n')
-    fp.write('<a href="../documents/file_list.html">අභිධම්ම දේශනා සඳහා</a>\n')
+    fp.write('<a href="../documents/file_list.html">සියලු අභිධම්ම දේශනා සඳහා</a>\n')
     
     fp.write('</body>\n')
     fp.write('</html>\n')
