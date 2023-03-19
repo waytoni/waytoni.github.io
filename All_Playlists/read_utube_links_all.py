@@ -17,7 +17,7 @@ def prepare_html_block(block_id, in_file, playlist_title, outfile, playlist_url,
 
 
     with open(outfile, 'a', encoding="utf-8") as fp:
-        fp.write('<h2>' + playlist_title + '</h2>\n')
+        fp.write('<h2>' + str(block_id) + '. ' + playlist_title + '</h2>\n')
 
         fp.write('<p></p>\n')
 
@@ -125,17 +125,22 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
     fp.write('</div>\n')
     
     fp.write('<h1>අභිධම්ම දේශනා  - සියල්ල</h1>\n')
+    
+    fp.write('<br>\n')
+    fp.write('<h2><a href="../documents/file_list.html">සියලු අභිධම්ම දේශනා සඳහා සටහන්</a></h2>\n')
+    fp.write('<br>\n')
+    
     fp.close()
 
 
 #### set up playlist selection ######### 
-
+    
 playlist_url_0 = "https://www.youtube.com/playlist?list=PLqESXbJ82aIip-TA7Efg5JjwmEDJ95kAx"
 playlist_0 = 'Kaluthara_Bodhiya_A_Series/youtube_links.txt'
 playlist_title_0 = ' තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය '
 idx_prefix_0 = 'A'
 
-prepare_html_block(0, playlist_0, playlist_title_0, text_filename, playlist_url_0, idx_prefix_0)
+prepare_html_block(1, playlist_0, playlist_title_0, text_filename, playlist_url_0, idx_prefix_0)
 
 
 playlist_1 = 'All_Playlists/First_A_Series.txt'
@@ -143,20 +148,21 @@ playlist_title_1 = " Paramartha Lokaya Kalutara Bodhiya (පළමු දේශ�
 playlist_url_1 = "https://www.youtube.com/playlist?list=PLqESXbJ82aIgu16mtfCXK6ChqXQL0KLxh"
 idx_prefix_1 = ''
 
-prepare_html_block(1, playlist_1, playlist_title_1, text_filename, playlist_url_1, idx_prefix_1)
+prepare_html_block(2, playlist_1, playlist_title_1, text_filename, playlist_url_1, idx_prefix_1)
 
 
 playlist_2 = 'All_Playlists/Second_B_Series.txt'
 playlist_title_2 = " Abhidhamma lesson Kalutara Bodhiya (දෙවන දේශනා මාලාව) B"
 playlist_url_2 = "https://www.youtube.com/playlist?list=PLqESXbJ82aIg2hMrX6I1_b5QKxHx3fD0w"
 idx_prefix_2 = ''
-prepare_html_block(2, playlist_2, playlist_title_2, text_filename, playlist_url_2, idx_prefix_2)
+prepare_html_block(3, playlist_2, playlist_title_2, text_filename, playlist_url_2, idx_prefix_2)
 
 ######## tail #########
 with open(text_filename, 'a', encoding="utf-8") as fp:
     fp.write('<br>\n')
-    fp.write('<a href="../documents/file_list.html">සියලු අභිධම්ම දේශනා සඳහා</a>\n')
-    
+    fp.write('<a href="../documents/file_list.html">සියලු අභිධම්ම දේශනා සඳහා සටහන්</a>\n')
+    fp.write('<br>\n')
+    fp.write('<br>\nTo be added G, H series ...\n')
     fp.write('</body>\n')
     fp.write('</html>\n')
     fp.close()

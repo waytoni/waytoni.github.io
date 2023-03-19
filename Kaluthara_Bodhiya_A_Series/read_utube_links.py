@@ -123,7 +123,7 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
     fp.write('</script>\n')
     
     fp.write('<br>\n')
-    fp.write('<a href="../documents/file_list.html">අභිධම්ම දේශනා සඳහා</a>\n')
+    fp.write('<a href="../documents/file_list.html">අභිධම්ම දේශනා සඳහා සටහන්</a>\n')
     
     fp.write('</body>\n')
     fp.write('</html>\n')
