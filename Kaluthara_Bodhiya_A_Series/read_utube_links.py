@@ -25,17 +25,6 @@ html_filename = 'Kaluthara_Bodhiya_A_series/Kaluthara_Bodhiya_A_series.html'
 with open(text_filename, 'w', encoding="utf-8") as fp:
     fp.write('<html>\n<head>\n')
     
-    fp.write('\t<!-- Google tag (gtag.js) -->\n \
-    \t<script async src="https://www.googletagmanager.com/gtag/js?id=G-R16Z1KQE8C"></script>\n \
-    \t<script>\n \
-        \t\twindow.dataLayer = window.dataLayer || [];\n \
-        \t\tfunction gtag() {\n \
-            \t\t\tdataLayer.push(arguments);\n \
-        \t\t} \n \
-        \tgtag(''js'', new Date()); \n \
-        \t\tgtag(''config'', ''G-R16Z1KQE8C''); \
-    \t</script>\n \
-    <!-- End Google Tag Manager -->\n')
     fp.write('\t<meta name="viewport" content="width=device-width, initial-scale=1.0">\n')
     fp.write('\t<link rel="stylesheet" type="text/css" href="A_series.css">\n')
     fp.write('\t<link rel="stylesheet" type="text/css" href="../css/nav_menu.css">\n')
