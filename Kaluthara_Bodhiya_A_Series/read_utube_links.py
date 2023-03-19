@@ -38,8 +38,8 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
     fp.write('<a href="https://waytoni.github.io/" class="active">Home </a>\n') 
     fp.write('<a href="../Kaluthara_Bodhiya_A_Series/Kaluthara_Bodhiya_A_series.html">අභිධම්ම දේශනා </a>\n \
         <a href="../Paramartha_Video/Paramartha_Video.html">පරමාර්ථ ලෝකය දේශනා </a>\n \
-        <a href="../Zoom_Info/zoom_info.html">Join Zoom Live Class </a>\n \
         <a href="../Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html">අනිච්ච, දුක්ඛ, අනත්ත දේශනා </a>\n \
+        <a href="../Zoom_Info/zoom_info.html">Join Zoom Live Class </a>\n \
         <a href="../Chithatha_Chithisika/Chiththa_Chithisika.html">චිත්ත සහ චෛතිසික </a>\n')
     fp.write('<a href="javascript:void(0);" class="icon" onclick="navFunction()"> <i class="fa fa-bars"></i></a>\n')
     fp.write('</div>\n')
