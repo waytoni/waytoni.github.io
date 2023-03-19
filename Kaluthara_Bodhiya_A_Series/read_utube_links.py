@@ -36,7 +36,7 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
     
     fp.write('<div class="topnav" id="Topnavbar">\n')
     fp.write('<a href="https://waytoni.github.io/" class="active">Home </a>\n') 
-    fp.write('<a href="../Kaluthara_Bodhiya_A_Series/Kaluthara_Bodhiya_A_series.html">පටිගත කරන ලද දේශනා </a>\n \
+    fp.write('<a href="../Kaluthara_Bodhiya_A_Series/Kaluthara_Bodhiya_A_series.html">අභිධම්ම දේශනා </a>\n \
         <a href="../Paramartha_Video/Paramartha_Video.html">පරමාර්ථ ලෝකය දේශනා </a>\n \
         <a href="../Zoom_Info/zoom_info.html">Join Zoom Live Class </a>\n \
         <a href="../Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html">අනිච්ච, දුක්ඛ, අනත්ත දේශනා </a>\n \
@@ -50,7 +50,10 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
 
     fp.write('<a href="https://www.youtube.com/playlist?list=PLqESXbJ82aIip-TA7Efg5JjwmEDJ95kAx">Watch full playlist in YouTube</a>\n')
     
-    fp.write('<p></p>\n<p>Select the video from the dropdown menu</p>    <p></p>\n')
+    # fp.write('<p></p>\n<p>Select the video from the dropdown menu</p>    <p></p>\n')
+    
+    fp.write('<p></p>\n<p>පතන මෙනුවෙන් වීඩියෝවක් තෝරන්න</p>    <p></p>\n')
+    
 
     fp.write('<select id="video_list">\n')
     
@@ -118,6 +121,10 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
     fp.write('\t}\n')
     fp.write('});\n')
     fp.write('</script>\n')
+    
+    fp.write('<br>\n')
+    fp.write('<a href="../documents/file_list.html">අභිධම්ම දේශනා සඳහා</a>\n')
+    
     fp.write('</body>\n')
     fp.write('</html>\n')
     fp.close()
