@@ -1,6 +1,8 @@
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 from dateutil import parser
+import datetime
+import pytz
 
 # Replace the API_KEY and CHANNEL_ID with your own values
 API_KEY = 'AIzaSyCiuhuaoYjef7CIw--bBN_flufdCeT0etg'
@@ -34,19 +36,35 @@ try:
     idx = 1
     with open('All_Playlists/all_videos.txt', 'w', encoding="utf-8") as fp:
         with open('All_playlists/all_videos.html','w',encoding="utf-8") as fph:
-            for video in videos:
-                title = video['snippet']['title']
-                video_id = video['snippet']['resourceId']['videoId']
-                url = f'https://www.youtube.com/watch?v={video_id}'
-                published_date = parser.parse(video['snippet']['publishedAt'])
-                p_date = published_date.strftime("%Y-%b-%d")
-                print(f'{title} ({published_date.date()}) : {url}')
-                # print(video['snippet']['title'])
-                # print(p_date)
-                fp.write(f'{url} {p_date} {title} \n')
-                fph.write(f'<p>{idx} <a href="{url}"> {title}</a>   Posted on: {p_date}</p>\n')
-                idx = idx + 1
+            
+            with open('All_playlists/all_videos_header.txt','r',encoding="utf-8") as all_video_header:
+                fph.write(all_video_header.read())
+                all_video_header.close()
                 
+                
+                timezone = pytz.timezone('Australia/Sydney')
+                now = datetime.datetime.now(timezone)
+            
+                fph.write(f'Last updated on: {now.strftime("%Y-%b-%d %H:%M:%S  %Z")} \n')
+                fph.write('<br>   \n')
+                print(f'{now.strftime("%Y-%m-%d %H:%M:%S  %Z")}')
+
+                for video in videos:
+                    title = video['snippet']['title']
+                    video_id = video['snippet']['resourceId']['videoId']
+                    url = f'https://www.youtube.com/watch?v={video_id}'
+                    published_date = parser.parse(video['snippet']['publishedAt'])
+                    p_date = published_date.strftime("%Y-%b-%d")
+                    print(f'{idx}. {title} ({published_date.date()}) : {url}')
+                    # print(video['snippet']['title'])
+                    # print(p_date)
+                    fp.write(f'{url} {p_date} {title} \n')
+                    fph.write(f'<p>{idx}. <a href="{url}"> {title}</a>   Posted on: {p_date}</p>\n')
+                    idx = idx + 1
+            
+            with open('All_playlists/all_videos_footer.txt','r',encoding="utf-8") as all_video_footer:
+                fph.write(all_video_footer.read())
+                all_video_footer.close()               
         fph.close()
             
     fp.close()
