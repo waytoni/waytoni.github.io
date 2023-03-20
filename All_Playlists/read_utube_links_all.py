@@ -21,7 +21,8 @@ def prepare_html_block(block_id, in_file, playlist_title, outfile, playlist_url,
 
         fp.write('<p></p>\n')
 
-        fp.write('<a href="' + playlist_url +'">Watch full playlist in YouTube</a>\n')
+        if len(playlist_url) > 1:
+            fp.write(f'<a href="{playlist_url}">Watch full playlist in YouTube</a>\n')
         
         # fp.write('<p></p>\n<p>Select the video from the dropdown menu</p>    <p></p>\n')
         
@@ -137,23 +138,24 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
     
 playlist_url_0 = "https://www.youtube.com/playlist?list=PLqESXbJ82aIip-TA7Efg5JjwmEDJ95kAx"
 playlist_0 = 'Kaluthara_Bodhiya_A_Series/youtube_links.txt'
-playlist_title_0 = ' තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය '
+playlist_title_0 = "තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය"
 idx_prefix_0 = 'A'
 
 prepare_html_block(1, playlist_0, playlist_title_0, text_filename, playlist_url_0, idx_prefix_0)
 
 
 playlist_1 = 'All_Playlists/First_A_Series.txt'
-playlist_title_1 = " Paramartha Lokaya Kalutara Bodhiya (පළමු දේශනා මාලාව) A"
+playlist_title_1 = "Paramartha Lokaya Kalutara Bodhiya (පළමු දේශනා මාලාව) A"
 playlist_url_1 = "https://www.youtube.com/playlist?list=PLqESXbJ82aIgu16mtfCXK6ChqXQL0KLxh"
 idx_prefix_1 = ''
 
 prepare_html_block(2, playlist_1, playlist_title_1, text_filename, playlist_url_1, idx_prefix_1)
 
 
-playlist_2 = 'All_Playlists/Second_B_Series.txt'
-playlist_title_2 = " Abhidhamma lesson Kalutara Bodhiya (දෙවන දේශනා මාලාව) B"
-playlist_url_2 = "https://www.youtube.com/playlist?list=PLqESXbJ82aIg2hMrX6I1_b5QKxHx3fD0w"
+playlist_2 = 'All_Playlists/Second_B_Series_sorted.txt'
+playlist_title_2 = "Abhidhamma lesson Kalutara Bodhiya (දෙවන දේශනා මාලාව) B"
+# playlist_url_2 = "https://www.youtube.com/playlist?list=PLqESXbJ82aIg2hMrX6I1_b5QKxHx3fD0w"
+playlist_url_2 = ''
 idx_prefix_2 = ''
 prepare_html_block(3, playlist_2, playlist_title_2, text_filename, playlist_url_2, idx_prefix_2)
 
@@ -162,7 +164,14 @@ with open(text_filename, 'a', encoding="utf-8") as fp:
     fp.write('<br>\n')
     fp.write('<a href="../documents/file_list.html">සියලු අභිධම්ම දේශනා සඳහා සටහන්</a>\n')
     fp.write('<br>\n')
-    fp.write('<br>\nTo be added G, H series ...\n')
+    fp.write('<br>\n')
+    fp.write('<br>Note:\n')
+    fp.write('<br>A and B series dates are based on publisded date (to be corrected).\n')
+    fp.write('<br>Also, the lists are prepared using the published YouTube playlists.\n')
+    fp.write('<br>B series playlist needs to be corrected (it is a combination of many - not just B series)\n')
+    fp.write('<br>\nTo be added C, D, G, H series ...\n')
+    fp.write('<br>\n')
+    fp.write('<a href="all_videos.html"> All posted videos by Ajantha Sampath Guruthuma (Way to Nibbana Channel)</a>\n')
     fp.write('</body>\n')
     fp.write('</html>\n')
     fp.close()
