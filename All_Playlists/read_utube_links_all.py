@@ -183,7 +183,7 @@ with open(text_filename, 'a', encoding="utf-8") as fp:
     fp.write('<br>\nTo be added C, D, G series ...\n')
     fp.write('<br>\n')
     #fp.write('<a href="all_videos.html"> All posted videos by Ajantha Sampath Guruthuma (Way to Nibbana Channel)</a>\n')
-    fp.write('<li><a href="All_Playlists/all_videos.html">සියලුම දේශනා - @WayToNibbana YouTube Channel (Unsorted)</a></li>\n')
+    fp.write('<li><a href="all_videos.html">සියලුම දේශනා - @WayToNibbana YouTube Channel (Unsorted)</a></li>\n')
     
     fp.write('</body>\n')
     fp.write('</html>\n')
