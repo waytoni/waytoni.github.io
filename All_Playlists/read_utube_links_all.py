@@ -106,6 +106,11 @@ html_filename = 'All_Playlists/combined.html'
 with open(text_filename, 'w', encoding="utf-8") as fp:
     fp.write('<html>\n<head>\n')
     
+    with open('scripts/analytics_tag.txt', 'r', encoding="utf-8") as ftag:
+        tag_info = ftag.read()
+        fp.write(tag_info)
+        ftag.close()
+    
     fp.write('\t<meta name="viewport" content="width=device-width, initial-scale=1.0">\n')
     fp.write('\t<link rel="stylesheet" type="text/css" href="A_series.css">\n')
     fp.write('\t<link rel="stylesheet" type="text/css" href="../css/nav_menu.css">\n')
