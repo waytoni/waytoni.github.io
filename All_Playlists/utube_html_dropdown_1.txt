@@ -1282,6 +1282,6 @@
 <br>
 To be added C, D, G, H series ...
 <br>
-<a href="all_videos.html"> All posted videos by Ajantha Sampath Guruthuma (Way to Nibbana Channel)</a>
+<li><a href="All_Playlists/all_videos.html">සියලුම දේශනා - @WayToNibbana YouTube Channel (Unsorted)</a></li>
 </body>
 </html>
