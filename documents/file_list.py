@@ -15,7 +15,7 @@ with open(dir_path+'/file_list.txt', 'w') as f:
         if file.endswith(('jpg', 'jpeg', 'png')):
             # write the image file names to the file
             f.write("\t<div class=""grid-item"">\n")
-            f.write('\t<a href="' + file + '"><img src="' + file + '" alt="' + file + '"></a>')
+            f.write('\t<a href="' + file + '"><img src="image_icons/' + file + '" alt="' + file + '"></a>')
             f.write('\t<p>' + file + '</p>\n')
             f.write('\t</div>\n')
     
