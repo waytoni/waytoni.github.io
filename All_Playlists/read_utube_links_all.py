@@ -180,13 +180,7 @@ with open(text_filename, 'a', encoding="utf-8") as fp:
     fp.write('<a href="../documents/file_list.html">සියලු අභිධම්ම දේශනා සඳහා සටහන්</a>\n')
     fp.write('<br>\n')
     fp.write('<br>\n')
-#    fp.write('<br>Note:\n')
-#    fp.write('<br>A and B series dates are based on publisded date (to be corrected).\n')
-#    fp.write('<br>Also, the lists are prepared using the published YouTube playlists.\n')
-#    fp.write('<br>B series playlist needs to be corrected (it is a combination of many - not just B series)\n')
-#    fp.write('<br>\nTo be added C, D, G series ...\n')
-#    fp.write('<br>\n')
-    #fp.write('<a href="all_videos.html"> All posted videos by Ajantha Sampath Guruthuma (Way to Nibbana Channel)</a>\n')
+
     fp.write('<h3><a href="all_videos.html">සියලුම දේශනා - @WayToNibbana YouTube Channel (Unsorted)</a></h3>\n')
     
     fp.write('</body>\n')
