@@ -499,8 +499,9 @@
 </script>
 <br>
 <br>
-<h2>3. <a href="A_G_Batches.html">මුල් අභිධම්ම දේශනා කාණ්ඩ A, B, C, D, E, F (අසම්පූර්ණයි), සහ G</a>
-</h2><br>
+<h2>3. <a href="A_G_Batches.html">මුල් අභිධම්ම දේශනා කාණ්ඩ A, B, C, D, E, F, සහ G</a>
+</h2><h5>&emsp; F කාණ්ඩය අසම්පූර්ණයි</h5>
+<br>
 <a href="../documents/file_list.html">සියලු අභිධම්ම දේශනා සඳහා සටහන්</a>
 <br>
 <br>

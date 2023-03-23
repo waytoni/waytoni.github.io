@@ -175,7 +175,8 @@ idx_prefix_3 = ''
 ######## tail #########
 with open(text_filename, 'a', encoding="utf-8") as fp:
     fp.write('<br>\n')
-    fp.write('<h2>3. <a href="A_G_Batches.html">මුල් අභිධම්ම දේශනා කාණ්ඩ A, B, C, D, E, F (අසම්පූර්ණයි), සහ G</a>\n</h2>')
+    fp.write('<h2>3. <a href="A_G_Batches.html">මුල් අභිධම්ම දේශනා කාණ්ඩ A, B, C, D, E, F, සහ G</a>\n</h2>')
+    fp.write('<h5>&emsp; F කාණ්ඩය අසම්පූර්ණයි</h5>\n')
     fp.write('<br>\n')
     fp.write('<a href="../documents/file_list.html">සියලු අභිධම්ම දේශනා සඳහා සටහන්</a>\n')
     fp.write('<br>\n')
