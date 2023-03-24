@@ -1,41 +1,45 @@
 <html>
+
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=GT-MBNDJTD"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){
+
+        function gtag() {
             dataLayer.push(arguments);
         }
         gtag('js', new Date());
-	
-  	  gtag('config', 'GT-MBNDJTD');
+
+        gtag('config', 'GT-MBNDJTD');
     </script>
 
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="A_series.css">
-	<link rel="stylesheet" type="text/css" href="../css/nav_menu.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="../scripts/menu_function.js"></script>
-	<title>තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය - දේශනා</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="A_series.css">
+    <link rel="stylesheet" type="text/css" href="../css/nav_menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../scripts/menu_function.js"></script>
+    <title>තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය - දේශනා</title>
 </head>
+
 <body>
-<div class="topnav" id="Topnavbar">
-<a href="https://waytoni.github.io/" class="active">Home </a>
-<a href="../All_Playlists/combined.html">අභිධම්ම දේශනා </a>
-<a href="../Paramartha_Video/Paramartha_Video.html">පරමාර්ථ ලෝකය දේශනා </a>
-         <a href="../Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html">අනිච්ච, දුක්ඛ, අනත්ත දේශනා </a>
-         <a href="../Zoom_Info/zoom_info.html">Join Zoom Live Class </a>
-         <a href="../Chithatha_Chithisika/Chiththa_Chithisika.html">චිත්ත සහ චෛතිසික </a>
-<a href="javascript:void(0);" class="icon" onclick="navFunction()"> <i class="fa fa-bars"></i></a>
-</div>
-<h1>තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය - දේශනා</h1>
-<p></p>
-<a href="https://www.youtube.com/playlist?list=PLqESXbJ82aIip-TA7Efg5JjwmEDJ95kAx">Watch full playlist in YouTube</a>
-<p></p>
-<p>Select a video from the dropdown menu</p>    <p></p>
-<select id="video_list">
+    <div class="topnav" id="Topnavbar">
+        <a href="https://waytoni.github.io/" class="active">Home </a>
+        <a href="../All_Playlists/combined.html">අභිධම්ම දේශනා </a>
+        <a href="../Paramartha_Video/Paramartha_Video.html">පරමාර්ථ ලෝකය දේශනා </a>
+        <a href="../Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html">අනිච්ච, දුක්ඛ, අනත්ත දේශනා </a>
+        <a href="../Zoom_Info/zoom_info.html">Join Zoom Live Class </a>
+        <a href="../Chithatha_Chithisika/Chiththa_Chithisika.html">චිත්ත සහ චෛතිසික </a>
+        <a href="javascript:void(0);" class="icon" onclick="navFunction()"> <i class="fa fa-bars"></i></a>
+    </div>
+    <h1>තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය - දේශනා</h1>
+    <p></p>
+    <a href="https://www.youtube.com/playlist?list=PLqESXbJ82aIip-TA7Efg5JjwmEDJ95kAx">Watch full playlist in YouTube</a>
+    <p></p>
+    <p>Select a video from the dropdown menu</p>
+    <p></p>
+    <select id="video_list">
 	<option value="option1">21-Nov-2020 තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය - දේශනා අංක A000</option>
 	<option value="option2">28-Nov-2020 තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය - දේශනා අංක A001</option>
 	<option value="option3">05-Dec-2020 තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය - දේශනා අංක A002</option>
@@ -144,230 +148,238 @@
 	<option value="option106">11-Mar-2023 තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය - දේශනා අංක A105</option>
 	<option value="option107" selected>18-Mar-2023 තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය - දේශනා අංක A106</option>
 </select>
-<div id="content"></div>
-<script>
-	const select = document.querySelector('#video_list');
-	const content = document.querySelector('#content');
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/nOnX7eU3V9s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-	select.addEventListener('change', function() {
-		if (this.value === 'option1') {
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/8at_2QlF0-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option2'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/VfL-nr_jXoA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option3'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/JidGYHDSWmo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option4'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/cv2FnpNyFVw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option5'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/qnkMMSwSNdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option6'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/VEcdhsmnhxM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option7'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/CLVXXbyxn8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option8'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/jvvn5ECCkKU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option9'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/7su5-7gfT3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option10'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/QsK5McVUVuQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option11'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/XhsH2BzyLAA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option12'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/1ZOpDl_DKIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option13'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/qd7ZVV50FTk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option14'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/TF-qZYf61lI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option15'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/N8qgj0TLMGM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option16'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/1LSqdsgST1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option17'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/qkjW8m0-RPg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option18'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/YXk2r9abADU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option19'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/6SWgJ4jyNII" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option20'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/u1awKg1HuLE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option21'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/xh8dRapA4do" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option22'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/8L2FjN_CTI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option23'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/hzEe81Be1Lc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option24'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/899PMyrX1aI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option25'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/QDaQ3uU0prs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option26'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/o7iFYzxlJ1I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option27'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/TqEqEP7oujE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option28'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/i3TTGQVV-bk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option29'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/XCfFcaF05j0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option30'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/NSjBKCgDYR8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option31'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/s14Quo6Ls0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option32'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/YTP242QysAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option33'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/plARCL7FPgs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option34'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/ItQVbu4j7bY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option35'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/AWPVISYD390" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option36'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/dYiYdjSTG2k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option37'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/BJrYxIa4eZM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option38'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/BB7gZFfGiso" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option39'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/xeD9C-6eokw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option40'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/zA1Y5gWRnV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option41'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/1Au0MWz-T7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option42'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/W-lRza3QDHg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option43'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/4lu5eeBBN6s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option44'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/lI-xdOcvwd0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option45'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/u0VMnC9ATIQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option46'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/4nurJxk81mA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option47'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/3dE2-OMTQD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option48'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/re_kWMMjKeU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option49'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/dxw2HNRUQoc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option50'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/-ZGjvhsmgsE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option51'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/fbAR_ujqupk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option52'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/u7qnPqMvJUA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option53'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/QnwYibf8Z4A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option54'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/R3dlGuda7RQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option55'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/u3krviAQb2s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option56'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/YqETqRXOAiQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option57'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/pFNJNr7ZEyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option58'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/kBkAswNdtvk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option59'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/_iKwBB2vT2c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option60'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/ilZDphV0Ut0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option61'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/XVK7BW70V30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option62'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/UPYAbdqTyeM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option63'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/u6NxOFthSBk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option64'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/lLfUzknRWNo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option65'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/CjMD1H1zes8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option66'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/l7FeLKSEkT4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option67'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/UGpXc9P3n9s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option68'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/13-mY9YFfgY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option69'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/KHQJ2nmOSUs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option70'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/5gM3U1qivls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option71'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/NscwW7Upuuk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option72'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/CW0w67lDwnw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option73'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/WpsXaDN5B4I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option74'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/cGFZRLlPTws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option75'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/9DSHd00rjUA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option76'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/3MtwCv48FWs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option77'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/MpIMX_r0soE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option78'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/i_9ivqZz3OM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option79'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/5N8WupEA0FA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option80'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/pPRQSJXpQnM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option81'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/fzVznRsJuXs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option82'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/AWbd-ZhHiNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option83'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/nXbcafw-Bnc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option84'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/NHtFIjBd8n4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option85'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/jmdIyTIaBWo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option86'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/KeEOFvFzpCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option87'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/YNkKYKru5yM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option88'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/lhn6pKFmZAQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option89'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/WTxuH6WqQ8Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option90'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/QmPz561gRmI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option91'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/hWh9jSQruQ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option92'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/qUmGEjXJXNw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option93'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/eZKIXEMRxtU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option94'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/Qz5MrjmRkOo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option95'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/VNcPqfwNKtY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option96'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/ehu6PU0WcMA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option97'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/XmXYflyILEw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option98'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/9RV_RCCD1Ls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option99'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/Ifb859-Q2_8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option100'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/0pEOLXokawI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option101'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/2ccG0dz1Eu8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option102'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/kDq5-01IeSg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option103'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/T7E3AafOXOY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option104'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/FPlhQPOB06w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option105'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/5Mbi7vQ3GU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option106'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/3K1xHQ4T-qM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-		} else if (this.value === 'option107'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/nOnX7eU3V9s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
-	}
-});
-</script>
-<br>
-<a href="../documents/file_list.html">අභිධම්ම දේශනා සඳහා සටහන්</a>
+    <div id="content"></div>
+    <script>
+        const select = document.querySelector('#video_list');
+        const content = document.querySelector('#content');
+        content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/nOnX7eU3V9s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+        select.addEventListener('change', function() {
+            if (this.value === 'option1') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/8at_2QlF0-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option2') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/VfL-nr_jXoA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option3') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/JidGYHDSWmo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option4') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/cv2FnpNyFVw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option5') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/qnkMMSwSNdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option6') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/VEcdhsmnhxM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option7') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/CLVXXbyxn8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option8') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/jvvn5ECCkKU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option9') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/7su5-7gfT3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option10') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/QsK5McVUVuQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option11') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/XhsH2BzyLAA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option12') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/1ZOpDl_DKIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option13') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/qd7ZVV50FTk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option14') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/TF-qZYf61lI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option15') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/N8qgj0TLMGM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option16') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/1LSqdsgST1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option17') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/qkjW8m0-RPg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option18') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/YXk2r9abADU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option19') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/6SWgJ4jyNII" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option20') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/u1awKg1HuLE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option21') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/xh8dRapA4do" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option22') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/8L2FjN_CTI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option23') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/hzEe81Be1Lc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option24') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/899PMyrX1aI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option25') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/QDaQ3uU0prs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option26') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/o7iFYzxlJ1I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option27') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/TqEqEP7oujE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option28') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/i3TTGQVV-bk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option29') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/XCfFcaF05j0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option30') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/NSjBKCgDYR8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option31') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/s14Quo6Ls0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option32') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/YTP242QysAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option33') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/plARCL7FPgs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option34') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/ItQVbu4j7bY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option35') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/AWPVISYD390" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option36') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/dYiYdjSTG2k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option37') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/BJrYxIa4eZM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option38') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/BB7gZFfGiso" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option39') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/xeD9C-6eokw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option40') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/zA1Y5gWRnV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option41') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/1Au0MWz-T7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option42') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/W-lRza3QDHg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option43') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/4lu5eeBBN6s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option44') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/lI-xdOcvwd0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option45') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/u0VMnC9ATIQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option46') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/4nurJxk81mA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option47') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/3dE2-OMTQD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option48') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/re_kWMMjKeU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option49') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/dxw2HNRUQoc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option50') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/-ZGjvhsmgsE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option51') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/fbAR_ujqupk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option52') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/u7qnPqMvJUA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option53') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/QnwYibf8Z4A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option54') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/R3dlGuda7RQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option55') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/u3krviAQb2s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option56') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/YqETqRXOAiQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option57') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/pFNJNr7ZEyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option58') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/kBkAswNdtvk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option59') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/_iKwBB2vT2c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option60') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/ilZDphV0Ut0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option61') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/XVK7BW70V30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option62') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/UPYAbdqTyeM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option63') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/u6NxOFthSBk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option64') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/lLfUzknRWNo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option65') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/CjMD1H1zes8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option66') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/l7FeLKSEkT4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option67') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/UGpXc9P3n9s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option68') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/13-mY9YFfgY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option69') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/KHQJ2nmOSUs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option70') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/5gM3U1qivls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option71') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/NscwW7Upuuk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option72') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/CW0w67lDwnw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option73') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/WpsXaDN5B4I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option74') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/cGFZRLlPTws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option75') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/9DSHd00rjUA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option76') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/3MtwCv48FWs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option77') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/MpIMX_r0soE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option78') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/i_9ivqZz3OM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option79') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/5N8WupEA0FA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option80') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/pPRQSJXpQnM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option81') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/fzVznRsJuXs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option82') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/AWbd-ZhHiNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option83') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/nXbcafw-Bnc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option84') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/NHtFIjBd8n4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option85') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/jmdIyTIaBWo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option86') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/KeEOFvFzpCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option87') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/YNkKYKru5yM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option88') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/lhn6pKFmZAQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option89') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/WTxuH6WqQ8Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option90') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/QmPz561gRmI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option91') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/hWh9jSQruQ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option92') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/qUmGEjXJXNw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option93') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/eZKIXEMRxtU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option94') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/Qz5MrjmRkOo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option95') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/VNcPqfwNKtY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option96') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/ehu6PU0WcMA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option97') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/XmXYflyILEw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option98') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/9RV_RCCD1Ls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option99') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/Ifb859-Q2_8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option100') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/0pEOLXokawI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option101') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/2ccG0dz1Eu8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option102') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/kDq5-01IeSg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option103') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/T7E3AafOXOY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option104') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/FPlhQPOB06w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option105') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/5Mbi7vQ3GU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option106') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/3K1xHQ4T-qM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            } else if (this.value === 'option107') {
+                content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/nOnX7eU3V9s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+            }
+        });
+    </script>
+    <br>
+    <li><a href="../documents/file_list.html">අභිධම්ම දේශනා සඳහා සටහන්</a></li>
+
+
+    <br>
+
+
+
+
 </body>
+
 </html>

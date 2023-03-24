@@ -368,6 +368,6 @@
 });
 </script>
 <br>
-<a href="../documents/file_list.html">අභිධම්ම දේශනා සඳහා සටහන්</a>
+<li><a href="../documents/file_list.html">අභිධම්ම දේශනා සඳහා සටහන්</a></li>
 </body>
 </html>

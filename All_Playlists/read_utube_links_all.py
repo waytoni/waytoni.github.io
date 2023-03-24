@@ -134,7 +134,7 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
     fp.write('<h1>අභිධම්ම දේශනා  - සියල්ල</h1>\n')
     
     fp.write('<br>\n')
-    fp.write('<h2><a href="../documents/file_list.html">සියලු අභිධම්ම දේශනා සඳහා සටහන්</a></h2>\n')
+    fp.write('<h2><li><a href="../documents/file_list.html">සියලු අභිධම්ම දේශනා සඳහා සටහන්</a></li></h2>\n')
     fp.write('<br>\n')
     
     fp.close()
@@ -179,7 +179,7 @@ with open(text_filename, 'a', encoding="utf-8") as fp:
     fp.write('<h2>3. <a href="A_G_Batches.html">මුල් අභිධම්ම දේශනා කාණ්ඩ A, B, C, D, E, F, සහ G</a>\n</h2>')
     fp.write('<h5>&emsp; F කාණ්ඩය අසම්පූර්ණයි</h5>\n')
     fp.write('<br>\n')
-    fp.write('<a href="../documents/file_list.html">සියලු අභිධම්ම දේශනා සඳහා සටහන්</a>\n')
+    fp.write('<li><a href="../documents/file_list.html">සියලු අභිධම්ම දේශනා සඳහා සටහන්</a></li>\n')
     fp.write('<br>\n')
     fp.write('<br>\n')
 

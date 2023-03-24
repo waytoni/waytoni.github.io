@@ -31,7 +31,7 @@
 </div>
 <h1>අභිධම්ම දේශනා  - සියල්ල</h1>
 <br>
-<h2><a href="../documents/file_list.html">සියලු අභිධම්ම දේශනා සඳහා සටහන්</a></h2>
+<h2><li><a href="../documents/file_list.html">සියලු අභිධම්ම දේශනා සඳහා සටහන්</a></li></h2>
 <br>
 <h2>1. තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය</h2>
 <p></p>
@@ -502,7 +502,7 @@
 <h2>3. <a href="A_G_Batches.html">මුල් අභිධම්ම දේශනා කාණ්ඩ A, B, C, D, E, F, සහ G</a>
 </h2><h5>&emsp; F කාණ්ඩය අසම්පූර්ණයි</h5>
 <br>
-<a href="../documents/file_list.html">සියලු අභිධම්ම දේශනා සඳහා සටහන්</a>
+<li><a href="../documents/file_list.html">සියලු අභිධම්ම දේශනා සඳහා සටහන්</a></li>
 <br>
 <br>
 <h3><a href="all_videos.html">සියලුම දේශනා - @WayToNibbana YouTube Channel (Unsorted)</a></h3>
