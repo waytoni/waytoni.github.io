@@ -24,9 +24,9 @@ def prepare_html_block(block_id, in_file, playlist_title, outfile, playlist_url,
         if len(playlist_url) > 1:
             fp.write(f'<a href="{playlist_url}">Watch full playlist in YouTube</a>\n')
         
-        # fp.write('<p></p>\n<p>Select the video from the dropdown menu</p>    <p></p>\n')
+        fp.write('<p></p>\n<p>Select a video from the dropdown menu</p>    <p></p>\n')
         
-        fp.write('<p></p>\n<p>පතන මෙනුවෙන් වීඩියෝවක් තෝරන්න</p>    <p></p>\n')
+        # fp.write('<p></p>\n<p>පතන මෙනුවෙන් වීඩියෝවක් තෝරන්න</p>    <p></p>\n')
         
 
         fp.write('<select id="video_list' + str(block_id) + '">\n')

@@ -56,9 +56,9 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
 
     fp.write('<a href="https://www.youtube.com/playlist?list=PLqESXbJ82aIip-TA7Efg5JjwmEDJ95kAx">Watch full playlist in YouTube</a>\n')
     
-    # fp.write('<p></p>\n<p>Select the video from the dropdown menu</p>    <p></p>\n')
+    fp.write('<p></p>\n<p>Select a video from the dropdown menu</p>    <p></p>\n')
     
-    fp.write('<p></p>\n<p>පතන මෙනුවෙන් වීඩියෝවක් තෝරන්න</p>    <p></p>\n')
+    # fp.write('<p></p>\n<p>පතන මෙනුවෙන් වීඩියෝවක් තෝරන්න</p>    <p></p>\n')
     
 
     fp.write('<select id="video_list">\n')
