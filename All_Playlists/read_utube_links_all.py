@@ -116,6 +116,7 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
     fp.write('\t<link rel="stylesheet" type="text/css" href="../css/nav_menu.css">\n')
     fp.write('\t<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">\n')
     fp.write('\t<script src="../scripts/menu_function.js"></script>\n')
+    fp.write('\t<link rel="icon" type="image/png" href="../images/favicon-16x16.png" sizes="16x16" />\n')
     fp.write('\t<title>අභිධම්ම දේශනා  - සියල්ල</title>\n')
     
     fp.write('</head>\n<body>\n')
