@@ -35,4 +35,5 @@
 35	https://www.youtube.com/watch?v=1TcYYx2mVfc	2023-Mar-05
 36	https://www.youtube.com/watch?v=xAADtAqDoQ0	2023-Mar-12
 37	https://www.youtube.com/watch?v=j1VQLL7lJ7Y	2023-Mar-19
-38  https://www.youtube.com/watch?v=Bl18libn-c0 2023-Apr-02
+38  	https://www.youtube.com/watch?v=Bl18libn-c0 	2023-Apr-02
+39 	https://www.youtube.com/watch?v=MHThtwr_jK8	2023-Apr-09
