@@ -148,13 +148,14 @@
 	<option value="option106">11-Mar-2023 තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය A105</option>
 	<option value="option107">18-Mar-2023 තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය A106</option>
 	<option value="option108">25-Mar-2023 තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය A107</option>
-	<option value="option109" selected>01-Apr-2023 තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය A108</option>
+	<option value="option109">01-Apr-2023 තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය A108</option>
+	<option value="option110" selected>15-Apr-2023 තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය A109</option>
 </select>
 <div id="content1"></div>
 <script>
 	const select1 = document.querySelector('#video_list1');
 	const content1 = document.querySelector('#content1');
-			content1.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/8E0M_vKzJMs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			content1.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/66ur8yprAkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	select1.addEventListener('change', function() {
 		if (this.value === 'option1') {
 			content1.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/8at_2QlF0-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
@@ -374,6 +375,8 @@
 			content1.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/zGrJtqroWJM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		} else if (this.value === 'option109'){
 			content1.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/8E0M_vKzJMs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+		} else if (this.value === 'option110'){
+			content1.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/66ur8yprAkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	}
 });
 </script>
