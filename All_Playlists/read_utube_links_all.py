@@ -99,7 +99,7 @@ html_filename = 'All_Playlists/series_dev_1.html'
 
 # Uncomment the following line only if everything is okay
 html_filename = 'All_Playlists/combined.html'
-
+html_filename = 'All_Playlists/සියුලු_දේශනා.html'
 
 ############ top #########
 
@@ -124,7 +124,7 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
     fp.write('<div class="topnav" id="Topnavbar">\n')
     fp.write('<a href="https://waytoni.github.io/" class="active">Home </a>\n') 
     #fp.write('<a href="../Kaluthara_Bodhiya_A_Series/Kaluthara_Bodhiya_A_series.html">අභිධම්ම දේශනා </a>\n')
-    fp.write('<a href="../All_Playlists/combined.html">අභිධම්ම දේශනා </a>\n')
+    fp.write('<a href="../All_Playlists/සියුලු_දේශනා.html">අභිධම්ම දේශනා </a>\n')
     fp.write('<a href="../Paramartha_Video/Paramartha_Video.html">පරමාර්ථ ලෝකය දේශනා </a>\n \
         <a href="../Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html">අනිච්ච, දුක්ඛ, අනත්ත දේශනා </a>\n \
         <a href="../Zoom_Info/zoom_info.html">Join Zoom Live Class </a>\n \
