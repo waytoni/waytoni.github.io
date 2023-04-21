@@ -93,6 +93,17 @@
           setTransform();
         }
   
+        zoom.ontouchmove = function (e) {
+            e.preventDefault();
+            if (!panning) {
+                return;
+            }
+            pointX = (e.clientX - start.x);
+            pointY = (e.clientY - start.y);
+            setTransform();
+        }
+
+
         zoom.onwheel = function (e) {
           e.preventDefault();
           var xs = (e.clientX - pointX) / scale,
