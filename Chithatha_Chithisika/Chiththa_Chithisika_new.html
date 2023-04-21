@@ -92,7 +92,17 @@
           pointY = (e.clientY - start.y);
           setTransform();
         }
+
+        zoom.ontouchstart = function (e) {
+            e.preventDefault();
+            start = { x: e.clientX - pointX, y: e.clientY - pointY };
+            panning = true;
+        }
   
+        zoom.ontouchend = function (e) {
+            panning = false;
+        }
+
         zoom.ontouchmove = function (e) {
             e.preventDefault();
             if (!panning) {
