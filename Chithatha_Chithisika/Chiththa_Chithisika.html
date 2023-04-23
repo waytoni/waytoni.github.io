@@ -15,25 +15,50 @@
         gtag('config', 'GT-MBNDJTD');
     </script>
 
+    <style>
+        .container {
+            border: 2px solid #ccc;
+            padding: 10px;
+          }
+          body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin: 0%;
+            width: 100%;
+            background-color: azure;
+        }
+        
+        h1 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 5vw;
+            text-align: center;
+            margin: 5% 5% 5% 5%;
+            letter-spacing: 5px;
+            color: rgb(71, 59, 59);
+        }
+        
+        h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2vw;
+            text-align: center;
+            margin: 10% 5% 7% 5%;
+            letter-spacing: 5px;
+            color: rgb(71, 59, 59);
+        }
+        
+    </style>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chiththa and Chithisika</title>
+    <!--
     <link rel="stylesheet" href="cc_styles.css">
+    -->
     <link rel="stylesheet" type="text/css" href="../css/nav_menu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../scripts/menu_function.js"></script>
     <link rel="icon" type="image/png" href="../images/favicon-16x16.png" sizes="16x16" />
 </head>
-
-<style>
-    img {
-        transform-origin: center;
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
-    }
-</style>
 
 <body>
     <div class="topnav" id="Topnavbar">
@@ -48,61 +73,17 @@
         </a>
     </div>
 
-    <h1>චිත්ත සහ චෛතිසික </h1>
-
-    <div id="zoomControl">
-        <h3>Zoom Factor</h3>
-        <input type="range" min="1" max="4" value="2" id="zoomRange">
-        <input type="text" value="2" size="1" id="zoomText">
-    </div>
-
+        <h1>චිත්ත සහ චෛතිසික</h1>
+    <p></p>
     <div class="container">
-        <img id="chart" src="LowResoChart.jpg" width="500px" height="300px">
-        <img id="sideA1" src="SideA1.jpg" width="500px" height="300px">
-        <img id="sideA2" src="SideA2.jpg" width="300px" height="500px">
-
+        <a href="Chiththa_Chithisika_Chart.html">
+        <img src="LowResoChart.jpg" alt="Chiththa Chithisika Chart" width="100%"></a>
+        <p>For devices with mouse/touch pads, click on the chart for a zoomable image. </p>
+        <p></p>
+        <img src="SideA1.jpg" alt="image" style="width: 100%;"/>
+        <p></p>
+        <img id="sideA2" src="SideA2.jpg" width="100%">
     </div>
-
-
-    <script>
-        const container = document.getElementById("container");
-        const chart = document.getElementById("chart");
-        const sideA2 = document.getElementById("sideA2");
-
-        var zoomRange = document.getElementById("zoomRange");
-        var zoomText = document.getElementById("zoomText");
-
-        chart.addEventListener("mousemove", (e) => {
-            const x = e.clientX - e.target.offsetLeft;
-            const y = e.clientY - e.target.offsetTop;
-
-            const z = parseInt(zoomRange.value);
-            zoomText.value = zoomRange.value;
-
-            console.log(x, y, z);
-
-            chart.style.transformOrigin = `${x}px ${y}px`;
-            chart.style.transform = "scale(" + z + ") ";
-        });
-
-
-        chart.addEventListener("touchmove", (e) => {
-            const x = e.clientX - e.target.offsetLeft;
-            const y = e.clientY - e.target.offsetTop;
-
-            const z = parseInt(zoomRange.value);
-            zoomText.value = zoomRange.value;
-
-            console.log(x, y, z);
-
-            chart.style.transformOrigin = `${x}px ${y}px`;
-            chart.style.transform = "scale(" + z + ") ";
-        });
-    </script>
-
-
-
-
 </body>
 
 </html>
