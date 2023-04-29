@@ -67,7 +67,17 @@
             letter-spacing: 5px;
             color: rgb(71, 59, 59);
         }
-        
+        .image-container {
+            display: flex;
+            justify-content: center;
+            width: 96%;
+            margin: 0 auto;
+          }
+          
+        img {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
 
     <meta charset="UTF-8">
@@ -110,24 +120,30 @@
     <div class="ratio" style="--bs-aspect-ratio: 66%;">
         <div id="myViewport">
             <div id="myContent">
-                <img src="LowResoChart.jpg" alt="image"/>
+                <img class="zoom" src="LowResoChart.jpg" alt="LowResoChart.jpg"/>
             </div>
         </div>
         
     </div>
 -->
+<div class="image-container">
+    <img class="zoom" src="LowResoChart.jpg" alt="LowResoChart.jpg">
+</div>
 
     <div class="container">
         <!--
         <a href="Chiththa_Chithisika_Chart.html">
         <img src="LowResoChart.jpg" alt="Chiththa Chithisika Chart" width="100%"></a>
         <p>For devices with mouse/touch pads, click on the chart for a zoomable image. </p>
-        -->
-        <img class='zoom' src="LowResoChart.jpg" alt="LowResoChart.jpg" width="100%" height="auto"/>
+         <img class='zoom' src="LowResoChart.jpg" alt="LowResoChart.jpg" width="100%" height="auto"/>
+        
+          <img class='zoom' src="LowResoChart.jpg" alt="LowResoChart.jpg" width="100%"/>
+    -->
+       
         <p></p>
         <img src="SideA1.jpg" alt="SideA-1" style="width: 100%;"/>
         <p></p>
-        <img id="sideA2" src="SideA2.jpg" alt="SideA-2" width="100%">
+        <img id="sideA2" src="SideA2.jpg" alt="SideA-2" width="100%"/>
     </div>
 
     <!--
