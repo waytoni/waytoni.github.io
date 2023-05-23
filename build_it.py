@@ -11,10 +11,10 @@
 # Both files have the following format
 # <index> <youtube link (URL)> <date>
 
-from Kaluthara_Bodhiya_A_Series import read_utube_links
+from Kaluthara_Bodhiya_A_Series import Read_Sat2pm_youtube_links
 from All_Playlists import waytoni_all_videos
 from All_Playlists import read_utube_links_all
 
-read_utube_links
+Read_Sat2pm_youtube_links
 waytoni_all_videos
 read_utube_links_all

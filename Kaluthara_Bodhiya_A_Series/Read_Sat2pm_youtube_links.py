@@ -1,8 +1,8 @@
 import io
 import shutil
 
-# with open('youtube_links.txt', 'r') as fp:
-with open('Kaluthara_Bodhiya_A_series/youtube_links.txt', 'r') as fp:
+# with open('Saturday2pm_youtube_links.txt', 'r') as fp:
+with open('Kaluthara_Bodhiya_A_series/Saturday2pm_youtube_links.txt', 'r') as fp:
     utubelink_lines = [line.strip().split() for line in fp.readlines()]
 
 idx = [row[0] for row in utubelink_lines]
