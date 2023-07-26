@@ -580,6 +580,25 @@
 });
 </script>
 <br>
+<h2>3. සුතමයඤාණං කාණ්ඩය</h2>
+<p></p>
+<p></p>
+<p>Select a video from the dropdown menu</p>    <p></p>
+<select id="video_list3">
+	<option value="option1" selected>2023-Jul-23 සුතමයඤාණං කාණ්ඩය 001</option>
+</select>
+<div id="content3"></div>
+<script>
+	const select3 = document.querySelector('#video_list3');
+	const content3 = document.querySelector('#content3');
+			content3.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/OJIbLEWBdco" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+	select3.addEventListener('change', function() {
+		if (this.value === 'option1') {
+			content3.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/OJIbLEWBdco" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+	}
+});
+</script>
+<br>
 <br>
 <h2>3. <a href="A_G_Batches.html">මුල් අභිධම්ම දේශනා කාණ්ඩ A, B, C, D, E, F, සහ G</a>
 </h2><h5>&emsp; F කාණ්ඩය අසම්පූර්ණයි</h5>

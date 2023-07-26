@@ -171,6 +171,12 @@ idx_prefix_3 = ''
 #idx_prefix_4 = ''
 #prepare_html_block(4, playlist_4, playlist_title_4, text_filename, playlist_url_4, idx_prefix_4)
 
+playlist_5 = 'All_Playlists/සුතමයඤාණං.txt'
+playlist_title_5 = "සුතමයඤාණං කාණ්ඩය"
+playlist_url_5 = ''
+idx_prefix_5 = ''
+prepare_html_block(3, playlist_5, playlist_title_5, text_filename, playlist_url_5, idx_prefix_5)
+
 ######## tail #########
 with open(text_filename, 'a', encoding="utf-8") as fp:
     fp.write('<br>\n')
