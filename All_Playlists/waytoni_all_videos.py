@@ -4,9 +4,9 @@ from dateutil import parser
 import datetime
 import pytz
 
-# Replace the API_KEY and CHANNEL_ID with your own values
+# API_KEY and CHANNEL_ID for waytoni.com
 API_KEY = 'AIzaSyCiuhuaoYjef7CIw--bBN_flufdCeT0etg'
-CHANNEL_ID = 'UC9o0X9rR7V-3PQUHxNosIAQ'
+# CHANNEL_ID = 'UC9o0X9rR7V-3PQUHxNosIAQ'
 CHANNEL_ID = 'UC63kf7W9KLLCj0jK6HF5PdA'
 
 try:
