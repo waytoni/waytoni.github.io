@@ -171,16 +171,22 @@ idx_prefix_3 = ''
 #idx_prefix_4 = ''
 #prepare_html_block(4, playlist_4, playlist_title_4, text_filename, playlist_url_4, idx_prefix_4)
 
-playlist_5 = 'All_Playlists/සුතමයඤාණං.txt'
+playlist_5 = 'Suthamaya/suthamaya.txt'
 playlist_title_5 = "සුතමයඤාණං කාණ්ඩය"
 playlist_url_5 = ''
 idx_prefix_5 = ''
 prepare_html_block(3, playlist_5, playlist_title_5, text_filename, playlist_url_5, idx_prefix_5)
 
+playlist_6 = 'Nivan_Maga_Udesa/nivan_maga_udesa_youtube_links.txt'
+playlist_title_6 = "නිවන් මග උදෙසා දර්ශන ඥාණය ( A කණ්ඩායම )"
+playlist_url_6 = ''
+idx_prefix_6 = ''
+prepare_html_block(4, playlist_6, playlist_title_6, text_filename, playlist_url_6, idx_prefix_6)
+
 ######## tail #########
 with open(text_filename, 'a', encoding="utf-8") as fp:
     fp.write('<br>\n')
-    fp.write('<h2>3. <a href="A_G_Batches.html">මුල් අභිධම්ම දේශනා කාණ්ඩ A, B, C, D, E, F, සහ G</a>\n</h2>')
+    fp.write('<h2>5. <a href="A_G_Batches.html">මුල් අභිධම්ම දේශනා කාණ්ඩ A, B, C, D, E, F, සහ G</a>\n</h2>')
     fp.write('<h5>&emsp; F කාණ්ඩය අසම්පූර්ණයි</h5>\n')
     fp.write('<br>\n')
     fp.write('<li><a href="../documents/file_list.html">සියලු අභිධම්ම දේශනා සඳහා සටහන්</a></li>\n')
