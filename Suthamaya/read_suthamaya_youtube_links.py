@@ -67,13 +67,8 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
         date_val = dates[n-1]
         url_video_val = ''
         idx_val = idx[n-1]
-
-        if len(idx_val) > 2:
-            idx_val = 'A' + idx_val
-        elif len(idx_val) > 1:
-            idx_val = 'A0' + idx_val
-        else:
-            idx_val = 'A00' + idx_val
+        
+        idx_val = str(idx[n-1]).zfill(3)
 
         if len(url_val) > 0:
             url_val_split = url_val.split('=')
