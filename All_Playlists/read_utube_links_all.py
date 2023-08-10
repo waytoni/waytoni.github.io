@@ -193,7 +193,7 @@ with open(text_filename, 'a', encoding="utf-8") as fp:
     fp.write('<br>\n')
     fp.write('<br>\n')
 
-    fp.write('<h3><a href="all_videos.html">සියලුම දේශනා - @WayToNibbana YouTube Channel (Unsorted)</a></h3>\n')
+    fp.write('<h3><a href="all_videos.html">සියලුම දේශනා - @WayToNibbana YouTube Channel</a></h3>\n')
     
     fp.write('</body>\n')
     fp.write('</html>\n')
