@@ -3,7 +3,7 @@ import shutil
 
 def prepare_html_block(block_id, in_file, playlist_title, outfile, playlist_url, idx_prefix):
     
-    with open(in_file, 'r') as fp:
+    with open(in_file, 'r', encoding='utf-8') as fp:
         utubelink_lines = [line.strip().split() for line in fp.readlines()]
 
     idx = [row[0] for row in utubelink_lines]
