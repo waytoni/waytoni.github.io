@@ -36,16 +36,19 @@
 <p></p>
 <p>Select a video from the dropdown menu</p>    <p></p>
 <select id="video_list">
-	<option value="option1" selected>2023-Aug-05 නිවන් මග උදෙසා දර්ශන ඥාණය - දේශනා අංක A001</option>
+	<option value="option1">2023-Aug-04 නිවන් මග උදෙසා දර්ශන ඥාණය - දේශනා අංක A001</option>
+	<option value="option2" selected>2023-Aug-11 නිවන් මග උදෙසා දර්ශන ඥාණය - දේශනා අංක A002</option>
 </select>
 <div id="content"></div>
 <script>
 	const select = document.querySelector('#video_list');
 	const content = document.querySelector('#content');
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/v7zmwZ8P8BU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/dL5HgzzqlgY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	select.addEventListener('change', function() {
 		if (this.value === 'option1') {
 			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/v7zmwZ8P8BU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+		} else if (this.value === 'option2'){
+			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/dL5HgzzqlgY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	}
 });
 </script>
