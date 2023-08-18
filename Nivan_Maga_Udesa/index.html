@@ -33,6 +33,8 @@
 </div>
 <h1>නිවන් මග උදෙසා දර්ශන ඥාණය - දේශනා</h1>
 <p></p>
+<p>සිකුරාදා සවස 6.00 සිට 8:00 දක්වා</p>
+<p><a href="zoom_details.html">Zoom සජීවීව සම්බන්ධ වීමට</a></p>
 <p></p>
 <p>Select a video from the dropdown menu</p>    <p></p>
 <select id="video_list">
@@ -41,9 +43,7 @@
 	<option value="option3" selected>2023-Aug-18 නිවන් මග උදෙසා දර්ශන ඥාණය - දේශනා අංක A003</option>
 </select>
 <div id="content"></div>
-<div id="notes">
-	<p>Video Notes</p>
-</div>
+<div id="notes"></div>
 <script>
 	const select = document.querySelector('#video_list');
 	const content = document.querySelector('#content');
@@ -61,18 +61,17 @@
 <script>
 	const select1 = document.querySelector('#video_list');
 	const notes = document.querySelector('#notes');
-			notes.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/sSYSXT0Nhm4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			notes.innerHTML = '<p>සබ්බ සූත්‍රය  https://tipitaka.lk/sn-4-1-3-1</p><p>සමිද්ධි දුක්ඛපඤ්හ සූත්‍රය https://tipitaka.lk/sn-4-1-7-5</p>';
 	select.addEventListener('change', function() {
 		if (this.value === 'option1') {
-			notes.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/v7zmwZ8P8BU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			notes.innerHTML = '';
 		} else if (this.value === 'option2'){
-			notes.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/dL5HgzzqlgY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><p>xxx</p>';
+			notes.innerHTML = '<p>සත්ත සූත්‍රය https://tipitaka.lk/sn-3-2-1-2</p>';
 		} else if (this.value === 'option3'){
-			notes.innerHTML = '<p>සබ්බ සූත්‍රය https://tipitaka.lk/sn-4-1-3-1</p>';
+			notes.innerHTML = '<p>සබ්බ සූත්‍රය  https://tipitaka.lk/sn-4-1-3-1</p><p>සමිද්ධි දුක්ඛපඤ්හ සූත්‍රය https://tipitaka.lk/sn-4-1-7-5</p>';
 	}
 });
 </script>
-
 <br>
 </body>
 </html>
