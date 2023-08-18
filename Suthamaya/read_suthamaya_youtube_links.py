@@ -1,4 +1,4 @@
-import io
+import os
 import shutil
 
 with open('Suthamaya/suthamaya.txt', 'r') as fp:
@@ -125,3 +125,4 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
     fp.close()
 
 shutil.copy2(text_filename, html_filename, follow_symlinks=False)
+os.remove(text_filename)

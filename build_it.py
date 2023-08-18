@@ -12,16 +12,19 @@
 # <index> <youtube link (URL)> <date>
 
 from Kaluthara_Bodhiya_A_Series import Read_Sat2pm_youtube_links
-from All_Playlists import waytoni_all_videos
-#from 'E:\src\github\waytoni_io\waytoni_desktop\' import waytoni_all_videos_new
+# from All_Playlists import waytoni_all_videos
+
 #from ../scripts_new import waytoni_all_videos_new
 from All_Playlists import read_utube_links_all
 from Nivan_Maga_Udesa import read_nivan_maga_udesa_youtube_links
 from Suthamaya import read_suthamaya_youtube_links
+import sys
+sys.path.append('E:/src/github/waytoni_io/waytoni_desktop/scripts_new')
+import waytoni_all_videos_new
 
 Read_Sat2pm_youtube_links
-waytoni_all_videos
-#waytoni_all_videos_new
+# waytoni_all_videos
+waytoni_all_videos_new
 read_utube_links_all
 read_nivan_maga_udesa_youtube_links
 read_suthamaya_youtube_links
