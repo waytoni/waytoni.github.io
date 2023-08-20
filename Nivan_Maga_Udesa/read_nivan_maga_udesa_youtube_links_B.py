@@ -1,6 +1,11 @@
 import os
 import shutil
 
+import re
+
+def create_hyperlink(url):
+    return f'<a href="{url}" target="_blank">{url}</a>'
+
 def read_sections(filename):
     sections = {}  # Dictionary to store sections
 
@@ -14,11 +19,15 @@ def read_sections(filename):
                 current_section = int(line[1:])  # Extract the number after '#'
                 sections[current_section] = []  # Initialize the section list
             elif current_section is not None:
-                sections[current_section].append(line)  # Add line to the current section
+                # Search for URLs in the line and create hyperlinks
+                urls = re.findall(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', line)
+                for url in urls:
+                    line = line.replace(url, create_hyperlink(url))
+                sections[current_section].append(line)  # Add modified line to the current section
 
     return sections
 
-filename = 'Nivan_Maga_Udesa/notes.txt'  
+filename = 'Nivan_Maga_Udesa/Nivan_Maga_Udesa_notes.txt'  
 sections = read_sections(filename)
 
 
@@ -161,8 +170,10 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
     fp.write('\tconst select1 = document.querySelector(\'#video_list\');\n')
     fp.write('\tconst notes = document.querySelector(\'#notes\');\n')
     lines = sections[n]
+
     
     fp.write('\t\t\tnotes.innerHTML = \'') 
+    fp.write('<p>'+'දේශනාව සඳහා සටහන්'+'</p>')
     for line in lines:
             fp.write('<p>'+line+'</p>')
     fp.write('\';\n')
@@ -175,6 +186,7 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
     #fp.write('\t\t\tnotes.innerHTML = \'<p>'+ lines[0] + '</p>' + '\';\n')
     
     fp.write('\t\t\tnotes.innerHTML = \'') 
+    fp.write('<p>'+'දේශනාව සඳහා සටහන්'+'</p>')
     for line in lines:
         fp.write('<p>'+line+'</p>')
     fp.write('\';\n')
@@ -185,11 +197,17 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
         fp.write('\t\t} else if (this.value === \'' + option_n[n-1] + '\'){\n')
         lines = sections[n]
         
-        fp.write('\t\t\tnotes.innerHTML = \'') 
-        for line in lines:
-            fp.write('<p>'+line+'</p>')
-        fp.write('\';\n')
+        if len(lines) > 0:
+            print(f"section has content {n}  {len(lines)}")
         
+            fp.write('\t\t\tnotes.innerHTML = \'') 
+            fp.write('<p>'+'දේශනාව සඳහා සටහන්'+'</p>\';\n')
+            for line in lines:
+                fp.write('\t\t\tnotes.innerHTML +=\'<p>'+line+'</p>\';\n')
+            fp.write('\n')
+        
+        else:
+            fp.write('\t\t\tnotes.innerHTML = \'\';\n') 
         # fp.write('\t\t\tnotes.innerHTML = \'<p></p>' + lines[0] + '\';\n')
 
     fp.write('\t}\n')

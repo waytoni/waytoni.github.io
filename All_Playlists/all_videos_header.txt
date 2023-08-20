@@ -18,7 +18,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="../scripts/menu_function.js"></script>
     <link rel="icon" type="image/png" href="../images/favicon-16x16.png" sizes="16x16" />
-	<title>සියලුම දේශනා - @WayToNibbana YouTube Channel - Unsorted</title>
+	<title>සියලුම දේශනා - @WayToNibbana YouTube Channel</title>
 </head>
 <body>
     <div class="topnav" id="Topnavbar">
@@ -30,5 +30,5 @@
         <a href="../Chithatha_Chithisika/Chiththa_Chithasika.html">චිත්ත සහ චෛතිසික </a>
     <a href="javascript:void(0);" class="icon" onclick="navFunction()"> <i class="fa fa-bars"></i></a>
     </div>
-    <h1>සියලුම දේශනා - @WayToNibbana YouTube Channel (Unsorted)</h1>
+    <h1>සියලුම දේශනා - @WayToNibbana YouTube Channel</h1>
     <br>
