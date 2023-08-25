@@ -74,7 +74,7 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
             url_val_split = url_val.split('=')
             url_video_val = url_val_split[1]
 
-        p0_short = f"{date_val} නිවන් මග උදෙසා දර්ශන ඥාණය - දේශනා අංක {idx_val}"
+        p0_short = f"{date_val} සුතමයඤාණං - දේශනා අංක {idx_val}"
 
         option_text.append(p0_short)
         # print(option_text[n-1])
