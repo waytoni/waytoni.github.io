@@ -17,7 +17,7 @@ text_filename = 'Suthamaya/suthamaya_working.txt'
 
 
 # Uncomment the following line only if everything is okay
-html_filename = 'Suthamaya/Suthamaya_A.html'
+html_filename = 'Suthamaya/index.html'
 
 with open(text_filename, 'w', encoding="utf-8") as fp:
     fp.write('<html>\n<head>\n')
