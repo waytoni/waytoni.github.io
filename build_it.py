@@ -20,7 +20,7 @@ from Nivan_Maga_Udesa import read_nivan_maga_udesa_youtube_links_B
 from Suthamaya import read_suthamaya_youtube_links
 import sys
 sys.path.append('E:/src/github/waytoni_io/waytoni_desktop/scripts_new')
-sys.path.append('c:/users/30010651/github/scripts_new')
+# sys.path.append('c:/users/30010651/github/scripts_new')
 import waytoni_all_videos_new
 
 Read_Sat2pm_youtube_links
