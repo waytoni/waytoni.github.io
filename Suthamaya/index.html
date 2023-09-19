@@ -41,13 +41,14 @@
 	<option value="option3">2023-Aug-05 සුතමයඤාණං - දේශනා අංක 003</option>
 	<option value="option4">2023-Aug-12 සුතමයඤාණං - දේශනා අංක 004</option>
 	<option value="option5">2023-Aug-19 සුතමයඤාණං - දේශනා අංක 005</option>
-	<option value="option6" selected>2023-Sep-09 සුතමයඤාණං - දේශනා අංක 006</option>
+	<option value="option6">2023-Sep-09 සුතමයඤාණං - දේශනා අංක 006</option>
+	<option value="option7" selected>2023-Sep-16 සුතමයඤාණං - දේශනා අංක 007</option>
 </select>
 <div id="content"></div>
 <script>
 	const select = document.querySelector('#video_list');
 	const content = document.querySelector('#content');
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/arnut3YnkQE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/yA0aDn6gibg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	select.addEventListener('change', function() {
 		if (this.value === 'option1') {
 			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/OJIbLEWBdco" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
@@ -61,6 +62,8 @@
 			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/3Rm7QGRKUeQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		} else if (this.value === 'option6'){
 			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/arnut3YnkQE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+		} else if (this.value === 'option7'){
+			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/yA0aDn6gibg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	}
 });
 </script>
