@@ -53,7 +53,7 @@ text_filename = 'Nivan_Maga_Udesa/nivan_maga_udesa_working_B.txt'
 
 
 # Uncomment the following line only if everything is okay
-html_filename = 'Nivan_Maga_Udesa/index.html'
+html_filename = 'Nivan_Maga_Udesa/index_working.html'
 
 with open(text_filename, 'w', encoding="utf-8") as fp:
     fp.write('<html>\n<head>\n')

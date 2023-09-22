@@ -27,7 +27,8 @@ def read_sections(filename):
     return sections
 
 
-filename = 'Nivan_Maga_Udesa/Nivan_Maga_Udesa_notes.txt'  
+# filename = 'Nivan_Maga_Udesa/Nivan_Maga_Udesa_notes.txt'  
+filename = "Nivan_Maga_Udesa/search_keywords.txt"
 sections = read_sections(filename)
 
 section_number = 3  # Replace with the desired section number
