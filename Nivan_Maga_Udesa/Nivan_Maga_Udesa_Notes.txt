@@ -15,7 +15,7 @@ img::002_Page_3.png
 සමිද්ධි දුක්ඛපඤ්හ සූත්‍රය url::https://tipitaka.lk/sn-4-1-7-5
 සමිද්ධි ලෝකපඤ්හ සූත්‍රය url::https://tipitaka.lk/sn-4-1-7-6
 රෝහිතස්ස සූත්‍රය url::https://tipitaka.lk/sn-1-2-3-6/sinh
-pdf::Nivan_Maga_Udesa/docs/003- නිවන් මඟ උදෙසා දර්ශන ඥානය(2023-08-18).pdf
+pdf::003- නිවන් මඟ උදෙසා දර්ශන ඥානය(2023-08-18).pdf
 img::003_Page_1.png
 img::003_Page_2.png
 img::003_Page_3.png
