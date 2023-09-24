@@ -1,0 +1,11 @@
+
+from pdf2image import convert_from_path
+
+
+def convert_pdf_to_images(pdf_path):
+    images = convert_from_path(pdf_path)
+    for index, image in enumerate(images):
+        image.save(f'output/{pdf_path}-{index}.png')
+        
+
+convert_pdf_to_images('Nivan_Maga_Udesa/docs/001- නිවන් මග උදෙසා දර්ශන ඥානය_2023-08-04.pdf')

@@ -14,7 +14,7 @@
 from Kaluthara_Bodhiya_A_Series import Read_Sat2pm_youtube_links
 # from All_Playlists import waytoni_all_videos
 
-#from ../scripts_new import waytoni_all_videos_new
+
 from All_Playlists import read_utube_links_all
 from Nivan_Maga_Udesa import read_nivan_maga_udesa_youtube_links_C
 from Suthamaya import read_suthamaya_youtube_links

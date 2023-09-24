@@ -123,9 +123,10 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
     fp.write('<a href="https://waytoni.github.io/" class="active">Home </a>\n') 
     fp.write('<a href="../All_Playlists/සියුලු_දේශනා.html">අභිධම්ම දේශනා </a>\n')
     fp.write('<a href="../Paramartha_Video/Paramartha_Video.html">පරමාර්ථ ලෝකය දේශනා </a>\n \
-        <a href="../Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html">අනිච්ච, දුක්ඛ, අනත්ත දේශනා </a>\n \
-        <a href="../Zoom_Info/zoom_info.html">Join Zoom Live Class </a>\n \
-        <a href="../Chithatha_Chithasika/Chiththa_Chithasika.html">චිත්ත සහ චෛතසික </a>\n')
+        <a href="../Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html">අනිච්ච, දුක්ඛ, අනත්ත දේශනා </a>\n')
+
+    fp.write('<a href="../Nivan_Maga_Udesa/index.html">නිවන් මග උදෙසා දේශනා</a>\n')
+    fp.write('<a href="../Chithatha_Chithasika/Chiththa_Chithasika.html">චිත්ත සහ චෛතසික</a>\n')
     fp.write('<a href="javascript:void(0);" class="icon" onclick="navFunction()"> <i class="fa fa-bars"></i></a>\n')
     fp.write('</div>\n')
     
@@ -147,46 +148,30 @@ idx_prefix_0 = 'A'
 
 prepare_html_block(1, playlist_0, playlist_title_0, text_filename, playlist_url_0, idx_prefix_0)
 
+playlist_2 = 'Nivan_Maga_Udesa/nivan_maga_udesa_youtube_links.txt'
+playlist_title_2 = "නිවන් මග උදෙසා දර්ශන ඥාණය (A කණ්ඩායම )"
+prepare_html_block(2, playlist_2, playlist_title_2, text_filename, '', '')
 
-playlist_2 = 'All_Playlists/H_Series.txt'
-playlist_title_2 = "Kalutara Bodhiya H Series"
-playlist_url_2 = ''
-idx_prefix_2 = ''
-prepare_html_block(2, playlist_2, playlist_title_2, text_filename, playlist_url_2, idx_prefix_2)
+playlist_3 = 'Suthamaya/suthamaya.txt'
+playlist_title_3 = "සුතමයඤාණං කාණ්ඩය"
+prepare_html_block(3, playlist_3, playlist_title_3, text_filename, '', '')
 
+playlist_4 = 'All_Playlists/H_Series.txt'
+playlist_title_4 = "Kalutara Bodhiya H Series"
+prepare_html_block(4, playlist_4, playlist_title_4, text_filename, '', '')
 
-# A Batch
-playlist_3 = 'All_Playlists/First_A_Series.txt'
-playlist_title_3 = "Paramartha Lokaya Kalutara Bodhiya (පළමු දේශනා මාලාව) A"
-playlist_url_3 = "https://www.youtube.com/playlist?list=PLqESXbJ82aIgu16mtfCXK6ChqXQL0KLxh"
-idx_prefix_3 = ''
+playlist_5 = 'Abhidharma_Aruth/Abhidharma_Aruth_youtube_links.txt'
+playlist_title_5 = "Abhidharma Aruth"
+prepare_html_block(5, playlist_5, playlist_title_5, text_filename, '', 'EP')
 
-# prepare_html_block(3, playlist_3, playlist_title_3, text_filename, playlist_url_3, idx_prefix_3)
-
-# B Batch
-# playlist_4 = 'All_Playlists/Second_B_Series_sorted.txt'
-# playlist_title_4 = "Abhidhamma lesson Kalutara Bodhiya (දෙවන දේශනා මාලාව) B"
-## playlist_url_4 = "https://www.youtube.com/playlist?list=PLqESXbJ82aIg2hMrX6I1_b5QKxHx3fD0w"
-#playlist_url_4 = ''
-#idx_prefix_4 = ''
-#prepare_html_block(4, playlist_4, playlist_title_4, text_filename, playlist_url_4, idx_prefix_4)
-
-playlist_5 = 'Suthamaya/suthamaya.txt'
-playlist_title_5 = "සුතමයඤාණං කාණ්ඩය"
-playlist_url_5 = ''
-idx_prefix_5 = ''
-prepare_html_block(3, playlist_5, playlist_title_5, text_filename, playlist_url_5, idx_prefix_5)
-
-playlist_6 = 'Nivan_Maga_Udesa/nivan_maga_udesa_youtube_links.txt'
-playlist_title_6 = "නිවන් මග උදෙසා දර්ශන ඥාණය ( A කණ්ඩායම )"
-playlist_url_6 = ''
-idx_prefix_6 = ''
-prepare_html_block(4, playlist_6, playlist_title_6, text_filename, playlist_url_6, idx_prefix_6)
+playlist_6 = 'Abhidharma_Aruth/Abhidharma_Aruth_B_youtube_links.txt'
+playlist_title_6 = "Abhidharma Aruth - B"
+prepare_html_block(6, playlist_6, playlist_title_6, text_filename, '', '')
 
 ######## tail #########
 with open(text_filename, 'a', encoding="utf-8") as fp:
     fp.write('<br>\n')
-    fp.write('<h2>5. <a href="A_G_Batches.html">මුල් අභිධම්ම දේශනා කාණ්ඩ A, B, C, D, E, F, සහ G</a>\n</h2>')
+    fp.write('<h2>7. <a href="A_G_Batches.html">මුල් අභිධම්ම දේශනා කාණ්ඩ A, B, C, D, E, F, සහ G</a>\n</h2>')
     fp.write('<h5>&emsp; F කාණ්ඩය අසම්පූර්ණයි</h5>\n')
     fp.write('<br>\n')
     fp.write('<li><a href="../documents/file_list.html">සියලු අභිධම්ම දේශනා සඳහා සටහන්</a></li>\n')

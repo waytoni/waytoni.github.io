@@ -131,19 +131,18 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
     fp.write('<div class="topnav" id="Topnavbar">\n')
     fp.write('<a href="https://waytoni.github.io/" class="active">Home </a>\n') 
     fp.write('<a href="../All_Playlists/සියුලු_දේශනා.html">අභිධම්ම දේශනා </a>\n')
-    
     fp.write('<a href="../Paramartha_Video/Paramartha_Video.html">පරමාර්ථ ලෝකය දේශනා </a>\n \
-        <a href="../Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html">අනිච්ච, දුක්ඛ, අනත්ත දේශනා </a>\n \
-        <a href="../Zoom_Info/zoom_info.html">Join Zoom Live Class </a>\n \
-        <a href="../Chithatha_Chithasika/Chiththa_Chithasika.html">චිත්ත සහ චෛතසික</a>\n')
+        <a href="../Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html">අනිච්ච, දුක්ඛ, අනත්ත දේශනා </a>\n')
+    fp.write('<a href="../Nivan_Maga_Udesa">නිවන් මග උදෙසා දේශනා</a>\n')
+    fp.write('<a href="../Chithatha_Chithasika/Chiththa_Chithasika.html">චිත්ත සහ චෛතසික</a>\n')
     fp.write('<a href="javascript:void(0);" class="icon" onclick="navFunction()"> <i class="fa fa-bars"></i></a>\n')
     fp.write('</div>\n')
     
     fp.write('<h1>නිවන් මග උදෙසා දර්ශන ඥාණය - දේශනා</h1>\n')
-
+    fp.write('<h2>කල්‍යාණ මිත්‍ර අජන්ත සම්පත් ගුරුතුමන් ගේ දේශනා මාලාව</h2>')
     fp.write('<p></p>\n')
-    fp.write('<p>සිකුරාදා සවස 6.00 සිට 8:00 දක්වා</p>\n')
-    fp.write('<p><a href="zoom_details.html">Zoom සජීවීව සම්බන්ධ වීමට</a></p>\n')
+    fp.write('<p>සෑම සිකුරාදා සවස 6.00 සිට 8:00 දක්වා</p>\n')
+    fp.write('<p><a href="../Nivan_Maga_Udesa/zoom_details.html">Zoom සජීවීව සම්බන්ධ වීමට</a></p>\n')
 
     #fp.write('<a href="https://www.youtube.com/playlist?list=PLqESXbJ82aIip-TA7Efg5JjwmEDJ95kAx">Watch full playlist in YouTube</a>\n')
     

@@ -46,14 +46,20 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
     fp.write('<a href="../All_Playlists/සියුලු_දේශනා.html">අභිධම්ම දේශනා </a>\n')
     # fp.write('<a href="../Kaluthara_Bodhiya_A_Series/Kaluthara_Bodhiya_A_series.html">අභිධම්ම දේශනා </a>\n') 
     fp.write('<a href="../Paramartha_Video/Paramartha_Video.html">පරමාර්ථ ලෝකය දේශනා </a>\n \
-        <a href="../Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html">අනිච්ච, දුක්ඛ, අනත්ත දේශනා </a>\n \
-        <a href="../Zoom_Info/zoom_info.html">Join Zoom Live Class </a>\n \
-        <a href="../Chithatha_Chithasika/Chiththa_Chithasika.html">චිත්ත සහ චෛතසික</a>\n')
+        <a href="../Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html">අනිච්ච, දුක්ඛ, අනත්ත දේශනා </a>\n') 
+   #     <a href="../Zoom_Info/zoom_info.html">Join Zoom Live Class </a>\n')     
+    fp.write('<a href="../Nivan_Maga_Udesa">නිවන් මග උදෙසා දේශනා</a>\n')
+    fp.write('<a href="../Chithatha_Chithasika/Chiththa_Chithasika.html">චිත්ත සහ චෛතසික</a>\n')
     fp.write('<a href="javascript:void(0);" class="icon" onclick="navFunction()"> <i class="fa fa-bars"></i></a>\n')
     fp.write('</div>\n')
     
     fp.write('<h1>තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය - දේශනා</h1>\n')
 
+    fp.write('<h2>තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය..... </h2>\n')
+    fp.write('<p>මානවයාගේ වැරදි දෘෂ්ඨීන්ගෙන් මුදවා ගැනීමේ අදහසින්, තරුණ දූදරුවන්ට ගැලපෙන පරිදි, Science විෂයට (සම්මුති විද්‍යා විෂයට) ගලපමින් පවත්වන දේශනා මාලාව. සරලව මුල සිට……. </p>\n')
+    
+    fp.write('<p></p>\n')
+    fp.write('සජීවි දේශනා සෑම සෙනසුරාදා සවස 2.00 සිට (ලංකාවේ වේලාවෙන්) <a href="../Zoom_Info/zoom_info.html">Zoom සැසියට සම්බන්ද වීමට</a>)\n')
     fp.write('<p></p>\n')
 
     fp.write('<a href="https://www.youtube.com/playlist?list=PLqESXbJ82aIip-TA7Efg5JjwmEDJ95kAx">Watch full playlist in YouTube</a>\n')
