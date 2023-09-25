@@ -148,17 +148,25 @@ idx_prefix_0 = 'A'
 
 prepare_html_block(1, playlist_0, playlist_title_0, text_filename, playlist_url_0, idx_prefix_0)
 
+playlist_url_2 = 'https://www.youtube.com/playlist?list=PLqESXbJ82aIgflkHivXH-cYXlz1onvNCi'
 playlist_2 = 'Nivan_Maga_Udesa/nivan_maga_udesa_youtube_links.txt'
 playlist_title_2 = "නිවන් මග උදෙසා දර්ශන ඥාණය (A කණ්ඩායම )"
-prepare_html_block(2, playlist_2, playlist_title_2, text_filename, '', '')
+prepare_html_block(2, playlist_2, playlist_title_2, text_filename, playlist_url_2, '')
 
+playlist_url_3 = 'https://www.youtube.com/playlist?list=PLqESXbJ82aIgmWdPzXFdJplUOPJgRXpZN'
 playlist_3 = 'Suthamaya/suthamaya.txt'
 playlist_title_3 = "සුතමයඤාණං කාණ්ඩය"
-prepare_html_block(3, playlist_3, playlist_title_3, text_filename, '', '')
+prepare_html_block(3, playlist_3, playlist_title_3, text_filename, playlist_url_3, '')
 
-playlist_4 = 'All_Playlists/H_Series.txt'
-playlist_title_4 = "Kalutara Bodhiya H Series"
-prepare_html_block(4, playlist_4, playlist_title_4, text_filename, '', '')
+with open(text_filename, 'a', encoding="utf-8") as fp:
+    fp.write('<br><a id="I_series">\n')
+    fp.write('<h2>Abhidhamma lesson Kalutara Bodhiya 9 වන දේශනා මාලාව</h2>\n')
+    fp.close()
+    
+playlist_url_4 = 'https://www.youtube.com/playlist?list=PLqESXbJ82aIjuYvXqOWBWMs-moFFukBbN'
+playlist_4 = 'All_Playlists/I_Series.txt'
+playlist_title_4 = "Abhidhamma lesson Kalutara Bodhiya I"
+prepare_html_block(4, playlist_4, playlist_title_4, text_filename, playlist_url_4, '')
 
 playlist_5 = 'Abhidharma_Aruth/Abhidharma_Aruth_youtube_links.txt'
 playlist_title_5 = "Abhidharma Aruth"
@@ -168,10 +176,14 @@ playlist_6 = 'Abhidharma_Aruth/Abhidharma_Aruth_B_youtube_links.txt'
 playlist_title_6 = "Abhidharma Aruth - B"
 prepare_html_block(6, playlist_6, playlist_title_6, text_filename, '', '')
 
+playlist_7 = 'All_Playlists/H_Series.txt'
+playlist_title_7 = "Kalutara Bodhiya H Series"
+prepare_html_block(7, playlist_7, playlist_title_7, text_filename, '', '')
+
 ######## tail #########
 with open(text_filename, 'a', encoding="utf-8") as fp:
     fp.write('<br>\n')
-    fp.write('<h2>7. <a href="A_G_Batches.html">මුල් අභිධම්ම දේශනා කාණ්ඩ A, B, C, D, E, F, සහ G</a>\n</h2>')
+    fp.write('<h2>8. <a href="A_G_Batches.html">මුල් අභිධම්ම දේශනා කාණ්ඩ A, B, C, D, E, F, සහ G</a>\n</h2>')
     fp.write('<h5>&emsp; F කාණ්ඩය අසම්පූර්ණයි</h5>\n')
     fp.write('<br>\n')
     fp.write('<li><a href="../documents/file_list.html">සියලු අභිධම්ම දේශනා සඳහා සටහන්</a></li>\n')

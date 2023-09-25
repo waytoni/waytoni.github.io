@@ -144,7 +144,7 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
     fp.write('<p>සෑම සිකුරාදා සවස 6.00 සිට 8:00 දක්වා</p>\n')
     fp.write('<p><a href="../Nivan_Maga_Udesa/zoom_details.html">Zoom සජීවීව සම්බන්ධ වීමට</a></p>\n')
 
-    #fp.write('<a href="https://www.youtube.com/playlist?list=PLqESXbJ82aIip-TA7Efg5JjwmEDJ95kAx">Watch full playlist in YouTube</a>\n')
+    fp.write('<a href="https://www.youtube.com/playlist?list=PLqESXbJ82aIgflkHivXH-cYXlz1onvNCi">Watch full playlist in YouTube</a>\n')
     
     fp.write('<p></p>\n<p>Select a video from the dropdown menu</p>    <p></p>\n')
     
