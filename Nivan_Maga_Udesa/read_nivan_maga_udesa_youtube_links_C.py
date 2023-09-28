@@ -119,7 +119,7 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
         
     fp.write('\n')    
     fp.write('\t<meta name="viewport" content="width=device-width, initial-scale=1.0">\n')
-    fp.write('\t<link rel="stylesheet" type="text/css" href="../Kaluthara_Bodhiya_A_Series/A_series.css">\n')
+ #   fp.write('\t<link rel="stylesheet" type="text/css" href="../Kaluthara_Bodhiya_A_Series/A_series.css">\n')
     fp.write('\t<link rel="stylesheet" type="text/css" href="../css/nav_menu.css">\n')
     fp.write('\t<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">\n')
     fp.write('\t<script src="../scripts/menu_function.js"></script>\n')
