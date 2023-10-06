@@ -18,6 +18,7 @@ from Kaluthara_Bodhiya_A_Series import Read_Sat2pm_youtube_links
 from All_Playlists import read_utube_links_all
 from Nivan_Maga_Udesa import read_nivan_maga_udesa_youtube_links_C
 from Suthamaya import read_suthamaya_youtube_links
+from Abhidharma_Aruth import read_Abhidharma_Aruth_youtube_links
 import sys
 sys.path.append('E:/src/github/waytoni_io/waytoni_desktop/scripts_new')
 # sys.path.append('c:/users/30010651/github/scripts_new')
@@ -29,3 +30,4 @@ waytoni_all_videos_new
 read_utube_links_all
 read_nivan_maga_udesa_youtube_links_C
 read_suthamaya_youtube_links
+read_Abhidharma_Aruth_youtube_links
