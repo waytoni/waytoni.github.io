@@ -441,13 +441,14 @@
 	<option value="option4">2023-Sep-08 නිවන් මග උදෙසා දර්ශන ඥාණය (A කණ්ඩායම ) 004</option>
 	<option value="option5">2023-Sep-15 නිවන් මග උදෙසා දර්ශන ඥාණය (A කණ්ඩායම ) 005</option>
 	<option value="option6">2023-Sep-21 නිවන් මග උදෙසා දර්ශන ඥාණය (A කණ්ඩායම ) 006</option>
-	<option value="option7" selected>2023-Sep-29 නිවන් මග උදෙසා දර්ශන ඥාණය (A කණ්ඩායම ) 007</option>
+	<option value="option7">2023-Sep-29 නිවන් මග උදෙසා දර්ශන ඥාණය (A කණ්ඩායම ) 007</option>
+	<option value="option8" selected>2023-Oct-06 නිවන් මග උදෙසා දර්ශන ඥාණය (A කණ්ඩායම ) 008</option>
 </select>
 <div id="content2"></div>
 <script>
 	const select2 = document.querySelector('#video_list2');
 	const content2 = document.querySelector('#content2');
-			content2.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/2qENB6G5Kvg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			content2.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/16UWcUKdn6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	select2.addEventListener('change', function() {
 		if (this.value === 'option1') {
 			content2.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/v7zmwZ8P8BU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
@@ -463,6 +464,8 @@
 			content2.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/jrV5Tmbhgd8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		} else if (this.value === 'option7'){
 			content2.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/2qENB6G5Kvg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+		} else if (this.value === 'option8'){
+			content2.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/16UWcUKdn6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	}
 });
 </script>

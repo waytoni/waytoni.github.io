@@ -44,14 +44,15 @@
 	<option value="option4">2023-Sep-08 නිවන් මග උදෙසා දර්ශන ඥාණය - දේශනා අංක A004</option>
 	<option value="option5">2023-Sep-15 නිවන් මග උදෙසා දර්ශන ඥාණය - දේශනා අංක A005</option>
 	<option value="option6">2023-Sep-21 නිවන් මග උදෙසා දර්ශන ඥාණය - දේශනා අංක A006</option>
-	<option value="option7" selected>2023-Sep-29 නිවන් මග උදෙසා දර්ශන ඥාණය - දේශනා අංක A007</option>
+	<option value="option7">2023-Sep-29 නිවන් මග උදෙසා දර්ශන ඥාණය - දේශනා අංක A007</option>
+	<option value="option8" selected>2023-Oct-06 නිවන් මග උදෙසා දර්ශන ඥාණය - දේශනා අංක A008</option>
 </select>
 <div id="content"></div>
 <div id="notes"></div>
 <script>
 	const select = document.querySelector('#video_list');
 	const content = document.querySelector('#content');
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/2qENB6G5Kvg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/16UWcUKdn6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	select.addEventListener('change', function() {
 		if (this.value === 'option1') {
 			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/v7zmwZ8P8BU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
@@ -67,6 +68,8 @@
 			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/jrV5Tmbhgd8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		} else if (this.value === 'option7'){
 			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/2qENB6G5Kvg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+		} else if (this.value === 'option8'){
+			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/16UWcUKdn6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	}
 });
 </script>
@@ -105,6 +108,8 @@
 		} else if (this.value === 'option6'){
 			notes.innerHTML = '';
 		} else if (this.value === 'option7'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option8'){
 			notes.innerHTML = '';
 	}
 });
