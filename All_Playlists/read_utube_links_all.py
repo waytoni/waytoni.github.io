@@ -161,6 +161,7 @@ prepare_html_block(3, playlist_3, playlist_title_3, text_filename, playlist_url_
 with open(text_filename, 'a', encoding="utf-8") as fp:
     fp.write('<br><a id="I_series">\n')
     fp.write('<h2>Abhidhamma lesson Kalutara Bodhiya 9 වන දේශනා මාලාව</h2>\n')
+    fp.write('<h2>WhatsApp සම්බන්ධ වීමට සහ විමසීම්: 071 - 8896727</h3>\n')
     fp.close()
     
 playlist_url_4 = 'https://www.youtube.com/playlist?list=PLqESXbJ82aIjuYvXqOWBWMs-moFFukBbN'
