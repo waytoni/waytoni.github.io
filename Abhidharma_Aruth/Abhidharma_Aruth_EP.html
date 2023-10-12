@@ -24,7 +24,7 @@
 <body>
 <div class="topnav" id="Topnavbar">
 <a href="https://waytoni.github.io/" class="active">Home </a>
-<a href="../All_Playlists/සියුලු_දේශනා.html">අභිධම්ම දේශනා </a>
+<a href="../All_Playlists/සියුලු_දේශනා.html">සියලුම දේශනා </a>
 <a href="../Paramartha_Video/Paramartha_Video.html">පරමාර්ථ ලෝකය දේශනා </a>
          <a href="../Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html">අනිච්ච, දුක්ඛ, අනත්ත දේශනා </a>
 <a href="../Nivan_Maga_Udesa/index.html">නිවන් මග උදෙසා දේශනා</a>
@@ -72,13 +72,14 @@
 	<option value="option30">2023-Sep-14 Abhidharma Aruth EP035</option>
 	<option value="option31">2023-Sep-21 Abhidharma Aruth EP037</option>
 	<option value="option32">2023-Sep-28 Abhidharma Aruth EP038</option>
-	<option value="option33" selected>2023-OCt-05 Abhidharma Aruth EP039</option>
+	<option value="option33">2023-OCt-05 Abhidharma Aruth EP039</option>
+	<option value="option34" selected>2023-Oct-12 Abhidharma Aruth EP040</option>
 </select>
 <div id="content1"></div>
 <script>
 	const select1 = document.querySelector('#video_list1');
 	const content1 = document.querySelector('#content1');
-			content1.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/XYwDHBXD07s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			content1.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/ZSvsIRD8EhU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	select1.addEventListener('change', function() {
 		if (this.value === 'option1') {
 			content1.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/hwe5O7OP1zU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
@@ -146,6 +147,8 @@
 			content1.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/Z4O12Hy6rJU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		} else if (this.value === 'option33'){
 			content1.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/XYwDHBXD07s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+		} else if (this.value === 'option34'){
+			content1.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/ZSvsIRD8EhU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	}
 });
 </script>

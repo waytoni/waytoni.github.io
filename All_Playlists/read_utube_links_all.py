@@ -121,7 +121,7 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
     
     fp.write('<div class="topnav" id="Topnavbar">\n')
     fp.write('<a href="https://waytoni.github.io/" class="active">Home </a>\n') 
-    fp.write('<a href="../All_Playlists/සියුලු_දේශනා.html">අභිධම්ම දේශනා </a>\n')
+    fp.write('<a href="../All_Playlists/සියුලු_දේශනා.html">සියලුම දේශනා </a>\n')
     fp.write('<a href="../Paramartha_Video/Paramartha_Video.html">පරමාර්ථ ලෝකය දේශනා </a>\n \
         <a href="../Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html">අනිච්ච, දුක්ඛ, අනත්ත දේශනා </a>\n')
 
@@ -150,7 +150,7 @@ prepare_html_block(1, playlist_0, playlist_title_0, text_filename, playlist_url_
 
 playlist_url_2 = 'https://www.youtube.com/playlist?list=PLqESXbJ82aIgflkHivXH-cYXlz1onvNCi'
 playlist_2 = 'Nivan_Maga_Udesa/nivan_maga_udesa_youtube_links.txt'
-playlist_title_2 = "නිවන් මග උදෙසා දර්ශන ඥාණය (A කණ්ඩායම )"
+playlist_title_2 = "නිවන් මග උදෙසා දර්ශන ඥාණය (A කණ්ඩායම)"
 prepare_html_block(2, playlist_2, playlist_title_2, text_filename, playlist_url_2, '')
 
 playlist_url_3 = 'https://www.youtube.com/playlist?list=PLqESXbJ82aIgmWdPzXFdJplUOPJgRXpZN'
