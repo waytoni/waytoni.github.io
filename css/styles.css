@@ -18,13 +18,16 @@ th,
 ul,
 ol,
 li {
-    margin: 10;
+    margin: 10px;
     padding: 10;
-    font-size: 14pt;
+    font-size: 16x;
     background-color: #ffffff;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+li:not(:last-child) {
+    margin-bottom: 5px;
+}
 .address p {
     font-size: 10pt;
     padding: 0;
