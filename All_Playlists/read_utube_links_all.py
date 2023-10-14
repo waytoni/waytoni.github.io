@@ -114,6 +114,7 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
     fp.write('\t<link rel="stylesheet" type="text/css" href="../css/nav_menu.css">\n')
     fp.write('\t<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">\n')
     fp.write('\t<script src="../scripts/menu_function.js"></script>\n')
+    fp.write('\t<body style="font-family:calibri;"></body>\n')
     fp.write('\t<link rel="icon" type="image/png" href="../images/favicon-16x16.png" sizes="16x16" />\n')
     fp.write('\t<title>අභිධම්ම දේශනා  - සියල්ල</title>\n')
     
@@ -132,9 +133,9 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
     
     fp.write('<h1>අභිධම්ම දේශනා  - සියල්ල</h1>\n')
     
-    fp.write('<br>\n')
+    # fp.write('<br>\n')
     fp.write('<h2><li><a href="../documents/file_list.html">සියලු අභිධම්ම දේශනා සඳහා සටහන්</a></li></h2>\n')
-    fp.write('<br>\n')
+    # fp.write('<br>\n')
     
     fp.close()
 
