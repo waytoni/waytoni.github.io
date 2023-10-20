@@ -8,7 +8,8 @@ from prepare_html_dropdown_block import prepare_html_dropdown_block_1
 
 text_filename = 'Abhidharma_Aruth/Abhidarma_Aruth_working.txt'
 # Uncomment the following line only if everything is okay
-html_filename = 'Abhidharma_Aruth/Abhidharma_Aruth_EP.html'
+# html_filename = 'Abhidharma_Aruth/Abhidharma_Aruth_EP.html'
+html_filename = 'Abhidharma_Aruth/index.html'
 
 with open(text_filename, 'w', encoding="utf-8") as fp:
     fp.write('<html>\n<head>\n')
