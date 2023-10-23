@@ -53,6 +53,7 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
     fp.write('<a href="javascript:void(0);" class="icon" onclick="navFunction()"> <i class="fa fa-bars"></i></a>\n')
     fp.write('</div>\n')
     
+    fp.write('<div style="margin:5px 5px 5px 15px";>\n')
     fp.write('<h1>තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය - දේශනා</h1>\n')
 
     fp.write('<h2>තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය..... </h2>\n')
@@ -139,6 +140,7 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
     fp.write('<br>\n')
     fp.write('<li><a href="../documents/file_list.html">අභිධම්ම දේශනා සඳහා සටහන්</a></li>\n')
     
+    fp.write('</div\n')
     fp.write('</body>\n')
     fp.write('</html>\n')
     fp.close()
