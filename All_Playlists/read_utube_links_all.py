@@ -154,29 +154,32 @@ playlist_2 = 'Nivan_Maga_Udesa/nivan_maga_udesa_youtube_links.txt'
 playlist_title_2 = "නිවන් මග උදෙසා දර්ශන ඥාණය (A කණ්ඩායම)"
 prepare_html_block(2, playlist_2, playlist_title_2, text_filename, playlist_url_2, '')
 
-playlist_url_3 = 'https://www.youtube.com/playlist?list=PLqESXbJ82aIgmWdPzXFdJplUOPJgRXpZN'
-playlist_3 = 'Suthamaya/suthamaya.txt'
-playlist_title_3 = "සුතමයඤාණං කාණ්ඩය"
-prepare_html_block(3, playlist_3, playlist_title_3, text_filename, playlist_url_3, '')
+
 
 with open(text_filename, 'a', encoding="utf-8") as fp:
     fp.write('<br><a id="I_series">\n')
-    fp.write('<h2>Abhidhamma lesson Kalutara Bodhiya 9 වන දේශනා මාලාව</h2>\n')
+    fp.write('<h2>කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන 9වෙනි දේශනා මාලාව (I Series)</h2>\n')
+    fp.write('<h2>සෑම ඉරිදාවකම ප.ව. 2:00 සිට ප.ව. 4:00 දක්වා</h2>\n')
     fp.write('<h2>WhatsApp සම්බන්ධ වීමට සහ විමසීම්: 071 - 8896727</h3>\n')
     fp.close()
     
-playlist_url_4 = 'https://www.youtube.com/playlist?list=PLqESXbJ82aIjuYvXqOWBWMs-moFFukBbN'
-playlist_4 = 'All_Playlists/I_Series.txt'
-playlist_title_4 = "Abhidhamma lesson Kalutara Bodhiya I"
-prepare_html_block(4, playlist_4, playlist_title_4, text_filename, playlist_url_4, '')
+playlist_url_3 = 'https://www.youtube.com/playlist?list=PLqESXbJ82aIjuYvXqOWBWMs-moFFukBbN'
+playlist_3 = 'All_Playlists/I_Series.txt'
+playlist_title_3 = "Abhidhamma lesson Kalutara Bodhiya I"
+prepare_html_block(3, playlist_3, playlist_title_3, text_filename, playlist_url_3, '')
 
-playlist_5 = 'Abhidharma_Aruth/Abhidharma_Aruth_youtube_links.txt'
-playlist_title_5 = "Abhidharma Aruth"
-prepare_html_block(5, playlist_5, playlist_title_5, text_filename, '', 'EP')
+playlist_4 = 'Abhidharma_Aruth/Abhidharma_Aruth_youtube_links.txt'
+playlist_title_4 = "Abhidharma Aruth"
+prepare_html_block(4, playlist_4, playlist_title_4, text_filename, '', 'EP')
 
-playlist_6 = 'Abhidharma_Aruth/Abhidharma_Aruth_B_youtube_links.txt'
-playlist_title_6 = "Abhidharma Aruth - B"
-prepare_html_block(6, playlist_6, playlist_title_6, text_filename, '', '')
+playlist_5 = 'Abhidharma_Aruth/Abhidharma_Aruth_B_youtube_links.txt'
+playlist_title_5 = "Abhidharma Aruth - B"
+prepare_html_block(5, playlist_5, playlist_title_5, text_filename, '', '')
+
+playlist_url_6 = 'https://www.youtube.com/playlist?list=PLqESXbJ82aIgmWdPzXFdJplUOPJgRXpZN'
+playlist_6 = 'Suthamaya/suthamaya.txt'
+playlist_title_6 = "සුතමයඤාණං කාණ්ඩය"
+prepare_html_block(6, playlist_6, playlist_title_6, text_filename, playlist_url_6, '')
 
 playlist_7 = 'All_Playlists/H_Series.txt'
 playlist_title_7 = "Kalutara Bodhiya H Series"
