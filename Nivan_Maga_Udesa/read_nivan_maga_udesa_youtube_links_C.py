@@ -219,11 +219,20 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
     fp.write('</script>\n')
     
     ##### --- notes
+    
     fp.write('<script>\n')
     fp.write('\tconst select1 = document.querySelector(\'#video_list\');\n')
     fp.write('\tconst notes = document.querySelector(\'#notes\');\n')
-    lines = sections[n]
+    
+    try:
+        lines = sections[n]
+    except:
+        notes_present = False
+        lines = []
+    else:
+        notes_present = True    
 
+    print(n, ' **************************** ', '\n'  )
     
     fp.write('\t\t\tnotes.innerHTML = \'') 
     fp.write('<p>'+'දේශනාව සඳහා සටහන්'+'</p>')
@@ -248,7 +257,15 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
         # print(n,' ',option_n[n-1])
         
         fp.write('\t\t} else if (this.value === \'' + option_n[n-1] + '\'){\n')
-        lines = sections[n]
+        # lines = sections[n]
+        
+        try:
+            lines = sections[n]
+        except:
+            notes_present = False
+            lines = []
+        else:
+            notes_present = True  
         
         if len(lines) > 0:
             print(f"section has content {n}  {len(lines)}")
