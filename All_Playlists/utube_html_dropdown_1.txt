@@ -499,13 +499,14 @@
 	<option value="option3">2023-Oct-01 Abhidhamma lesson Kalutara Bodhiya I 003</option>
 	<option value="option4">2023-OCt-08 Abhidhamma lesson Kalutara Bodhiya I 004</option>
 	<option value="option5">2023-Oct-15 Abhidhamma lesson Kalutara Bodhiya I 005</option>
-	<option value="option6" selected>2023-Oct-22 Abhidhamma lesson Kalutara Bodhiya I 006</option>
+	<option value="option6">2023-Oct-22 Abhidhamma lesson Kalutara Bodhiya I 006</option>
+	<option value="option7" selected>2023-Oct-29 Abhidhamma lesson Kalutara Bodhiya I 007</option>
 </select>
 <div id="content3"></div>
 <script>
 	const select3 = document.querySelector('#video_list3');
 	const content3 = document.querySelector('#content3');
-			content3.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/j4iwRmRwNdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			content3.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/hIHX17Nf1NI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	select3.addEventListener('change', function() {
 		if (this.value === 'option1') {
 			content3.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/zwZOGfI7Zes" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
@@ -519,6 +520,8 @@
 			content3.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/Phw3jUaS40M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		} else if (this.value === 'option6'){
 			content3.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/j4iwRmRwNdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+		} else if (this.value === 'option7'){
+			content3.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/hIHX17Nf1NI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	}
 });
 </script>
