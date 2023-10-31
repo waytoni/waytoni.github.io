@@ -1,4 +1,4 @@
 # waytoni.github.io
 
-This website features Abhidhamma lessons at Kalutara Bodhiya Every Saturday 2.00 To 4.00
+This website features dhamma lessons by Ajantha Sampath guruthuma.
 ('A' Batch)
