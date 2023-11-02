@@ -1,0 +1,20 @@
+name: Run Python Script on Text File Update
+
+on:
+  push:
+    paths:
+      - 'Abhidharma_Aruth/Abhidharma_Aruth_B_youtube_links.txt' # Update with the actual path to your text file
+jobs:
+  run-python-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x # Set your desired Python version
+
+      - name: Run Python Script
+        run: Abhidharma_Aruth/read_Abhidharma_Aruth_youtube_links.py # Update with the actual path to your Python script
