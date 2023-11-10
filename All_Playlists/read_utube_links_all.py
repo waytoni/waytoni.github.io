@@ -154,8 +154,6 @@ playlist_2 = 'Nivan_Maga_Udesa/nivan_maga_udesa_youtube_links.txt'
 playlist_title_2 = "නිවන් මග උදෙසා දර්ශන ඥාණය (A කණ්ඩායම)"
 prepare_html_block(2, playlist_2, playlist_title_2, text_filename, playlist_url_2, '')
 
-
-
 with open(text_filename, 'a', encoding="utf-8") as fp:
     fp.write('<br><a id="I_series">\n')
     fp.write('<h2>කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන 9වෙනි දේශනා මාලාව (I Series)</h2>\n')

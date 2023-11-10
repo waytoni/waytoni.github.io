@@ -87,7 +87,6 @@ def prepare_html_dropdown_block_1(block_id, in_file, playlist_title, outfile, pl
         fp.write('\t\tif (this.value === \'option1\') {\n')
         fp.write('\t\t\tcontent' + str(block_id) +'.innerHTML = \'<p></p>' + p4[0] + '\';\n')
                 
-        #with open('utube_html_dropdown.txt', 'a', encoding="utf-8") as fp:
         for n in range(2, N+1):
             # print(n,' ',option_n[n-1])
             fp.write('\t\t} else if (this.value === \'' + option_n[n-1] + '\'){\n')
