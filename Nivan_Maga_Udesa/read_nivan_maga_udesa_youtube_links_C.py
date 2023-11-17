@@ -133,6 +133,8 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
     fp.write('<a href="../All_Playlists/සියුලු_දේශනා.html">සියලුම දේශනා </a>\n')
     fp.write('<a href="../Paramartha_Video/Paramartha_Video.html">පරමාර්ථ ලෝකය දේශනා </a>\n \
         <a href="../Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html">අනිච්ච, දුක්ඛ, අනත්ත දේශනා </a>\n')
+    fp.write('<a href="Kaluthara_Bodhiya_A_Series/Kaluthara_Bodhiya_A_series.html">තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා</a>\n \
+        <a href="Abhidharma_Aruth/index.html">අභිධර්ම අරුත් දේශනා</a>\n')
     fp.write('<a href="../Nivan_Maga_Udesa">නිවන් මග උදෙසා දේශනා</a>\n')
     fp.write('<a href="../Chithatha_Chithasika/Chiththa_Chithasika.html">චිත්ත සහ චෛතසික</a>\n')
     fp.write('<a href="javascript:void(0);" class="icon" onclick="navFunction()"> <i class="fa fa-bars"></i></a>\n')
