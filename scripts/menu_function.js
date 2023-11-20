@@ -6,3 +6,12 @@ function navFunction() {
         x.className = "topnav";
     }
 }
+
+function subnavFunction() {
+    var x = document.getElementById("Subnavbar");
+    if (x.className === "subnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "subnav";
+    }
+}
