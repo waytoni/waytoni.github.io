@@ -31,6 +31,7 @@ img::003_Page_4.png
 #13
 #14
 ඵෙණ පිණ්ඩූපම සූත්‍රය url::https://tipitaka.lk/sn-3-1-2-5-3
+ඵේණපිණ්ඩූපම සුත්තං url::https://tripitaka.online/sutta/3571
 #15
 #16
 #17

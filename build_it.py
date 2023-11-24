@@ -25,6 +25,7 @@ sys.path.append('E:/src/github/waytoni_io/waytoni_desktop/scripts_new')
 import waytoni_all_videos_new
 
 Read_Sat2pm_youtube_links
+read_Iseries
 # waytoni_all_videos
 waytoni_all_videos_new
 read_utube_links_all
