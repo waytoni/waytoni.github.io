@@ -34,6 +34,8 @@ img::003_Page_4.png
 ඵේණපිණ්ඩූපම සුත්තං url::https://tripitaka.online/sutta/3571
 #15
 #16
+ගවම්පති සූත්‍රය url::https://tipitaka.lk/sn-5-12-3-10
+අනුපුබ්බාභිසමයකථා url::https://tipitaka.lk/ap-kvu-2-9
 #17
 #18
 #19

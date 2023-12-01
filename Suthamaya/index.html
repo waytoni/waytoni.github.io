@@ -14,7 +14,6 @@
 
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="A_series.css">
 	<link rel="stylesheet" type="text/css" href="../css/nav_menu.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="../scripts/menu_function.js"></script>
@@ -26,25 +25,30 @@
 <a href="https://waytoni.github.io/" class="active">Home </a>
 <a href="../All_Playlists/සියුලු_දේශනා.html">සියලුම දේශනා </a>
 <a href="../Paramartha_Video/Paramartha_Video.html">පරමාර්ථ ලෝකය දේශනා </a>
-         <a href="../Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html">අනිච්ච, දුක්ඛ, අනත්ත දේශනා </a>
-<a href="../Nivan_Maga_Udesa/index.html">නිවන් මග උදෙසා දේශනා</a>
+             <a href="../Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html">අනිච්ච, දුක්ඛ, අනත්ත දේශනා </a>
+<a href="../Saturday_Abhidhamma_Lesson/index.html">තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා</a>
+             <a href="../Abhidharma_Aruth/index.html">අභිධර්ම අරුත් දේශනා</a>
+<a href="../Nivan_Maga_Udesa">නිවන් මග උදෙසා දේශනා</a>
 <a href="../Chithatha_Chithasika/Chiththa_Chithasika.html">චිත්ත සහ චෛතසික</a>
 <a href="javascript:void(0);" class="icon" onclick="navFunction()"> <i class="fa fa-bars"></i></a>
 </div>
 <h1>සුතමයඤාණං - දේශනා</h1>
+<h2>කල්‍යාණ මිත්‍ර අජන්ත සම්පත් ගුරුතුමන් ගේ දේශනා මාලාව</h2><p></p>
 <p></p>
+<a href="https://www.youtube.com/playlist?list=PLqESXbJ82aIjuYvXqOWBWMs-moFFukBbN">Watch full playlist in YouTube</a>
 <p></p>
 <p>Select a video from the dropdown menu</p>    <p></p>
 <select id="video_list">
-	<option value="option1">2023-Jul-23 සුතමයඤාණං - දේශනා අංක 001</option>
-	<option value="option2">2023-Jul-30 සුතමයඤාණං - දේශනා අංක 002</option>
-	<option value="option3">2023-Aug-05 සුතමයඤාණං - දේශනා අංක 003</option>
-	<option value="option4">2023-Aug-12 සුතමයඤාණං - දේශනා අංක 004</option>
-	<option value="option5">2023-Aug-19 සුතමයඤාණං - දේශනා අංක 005</option>
-	<option value="option6">2023-Sep-09 සුතමයඤාණං - දේශනා අංක 006</option>
-	<option value="option7" selected>2023-Sep-16 සුතමයඤාණං - දේශනා අංක 007</option>
+	<option value="option1">2023-Jul-23 සුතමයඤාණං - දේශනා 001</option>
+	<option value="option2">2023-Jul-30 සුතමයඤාණං - දේශනා 002</option>
+	<option value="option3">2023-Aug-05 සුතමයඤාණං - දේශනා 003</option>
+	<option value="option4">2023-Aug-12 සුතමයඤාණං - දේශනා 004</option>
+	<option value="option5">2023-Aug-19 සුතමයඤාණං - දේශනා 005</option>
+	<option value="option6">2023-Sep-09 සුතමයඤාණං - දේශනා 006</option>
+	<option value="option7" selected>2023-Sep-16 සුතමයඤාණං - දේශනා 007</option>
 </select>
 <div id="content"></div>
+<div id="notes"></div>
 <script>
 	const select = document.querySelector('#video_list');
 	const content = document.querySelector('#content');
@@ -67,6 +71,26 @@
 	}
 });
 </script>
+<script>
+	const select1 = document.querySelector('#video_list');
+	const notes = document.querySelector('#notes');
+			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
+	select.addEventListener('change', function() {
+		if (this.value === 'option1') {
+			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
+		} else if (this.value === 'option2'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option3'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option4'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option5'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option6'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option7'){
+			notes.innerHTML = '';
+	}
+});
+</script>
 <br>
-</body>
-</html>

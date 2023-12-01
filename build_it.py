@@ -11,7 +11,7 @@
 # Both files have the following format
 # <index> <youtube link (URL)> <date>
 
-from Kaluthara_Bodhiya_A_Series import Read_Sat2pm_youtube_links
+# from Kaluthara_Bodhiya_A_Series import Read_Sat2pm_youtube_links
 from Saturday_Abhidhamma_Lesson import read_saturday_abhidhamma_lesson_youtube_links
 # from All_Playlists import waytoni_all_videos
 
@@ -25,7 +25,7 @@ sys.path.append('E:/src/github/waytoni_io/waytoni_desktop/scripts_new')
 # sys.path.append('c:/users/30010651/github/scripts_new')
 import waytoni_all_videos_new
 
-Read_Sat2pm_youtube_links
+# Read_Sat2pm_youtube_links
 read_saturday_abhidhamma_lesson_youtube_links
 read_Iseries
 # waytoni_all_videos
