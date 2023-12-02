@@ -3,7 +3,69 @@ import shutil
 import os
 import sys
 
-sys.path.append('E:\src\github\waytoni_io\waytoni_desktop\waytoni.github.io\scripts')
+sys.path.append('scripts')
+
+from helpers import ReadSections
+from helpers import *
+
+
+notes_file_EP = 'Abhidharma_Aruth/AA_EP_notes.txt'  
+notes_file_B = 'Abhidharma_Aruth/AA_B_notes.txt'  
+utube_links_EP = 'Abhidharma_Aruth/Abhidharma_Aruth_youtube_links.txt'
+utube_links_B = 'Abhidharma_Aruth/Abhidharma_Aruth_B_youtube_links.txt'
+html_file = 'Abhidharma_Aruth/index2.html'
+playlist_url_EP = ""
+playlist_url_B = ""
+
+series_title = 'අභිධර්ම අරුත් - දේශනා'
+
+sections_EP = ReadSections(notes_file_EP)
+sections_B = ReadSections(notes_file_B)
+
+PrepareHead(html_file, series_title)
+
+with open(html_file, 'a', encoding='utf-8') as fp:
+    fp.write('<h1>අභිධර්ම අරුත් - දේශනා</h1>\n')
+    fp.write('<p></p>\n')
+    fp.write('<p>උතුම් සූත්‍ර අභිධර්ම පිටකයන් ට අදාළව, ප්‍රායෝගිකව සදහම් මග ක්‍රමානුකූලව පියවරෙන් පියවර, ලෞකික ජීවිතියෙන් උත්තරීතර නිර්වාණය කරා සරලව විග්‍රහ කෙරෙන උතුම් සදහම් සාකච්ඡා.</p>\n')
+    fp.write('<p>බ්‍රහස්පතින්දා ප.ව. 2:00 සිට 4:00 දක්වා</p>\n')
+    fp.write('<p>විමසීම්: 0777 047174, 0714 480752</p>\n')
+    fp.write('')
+    fp.close()  
+    
+block_id = '1'
+series_title_EP = "Abhidharma Aruth"
+idx_prefix = 'EP'
+
+with open(html_file, 'a', encoding="utf-8") as fp:  
+    fp.write('<h2>' + str(block_id) + '. ' + series_title_EP + '</h2>\n\n')
+    fp.close()
+
+
+HtmlDropdownBlock(1, utube_links_EP, series_title_EP, html_file, playlist_url_EP, idx_prefix, sections_EP)
+
+block_id = '2'
+idx_prefix = ''
+series_title_B = "Abhidharma Aruth - B"
+
+
+with open(html_file, 'a', encoding="utf-8") as fp:  
+    fp.write('<h2>' + str(block_id) + '. ' + series_title_B + '</h2>\n\n')
+    fp.close()
+    
+HtmlDropdownBlock(2, utube_links_B, series_title_B, html_file, playlist_url_B, idx_prefix, sections_B)
+
+
+# with open(html_file, 'a', encoding="utf-8") as fp:  
+#     fp.write('</body>\n')
+#     fp.write('</html>\n')
+#     fp.close()
+
+PrepareTail(html_file)
+
+#####################################################
+
+
 from prepare_html_dropdown_block import prepare_html_dropdown_block_1
 
 text_filename = 'Abhidharma_Aruth/Abhidarma_Aruth_working.txt'
@@ -21,7 +83,7 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
         
     fp.write('\n')    
     fp.write('\t<meta name="viewport" content="width=device-width, initial-scale=1.0">\n')
-    fp.write('\t<link rel="stylesheet" type="text/css" href="A_series.css">\n')
+    # fp.write('\t<link rel="stylesheet" type="text/css" href="A_series.css">\n')
     fp.write('\t<link rel="stylesheet" type="text/css" href="../css/nav_menu.css">\n')
     fp.write('\t<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">\n')
     fp.write('\t<script src="../scripts/menu_function.js"></script>\n')

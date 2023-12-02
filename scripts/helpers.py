@@ -278,5 +278,13 @@ def PrepareHead(text_filename, series_title):
 ########### PrepareHead End ###################################
 
 
-
+######## PrepareTail ##########
+def PrepareTail(text_filename): 
+    with open(text_filename, 'a', encoding="utf-8") as fp:
+        fp.write('</body>\n')
+        fp.write('</html>\n')
+        fp.close()
+    return None
+########### PrepareTail End ###################################
+    
 ##############################################################################
