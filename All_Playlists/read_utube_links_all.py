@@ -175,14 +175,19 @@ playlist_5 = 'Abhidharma_Aruth/Abhidharma_Aruth_B_youtube_links.txt'
 playlist_title_5 = "Abhidharma Aruth - B"
 prepare_html_block(5, playlist_5, playlist_title_5, text_filename, '', '')
 
-playlist_url_6 = 'https://www.youtube.com/playlist?list=PLqESXbJ82aIgmWdPzXFdJplUOPJgRXpZN'
-playlist_6 = 'Suthamaya/suthamaya.txt'
-playlist_title_6 = "සුතමයඤාණං කාණ්ඩය"
+playlist_url_6 = ''
+playlist_6 = 'Suthamaya/suthamaya_eththapana.txt'
+playlist_title_6 = "සුතමයඤාණං - ඉත්තෑපාන අක්කර"
 prepare_html_block(6, playlist_6, playlist_title_6, text_filename, playlist_url_6, '')
 
-playlist_7 = 'All_Playlists/H_Series.txt'
-playlist_title_7 = "Kalutara Bodhiya H Series"
-prepare_html_block(7, playlist_7, playlist_title_7, text_filename, '', '')
+playlist_url_7 = 'https://www.youtube.com/playlist?list=PLqESXbJ82aIgmWdPzXFdJplUOPJgRXpZN'
+playlist_7 = 'Suthamaya/suthamaya_mathugama.txt'
+playlist_title_7 = "සුතමයඤාණං - Sri Sudharshanarama Maha Viharaya Mathugama"
+prepare_html_block(7, playlist_7, playlist_title_7, text_filename, playlist_url_7, '')
+
+playlist_8 = 'All_Playlists/H_Series.txt'
+playlist_title_8 = "Kalutara Bodhiya H Series"
+prepare_html_block(8, playlist_8, playlist_title_8, text_filename, '', '')
 
 ######## tail #########
 with open(text_filename, 'a', encoding="utf-8") as fp:

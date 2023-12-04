@@ -32,42 +32,80 @@
 <a href="../Chithatha_Chithasika/Chiththa_Chithasika.html">චිත්ත සහ චෛතසික</a>
 <a href="javascript:void(0);" class="icon" onclick="navFunction()"> <i class="fa fa-bars"></i></a>
 </div>
-<h1>සුතමයඤාණං - දේශනා</h1>
-<h2>කල්‍යාණ මිත්‍ර අජන්ත සම්පත් ගුරුතුමන් ගේ දේශනා මාලාව</h2><p></p>
+<p></p>
+<h2>1. සුතමයඤාණං - ඉත්තෑපාන අක්කර දේශනා</h2>
+
 <p></p>
 <a href="https://www.youtube.com/playlist?list=PLqESXbJ82aIjuYvXqOWBWMs-moFFukBbN">Watch full playlist in YouTube</a>
 <p></p>
 <p>Select a video from the dropdown menu</p>    <p></p>
-<select id="video_list">
-	<option value="option1">2023-Jul-23 සුතමයඤාණං - දේශනා 001</option>
-	<option value="option2">2023-Jul-30 සුතමයඤාණං - දේශනා 002</option>
-	<option value="option3">2023-Aug-05 සුතමයඤාණං - දේශනා 003</option>
-	<option value="option4">2023-Aug-12 සුතමයඤාණං - දේශනා 004</option>
-	<option value="option5">2023-Aug-19 සුතමයඤාණං - දේශනා 005</option>
-	<option value="option6">2023-Sep-09 සුතමයඤාණං - දේශනා 006</option>
-	<option value="option7" selected>2023-Sep-16 සුතමයඤාණං - දේශනා 007</option>
+<select id="video_list1">
+	<option value="option1">2023-Oct-28 සුතමයඤාණං - ඉත්තෑපාන අක්කර දේශනා 001</option>
+	<option value="option2" selected>2023-Nov-26 සුතමයඤාණං - ඉත්තෑපාන අක්කර දේශනා 002</option>
 </select>
-<div id="content"></div>
-<div id="notes"></div>
+<div id="content1"></div>
+<div id="notes1"></div>
 <script>
-	const select = document.querySelector('#video_list');
-	const content = document.querySelector('#content');
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/yA0aDn6gibg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+	const select1 = document.querySelector('#video_list1');
+	const content1 = document.querySelector('#content1');
+			content1.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/oIi-yEZp23o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+	select1.addEventListener('change', function() {
+		if (this.value === 'option1') {
+			content1.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/ULaVxmgSn_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+		} else if (this.value === 'option2'){
+			content1.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/oIi-yEZp23o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+	}
+});
+</script>
+<script>
+	const select1 = document.querySelector('#video_list');
+	const notes = document.querySelector('#notes');
+			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
 	select.addEventListener('change', function() {
 		if (this.value === 'option1') {
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/OJIbLEWBdco" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
 		} else if (this.value === 'option2'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/WioQ7484P5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			notes.innerHTML = '';
+	}
+});
+</script>
+<br>
+<h2>2. සුතමයඤාණං - Sri Sudharshanarama Maha Viharaya Mathugama</h2>
+
+<p></p>
+<a href="https://www.youtube.com/playlist?list=PLqESXbJ82aIjuYvXqOWBWMs-moFFukBbN">Watch full playlist in YouTube</a>
+<p></p>
+<p>Select a video from the dropdown menu</p>    <p></p>
+<select id="video_list2">
+	<option value="option1">2023-Jul-23 සුතමයඤාණං - Sri Sudharshanarama Maha Viharaya Mathugama 001</option>
+	<option value="option2">2023-Jul-30 සුතමයඤාණං - Sri Sudharshanarama Maha Viharaya Mathugama 002</option>
+	<option value="option3">2023-Aug-05 සුතමයඤාණං - Sri Sudharshanarama Maha Viharaya Mathugama 003</option>
+	<option value="option4">2023-Aug-12 සුතමයඤාණං - Sri Sudharshanarama Maha Viharaya Mathugama 004</option>
+	<option value="option5">2023-Aug-19 සුතමයඤාණං - Sri Sudharshanarama Maha Viharaya Mathugama 005</option>
+	<option value="option6">2023-Sep-09 සුතමයඤාණං - Sri Sudharshanarama Maha Viharaya Mathugama 006</option>
+	<option value="option7" selected>2023-Sep-16 සුතමයඤාණං - Sri Sudharshanarama Maha Viharaya Mathugama 007</option>
+</select>
+<div id="content2"></div>
+<div id="notes2"></div>
+<script>
+	const select2 = document.querySelector('#video_list2');
+	const content2 = document.querySelector('#content2');
+			content2.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/yA0aDn6gibg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+	select2.addEventListener('change', function() {
+		if (this.value === 'option1') {
+			content2.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/OJIbLEWBdco" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+		} else if (this.value === 'option2'){
+			content2.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/WioQ7484P5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		} else if (this.value === 'option3'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/Nq3hflOIR2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			content2.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/Nq3hflOIR2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		} else if (this.value === 'option4'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/H1UOvDltRWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			content2.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/H1UOvDltRWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		} else if (this.value === 'option5'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/3Rm7QGRKUeQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			content2.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/3Rm7QGRKUeQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		} else if (this.value === 'option6'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/arnut3YnkQE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			content2.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/arnut3YnkQE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		} else if (this.value === 'option7'){
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/yA0aDn6gibg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			content2.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/yA0aDn6gibg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	}
 });
 </script>
@@ -94,3 +132,5 @@
 });
 </script>
 <br>
+</body>
+</html>
