@@ -25,18 +25,20 @@
 <a href="https://waytoni.github.io/" class="active">Home </a>
 <a href="../All_Playlists/සියුලු_දේශනා.html">සියලුම දේශනා </a>
 <a href="../Paramartha_Video/Paramartha_Video.html">පරමාර්ථ ලෝකය දේශනා </a>
-         <a href="../Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html">අනිච්ච, දුක්ඛ, අනත්ත දේශනා </a>
-<a href="../Saturday_Abhidhamma_Lesson/index.html">තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා</a>
-         <a href="../Abhidharma_Aruth/index.html">අභිධර්ම අරුත් දේශනා</a>
-<a href="../Nivan_Maga_Udesa/index.html">නිවන් මග උදෙසා දේශනා</a>
+<a href="../Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html">අනිච්ච, දුක්ඛ, අනත්ත දේශනා </a>
+<a href="../Saturday_Abhidhamma_Lesson">තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා</a>
+<a href="../Abhidharma_Aruth">අභිධර්ම අරුත් දේශනා</a>
+<a href="../Nivan_Maga_Udesa">නිවන් මග උදෙසා දේශනා</a>
 <a href="../Chithatha_Chithasika/Chiththa_Chithasika.html">චිත්ත සහ චෛතසික</a>
 <a href="javascript:void(0);" class="icon" onclick="navFunction()"> <i class="fa fa-bars"></i></a>
 </div>
 <h1>අභිධර්ම අරුත් - දේශනා</h1>
+<p></p>
 <p>උතුම් සූත්‍ර අභිධර්ම පිටකයන් ට අදාළව, ප්‍රායෝගිකව සදහම් මග ක්‍රමානුකූලව පියවරෙන් පියවර, ලෞකික ජීවිතියෙන් උත්තරීතර නිර්වාණය කරා සරලව විග්‍රහ කෙරෙන උතුම් සදහම් සාකච්ඡා.</p>
 <p>බ්‍රහස්පතින්දා ප.ව. 2:00 සිට 4:00 දක්වා</p>
 <p>විමසීම්: 0777 047174, 0714 480752</p>
 <h2>1. Abhidharma Aruth</h2>
+
 <p></p>
 <p></p>
 <p>Select a video from the dropdown menu</p>    <p></p>
@@ -81,13 +83,15 @@
 	<option value="option38">2023-Nov-09 Abhidharma Aruth EP044</option>
 	<option value="option39">2023-Nov-16 Abhidharma Aruth EP045</option>
 	<option value="option40">2023-Nov-23 Abhidharma Aruth EP046</option>
-	<option value="option41" selected>2023-Nov-30 Abhidharma Aruth EP047</option>
+	<option value="option41">2023-Nov-30 Abhidharma Aruth EP047</option>
+	<option value="option42" selected>2023-Dec-07 Abhidharma Aruth EP048</option>
 </select>
 <div id="content1"></div>
+<div id="notes1"></div>
 <script>
 	const select1 = document.querySelector('#video_list1');
 	const content1 = document.querySelector('#content1');
-			content1.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/kNoRQRSMUns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			content1.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/8ahYcTUKUq4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	select1.addEventListener('change', function() {
 		if (this.value === 'option1') {
 			content1.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/hwe5O7OP1zU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
@@ -171,11 +175,106 @@
 			content1.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/V23MLbqGKe0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		} else if (this.value === 'option41'){
 			content1.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/kNoRQRSMUns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+		} else if (this.value === 'option42'){
+			content1.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/8ahYcTUKUq4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+	}
+});
+</script>
+<script>
+	const select1 = document.querySelector('#video_list');
+	const notes = document.querySelector('#notes');
+			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
+	select.addEventListener('change', function() {
+		if (this.value === 'option1') {
+			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
+		} else if (this.value === 'option2'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option3'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option4'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option5'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option6'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option7'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option8'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option9'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option10'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option11'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option12'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option13'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option14'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option15'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option16'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option17'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option18'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option19'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option20'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option21'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option22'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option23'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option24'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option25'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option26'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option27'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option28'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option29'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option30'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option31'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option32'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option33'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option34'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option35'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option36'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option37'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option38'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option39'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option40'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option41'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option42'){
+			notes.innerHTML = '';
 	}
 });
 </script>
 <br>
 <h2>2. Abhidharma Aruth - B</h2>
+
 <p></p>
 <p></p>
 <p>Select a video from the dropdown menu</p>    <p></p>
@@ -190,13 +289,15 @@
 	<option value="option8">2023-Nov-09 Abhidharma Aruth - B 008</option>
 	<option value="option9">2023-Nov-16 Abhidharma Aruth - B 009</option>
 	<option value="option10">2023-Nov-23 Abhidharma Aruth - B 010</option>
-	<option value="option11" selected>2023-Nov-30 Abhidharma Aruth - B 011</option>
+	<option value="option11">2023-Nov-30 Abhidharma Aruth - B 011</option>
+	<option value="option12" selected>2023-Dec-07 Abhidharma Aruth - B 012</option>
 </select>
 <div id="content2"></div>
+<div id="notes2"></div>
 <script>
 	const select2 = document.querySelector('#video_list2');
 	const content2 = document.querySelector('#content2');
-			content2.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/uVHEmzJHwJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			content2.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/NWSiW-XlDAo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	select2.addEventListener('change', function() {
 		if (this.value === 'option1') {
 			content2.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/Ae6uZUbDfZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
@@ -220,6 +321,40 @@
 			content2.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/_mdukf9m-vg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		} else if (this.value === 'option11'){
 			content2.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/uVHEmzJHwJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+		} else if (this.value === 'option12'){
+			content2.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/NWSiW-XlDAo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+	}
+});
+</script>
+<script>
+	const select1 = document.querySelector('#video_list');
+	const notes = document.querySelector('#notes');
+			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
+	select.addEventListener('change', function() {
+		if (this.value === 'option1') {
+			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
+		} else if (this.value === 'option2'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option3'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option4'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option5'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option6'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option7'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option8'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option9'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option10'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option11'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option12'){
+			notes.innerHTML = '';
 	}
 });
 </script>

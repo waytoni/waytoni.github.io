@@ -36,6 +36,7 @@ img::003_Page_4.png
 #16
 ගවම්පති සූත්‍රය url::https://tipitaka.lk/sn-5-12-3-10
 අනුපුබ්බාභිසමයකථා url::https://tipitaka.lk/ap-kvu-2-9
+රූපක‍්ඛන්‍ධො url::https://tipitaka.lk/ap-vbh-1-2
 #17
 #18
 #19
