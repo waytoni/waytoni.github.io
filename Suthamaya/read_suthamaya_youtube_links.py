@@ -48,12 +48,12 @@ with open(html_file, 'a', encoding="utf-8") as fp:
 
 HtmlDropdownBlock(1, utube_links_eththapana, series_title_eththapana, html_file, playlist_url, idx_prefix, sections_eththapana)
 
-block_id = '2'
-with open(html_file, 'a', encoding="utf-8") as fp:  
-    fp.write('<h2>' + str(block_id) + '. ' + series_title_mathugama + '</h2>\n\n')
-    fp.close()
+# block_id = '2'
+# with open(html_file, 'a', encoding="utf-8") as fp:  
+#     fp.write('<h2>' + str(block_id) + '. ' + series_title_mathugama + '</h2>\n\n')
+#     fp.close()
     
-HtmlDropdownBlock(2, utube_links_mathugama, series_title_mathugama, html_file, playlist_url, idx_prefix, sections_mathugama)
+# HtmlDropdownBlock(2, utube_links_mathugama, series_title_mathugama, html_file, playlist_url, idx_prefix, sections_mathugama)
 
 PrepareTail(html_file)
 
