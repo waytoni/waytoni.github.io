@@ -6,6 +6,8 @@ def prepare_html_dropdown_block_1(block_id, in_file, playlist_title, outfile, pl
     with open(in_file, 'r', encoding='utf-8') as fp:
         utubelink_lines = [line.strip().split() for line in fp.readlines()]
 
+    print(len(utubelink_lines))
+
     idx = [row[0] for row in utubelink_lines]
     urls = [row[1] for row in utubelink_lines]
     dates = [row[2] for row in utubelink_lines]
@@ -33,7 +35,7 @@ def prepare_html_dropdown_block_1(block_id, in_file, playlist_title, outfile, pl
     
         for n in range(1, N+1):
             
-            # print(n)
+            print(n)
             
             url_val = urls[n-1]
             date_val = dates[n-1]

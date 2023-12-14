@@ -11,6 +11,8 @@ def prepare_html_block(block_id, in_file, playlist_title, outfile, playlist_url,
     dates = [row[2] for row in utubelink_lines]
     N = len(idx)
 
+    # print(N)
+    
     option_n = []
     p4 = []
     option_text = []
@@ -32,16 +34,24 @@ def prepare_html_block(block_id, in_file, playlist_title, outfile, playlist_url,
         fp.write('<select id="video_list' + str(block_id) + '">\n')
     
         for n in range(1, N+1):
+            # print(n)
             url_val = urls[n-1]
             date_val = dates[n-1]
             url_video_val = ''
             #idx_val = idx[n-1]
+            noVideo = False
               
             idx_val = idx_prefix + str(idx[n-1]).zfill(3)
 
             if len(url_val) > 0:
                 url_val_split = url_val.split('=')
-                url_video_val = url_val_split[1]
+                # print(len(url_val_split))
+                
+                if len(url_val_split) > 1:
+                    url_video_val = url_val_split[1]
+                else:
+                    url_video_val = url_val
+                    noVideo = True
 
             p0_short = f"{date_val} {playlist_title} {idx_val}"
 
@@ -49,14 +59,16 @@ def prepare_html_block(block_id, in_file, playlist_title, outfile, playlist_url,
             # print(option_text[n-1])
             # print(' ' , idx[n-1] ,' ' , dates[n-1] ,' p0_short= ' , p0_short)
             
-            if len(url_video_val) > 1:
+            if len(url_video_val) > 1 and noVideo == False:
                 p1 = f'<iframe width="560" height="315" src="https://www.youtube.com/embed/{url_video_val}"'
                 p2 = ' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"'
                 p3 = ' allowfullscreen></iframe>'
                 p4_s = p1 + p2 + p3
             else:
-                p4_s = ' '
+                p4_s = url_video_val
 
+            # print(p4_s)
+            
             p4.append(p4_s)
             option_s = f'option{n}'
             option_n.append(option_s)
@@ -189,10 +201,22 @@ playlist_8 = 'All_Playlists/H_Series.txt'
 playlist_title_8 = "Kalutara Bodhiya H Series"
 prepare_html_block(8, playlist_8, playlist_title_8, text_filename, '', '')
 
+playlist_9 = 'All_Playlists/G_Series.txt'
+playlist_title_9 = "Kalutara Bodhiya G Series"
+prepare_html_block(9, playlist_9, playlist_title_9, text_filename, '', '')
+
+playlist_10 = 'All_Playlists/F_Series.txt'
+playlist_title_10 = "Kalutara Bodhiya F Series"
+prepare_html_block(10, playlist_10, playlist_title_10, text_filename, '', '')
+
+playlist_11 = 'All_Playlists/ParamarthaLokayaKalutharaBodhiya.txt'
+playlist_title_11 = "Paramartha Lokaya Kalutara Bodhiya"
+prepare_html_block(11, playlist_11, playlist_title_11, text_filename, '', '')
+
 ######## tail #########
 with open(text_filename, 'a', encoding="utf-8") as fp:
     fp.write('<br>\n')
-    fp.write('<h2>8. <a href="A_G_Batches.html">මුල් අභිධම්ම දේශනා කාණ්ඩ A, B, C, D, E, F, සහ G</a>\n</h2>')
+    fp.write('<h2>12. <a href="A_E_Batches.html">මුල් අභිධම්ම දේශනා කාණ්ඩ A, B, C, D, සහ E</a>\n</h2>')
     fp.write('<h5>&emsp; F කාණ්ඩය අසම්පූර්ණයි</h5>\n')
     fp.write('<br>\n')
     fp.write('<li><a href="../documents/file_list.html">සියලු අභිධම්ම දේශනා සඳහා සටහන්</a></li>\n')
