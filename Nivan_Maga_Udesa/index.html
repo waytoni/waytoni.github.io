@@ -58,14 +58,15 @@
 	<option value="option14">2023-Nov-17 නිවන් මග උදෙසා දර්ශන ඥාණය - දේශනා A014</option>
 	<option value="option15">2023-Nov-24 නිවන් මග උදෙසා දර්ශන ඥාණය - දේශනා A015</option>
 	<option value="option16">2023-Dec-01 නිවන් මග උදෙසා දර්ශන ඥාණය - දේශනා A016</option>
-	<option value="option17" selected>2023-Dec-08 නිවන් මග උදෙසා දර්ශන ඥාණය - දේශනා A017</option>
+	<option value="option17">2023-Dec-08 නිවන් මග උදෙසා දර්ශන ඥාණය - දේශනා A017</option>
+	<option value="option18" selected>2023-Dec-15 නිවන් මග උදෙසා දර්ශන ඥාණය - දේශනා A018</option>
 </select>
 <div id="content"></div>
 <div id="notes"></div>
 <script>
 	const select = document.querySelector('#video_list');
 	const content = document.querySelector('#content');
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/Fl6TkTlxohw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/BTvttUoJj4c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	select.addEventListener('change', function() {
 		if (this.value === 'option1') {
 			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/v7zmwZ8P8BU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
@@ -101,6 +102,8 @@
 			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/EGBAAwfYKEY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		} else if (this.value === 'option17'){
 			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/Fl6TkTlxohw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+		} else if (this.value === 'option18'){
+			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/BTvttUoJj4c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	}
 });
 </script>
@@ -166,6 +169,8 @@
 			notes.innerHTML +='<p>රූපක‍්ඛන්‍ධො <a href="https://tipitaka.lk/ap-vbh-1-2">https://tipitaka.lk/ap-vbh-1-2</a></p>';
 
 		} else if (this.value === 'option17'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option18'){
 			notes.innerHTML = '';
 	}
 });

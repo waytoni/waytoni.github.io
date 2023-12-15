@@ -209,18 +209,26 @@ playlist_10 = 'All_Playlists/F_Series.txt'
 playlist_title_10 = "Kalutara Bodhiya F Series"
 prepare_html_block(10, playlist_10, playlist_title_10, text_filename, '', '')
 
-playlist_11 = 'All_Playlists/ParamarthaLokayaKalutharaBodhiya.txt'
-playlist_title_11 = "Paramartha Lokaya Kalutara Bodhiya"
+playlist_11 = 'All_Playlists/E_Series.txt'
+playlist_title_11 = "Kalutara Bodhiya E Series"
 prepare_html_block(11, playlist_11, playlist_title_11, text_filename, '', '')
+
+with open(text_filename, 'a', encoding="utf-8") as fp:
+    fp.write('<br>\n')
+    fp.write('<h2>12. <a href="B_C_D_Batches.html">මුල් අභිධම්ම දේශනා කාණ්ඩ  B, C, සහ D</a>\n</h2>')
+    fp.write('<br><a id="A_series">\n')
+    fp.write('<h2>කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වුන මුල්ම දේශනා මාලාව (A Series)</h2>\n')
+    fp.close()
+    
+playlist_12 = 'All_Playlists/ParamarthaLokayaKalutharaBodhiya.txt'
+playlist_title_12 = "Paramartha Lokaya Kalutara Bodhiya A"
+prepare_html_block(13, playlist_12, playlist_title_12, text_filename, '', '')
 
 ######## tail #########
 with open(text_filename, 'a', encoding="utf-8") as fp:
-    fp.write('<br>\n')
-    fp.write('<h2>12. <a href="A_E_Batches.html">මුල් අභිධම්ම දේශනා කාණ්ඩ A, B, C, D, සහ E</a>\n</h2>')
-    fp.write('<h5>&emsp; F කාණ්ඩය අසම්පූර්ණයි</h5>\n')
+#    fp.write('<h5>&emsp; F කාණ්ඩය අසම්පූර්ණයි</h5>\n')
     fp.write('<br>\n')
     fp.write('<li><a href="../documents/file_list.html">සියලු අභිධම්ම දේශනා සඳහා සටහන්</a></li>\n')
-    fp.write('<br>\n')
     fp.write('<br>\n')
 
     fp.write('<h3><a href="all_videos.html">සියලුම දේශනා - @WayToNibbana YouTube Channel</a></h3>\n')
