@@ -173,14 +173,15 @@
 	<option value="option128">2023-Nov-04 තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය - දේශනා A128</option>
 	<option value="option129">2023-Nov-11 තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය - දේශනා A129</option>
 	<option value="option130">2023-Nov-25 තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය - දේශනා A130</option>
-	<option value="option131" selected>2023-Dec-02 තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය - දේශනා A131</option>
+	<option value="option131">2023-Dec-02 තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය - දේශනා A131</option>
+	<option value="option132" selected>2023-Dec-16 තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය - දේශනා A132</option>
 </select>
 <div id="content"></div>
 <div id="notes"></div>
 <script>
 	const select = document.querySelector('#video_list');
 	const content = document.querySelector('#content');
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/rWPCDSO-0YQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/BUNaejI6kpY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	select.addEventListener('change', function() {
 		if (this.value === 'option1') {
 			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/8at_2QlF0-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
@@ -444,13 +445,15 @@
 			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/QDWV_26fMsk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		} else if (this.value === 'option131'){
 			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/rWPCDSO-0YQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+		} else if (this.value === 'option132'){
+			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/BUNaejI6kpY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	}
 });
 </script>
 <script>
 	const select1 = document.querySelector('#video_list');
 	const notes = document.querySelector('#notes');
-			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p><p>ගවම්පති සූත්‍රය <a href="https://tipitaka.lk/sn-5-12-3-10">https://tipitaka.lk/sn-5-12-3-10</a></p><p>ඛජ්ජනීය සුත්තං <a href="https://tripitaka.online/sutta/3413">https://tripitaka.online/sutta/3413</a></p><p>රූපක‍්ඛන්‍ධො <a href="https://tipitaka.lk/ap-vbh-1-2">https://tipitaka.lk/ap-vbh-1-2</a></p>';
+			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
 	select.addEventListener('change', function() {
 		if (this.value === 'option1') {
 			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
@@ -728,6 +731,8 @@
 			notes.innerHTML +='<p>ඛජ්ජනීය සුත්තං <a href="https://tripitaka.online/sutta/3413">https://tripitaka.online/sutta/3413</a></p>';
 			notes.innerHTML +='<p>රූපක‍්ඛන්‍ධො <a href="https://tipitaka.lk/ap-vbh-1-2">https://tipitaka.lk/ap-vbh-1-2</a></p>';
 
+		} else if (this.value === 'option132'){
+			notes.innerHTML = '';
 	}
 });
 </script>
