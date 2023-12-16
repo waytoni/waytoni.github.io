@@ -15,5 +15,7 @@
 ගවම්පති සූත්‍රය  url::https://tipitaka.lk/sn-5-12-3-10
 ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
 රූපක‍්ඛන්‍ධො  url::https://tipitaka.lk/ap-vbh-1-2
+#132
+ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
 #1000
 end

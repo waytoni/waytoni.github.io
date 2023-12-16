@@ -13,12 +13,12 @@ keyword_dict = {
     "URL": "<a href=\"{}\">{}</a>"
 }
 
-# Define a regular expression pattern to match any of the keywords followed by ::
+# Pattern to match any of the keywords 
 pattern = r"(pdf|PDF|img|IMG|url|URL)::"
 
 
 def ReadSections(filename):
-    sections = {}  # Dictionary to store sections
+    sections = {}  
 
     with open(filename, 'r', encoding="utf-8") as file:
         current_section = None
@@ -215,7 +215,7 @@ def HtmlDropdownBlock(block_id, in_file, playlist_title, outfile, playlist_url, 
                 notes_present = True  
             
             if len(lines) > 0:
-                print(f"section has content {n}  {len(lines)}")
+                # print(f"section has content {n}  {len(lines)}")
             
                 fp.write('\t\t\tnotes.innerHTML = \'') 
                 fp.write('<p>'+'දේශනාව සඳහා සටහන්'+'</p>\';\n')

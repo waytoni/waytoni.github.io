@@ -35,7 +35,7 @@ with open(html_file, 'a', encoding='utf-8') as fp:
     fp.write('<p>මානවයාගේ වැරදි දෘෂ්ඨීන්ගෙන් මුදවා ගැනීමේ අදහසින්, තරුණ දූදරුවන්ට ගැලපෙන පරිදි, Science විෂයට (සම්මුති විද්‍යා විෂයට) ගලපමින් පවත්වන දේශනා මාලාව. සරලව මුල සිට……. </p>\n')
     
     fp.write('<p></p>\n')
-    fp.write('සජීවි දේශනා සෑම සෙනසුරාදා සවස 2.00 සිට (ලංකාවේ වේලාවෙන්) <a href="../Zoom_Info/zoom_info.html">Zoom සැසියට සම්බන්ද වීමට</a>)\n')
+    fp.write('සජීවි දේශනා සෑම සෙනසුරාදා සවස 2.00 සිට (ලංකාවේ වේලාවෙන්) <a href="../Zoom_Info/zoom_info.html">Zoom සැසියට සම්බන්ද වීමට</a>\n')
     fp.write('<p></p>\n')
 
     # fp.write('<p><a href="../Nivan_Maga_Udesa/zoom_details.html">Zoom සජීවීව සම්බන්ධ වීමට</a></p>\n')
