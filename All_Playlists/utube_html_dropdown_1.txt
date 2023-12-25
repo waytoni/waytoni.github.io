@@ -542,13 +542,14 @@
 	<option value="option10">2023-Nov-19 Abhidhamma lesson Kalutara Bodhiya I 010</option>
 	<option value="option11">2023-Dec-03 Abhidhamma lesson Kalutara Bodhiya I 011</option>
 	<option value="option12">2023-Dec-10 Abhidhamma lesson Kalutara Bodhiya I 012</option>
-	<option value="option13" selected>2023-Dec-17 Abhidhamma lesson Kalutara Bodhiya I 013</option>
+	<option value="option13">2023-Dec-17 Abhidhamma lesson Kalutara Bodhiya I 013</option>
+	<option value="option14" selected>2023-Dec-24 Abhidhamma lesson Kalutara Bodhiya I 014</option>
 </select>
 <div id="content3"></div>
 <script>
 	const select3 = document.querySelector('#video_list3');
 	const content3 = document.querySelector('#content3');
-			content3.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/KBTv8Q46ffc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			content3.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/dWZWWYeZ0zA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	select3.addEventListener('change', function() {
 		if (this.value === 'option1') {
 			content3.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/zwZOGfI7Zes" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
@@ -576,6 +577,8 @@
 			content3.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/E13jPutYy3k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		} else if (this.value === 'option13'){
 			content3.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/KBTv8Q46ffc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+		} else if (this.value === 'option14'){
+			content3.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/dWZWWYeZ0zA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	}
 });
 </script>
