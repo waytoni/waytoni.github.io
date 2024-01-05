@@ -473,13 +473,14 @@
 	<option value="option17">2023-Dec-08 නිවන් මග උදෙසා දර්ශන ඥාණය (A කණ්ඩායම) 017</option>
 	<option value="option18">2023-Dec-15 නිවන් මග උදෙසා දර්ශන ඥාණය (A කණ්ඩායම) 018</option>
 	<option value="option19">2023-Dec-22 නිවන් මග උදෙසා දර්ශන ඥාණය (A කණ්ඩායම) 019</option>
-	<option value="option20" selected>2023-Dec-29 නිවන් මග උදෙසා දර්ශන ඥාණය (A කණ්ඩායම) 020</option>
+	<option value="option20">2023-Dec-29 නිවන් මග උදෙසා දර්ශන ඥාණය (A කණ්ඩායම) 020</option>
+	<option value="option21" selected>2023-Jan-05 නිවන් මග උදෙසා දර්ශන ඥාණය (A කණ්ඩායම) 021</option>
 </select>
 <div id="content2"></div>
 <script>
 	const select2 = document.querySelector('#video_list2');
 	const content2 = document.querySelector('#content2');
-			content2.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/x_KbJUhkKoE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			content2.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/FR2ZdB7zBr0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	select2.addEventListener('change', function() {
 		if (this.value === 'option1') {
 			content2.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/v7zmwZ8P8BU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
@@ -521,6 +522,8 @@
 			content2.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/_X2eAxoicis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		} else if (this.value === 'option20'){
 			content2.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/x_KbJUhkKoE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+		} else if (this.value === 'option21'){
+			content2.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/FR2ZdB7zBr0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	}
 });
 </script>
@@ -636,13 +639,14 @@
 	<option value="option40">2023-Nov-23 Abhidharma Aruth EP046</option>
 	<option value="option41">2023-Nov-30 Abhidharma Aruth EP047</option>
 	<option value="option42">2023-Dec-07 Abhidharma Aruth EP048</option>
-	<option value="option43" selected>2023-Dec-21 Abhidharma Aruth EP049</option>
+	<option value="option43">2023-Dec-21 Abhidharma Aruth EP049</option>
+	<option value="option44" selected>2023-Jan-04 Abhidharma Aruth EP050</option>
 </select>
 <div id="content4"></div>
 <script>
 	const select4 = document.querySelector('#video_list4');
 	const content4 = document.querySelector('#content4');
-			content4.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/9yKykRrujq8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			content4.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/cCSRBdiHxao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	select4.addEventListener('change', function() {
 		if (this.value === 'option1') {
 			content4.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/hwe5O7OP1zU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
@@ -730,6 +734,8 @@
 			content4.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/8ahYcTUKUq4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		} else if (this.value === 'option43'){
 			content4.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/9yKykRrujq8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+		} else if (this.value === 'option44'){
+			content4.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/cCSRBdiHxao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	}
 });
 </script>
@@ -752,13 +758,14 @@
 	<option value="option11">2023-Nov-30 Abhidharma Aruth - B 011</option>
 	<option value="option12">2023-Dec-07 Abhidharma Aruth - B 012</option>
 	<option value="option13">2023-Dec-14 Abhidharma Aruth - B 013</option>
-	<option value="option14" selected>2023-Dec-21 Abhidharma Aruth - B 014</option>
+	<option value="option14">2023-Dec-21 Abhidharma Aruth - B 014</option>
+	<option value="option15" selected>2023-Jan-04 Abhidharma Aruth - B 015</option>
 </select>
 <div id="content5"></div>
 <script>
 	const select5 = document.querySelector('#video_list5');
 	const content5 = document.querySelector('#content5');
-			content5.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/2u16UqpW54U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			content5.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/KV_0xQLu7mo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	select5.addEventListener('change', function() {
 		if (this.value === 'option1') {
 			content5.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/Ae6uZUbDfZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
@@ -788,6 +795,8 @@
 			content5.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/qM7D90GiQPg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		} else if (this.value === 'option14'){
 			content5.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/2u16UqpW54U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+		} else if (this.value === 'option15'){
+			content5.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/KV_0xQLu7mo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	}
 });
 </script>
