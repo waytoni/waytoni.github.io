@@ -41,19 +41,22 @@
 <p>Select a video from the dropdown menu</p>    <p></p>
 <select id="video_list1">
 	<option value="option1">2023-Oct-28 සුතමයඤාණං - ඉත්තෑපාන අක්කර දේශනා 001</option>
-	<option value="option2" selected>2023-Nov-26 සුතමයඤාණං - ඉත්තෑපාන අක්කර දේශනා 002</option>
+	<option value="option2">2023-Nov-26 සුතමයඤාණං - ඉත්තෑපාන අක්කර දේශනා 002</option>
+	<option value="option3" selected>2023-Dec-26 සුතමයඤාණං - ඉත්තෑපාන අක්කර දේශනා 003</option>
 </select>
 <div id="content1"></div>
 <div id="notes1"></div>
 <script>
 	const select1 = document.querySelector('#video_list1');
 	const content1 = document.querySelector('#content1');
-			content1.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/oIi-yEZp23o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			content1.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/w1A0jmz1EVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	select1.addEventListener('change', function() {
 		if (this.value === 'option1') {
 			content1.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/ULaVxmgSn_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		} else if (this.value === 'option2'){
 			content1.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/oIi-yEZp23o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+		} else if (this.value === 'option3'){
+			content1.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/w1A0jmz1EVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	}
 });
 </script>
@@ -65,6 +68,8 @@
 		if (this.value === 'option1') {
 			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
 		} else if (this.value === 'option2'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option3'){
 			notes.innerHTML = '';
 	}
 });

@@ -474,7 +474,7 @@
 	<option value="option18">2023-Dec-15 නිවන් මග උදෙසා දර්ශන ඥාණය (A කණ්ඩායම) 018</option>
 	<option value="option19">2023-Dec-22 නිවන් මග උදෙසා දර්ශන ඥාණය (A කණ්ඩායම) 019</option>
 	<option value="option20">2023-Dec-29 නිවන් මග උදෙසා දර්ශන ඥාණය (A කණ්ඩායම) 020</option>
-	<option value="option21" selected>2023-Jan-05 නිවන් මග උදෙසා දර්ශන ඥාණය (A කණ්ඩායම) 021</option>
+	<option value="option21" selected>2024-Jan-05 නිවන් මග උදෙසා දර්ශන ඥාණය (A කණ්ඩායම) 021</option>
 </select>
 <div id="content2"></div>
 <script>
@@ -640,7 +640,7 @@
 	<option value="option41">2023-Nov-30 Abhidharma Aruth EP047</option>
 	<option value="option42">2023-Dec-07 Abhidharma Aruth EP048</option>
 	<option value="option43">2023-Dec-21 Abhidharma Aruth EP049</option>
-	<option value="option44" selected>2023-Jan-04 Abhidharma Aruth EP050</option>
+	<option value="option44" selected>2024-Jan-04 Abhidharma Aruth EP050</option>
 </select>
 <div id="content4"></div>
 <script>
@@ -759,7 +759,7 @@
 	<option value="option12">2023-Dec-07 Abhidharma Aruth - B 012</option>
 	<option value="option13">2023-Dec-14 Abhidharma Aruth - B 013</option>
 	<option value="option14">2023-Dec-21 Abhidharma Aruth - B 014</option>
-	<option value="option15" selected>2023-Jan-04 Abhidharma Aruth - B 015</option>
+	<option value="option15" selected>2024-Jan-04 Abhidharma Aruth - B 015</option>
 </select>
 <div id="content5"></div>
 <script>
@@ -807,18 +807,21 @@
 <p>Select a video from the dropdown menu</p>    <p></p>
 <select id="video_list6">
 	<option value="option1">2023-Oct-28 සුතමයඤාණං - ඉත්තෑපාන අක්කර 001</option>
-	<option value="option2" selected>2023-Nov-26 සුතමයඤාණං - ඉත්තෑපාන අක්කර 002</option>
+	<option value="option2">2023-Nov-26 සුතමයඤාණං - ඉත්තෑපාන අක්කර 002</option>
+	<option value="option3" selected>2023-Dec-26 සුතමයඤාණං - ඉත්තෑපාන අක්කර 003</option>
 </select>
 <div id="content6"></div>
 <script>
 	const select6 = document.querySelector('#video_list6');
 	const content6 = document.querySelector('#content6');
-			content6.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/oIi-yEZp23o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			content6.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/w1A0jmz1EVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	select6.addEventListener('change', function() {
 		if (this.value === 'option1') {
 			content6.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/ULaVxmgSn_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		} else if (this.value === 'option2'){
 			content6.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/oIi-yEZp23o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+		} else if (this.value === 'option3'){
+			content6.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/w1A0jmz1EVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	}
 });
 </script>
