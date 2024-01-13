@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GT-MBNDJTD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'GT-MBNDJTD');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/nav_menu.css">
+    <link rel="stylesheet" type="text/css" href="file_list.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../scripts/menu_function.js"></script>
+    <link rel="icon" type="image/png" href="../images/favicon-16x16.png" sizes="16x16" />
+    <title>සියලු අභිධම්ම දේශනා සඳහා සටහන් ... </title>
+</head>
+
+<body>
+    <div class="topnav" id="Topnavbar">
+        <a href="https://waytoni.github.io/" class="active">Home </a>
+        <a href="../All_Playlists/සියුලු_දේශනා.html">සියලුම දේශනා </a>
+        <a href="../Paramartha_Video/Paramartha_Video.html">පරමාර්ථ ලෝකය දේශනා </a>
+        <a href="../Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html">අනිච්ච, දුක්ඛ, අනත්ත දේශනා</a>
+        <a href="../Nivan_Maga_Udesa">නිවන් මග උදෙසා දේශනා</a>
+        <a href="../Chithatha_Chithasika/Chiththa_Chithasika.html">චිත්ත සහ චෛතසික </a>
+        <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+	<div class="grid-container">
+		<div class=grid-item>
+		<a href="0002 Par Lo.jpg"><img src="thumbnails/0002 Par Lo.jpg" alt="0002 Par Lo.jpg"></a>		<p>0002 Par Lo.jpg</p>
+		</div>
+		<div class=grid-item>
+		<a href="0003 Par Lo.jpg"><img src="thumbnails/0003 Par Lo.jpg" alt="0003 Par Lo.jpg"></a>		<p>0003 Par Lo.jpg</p>
+		</div>
+		<div class=grid-item>
+		<a href="0005 Par Lo.jpg"><img src="thumbnails/0005 Par Lo.jpg" alt="0005 Par Lo.jpg"></a>		<p>0005 Par Lo.jpg</p>
+		</div>
+		<div class=grid-item>
+		<a href="0006 Par Lo.jpg"><img src="thumbnails/0006 Par Lo.jpg" alt="0006 Par Lo.jpg"></a>		<p>0006 Par Lo.jpg</p>
+		</div>
+		<div class=grid-item>
+		<a href="0007 Par Lo.jpg"><img src="thumbnails/0007 Par Lo.jpg" alt="0007 Par Lo.jpg"></a>		<p>0007 Par Lo.jpg</p>
+		</div>
+		<div class=grid-item>
+		<a href="0008 Par Lo.jpg"><img src="thumbnails/0008 Par Lo.jpg" alt="0008 Par Lo.jpg"></a>		<p>0008 Par Lo.jpg</p>
+		</div>
+		<div class=grid-item>
+		<a href="0011 Par Lo.jpg"><img src="thumbnails/0011 Par Lo.jpg" alt="0011 Par Lo.jpg"></a>		<p>0011 Par Lo.jpg</p>
+		</div>
+		<div class=grid-item>
+		<a href="0014_resize.jpg"><img src="thumbnails/0014_resize.jpg" alt="0014_resize.jpg"></a>		<p>0014_resize.jpg</p>
+		</div>
+		<div class=grid-item>
+		<a href="0016_resize.jpg"><img src="thumbnails/0016_resize.jpg" alt="0016_resize.jpg"></a>		<p>0016_resize.jpg</p>
+		</div>
+		<div class=grid-item>
+		<a href="0017_resize.jpg"><img src="thumbnails/0017_resize.jpg" alt="0017_resize.jpg"></a>		<p>0017_resize.jpg</p>
+		</div>
+		<div class=grid-item>
+		<a href="0018_resize.jpg"><img src="thumbnails/0018_resize.jpg" alt="0018_resize.jpg"></a>		<p>0018_resize.jpg</p>
+		</div>
+		<div class=grid-item>
+		<a href="0020_resize.jpg"><img src="thumbnails/0020_resize.jpg" alt="0020_resize.jpg"></a>		<p>0020_resize.jpg</p>
+		</div>
+		<div class=grid-item>
+		<a href="0022.jpg"><img src="thumbnails/0022.jpg" alt="0022.jpg"></a>		<p>0022.jpg</p>
+		</div>
+		<div class=grid-item>
+		<a href="0024_resize.jpg"><img src="thumbnails/0024_resize.jpg" alt="0024_resize.jpg"></a>		<p>0024_resize.jpg</p>
+		</div>
+		<div class=grid-item>
+		<a href="016 Sith & Chithasika  _resize.jpg"><img src="thumbnails/016 Sith & Chithasika  _resize.jpg" alt="016 Sith & Chithasika  _resize.jpg"></a>		<p>016 Sith & Chithasika  _resize.jpg</p>
+		</div>
+		<div class=grid-item>
+		<a href="240106_A.jpeg"><img src="thumbnails/240106_A.jpeg" alt="240106_A.jpeg"></a>		<p>240106_A.jpeg</p>
+		</div>
+	</div>
+</body>
+</html>

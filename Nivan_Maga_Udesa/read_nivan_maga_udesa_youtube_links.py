@@ -35,7 +35,7 @@ with open(html_file, 'a', encoding='utf-8') as fp:
     fp.write('<p>සෑම සිකුරාදා සවස 6.00 සිට 8:00 දක්වා</p>\n')
     fp.write('<p><a href="../Nivan_Maga_Udesa/zoom_details.html">Zoom සජීවීව සම්බන්ධ වීමට</a></p>\n')
     fp.write('<p></p>\n')
-
+    fp.write('<h2><li><a href="../Nivan_Maga_Udesa/docs/combined_notes/NMU_file_list.html">නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා සඳහා සටහන්</a></li></h2>\n')
     fp.close()
 
 block_id = ''
