@@ -1,7 +1,7 @@
 #1
 #2
 #123
-සමිද්ධි සත්තපඤ්හ සූත්‍රය   url::https://tipitaka.lk/sn-4-1-7-4
+සමිද්ධි සත්තපඤ්හ සූත්‍රය  url::https://tipitaka.lk/sn-4-1-7-4
 #127
 #128 
 ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
@@ -17,5 +17,8 @@
 රූපක‍්ඛන්‍ධො  url::https://tipitaka.lk/ap-vbh-1-2
 #132
 ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
+#135
+Four Noble truths for Young Buddhist - English pdf::../documents/pdfs/Four Noble truths for Young Buddhist - English Final.pdf
+Four Noble truths for Young Buddhist -sinhala pdf::../documents/pdfs/Four Noble truths for Young Buddhist -sinhala.pdf
 #1000
 end

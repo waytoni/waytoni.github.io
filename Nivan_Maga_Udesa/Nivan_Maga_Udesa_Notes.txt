@@ -1,11 +1,11 @@
 #1
-pdf::001- නිවන් මග උදෙසා දර්ශන ඥානය_2023-08-04.pdf
+pdf::docs/001- නිවන් මග උදෙසා දර්ශන ඥානය_2023-08-04.pdf
 img::thumbnails/001_Page_1.png
 img::thumbnails/001_Page_2.png
 img::001_Page_3.png
 #2
 සත්ත සූත්‍රය url::https://tipitaka.lk/sn-3-2-1-2
-pdf::002-නිවන් මග උදෙසා දර්ශන ඥානය  [2023-08-11].pdf
+pdf::docs/002-නිවන් මග උදෙසා දර්ශන ඥානය  [2023-08-11].pdf
 img::002_Page_1.png
 img::002_Page_2.png
 img::002_Page_3.png
@@ -15,7 +15,7 @@ img::002_Page_3.png
 සමිද්ධි දුක්ඛපඤ්හ සූත්‍රය url::https://tipitaka.lk/sn-4-1-7-5
 සමිද්ධි ලෝකපඤ්හ සූත්‍රය url::https://tipitaka.lk/sn-4-1-7-6
 රෝහිතස්ස සූත්‍රය url::https://tipitaka.lk/sn-1-2-3-6/sinh
-pdf::003- නිවන් මඟ උදෙසා දර්ශන ඥානය(2023-08-18).pdf
+pdf::docs/003- නිවන් මඟ උදෙසා දර්ශන ඥානය(2023-08-18).pdf
 img::003_Page_1.png
 img::003_Page_2.png
 img::003_Page_3.png
