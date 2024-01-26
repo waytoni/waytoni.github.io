@@ -7,7 +7,7 @@ import re
 keyword_dict = {
     "pdf": "<a href=\"{}\">{}</a>",
     "img": "<img src=\"docs/{}\" width=95%>",
-    "url": "<a href=\"{}\">{}</a>",
+    "url": "<a href=\"{}\" target=\"_blank\" >{}</a>",
     "PDF": "<a href='\"docs/{}\">{}</a>",
     "IMG": "<img src=\"docs/{}\" width=95%>",
     "URL": "<a href=\"{}\">{}</a>"

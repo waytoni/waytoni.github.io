@@ -65,14 +65,15 @@
 	<option value="option20">2023-Dec-29 නිවන් මග උදෙසා දර්ශන ඥාණය - දේශනා A020</option>
 	<option value="option21">2024-Jan-05 නිවන් මග උදෙසා දර්ශන ඥාණය - දේශනා A021</option>
 	<option value="option22">2024-Jan-12 නිවන් මග උදෙසා දර්ශන ඥාණය - දේශනා A022</option>
-	<option value="option23" selected>2024-Jan-19 නිවන් මග උදෙසා දර්ශන ඥාණය - දේශනා A023</option>
+	<option value="option23">2024-Jan-19 නිවන් මග උදෙසා දර්ශන ඥාණය - දේශනා A023</option>
+	<option value="option24" selected>2024-Jan-26 නිවන් මග උදෙසා දර්ශන ඥාණය - දේශනා A024</option>
 </select>
 <div id="content"></div>
 <div id="notes"></div>
 <script>
 	const select = document.querySelector('#video_list');
 	const content = document.querySelector('#content');
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/us-b_WrO6hA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/EK4vfbmY2sg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	select.addEventListener('change', function() {
 		if (this.value === 'option1') {
 			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/v7zmwZ8P8BU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
@@ -120,6 +121,8 @@
 			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/SV64E98J9Jo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		} else if (this.value === 'option23'){
 			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/us-b_WrO6hA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+		} else if (this.value === 'option24'){
+			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/EK4vfbmY2sg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	}
 });
 </script>
@@ -132,7 +135,7 @@
 			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p><p> <a href="docs/001- නිවන් මග උදෙසා දර්ශන ඥානය_2023-08-04.pdf">docs/001- නිවන් මග උදෙසා දර්ශන ඥානය_2023-08-04.pdf</a></p><p> <img src="docs/thumbnails/001_Page_1.png" width=95%></p><p> <img src="docs/thumbnails/001_Page_2.png" width=95%></p><p> <img src="docs/001_Page_3.png" width=95%></p>';
 		} else if (this.value === 'option2'){
 			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
-			notes.innerHTML +='<p>සත්ත සූත්‍රය <a href="https://tipitaka.lk/sn-3-2-1-2">https://tipitaka.lk/sn-3-2-1-2</a></p>';
+			notes.innerHTML +='<p>සත්ත සූත්‍රය <a href="https://tipitaka.lk/sn-3-2-1-2" target="_blank" >https://tipitaka.lk/sn-3-2-1-2</a></p>';
 			notes.innerHTML +='<p> <a href="docs/002-නිවන් මග උදෙසා දර්ශන ඥානය  [2023-08-11].pdf">docs/002-නිවන් මග උදෙසා දර්ශන ඥානය  [2023-08-11].pdf</a></p>';
 			notes.innerHTML +='<p> <img src="docs/002_Page_1.png" width=95%></p>';
 			notes.innerHTML +='<p> <img src="docs/002_Page_2.png" width=95%></p>';
@@ -140,11 +143,11 @@
 
 		} else if (this.value === 'option3'){
 			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
-			notes.innerHTML +='<p>සබ්බ සූත්‍රය <a href="https://tipitaka.lk/sn-4-1-3-1">https://tipitaka.lk/sn-4-1-3-1</a></p>';
-			notes.innerHTML +='<p>සමිද්ධි සත්තපඤ්හ සූත්‍රය <a href="https://tipitaka.lk/sn-4-1-7-4">https://tipitaka.lk/sn-4-1-7-4</a></p>';
-			notes.innerHTML +='<p>සමිද්ධි දුක්ඛපඤ්හ සූත්‍රය <a href="https://tipitaka.lk/sn-4-1-7-5">https://tipitaka.lk/sn-4-1-7-5</a></p>';
-			notes.innerHTML +='<p>සමිද්ධි ලෝකපඤ්හ සූත්‍රය <a href="https://tipitaka.lk/sn-4-1-7-6">https://tipitaka.lk/sn-4-1-7-6</a></p>';
-			notes.innerHTML +='<p>රෝහිතස්ස සූත්‍රය <a href="https://tipitaka.lk/sn-1-2-3-6/sinh">https://tipitaka.lk/sn-1-2-3-6/sinh</a></p>';
+			notes.innerHTML +='<p>සබ්බ සූත්‍රය <a href="https://tipitaka.lk/sn-4-1-3-1" target="_blank" >https://tipitaka.lk/sn-4-1-3-1</a></p>';
+			notes.innerHTML +='<p>සමිද්ධි සත්තපඤ්හ සූත්‍රය <a href="https://tipitaka.lk/sn-4-1-7-4" target="_blank" >https://tipitaka.lk/sn-4-1-7-4</a></p>';
+			notes.innerHTML +='<p>සමිද්ධි දුක්ඛපඤ්හ සූත්‍රය <a href="https://tipitaka.lk/sn-4-1-7-5" target="_blank" >https://tipitaka.lk/sn-4-1-7-5</a></p>';
+			notes.innerHTML +='<p>සමිද්ධි ලෝකපඤ්හ සූත්‍රය <a href="https://tipitaka.lk/sn-4-1-7-6" target="_blank" >https://tipitaka.lk/sn-4-1-7-6</a></p>';
+			notes.innerHTML +='<p>රෝහිතස්ස සූත්‍රය <a href="https://tipitaka.lk/sn-1-2-3-6/sinh" target="_blank" >https://tipitaka.lk/sn-1-2-3-6/sinh</a></p>';
 			notes.innerHTML +='<p> <a href="docs/003- නිවන් මඟ උදෙසා දර්ශන ඥානය(2023-08-18).pdf">docs/003- නිවන් මඟ උදෙසා දර්ශන ඥානය(2023-08-18).pdf</a></p>';
 			notes.innerHTML +='<p> <img src="docs/003_Page_1.png" width=95%></p>';
 			notes.innerHTML +='<p> <img src="docs/003_Page_2.png" width=95%></p>';
@@ -173,16 +176,16 @@
 			notes.innerHTML = '';
 		} else if (this.value === 'option14'){
 			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
-			notes.innerHTML +='<p>ඵෙණ පිණ්ඩූපම සූත්‍රය <a href="https://tipitaka.lk/sn-3-1-2-5-3">https://tipitaka.lk/sn-3-1-2-5-3</a></p>';
-			notes.innerHTML +='<p>ඵේණපිණ්ඩූපම සුත්තං <a href="https://tripitaka.online/sutta/3571">https://tripitaka.online/sutta/3571</a></p>';
+			notes.innerHTML +='<p>ඵෙණ පිණ්ඩූපම සූත්‍රය <a href="https://tipitaka.lk/sn-3-1-2-5-3" target="_blank" >https://tipitaka.lk/sn-3-1-2-5-3</a></p>';
+			notes.innerHTML +='<p>ඵේණපිණ්ඩූපම සුත්තං <a href="https://tripitaka.online/sutta/3571" target="_blank" >https://tripitaka.online/sutta/3571</a></p>';
 
 		} else if (this.value === 'option15'){
 			notes.innerHTML = '';
 		} else if (this.value === 'option16'){
 			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
-			notes.innerHTML +='<p>ගවම්පති සූත්‍රය <a href="https://tipitaka.lk/sn-5-12-3-10">https://tipitaka.lk/sn-5-12-3-10</a></p>';
-			notes.innerHTML +='<p>අනුපුබ්බාභිසමයකථා <a href="https://tipitaka.lk/ap-kvu-2-9">https://tipitaka.lk/ap-kvu-2-9</a></p>';
-			notes.innerHTML +='<p>රූපක‍්ඛන්‍ධො <a href="https://tipitaka.lk/ap-vbh-1-2">https://tipitaka.lk/ap-vbh-1-2</a></p>';
+			notes.innerHTML +='<p>ගවම්පති සූත්‍රය <a href="https://tipitaka.lk/sn-5-12-3-10" target="_blank" >https://tipitaka.lk/sn-5-12-3-10</a></p>';
+			notes.innerHTML +='<p>අනුපුබ්බාභිසමයකථා <a href="https://tipitaka.lk/ap-kvu-2-9" target="_blank" >https://tipitaka.lk/ap-kvu-2-9</a></p>';
+			notes.innerHTML +='<p>රූපක‍්ඛන්‍ධො <a href="https://tipitaka.lk/ap-vbh-1-2" target="_blank" >https://tipitaka.lk/ap-vbh-1-2</a></p>';
 
 		} else if (this.value === 'option17'){
 			notes.innerHTML = '';
@@ -197,6 +200,8 @@
 		} else if (this.value === 'option22'){
 			notes.innerHTML = '';
 		} else if (this.value === 'option23'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option24'){
 			notes.innerHTML = '';
 	}
 });
