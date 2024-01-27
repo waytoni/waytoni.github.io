@@ -2,11 +2,11 @@
 #
 # If there is an update (new video) in Saturday 2:00 pm series,
 # then add an entry to the last line of the file: 
-#   Kaluthara_Bodhiya_A_Series/youtube_links.txt
+#   Saturday_Abhidhamma_Lesson/saturday_abhidhamma_lesson_youtube_links.txt
 #
-# If there is an update to the H series,
+# If there is an update to the I series,
 # then add an entry to the last line of the file:
-#   All_Playlists/H_series.txt
+#   All_Playlists/I_series.txt
 #
 # Both files have the following format
 # <index> <youtube link (URL)> <date>
@@ -25,7 +25,6 @@ sys.path.append('E:/src/github/waytoni_io/waytoni_desktop/scripts_new')
 # sys.path.append('c:/users/30010651/github/scripts_new')
 import waytoni_all_videos_new
 
-# Read_Sat2pm_youtube_links
 read_saturday_abhidhamma_lesson_youtube_links
 read_Iseries
 # waytoni_all_videos

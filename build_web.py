@@ -2,7 +2,7 @@
 #
 # If there is an update (new video) in Saturday 2:00 pm series,
 # then add an entry to the last line of the file: 
-#   Kaluthara_Bodhiya_A_Series/Saturday2pm_youtube_links.txt
+#   Saturday_Abhidhamma_Lesson/saturday_abhidhamma_lesson_youtube_links.txt
 #
 # If there is an update to the I series,
 # then add an entry to the last line of the file:
