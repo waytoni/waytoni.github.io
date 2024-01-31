@@ -37,13 +37,13 @@ file_header = """<!DOCTYPE html>
 <body>  
     <div class="topnav" id="Topnavbar">
         <a href="https://waytoni.github.io/" class="active">Home </a>
-        <a href="../All_Playlists/සියුලු_දේශනා.html">සියලුම දේශනා </a>
-        <a href="../Paramartha_Video/Paramartha_Video.html">පරමාර්ථ ලෝකය දේශනා </a>
-        <a href="../Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html">අනිච්ච, දුක්ඛ, අනත්ත දේශනා</a>
-		<a href="../Saturday_Abhidhamma_Lesson">තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා</a>
-		<a href="../Abhidharma_Aruth/index.html">අභිධර්ම අරුත් දේශනා</a>
-        <a href="../Nivan_Maga_Udesa">නිවන් මග උදෙසා දේශනා</a>
-        <a href="../Chithatha_Chithasika/Chiththa_Chithasika.html">චිත්ත සහ චෛතසික </a>
+        <a href="../../../All_Playlists/සියුලු_දේශනා.html">සියලුම දේශනා </a>
+        <a href="../../../Paramartha_Video/Paramartha_Video.html">පරමාර්ථ ලෝකය දේශනා </a>
+        <a href="../../../Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html">අනිච්ච, දුක්ඛ, අනත්ත දේශනා</a>
+		<a href="../../../Saturday_Abhidhamma_Lesson">තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා</a>
+		<a href="../../../Abhidharma_Aruth/index.html">අභිධර්ම අරුත් දේශනා</a>
+        <a href="../../../Nivan_Maga_Udesa">නිවන් මග උදෙසා දේශනා</a>
+        <a href="../../../Chithatha_Chithasika/Chiththa_Chithasika.html">චිත්ත සහ චෛතසික </a>
         <a href="javascript:void(0);" class="icon" onclick="navFunction()">
             <i class="fa fa-bars"></i>
         </a>
@@ -55,7 +55,7 @@ file_header = """<!DOCTYPE html>
     </div>
 """
 # create file for writing
-with open(dir_path+'/file_list_draft.html', 'w', encoding="utf-8") as f:
+with open(dir_path+'/NMU_file_list.html', 'w', encoding="utf-8") as f:
     # iterate over all the files
     f.write(file_header)
     f.write('\t<div class="grid-container">\n')
