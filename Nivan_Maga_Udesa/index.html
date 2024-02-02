@@ -66,14 +66,15 @@
 	<option value="option21">2024-Jan-05 නිවන් මග උදෙසා දර්ශන ඥාණය - දේශනා A021</option>
 	<option value="option22">2024-Jan-12 නිවන් මග උදෙසා දර්ශන ඥාණය - දේශනා A022</option>
 	<option value="option23">2024-Jan-19 නිවන් මග උදෙසා දර්ශන ඥාණය - දේශනා A023</option>
-	<option value="option24" selected>2024-Jan-26 නිවන් මග උදෙසා දර්ශන ඥාණය - දේශනා A024</option>
+	<option value="option24">2024-Jan-26 නිවන් මග උදෙසා දර්ශන ඥාණය - දේශනා A024</option>
+	<option value="option25" selected>2024-Feb-02 නිවන් මග උදෙසා දර්ශන ඥාණය - දේශනා A025</option>
 </select>
 <div id="content"></div>
 <div id="notes"></div>
 <script>
 	const select = document.querySelector('#video_list');
 	const content = document.querySelector('#content');
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/EK4vfbmY2sg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/OvBNfQz6rnM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	select.addEventListener('change', function() {
 		if (this.value === 'option1') {
 			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/v7zmwZ8P8BU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
@@ -123,6 +124,8 @@
 			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/us-b_WrO6hA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		} else if (this.value === 'option24'){
 			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/EK4vfbmY2sg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+		} else if (this.value === 'option25'){
+			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/OvBNfQz6rnM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	}
 });
 </script>
@@ -202,6 +205,8 @@
 		} else if (this.value === 'option23'){
 			notes.innerHTML = '';
 		} else if (this.value === 'option24'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option25'){
 			notes.innerHTML = '';
 	}
 });
