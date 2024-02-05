@@ -59,14 +59,15 @@
 	<option value="option16">2024-Jan-07 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන 9වෙනි දේශනා මාලාව 016</option>
 	<option value="option17">2024-Jan-14 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන 9වෙනි දේශනා මාලාව 017</option>
 	<option value="option18">2024-Jan-21 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන 9වෙනි දේශනා මාලාව 018</option>
-	<option value="option19" selected>2024-Jan-28 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන 9වෙනි දේශනා මාලාව 019</option>
+	<option value="option19">2024-Jan-28 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන 9වෙනි දේශනා මාලාව 019</option>
+	<option value="option20" selected>2024-Feb-04 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන 9වෙනි දේශනා මාලාව 020</option>
 </select>
 <div id="content"></div>
 <div id="notes"></div>
 <script>
 	const select = document.querySelector('#video_list');
 	const content = document.querySelector('#content');
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/WLkGWbeXOIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/94xZig2K9m4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	select.addEventListener('change', function() {
 		if (this.value === 'option1') {
 			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/zwZOGfI7Zes" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
@@ -106,6 +107,8 @@
 			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/Ben5GWd6YpQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		} else if (this.value === 'option19'){
 			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/WLkGWbeXOIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+		} else if (this.value === 'option20'){
+			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/94xZig2K9m4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	}
 });
 </script>
@@ -153,6 +156,8 @@
 		} else if (this.value === 'option18'){
 			notes.innerHTML = '';
 		} else if (this.value === 'option19'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option20'){
 			notes.innerHTML = '';
 	}
 });
