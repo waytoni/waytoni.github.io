@@ -156,7 +156,7 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
 #### set up playlist selection ######### 
     
 playlist_url_0 = "https://www.youtube.com/playlist?list=PLqESXbJ82aIip-TA7Efg5JjwmEDJ95kAx"
-playlist_0 = 'Kaluthara_Bodhiya_A_Series/Saturday2pm_youtube_links.txt'
+playlist_0 = 'Saturday_Abhidhamma_Lesson/saturday_abhidhamma_lesson_youtube_links.txt'
 playlist_title_0 = "තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය"
 idx_prefix_0 = 'A'
 
