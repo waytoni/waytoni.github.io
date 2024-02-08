@@ -471,7 +471,7 @@
 <script>
 	const select1 = document.querySelector('#video_list');
 	const notes = document.querySelector('#notes');
-			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
+			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p><p>විභංගප්පකරණ (1) <a href="http://dr.lib.sjp.ac.lk/handle/123456789/2139" target="_blank" >http://dr.lib.sjp.ac.lk/handle/123456789/2139</a></p><p>චිත්ත සහ චෛතසික සටහන <a href="https://waytoni.com/Chithatha_Chithasika/Chiththa_Chithasika.html" target="_blank" >https://waytoni.com/Chithatha_Chithasika/Chiththa_Chithasika.html</a></p>';
 	select.addEventListener('change', function() {
 		if (this.value === 'option1') {
 			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
@@ -771,7 +771,10 @@
 			notes.innerHTML +='<p>ඛජ්ජනීය සුත්තං <a href="https://tripitaka.online/sutta/3413" target="_blank" >https://tripitaka.online/sutta/3413</a></p>';
 
 		} else if (this.value === 'option138'){
-			notes.innerHTML = '';
+			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
+			notes.innerHTML +='<p>විභංගප්පකරණ (1) <a href="http://dr.lib.sjp.ac.lk/handle/123456789/2139" target="_blank" >http://dr.lib.sjp.ac.lk/handle/123456789/2139</a></p>';
+			notes.innerHTML +='<p>චිත්ත සහ චෛතසික සටහන <a href="https://waytoni.com/Chithatha_Chithasika/Chiththa_Chithasika.html" target="_blank" >https://waytoni.com/Chithatha_Chithasika/Chiththa_Chithasika.html</a></p>';
+
 	}
 });
 </script>

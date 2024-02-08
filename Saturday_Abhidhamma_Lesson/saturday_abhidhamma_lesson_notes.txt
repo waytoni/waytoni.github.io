@@ -24,5 +24,8 @@ Four Noble truths for Young Buddhist -sinhala pdf::../documents/pdfs/Four Noble 
 ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
 #137
 ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
+#138 
+විභංගප්පකරණ (1) url::http://dr.lib.sjp.ac.lk/handle/123456789/2139
+චිත්ත සහ චෛතසික සටහන url::https://waytoni.com/Chithatha_Chithasika/Chiththa_Chithasika.html
 #1000
 end
