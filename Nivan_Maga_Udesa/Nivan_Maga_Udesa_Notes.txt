@@ -45,8 +45,11 @@ img::003_Page_4.png
 #22
 #23
 #24
+පටිච්චසමුප්පාදයේ නය සතර pdf::docs/024 පටිච්චසමුප්පාදයේ නය සතර.pdf
 #25
+පටිච්චසමුප්පාදයේ නය සතර pdf::docs/024 පටිච්චසමුප්පාදයේ නය සතර.pdf
 #26
+pdf::docs/026 2024-02-09 Nivan Maga Udesa Desana.pdf
 img::026 2024-02-09 Nivan Maga Udesa Desana.jpg 
 #30
 #31

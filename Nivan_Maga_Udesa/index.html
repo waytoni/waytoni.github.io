@@ -135,7 +135,7 @@
 <script>
 	const select1 = document.querySelector('#video_list');
 	const notes = document.querySelector('#notes');
-			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p><p> <img src="docs/026 2024-02-09 Nivan Maga Udesa Desana.jpg" width=95%></p>';
+			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p><p> <a href="docs/026 2024-02-09 Nivan Maga Udesa Desana.pdf">docs/026 2024-02-09 Nivan Maga Udesa Desana.pdf</a></p><p> <img src="docs/026 2024-02-09 Nivan Maga Udesa Desana.jpg" width=95%></p>';
 	select.addEventListener('change', function() {
 		if (this.value === 'option1') {
 			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p><p> <a href="docs/001- නිවන් මග උදෙසා දර්ශන ඥානය_2023-08-04.pdf">docs/001- නිවන් මග උදෙසා දර්ශන ඥානය_2023-08-04.pdf</a></p><p> <img src="docs/thumbnails/001_Page_1.png" width=95%></p><p> <img src="docs/thumbnails/001_Page_2.png" width=95%></p><p> <img src="docs/001_Page_3.png" width=95%></p>';
@@ -208,11 +208,16 @@
 		} else if (this.value === 'option23'){
 			notes.innerHTML = '';
 		} else if (this.value === 'option24'){
-			notes.innerHTML = '';
+			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
+			notes.innerHTML +='<p>පටිච්චසමුප්පාදයේ නය සතර <a href="docs/024 පටිච්චසමුප්පාදයේ නය සතර.pdf">docs/024 පටිච්චසමුප්පාදයේ නය සතර.pdf</a></p>';
+
 		} else if (this.value === 'option25'){
-			notes.innerHTML = '';
+			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
+			notes.innerHTML +='<p>පටිච්චසමුප්පාදයේ නය සතර <a href="docs/024 පටිච්චසමුප්පාදයේ නය සතර.pdf">docs/024 පටිච්චසමුප්පාදයේ නය සතර.pdf</a></p>';
+
 		} else if (this.value === 'option26'){
 			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
+			notes.innerHTML +='<p> <a href="docs/026 2024-02-09 Nivan Maga Udesa Desana.pdf">docs/026 2024-02-09 Nivan Maga Udesa Desana.pdf</a></p>';
 			notes.innerHTML +='<p> <img src="docs/026 2024-02-09 Nivan Maga Udesa Desana.jpg" width=95%></p>';
 
 	}
