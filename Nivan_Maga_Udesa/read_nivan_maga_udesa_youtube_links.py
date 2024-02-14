@@ -1,7 +1,9 @@
+
+
 import sys
 
 # print the original sys.path
-print('Original sys.path:', sys.path)
+# print('Original sys.path:', sys.path)
 
 # append a new directory to sys.path
 sys.path.append('scripts')
