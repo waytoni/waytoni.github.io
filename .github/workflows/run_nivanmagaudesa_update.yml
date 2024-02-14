@@ -17,4 +17,4 @@ jobs:
           python-version: 3.x # Set your desired Python version
 
       - name: Run Python Script
-        run: Nivan_Maga_Udesa/read_nivan_maga_udesa_youtube_links_C.py # Update with the actual path to your Python script
+        run: Nivan_Maga_Udesa/read_nivan_maga_udesa_youtube_links.py # Update with the actual path to your Python script
