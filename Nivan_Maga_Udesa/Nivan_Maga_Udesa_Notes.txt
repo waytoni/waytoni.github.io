@@ -51,6 +51,9 @@ img::003_Page_4.png
 #26
 pdf::docs/026 2024-02-09 Nivan Maga Udesa Desana.pdf
 img::026 2024-02-09 Nivan Maga Udesa Desana.jpg 
+#27
+pdf::docs/027 2024 02 16.pdf
+img::027 2024 02 16.jpg
 #30
 #31
 #40

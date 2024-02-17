@@ -138,7 +138,7 @@
 <script>
 	const select1 = document.querySelector('#video_list');
 	const notes = document.querySelector('#notes');
-			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
+			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p><p> <a href="docs/027 2024 02 16.pdf">docs/027 2024 02 16.pdf</a></p><p> <img src="docs/027 2024 02 16.jpg" width=95%></p>';
 	select.addEventListener('change', function() {
 		if (this.value === 'option1') {
 			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p><p> <a href="docs/001- නිවන් මග උදෙසා දර්ශන ඥානය_2023-08-04.pdf">docs/001- නිවන් මග උදෙසා දර්ශන ඥානය_2023-08-04.pdf</a></p><p> <img src="docs/thumbnails/001_Page_1.png" width=95%></p><p> <img src="docs/thumbnails/001_Page_2.png" width=95%></p><p> <img src="docs/001_Page_3.png" width=95%></p>';
@@ -224,7 +224,10 @@
 			notes.innerHTML +='<p> <img src="docs/026 2024-02-09 Nivan Maga Udesa Desana.jpg" width=95%></p>';
 
 		} else if (this.value === 'option27'){
-			notes.innerHTML = '';
+			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
+			notes.innerHTML +='<p> <a href="docs/027 2024 02 16.pdf">docs/027 2024 02 16.pdf</a></p>';
+			notes.innerHTML +='<p> <img src="docs/027 2024 02 16.jpg" width=95%></p>';
+
 	}
 });
 </script>
