@@ -187,42 +187,56 @@ playlist_5 = 'Abhidharma_Aruth/Abhidharma_Aruth_B_youtube_links.txt'
 playlist_title_5 = "Abhidharma Aruth - B"
 prepare_html_block(5, playlist_5, playlist_title_5, text_filename, '', '')
 
+
 playlist_url_6 = ''
 playlist_6 = 'Suthamaya/suthamaya_eththapana.txt'
 playlist_title_6 = "සුතමයඤාණං - ඉත්තෑපාන අක්කර"
 prepare_html_block(6, playlist_6, playlist_title_6, text_filename, playlist_url_6, '')
 
-playlist_url_7 = 'https://www.youtube.com/playlist?list=PLqESXbJ82aIgmWdPzXFdJplUOPJgRXpZN'
-playlist_7 = 'Suthamaya/suthamaya_mathugama.txt'
-playlist_title_7 = "සුතමයඤාණං - Sri Sudharshanarama Maha Viharaya Mathugama"
-prepare_html_block(7, playlist_7, playlist_title_7, text_filename, playlist_url_7, '')
+#playlist_url_7 = ''
+#playlist_7 = 'විශේෂ දේශනා/special_desana_links.txt'
+#playlist_title_7 = "විශේෂ දේශනා"
+#prepare_html_block(7, playlist_7, playlist_title_7, text_filename, playlist_url_7, '')
 
-playlist_8 = 'All_Playlists/H_Series.txt'
-playlist_title_8 = "Kalutara Bodhiya H Series"
-prepare_html_block(8, playlist_8, playlist_title_8, text_filename, '', '')
+with open(text_filename, 'a', encoding="utf-8") as fp:
+        fp.write('<br>\n')
+        fp.write('<h2>7. විශේෂ දේශනා</h2>\n')
+        fp.write('<h3>2024-02-17 සෙනසුරාදා වීදියගොඩ රාජ මහ විහාරස්ථානයේ දී පැවැත්වූ දේශනාව</h3>\n')
+        fp.write('<iframe width="560" height="315" src="https://www.youtube.com/embed/_gIfkc0Hifw?si=ruS-MUtqrzHHwAQe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>\n')
+        fp.close()
+        
 
-playlist_9 = 'All_Playlists/G_Series.txt'
-playlist_title_9 = "Kalutara Bodhiya G Series"
+playlist_url_8 = 'https://www.youtube.com/playlist?list=PLqESXbJ82aIgmWdPzXFdJplUOPJgRXpZN'
+playlist_8 = 'Suthamaya/suthamaya_mathugama.txt'
+playlist_title_8 = "සුතමයඤාණං - Sri Sudharshanarama Maha Viharaya Mathugama"
+prepare_html_block(8, playlist_8, playlist_title_8, text_filename, playlist_url_8, '')
+
+playlist_9 = 'All_Playlists/H_Series.txt'
+playlist_title_9 = "Kalutara Bodhiya H Series"
 prepare_html_block(9, playlist_9, playlist_title_9, text_filename, '', '')
 
-playlist_10 = 'All_Playlists/F_Series.txt'
-playlist_title_10 = "Kalutara Bodhiya F Series"
+playlist_10 = 'All_Playlists/G_Series.txt'
+playlist_title_10 = "Kalutara Bodhiya G Series"
 prepare_html_block(10, playlist_10, playlist_title_10, text_filename, '', '')
 
-playlist_11 = 'All_Playlists/E_Series.txt'
-playlist_title_11 = "Kalutara Bodhiya E Series"
+playlist_11 = 'All_Playlists/F_Series.txt'
+playlist_title_11 = "Kalutara Bodhiya F Series"
 prepare_html_block(11, playlist_11, playlist_title_11, text_filename, '', '')
+
+playlist_12 = 'All_Playlists/E_Series.txt'
+playlist_title_12 = "Kalutara Bodhiya E Series"
+prepare_html_block(12, playlist_12, playlist_title_12, text_filename, '', '')
 
 with open(text_filename, 'a', encoding="utf-8") as fp:
     fp.write('<br>\n')
-    fp.write('<h2>12. <a href="B_C_D_Batches.html">මුල් අභිධම්ම දේශනා කාණ්ඩ  B, C, සහ D</a>\n</h2>')
+    fp.write('<h2>13. <a href="B_C_D_Batches.html">මුල් අභිධම්ම දේශනා කාණ්ඩ  B, C, සහ D</a>\n</h2>')
     fp.write('<br><a id="A_series">\n')
     fp.write('<h2>කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වුන මුල්ම දේශනා මාලාව (A Series)</h2>\n')
     fp.close()
     
-playlist_12 = 'All_Playlists/ParamarthaLokayaKalutharaBodhiya.txt'
-playlist_title_12 = "Paramartha Lokaya Kalutara Bodhiya A"
-prepare_html_block(13, playlist_12, playlist_title_12, text_filename, '', '')
+playlist_14 = 'All_Playlists/ParamarthaLokayaKalutharaBodhiya.txt'
+playlist_title_14 = "Paramartha Lokaya Kalutara Bodhiya A"
+prepare_html_block(14, playlist_14, playlist_title_14, text_filename, '', '')
 
 ######## tail #########
 with open(text_filename, 'a', encoding="utf-8") as fp:
