@@ -37,9 +37,12 @@
 </div>
 <h1>අභිධම්ම දේශනා  - සියල්ල</h1>
 <h2><li><a href="../documents/file_list.html">සියලු අභිධම්ම දේශනා සඳහා සටහන්</a></li></h2>
+<div class = "dp-item">
+<div class = "dp-head">
 <h2>1. තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය</h2>
-<p></p>
-<a href="https://www.youtube.com/playlist?list=PLqESXbJ82aIip-TA7Efg5JjwmEDJ95kAx">Watch full playlist in YouTube</a>
+<span><i class = "fas fa-plus"></i></span>
+</div>
+<div class = "dp-content">
 <p></p>
 <p>Select a video from the dropdown menu</p>    <p></p>
 <select id="video_list1">
@@ -470,10 +473,14 @@
 	}
 });
 </script>
-<br>
+</div>
+</div>
+<div class = "dp-item">
+<div class = "dp-head">
 <h2>2. නිවන් මග උදෙසා දර්ශන ඥාණය (A කණ්ඩායම)</h2>
-<p></p>
-<a href="https://www.youtube.com/playlist?list=PLqESXbJ82aIgflkHivXH-cYXlz1onvNCi">Watch full playlist in YouTube</a>
+<span><i class = "fas fa-plus"></i></span>
+</div>
+<div class = "dp-content">
 <p></p>
 <p>Select a video from the dropdown menu</p>    <p></p>
 <select id="video_list2">
@@ -580,12 +587,18 @@
 	}
 });
 </script>
-<br>
-<br><a id="I_series">
+</div>
+</div>
+<a id="I_series">
+<div class="normal-head">
 <h2>කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන 9වෙනි දේශනා මාලාව (I Series)</h2>
+</div>
+<div class = "dp-item">
+<div class = "dp-head">
 <h2>3. Abhidhamma lesson Kalutara Bodhiya I</h2>
-<p></p>
-<a href="https://www.youtube.com/playlist?list=PLqESXbJ82aIjuYvXqOWBWMs-moFFukBbN">Watch full playlist in YouTube</a>
+<span><i class = "fas fa-plus"></i></span>
+</div>
+<div class = "dp-content">
 <p></p>
 <p>Select a video from the dropdown menu</p>    <p></p>
 <select id="video_list3">
@@ -665,9 +678,14 @@
 	}
 });
 </script>
-<br>
+</div>
+</div>
+<div class = "dp-item">
+<div class = "dp-head">
 <h2>4. Abhidharma Aruth</h2>
-<p></p>
+<span><i class = "fas fa-plus"></i></span>
+</div>
+<div class = "dp-content">
 <p></p>
 <p>Select a video from the dropdown menu</p>    <p></p>
 <select id="video_list4">
@@ -831,9 +849,14 @@
 	}
 });
 </script>
-<br>
+</div>
+</div>
+<div class = "dp-item">
+<div class = "dp-head">
 <h2>5. Abhidharma Aruth - B</h2>
-<p></p>
+<span><i class = "fas fa-plus"></i></span>
+</div>
+<div class = "dp-content">
 <p></p>
 <p>Select a video from the dropdown menu</p>    <p></p>
 <select id="video_list5">
@@ -910,9 +933,14 @@
 	}
 });
 </script>
-<br>
+</div>
+</div>
+<div class = "dp-item">
+<div class = "dp-head">
 <h2>6. සුතමයඤාණං - ඉත්තෑපාන අක්කර</h2>
-<p></p>
+<span><i class = "fas fa-plus"></i></span>
+</div>
+<div class = "dp-content">
 <p></p>
 <p>Select a video from the dropdown menu</p>    <p></p>
 <select id="video_list6">
@@ -938,9 +966,9 @@
 	}
 });
 </script>
-<br>
-<br>
-<div class="dp-head">
+</div>
+</div>
+<div class="normal-head">
 <h2>7. විශේෂ දේශනා</h2>
 </div>
 <div class="dp-head">
@@ -1559,11 +1587,11 @@
 </script>
 </div>
 </div>
-<div class="dp-head">
+<div class="normal-head">
 <h2>13. <a href="B_C_D_Batches.html">මුල් අභිධම්ම දේශනා කාණ්ඩ  B, C, සහ D</a>
 </h2></div>
-<br><a id="A_series">
-<div class="dp-head">
+<a id="A_series">
+<div class="normal-head">
 <h2>කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වුන මුල්ම දේශනා මාලාව (A Series)</h2>
 </div>
 <div class = "dp-item">

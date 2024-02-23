@@ -8,6 +8,11 @@
 .dp-item{
     margin: 0.6rem 0;
 }
+.normal-head{
+    background: var(--white-smoke);
+    align-items: center;
+    padding: 0.2rem 1.8rem;
+}
 .dp-head{
     background: var(--white-smoke);
     display: flex;
