@@ -180,6 +180,7 @@ with open(text_filename, 'a', encoding="utf-8") as fp:
     fp.write('<div class="normal-head">\n')
     fp.write('<h2>කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන 9වෙනි දේශනා මාලාව (I Series)</h2>\n')
     fp.write('</div>\n')
+    fp.write('</a>\n')
 #    fp.write('<h2>සෑම ඉරිදාවකම ප.ව. 2:00 සිට ප.ව. 4:00 දක්වා</h2>\n')
 #    fp.write('<h2>WhatsApp සම්බන්ධ වීමට සහ විමසීම්: 071 - 8896727</h3>\n')
     fp.close()
@@ -262,6 +263,7 @@ with open(text_filename, 'a', encoding="utf-8") as fp:
     fp.write('<div class="normal-head">\n')
     fp.write('<h2>කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වුන මුල්ම දේශනා මාලාව (A Series)</h2>\n')
     fp.write('</div>\n')
+    fp.write('</a>\n')
     fp.close()
     
 playlist_14 = 'All_Playlists/ParamarthaLokayaKalutharaBodhiya.txt'
