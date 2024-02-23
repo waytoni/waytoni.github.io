@@ -13,10 +13,12 @@
     </script>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="A_series.css">
 	<link rel="stylesheet" type="text/css" href="../css/nav_menu.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/dp_block.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 	<script src="../scripts/menu_function.js"></script>
+	<script src="../scripts/jquery-3.7.1.min.js"></script>
+	<script src="../scripts/dp_function.js"></script>
 	<body style="font-family:calibri;"></body>
 	<link rel="icon" type="image/png" href="../images/favicon-16x16.png" sizes="16x16" />
 	<title>අභිධම්ම දේශනා  - සියල්ල</title>
@@ -938,12 +940,22 @@
 </script>
 <br>
 <br>
+<div class="dp-head">
 <h2>7. විශේෂ දේශනා</h2>
+</div>
+<div class="dp-head">
 <h3>2024-02-17 සෙනසුරාදා වීදියගොඩ රාජ මහ විහාරස්ථානයේ දී පැවැත්වූ දේශනාව</h3>
+<span><i class = "fas fa-plus"></i></span>
+</div>
+<div class = "dp-content">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_gIfkc0Hifw?si=ruS-MUtqrzHHwAQe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<div class = "dp-item">
+<div class = "dp-head">
 <h2>8. සුතමයඤාණං - Sri Sudharshanarama Maha Viharaya Mathugama</h2>
-<p></p>
-<a href="https://www.youtube.com/playlist?list=PLqESXbJ82aIgmWdPzXFdJplUOPJgRXpZN">Watch full playlist in YouTube</a>
+<span><i class = "fas fa-plus"></i></span>
+</div>
+<div class = "dp-content">
 <p></p>
 <p>Select a video from the dropdown menu</p>    <p></p>
 <select id="video_list8">
@@ -981,9 +993,14 @@
 	}
 });
 </script>
-<br>
+</div>
+</div>
+<div class = "dp-item">
+<div class = "dp-head">
 <h2>9. Kalutara Bodhiya H Series</h2>
-<p></p>
+<span><i class = "fas fa-plus"></i></span>
+</div>
+<div class = "dp-content">
 <p></p>
 <p>Select a video from the dropdown menu</p>    <p></p>
 <select id="video_list9">
@@ -1189,9 +1206,14 @@
 	}
 });
 </script>
-<br>
+</div>
+</div>
+<div class = "dp-item">
+<div class = "dp-head">
 <h2>10. Kalutara Bodhiya G Series</h2>
-<p></p>
+<span><i class = "fas fa-plus"></i></span>
+</div>
+<div class = "dp-content">
 <p></p>
 <p>Select a video from the dropdown menu</p>    <p></p>
 <select id="video_list10">
@@ -1265,9 +1287,14 @@
 	}
 });
 </script>
-<br>
+</div>
+</div>
+<div class = "dp-item">
+<div class = "dp-head">
 <h2>11. Kalutara Bodhiya F Series</h2>
-<p></p>
+<span><i class = "fas fa-plus"></i></span>
+</div>
+<div class = "dp-content">
 <p></p>
 <p>Select a video from the dropdown menu</p>    <p></p>
 <select id="video_list11">
@@ -1371,9 +1398,14 @@
 	}
 });
 </script>
-<br>
+</div>
+</div>
+<div class = "dp-item">
+<div class = "dp-head">
 <h2>12. Kalutara Bodhiya E Series</h2>
-<p></p>
+<span><i class = "fas fa-plus"></i></span>
+</div>
+<div class = "dp-content">
 <p></p>
 <p>Select a video from the dropdown menu</p>    <p></p>
 <select id="video_list12">
@@ -1525,13 +1557,21 @@
 	}
 });
 </script>
-<br>
-<br>
+</div>
+</div>
+<div class="dp-head">
 <h2>13. <a href="B_C_D_Batches.html">මුල් අභිධම්ම දේශනා කාණ්ඩ  B, C, සහ D</a>
-</h2><br><a id="A_series">
+</h2></div>
+<br><a id="A_series">
+<div class="dp-head">
 <h2>කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වුන මුල්ම දේශනා මාලාව (A Series)</h2>
+</div>
+<div class = "dp-item">
+<div class = "dp-head">
 <h2>14. Paramartha Lokaya Kalutara Bodhiya A</h2>
-<p></p>
+<span><i class = "fas fa-plus"></i></span>
+</div>
+<div class = "dp-content">
 <p></p>
 <p>Select a video from the dropdown menu</p>    <p></p>
 <select id="video_list14">
@@ -1746,7 +1786,8 @@
 	}
 });
 </script>
-<br>
+</div>
+</div>
 <br>
 <li><a href="../documents/file_list.html">සියලු අභිධම්ම දේශනා සඳහා සටහන්</a></li>
 <br>

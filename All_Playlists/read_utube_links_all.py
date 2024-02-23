@@ -1,5 +1,8 @@
 import io
 import shutil
+import sys
+sys.path.append('scripts')
+from dropdown_block_working import *
 
 def prepare_html_block(block_id, in_file, playlist_title, outfile, playlist_url, idx_prefix):
     
@@ -122,10 +125,13 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
         ftag.close()
     
     fp.write('\t<meta name="viewport" content="width=device-width, initial-scale=1.0">\n')
-    fp.write('\t<link rel="stylesheet" type="text/css" href="A_series.css">\n')
     fp.write('\t<link rel="stylesheet" type="text/css" href="../css/nav_menu.css">\n')
-    fp.write('\t<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">\n')
+    fp.write('\t<link rel="stylesheet" type="text/css" href="../css/dp_block.css">\n')
+    #fp.write('\t<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">\n')
+    fp.write('\t<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />\n')
     fp.write('\t<script src="../scripts/menu_function.js"></script>\n')
+    fp.write('\t<script src="../scripts/jquery-3.7.1.min.js"></script>\n')
+    fp.write('\t<script src="../scripts/dp_function.js"></script>\n')
     fp.write('\t<body style="font-family:calibri;"></body>\n')
     fp.write('\t<link rel="icon" type="image/png" href="../images/favicon-16x16.png" sizes="16x16" />\n')
     fp.write('\t<title>අභිධම්ම දේශනා  - සියල්ල</title>\n')
@@ -200,43 +206,61 @@ prepare_html_block(6, playlist_6, playlist_title_6, text_filename, playlist_url_
 
 with open(text_filename, 'a', encoding="utf-8") as fp:
         fp.write('<br>\n')
+        fp.write('<div class="dp-head">\n')
         fp.write('<h2>7. විශේෂ දේශනා</h2>\n')
+        fp.write('</div>\n')
+        fp.write('<div class="dp-head">\n')
         fp.write('<h3>2024-02-17 සෙනසුරාදා වීදියගොඩ රාජ මහ විහාරස්ථානයේ දී පැවැත්වූ දේශනාව</h3>\n')
+        fp.write('<span><i class = "fas fa-plus"></i></span>\n')
+        fp.write('</div>\n')
+        fp.write('<div class = "dp-content">\n')
         fp.write('<iframe width="560" height="315" src="https://www.youtube.com/embed/_gIfkc0Hifw?si=ruS-MUtqrzHHwAQe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>\n')
+        fp.write('</div>\n')
         fp.close()
         
 
 playlist_url_8 = 'https://www.youtube.com/playlist?list=PLqESXbJ82aIgmWdPzXFdJplUOPJgRXpZN'
 playlist_8 = 'Suthamaya/suthamaya_mathugama.txt'
 playlist_title_8 = "සුතමයඤාණං - Sri Sudharshanarama Maha Viharaya Mathugama"
-prepare_html_block(8, playlist_8, playlist_title_8, text_filename, playlist_url_8, '')
+#prepare_html_block(8, playlist_8, playlist_title_8, text_filename, playlist_url_8, '')
+
+DropdownBlockWorking(8, playlist_8, playlist_title_8, text_filename, '', '')
 
 playlist_9 = 'All_Playlists/H_Series.txt'
 playlist_title_9 = "Kalutara Bodhiya H Series"
-prepare_html_block(9, playlist_9, playlist_title_9, text_filename, '', '')
+# prepare_html_block(9, playlist_9, playlist_title_9, text_filename, '', '')
+DropdownBlockWorking(9, playlist_9, playlist_title_9, text_filename, '', '')
 
 playlist_10 = 'All_Playlists/G_Series.txt'
 playlist_title_10 = "Kalutara Bodhiya G Series"
-prepare_html_block(10, playlist_10, playlist_title_10, text_filename, '', '')
+#prepare_html_block(10, playlist_10, playlist_title_10, text_filename, '', '')
+DropdownBlockWorking(10, playlist_10, playlist_title_10, text_filename, '', '')
 
 playlist_11 = 'All_Playlists/F_Series.txt'
 playlist_title_11 = "Kalutara Bodhiya F Series"
-prepare_html_block(11, playlist_11, playlist_title_11, text_filename, '', '')
+#prepare_html_block(11, playlist_11, playlist_title_11, text_filename, '', '')
+DropdownBlockWorking(11, playlist_11, playlist_title_11, text_filename, '', '')
 
 playlist_12 = 'All_Playlists/E_Series.txt'
 playlist_title_12 = "Kalutara Bodhiya E Series"
-prepare_html_block(12, playlist_12, playlist_title_12, text_filename, '', '')
+#prepare_html_block(12, playlist_12, playlist_title_12, text_filename, '', '')
+DropdownBlockWorking(12, playlist_12, playlist_title_12, text_filename, '', '')
 
 with open(text_filename, 'a', encoding="utf-8") as fp:
-    fp.write('<br>\n')
+    #fp.write('<br>\n')
+    fp.write('<div class="dp-head">\n')
     fp.write('<h2>13. <a href="B_C_D_Batches.html">මුල් අභිධම්ම දේශනා කාණ්ඩ  B, C, සහ D</a>\n</h2>')
+    fp.write('</div>\n')
     fp.write('<br><a id="A_series">\n')
+    fp.write('<div class="dp-head">\n')
     fp.write('<h2>කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වුන මුල්ම දේශනා මාලාව (A Series)</h2>\n')
+    fp.write('</div>\n')
     fp.close()
     
 playlist_14 = 'All_Playlists/ParamarthaLokayaKalutharaBodhiya.txt'
 playlist_title_14 = "Paramartha Lokaya Kalutara Bodhiya A"
-prepare_html_block(14, playlist_14, playlist_title_14, text_filename, '', '')
+#prepare_html_block(14, playlist_14, playlist_title_14, text_filename, '', '')
+DropdownBlockWorking(14, playlist_14, playlist_title_14, text_filename, '', '')
 
 ######## tail #########
 with open(text_filename, 'a', encoding="utf-8") as fp:
