@@ -1,6 +1,6 @@
 ######## HtmlDropdownBlock ######
 
-def DropdownBlockWorking(block_id, in_file, playlist_title, outfile, playlist_url, idx_prefix):
+def DropdownBlockWorking(block_id, in_file, playlist_title, outfile, playlist_url, idx_prefix, series_title):
     
     with open(in_file, 'r', encoding='utf-8') as fp:
         utubelink_lines = [line.strip().split() for line in fp.readlines()]
@@ -20,7 +20,7 @@ def DropdownBlockWorking(block_id, in_file, playlist_title, outfile, playlist_ur
     with open(outfile, 'a', encoding="utf-8") as fp:
         fp.write('<div class = "dp-item">\n')
         fp.write('<div class = "dp-head">\n')
-        fp.write('<h2>' + str(block_id) + '. ' + playlist_title + '</h2>\n')
+        fp.write('<h2>' + str(block_id) + '. ' + series_title + '</h2>\n')
         fp.write('<span><i class = "fas fa-plus"></i></span>\n')
         fp.write('</div>\n')
         fp.write('<div class = "dp-content">\n')

@@ -9,12 +9,14 @@
     margin: 0.6rem 0;
 }
 .normal-head{
-    background: var(--white-smoke);
+    /* background: var(--white-smoke); */
+    /* background-color: aqua; */
     align-items: center;
     padding: 0.2rem 1.8rem;
 }
 .dp-head{
     background: var(--white-smoke);
+    background-color: #f0f0f0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,6 +35,6 @@
     transition: var(--transition);
 }
 .show-dp-content{
-    height: 400px;
+    height: 375px;  
     padding: 0.6rem 1.8rem;
 }
