@@ -159,6 +159,14 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
     fp.close()
 
 
+with open(text_filename, 'a', encoding="utf-8") as fp:
+    #fp.write('<br>\n')
+    fp.write('<div class="normal-head">\n')
+    fp.write('<h2>1. <a href="../Saturday_Abhidhamma_lesson/index.html">තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා මාලාව</a></h2>\n')
+    fp.write('</div>\n')
+    fp.close()
+
+
 #### set up playlist selection ######### 
     
 playlist_url_0 = "https://www.youtube.com/playlist?list=PLqESXbJ82aIip-TA7Efg5JjwmEDJ95kAx"
@@ -167,15 +175,22 @@ playlist_title_0 = "තුන්කල්හි වෙනස් නොවන ල
 series_title_1 = "තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා මාලාව"
 idx_prefix_0 = 'A'
 
-#prepare_html_block(1, playlist_0, playlist_title_0, text_filename, playlist_url_0, idx_prefix_0)
-DropdownBlockWorking(1, playlist_0, playlist_title_0, text_filename, '', idx_prefix_0, series_title_1)
+# prepare_html_block(1, playlist_0, playlist_title_0, text_filename, playlist_url_0, idx_prefix_0)
+# DropdownBlockWorking(1, playlist_0, playlist_title_0, text_filename, '', idx_prefix_0, series_title_1)
+
+with open(text_filename, 'a', encoding="utf-8") as fp:
+    #fp.write('<br>\n')
+    fp.write('<div class="normal-head">\n')
+    fp.write('<h2>2. <a href="../Nivan_Maga_Udesa/index.html">නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (A කණ්ඩායම)</a></h2>\n')
+    fp.write('</div>\n')
+    fp.close()
 
 playlist_url_2 = 'https://www.youtube.com/playlist?list=PLqESXbJ82aIgflkHivXH-cYXlz1onvNCi'
 playlist_2 = 'Nivan_Maga_Udesa/nivan_maga_udesa_youtube_links.txt'
 playlist_title_2 = "නිවන් මග උදෙසා දර්ශන ඥාණය (A කණ්ඩායම)"
 series_title_2 = "නිවන් මග උදෙසා දර්ශන ඥාණය (A කණ්ඩායම)"
-#prepare_html_block(2, playlist_2, playlist_title_2, text_filename, playlist_url_2, '')
-DropdownBlockWorking(2, playlist_2, playlist_title_2, text_filename, '', '', series_title_2)
+# prepare_html_block(2, playlist_2, playlist_title_2, text_filename, playlist_url_2, '')
+# DropdownBlockWorking(2, playlist_2, playlist_title_2, text_filename, '', '', series_title_2)
 
 # with open(text_filename, 'a', encoding="utf-8") as fp:
    # fp.write('<a id="I_series">\n')
@@ -265,7 +280,7 @@ DropdownBlockWorking(12, playlist_12, playlist_title_12, text_filename, '', '', 
 with open(text_filename, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
     fp.write('<div class="normal-head">\n')
-    fp.write('<h2>13. <a href="B_C_D_Batches.html">මුල් අභිධම්ම දේශනා කාණ්ඩ  B, C, සහ D</a>\n</h2>')
+    fp.write('<h2>13. <a href="B_C_D_Batches.html">කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වුන දෙවන, තෙවන සහ සිව්වන අභිධම්ම දේශනා කාණ්ඩ (B, C, සහ D)</a>\n</h2>')
     fp.write('</div>\n')
     fp.close()
     
@@ -275,6 +290,18 @@ series_title_14 = "කළුතර බෝධි පරිශ්‍රයේද�
 #prepare_html_block(14, playlist_14, playlist_title_14, text_filename, '', '')
 DropdownBlockWorking(14, playlist_14, playlist_title_14, text_filename, '', '', series_title_14)
 
+with open(text_filename, 'a', encoding="utf-8") as fp:
+    fp.write('<div class="normal-head">\n')
+    fp.write('<h2>15. <a href="../Paramartha_Video/Paramartha_Video.html">පරමාර්ථ ලෝකය දේශනා</a>\n</h2>')
+    fp.write('</div>\n')
+    fp.close()
+
+with open(text_filename, 'a', encoding="utf-8") as fp:
+    fp.write('<div class="normal-head">\n')
+    fp.write('<h2>16. <a href="../Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html">අනිච්ච, දුක්ඛ, අනත්ත දේශනා</a>\n</h2>')
+    fp.write('</div>\n')
+    fp.close()
+    
 ######## tail #########
 with open(text_filename, 'a', encoding="utf-8") as fp:
 #    fp.write('<h5>&emsp; F කාණ්ඩය අසම්පූර්ණයි</h5>\n')
