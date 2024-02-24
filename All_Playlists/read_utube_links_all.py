@@ -162,7 +162,7 @@ with open(text_filename, 'w', encoding="utf-8") as fp:
 with open(text_filename, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
     fp.write('<div class="normal-head">\n')
-    fp.write('<h2>1. <a href="../Saturday_Abhidhamma_lesson/index.html">තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා මාලාව</a></h2>\n')
+    fp.write('<h2>1. <a href="../Saturday_Abhidhamma_Lesson/index.html">තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා මාලාව</a></h2>\n')
     fp.write('</div>\n')
     fp.close()
 
