@@ -1,8 +1,8 @@
 1   https://www.youtube.com/watch?v=v7zmwZ8P8BU	2023-Aug-04
 2   https://www.youtube.com/watch?v=dL5HgzzqlgY 2023-Aug-11
 3   https://www.youtube.com/watch?v=sSYSXT0Nhm4 2023-Aug-18
-3_A  https://www.youtube.com/watch?v=RPlRYahoSKc 2023-Aug-25
-3_B  https://www.youtube.com/watch?v=9kl9MMXSiBE 2023-Sep-01
+3_Extra1  https://www.youtube.com/watch?v=RPlRYahoSKc 2023-Aug-25
+3_Extra2  https://www.youtube.com/watch?v=9kl9MMXSiBE 2023-Sep-01
 4   https://www.youtube.com/watch?v=34bcImbNCNY 2023-Sep-08
 5   https://www.youtube.com/watch?v=NfRrKVbb4Nw 2023-Sep-15
 6   https://www.youtube.com/watch?v=jrV5Tmbhgd8 2023-Sep-21

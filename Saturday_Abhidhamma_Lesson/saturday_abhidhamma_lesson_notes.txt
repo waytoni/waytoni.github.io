@@ -28,5 +28,6 @@ Four Noble truths for Young Buddhist -sinhala pdf::../documents/pdfs/Four Noble 
 විභංගප්පකරණ (1) url::http://dr.lib.sjp.ac.lk/handle/123456789/2139
 චිත්ත සහ චෛතසික සටහන url::https://waytoni.com/Chithatha_Chithasika/Chiththa_Chithasika.html
 #140
+පච්චයචතුක්කං url::https://tipitaka.lk/ap-vbh-6-6
 #1000
 end
