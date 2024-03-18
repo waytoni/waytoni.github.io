@@ -479,7 +479,7 @@
 <script>
 	const select1 = document.querySelector('#video_list');
 	const notes = document.querySelector('#notes');
-			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
+			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p><p>විභංගප්පකරණ (1) <a href="http://dr.lib.sjp.ac.lk/bitstream/handle/123456789/2139/46.%20Vibhanga_Pakarana_1.pdf?sequence=1&isAllowed=y" target="_blank" >http://dr.lib.sjp.ac.lk/bitstream/handle/123456789/2139/46.%20Vibhanga_Pakarana_1.pdf?sequence=1&isAllowed=y</a></p>';
 	select.addEventListener('change', function() {
 		if (this.value === 'option1') {
 			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
@@ -790,7 +790,9 @@
 			notes.innerHTML +='<p>පච්චයචතුක්කං <a href="https://tipitaka.lk/ap-vbh-6-6" target="_blank" >https://tipitaka.lk/ap-vbh-6-6</a></p>';
 
 		} else if (this.value === 'option141'){
-			notes.innerHTML = '';
+			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
+			notes.innerHTML +='<p>විභංගප්පකරණ (1) <a href="http://dr.lib.sjp.ac.lk/bitstream/handle/123456789/2139/46.%20Vibhanga_Pakarana_1.pdf?sequence=1&isAllowed=y" target="_blank" >http://dr.lib.sjp.ac.lk/bitstream/handle/123456789/2139/46.%20Vibhanga_Pakarana_1.pdf?sequence=1&isAllowed=y</a></p>';
+
 	}
 });
 </script>
