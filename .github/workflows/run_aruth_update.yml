@@ -15,7 +15,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.x # Set your desired Python version
+          python-version: 3.11 # Set your desired Python version
 
       - name: Run Python Script
-        run: Abhidharma_Aruth/read_AA_youtube_links_draft.py # Update with the actual path to your Python script
+        run: python Abhidharma_Aruth/read_AA_youtube_links_draft.py # Update with the actual path to your Python script
