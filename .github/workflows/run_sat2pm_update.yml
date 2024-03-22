@@ -3,7 +3,7 @@ name: Run Python Script on Text File Update
 on:
   push:
     paths:
-      - 'Nivan_Maga_Udesa/nivan_maga_udesa_youtube_links.txt' # Update with the actual path to your text file
+      - 'Saturday_Abhidhamma_Lesson/saturday_abhidhamma_lesson_youtube_links.txt' # Update with the actual path to your text file
 jobs:
   run-python-script:
     runs-on: ubuntu-latest
@@ -17,4 +17,4 @@ jobs:
           python-version: 3.11 # Set your desired Python version
 
       - name: Run Python Script
-        run: python Saturday_Abhidhamma_Lesson/read_saturday_abhidhamma_lesson_youtube_links.py # Update with the actual path to your Python script
+        run: python Saturday_Abhidhamma_Lesson/read_saturday_abhidhamma_lesson_youtube_links.py

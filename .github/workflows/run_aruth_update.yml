@@ -3,8 +3,8 @@ name: Run Python Script on Text File Update
 on:
   push:
     paths:
-      - 'Abhidharma_Aruth/Abhidharma_Aruth_B_youtube_links.txt' # Update with the actual path to your text file
-      - 'Abhidharma_Aruth/Abhidharma_Aruth_youtube_links.txt'
+      - 'Abhidharma_Aruth/Abhidharma_Aruth_B_youtube_links.txt' # AA B text file
+      - 'Abhidharma_Aruth/Abhidharma_Aruth_youtube_links.txt'   # AA EP text file
 jobs:
   run-python-script:
     runs-on: ubuntu-latest
@@ -18,4 +18,4 @@ jobs:
           python-version: 3.11 # Set your desired Python version
 
       - name: Run Python Script
-        run: python Abhidharma_Aruth/read_AA_youtube_links_draft.py # Update with the actual path to your Python script
+        run: python Abhidharma_Aruth/read_AA_youtube_links_draft.py # Python script
