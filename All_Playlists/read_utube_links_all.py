@@ -253,25 +253,25 @@ series_title_8 = "සුතමයඤාණං දේශනා මාලාව - 
 #prepare_html_block(8, playlist_8, playlist_title_8, text_filename, playlist_url_8, '')
 DropdownBlockWorking(8, playlist_8, playlist_title_8, text_filename, '', '', series_title_8)
 
-playlist_9 = 'All_Playlists/H_Series.txt'
+playlist_9 = 'All_Playlists/H_series.txt'
 playlist_title_9 = "Kalutara Bodhiya H Series"
 series_title_9 = "කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වුන අටවෙනි දේශනා මාලාව (H Series)"
 # prepare_html_block(9, playlist_9, playlist_title_9, text_filename, '', '')
 DropdownBlockWorking(9, playlist_9, playlist_title_9, text_filename, '', '', series_title_9)
 
-playlist_10 = 'All_Playlists/G_Series.txt'
+playlist_10 = 'All_Playlists/G_series.txt'
 playlist_title_10 = "Kalutara Bodhiya G Series"
 series_title_10 = "කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වුන හත්වෙනි දේශනා මාලාව (G Series)"
 #prepare_html_block(10, playlist_10, playlist_title_10, text_filename, '', '')
 DropdownBlockWorking(10, playlist_10, playlist_title_10, text_filename, '', '', series_title_10)
 
-playlist_11 = 'All_Playlists/F_Series.txt'
+playlist_11 = 'All_Playlists/F_series.txt'
 playlist_title_11 = "Kalutara Bodhiya F Series"
 series_title_11 = "කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වුන හයවෙනි දේශනා මාලාව (F Series)"
 #prepare_html_block(11, playlist_11, playlist_title_11, text_filename, '', '')
 DropdownBlockWorking(11, playlist_11, playlist_title_11, text_filename, '', '',series_title_11)
 
-playlist_12 = 'All_Playlists/E_Series.txt'
+playlist_12 = 'All_Playlists/E_series.txt'
 playlist_title_12 = "Kalutara Bodhiya E Series"
 series_title_12 = "කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වුන පස්වෙනි දේශනා මාලාව (E Series)"
 #prepare_html_block(12, playlist_12, playlist_title_12, text_filename, '', '')
