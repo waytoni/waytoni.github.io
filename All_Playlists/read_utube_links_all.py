@@ -201,7 +201,7 @@ series_title_2 = "නිවන් මග උදෙසා දර්ශන ඥා�
    # fp.close()
     
 playlist_url_3 = 'https://www.youtube.com/playlist?list=PLqESXbJ82aIjuYvXqOWBWMs-moFFukBbN'
-playlist_3 = 'All_Playlists/I_Series.txt'
+playlist_3 = 'All_Playlists/I_series.txt'
 playlist_title_3 = "Abhidhamma lesson Kalutara Bodhiya I"
 series_title_3 = "කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන 9වෙනි දේශනා මාලාව (I Series)"
 #prepare_html_block(3, playlist_3, playlist_title_3, text_filename, playlist_url_3, '')
