@@ -3,7 +3,7 @@ name: Run Python Script on Text File Update
 on:
   push:
     paths:
-      - 'Nivan_Maga_Udesa/nivan_maga_udesa_youtube_links.txt' # Update with the actual path to your text file
+      - 'Nivan_Maga_Udesa/nivan_maga_udesa_youtube_links.txt' # Nivan Maga Udesa text file
 jobs:
   run-python-script:
     runs-on: ubuntu-latest
@@ -14,10 +14,18 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.11 # Set your desired Python version
+          python-version: 3.x # Set your desired Python version
 
       - name: Update Nivan_Maga_Udesa
-        run: python Nivan_Maga_Udesa/read_nivan_maga_udesa_youtube_links.py # Update with the actual path to your Python script
+        run: python Nivan_Maga_Udesa/read_nivan_maga_udesa_youtube_links.py # Python script for Nivan Maga Udesa update
         
       - name: Update All_Playlist_NVM
         run: python All_Playlists/read_utube_links_all.py
+
+      - name: commited changes
+        run: |
+          date > generated.txt
+          git commit -m "updated NVMU"
+          git push
+
+      
