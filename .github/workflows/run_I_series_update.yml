@@ -17,7 +17,7 @@ jobs:
           python-version: 3.11 # Set your desired Python version
 
       - name: Run Python Script
-        run: All_Playlists/read_Iseries.py
+        run: python All_Playlists/read_Iseries.py
 
       - name: Update All_Playlist_NVM
         run: python All_Playlists/read_utube_links_all.py
