@@ -1,4 +1,4 @@
-name: Run Python Script on Text File Update
+name: Update Nivan Maga Udesa Desana
 
 on:
   push:
@@ -25,6 +25,8 @@ jobs:
       - name: commited changes
         run: |
           date > generated.txt
+          git config --global user.name "waytoni"
+          git config --global user.email "waytoni@outlook.com"
           git commit -m "updated NVMU"
           git push
 

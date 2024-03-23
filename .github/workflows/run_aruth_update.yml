@@ -1,4 +1,4 @@
-name: Run Python Script on Text File Update
+name: Update Abhidhamma Aruth Desana
 
 on:
   push:
@@ -19,3 +19,11 @@ jobs:
 
       - name: Run Python Script
         run: python Abhidharma_Aruth/read_AA_youtube_links_draft.py # Python script
+
+      - name: commited changes
+        run: |
+          date > generated.txt
+          git config --global user.name "waytoni"
+          git config --global user.email "waytoni@outlook.com"
+          git commit -m "updated NVMU"
+          git push
