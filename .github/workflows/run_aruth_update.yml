@@ -22,8 +22,7 @@ jobs:
 
       - name: commited changes
         run: |
-          date > generated.txt
           git config --global user.name "waytoni"
           git config --global user.email "waytoni@outlook.com"
-          git commit -m "updated NVMU"
+          git commit -m "updated Abhidhamma Aruth Desana"
           git push
