@@ -4,19 +4,22 @@ on:
   push:
     paths:
       - 'All_Playlists/I_series.txt' # Update with the actual path to your text file
+permissions:
+    contents: read
+    pages: write          
 jobs:
   run-python-script:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v3
         with:
           python-version: 3.11 # Set your desired Python version
 
-      - name: Run Python Script
+      - name: Read I_serires
         run: python All_Playlists/read_Iseries.py
 
       - name: Update All_Playlist_NVM
