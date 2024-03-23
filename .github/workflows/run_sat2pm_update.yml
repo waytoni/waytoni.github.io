@@ -23,5 +23,5 @@ jobs:
         run: |
           git config --global user.name "waytoni"
           git config --global user.email "waytoni@outlook.com"
-          git commit -m "updated Saturday Lesson"
+          git commit -a -m "updated Saturday Lesson"
           git push
