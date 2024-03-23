@@ -1,9 +1,9 @@
-name: Update Saturday Abhidhamma Lesson Links
+name: Update I series Lesson Links
 
 on:
   push:
     paths:
-      - 'Saturday_Abhidhamma_Lesson/saturday_abhidhamma_lesson_youtube_links.txt' # Update with the actual path to your text file
+      - 'All_Playlists/I_series.txt' # Update with the actual path to your text file
 jobs:
   run-python-script:
     runs-on: ubuntu-latest
@@ -17,11 +17,14 @@ jobs:
           python-version: 3.11 # Set your desired Python version
 
       - name: Run Python Script
-        run: python Saturday_Abhidhamma_Lesson/read_saturday_abhidhamma_lesson_youtube_links.py
+        run: All_Playlists/read_Iseries.py
+
+      - name: Update All_Playlist_NVM
+        run: python All_Playlists/read_utube_links_all.py
 
       - name: commited changes
         run: |
           git config user.name "$(git log -n 1 --pretty=format:%an)"
           git config user.email "$(git log -n 1 --pretty=format:%ae)"
-          git commit -a -m "updated Saturday Lesson"
+          git commit -a -m "updated I series desana"
           git push
