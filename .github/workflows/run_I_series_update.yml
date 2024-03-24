@@ -3,10 +3,7 @@ name: Update I series Lesson Links
 on:
   push:
     paths:
-      - 'All_Playlists/I_series.txt' # Update with the actual path to your text file
-permissions:
-    contents: read
-    pages: write          
+      - 'All_Playlists/I_series.txt' # Update with the actual path to your text file        
 jobs:
   run-python-script-Iseries:
     runs-on: ubuntu-latest
