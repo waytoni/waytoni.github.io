@@ -5,14 +5,14 @@ on:
     paths:
       - 'Saturday_Abhidhamma_Lesson/saturday_abhidhamma_lesson_youtube_links.txt' # Update with the actual path to your text file
 jobs:
-  run-python-script:
+  run-python-script-Saturday-Lesson:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v3
         with:
           python-version: 3.11 # Python version
 

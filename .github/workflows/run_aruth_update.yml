@@ -17,10 +17,10 @@ jobs:
         with:
           python-version: 3.11 # Python Version
 
-      - name: Run Python Script for Nivan Maga Udesa Desana
+      - name: Run Python Script for Abhidharma Aruth Desana
         run: python Abhidharma_Aruth/read_Abhidhama_Aruth_youtube_links.py 
       
-      - name: Update All_Playlists for Saturdaya Abhidharma Aruth Desana updates
+      - name: Update All_Playlists for Abhidharma Aruth Desana updates
         run: python All_Playlists/read_utube_links_all.py
 
       - name: commit changes

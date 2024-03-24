@@ -11,7 +11,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Set up Python
+      - name: Set up Python for Nivan Maga Udesa Desana
         uses: actions/setup-python@v3
         with:
           python-version: 3.11 #  Python version

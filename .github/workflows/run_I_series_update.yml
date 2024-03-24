@@ -19,7 +19,7 @@ jobs:
       - name: Read I_serires
         run: python All_Playlists/read_Iseries.py
 
-      - name: Update All_Playlist_NVM
+      - name: Update All_Playlists for I_series addition
         run: python All_Playlists/read_utube_links_all.py
 
       - name: commit changes
