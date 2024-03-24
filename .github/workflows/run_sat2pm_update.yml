@@ -14,12 +14,15 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.11 # Set your desired Python version
+          python-version: 3.11 # Python version
 
-      - name: Run Python Script
+      - name: Run Python Script for Saturday Abhidharma Lessons
         run: python Saturday_Abhidhamma_Lesson/read_saturday_abhidhamma_lesson_youtube_links.py
 
-      - name: commited changes
+      - name: Update All_Playlists for Saturdaya Abhidharma Lesson updates
+        run: python All_Playlists/read_utube_links_all.py
+
+      - name: commit changes
         run: |
           git config user.name "$(git log -n 1 --pretty=format:%an)"
           git config user.email "$(git log -n 1 --pretty=format:%ae)"

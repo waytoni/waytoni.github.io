@@ -5,28 +5,28 @@ on:
     paths:
       - 'Nivan_Maga_Udesa/nivan_maga_udesa_youtube_links.txt' # Nivan Maga Udesa text file
 jobs:
-  run-python-script:
+  run-python-script-Nivan-Maga-Udesa-Desana:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v3
         with:
-          python-version: 3.x # Set your desired Python version
+          python-version: 3.11 #  Python version
 
       - name: Update Nivan_Maga_Udesa
         run: python Nivan_Maga_Udesa/read_nivan_maga_udesa_youtube_links.py # Python script for Nivan Maga Udesa update
         
-      - name: Update All_Playlist_NVM
+      - name: Update All_Playlist for Nivan Maga Udesa Desana updates
         run: python All_Playlists/read_utube_links_all.py
 
-      - name: commited changes
+      - name: commit changes
         run: |
-          git config --global user.name "waytoni"
-          git config --global user.email "waytoni@outlook.com"
-          git commit -m "updated NVMU"
+          git config user.name "$(git log -n 1 --pretty=format:%an)"
+          git config user.email "$(git log -n 1 --pretty=format:%ae)"
+          git commit -m "updated Nivan Maga Udesa Desana"
           git push
 
       
