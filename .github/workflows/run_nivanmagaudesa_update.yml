@@ -26,7 +26,7 @@ jobs:
         run: |
           git config user.name "$(git log -n 1 --pretty=format:%an)"
           git config user.email "$(git log -n 1 --pretty=format:%ae)"
-          git commit -m "updated Nivan Maga Udesa Desana"
+          git commit -a -m "updated Nivan Maga Udesa Desana"
           git push
 
       
