@@ -140,7 +140,7 @@
 <script>
 	const select1 = document.querySelector('#video_list');
 	const notes = document.querySelector('#notes');
-			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
+			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p><p>මූලික පටිච්චසමුප්පාද දේශනාවකට උපකාරක වන දහම් කරුණු පෙළගැස්වීමකි.pdf <a href="docs/මූලික පටිච්චසමුප්පාද දේශනාවකට උපකාරක වන දහම් කරුණු පෙළගැස්වීමකි.pdf">docs/මූලික පටිච්චසමුප්පාද දේශනාවකට උපකාරක වන දහම් කරුණු පෙළගැස්වීමකි.pdf</a></p>';
 	select.addEventListener('change', function() {
 		if (this.value === 'option1') {
 			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
@@ -197,7 +197,9 @@
 		} else if (this.value === 'option26'){
 			notes.innerHTML = '';
 		} else if (this.value === 'option27'){
-			notes.innerHTML = '';
+			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
+			notes.innerHTML +='<p>මූලික පටිච්චසමුප්පාද දේශනාවකට උපකාරක වන දහම් කරුණු පෙළගැස්වීමකි.pdf <a href="docs/මූලික පටිච්චසමුප්පාද දේශනාවකට උපකාරක වන දහම් කරුණු පෙළගැස්වීමකි.pdf">docs/මූලික පටිච්චසමුප්පාද දේශනාවකට උපකාරක වන දහම් කරුණු පෙළගැස්වීමකි.pdf</a></p>';
+
 	}
 });
 </script>
