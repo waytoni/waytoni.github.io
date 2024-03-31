@@ -470,6 +470,20 @@
 <h2>7. විශේෂ දේශනා</h2>
 </div>
 <div class="dp-head">
+<h3>2024-03-31 කළුතර බෝධි පරිශ්‍රයේදී පැවැත්වූ මූලික පටිච්චසමුප්පාද දේශනාව (01)</h3>
+<span><i class = "fas fa-plus"></i></span>
+</div>
+<div class = "dp-content">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fu6W17vIp5c?si=Zg4CVTkUTHVnTCfx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<div class="dp-head">
+<h3>2024-03-31 කළුතර බෝධි පරිශ්‍රයේදී පැවැත්වූ මූලික පටිච්චසමුප්පාද දේශනාව (02)</h3>
+<span><i class = "fas fa-plus"></i></span>
+</div>
+<div class = "dp-content">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Vn09bpxfFCg?si=SRYZ4GkmhJbUzUzC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<div class="dp-head">
 <h3>2024-02-17 සෙනසුරාදා වීදියගොඩ රාජ මහ විහාරස්ථානයේ දී පැවැත්වූ දේශනාව</h3>
 <span><i class = "fas fa-plus"></i></span>
 </div>

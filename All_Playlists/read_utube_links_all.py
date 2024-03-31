@@ -236,6 +236,23 @@ with open(text_filename, 'a', encoding="utf-8") as fp:
         fp.write('<div class="normal-head">\n')
         fp.write('<h2>7. විශේෂ දේශනා</h2>\n')
         fp.write('</div>\n')
+        
+        fp.write('<div class="dp-head">\n')
+        fp.write('<h3>2024-03-31 කළුතර බෝධි පරිශ්‍රයේදී පැවැත්වූ මූලික පටිච්චසමුප්පාද දේශනාව (01)</h3>\n')
+        fp.write('<span><i class = "fas fa-plus"></i></span>\n')
+        fp.write('</div>\n')
+        fp.write('<div class = "dp-content">\n')
+        fp.write('<iframe width="560" height="315" src="https://www.youtube.com/embed/fu6W17vIp5c?si=Zg4CVTkUTHVnTCfx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>\n')
+        fp.write('</div>\n')
+        
+        fp.write('<div class="dp-head">\n')
+        fp.write('<h3>2024-03-31 කළුතර බෝධි පරිශ්‍රයේදී පැවැත්වූ මූලික පටිච්චසමුප්පාද දේශනාව (02)</h3>\n')
+        fp.write('<span><i class = "fas fa-plus"></i></span>\n')
+        fp.write('</div>\n')
+        fp.write('<div class = "dp-content">\n')
+        fp.write('<iframe width="560" height="315" src="https://www.youtube.com/embed/Vn09bpxfFCg?si=SRYZ4GkmhJbUzUzC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>\n')
+        fp.write('</div>\n')
+        
         fp.write('<div class="dp-head">\n')
         fp.write('<h3>2024-02-17 සෙනසුරාදා වීදියගොඩ රාජ මහ විහාරස්ථානයේ දී පැවැත්වූ දේශනාව</h3>\n')
         fp.write('<span><i class = "fas fa-plus"></i></span>\n')
@@ -243,6 +260,7 @@ with open(text_filename, 'a', encoding="utf-8") as fp:
         fp.write('<div class = "dp-content">\n')
         fp.write('<iframe width="560" height="315" src="https://www.youtube.com/embed/_gIfkc0Hifw?si=ruS-MUtqrzHHwAQe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>\n')
         fp.write('</div>\n')
+        
         fp.close()
         
 
