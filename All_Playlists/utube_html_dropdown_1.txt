@@ -78,7 +78,7 @@
 	<option value="option24">2024-Mar-03 Abhidhamma lesson Kalutara Bodhiya I 024</option>
 	<option value="option25">2024-Mar-10 Abhidhamma lesson Kalutara Bodhiya I 025</option>
 	<option value="option26">2024-Mar-17 Abhidhamma lesson Kalutara Bodhiya I 026</option>
-	<option value="option27" selected>2024-Mar-31 Abhidhamma lesson Kalutara Bodhiya I 27_මූලික_පටිච්චසමුප්පාදය</option>
+	<option value="option27" selected>2024-Mar-31 Abhidhamma lesson Kalutara Bodhiya I 27_මූලික_පටිච්චසමුප්පාදය_01</option>
 </select>
 <div id="content3"></div>
 <script>
