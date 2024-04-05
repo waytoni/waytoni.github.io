@@ -1,0 +1,35 @@
+#1
+#2
+#123
+සමිද්ධි සත්තපඤ්හ සූත්‍රය  url::https://tipitaka.lk/sn-4-1-7-4
+#127
+#128 
+ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
+ඛජ්ජනීය සුත්තං  url::https://tipitaka.lk/sn-3-1-2-3-7
+ඛන්‍ධවිභඞ‍්ගො  url::https://tipitaka.lk/ap-vbh-1/0-4/pali
+#129
+ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
+#130
+ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
+#131
+ගවම්පති සූත්‍රය  url::https://tipitaka.lk/sn-5-12-3-10
+ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
+රූපක‍්ඛන්‍ධො  url::https://tipitaka.lk/ap-vbh-1-2
+#132
+ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
+#135
+Four Noble truths for Young Buddhist - English pdf::../documents/pdfs/Four Noble truths for Young Buddhist - English Final.pdf
+Four Noble truths for Young Buddhist -sinhala pdf::../documents/pdfs/Four Noble truths for Young Buddhist -sinhala.pdf
+#136
+ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
+#137
+ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
+#138 
+විභංගප්පකරණ (1) url::http://dr.lib.sjp.ac.lk/handle/123456789/2139
+චිත්ත සහ චෛතසික සටහන url::https://waytoni.com/Chithatha_Chithasika/Chiththa_Chithasika.html
+#140
+පච්චයචතුක්කං url::https://tipitaka.lk/ap-vbh-6-6
+#141
+විභංගප්පකරණ (1) url::http://dr.lib.sjp.ac.lk/bitstream/handle/123456789/2139/46.%20Vibhanga_Pakarana_1.pdf?sequence=1&isAllowed=y
+#1000
+end
