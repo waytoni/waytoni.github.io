@@ -73,14 +73,17 @@
 	<option value="option26">2024-Mar-17 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන 9වෙනි දේශනා මාලාව 026</option>
 	<option value="option27">2024-Mar-31 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන 9වෙනි දේශනා මාලාව 27_මූලික_පටිච්චසමුප්පාදය_01</option>
 	<option value="option28">2024-Mar-31 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන 9වෙනි දේශනා මාලාව 27_මූලික_පටිච්චසමුප්පාදය_02</option>
-	<option value="option29" selected>2024-Apr-07 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන 9වෙනි දේශනා මාලාව 01_ආවර්ජනා</option>
+	<option value="option29">2024-Apr-07 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන 9වෙනි දේශනා මාලාව 01_ආවර්ජනා</option>
+	<option value="option30">2024-Apr-07 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන 9වෙනි දේශනා මාලාව 02_ආවර්ජනා</option>
+	<option value="option31">2024-Apr-07 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන 9වෙනි දේශනා මාලාව 03_ආවර්ජනා</option>
+	<option value="option32" selected>2024-Apr-07 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන 9වෙනි දේශනා මාලාව 04_ආවර්ජනා</option>
 </select>
 <div id="content"></div>
 <div id="notes"></div>
 <script>
 	const select = document.querySelector('#video_list');
 	const content = document.querySelector('#content');
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/yX9-VBOkrzc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/hxqdd9EvUWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	select.addEventListener('change', function() {
 		if (this.value === 'option1') {
 			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/zwZOGfI7Zes" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
@@ -140,6 +143,12 @@
 			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/Vn09bpxfFCg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		} else if (this.value === 'option29'){
 			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/yX9-VBOkrzc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+		} else if (this.value === 'option30'){
+			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/YLoCOeBhYzY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+		} else if (this.value === 'option31'){
+			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/vq7BXWKqTVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+		} else if (this.value === 'option32'){
+			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/hxqdd9EvUWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	}
 });
 </script>
@@ -211,6 +220,12 @@
 			notes.innerHTML +='<p>මූලික පටිච්චසමුප්පාද දේශනාවකට උපකාරක වන දහම් කරුණු <a href="docs/මූලික පටිච්චසමුප්පාද දේශනාවකට උපකාරක වන දහම් කරුණු පෙළගැස්වීමකි.pdf">docs/මූලික පටිච්චසමුප්පාද දේශනාවකට උපකාරක වන දහම් කරුණු පෙළගැස්වීමකි.pdf</a></p>';
 
 		} else if (this.value === 'option29'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option30'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option31'){
+			notes.innerHTML = '';
+		} else if (this.value === 'option32'){
 			notes.innerHTML = '';
 	}
 });
