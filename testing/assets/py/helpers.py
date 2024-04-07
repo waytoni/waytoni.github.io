@@ -277,6 +277,7 @@ def PrepareHead(text_filename, series_title):
 ########### PrepareHead End ###################################
 
 
+
 ######## PrepareHead_2ndLevel Testing ##########
 def PrepareHead_2ndLevel(text_filename, series_title): 
     
@@ -288,7 +289,7 @@ def PrepareHead_2ndLevel(text_filename, series_title):
             fp.write(tag_info)
             ftag.close()
         
-        with open('assets/py/page_head.txt', 'r', encoding="utf-8") as fhead:
+        with open('assets/py/page_head_2ndLevel.txt', 'r', encoding="utf-8") as fhead:
             head_info = fhead.read()
             fp.write(head_info)
             fhead.close()   

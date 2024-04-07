@@ -22,8 +22,8 @@
 	<meta name="author" content="Devcrud">
 
 	<!-- font icons -->
-	<link rel="stylesheet" href="../assets/vendors/themify-icons/css/themify-icons.css">  
-	<link rel="stylesheet" href="../assets/css/waytoni.css">
+	<link rel="stylesheet" href="../../assets/vendors/themify-icons/css/themify-icons.css">  
+	<link rel="stylesheet" href="../../assets/css/waytoni.css">
 
 	<style>
 	h1, h2, h3, p, a {
@@ -114,7 +114,8 @@
 	<option value="option25">2024-Mar-10 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන 9වෙනි දේශනා මාලාව 025</option>
 	<option value="option26">2024-Mar-17 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන 9වෙනි දේශනා මාලාව 026</option>
 	<option value="option27">2024-Mar-31 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන 9වෙනි දේශනා මාලාව 27_මූලික_පටිච්චසමුප්පාදය_01</option>
-	<option value="option28" selected>2024-Mar-31 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන 9වෙනි දේශනා මාලාව 27_මූලික_පටිච්චසමුප්පාදය_02</option>
+	<option value="option28">2024-Mar-31 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන 9වෙනි දේශනා මාලාව 27_මූලික_පටිච්චසමුප්පාදය_02</option>
+	<option value="option29" selected>2024-Apr-07 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන 9වෙනි දේශනා මාලාව 01_ආවර්ජනා</option>
 </select>
 <div id="content"></div>
 <div id="notes"></div>
@@ -122,7 +123,7 @@
 <script>
 	const select = document.querySelector('#video_list');
 	const content = document.querySelector('#content');
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/Vn09bpxfFCg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/yX9-VBOkrzc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	select.addEventListener('change', function() {
 		if (this.value === 'option1') {
 			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/zwZOGfI7Zes" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
@@ -180,13 +181,15 @@
 			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/fu6W17vIp5c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		} else if (this.value === 'option28'){
 			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/Vn09bpxfFCg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+		} else if (this.value === 'option29'){
+			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/yX9-VBOkrzc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	}
 });
 </script>
 <script>
 	const select1 = document.querySelector('#video_list');
 	const notes = document.querySelector('#notes');
-			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p><p>මූලික පටිච්චසමුප්පාද දේශනාවකට උපකාරක වන දහම් කරුණු <a href="docs/මූලික පටිච්චසමුප්පාද දේශනාවකට උපකාරක වන දහම් කරුණු පෙළගැස්වීමකි.pdf">docs/මූලික පටිච්චසමුප්පාද දේශනාවකට උපකාරක වන දහම් කරුණු පෙළගැස්වීමකි.pdf</a></p>';
+			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
 	select.addEventListener('change', function() {
 		if (this.value === 'option1') {
 			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
@@ -250,6 +253,8 @@
 			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
 			notes.innerHTML +='<p>මූලික පටිච්චසමුප්පාද දේශනාවකට උපකාරක වන දහම් කරුණු <a href="docs/මූලික පටිච්චසමුප්පාද දේශනාවකට උපකාරක වන දහම් කරුණු පෙළගැස්වීමකි.pdf">docs/මූලික පටිච්චසමුප්පාද දේශනාවකට උපකාරක වන දහම් කරුණු පෙළගැස්වීමකි.pdf</a></p>';
 
+		} else if (this.value === 'option29'){
+			notes.innerHTML = '';
 	}
 });
 </script>

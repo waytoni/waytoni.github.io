@@ -29,15 +29,8 @@ print(notes_file)
 print(utube_links)
 print(html_file)
 
-
 sections = ReadSections(notes_file)
 
-
-
-
-# print(sections)
-
-print(html_file)
 PrepareHead_2ndLevel(html_file, series_title)
 
 
