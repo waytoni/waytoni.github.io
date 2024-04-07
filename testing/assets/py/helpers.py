@@ -267,27 +267,48 @@ def PrepareHead(text_filename, series_title):
         fp.write('</head>\n')
         fp.write('<body ata-spy="scroll" data-target=".navbar" data-offset="40" id="home">\n')
         
-        with open('assets/py/navigation_header_second_level.txt', 'r', encoding="utf-8") as fnavbar:
+        with open('assets/py/navigation_header_1stLevel.txt', 'r', encoding="utf-8") as fnavbar:
             navbar_info = fnavbar.read()
             fp.write(navbar_info)
             fnavbar.close()
         
         fp.close()
-        # fp.write('<div class="topnav" id="Topnavbar">\n')
-        # fp.write('<a href="https://waytoni.github.io/" class="active">Home </a>\n') 
-        # fp.write('<a href="../All_Playlists/සියුලු_දේශනා.html">සියලුම දේශනා </a>\n')
-        # fp.write('<a href="../Paramartha_Video/Paramartha_Video.html">පරමාර්ථ ලෝකය දේශනා </a>\n')
-        # fp.write('<a href="../Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html">අනිච්ච, දුක්ඛ, අනත්ත දේශනා </a>\n')
-        # fp.write('<a href="../Saturday_Abhidhamma_Lesson">තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා</a>\n')
-        # fp.write('<a href="../Abhidharma_Aruth">අභිධර්ම අරුත් දේශනා</a>\n')
-        # fp.write('<a href="../Nivan_Maga_Udesa">නිවන් මග උදෙසා දේශනා</a>\n')
-        # fp.write('<a href="../Chithatha_Chithasika/Chiththa_Chithasika.html">චිත්ත සහ චෛතසික</a>\n')
-        # fp.write('<a href="javascript:void(0);" class="icon" onclick="navFunction()"> <i class="fa fa-bars"></i></a>\n')
-        # fp.write('</div>\n')
-               
-    #    fp.close()
     return None
 ########### PrepareHead End ###################################
+
+
+######## PrepareHead_2ndLevel Testing ##########
+def PrepareHead_2ndLevel(text_filename, series_title): 
+    
+    with open(text_filename, 'w', encoding="utf-8") as fp:
+        fp.write('<html>\n<head>\n')
+    
+        with open('assets/py/analytics_tag.txt', 'r', encoding="utf-8") as ftag:
+            tag_info = ftag.read()
+            fp.write(tag_info)
+            ftag.close()
+        
+        with open('assets/py/page_head.txt', 'r', encoding="utf-8") as fhead:
+            head_info = fhead.read()
+            fp.write(head_info)
+            fhead.close()   
+             
+        fp.write('\n')    
+        
+        title_line = '\t<title>'+ series_title + '</title>\n'
+        fp.write(title_line)
+        
+        fp.write('</head>\n')
+        fp.write('<body ata-spy="scroll" data-target=".navbar" data-offset="40" id="home">\n')
+        
+        with open('assets/py/navigation_header_2ndLevel.txt', 'r', encoding="utf-8") as fnavbar:
+            navbar_info = fnavbar.read()
+            fp.write(navbar_info)
+            fnavbar.close()
+        
+        fp.close()
+    return None
+########### PrepareHead_2ndLevel End ###################################
 
 
 ######## PrepareTail ##########
@@ -301,5 +322,17 @@ def PrepareTail(text_filename):
         fp.close()
     return None
 ########### PrepareTail End ###################################
+
+
+######## PrepareTail - 2nd level ##########
+def PrepareTail_2ndLevel(text_filename): 
+    with open(text_filename, 'a', encoding="utf-8") as fp:
+        fp.write('<script src="../../assets/vendors/jquery/jquery-3.4.1.js"></script>\n')
+        fp.write('<script src="../../assets/vendors/bootstrap/bootstrap.bundle.js"></script>\n')
+        fp.write('<script src="../../assets/js/waytoni.js"></script>\n')
+        fp.write('</body>\n')
+        fp.write('</html>\n')
+        fp.close()
+    return None
     
 ##############################################################################
