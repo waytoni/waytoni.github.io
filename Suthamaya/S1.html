@@ -1,0 +1,170 @@
+<html>
+<head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=GT-MBNDJTD"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'GT-MBNDJTD');
+	</script>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/nav_menu_SU.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="../scripts/menu_function.js"></script>
+	<link rel="icon" type="image/png" href="../images/favicon-16x16.png" sizes="16x16" />
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+	<style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+        }
+        body{
+            overflow-x: hidden;
+        }
+       header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 249px;
+        border-bottom: 1px solid #dbdbdb;
+       }
+       header ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 0 30px;
+       }
+       header ul li:last-child{
+        margin-right: 0;
+       }
+       header ul li a{
+        text-decoration: none;
+        color: #42424a;
+        padding: 22px 0;
+        display: inline-block;
+        transition: all ease 0.3s;
+        font-size: 18px;
+       }
+       header ul li a:hover{
+        color: #ff8a00;
+       }
+
+       /* submenu style */
+       header ul .submenu{
+        position: absolute;
+        width: 200px;
+        background-color: #ffffff;
+        box-shadow: 0 20px 45px #00000020;
+        margin-top: -50px;
+        opacity: 0;
+        z-index: -999;
+        transition: all ease 0.5s;
+       }
+       header ul li:hover .submenu{
+        z-index: 99;
+        opacity: 1;
+        margin-top: 0;
+       }
+       header ul .submenu li{
+        margin: 0;
+        width: 100%;
+       } 
+       header ul .submenu li a{
+        padding: 15px 20px;
+        display: inline-block;
+        width: 100%;
+       }
+
+       .hero_sec{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+       }
+    </style>
+
+
+
+	<title>සුතමයඤාණං - දේශනා</title>
+</head>
+
+
+<body>
+    <div class="topnav" id="Topnavbar">
+		<!--
+        <a href="https://waytoni.github.io/" class="active">Home </a>
+        
+        <a href="All_Playlists/සියුලු_දේශනා.html">සියලුම දේශනා </a>
+        <a href="Saturday_Abhidhamma_Lesson/index.html">තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා</a>
+        <a href="Abhidharma_Aruth/index.html">අභිධර්ම අරුත් දේශනා</a>
+        <a href="Nivan_Maga_Udesa/index.html">නිවන් මග උදෙසා දේශනා</a>
+     
+        <a href="Chithatha_Chithasika/Chiththa_Chithasika.html">චිත්ත සහ චෛතසික </a>
+
+		-->
+		<ul class="nav navbar-nav">
+			<li><a href="https://waytoni.github.io/" class="active">Home </a></li>
+			<!--
+			<li class="active"><a href="https://waytoni.github.io/">Home</a></li>
+			-->
+			<li><a href="../Paramartha_Video/Paramartha_Video.html">පරමාර්ථ ලෝකය දේශනා </a></li>
+			<li><a href="../Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html">අනිච්ච, දුක්ඛ, අනත්ත දේශනා </a></li>
+
+
+			<li><a href="../All_Playlists/සියුලු_දේශනා.html">පසුගිය සහ සියලුම දේශනා</a></li>
+			<li><a href="../Chithatha_Chithasika/Chiththa_Chithasika.html">චිත්ත සහ චෛතසික</a></li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">දැනට පැවැත්වෙන දේශනා<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="../Nivan_Maga_Udesa">නිවන් මග උදෙසා දේශනා</a></li>
+					<li><a href="../Saturday_Abhidhamma_Lesson">තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා</a></li>
+					<li><a href="../Abhidharma_Aruth">අභිධර්ම අරුත් දේශනා</a></li>
+					<li><a href="./Suthamaya/index.html">සුතමයඤාණං දේශනා</a></li>
+					<li><a href="../විශේෂ දේශනා/විශේෂ දේශනා - index.html">විශේෂ දේශනා</a></li>
+					<li><a href="../All_Playlists/I_series.html">කළුතර බෝධි පරිශ්‍රයේදී පැවැත්වුන 9වෙනි දේශනා මාලාව</a></li>
+				</ul>
+			</li>
+		</ul>
+        <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+
+	
+
+
+	<hr />
+
+	<hr>
+
+<h1>Testing Page</h1>
+
+<h2>sub title</h2>
+Laboris minim deserunt consectetur ut duis duis officia eiusmod duis enim quis. Laboris veniam veniam enim consequat aute pariatur eu nisi commodo magna amet eu. Irure duis velit quis officia aliquip. Culpa magna dolor laborum minim et dolore Lorem exercitation. Consectetur minim deserunt irure laboris quis esse ea ex.
+
+Duis est veniam elit ex cupidatat deserunt cupidatat pariatur commodo. Id sunt adipisicing qui magna labore enim consequat veniam et labore. Consequat excepteur laborum est aliqua occaecat et tempor. Ullamco occaecat reprehenderit fugiat ut proident exercitation ut ea.
+
+Sunt ut dolor minim do cillum consequat aliqua. Lorem labore culpa sint elit non voluptate officia commodo nulla magna. Deserunt consequat exercitation eiusmod ut occaecat ullamco ex consequat aute consectetur voluptate ad dolor elit. Deserunt aliquip ut veniam do. Ea labore aliqua ut dolor. Laboris laboris cupidatat do et cillum duis non id consectetur irure sit sit esse.
+
+Ullamco amet consectetur magna ad ullamco ut proident. Tempor consequat ullamco aliqua officia reprehenderit velit exercitation amet do incididunt. Ex consequat ex ad tempor ad tempor irure Lorem irure dolore. Esse velit sit magna ut proident dolore reprehenderit officia aliquip elit incididunt minim adipisicing. Non et tempor sunt proident nulla qui dolore ullamco ipsum qui reprehenderit laboris in.
+</body>
+</html>
