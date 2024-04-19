@@ -175,7 +175,7 @@
 <script>
 	const select1 = document.querySelector('#video_list');
 	const notes = document.querySelector('#notes');
-			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
+			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p><p>මහාහත්‍ථිපදෝපම සූත්‍රය <a href="https://tipitaka.lk/mn-1-3-8" target="_blank" >https://tipitaka.lk/mn-1-3-8</a></p>';
 	select.addEventListener('change', function() {
 		if (this.value === 'option1') {
 			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p><p> <a href="docs/001- නිවන් මග උදෙසා දර්ශන ඥානය_2023-08-04.pdf">docs/001- නිවන් මග උදෙසා දර්ශන ඥානය_2023-08-04.pdf</a></p><p> <img src="docs/thumbnails/001_Page_1.png" width=95%></p><p> <img src="docs/thumbnails/001_Page_2.png" width=95%></p><p> <img src="docs/001_Page_3.png" width=95%></p>';
@@ -288,7 +288,9 @@
 		} else if (this.value === 'option37'){
 			notes.innerHTML = '';
 		} else if (this.value === 'option38'){
-			notes.innerHTML = '';
+			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
+			notes.innerHTML +='<p>මහාහත්‍ථිපදෝපම සූත්‍රය <a href="https://tipitaka.lk/mn-1-3-8" target="_blank" >https://tipitaka.lk/mn-1-3-8</a></p>';
+
 	}
 });
 </script>
