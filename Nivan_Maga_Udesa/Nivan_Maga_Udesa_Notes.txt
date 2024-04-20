@@ -58,6 +58,10 @@ img::027 2024 02 16.jpg
 pdf::docs/028 2024 02 23.pdf
 #38
 මහාහත්‍ථිපදෝපම සූත්‍රය url::https://tipitaka.lk/mn-1-3-8
+pdf::docs/035 2024.04.19 Note.pdf
+img::035 2024.04.19 Note_Page_1.jpg
+img::035 2024.04.19 Note_Page_2.jpg
+img::035 2024.04.19 Note_Page_3.jpg
 #40
 #45
 #50
