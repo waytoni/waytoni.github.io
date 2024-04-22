@@ -41,21 +41,21 @@ file_header = """<!DOCTYPE html>
 <body>
     <div class="topnav" id="Topnavbar">
         <a href="https://waytoni.com/" class="active"><i style="font-size:24px" class="fa">&#xf015;</i></a>
-        <a href="All_Playlists/SiyaluDesana.html">පසුගිය සහ සියලුම දේශනා</a>
-        <a href="Paramartha_Video/Paramartha_Video.html">පරමාර්ථ ලෝකය දේශනා </a>
-        <a href="Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html">අනිච්ච, දුක්ඛ, අනත්ත දේශනා </a>
-        <a href="Chithatha_Chithasika/Chiththa_Chithasika.html">චිත්ත සහ චෛතසික</a>
+        <a href="/All_Playlists/SiyaluDesana.html">පසුගිය සහ සියලුම දේශනා</a>
+        <a href="/Paramartha_Video/Paramartha_Video.html">පරමාර්ථ ලෝකය දේශනා </a>
+        <a href="/Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html">අනිච්ච, දුක්ඛ, අනත්ත දේශනා </a>
+        <a href="/Chithatha_Chithasika/Chiththa_Chithasika.html">චිත්ත සහ චෛතසික</a>
         <div class="dropdown">
           <button class="dropbtn">දැනට පැවැත්වෙන දේශනා
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <a href="Nivan_Maga_Udesa/index.html">නිවන් මග උදෙසා දර්ශන ඥාණය</a>
-            <a href="Saturday_Abhidhamma_Lesson">තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා</a>
-            <a href="Abhidharma_Aruth">අභිධර්ම අරුත් දේශනා</a>
-            <a href="Suthamaya/index.html">සුතමයඤාණං දේශනා</a>
-            <a href="VisheshaDesana/VisheshaDesana.html">විශේෂ දේශනා</a>
-            <a href="KalutaraBodhiya/I_series/I_series.html">කළුතර බෝධි පරිශ්‍රයේදී පැවැත්වුන 9වෙනි දේශනා මාලාව</a>
+            <a href="/Nivan_Maga_Udesa/index.html">නිවන් මග උදෙසා දර්ශන ඥාණය</a>
+            <a href="/Saturday_Abhidhamma_Lesson">තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා</a>
+            <a href="/Abhidharma_Aruth">අභිධර්ම අරුත් දේශනා</a>
+            <a href="/Suthamaya/index.html">සුතමයඤාණං දේශනා</a>
+            <a href="/VisheshaDesana/VisheshaDesana.html">විශේෂ දේශනා</a>
+            <a href="/KalutaraBodhiya/I_series/I_series.html">කළුතර බෝධි පරිශ්‍රයේදී පැවැත්වුන 9වෙනි දේශනා මාලාව</a>
           </div>
         </div> 
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navFunction()">&#9776;</a>
