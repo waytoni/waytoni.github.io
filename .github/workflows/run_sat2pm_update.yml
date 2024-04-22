@@ -17,10 +17,10 @@ jobs:
           python-version: 3.11 # Python version
 
       - name: Run Python Script for Saturday Abhidharma Lessons
-        run: python Saturday_Abhidhamma_Lesson/read_saturday_abhidhamma_lesson_youtube_links.py
+        run: python python scripts/py/build_series_Saturday_Abhidhamma_Lesson.py
 
       - name: Update All_Playlists for Saturdaya Abhidharma Lesson updates
-        run: python All_Playlists/read_utube_links_all.py
+        run: python scripts/py/build_series_SiyaluDesana.py
 
       - name: commit changes
         run: |

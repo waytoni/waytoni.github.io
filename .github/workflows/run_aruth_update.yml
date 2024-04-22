@@ -18,10 +18,10 @@ jobs:
           python-version: 3.11 # Python Version
 
       - name: Run Python Script for Abhidharma Aruth Desana
-        run: python Abhidharma_Aruth/read_Abhidharma_Aruth_youtube_links.py 
+        run: python scripts/py/build_series_Abidharma_Aruth.py
       
       - name: Update All_Playlists for Abhidharma Aruth Desana updates
-        run: python All_Playlists/read_utube_links_all.py
+        run: python python scripts/py/build_series_SiyaluDesana.py
 
       - name: commit changes
         run: |

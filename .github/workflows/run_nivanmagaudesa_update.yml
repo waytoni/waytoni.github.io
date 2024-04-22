@@ -17,10 +17,10 @@ jobs:
           python-version: 3.11 #  Python version
 
       - name: Update Nivan_Maga_Udesa
-        run: python Nivan_Maga_Udesa/read_nivan_maga_udesa_youtube_links.py # Python script for Nivan Maga Udesa update
+        run: python scripts/py/build_series_Nivan_Maga_Udesa.py # Python script for Nivan Maga Udesa update
         
       - name: Update All_Playlist for Nivan Maga Udesa Desana updates
-        run: python All_Playlists/read_utube_links_all.py
+        run: python scripts/py/build_series_SiyaluDesana.py
 
       - name: commit changes
         run: |

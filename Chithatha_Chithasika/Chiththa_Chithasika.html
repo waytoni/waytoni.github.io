@@ -135,6 +135,7 @@
         
     <h1>චිත්ත සහ චෛතසික</h1>
 
+    <div id="zoom-message"></div>
 
     <div class="image-container">
         <img class="zoom" src="LowResoChart.jpg" alt="LowResoChart.jpg">
@@ -155,6 +156,14 @@
         wheelzoom(document.querySelector('img.zoom'));
     </script>
 
+<script>
+    const isMobile = () => /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    const content = document.querySelector('#zoom-message');
+
+    if (isMobile() == false){
+        content.innerHTML = '<center><h3>Double click on the chart and use the mouse to zoom and move.</h3></center>'
+    }
+</script>
 
 </body>
 
