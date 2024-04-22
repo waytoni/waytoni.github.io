@@ -20,7 +20,7 @@ html_file = os.path.join(basepath,'I_series.html')
 
 playlist_url = 'https://www.youtube.com/playlist?list=PLqESXbJ82aIjuYvXqOWBWMs-moFFukBbN'
 
-series_title = 'කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන 9වෙනි දේශනා මාලාව'
+series_title = 'කළුතර බෝධියේදී පැවැත්වුන 9වෙනි දේශනා මාලාව'
 
 print(intro_file)
 print(notes_file)
