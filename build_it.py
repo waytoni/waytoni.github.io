@@ -32,13 +32,22 @@ import sys
 sys.path.append('../scripts_new')
 import waytoni_all_videos_new
 
-# read_Iseries
-# waytoni_all_videos
+
+menu_change = False
+
+if menu_change == True:
+    from scripts.py import build_series_I
+    build_series_I
+    from documents import file_list
+    # update file_list.py first
+    file_list
+    from Nivan_Maga_Udesa.docs.combined_notes import NMU_file_list
+    # update NMU_file_list first
+    NMU_file_list
+    # also update Chithatha_Chithasika, Anichcha_Dukka_Anathma_Series, Paramartha_Video
+
 waytoni_all_videos_new
-# read_utube_links_all
-# read_nivan_maga_udesa_youtube_links
-# read_suthamaya_youtube_links
-# read_Abhidharma_Aruth_youtube_links
+
 
 build_series_Nivan_Maga_Udesa
 build_series_Saturday_Abhidhamma_Lesson
