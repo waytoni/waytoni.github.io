@@ -16,7 +16,7 @@ keyword_dict = {
 # Pattern to match any of the keywords 
 pattern = r"(pdf|PDF|img|IMG|url|URL)::"
 
-
+#################  ReadSections #####################
 def ReadSections(filename):
     sections = {}  
 
@@ -66,7 +66,7 @@ def ReadSections(filename):
                 sections[current_section].append(new_string)  # Add modified line to the current section
 
     return sections
-
+################# End ReadSections #####################
 
 ######## HtmlDropdownBlock ######
 def HtmlDropdownBlock(block_id, in_file, playlist_title, outfile, playlist_url, idx_prefix, sections):
@@ -243,7 +243,120 @@ def HtmlDropdownBlock(block_id, in_file, playlist_title, outfile, playlist_url, 
 ######## HtmlDropdownBlock End ######
 
 
-######## PrepareHead Testing ##########
+######## HtmlDropdownBlockNoSections #########################
+def HtmlDropdownBlockNoSections(block_id, in_file, playlist_title, outfile, playlist_url, idx_prefix, series_title):
+    
+    with open(in_file, 'r', encoding='utf-8') as fp:
+        utubelink_lines = [line.strip().split() for line in fp.readlines()]
+
+    idx = [row[0] for row in utubelink_lines]
+    urls = [row[1] for row in utubelink_lines]
+    dates = [row[2] for row in utubelink_lines]
+    N = len(idx)
+
+    # print(N)
+    
+    option_n = []
+    p4 = []
+    option_text = []
+
+
+    with open(outfile, 'a', encoding="utf-8") as fp:
+        fp.write('<div class = "dp-item">\n')
+        fp.write('<div class = "dp-head">\n')
+        fp.write('<h2>' + str(block_id) + '. ' + series_title + '</h2>\n')
+        fp.write('<span><i class = "fas fa-plus"></i></span>\n')
+        fp.write('</div>\n')
+        fp.write('<div class = "dp-content">\n')
+        #fp.write('<p></p>\n')
+
+        if len(playlist_url) > 1:
+            fp.write(f'<a href="{playlist_url}">Watch full playlist in YouTube</a>\n')
+        
+        fp.write('<p></p>\n<p>Select a video from the dropdown menu</p>    <p></p>\n')
+        
+        # fp.write('<p></p>\n<p>පතන මෙනුවෙන් වීඩියෝවක් තෝරන්න</p>    <p></p>\n')
+        
+
+        fp.write('<select id="video_list' + str(block_id) + '">\n')
+    
+        for n in range(1, N+1):
+            # print(n)
+            url_val = urls[n-1]
+            date_val = dates[n-1]
+            url_video_val = ''
+            #idx_val = idx[n-1]
+            noVideo = False
+              
+            idx_val = idx_prefix + str(idx[n-1]).zfill(3)
+
+            if len(url_val) > 0:
+                url_val_split = url_val.split('=')
+                # print(len(url_val_split))
+                
+                if len(url_val_split) > 1:
+                    url_video_val = url_val_split[1]
+                else:
+                    url_video_val = url_val
+                    noVideo = True
+
+            p0_short = f"{date_val} {playlist_title} {idx_val}"
+
+            option_text.append(p0_short)
+            # print(option_text[n-1])
+            # print(' ' , idx[n-1] ,' ' , dates[n-1] ,' p0_short= ' , p0_short)
+            
+            if len(url_video_val) > 1 and noVideo == False:
+                p1 = f'<iframe width="560" height="315" src="https://www.youtube.com/embed/{url_video_val}"'
+                p2 = ' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"'
+                p3 = ' allowfullscreen></iframe>'
+                p4_s = p1 + p2 + p3
+            else:
+                p4_s = url_video_val
+
+            # print(p4_s)
+            
+            p4.append(p4_s)
+            option_s = f'option{n}'
+            option_n.append(option_s)
+
+            if n == N:
+                fp.write('\t<option value="' + option_n[n-1] +'" selected>' + option_text[n-1] +  '</option>\n')
+            else:
+                fp.write('\t<option value="' + option_n[n-1] +'">' + option_text[n-1] +  '</option>\n')
+
+        fp.write('</select>\n')
+        fp.write('<div id="content'+str(block_id)+'"></div>\n')
+        fp.write('<script>\n')
+        fp.write('\tconst select' + str(block_id) + ' = document.querySelector(\'#video_list' + str(block_id) + '\');\n')
+        fp.write('\tconst content' + str(block_id) + ' = document.querySelector(\'#content' + str(block_id)+ '\');\n')
+        fp.write('\t\t\tcontent' + str(block_id) + '.innerHTML = \'<p></p>' + p4[N-1] + '\';\n')
+        
+        fp.write('\tselect' + str(block_id) + '.addEventListener(\'change\', function() {\n')
+        fp.write('\t\tif (this.value === \'option1\') {\n')
+        fp.write('\t\t\tcontent' + str(block_id) +'.innerHTML = \'<p></p>' + p4[0] + '\';\n')
+                
+        #with open('utube_html_dropdown.txt', 'a', encoding="utf-8") as fp:
+        for n in range(2, N+1):
+            # print(n,' ',option_n[n-1])
+            fp.write('\t\t} else if (this.value === \'' + option_n[n-1] + '\'){\n')
+            fp.write('\t\t\tcontent' + str(block_id) + '.innerHTML = \'<p></p>' + p4[n-1] + '\';\n')
+
+        fp.write('\t}\n')
+        fp.write('});\n')
+        fp.write('</script>\n')
+        
+        #fp.write('<br>\n')
+        fp.write('</div>\n')
+        fp.write('</div>\n')
+        fp.close()
+
+    return None
+    
+   
+################## End HtmlDropdownBlockNoSections ################################
+
+######## PrepareHead ##########
 def PrepareHead(text_filename, series_title): 
     
     with open(text_filename, 'w', encoding="utf-8") as fp:
@@ -265,8 +378,7 @@ def PrepareHead(text_filename, series_title):
         fp.write(title_line)
         
         fp.write('</head>\n')
-        # fp.write('<body ata-spy="scroll" data-target=".navbar" data-offset="40" id="home">\n')
-        fp.write('<body\n')
+        fp.write('<body>\n')
         
         with open('scripts/py/navigation_header_1stLevel.html', 'r', encoding="utf-8") as fnavbar:
             navbar_info = fnavbar.read()
@@ -285,12 +397,12 @@ def PrepareHead_2ndLevel(text_filename, series_title):
     with open(text_filename, 'w', encoding="utf-8") as fp:
         fp.write('<html>\n<head>\n')
     
-        with open('assets/py/analytics_tag.txt', 'r', encoding="utf-8") as ftag:
+        with open('scripts/py/analytics_tag.txt', 'r', encoding="utf-8") as ftag:
             tag_info = ftag.read()
             fp.write(tag_info)
             ftag.close()
         
-        with open('assets/py/page_head_2ndLevel.txt', 'r', encoding="utf-8") as fhead:
+        with open('scripts/py/page_head_2ndLevel.txt', 'r', encoding="utf-8") as fhead:
             head_info = fhead.read()
             fp.write(head_info)
             fhead.close()   
@@ -301,9 +413,9 @@ def PrepareHead_2ndLevel(text_filename, series_title):
         fp.write(title_line)
         
         fp.write('</head>\n')
-        fp.write('<body ata-spy="scroll" data-target=".navbar" data-offset="40" id="home">\n')
+        fp.write('<body>\n')
         
-        with open('assets/py/navigation_header_2ndLevel.txt', 'r', encoding="utf-8") as fnavbar:
+        with open('scripts/py/navigation_header_2ndLevel.html', 'r', encoding="utf-8") as fnavbar:
             navbar_info = fnavbar.read()
             fp.write(navbar_info)
             fnavbar.close()
@@ -318,7 +430,6 @@ def PrepareTail(text_filename):
     with open(text_filename, 'a', encoding="utf-8") as fp:
         #fp.write('<script src="../assets/vendors/jquery/jquery-3.4.1.js"></script>\n')
         #fp.write('<script src="../assets/vendors/bootstrap/bootstrap.bundle.js"></script>\n')
-        #fp.write('<script src="../assets/js/waytoni.js"></script>\n')
         fp.write('</body>\n')
         fp.write('</html>\n')
         fp.close()
@@ -331,7 +442,6 @@ def PrepareTail_2ndLevel(text_filename):
     with open(text_filename, 'a', encoding="utf-8") as fp:
         # fp.write('<script src="../../assets/vendors/jquery/jquery-3.4.1.js"></script>\n')
         # fp.write('<script src="../../assets/vendors/bootstrap/bootstrap.bundle.js"></script>\n')
-        # fp.write('<script src="../../assets/js/waytoni.js"></script>\n')
         fp.write('</body>\n')
         fp.write('</html>\n')
         fp.close()

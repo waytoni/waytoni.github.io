@@ -57,7 +57,7 @@ img::027 2024 02 16.jpg
 #31
 pdf::docs/028 2024 02 23.pdf
 #38
-මහාහත්‍ථිපදෝපම සූත්‍රය url::https://tipitaka.lk/mn-1-3-8
+මහාහත්‍ථිපදෝපම සූත්‍රය url::https://tipitaka.lk/mn-1-3-8/sinh
 pdf::docs/035 2024.04.19 Note.pdf
 img::035 2024.04.19 Note_Page_1.jpg
 img::035 2024.04.19 Note_Page_2.jpg
