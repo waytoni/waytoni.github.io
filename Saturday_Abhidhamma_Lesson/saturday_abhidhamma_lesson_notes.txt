@@ -31,5 +31,9 @@ Four Noble truths for Young Buddhist -sinhala pdf::../documents/pdfs/Four Noble 
 පච්චයචතුක්කං url::https://tipitaka.lk/ap-vbh-6-6
 #141
 විභංගප්පකරණ (1) url::http://dr.lib.sjp.ac.lk/bitstream/handle/123456789/2139/46.%20Vibhanga_Pakarana_1.pdf?sequence=1&isAllowed=y
+#143
+විභංගප්පකරණ (1) [click on View/Open to download the pdf version] url::http://dr.lib.sjp.ac.lk/handle/123456789/2139
+url::https://tipitaka.lk/ap-vbh-6-6
+url::https://tipitaka.lk/ap-vbh-6-7
 #1000
 end
