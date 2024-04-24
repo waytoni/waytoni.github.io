@@ -512,7 +512,7 @@
 <script>
 	const select1 = document.querySelector('#video_list');
 	const notes = document.querySelector('#notes');
-			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p><p>විභංගප්පකරණ (1) [click on View/Open to download the pdf version] <a href="http://dr.lib.sjp.ac.lk/handle/123456789/2139" target="_blank" >http://dr.lib.sjp.ac.lk/handle/123456789/2139</a></p><p> <a href="https://tipitaka.lk/ap-vbh-6-6" target="_blank" >https://tipitaka.lk/ap-vbh-6-6</a></p><p> <a href="https://tipitaka.lk/ap-vbh-6-7" target="_blank" >https://tipitaka.lk/ap-vbh-6-7</a></p>';
+			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p><p>විභංගප්පකරණ (1) [click on View/Open to download the pdf version] <a href="http://dr.lib.sjp.ac.lk/handle/123456789/2139" target="_blank" >http://dr.lib.sjp.ac.lk/handle/123456789/2139</a></p><p> <a href="https://tipitaka.lk/ap-vbh-4-1/sinh" target="_blank" >https://tipitaka.lk/ap-vbh-4-1/sinh</a></p><p> <a href="https://tipitaka.lk/ap-vbh-6-6" target="_blank" >https://tipitaka.lk/ap-vbh-6-6</a></p><p> <a href="https://tipitaka.lk/ap-vbh-6-7" target="_blank" >https://tipitaka.lk/ap-vbh-6-7</a></p><p>චිත්ත සහ චෛතසික සටහන <a href="https://waytoni.com/Chithatha_Chithasika/Chiththa_Chithasika.html#CCC" target="_blank" >https://waytoni.com/Chithatha_Chithasika/Chiththa_Chithasika.html#CCC</a></p><p>චක්ෂුර්ද්වාරික අතිමහන්තාරම්මණ විථිය <a href="https://waytoni.com/Chithatha_Chithasika/Chiththa_Chithasika.html#sideA2" target="_blank" >https://waytoni.com/Chithatha_Chithasika/Chiththa_Chithasika.html#sideA2</a></p>';
 	select.addEventListener('change', function() {
 		if (this.value === 'option1') {
 			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
@@ -831,8 +831,11 @@
 		} else if (this.value === 'option143'){
 			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
 			notes.innerHTML +='<p>විභංගප්පකරණ (1) [click on View/Open to download the pdf version] <a href="http://dr.lib.sjp.ac.lk/handle/123456789/2139" target="_blank" >http://dr.lib.sjp.ac.lk/handle/123456789/2139</a></p>';
+			notes.innerHTML +='<p> <a href="https://tipitaka.lk/ap-vbh-4-1/sinh" target="_blank" >https://tipitaka.lk/ap-vbh-4-1/sinh</a></p>';
 			notes.innerHTML +='<p> <a href="https://tipitaka.lk/ap-vbh-6-6" target="_blank" >https://tipitaka.lk/ap-vbh-6-6</a></p>';
 			notes.innerHTML +='<p> <a href="https://tipitaka.lk/ap-vbh-6-7" target="_blank" >https://tipitaka.lk/ap-vbh-6-7</a></p>';
+			notes.innerHTML +='<p>චිත්ත සහ චෛතසික සටහන <a href="https://waytoni.com/Chithatha_Chithasika/Chiththa_Chithasika.html#CCC" target="_blank" >https://waytoni.com/Chithatha_Chithasika/Chiththa_Chithasika.html#CCC</a></p>';
+			notes.innerHTML +='<p>චක්ෂුර්ද්වාරික අතිමහන්තාරම්මණ විථිය <a href="https://waytoni.com/Chithatha_Chithasika/Chiththa_Chithasika.html#sideA2" target="_blank" >https://waytoni.com/Chithatha_Chithasika/Chiththa_Chithasika.html#sideA2</a></p>';
 
 	}
 });
