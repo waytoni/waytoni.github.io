@@ -21,7 +21,7 @@ jobs:
         run: python scripts/py/build_series_Abidharma_Aruth.py
       
       - name: Update All_Playlists for Abhidharma Aruth Desana updates
-        run: python python scripts/py/build_series_SiyaluDesana.py
+        run: python scripts/py/build_series_SiyaluDesana.py
 
       - name: commit changes
         run: |
