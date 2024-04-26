@@ -5,6 +5,8 @@ on:
     paths:
       - 'Abhidharma_Aruth/Abhidharma_Aruth_B_youtube_links.txt' # AA B text file
       - 'Abhidharma_Aruth/Abhidharma_Aruth_youtube_links.txt'   # AA EP text file
+      - 'Abhidharma_Aruth/AA_EP_notes.txt'   # AA EP notes text file
+      - 'Abhidharma_Aruth/AA_B_notes.txt'   # AA B notes text file
 jobs:
   run-python-script-Abhidhamma-Aruth:
     runs-on: ubuntu-latest
