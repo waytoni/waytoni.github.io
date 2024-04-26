@@ -63,6 +63,7 @@ img::035 2024.04.19 Note_Page_1.jpg
 img::035 2024.04.19 Note_Page_2.jpg
 img::035 2024.04.19 Note_Page_3.jpg
 #39
+මහාහත්‍ථිපදෝපම සූත්‍රය url::https://tipitaka.lk/mn-1-3-8/sinh
 pdf::docs/036 -2024.04.26 -නිවන් මග උදෙසා දර්ශන ඥානය.pdf
 img::036 -2024.04.26 Note_Page_1.jpg
 img::036 -2024.04.26 Note_Page_2.jpg
