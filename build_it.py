@@ -33,7 +33,7 @@ sys.path.append('../scripts_new')
 import waytoni_all_videos_new
 
 
-menu_change = True
+menu_change = False
 
 if menu_change == True:
     from scripts.py import build_series_I
@@ -45,6 +45,7 @@ if menu_change == True:
     # update NMU_file_list first
     NMU_file_list
     # also update Chithatha_Chithasika, Anichcha_Dukka_Anathma_Series, Paramartha_Video
+    # zoom meeting info in both NMU and Sat2pm
 
 waytoni_all_videos_new
 
