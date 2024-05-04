@@ -204,7 +204,7 @@
 <script>
 	const selectS = document.querySelector('#video_list');
 	const notes = document.querySelector('#notes');
-			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
+			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p><p>ප්‍රතීත්‍යසමුත්පාද විභඞ්ගය https://tipitaka.lk/ap-vbh-6</p>';
 	selectS.addEventListener('change', function() {
 		if (this.value === 'option1') {
 			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p><p> <a href="docs/001- නිවන් මග උදෙසා දර්ශන ඥානය_2023-08-04.pdf"  target="_blank">docs/001- නිවන් මග උදෙසා දර්ශන ඥානය_2023-08-04.pdf</a></p><p> <img src="docs/thumbnails/001_Page_1.png" width=95%></p><p> <img src="docs/thumbnails/001_Page_2.png" width=95%></p><p> <img src="docs/001_Page_3.png" width=95%></p>';
@@ -332,7 +332,9 @@
 			notes.innerHTML +='<p> <img src="docs/036 -2024.04.26 Note_Page_2.jpg" width=95%></p>';
 
 		} else if (this.value === 'option40'){
-			notes.innerHTML = '';
+			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
+			notes.innerHTML +='<p>ප්‍රතීත්‍යසමුත්පාද විභඞ්ගය https://tipitaka.lk/ap-vbh-6</p>';
+
 	}
 });
 </script>

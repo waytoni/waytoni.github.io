@@ -210,7 +210,8 @@
 	<option value="option140">2024-Feb-24 තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා 139</option>
 	<option value="option141">2024-Mar-16 තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා 140</option>
 	<option value="option142">2024-Mar-23 තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා 141</option>
-	<option value="option143" selected>2024-Apr-06 තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා 142</option>
+	<option value="option143">2024-Apr-06 තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා 142</option>
+	<option value="option144" selected>2024-May-04 තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා 143</option>
 </select>
 <div id="content"></div>
 <div id="notes"></div>
@@ -218,7 +219,7 @@
 <script>
 	const select = document.querySelector('#video_list');
 	const content = document.querySelector('#content');
-			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/wcNmONbhQ0o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/psJkzMt20pw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	select.addEventListener('change', function() {
 		if (this.value === 'option1') {
 			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/8at_2QlF0-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
@@ -506,13 +507,15 @@
 			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/1TsclarzrFU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		} else if (this.value === 'option143'){
 			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/wcNmONbhQ0o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+		} else if (this.value === 'option144'){
+			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/psJkzMt20pw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	}
 });
 </script>
 <script>
 	const selectS = document.querySelector('#video_list');
 	const notes = document.querySelector('#notes');
-			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p><p>විභංගප්පකරණ (1) [click on View/Open to download the pdf version] <a href="http://dr.lib.sjp.ac.lk/handle/123456789/2139" target="_blank" >http://dr.lib.sjp.ac.lk/handle/123456789/2139</a></p><p> <a href="https://tipitaka.lk/ap-vbh-4-1/sinh" target="_blank" >https://tipitaka.lk/ap-vbh-4-1/sinh</a></p><p> <a href="https://tipitaka.lk/ap-vbh-6-6" target="_blank" >https://tipitaka.lk/ap-vbh-6-6</a></p><p> <a href="https://tipitaka.lk/ap-vbh-6-7" target="_blank" >https://tipitaka.lk/ap-vbh-6-7</a></p><p>චිත්ත සහ චෛතසික සටහන <a href="https://waytoni.com/Chithatha_Chithasika/Chiththa_Chithasika.html#CCC" target="_blank" >https://waytoni.com/Chithatha_Chithasika/Chiththa_Chithasika.html#CCC</a></p><p>චක්ෂුර්ද්වාරික අතිමහන්තාරම්මණ විථිය <a href="https://waytoni.com/Chithatha_Chithasika/Chiththa_Chithasika.html#sideA2" target="_blank" >https://waytoni.com/Chithatha_Chithasika/Chiththa_Chithasika.html#sideA2</a></p>';
+			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
 	selectS.addEventListener('change', function() {
 		if (this.value === 'option1') {
 			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
@@ -837,6 +840,8 @@
 			notes.innerHTML +='<p>චිත්ත සහ චෛතසික සටහන <a href="https://waytoni.com/Chithatha_Chithasika/Chiththa_Chithasika.html#CCC" target="_blank" >https://waytoni.com/Chithatha_Chithasika/Chiththa_Chithasika.html#CCC</a></p>';
 			notes.innerHTML +='<p>චක්ෂුර්ද්වාරික අතිමහන්තාරම්මණ විථිය <a href="https://waytoni.com/Chithatha_Chithasika/Chiththa_Chithasika.html#sideA2" target="_blank" >https://waytoni.com/Chithatha_Chithasika/Chiththa_Chithasika.html#sideA2</a></p>';
 
+		} else if (this.value === 'option144'){
+			notes.innerHTML = '';
 	}
 });
 </script>
