@@ -26,6 +26,7 @@ from scripts.py import build_series_Saturday_Abhidhamma_Lesson
 from scripts.py import build_series_Abidharma_Aruth
 from scripts.py import build_series_Suthamaya
 from scripts.py import build_series_SiyaluDesana
+from scripts.py import build_series_J
 
 import sys
 # sys.path.append('E:/src/github/waytoni_io/waytoni_desktop/scripts_new')
@@ -33,19 +34,25 @@ sys.path.append('../scripts_new')
 import waytoni_all_videos_new
 
 
-menu_change = False
+menu_change = True
 
 if menu_change == True:
     from scripts.py import build_series_I
     build_series_I
-    from documents import file_list
-    # update file_list.py first
-    file_list
-    from Nivan_Maga_Udesa.docs.combined_notes import NMU_file_list
-    # update NMU_file_list first
-    NMU_file_list
-    # also update Chithatha_Chithasika, Anichcha_Dukka_Anathma_Series, Paramartha_Video
-    # zoom meeting info in both NMU and Sat2pm
+    from scripts.py import build_Zoom_info
+    build_Zoom_info
+    from scripts.py import build_series_ADA_ParamarthaLokaya
+    build_series_ADA_ParamarthaLokaya
+    from scripts.py import build_NMU_file_list
+    # when new images are added run create_thubnails.py in Nivan_Maga_Udesa.docs.combined_notes
+    build_NMU_file_list
+    from scripts.py import build_file_list
+    # when new images are added run create_thubnails.py in Documents
+    build_file_list
+    
+    # Update
+    # Chithatha_Chithasika, and Vishesha Desana
+   
 
 waytoni_all_videos_new
 
@@ -53,5 +60,6 @@ waytoni_all_videos_new
 build_series_Nivan_Maga_Udesa
 build_series_Saturday_Abhidhamma_Lesson
 build_series_Abidharma_Aruth
+build_series_J
 build_series_Suthamaya
 build_series_SiyaluDesana
