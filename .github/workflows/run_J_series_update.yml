@@ -1,0 +1,30 @@
+name: Update I series Lesson Links
+
+on:
+  push:
+    paths:
+      - 'KalutaraBodhiya/I_series/I_series.txt' # Update with the actual path to your text file        
+jobs:
+  run-python-script-Iseries:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.11 # Set your desired Python version
+
+      - name: Read I_serires
+        run: python scripts/py/build_series_I.py
+
+      - name: Update All_Playlists for I_series addition
+        run: python scripts/py/build_series_SiyaluDesana.py
+
+      - name: commit changes
+        run: |
+          git config user.name "$(git log -n 1 --pretty=format:%an)"
+          git config user.email "$(git log -n 1 --pretty=format:%ae)"
+          git commit -a -m "updated I series desana"
+          git push
