@@ -62,5 +62,36 @@
 <h2>කල්‍යාණ මිත්‍ර අජන්ත සම්පත් ගුරුතුමන් ගේ දේශනා මාලාව</h2>
 <p></p>
 <h2>සෑම ඉරිදාවකම ප.ව. 2:00 සිට ප.ව. 4:00 දක්වා</h2>
-<h2>WhatsApp සම්බන්ධ වීමට සහ විමසීම්: 077-0310768/071-8896727</h2></body>
+<h2>WhatsApp සම්බන්ධ වීමට සහ විමසීම්: 077-0310768/071-8896727</h2><p></p>
+<center>
+<p></p>
+<p>Select a video from the dropdown menu</p>    <p></p>
+<select id="video_list">
+	<option value="option1" selected>2023-Sep-17 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන 2024 වසර සඳහා නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව 001</option>
+</select>
+<div id="content"></div>
+<div id="notes"></div>
+</center>
+<script>
+	const select = document.querySelector('#video_list');
+	const content = document.querySelector('#content');
+			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/o7wCGZC1g6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+	select.addEventListener('change', function() {
+		if (this.value === 'option1') {
+			content.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/o7wCGZC1g6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+	}
+});
+</script>
+<script>
+	const selectS = document.querySelector('#video_list');
+	const notes = document.querySelector('#notes');
+			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
+	selectS.addEventListener('change', function() {
+		if (this.value === 'option1') {
+			notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
+	}
+});
+</script>
+<br>
+</body>
 </html>

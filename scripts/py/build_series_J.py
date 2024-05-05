@@ -43,6 +43,6 @@ block_id = ''
 idx_prefix = ''
 
 
-# HtmlDropdownBlock(block_id, utube_links, series_title, html_file, playlist_url, idx_prefix, sections)
+HtmlDropdownBlock(block_id, utube_links, series_title, html_file, playlist_url, idx_prefix, sections)
 
 PrepareTail_2ndLevel(html_file)
