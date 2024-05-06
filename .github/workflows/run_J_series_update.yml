@@ -1,9 +1,10 @@
-name: Update I series Lesson Links
+name: Update J series Lesson Links
 
 on:
   push:
     paths:
-      - 'KalutaraBodhiya/I_series/I_series.txt' # Update with the actual path to your text file        
+      - 'KalutaraBodhiya/J_series/J_series.txt'    
+      - 'KalutaraBodhiya/J_series/J_series_notes.txt'    
 jobs:
   run-python-script-Iseries:
     runs-on: ubuntu-latest
@@ -17,9 +18,9 @@ jobs:
           python-version: 3.11 # Set your desired Python version
 
       - name: Read I_serires
-        run: python scripts/py/build_series_I.py
+        run: python scripts/py/build_series_J.py
 
-      - name: Update All_Playlists for I_series addition
+      - name: Update All_Playlists for J_series addition
         run: python scripts/py/build_series_SiyaluDesana.py
 
       - name: commit changes

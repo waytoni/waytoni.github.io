@@ -7,21 +7,21 @@ basepath = './documents'
 html_file = os.path.join(basepath,'file_list.html')
 files = os.listdir(basepath)
 series_title = 'සියලු අභිධම්ම දේශනා සඳහා සටහන්'
-NMU_styles = """
+Filelist_styles = """
     <link rel="stylesheet" type="text/css" href="file_list.css">
 """
 
 print(html_file)
-PrepareHeadTop(html_file, series_title, NMU_styles)
+PrepareHeadTop(html_file, series_title, Filelist_styles)
 
 FileList_intro = """
     <div>
-    <h2><center>රේරුකානේ චන්දවිමල හිමියන්ගේ <a href="./අභිධර්ම මාර්ගය.pdf" target="blank">අභිධර්ම මාර්ගය</a> පොත
-    </center></h2>
-    <h2><center>රේරුකානේ චන්දවිමල හිමියන්ගේ <a href="https://www.ogatharana.org/bookDownCounter.php?booknumber=17" target="blank">පටිච්ච සමුප්පාද විවරණය</a> පොත
-    </center></h2>
-    <h2><center>රේරුකානේ චන්දවිමල හිමියන්ගේ <a href="https://www.ogatharana.org/" target="blank">සියුලු පොත් සඳහා</a>
-    </center></h2>
+    <center>
+    <h2>රේරුකානේ චන්දවිමල හිමියන්ගේ <a href="./අභිධර්ම මාර්ගය.pdf" target="blank">අභිධර්ම මාර්ගය</a> පොත</h2>
+    <h2>රේරුකානේ චන්දවිමල හිමියන්ගේ <a href="https://www.ogatharana.org/bookDownCounter.php?booknumber=15" target="blank">අභිධර්මයේ මූලික කරුණු</a> පොත</h2>
+    <h2>රේරුකානේ චන්දවිමල හිමියන්ගේ <a href="https://www.ogatharana.org/bookDownCounter.php?booknumber=17" target="blank">පටිච්ච සමුප්පාද විවරණය</a> පොත</h2>
+    <h2>රේරුකානේ චන්දවිමල හිමියන්ගේ <a href="https://www.ogatharana.org/" target="blank">සියුලු පොත් සඳහා</a></h2>
+    </center>
     </div>
 """
 
