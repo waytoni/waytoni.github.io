@@ -87,18 +87,18 @@ def HtmlDropdownBlock(block_id, in_file, playlist_title, outfile, playlist_url, 
     with open(outfile, 'a', encoding="utf-8") as fp:
         # fp.write('<h2>' + str(block_id) + '. ' + playlist_title + '</h2>\n')
 
-        fp.write('<p></p>\n')
+        fp.write('\t<p></p>\n')
         
-        fp.write('<center>\n')
+        fp.write('\t<center>\n')
 
         if len(playlist_url) > 1:
             fp.write(f'<a href="{playlist_url}">Watch full playlist in YouTube</a>\n')
         
-        fp.write('<p></p>\n<p>Select a video from the dropdown menu</p>    <p></p>\n')
+        fp.write('\t\t<p></p>\n\t\t<p>Select a video from the dropdown menu</p>\n\t\t<p></p>\n')
         
         # fp.write('<p></p>\n<p>පතන මෙනුවෙන් වීඩියෝවක් තෝරන්න</p>    <p></p>\n')
         
-        fp.write('<select id="video_list' + str(block_id) + '">\n')
+        fp.write('\t\t<select id="video_list' + str(block_id) + '">\n')
     
         for n in range(1, N+1):
             
@@ -141,38 +141,38 @@ def HtmlDropdownBlock(block_id, in_file, playlist_title, outfile, playlist_url, 
             option_n.append(option_s)
 
             if n == N:
-                fp.write('\t<option value="' + option_n[n-1] +'" selected>' + option_text[n-1] +  '</option>\n')
+                fp.write('\t\t\t<option value="' + option_n[n-1] +'" selected>' + option_text[n-1] +  '</option>\n')
             else:
-                fp.write('\t<option value="' + option_n[n-1] +'">' + option_text[n-1] +  '</option>\n')
+                fp.write('\t\t\t<option value="' + option_n[n-1] +'">' + option_text[n-1] +  '</option>\n')
 
-        fp.write('</select>\n')
-        fp.write('<div id="content'+str(block_id)+'"></div>\n')
-        fp.write('<div id="notes'+str(block_id)+'"></div>\n')
+        fp.write('\t\t</select>\n')
+        fp.write('\t\t<div id="content'+str(block_id)+'"></div>\n')
+        fp.write('\t\t<div id="notes'+str(block_id)+'"></div>\n')
         
-        fp.write('</center>\n')
-        fp.write('<script>\n')
-        fp.write('\tconst select' + str(block_id) + ' = document.querySelector(\'#video_list' + str(block_id) + '\');\n')
-        fp.write('\tconst content' + str(block_id) + ' = document.querySelector(\'#content' + str(block_id)+ '\');\n')
-        fp.write('\t\t\tcontent' + str(block_id) + '.innerHTML = \'<p></p>' + p4[N-1] + '\';\n')
+        fp.write('\t</center>\n')
+        fp.write('\t<script>\n')
+        fp.write('\t\tconst select' + str(block_id) + ' = document.querySelector(\'#video_list' + str(block_id) + '\');\n')
+        fp.write('\t\tconst content' + str(block_id) + ' = document.querySelector(\'#content' + str(block_id)+ '\');\n')
+        fp.write('\t\tcontent' + str(block_id) + '.innerHTML = \n\t\t\t\'<p></p>' + p4[N-1] + '\';\n')
         
-        fp.write('\tselect' + str(block_id) + '.addEventListener(\'change\', function() {\n')
-        fp.write('\t\tif (this.value === \'option1\') {\n')
-        fp.write('\t\t\tcontent' + str(block_id) +'.innerHTML = \'<p></p>' + p4[0] + '\';\n')
+        fp.write('\t\tselect' + str(block_id) + '.addEventListener(\'change\', function() {\n')
+        fp.write('\t\t\tif (this.value === \'option1\') {\n')
+        fp.write('\t\t\t\tcontent' + str(block_id) +'.innerHTML = \n\t\t\t\t\'<p></p>' + p4[0] + '\';\n')
                 
         for n in range(2, N+1):
             # print(n,' ',option_n[n-1])
-            fp.write('\t\t} else if (this.value === \'' + option_n[n-1] + '\'){\n')
-            fp.write('\t\t\tcontent' + str(block_id) + '.innerHTML = \'<p></p>' + p4[n-1] + '\';\n')
+            fp.write('\t\t\t} else if (this.value === \'' + option_n[n-1] + '\'){\n')
+            fp.write('\t\t\t\tcontent' + str(block_id) + '.innerHTML = \n\t\t\t\t\'<p></p>' + p4[n-1] + '\';\n')
 
-        fp.write('\t}\n')
-        fp.write('});\n')
-        fp.write('</script>\n')
+        fp.write('\t\t\t}\n')
+        fp.write('\t\t});\n')
+        fp.write('\t</script>\n')
         
         #### sections ###
-        fp.write('<script>\n')
+        fp.write('\t<script>\n')
        
-        fp.write('\tconst selectS' + str(block_id) + ' = document.querySelector(\'#video_list' + str(block_id) + '\');\n')
-        fp.write('\tconst notes' + str(block_id) + ' = document.querySelector(\'#notes' + str(block_id)+ '\');\n')
+        fp.write('\t\tconst selectS' + str(block_id) + ' = document.querySelector(\'#video_list' + str(block_id) + '\');\n')
+        fp.write('\t\tconst notes' + str(block_id) + ' = document.querySelector(\'#notes' + str(block_id)+ '\');\n')
         
         try:
             lines = sections[n]
@@ -184,7 +184,7 @@ def HtmlDropdownBlock(block_id, in_file, playlist_title, outfile, playlist_url, 
 
         print(n, ' *0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*0* ', '\n'  )
     
-        fp.write('\t\t\tnotes' + str(block_id) + '.innerHTML = \'') 
+        fp.write('\t\tnotes' + str(block_id) + '.innerHTML = \'') 
         fp.write('<p>'+'දේශනාව සඳහා සටහන්'+'</p>')
         
         for line in lines:
@@ -192,13 +192,13 @@ def HtmlDropdownBlock(block_id, in_file, playlist_title, outfile, playlist_url, 
         fp.write('\';\n')
             
      
-        fp.write('\tselectS' + str(block_id) + '.addEventListener(\'change\', function() {\n')
-        fp.write('\t\tif (this.value === \'option1\') {\n')
+        fp.write('\t\tselectS' + str(block_id) + '.addEventListener(\'change\', function() {\n')
+        fp.write('\t\t\tif (this.value === \'option1\') {\n')
         
         lines = sections[1]
         #fp.write('\t\t\tnotes.innerHTML = \'<p>'+ lines[0] + '</p>' + '\';\n')
         
-        fp.write('\t\t\tnotes' + str(block_id) + '.innerHTML = \'') 
+        fp.write('\t\t\t\tnotes' + str(block_id) + '.innerHTML = \'') 
         fp.write('<p>'+'දේශනාව සඳහා සටහන්'+'</p>')
         for line in lines:
             fp.write('<p>'+line+'</p>')
@@ -207,7 +207,7 @@ def HtmlDropdownBlock(block_id, in_file, playlist_title, outfile, playlist_url, 
         for n in range(2, N+1):
             # print(n,' ',option_n[n-1])
             
-            fp.write('\t\t} else if (this.value === \'' + option_n[n-1] + '\'){\n')
+            fp.write('\t\t\t} else if (this.value === \'' + option_n[n-1] + '\'){\n')
             # lines = sections[n]
             
             try:
@@ -221,22 +221,22 @@ def HtmlDropdownBlock(block_id, in_file, playlist_title, outfile, playlist_url, 
             if len(lines) > 0:
                 # print(f"section has content {n}  {len(lines)}")
             
-                fp.write('\t\t\tnotes' + str(block_id) + '.innerHTML = \'') 
+                fp.write('\t\t\t\t\tnotes' + str(block_id) + '.innerHTML = \'') 
                 fp.write('<p>'+'දේශනාව සඳහා සටහන්'+'</p>\';\n')
                 for line in lines:
-                    fp.write('\t\t\tnotes' + str(block_id) + '.innerHTML +=\'<p>'+line+'</p>\';\n')
+                    fp.write('\t\t\t\tnotes' + str(block_id) + '.innerHTML +=\'<p>'+line+'</p>\';\n')
                 fp.write('\n')
             
             else:
-                fp.write('\t\t\tnotes' + str(block_id) + '.innerHTML = \'\';\n') 
+                fp.write('\t\t\t\tnotes' + str(block_id) + '.innerHTML = \'\';\n') 
             # fp.write('\t\t\tnotes.innerHTML = \'<p></p>' + lines[0] + '\';\n')
 
-        fp.write('\t}\n')
-        fp.write('});\n')
-        fp.write('</script>\n')  
+        fp.write('\t\t\t}\n')
+        fp.write('\t\t});\n')
+        fp.write('\t</script>\n')  
         
         
-        fp.write('<br>\n')
+        fp.write('\t<br>\n')
         fp.close()
 
     return None
