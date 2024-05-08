@@ -203,3 +203,6 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.close()
 
 PrepareTail(html_file)
+
+old_html_file = 'All_Playlists/සියුලු_දේශනා.html'
+shutil.copy2(html_file, old_html_file, follow_symlinks=False)
