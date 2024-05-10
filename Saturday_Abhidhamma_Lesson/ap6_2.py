@@ -4,8 +4,29 @@ html_head = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GT-MBNDJTD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+	
+  	  gtag('config', 'GT-MBNDJTD');
+    </script>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="icon" type="image/png" href="../images/favicon-16x16.png" sizes="16x16" />
+	<link rel="manifest" href="/site.webmanifest">   
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="../css/nav_menu.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="../scripts/nav_function.js"></script>
+ 
     <!--========== BOX ICONS ==========-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <!--========== CSS ==========-->
@@ -42,13 +63,57 @@ html_head = """
                             <h3 class="nav__subtitle">අන්තර්ගතය</h3>
                             
                         <a href="#intro" class="nav__link active">
-                            <i class='bx bx-home-alt-2 nav__icon'></i>
-                            <span class="nav__name">හැදින්වීම</span>
+                            <i class='bx bx-book-content nav__icon'></i>
+                            <span class="nav__name">සූත්‍රාන්තභාජනිය</span>
                         </a>
+                        <a href="#download" class="nav__link">
+                            <i class='bx bx-book-content nav__icon'></i>
+                            <span class="nav__name">පච‍්චයචතුක‍්කං</span>
+                        </a>
+                        <a href="#vishaya_karunu" class="nav__link">
+                            <i class='bx bx-book-content nav__icon'></i>
+                            <span class="nav__name">හේතුචතුෂ්ක</span>
+                        </a>
+                        <a href="#intro" class="nav__link active">
+                            <i class='bx bx-book-content nav__icon'></i>
+                            <span class="nav__name">සම‍්පයුත‍්තචතුක‍්කං</span>
+                        </a>
+                        <a href="#download" class="nav__link">
+                            <i class='bx bx-book-content nav__icon'></i>
+                            <span class="nav__name">අඤ‍්ඤමඤ‍්ඤචතුක‍්කං</span>
+                        </a>
+                        <a href="#vishaya_karunu" class="nav__link">
+                            <i class='bx bx-book-content nav__icon'></i>
+                            <span class="nav__name">පච‍්චයචතුක‍්කං</span>
+                        </a>
+                        <a href="#download" class="nav__link">
+                            <i class='bx bx-book-content nav__icon'></i>
+                            <span class="nav__name">අඤ‍්ඤමඤ‍්ඤචතුක‍්කං</span>
+                        </a>
+                        <a href="#vishaya_karunu" class="nav__link">
+                            <i class='bx bx-book-content nav__icon'></i>
+                            <span class="nav__name">අකුසල නිද‍්දෙසො</span>
+                        </a>
+                        <a href="#vishaya_karunu" class="nav__link">
+                            <i class='bx bx-book-content nav__icon'></i>
+                            <span class="nav__name">කුසල නිද‍්දෙසො</span>
+                        </a>
+                        <a href="#vishaya_karunu" class="nav__link">
+                            <i class='bx bx-book-content nav__icon'></i>
+                            <span class="nav__name">අව්‍යාකතනිද‍්දෙසො</span>
+                        </a>
+                        <a href="#vishaya_karunu" class="nav__link">
+                            <i class='bx bx-book-content nav__icon'></i>
+                            <span class="nav__name">කුසලවිපාකමූලකං නිට‍්ඨිතං</span>
+                        </a> 
+                        <a href="#vishaya_karunu" class="nav__link">
+                            <i class='bx bx-book-content nav__icon'></i>
+                            <span class="nav__name">අකුසලවිපාකමූලකං නිට‍්ඨිතං</span>
+                        </a>  
                         <!--
                             <div class="nav__dropdown">
                                 <a href="#" class="nav__link">
-                                    <i class='bx bx-user nav__icon' ></i>
+                                    <i class='bx bx-book-open nav__icon' ></i>
                                     <span class="nav__name">Profile</span>
                                     <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
                                 </a>
@@ -61,23 +126,18 @@ html_head = """
                                     </div>
                                 </div>
                             </div>
-                        -->
-                        <a href="#vishaya_karunu" class="nav__link">
-                            <i class='bx bx-bookmark nav__icon'></i>
-                            <span class="nav__name">විෂය කරුණු</span>
-                        </a>
+                        
+                        
                         <a href="#about" class="nav__link">
                             <i class='bx bx-book-content nav__icon'></i>
                             <span class="nav__name">About</span>
                         </a>
-                        <a href="#download" class="nav__link">
-                            <i class='bx bx-download nav__icon'></i>
-                            <span class="nav__name">Download</span>
-                        </a>
+
                         <a href="#contents" class="nav__link">
                             <i class='bx bx-bookmarks nav__icon'></i>
                             <span class="nav__name">පටුන</span>
                         </a>
+                        -->
                     </div>
                     <div class="nav__items">
                         <!--
@@ -93,11 +153,11 @@ html_head = """
                                 <div class="nav__dropdown-content">
                                     <a href="#id347" class="nav__dropdown-item">347</a>
                                     <a href="#id348" class="nav__dropdown-item">348</a>
-                                    <a href="#id366" class="nav__dropdown-item">366 Page 251</a>
-                                    <a href="#p472_616" class="nav__dropdown-item">ප - බ කොටස් </a>
-                                    <a href="#p616_750" class="nav__dropdown-item">භ - ල කොටස්</a>
-                                    <a href="#p750_968" class="nav__dropdown-item">ඉ - ඤ කොටස්</a>
-                                    <a href="#p968_1017" class="nav__dropdown-item">ව - හ කොටස්</a>
+                                    <a href="#id365" class="nav__dropdown-item">365 Page 249</a>
+                                    <a href="#id366" class="nav__dropdown-item">366 Page 252</a>
+                                    <a href="#id367" class="nav__dropdown-item">367 Page 253</a>
+                                    <a href="#id368" class="nav__dropdown-item">368 Page 255</a>
+                                    <a href="#id369" class="nav__dropdown-item">369 Page 257</a>
                                     <a href="#p1018_end" class="nav__dropdown-item">උපග්‍රන්ථ සහ සිතියම්</a>
                                 </div>
                             </div>
@@ -107,7 +167,7 @@ html_head = """
                                 <i class='bx bx-compass nav__icon' ></i>
                                 <span class="nav__name">Explore</span>
                             </a>
-                        -->
+                        
                         <a href="#sponsor" class="nav__link">
                             <i class='bx bxs-institution nav__icon'></i>
                             <span class="nav__name">අනුග්‍රහය</span>
@@ -116,13 +176,14 @@ html_head = """
                             <i class='bx bxs-contact nav__icon'></i>
                             <span class="nav__name">Contact</span>
                         </a>
+                        -->
                     </div>
                 </div>
             </div>
-            <!---
+            <!--
                 <a href="#contact" class="nav__link nav__logout">
                     <i class='bx bx-contact nav__icon' ></i>
-                    <span class="nav__name">Contact</span>
+                    <span class="nav__name">Contact X</span>
                 </a>
             -->
         </nav>
@@ -132,24 +193,24 @@ html_head = """
   <p>ප්‍රතීත්‍යසමුත්පාද විභඞ්ගය</p>
     සූත්‍රාන්තභාජනිය 
     සූත්‍රාන්තභාජනිය අවසානය.
-    හේතුචතුෂ්ක යි.
+  <p>හේතුචතුෂ්ක යි.</p>
     සම්ප්‍රයුක්තචතුෂ්ක යි.
     අන්‍යෝන්‍යචතුෂ්ක යි.
     මාතෘකා යි.
-    ප්‍රත්‍යයචතුෂ්ක යි.
-    හේතුචතුෂ්ක යි.
+  <p>  ප්‍රත්‍යයචතුෂ්ක යි.</p>
+  <p>හේතුචතුෂ්ක යි.</p>
     සම්ප්‍රයුක්තචතුෂ්ක යි.
-    අන්‍යෝන්‍යචතුෂ්ක යි
+   <p> අන්‍යෝන්‍යචතුෂ්ක යි</p>
     අකුශලනිර්දේශ යි.
     කුශලනිර්දේශ යි.
     කුශලවිපාකසඞ්ඛාරමූලකය නිමි.
  <p>   අකුසලවිපාකසඞ්ඛාරමූලකය නිමි.</p>
     ක්‍රියාසංස්කාරමූලකය නිමි
     අව්‍යාකෘතනිර්දේශ යි.
-    කුශලවිපාකමූලකය නිමි.
+  <p> කුශලවිපාකමූලකය නිමි.</p>
     කුසලමූලක විපාකනිර්දේශ යි
     අකුශලවිපාකමූලකය නිමි.
-අභිධර්‍මභාජනිය නිමි.
+<p>අභිධර්‍මභාජනිය නිමි.</p>
 <p>ප්‍රතීත්‍යසමුත්පාදවිභඞ්ගය නිමි.</p>
 """
 def process_file(input_file, output_file):
@@ -202,5 +263,6 @@ output_file = 'ap6_new.html'
 process_file(input_file, output_file)
 
 with open(output_file, 'a', encoding='utf-8') as f:
+    f.write('<script src="../scripts/sidebar_nav.js"></script>\n ')
     f.write('</body>\n')
     f.write('</html>\n')
