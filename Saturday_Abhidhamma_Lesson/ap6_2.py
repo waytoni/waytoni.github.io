@@ -1,6 +1,7 @@
 import re
 
 html_head = """
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,6 +33,14 @@ html_head = """
     <!--========== CSS ==========-->
     <link rel="stylesheet" href="ap6-styles.css">
     <title>ප්‍රතීත්‍යසමුත්පාද විභඞ්ගය සඳහා සටහන්</title>
+    <style>
+        .c2 {
+            color: darkblue;
+        }
+        .c3 {
+            color: blue;
+        }
+    </style>
 </head>
 <body>
     <!--========== HEADER ==========-->
@@ -62,54 +71,64 @@ html_head = """
                         
                             <h3 class="nav__subtitle">අන්තර්ගතය</h3>
                             
-                        <a href="#intro" class="nav__link active">
+                        <a href="#සූත්‍රාන්තභාජනිය" class="nav__link active">
                             <i class='bx bx-book-content nav__icon'></i>
                             <span class="nav__name">සූත්‍රාන්තභාජනිය</span>
                         </a>
-                        <a href="#download" class="nav__link">
+                        <a href="#AbhidhammaBhajaniya" class="nav__link active">
                             <i class='bx bx-book-content nav__icon'></i>
-                            <span class="nav__name">පච‍්චයචතුක‍්කං</span>
+                            <span class="nav__name">අභිධම‍්මභාජනියං ආරම්භය</span>
                         </a>
-                        <a href="#vishaya_karunu" class="nav__link">
+                        <a href="#මාතිකා" class="nav__link active">
                             <i class='bx bx-book-content nav__icon'></i>
-                            <span class="nav__name">හේතුචතුෂ්ක</span>
+                            <span class="nav__name">මාතිකා</span>
                         </a>
-                        <a href="#intro" class="nav__link active">
+                        <a href="#පච‍්චයචතුක‍්කංමාතිකා" class="nav__link active">
+                            <i class='bx bx-book-content nav__icon'></i>
+                            <span class="nav__name">පච‍්චයචතුක‍්කං මාතිකා ආරම්භය</span>
+                        </a>
+                        <a href="#හෙතුචතුක‍්කං" class="nav__link">
+                            <i class='bx bx-book-content nav__icon'></i>
+                            <span class="nav__name">හෙතුචතුක‍්කං</span>
+                        </a>
+                        <a href="#සම‍්පයුත‍්තචතුක‍්කං" class="nav__link active">
                             <i class='bx bx-book-content nav__icon'></i>
                             <span class="nav__name">සම‍්පයුත‍්තචතුක‍්කං</span>
                         </a>
-                        <a href="#download" class="nav__link">
+                        <a href="#අඤ‍්ඤමඤ‍්ඤචතුක‍්කං" class="nav__link">
                             <i class='bx bx-book-content nav__icon'></i>
                             <span class="nav__name">අඤ‍්ඤමඤ‍්ඤචතුක‍්කං</span>
                         </a>
-                        <a href="#vishaya_karunu" class="nav__link">
+                        <a href="#NawaMulaPadaMathika" class="nav__link">
                             <i class='bx bx-book-content nav__icon'></i>
-                            <span class="nav__name">පච‍්චයචතුක‍්කං</span>
+                            <span class="nav__name">නව (9) මූල පද මාතිකා</span>
                         </a>
-                        <a href="#download" class="nav__link">
+                        <!--
+                        <a href="#අඤ‍්ඤමඤ‍්ඤචතුක‍්කං2" class="nav__link">
                             <i class='bx bx-book-content nav__icon'></i>
                             <span class="nav__name">අඤ‍්ඤමඤ‍්ඤචතුක‍්කං</span>
                         </a>
-                        <a href="#vishaya_karunu" class="nav__link">
+                        <a href="#අකුසලනිද‍්දෙසො" class="nav__link">
                             <i class='bx bx-book-content nav__icon'></i>
                             <span class="nav__name">අකුසල නිද‍්දෙසො</span>
                         </a>
-                        <a href="#vishaya_karunu" class="nav__link">
+                        <a href="#කුසලනිද‍්දෙසො" class="nav__link">
                             <i class='bx bx-book-content nav__icon'></i>
                             <span class="nav__name">කුසල නිද‍්දෙසො</span>
                         </a>
-                        <a href="#vishaya_karunu" class="nav__link">
+                        <a href="#අව්‍යාකතනිද‍්දෙසො" class="nav__link">
                             <i class='bx bx-book-content nav__icon'></i>
                             <span class="nav__name">අව්‍යාකතනිද‍්දෙසො</span>
                         </a>
-                        <a href="#vishaya_karunu" class="nav__link">
+                        <a href="#කුසලවිපාකමූලකං නිට‍්ඨිතං" class="nav__link">
                             <i class='bx bx-book-content nav__icon'></i>
                             <span class="nav__name">කුසලවිපාකමූලකං නිට‍්ඨිතං</span>
                         </a> 
-                        <a href="#vishaya_karunu" class="nav__link">
+                        <a href="#අකුසලවිපාකමූලකං නිට‍්ඨිතං" class="nav__link">
                             <i class='bx bx-book-content nav__icon'></i>
                             <span class="nav__name">අකුසලවිපාකමූලකං නිට‍්ඨිතං</span>
                         </a>  
+                    -->
                         <!--
                             <div class="nav__dropdown">
                                 <a href="#" class="nav__link">
@@ -158,7 +177,7 @@ html_head = """
                                     <a href="#id367" class="nav__dropdown-item">367 Page 253</a>
                                     <a href="#id368" class="nav__dropdown-item">368 Page 255</a>
                                     <a href="#id369" class="nav__dropdown-item">369 Page 257</a>
-                                    <a href="#p1018_end" class="nav__dropdown-item">උපග්‍රන්ථ සහ සිතියම්</a>
+                                    <a href="#p1018_end" class="nav__dropdown-item"></a>
                                 </div>
                             </div>
                         </div>
@@ -190,28 +209,31 @@ html_head = """
     </div>
   <body>  
    
-  <p>ප්‍රතීත්‍යසමුත්පාද විභඞ්ගය</p>
-    සූත්‍රාන්තභාජනිය 
-    සූත්‍රාන්තභාජනිය අවසානය.
-  <p>හේතුචතුෂ්ක යි.</p>
-    සම්ප්‍රයුක්තචතුෂ්ක යි.
-    අන්‍යෝන්‍යචතුෂ්ක යි.
-    මාතෘකා යි.
-  <p>  ප්‍රත්‍යයචතුෂ්ක යි.</p>
-  <p>හේතුචතුෂ්ක යි.</p>
-    සම්ප්‍රයුක්තචතුෂ්ක යි.
-   <p> අන්‍යෝන්‍යචතුෂ්ක යි</p>
-    අකුශලනිර්දේශ යි.
-    කුශලනිර්දේශ යි.
-    කුශලවිපාකසඞ්ඛාරමූලකය නිමි.
- <p>   අකුසලවිපාකසඞ්ඛාරමූලකය නිමි.</p>
-    ක්‍රියාසංස්කාරමූලකය නිමි
-    අව්‍යාකෘතනිර්දේශ යි.
-  <p> කුශලවිපාකමූලකය නිමි.</p>
-    කුසලමූලක විපාකනිර්දේශ යි
-    අකුශලවිපාකමූලකය නිමි.
-<p>අභිධර්‍මභාජනිය නිමි.</p>
-<p>ප්‍රතීත්‍යසමුත්පාදවිභඞ්ගය නිමි.</p>
+  <h1>ප්‍රතීත්‍යසමුත්පාද විභඞ්ගය සඳහා සටහන්</h1>
+  <h2>Warning: මෙය ගුරුතුමා විසින් සකස් කරන ලද සටහනක් නොවේ. මෙහි වැරදි ගොඩක් අන්තර්ගතව ඇත.</h2>
+  <div id="contents"></div>
+
+  <h3>පටිච‍්චසමුප‍්පාද විභඞ‍්ගො (pages 245 - 339)</h3>
+  <h3>සුත‍්තන‍්තභාජනියං (pages 244 - 249)</h3>
+  <h3><a href="#AbhidhammaBhajaniya">අභිධම‍්මභාජනියං ආරම්භය  (pages 249 - 339)</a></h3>
+  <h3><a href="#මාතිකා">මාතිකා (pages 249 - 257)</a></h3>
+  <h3><a href="#පච‍්චයචතුක‍්කංමාතිකා">පච‍්චයචතුක‍්කං මාතිකා ආරම්භය 365 (pages 249 - 251)</a></h3>
+  <h3><a href="#හෙතුචතුක‍්කං">හෙතුචතුක‍්කං 366 (pages 252 - 253)</a></h3>
+  <h3><a href="#සම‍්පයුත‍්තචතුක‍්කං">සම‍්පයුත‍්තචතුක‍්කං 367 (pages 253 - 255)</a></h3>
+  <h3><a href="#අඤ‍්ඤමඤ‍්ඤචතුක‍්කං">අඤ‍්ඤමඤ‍්ඤචතුක‍්කං 368 (pages 255 - 257)</a></h3>
+  <h3><a href="#NawaMulaPadaMathika">නව (9) මූල පද මාතිකා</a></h3>
+
+  <h3>පච‍්චයචතුක‍්කං</h3>
+  <h3>හෙතුචතුක‍්කං</h3>
+  <h3>සම‍්පයුත‍්තචතුක‍්කං</h3>
+  <h3>අඤ‍්ඤමඤ‍්ඤචතුක‍්කං</h3>
+  <h3>අකුසල නිද‍්දෙසො</h3>
+  <h3>කුසල නිද‍්දෙසො</h3>
+  <h3>අව්‍යාකතනිද‍්දෙසො</h3>
+  <h3>කුසලවිපාකමූලකං නිට‍්ඨිතං</h3>
+  <h3>අකුසලවිපාකමූලකං නිට‍්ඨිතං</h3>                            
+                              
+            
 """
 def process_file(input_file, output_file):
     with open(input_file, 'r', encoding='utf-8') as f:
@@ -240,16 +262,23 @@ def process_file(input_file, output_file):
             para_num = idx + 345
             if para_num > 401:
                 para_num = para_num + 1
-                
-            f.write(f'<p class="chedaya" id="id{para_num}">{lines[0].strip()}</p>\n')
             
+            first_line = lines[0].strip();
+            (firstWord, rest) = first_line.split(maxsplit=1)
+
+            # f.write(f'<p class="chedaya" id="id{para_num}">{lines[0].strip()}</p>\n')
+            f.write(f'<p class="chedaya" id="id{para_num}"><b>{firstWord}</b> {rest}</p>\n')
+            
+            print(firstWord)
+            print(rest)
+
             # Write subsequent lines within chedaya2 block
             for line in lines[1:]:
                 if len(line.split()) > 5:
                     f.write(f'<p class="chedaya2">{line.strip()}</p>\n')
                 else:
                     print(len(line.split()))
-                    f.write(f'<h3 class="c3">{line.strip()}</h3>\n')
+                    f.write(f'<h3 class="c3">{line.strip()}   <span class="pull-right"><a href="#contents">top</a></span></h3>\n')
                 
             last_end = start + len(match)
         
