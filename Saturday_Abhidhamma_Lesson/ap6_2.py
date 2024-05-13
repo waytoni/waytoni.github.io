@@ -278,7 +278,7 @@ def process_file(input_file, output_file):
                     f.write(f'<p class="chedaya2">{line.strip()}</p>\n')
                 else:
                     print(len(line.split()))
-                    f.write(f'<h3 class="c3">{line.strip()}   <span class="pull-right"><a href="#contents">top</a></span></h3>\n')
+                    f.write(f'<h3 class="c3"><a href="#">{line.strip()}</a>   <span class="pull-right"><a href="#contents">top</a></span></h3>\n')
                 
             last_end = start + len(match)
         
