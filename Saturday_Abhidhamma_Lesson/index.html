@@ -212,7 +212,8 @@
 			<option value="option142">2024-Mar-23 තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා 141</option>
 			<option value="option143">2024-Apr-06 තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා 142</option>
 			<option value="option144">2024-May-04 තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා 143</option>
-			<option value="option145" selected>2024-May-11 තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා 144</option>
+			<option value="option145">2024-May-11 තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා 144</option>
+			<option value="option146" selected>2024-May-18 තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා 145</option>
 		</select>
 		<div id="content"></div>
 		<div id="notes"></div>
@@ -221,7 +222,7 @@
 		const select = document.querySelector('#video_list');
 		const content = document.querySelector('#content');
 		content.innerHTML = 
-			'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/l_1KRSRxiYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/AMQGY8iUyHc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		select.addEventListener('change', function() {
 			if (this.value === 'option1') {
 				content.innerHTML = 
@@ -658,6 +659,9 @@
 			} else if (this.value === 'option145'){
 				content.innerHTML = 
 				'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/l_1KRSRxiYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			} else if (this.value === 'option146'){
+				content.innerHTML = 
+				'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/AMQGY8iUyHc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 			}
 		});
 	</script>
@@ -992,6 +996,8 @@
 			} else if (this.value === 'option144'){
 				notes.innerHTML = '';
 			} else if (this.value === 'option145'){
+				notes.innerHTML = '';
+			} else if (this.value === 'option146'){
 				notes.innerHTML = '';
 			}
 		});
