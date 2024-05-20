@@ -411,18 +411,21 @@
 <p>Select a video from the dropdown menu</p>    <p></p>
 <select id="video_list6">
 	<option value="option1">2024-May-05 Kalutara Bodhiya J Series 001</option>
-	<option value="option2" selected>2024-May-12 Kalutara Bodhiya J Series 002</option>
+	<option value="option2">2024-May-12 Kalutara Bodhiya J Series 002</option>
+	<option value="option3" selected>2024-May-19 Kalutara Bodhiya J Series 003</option>
 </select>
 <div id="content6"></div>
 <script>
 	const select6 = document.querySelector('#video_list6');
 	const content6 = document.querySelector('#content6');
-			content6.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/1MVUsHFXML0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			content6.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/kMPzguMBhpI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	select6.addEventListener('change', function() {
 		if (this.value === 'option1') {
 			content6.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/o7wCGZC1g6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		} else if (this.value === 'option2'){
 			content6.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/1MVUsHFXML0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+		} else if (this.value === 'option3'){
+			content6.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/kMPzguMBhpI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	}
 });
 </script>
