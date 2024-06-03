@@ -39,7 +39,7 @@ url::https://tipitaka.lk/ap-vbh-6-7
 චිත්ත සහ චෛතසික සටහන url::https://waytoni.com/Chithatha_Chithasika/Chiththa_Chithasika.html#CCC
 චක්ෂුර්ද්වාරික අතිමහන්තාරම්මණ විථිය  url::https://waytoni.com/Chithatha_Chithasika/Chiththa_Chithasika.html#sideA2
 #147 
-ගුරුතුමා විසින් පටිච‍්චසමුප‍්පාද විභඞ්ගය අධ්යයනය සඳහා සකස්කරන ලද සටහන pdf::විභඞ්ගප්පකරණං V 1.05 Final.pdf  
+ගුරුතුමා විසින් පටිච‍්චසමුප‍්පාද විභඞ්ගය අධ්යයනය සඳහා සකස්කරන ලද විශේෂ සටහන pdf::විභඞ්ගප්පකරණං V 1.05 Final.pdf  
 pdf::විභංග නිද්දේසො.pdf
 #1000
 end
