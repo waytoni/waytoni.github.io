@@ -71,7 +71,8 @@
 		<select id="video_list">
 			<option value="option1">2024-May-05 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන 2024 වසර සඳහා නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව 001</option>
 			<option value="option2">2024-May-12 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන 2024 වසර සඳහා නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව 002</option>
-			<option value="option3" selected>2024-May-19 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන 2024 වසර සඳහා නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව 003</option>
+			<option value="option3">2024-May-19 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන 2024 වසර සඳහා නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව 003</option>
+			<option value="option4" selected>2024-Jun-02 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන 2024 වසර සඳහා නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව 004</option>
 		</select>
 		<div id="content"></div>
 		<div id="notes"></div>
@@ -80,7 +81,7 @@
 		const select = document.querySelector('#video_list');
 		const content = document.querySelector('#content');
 		content.innerHTML = 
-			'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/kMPzguMBhpI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/sjBF0k4TJ2k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		select.addEventListener('change', function() {
 			if (this.value === 'option1') {
 				content.innerHTML = 
@@ -91,6 +92,9 @@
 			} else if (this.value === 'option3'){
 				content.innerHTML = 
 				'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/kMPzguMBhpI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			} else if (this.value === 'option4'){
+				content.innerHTML = 
+				'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/sjBF0k4TJ2k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 			}
 		});
 	</script>
@@ -104,6 +108,8 @@
 			} else if (this.value === 'option2'){
 				notes.innerHTML = '';
 			} else if (this.value === 'option3'){
+				notes.innerHTML = '';
+			} else if (this.value === 'option4'){
 				notes.innerHTML = '';
 			}
 		});

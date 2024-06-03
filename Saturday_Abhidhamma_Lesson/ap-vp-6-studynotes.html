@@ -1,31 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GT-MBNDJTD"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'GT-MBNDJTD');
-    </script>
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="icon" type="image/png" href="../images/favicon-16x16.png" sizes="16x16" />
-    <link rel="manifest" href="/site.webmanifest">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="../css/nav_menu.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="../scripts/nav_function.js"></script>
-    <!--========== BOX ICONS ==========-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <!--========== CSS ==========-->
-    <link rel="stylesheet" href="ap6-styles.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <title>ප්‍රතීත්‍යසමුත්පාද විභඞ්ගය සඳහා සටහන්</title>
     <style>
         .c2 {
@@ -68,225 +49,165 @@
             font-size: 18px;
             font-weight: bold;
         }
+        table,
+        th,
+        td {
+            border: 1px solid #96D4D4;
+        }
     </style>
 </head>
 <body>
-    <!--========== HEADER ==========-->
-    <header class="header">
-        <div class="header__container">
-            <img src="../logo.svg" alt="" class="header__img"><a href="#" class="header__logo">ප්‍රතීත්‍යසමුත්පාද
-                විභඞ්ගය සඳහා සටහන්</a>
-            <!--
-                <div class="header__search">
-                    <input type="search" placeholder="Search" class="header__input">
-                    <i class='bx bx-search header__icon'></i>
-                </div>
-            -->
-            <div class="header__toggle">
-                <i class='bx bx-menu' id="header-toggle"></i>
-            </div>
-        </div>
-    </header>
-    <!--========== NAV ==========-->
-    <div class="nav" id="navbar">
-        <nav class="nav__container">
-            <div>
-                <a href="#" class="nav__link nav__logo">
-                    <i class='bx bx-home nav__icon'></i>
-                    <span class="nav__logo-name">6. ප්‍රතීත්‍යසමුත්පාද විභඞ්ගය</span>
-                </a>
-                <div class="nav__list">
-                    <div class="nav__items">
-                        <h3 class="nav__subtitle">අන්තර්ගතය</h3>
-                        <a href="#සුත්තන්තභොජනියං" class="nav__link active">
-                            <i class='bx bx-book-content nav__icon'></i>
-                            <span class="nav__name">සූත්‍රාන්තභාජනිය</span>
-                        </a>
-                        </a>
-                        <!--
-                        <a href="#අඤ‍්ඤමඤ‍්ඤචතුක‍්කං2" class="nav__link">
-                            <i class='bx bx-book-content nav__icon'></i>
-                            <span class="nav__name">අඤ‍්ඤමඤ‍්ඤචතුක‍්කං</span>
-                        </a>
-                        <a href="#අකුසලනිද‍්දෙසො" class="nav__link">
-                            <i class='bx bx-book-content nav__icon'></i>
-                            <span class="nav__name">අකුසල නිද‍්දෙසො</span>
-                        </a>
-                        <a href="#කුසලනිද‍්දෙසො" class="nav__link">
-                            <i class='bx bx-book-content nav__icon'></i>
-                            <span class="nav__name">කුසල නිද‍්දෙසො</span>
-                        </a>
-                        <a href="#අව්‍යාකතනිද‍්දෙසො" class="nav__link">
-                            <i class='bx bx-book-content nav__icon'></i>
-                            <span class="nav__name">අව්‍යාකතනිද‍්දෙසො</span>
-                        </a>
-                        <a href="#කුසලවිපාකමූලකං නිට‍්ඨිතං" class="nav__link">
-                            <i class='bx bx-book-content nav__icon'></i>
-                            <span class="nav__name">කුසලවිපාකමූලකං නිට‍්ඨිතං</span>
-                        </a> 
-                        <a href="#අකුසලවිපාකමූලකං නිට‍්ඨිතං" class="nav__link">
-                            <i class='bx bx-book-content nav__icon'></i>
-                            <span class="nav__name">අකුසලවිපාකමූලකං නිට‍්ඨිතං</span>
-                        </a>  
-                    -->
-                        <!--
-                            <div class="nav__dropdown">
-                                <a href="#" class="nav__link">
-                                    <i class='bx bx-book-open nav__icon' ></i>
-                                    <span class="nav__name">Profile</span>
-                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
-                                </a>
-
-                                <div class="nav__dropdown-collapse">
-                                    <div class="nav__dropdown-content">
-                                        <a href="#" class="nav__dropdown-item">Passwords</a>
-                                        <a href="#" class="nav__dropdown-item">Mail</a>
-                                        <a href="#" class="nav__dropdown-item">Accounts</a>
-                                    </div>
-                                </div>
+    <header>
+        <!-- place navbar here -->
+        <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#සුත්තන්තභොජනියං" aria-current="page">සූත්‍රාන්තභාජනිය<span
+                                    class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#මාතිකා" id="dropdownId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">අභිධර්‍මභාජනිය</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#මාතිකා">මාතිකා</a>
+                                <a class="dropdown-item" href="#පච‍්චයචතුක‍්කං">පච‍්චයචතුක‍්කං මාතිකා ආරම්භය</a>
+                                <a class="dropdown-item" href="#හෙතුචතුක‍්කං">හෙතුචතුක‍්කං මාතිකා ආරම්භය</a>
+                                <a class="dropdown-item" href="#සම‍්පයුත‍්තචතුක‍්කං">සම‍්පයුත‍්තචතුක‍්කං මාතිකා
+                                    ආරම්භය</a>
+                                <a class="dropdown-item" href="#අඤ‍්ඤමඤ‍්ඤචතුක‍්කං">අඤ‍්ඤමඤ‍්ඤචතුක‍්කං මාතිකා ආරම්භය</a>
+                                <a class="dropdown-item" href="#NawaMulaPadaMathika">නව (9) මූල පද මාතිකා</a>
+                                <a class="dropdown-item" href="#hitha1">(01) 1/1 සෝමනස්ස සහගත දිට්ඨිගත සම්පයුත්ත අසංඛාරික චිත්තය</a>
+                                <a class="dropdown-item" href="#අකුසල">01 අකුසල නිද‍්දෙසො (හිත් 21)</a>
+                                <a class="dropdown-item" href="#hitha2">(02) 1/1 සෝමනස්ස සහගත දිට්ඨිගත සම්පයුත්ත සසංඛාරික චිත්තය 387</a>
+                                <a class="dropdown-item" href="#hitha3">(03) 1/1 සෝමනස්ස සහගත දිට්ඨිගත විප්පයුත්තත අසංඛාරික චිත්තය 387</a>
+                                <a class="dropdown-item" href="#hitha4">(04) 1/1 සෝමනස්ස සහගත දිට්ඨිගත විප්පයුත්තත සසංඛාරික චිත්තය 387</a>
                             </div>
-                        
-                        
-                        <a href="#about" class="nav__link">
-                            <i class='bx bx-book-content nav__icon'></i>
-                            <span class="nav__name">About</span>
-                        </a>
-
-                        <a href="#contents" class="nav__link">
-                            <i class='bx bx-bookmarks nav__icon'></i>
-                            <span class="nav__name">පටුන</span>
-                        </a>
-                        
-                    </div>
-                    <div class="nav__items">
-                    -->
-                        <div class="nav__dropdown">
-                            <a href="#" class="nav__link">
-                                <i class='bx bx-book-open nav__icon'></i>
-                                <span class="nav__name"><a href="#අභිධර්‍මභාජනිය">අභිධර්‍මභාජනිය</a></span>
-                                <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
-                            </a>
-                            <div class="nav__dropdown-collapse">
-                                <!--<a href="#මාතිකා" class="nav__dropdown-item">මාතිකා</a>-->
-                                <div class="nav__dropdown-content">
-                                    <a href="#මාතිකා" class="nav__dropdown-item">මාතිකා</a>
-                                    <!--<div class="nav__dropdown-collapse">-->
-                                    <div class="nav__dropdown-content">
-                                        <a href="#පච‍්චයචතුක‍්කං" class="nav__dropdown-item">පච‍්චයචතුක‍්කං මාතිකා
-                                            ආරම්භය</a>
-                                        <a href="#හෙතුචතුක‍්කං" class="nav__dropdown-item">හෙතුචතුක‍්කං මාතිකා
-                                            ආරම්භය</a>
-                                        <a href="#සම‍්පයුත‍්තචතුක‍්කං" class="nav__dropdown-item">සම‍්පයුත‍්තචතුක‍්කං
-                                            මාතිකා ආරම්භය</a>
-                                        <a href="#අඤ‍්ඤමඤ‍්ඤචතුක‍්කං" class="nav__dropdown-item">අඤ‍්ඤමඤ‍්ඤචතුක‍්කං
-                                            මාතිකා ආරම්භය</a>
-                                    </div>
-                                    <!--</div>-->
-                                    <a href="#NawaMulaPadaMathika" class="nav__dropdown-item">නව (9) මූල පද මාතිකා
-                                        ආරම්භය</a>
-                                    <a href="#hitha1" class="nav__dropdown-item">සෝමනස්ස සහගත දිට්ඨිගත සම්පයුත්ත
-                                        අසංඛාරික චිත්තය</a>
-                                    <a href="#අකුසල" class="nav__dropdown-item">01 අකුසල නිද‍්දෙසො</a>
-                                    <a href="#කුසල" class="nav__dropdown-item">02 කුසල නිද‍්දෙසො (හිත් 21)</a>
-                                    <a href="#අව්‍යාකතනිද‍්දෙසො" class="nav__dropdown-item">03 අව්‍යාකතනිද‍්දෙසො (හිත් 29/7/20)</a>
-                                    <a href="#අවිජ්ජාමුලකකුසල" class="nav__dropdown-item">04 අවිජ්ජාමුලකකුසල නීද්දේශය (හිත් 21)</a>
-                                    <a href="#කුසලවිපාකමූලකං" class="nav__dropdown-item">05 කුසලවිපාකමූලකං නීද්දේශය (හිත් 29)</a>
-                                    <a href="#අකුසලවිපාකමූලකං" class="nav__dropdown-item">06 අකුසලවිපාකමූලකං නීද්දේශය (හිත් 07)</a>
-                                </div>
+                        </li>
+                        <!--<li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#මාතිකා" id="dropdownId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">මාතිකා</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#පච‍්චයචතුක‍්කං">පච‍්චයචතුක‍්කං මාතිකා ආරම්භය</a>
+                                <a class="dropdown-item" href="#හෙතුචතුක‍්කං">හෙතුචතුක‍්කං මාතිකා ආරම්භය</a>
+                                <a class="dropdown-item" href="#සම‍්පයුත‍්තචතුක‍්කං">සම‍්පයුත‍්තචතුක‍්කං මාතිකා
+                                    ආරම්භය</a>
+                                <a class="dropdown-item" href="#අඤ‍්ඤමඤ‍්ඤචතුක‍්කං">අඤ‍්ඤමඤ‍්ඤචතුක‍්කං මාතිකා ආරම්භය</a>
+                                <a class="dropdown-item" href="#NawaMulaPadaMathika">නව (9) මූල පද මාතිකා ආරම්භය</a>
                             </div>
-                        </div>
-                        <div class="nav__dropdown">
-                            <a href="#" class="nav__link">
-                                <i class='bx bx-book-open nav__icon'></i>
-                                <span class="nav__name">ඡේද</span>
-                                <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
-                            </a>
-                            <div class="nav__dropdown-collapse">
-                                <div class="nav__dropdown-content">
-                                    <a href="#id347" class="nav__dropdown-item">347</a>
-                                    <a href="#id348" class="nav__dropdown-item">348</a>
-                                    <a href="#id350" class="nav__dropdown-item">350</a>
-                                    <a href="#id355" class="nav__dropdown-item">355</a>
-                                    <a href="#id360" class="nav__dropdown-item">360</a>
-                                    <a href="#id365" class="nav__dropdown-item">365 Page 249</a>
-                                    <a href="#id366" class="nav__dropdown-item">366 Page 252</a>
-                                    <a href="#id367" class="nav__dropdown-item">367 Page 253</a>
-                                    <a href="#id368" class="nav__dropdown-item">368 Page 255</a>
-                                    <a href="#id369" class="nav__dropdown-item">369 Page 257</a>
-                                    <a href="#id370" class="nav__dropdown-item">370</a>
-                                    <a href="#id375" class="nav__dropdown-item">375</a>
-                                    <a href="#id380" class="nav__dropdown-item">380</a>
-                                    <a href="#id385" class="nav__dropdown-item">385</a>
-                                    <a href="#id387" class="nav__dropdown-item">387 01 අකුසල නිද‍්දෙසො (හිත් 12)</a>
-                                    <a href="#id390" class="nav__dropdown-item">390</a>
-                                    <a href="#id395" class="nav__dropdown-item">395 02 කුසල නිද‍්දෙසො (හිත් 21)</a>
-                                    <a href="#id400" class="nav__dropdown-item">400</a>
-                                    <a href="#id404" class="nav__dropdown-item">404 03 අව්‍යාකතනිද‍්දෙසො (හිත් 29/7/20)</a>
-                                    <a href="#id410" class="nav__dropdown-item">410</a>
-                                    <a href="#id415" class="nav__dropdown-item">415</a>
-                                    <a href="#id420" class="nav__dropdown-item">420</a>
-                                    <a href="#id425" class="nav__dropdown-item">425</a>
-                                    <a href="#id430" class="nav__dropdown-item">430</a>
-                                    <a href="#id433" class="nav__dropdown-item">433 04 අවිජ්ජාමුලකකුසල නීද්දේශය (සිත් 21)</a>
-                                    <a href="#id439" class="nav__dropdown-item">439 05 කුසලවිපාකමූලකං නීද්දේශය (හිත් 29)</a>
-                                    <a href="#id445" class="nav__dropdown-item">445</a>
-                                    <a href="#id450" class="nav__dropdown-item">450 06 අකුසලවිපාකමූලකං නීද්දේශය (හිත් 07)</a>
-                                    <a href="#id451" class="nav__dropdown-item">451</a>
-                                    <a href="#id452" class="nav__dropdown-item">452</a>
-                                    <a href="#id453" class="nav__dropdown-item">453</a>
-                                    <a href="#p1018_end" class="nav__dropdown-item"></a>
-                                </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#අකුසල" id="dropdownId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">අකුසල නිද‍්දෙසො</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#hitha2">(02) 1/1 සෝමනස්ස සහගත දිට්ඨිගත සම්පයුත්ත සසංඛාරික චිත්තය 387</a>
+                                <a class="dropdown-item" href="#hitha3">(03) 1/1 සෝමනස්ස සහගත දිට්ඨිගත විප්පයුත්තත අසංඛාරික චිත්තය 387</a>
+                                <a class="dropdown-item" href="#hitha4">(04) 1/1 සෝමනස්ස සහගත දිට්ඨිගත විප්පයුත්තත සසංඛාරික චිත්තය 387</a>
+                                <a class="dropdown-item" href="#hitha5">(05)</a>
+                                <a class="dropdown-item" href="#hitha6">(06)</a>
                             </div>
-                        </div>
-                        <!--
-                            <a href="#" class="nav__link">
-                                <i class='bx bx-compass nav__icon' ></i>
-                                <span class="nav__name">Explore</span>
-                            </a>
-                        
-                        <a href="#sponsor" class="nav__link">
-                            <i class='bx bxs-institution nav__icon'></i>
-                            <span class="nav__name">අනුග්‍රහය</span>
-                        </a>
-                        <a href="#contact" class="nav__link">
-                            <i class='bx bxs-contact nav__icon'></i>
-                            <span class="nav__name">Contact</span>
-                        </a>
-                        -->
-                    </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#කුසල" id="dropdownId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">කුසල නිද‍්දෙසො</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#">Action 1</a>
+                                <a class="dropdown-item" href="#">Action 2</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#අව්‍යාකතනිද‍්දෙසො" id="dropdownId"
+                                data-bs-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">අව්‍යාකතනිද‍්දෙසො</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#">Action 1</a>
+                                <a class="dropdown-item" href="#">Action 2</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#අවිජ්ජාමුලකකුසල" id="dropdownId"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">අවිජ්ජාමුලකකුසල
+                                නීද්දේශය</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#">Action 1</a>
+                                <a class="dropdown-item" href="#">Action 2</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#කුසලවිපාකමූලකං" id="dropdownId"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">කුසලවිපාකමූලකං
+                                නීද්දේශය</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#">Action 1</a>
+                                <a class="dropdown-item" href="#">Action 2</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#අකුසලවිපාකමූලකං" id="dropdownId"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">අකුසලවිපාකමූලකං
+                                නීද්දේශය</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#">Action 1</a>
+                                <a class="dropdown-item" href="#">Action 2</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">ඡේද වශයෙන්</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a href="#id347" class="dropdown-item">347</a>
+                                <a href="#id348" class="dropdown-item">348</a>
+                                <a href="#id350" class="dropdown-item">350</a>
+                                <a href="#id355" class="dropdown-item">355</a>
+                                <a href="#id360" class="dropdown-item">360</a>
+                                <a href="#id365" class="dropdown-item">365 Page 249</a>
+                                <a href="#id366" class="dropdown-item">366 Page 252</a>
+                                <a href="#id367" class="dropdown-item">367 Page 253</a>
+                                <a href="#id368" class="dropdown-item">368 Page 255</a>
+                                <a href="#id369" class="dropdown-item">369 Page 257</a>
+                                <a href="#id370" class="dropdown-item">370</a>
+                                <a href="#id375" class="dropdown-item">375</a>
+                                <a href="#id380" class="dropdown-item">380</a>
+                                <a href="#id385" class="dropdown-item">385</a>
+                                <a href="#id387" class="dropdown-item">387 01 අකුසල නිද‍්දෙසො (හිත් 12)</a>
+                                <a href="#id390" class="dropdown-item">390</a>
+                                <a href="#id395" class="dropdown-item">395 02 කුසල නිද‍්දෙසො (හිත් 21)</a>
+                                <a href="#id400" class="dropdown-item">400</a>
+                                <a href="#id404" class="dropdown-item">404 03 අව්‍යාකතනිද‍්දෙසො (හිත් 29/7/20)</a>
+                                <a href="#id410" class="dropdown-item">410</a>
+                                <a href="#id415" class="dropdown-item">415</a>
+                                <a href="#id420" class="dropdown-item">420</a>
+                                <a href="#id425" class="dropdown-item">425</a>
+                                <a href="#id430" class="dropdown-item">430</a>
+                                <a href="#id433" class="dropdown-item">433 04 අවිජ්ජාමුලකකුසල නීද්දේශය (සිත් 21)</a>
+                                <a href="#id439" class="dropdown-item">439 05 කුසලවිපාකමූලකං නීද්දේශය (හිත් 29)</a>
+                                <a href="#id445" class="dropdown-item">445</a>
+                                <a href="#id450" class="dropdown-item">450 06 අකුසලවිපාකමූලකං නීද්දේශය (හිත් 07)</a>
+                                <a href="#id451" class="dropdown-item">451</a>
+                                <a href="#id452" class="dropdown-item">452</a>
+                                <a href="#id453" class="dropdown-item">453</a>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <!--
-                <a href="#contact" class="nav__link nav__logout">
-                    <i class='bx bx-contact nav__icon' ></i>
-                    <span class="nav__name">Contact X</span>
-                </a>
-            -->
         </nav>
-    </div>
-    <body>
+    </header>
+    <main>
         <h1>ප්‍රතීත්‍යසමුත්පාද විභඞ්ගය සඳහා සටහන්</h1>
         <h2>Warning: මෙය ගුරුතුමා විසින් සකස් කරන ලද සටහනක් නොවේ. මෙහි වැරදි ගොඩක් අන්තර්ගතව ඇත.</h2>
         <div id="contents"></div>
         <h3>පටිච‍්චසමුප‍්පාද විභඞ‍්ගො (pages 245 - 339)</h3>
-        <!--
-        <h3><a href="සුත‍්තන‍්තභාජනියං">සුත‍්තන‍්තභාජනියං (pages 244 - 249)</a></h3>
-        <h3><a href="#AbhidhammaBhajaniya">අභිධම‍්මභාජනියං ආරම්භය (pages 249 - 339)</a></h3>
-        <h3><a href="#මාතිකා">මාතිකා (pages 249 - 257)</a></h3>
-        <h3><a href="#පච‍්චයචතුක‍්කංමාතිකා">පච‍්චයචතුක‍්කං මාතිකා ආරම්භය 365 (pages 249 - 251)</a></h3>
-        <h3><a href="#හෙතුචතුක‍්කං">හෙතුචතුක‍්කං 366 (pages 252 - 253)</a></h3>
-        <h3><a href="#සම‍්පයුත‍්තචතුක‍්කං">සම‍්පයුත‍්තචතුක‍්කං 367 (pages 253 - 255)</a></h3>
-        <h3><a href="#අඤ‍්ඤමඤ‍්ඤචතුක‍්කං">අඤ‍්ඤමඤ‍්ඤචතුක‍්කං 368 (pages 255 - 257)</a></h3>
-        <h3><a href="#NawaMulaPadaMathika">නව (9) මූල පද මාතිකා</a></h3>
-
-        <h3>අකුසල නිද‍්දෙසො</h3>
-        <h3>කුසල නිද‍්දෙසො</h3>
-        <h3>අව්‍යාකතනිද‍්දෙසො</h3>
-        <h3>කුසලවිපාකමූලකං නිට‍්ඨිතං</h3>
-        <h3>අකුසලවිපාකමූලකං නිට‍්ඨිතං</h3>
-        <div class="pali">6. පටිච‍්චසමුප‍්පාද විභඞ‍්ගො</div>
-        <div class="sinh">6. ප්‍රතීත්‍යසමුත්පාද විභඞ්ගය</div>
-        -->
         <div class="sectionheading" id="සුත්තන්තභොජනියං">සුත්තන්තභොජනියං ආරම්භය</div>
         <div class="pali"><span class="chedaya" id="id347">347</span>. අවිජ‍්ජාපච‍්චයා සඞ‍්ඛාරා, සඞ‍්ඛාරපච‍්චයා
             විඤ‍්ඤාණං, විඤ‍්ඤාණපච‍්චයා නාමරූපං, නාමරූපපච‍්චයා සළායතනං, සළායතනපච‍්චයා ඵස‍්සො, ඵස‍්සපච‍්චයා වෙදනා,
@@ -450,15 +371,86 @@
             යනු: මෙසේ අමිශ්‍ර වූ නොහොත් සියලු දුඃඛරාශිහුගේ එක්වීම වෙයි, සමාගමය වෙයි, සමවධානය වෙයි, ප්‍රාදුර්‍භාවය වේ.
             එහෙයින් කියනු ලැබෙයි: ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
         <div class="pali"></div>
-        <div class="sectionend" id="සුත්තන්තභොජනියං_end">සූත්‍රාන්තභාජනිය යි.</div>
+        <div class="sectionend">සූත්‍රාන්තභාජනිය යි.</div>
         <div class="sectionheading" id="අභිධර්‍මභාජනිය">අභිධර්‍මභාජනිය ආරම්භය</div>
         <div class="sectionheading2" id="මාතිකා">මාතිකා</div>
         <div class="sectionheading3" id="පච‍්චයචතුක‍්කං">පච‍්චයචතුක‍්කං මාතිකා ආරම්භය</div>
-        <div class="pali"><span class="chedaya" id="id365">365</span>. අවිජ‍්ජාපච‍්චයා සඞ‍්ඛාරො, සඞ‍්ඛාරපච‍්චයා
+        <div class="pali">
+            <span class="chedaya" id="id365">365</span>. <table>
+                <tr>
+                    <th>1 වාරය</th>
+                    <th>2 වාරය</th>
+                    <th>3 වාරය</th>
+                    <th>4 වාරය</th>
+                </tr>
+                <tr>
+                    <td>අවිජ‍්ජාපච‍්චයා සඞ‍්ඛාරො</td>
+                    <td>අවිජ‍්ජාපච‍්චයා සඞ‍්ඛාරො</td>
+                    <td>අවිජ‍්ජාපච‍්චයා සඞ‍්ඛාරො</td>
+                    <td>අවිජ‍්ජාපච‍්චයා සඞ‍්ඛාරො</td>
+                </tr>
+                <tr>
+                    <td> සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං</td>
+                    <td> සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං </td>
+                    <td>සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං </td>
+                    <td>සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං</td>
+                </tr>
+                <tr>
+                    <td> විඤ‍්ඤාණපච‍්චයා නාමං </td>
+                    <td> විඤ‍්ඤාණපච‍්චයා නාමං </td>
+                    <td> විඤ‍්ඤාණපච‍්චයා නාමරූපං </td>
+                    <td> විඤ‍්ඤාණපච‍්චයා නාමරූපං</td>
+                </tr>
+                <tr>
+                    <td> නාමපච‍්චයා ඡට‍්ඨායතනං</td>
+                    <td> නාමපච‍්චයා ඵස‍්සො </td>
+                    <td> නාමරූපපච‍්චයා ඡට‍්ඨායතනං</td>
+                    <td> නාමරූපපච‍්චයා සළායතනං</td>
+                </tr>
+                <tr>
+                    <td> ඡට‍්ඨායතනපච‍්චයා ඵස‍්සො</td>
+                    <td> </td>
+                    <td> ඡට‍්ඨායතනපච‍්චයා ඵස‍්සො</td>
+                    <td> ඡට‍්ඨායතනපච‍්චයා1 ඵස‍්සො</td>
+                </tr>
+                <tr>
+                    <td> ඵස‍්සපච‍්චයා වෙදනා</td>
+                    <td> ඵස‍්සපච‍්චයා වෙදනා</td>
+                    <td> ඵස‍්සපච‍්චයා වෙදනා</td>
+                    <td> ඵස‍්සපච‍්චයා වෙදනා</td>
+                </tr>
+                <tr>
+                    <td> වෙදනාපච‍්චයා තණ‍්හා</td>
+                    <td> වෙදනාපච‍්චයා තණ‍්හා</td>
+                    <td> වෙදනාපච‍්චයා තණ‍්හා</td>
+                    <td> වෙදනාපච‍්චයා තණ‍්හා</td>
+                </tr>
+                <tr>
+                    <td> තණ‍්හාපච‍්චයා උපාදානං</td>
+                    <td> තණ‍්හාපච‍්චයා උපාදානං</td>
+                    <td> තණ‍්හාපච‍්චයා උපාදානං</td>
+                    <td> තණ‍්හාපච‍්චයා උපාදානං</td>
+                </tr>
+                <tr>
+                    <td> උපාදානපච‍්චයා භවො, භවපච‍්චයා ජාති, ජාතිපච‍්චයා ජරාමරණං</td>
+                    <td> උපාදානපච‍්චයා භවො, භවපච‍්චයා ජාති, ජාතිපච‍්චයා ජරාමරණං</td>
+                    <td> උපාදානපච‍්චයා භවො, භවපච‍්චයා ජාති, ජාතිපච‍්චයා ජරාමරණං</td>
+                    <td> උපාදානපච‍්චයා භවො, භවපච‍්චයා ජාති, ජාතිපච‍්චයා ජරාමරණං</td>
+                </tr>
+                <tr>
+                    <td> එවමෙතස‍්ස කෙවලස‍්ස දුක‍්ඛක‍්ඛන්‍ධස‍්ස සමුදයො හොති.</td>
+                    <td> එවමෙතස‍්ස කෙවලස‍්ස දුක‍්ඛක‍්ඛන්‍ධස‍්ස සමුදයො හොති.</td>
+                    <td> එවමෙතස‍්ස කෙවලස‍්ස දුක‍්ඛක‍්ඛන්‍ධස‍්ස සමුදයො හොති.</td>
+                    <td> එවමෙතස‍්ස කෙවලස‍්ස දුක‍්ඛක‍්ඛන්‍ධස‍්ස සමුදයො හොති.</td>
+                </tr>
+            </table>
+        </div>
+        <div class="sinh"> &nbsp; </div>
+        <div class="pali"><span class="chedaya" id="id365p">365</span>. අවිජ‍්ජාපච‍්චයා සඞ‍්ඛාරො, සඞ‍්ඛාරපච‍්චයා
             විඤ‍්ඤාණං, විඤ‍්ඤාණපච‍්චයා නාමං, නාමපච‍්චයා ඡට‍්ඨායතනං, ඡට‍්ඨායතනපච‍්චයා ඵස‍්සො, ඵස‍්සපච‍්චයා වෙදනා,
             වෙදනාපච‍්චයා තණ‍්හා, තණ‍්හාපච‍්චයා උපාදානං, උපාදානපච‍්චයා භවො, භවපච‍්චයා ජාති, ජාතිපච‍්චයා ජරාමරණං,
             එවමෙතස‍්ස කෙවලස‍්ස දුක‍්ඛක‍්ඛන්‍ධස‍්ස සමුදයො හොති.</div>
-        <div class="sinh"><span class="chedaya" id="id365">365</span>. අවිද්‍යාප්‍රත්‍යයෙන් සංස්කාරය වෙයි,
+        <div class="sinh"><span class="chedaya" id="id365s">365</span>. අවිද්‍යාප්‍රත්‍යයෙන් සංස්කාරය වෙයි,
             සංස්කාරප්‍රත්‍යයෙන් විඥානය වෙයි, විඥානප්‍රත්‍යයෙන් නාමය වෙයි, නාමප්‍රත්‍යයෙන් ෂෂ්ඨායතනය වෙයි,
             ෂෂ්ඨායතනප්‍රත්‍යයෙන් ස්පර්‍ශය වෙයි, ස්පර්‍ශප්‍රත්‍යයෙන් වේදනාව වෙයි, වේදනාප්‍රත්‍යයෙන් තෘෂ්ණාව වෙයි,
             තෘෂ්ණාප්‍රත්‍යයෙන් උපාදානය වෙයි, උපාදානප්‍රත්‍යයෙන් භවය වෙයි, භවප්‍රත්‍යයෙන් ජාතිය වෙයි, ජාතිප්‍රත්‍යයෙන්
@@ -489,12 +481,81 @@
         <!--<div class="pali">පච‍්චයචතුක‍්කං.</div>-->
         <div class="sectionend">ප්‍රත්‍යයචතුෂ්ක යි.</div>
         <div class="sectionheading3" id="හෙතුචතුක‍්කං">හෙතුචතුක‍්කං මාතිකා ආරම්භය</div>
-        <div class="pali"><span class="chedaya" id="id366">366</span>. අවිජ‍්ජාපච‍්චයා සඞ‍්ඛාරො අවිජ‍්ජාහෙතුකො,
+        <span class="chedaya" id="id366">366</span>. <table class="pali">
+            <tr>
+                <th>1 වාරය</th>
+                <th>2 වාරය</th>
+                <th>3 වාරය</th>
+                <th>4 වාරය</th>
+            </tr>
+            <tr>
+                <td>අවිජ‍්ජාපච‍්චයා සඞ‍්ඛාරො අවිජ‍්ජාහෙතුකො</td>
+                <td>අවිජ‍්ජාපච‍්චයා සඞ‍්ඛාරො අවිජ‍්ජාහෙතුකො</td>
+                <td>අවිජ‍්ජාපච‍්චයා සඞ‍්ඛාරො අවිජ‍්ජාහෙතුකො</td>
+                <td>අවිජ‍්ජාපච‍්චයා සඞ‍්ඛාරො අවිජ‍්ජාහෙතුකො</td>
+            </tr>
+            <tr>
+                <td>සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං සඞ‍්ඛාරහෙතුකං</td>
+                <td>සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං සඞ‍්ඛාරහෙතුකං</td>
+                <td>සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං සඞ‍්ඛාරහෙතුකං</td>
+                <td>සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං සඞ‍්ඛාරහෙතුකං</td>
+            </tr>
+            <tr>
+                <td>විඤ‍්ඤාණපච‍්චයා නාමං විඤ‍්ඤාණහෙතුකං</td>
+                <td>විඤ‍්ඤාණපච‍්චයා නාමං විඤ‍්ඤාණහෙතුකං</td>
+                <td>විඤ‍්ඤාණපච‍්චයා නාමරූපං විඤ‍්ඤාණහෙතුකං</td>
+                <td>විඤ‍්ඤාණපච‍්චයා නාමරූපං විඤ‍්ඤාණහෙතුකං</td>
+            </tr>
+            <tr>
+                <td>නාමපච‍්චයා ඡට‍්ඨායතනං නාමහෙතුකං</td>
+                <td>නාමපච‍්චයාඵස‍්සො නාමහෙතුකො</td>
+                <td>නාමරූපපච‍්චයා ඡට‍්ඨායතනං නාමරූපහෙතුකං</td>
+                <td>නාමරූපපච‍්චයා සළායතනං නාමරූපහෙතුකං</td>
+            </tr>
+            <tr>
+                <td>ඡට‍්ඨායතනපච‍්චයා ඵස‍්සො ඡට‍්ඨායතනහෙතුකො</td>
+                <td></td>
+                <td>ඡට‍්ඨායතනපච‍්චයා ඵස‍්සො ඡට‍්ඨායතනහෙතුකො</td>
+                <td>ඡට‍්ඨායතනපච‍්චයා ඵස‍්සො ඡට‍්ඨායතනහෙතුකො1</td>
+            </tr>
+            <tr>
+                <td>ඵස‍්සපච‍්චයා වෙදනා ඵස‍්සහෙතුකා</td>
+                <td>ඵස‍්සපච‍්චයාවෙදනා වෙදනා ඵස‍්සහෙතුකා </td>
+                <td>ඵස‍්සපච‍්චයා වෙදනා ඵස‍්සහෙතුකා</td>
+                <td>ඵස‍්සපච‍්චයා වෙදනා ඵස‍්සහෙතුකා</td>
+            </tr>
+            <tr>
+                <td> වෙදනාපච‍්චයා තණ‍්හා වෙදනාහෙතුකා</td>
+                <td> වෙදනාපච‍්චයා තණ‍්හා වෙදනාහෙතුකා</td>
+                <td> වෙදනාපච‍්චයා තණ‍්හා වෙදනාහෙතුකා</td>
+                <td> වෙදනාපච‍්චයා තණ‍්හා වෙදනාහෙතුකා</td>
+            </tr>
+            <tr>
+                <td> තණ‍්හාපච‍්චයා උපාදානං තණ‍්හාහෙතුකං</td>
+                <td> තණ‍්හාපච‍්චයා උපාදානං තණ‍්හාහෙතුකං</td>
+                <td> තණ‍්හාපච‍්චයා උපාදානං තණ‍්හාහෙතුකං</td>
+                <td> තණ‍්හාපච‍්චයා උපාදානං, තණ‍්හාහෙතුකං</td>
+            </tr>
+            <tr>
+                <td> උපාදානපච‍්චයා භවො, භවපච‍්චයා ජාති, ජාතිපච‍්චයා ජරාමරණං. </td>
+                <td> උපාදානපච‍්චයා භවො, භවපච‍්චයා ජාති, ජාතිපච‍්චයා ජරාමරණං. </td>
+                <td> උපාදානපච‍්චයා භවො, භවපච‍්චයා ජාති, ජාතිපච‍්චයා ජරාමරණං. </td>
+                <td> උපාදානපච‍්චයා භවො, භවපච‍්චයා ජාති, ජාතිපච‍්චයා ජරාමරණං. </td>
+            </tr>
+            <tr>
+                <td> එවමෙතස‍්ස කෙවලස‍්ස දුක‍්ඛක‍්ඛන්‍ධස‍්ස සමුදයො හොති.</td>
+                <td> එවමෙතස‍්ස කෙවලස‍්ස දුක‍්ඛක‍්ඛන්‍ධස‍්ස සමුදයො හොති.</td>
+                <td> එවමෙතස‍්ස කෙවලස‍්ස දුක‍්ඛක‍්ඛන්‍ධස‍්ස සමුදයො හොති.</td>
+                <td> එවමෙතස‍්ස කෙවලස‍්ස දුක‍්ඛක‍්ඛන්‍ධස‍්ස සමුදයො හොති.</td>
+            </tr>
+        </table>
+        <div class="sinh"> &nbsp; </div>
+        <div class="pali"><span class="chedaya" id="id366p">366</span>. අවිජ‍්ජාපච‍්චයා සඞ‍්ඛාරො අවිජ‍්ජාහෙතුකො,
             සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං සඞ‍්ඛාරහෙතුකං, විඤ‍්ඤාණපච‍්චයා නාමං විඤ‍්ඤාණහෙතුකං, නාමපච‍්චයා ඡට‍්ඨායතනං
             නාමහෙතුකං, ඡට‍්ඨායතනපච‍්චයා ඵස‍්සො ඡට‍්ඨායතනහෙතුකො, ඵස‍්සපච‍්චයා වෙදනා ඵස‍්සහෙතුකා, වෙදනාපච‍්චයා තණ‍්හා
             වෙදනාහෙතුකා, තණ‍්හාපච‍්චයා උපාදානං තණ‍්හාහෙතුකං, උපාදානපච‍්චයා භවො, භවපච‍්චයා ජාති, ජාතිපච‍්චයා ජරාමරණං.
             එවමෙතස‍්ස කෙවලස‍්ස දුක‍්ඛක‍්ඛන්‍ධස‍්ස සමුදයො හොති.</div>
-        <div class="sinh"><span class="chedaya" id="id366">366</span>. අවිද්‍යාප්‍රත්‍යයෙන් අවිද්‍යාව හේතුකොට ඇති
+        <div class="sinh"><span class="chedaya" id="id366s">366</span>. අවිද්‍යාප්‍රත්‍යයෙන් අවිද්‍යාව හේතුකොට ඇති
             සංස්කාරය වෙයි, සංස්කාර ප්‍රත්‍යයෙන් සංස්කාර හේතුකොට ඇති විඥානය වෙයි, විඥානප්‍රත්‍යයෙන් විඥානය හේතු කොට ඇති
             නාමය වෙයි, නාමප්‍රත්‍යයෙන් නාමය හේතු කොට ෂෂ්ඨායතනය වෙයි, ෂෂ්ඨායතනප්‍රත්‍යයෙන් ෂෂ්ඨායතනය හේතුකොට ඇති ස්පර්‍ශය
             වෙයි, ස්පර්‍ශප්‍රත්‍යයෙන් ස්පර්‍ශය හේතුකොට ඇති වේදනාව වෙයි, වේදනාප්‍රත්‍යයෙන් වේදනා හේතුකොට ඇති තෘෂ්ණාව
@@ -534,13 +595,84 @@
         <!--<div class="pali">හෙතුචතුක‍්කං.</div>-->
         <div class="sectionend">හේතුචතුෂ්ක යි.</div>
         <div class="sectionheading3" id="සම‍්පයුත‍්තචතුක‍්කං">සම‍්පයුත‍්තචතුක‍්කං මාතිකා ආරම්භය</div>
-        <div class="pali"><span class="chedaya" id="id367">367</span>. අවිජ‍්ජාපච‍්චයා සඞ‍්ඛාරො අවිජ‍්ජාසම‍්පයුත‍්තො,
+        <div class="pali"><span class="chedaya" id="id367">367</span>
+            <table>
+                <tr>
+                    <th>1 වාරය</th>
+                    <th>2 වාරය</th>
+                    <th>3 වාරය</th>
+                    <th>4 වාරය</th>
+                </tr>
+                <tr>
+                    <td>අවිජ‍්ජාපච‍්චයා සඞ‍්ඛාරො අවිජ‍්ජාසම‍්පයුත‍්තො</td>
+                    <td>අවිජ‍්ජාපච‍්චයා සඞ‍්ඛාරො අවිජ‍්ජාසම‍්පයුත‍්තො</td>
+                    <td>අවිජ‍්ජාපච‍්චයා සඞ‍්ඛාරො අවිජ‍්ජාසම‍්පයුත‍්තො</td>
+                    <td>අවිජ‍්ජාපච‍්චයා සඞ‍්ඛාරො අවිජ‍්ජාසම‍්පයුත‍්තො</td>
+                </tr>
+                <tr>
+                    <td>සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං සඞ‍්ඛාරසම‍්පයුත‍්තං</td>
+                    <td>සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං සඞ‍්ඛාරසම‍්පයුත‍්තං</td>
+                    <td>සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං සඞ‍්ඛාරසම‍්පයුත‍්තං</td>
+                    <td>සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං සඞ‍්ඛාරසම‍්පයුත‍්තං</td>
+                </tr>
+                <tr>
+                    <td>විඤ‍්ඤාණපච‍්චයා නාමං විඤ‍්ඤාණසම‍්පයුත‍්තං</td>
+                    <td>විඤ‍්ඤාණපච‍්චයා නාමං විඤ‍්ඤාණසම‍්පයුත‍්තං</td>
+                    <td>විඤ‍්ඤාණපච‍්චයා නාමරූපං විඤ‍්ඤාණසම‍්පයුත‍්තං නාමං 2</td>
+                    <td>විඤ‍්ඤාණපච‍්චයා නාමරූපං විඤ‍්ඤාණසම‍්පයුත‍්තං නාමං 1</td>
+                </tr>
+                <tr>
+                    <td>නාමපච‍්චයා  ඡට‍්ඨායතනං නාමසම‍්පයුත‍්තං</td>
+                    <td>නාමපච‍්චයා ඵස‍්සො නාමසම‍්පයුත‍්තො</td>
+                    <td>නාමරූපපච‍්චයා ඡට‍්ඨායතනං නාමසම‍්පයුත‍්තං, 3</td>
+                    <td>නාමරූපපච‍්චයා සළායතනං නාමසම‍්පයුත‍්තං ඡට‍්ඨායතනං 2</td>
+                </tr>
+                <tr>
+                    <td>ඡට‍්ඨායතනපච‍්චයා ඵස‍්සො ඡට‍්ඨායතනසම‍්පයුත‍්තො</td>
+                    <td></td>
+                    <td>ඡට‍්ඨායතනපච‍්චයා ඵස‍්සො ඡට‍්ඨායතනසම‍්පයුත‍්තො</td>
+                    <td>ඡට‍්ඨායතනපච‍්චයා ඵස‍්සො ඡට‍්ඨායතනසම‍්පයුත‍්තො</td>
+                </tr>
+                <tr>
+                    <td>ඵස‍්සපච‍්චයා වෙදනා ඵස‍්සසම‍්පයුත‍්තා</td>
+                    <td>ඵස‍්සපච‍්චයා වෙදනා ඵස‍්සසම‍්පයුත‍්තා</td>
+                    <td>ඵස‍්සපච‍්චයා වෙදනා ඵස‍්සසම‍්පයුත‍්තා</td>
+                    <td>ඵස‍්සපච‍්චයා වෙදනා ඵස‍්සසම‍්පයුත‍්තා</td>
+                </tr>
+                <tr>
+                    <td>වෙදනාපච‍්චයා තණ‍්හා වෙදනාසම‍්පයුත‍්තා</td>
+                    <td>වෙදනාපච‍්චයා තණ‍්හා වෙදනාසම‍්පයුත‍්තා</td>
+                    <td>වෙදනාපච‍්චයා තණ‍්හා වෙදනාසම‍්පයුත‍්තා</td>
+                    <td>වෙදනාපච‍්චයා තණ‍්හා වෙදනාසම‍්පයුත‍්තා</td>
+                </tr>
+                <tr>
+                    <td>  තණ‍්හාපච‍්චයා උපාදානං තණ‍්හාසම‍්පයුත‍්තං </td>
+                    <td>  තණ‍්හාපච‍්චයා උපාදානං තණ‍්හාසම‍්පයුත‍්තං </td>
+                    <td>  තණ‍්හාපච‍්චයා උපාදානං තණ‍්හාසම‍්පයුත‍්තං </td>
+                    <td>  තණ‍්හාපච‍්චයා උපාදානං තණ‍්හාසම‍්පයුත‍්තං</td>
+                </tr>
+                <tr>
+                    <td>උපාදානපච‍්චයා භවො, භවපච‍්චයා ජාති, ජාතිපච‍්චයා ජරාමරණං.</td>
+                    <td>උපාදානපච‍්චයා භවො, භවපච‍්චයා ජාති, ජාතිපච‍්චයා ජරාමරණං.</td>
+                    <td>උපාදානපච‍්චයා භවො, භවපච‍්චයා ජාති, ජාතිපච‍්චයා ජරාමරණං.</td>
+                    <td>උපාදානපච‍්චයා භවො, භවපච‍්චයා ජාති, ජාතිපච‍්චයා ජරාමරණං.</td>
+                </tr>
+                <tr>
+                    <td> එවමෙතස‍්ස කෙවලස‍්ස දුක‍්ඛක‍්ඛන්‍ධස‍්ස සමුදයො හොති.</td>
+                    <td> එවමෙතස‍්ස කෙවලස‍්ස දුක‍්ඛක‍්ඛන්‍ධස‍්ස සමුදයො හොති.</td>
+                    <td> එවමෙතස‍්ස කෙවලස‍්ස දුක‍්ඛක‍්ඛන්‍ධස‍්ස සමුදයො හොති.</td>
+                    <td> එවමෙතස‍්ස කෙවලස‍්ස දුක‍්ඛක‍්ඛන්‍ධස‍්ස සමුදයො හොති.</td>
+                </tr>
+            </table>
+        </div>
+        <div class="sinh"> &nbsp; </div>
+        <div class="pali"><span class="chedaya" id="id367p">367</span>. අවිජ‍්ජාපච‍්චයා සඞ‍්ඛාරො අවිජ‍්ජාසම‍්පයුත‍්තො,
             සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං සඞ‍්ඛාරසම‍්පයුත‍්තං, විඤ‍්ඤාණපච‍්චයා නාමං විඤ‍්ඤාණසම‍්පයුත‍්තං, නාමපච‍්චයා
             ඡට‍්ඨායතනං නාමසම‍්පයුත‍්තං, ඡට‍්ඨායතනපච‍්චයා ඵස‍්සො ඡට‍්ඨායතනසම‍්පයුත‍්තො, ඵස‍්සපච‍්චයා වෙදනා
             ඵස‍්සසම‍්පයුත‍්තා, වෙදනාපච‍්චයා තණ‍්හා වෙදනාසම‍්පයුත‍්තා, තණ‍්හාපච‍්චයා උපාදානං තණ‍්හාසම‍්පයුත‍්තං,
             උපාදානපච‍්චයා භවො, භවපච‍්චයා ජාති, ජාතිපච‍්චයා ජරාමරණං. එවමෙතස‍්ස කෙවලස‍්ස දුක‍්ඛක‍්ඛන්‍ධස‍්ස සමුදයො හොති.
         </div>
-        <div class="sinh"><span class="chedaya" id="id367">367</span>. අවිද්‍යාප්‍රත්‍යයෙන් අවිද්‍යාසම්ප්‍රයුක්ත වූ
+        <div class="sinh"><span class="chedaya" id="id367s">367</span>. අවිද්‍යාප්‍රත්‍යයෙන් අවිද්‍යාසම්ප්‍රයුක්ත වූ
             සංස්කාරය වෙයි, සංස්කාරප්‍රත්‍යයෙන් සංස්කාරසම්ප්‍රයුක්ත වූ විඥානය වෙයි. විඥානප්‍රත්‍යයෙන් විඥානසම්ප්‍රයුක්ත
             වූ නාමය වෙයි, නාමප්‍රත්‍යයෙන් නාමසම්ප්‍රයුක්ත වූ ෂෂ්ඨායතනය වෙයි, ෂෂ්ඨායතනප්‍රත්‍යයෙන් ෂෂ්ඨායතනසම්ප්‍රයුක්ත
             වූ ස්පර්‍ශය වෙයි, ස්පර්‍ශප්‍රත්‍යයෙන් ස්පර්‍ශසම්ප්‍රයුක්ත වූ වේදනාව වෙයි, වේදනාප්‍රත්‍යයෙන්
@@ -584,13 +716,85 @@
         <!--<div class="pali">සම‍්පයුත‍්තචතුක‍්කං.</div>-->
         <div class="sectionend">සම්ප්‍රයුක්තචතුෂ්ක යි.</div>
         <div class="sectionheading3" id="අඤ‍්ඤමඤ‍්ඤචතුක‍්කං">අඤ‍්ඤමඤ‍්ඤචතුක‍්කං මාතිකා ආරම්භය</div>
+
+        <div class="pali"><span class="chedaya" id="id368">368</span>
+            <table>
+                <tr>
+                    <th>1 වාරය</th>
+                    <th>2 වාරය</th>
+                    <th>3 වාරය</th>
+                    <th>4 වාරය</th>
+                </tr>
+                <tr>
+                    <td>අවිජ‍්ජාපච‍්චයා සඞ‍්ඛාරො සඞ‍්ඛාරපච‍්චයා’පි අවිජ‍්ජා</td>
+                    <td>අවිජ‍්ජාපච‍්චයා සඞ‍්ඛාරො සඞ‍්ඛාරපච‍්චයා’පි අවිජ‍්ජා</td>
+                    <td>අවිජ‍්ජාපච‍්චයා සඞ‍්ඛාරො සඞ‍්ඛාරපච‍්චයා’පි අවිජ‍්ජා</td>
+                    <td>අවිජ‍්ජාපච‍්චයා සඞ‍්ඛාරො සඞ‍්ඛාරපච‍්චයා’පි අවිජ‍්ජා</td>
+                </tr>
+                <tr>
+                    <td>සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං විඤ‍්ඤාණපච‍්චයා’පි සඞ‍්ඛාරො</td>
+                    <td>සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං විඤ‍්ඤාණපච‍්චයා’පි සඞ‍්ඛාරො</td>
+                    <td>සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං විඤ‍්ඤාණපච‍්චයා’පි සඞ‍්ඛාරො</td>
+                    <td>සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං විඤ‍්ඤාණපච‍්චයා’පි සඞ‍්ඛාරො</td>
+                </tr>
+                <tr>
+                    <td>විඤ‍්ඤාණපච‍්චයා නාමං නාමපච‍්චයා’පි විඤ‍්ඤාණං</td>
+                    <td>විඤ‍්ඤාණපච‍්චයා නාමං නාමපච‍්චයා’පි විඤ‍්ඤාණං</td>
+                    <td>විඤ‍්ඤාණපච‍්චයා නාමරූපං නාමරූපපච‍්චයා’පි විඤ‍්ඤාණං</td>
+                    <td>විඤ‍්ඤාණපච‍්චයා නාමරූපං නාමරූපපච‍්චයා’පි විඤ‍්ඤාණං</td>
+                </tr>
+                <tr>
+                    <td>නාමපච‍්චයා ඡට‍්ඨායතනං ඡට‍්ඨායතනපච‍්චයාපි නාමං</td>
+                    <td>නාමපච‍්චයා ඵස‍්සො ඵස‍්සපච‍්චයා’පි නාමං</td>
+                    <td>නාමරූපපච‍්චයා ඡට‍්ඨායතනං ඡට‍්ඨායතනපච‍්චයා’පි නාමරූපං</td>
+                    <td>නාමරූපපච‍්චයා සළායතනං සළායතනපච‍්චයා’පි නාමරූපං</td>
+                </tr>
+                <tr>
+                    <td>    ඡට‍්ඨායතනපච‍්චයා ඵස‍්සො ඵස‍්සපච‍්චයාපි ඡට‍්ඨායතනං      </td>
+                    <td>     </td>
+                    <td>   ඡට‍්ඨායතනපච‍්චයා ඵස‍්සො ඵස‍්සපච‍්චයා’පි ඡට‍්ඨායතනං </td>
+                    <td>   ඡට‍්ඨායතනපච‍්චයා ඵස‍්සො ඵස‍්සපච‍්චයා’පි ඡට‍්ඨායතනං</td>
+                </tr>
+                <tr>
+                    <td>ඵස‍්සපච‍්චයා වෙදනා වෙදනාපච‍්චයා’පි ඵස‍්සො</td>
+                    <td>ඵස‍්සපච‍්චයා වෙදනා වෙදනාපච‍්චයා’පි ඵස‍්සො</td>
+                    <td>ඵස‍්සපච‍්චයා වෙදනා වෙදනාපච‍්චයා’පි ඵස‍්සො</td>
+                    <td>ඵස‍්සපච‍්චයා වෙදනා වෙදනාපච‍්චයා’පි ඵස‍්සො</td>
+                </tr>
+                <tr>
+                    <td>වෙදනාපච‍්චයා තණ‍්හා තණ‍්හාපච‍්චයා’පි වෙදනා</td>
+                    <td>වෙදනාපච‍්චයා තණ‍්හා තණ‍්හාපච‍්චයා’පි වෙදනා</td>
+                    <td>වෙදනාපච‍්චයා තණ‍්හා, තණ‍්හාපච‍්චයා’පි වෙදනා</td>
+                    <td>වෙදනාපච‍්චයා තණ‍්හා තණ‍්හාපච‍්චයාපි වෙදනා</td>
+                </tr>
+                <tr>
+                    <td>තණ‍්හාපච‍්චයා උපාදානං  උපාදානපච‍්චයා’පි තණ‍්හා</td>
+                    <td>තණ‍්හාපච‍්චයා  උපාදානං උපාදානපච‍්චයා’පි තණ‍්හා</td>
+                    <td>තණ‍්හාපච‍්චයා උපාදානං උපාදානපච‍්චයා’පි තණ‍්හා</td>
+                    <td>තණ‍්හාපච‍්චයා උපාදානං උපාදානපච‍්චයා’පි තණ‍්හා</td>
+                </tr>
+                <tr>
+                    <td>උපාදානපච‍්චයා භවො, භවපච‍්චයා ජාති, ජාතිපච‍්චයා ජරාමරණං.</td>
+                    <td>උපාදානපච‍්චයා භවො, භවපච‍්චයා ජාති, ජාතිපච‍්චයා ජරාමරණං.</td>
+                    <td>උපාදානපච‍්චයා භවො, භවපච‍්චයා ජාති, ජාතිපච‍්චයා ජරාමරණං.</td>
+                    <td>උපාදානපච‍්චයා භවො, භවපච‍්චයා ජාති, ජාතිපච‍්චයා ජරාමරණං.</td>
+                </tr>
+                <tr>
+                    <td> එවමෙතස‍්ස කෙවලස‍්ස දුක‍්ඛක‍්ඛන්‍ධස‍්ස සමුදයො හොති.</td>
+                    <td> එවමෙතස‍්ස කෙවලස‍්ස දුක‍්ඛක‍්ඛන්‍ධස‍්ස සමුදයො හොති.</td>
+                    <td> එවමෙතස‍්ස කෙවලස‍්ස දුක‍්ඛක‍්ඛන්‍ධස‍්ස සමුදයො හොති.</td>
+                    <td> එවමෙතස‍්ස කෙවලස‍්ස දුක‍්ඛක‍්ඛන්‍ධස‍්ස සමුදයො හොති.</td>
+                </tr>
+            </table>
+        </div>
+        <div class="sinh"> &nbsp; </div>
         <div class="pali"><span class="chedaya" id="id368">368</span>. අවිජ‍්ජාපච‍්චයා සඞ‍්ඛාරො සඞ‍්ඛාරපච‍්චයා’පි
             අවිජ‍්ජා, සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං විඤ‍්ඤාණපච‍්චයා’පි සඞ‍්ඛාරො, විඤ‍්ඤාණපච‍්චයා නාමං නාමපච‍්චයා’පි
             විඤ‍්ඤාණං, නාමපච‍්චයා ඡට‍්ඨායතනං ඡට‍්ඨායතනපච‍්චයාපි නාමං, ඡට‍්ඨායතනපච‍්චයා ඵස‍්සො ඵස‍්සපච‍්චයාපි ඡට‍්ඨායතනං,
             ඵස‍්සපච‍්චයා වෙදනා වෙදනාපච‍්චයා’පි ඵස‍්සො, වෙදනාපච‍්චයා තණ‍්හා තණ‍්හාපච‍්චයා’පි වෙදනා, තණ‍්හාපච‍්චයා උපාදානං
             උපාදානපච‍්චයා’පි තණ‍්හා, උපාදානපච‍්චයා භවො, භවපච‍්චයා ජාති, ජාතිපච‍්චයා ජරාමරණං. එවමෙතස‍්ස කෙවලස‍්ස
             දුක‍්ඛක‍්ඛන්‍ධස‍්ස සමුදයො හොති.</div>
-        <div class="sinh"><span class="chedaya" id="id368">368</span>. අවිද්‍යාප්‍රත්‍යයෙන් සංස්කාරය වෙයි,
+        <div class="sinh"><span class="chedaya" id="id368s">368</span>. අවිද්‍යාප්‍රත්‍යයෙන් සංස්කාරය වෙයි,
             සංස්කාරප්‍රත්‍යයෙනුදු අවිද්‍යාව වෙයි. සංස්කාරප්‍රත්‍යයෙන් විඥානය වෙයි, විඥානප්‍රත්‍යයෙනුදු සංස්කාරය වෙයි.
             විඥානප්‍රත්‍යයෙන් නාමය වෙයි, නාමප්‍රත්‍යයෙනුදු විඥානය වෙයි. නාමප්‍රත්‍යයෙන් ෂෂ්ඨායතනය වෙයි,
             ෂෂ්ඨායතනප්‍රත්‍යයෙනුදු නාමය වෙයි. ෂෂ්ඨායතනප්‍රත්‍යයෙන් ස්පර්‍ශය වෙයි ස්පර්‍ශප්‍රත්‍යයෙනුදු ෂෂ්ඨායතනය වෙයි.
@@ -657,7 +861,8 @@
             ජාතිය වෙයි. ජාතිප්‍රත්‍යයෙන් ජරාමරණ වෙයි. මෙසේ මේ සියලු දුක්ඛක්ඛන්‍ධයාගේ සමුදය වේ.</div>
         <div class="sectionend">නව (9) මූල පද මාතිකා අවසානය</div>
         <div class="sectionend">මාතෘකා යි.</div>
-        <div class="sectionheading2" id="hitha1">සෝමනස්ස සහගත දිට්ඨිගත සම්පයුත්ත අසංඛාරික චිත්තය</div>
+
+        <div class="sectionheading2" id="hitha1">(01) 1/1 සෝමනස්ස සහගත දිට්ඨිගත සම්පයුත්ත අසංඛාරික චිත්තය</div>
         <div class="sectionheading3" id="hita1panchathukkya1">පච‍්චයචතුක‍්කං වාරය 1</div>
         <div class="pali"><span class="chedaya" id="id370">370</span>. කතමෙ ධම‍්මා අකුසලා: යස‍්මිං සමයෙ අකුසලං චිත‍්තං
             උප‍්පන‍්නං හොති සොමනස‍්සසහගතං දිට‍්ඨිගතසම‍්පයුත‍්තං රූපාරමම‍්ණං වා සද‍්දාරම‍්මණං වා ගන්‍ධාරම‍්මණං වා
@@ -1625,9 +1830,9 @@
         <!--<div class="pali">අඤ‍්ඤමඤ‍්ඤචතුක‍්කං.</div>-->
         <div class="sectionend">අන්‍යෝන්‍යචතුෂ්ක යි.</div>
         <div class="sectionheading2" id="අකුසල">01 අකුසල නිද‍්දෙසො (හිත් 21)</div>
-        <p>(2) සෝමනස්ස සහගත දිට්ඨිගත සම්පයුත්ත සසංඛාරික චිත්තය 387</p>
-        <p>(3) සෝමනස්ස සහගත දිට්ඨිගත විප්පයුත්තත අසංඛාරික චිත්තය 387</p>
-        <p>(4) සෝමනස්ස සහගත දිට්ඨිගත විප්පයුත්තත සසංඛාරික චිත්තය 387</p>
+        <p id="hitha2">(02) 1/1 සෝමනස්ස සහගත දිට්ඨිගත සම්පයුත්ත සසංඛාරික චිත්තය 387</p>
+        <p id="hitha3">(03) 1/1 සෝමනස්ස සහගත දිට්ඨිගත විප්පයුත්තත අසංඛාරික චිත්තය 387</p>
+        <p id="hitha4">(04) 1/1 සෝමනස්ස සහගත දිට්ඨිගත විප්පයුත්තත සසංඛාරික චිත්තය 387</p>
         <div class="pali"><span class="chedaya" id="id387">387</span>. කතමෙ ධම‍්මා අකුසලා: යස‍්මිං සමයෙ අකුසලං චිත‍්තං
             උප‍්පන‍්නං හොති සොමනස‍්සසහගතං දිට‍්ඨිගතසම‍්පයුත‍්තං සසඞ‍්ඛාරෙන <a href="##">-පෙ-</a> සොමනස‍්සසහගතං
             දිට‍්ඨිගතවිප‍්පයුත‍්තං <a href="##">-පෙ-</a> සොමනස‍්සසහගතං දිට‍්ඨිගතවිප‍්පයුත‍්තං සසඞ‍්ඛාරෙන රූපාරම‍්මණං වා
@@ -1670,7 +1875,7 @@
         <div class="sinh">එහි අධිමෝක්‍ෂප්‍රත්‍යයෙන් භවය කවරෙ යත්: අධිමෝක්‍ෂය තබා වේදනාස්කන්‍ධ ය සංඥාස්කන්‍ධ ය
             සංස්කාරස්කන්‍ධ ය විඥානස්කන්‍ධ යි. මේ අධිමෝක්‍ෂප්‍රත්‍යයෙන් ‘භව’ යි කියනු ලැබේ. <a href="##"> …පෙ… </a>
             එහෙයින් කියනු ලැබෙයි: ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
-            <p>(5) උපේක්ඛා සහගත දිට්ඨිගත සම්පයුත්ත අසංඛාරික චිත්තය 389</p>
+        <p>(5) උපේක්ඛා සහගත දිට්ඨිගත සම්පයුත්ත අසංඛාරික චිත්තය 389</p>
         <div class="pali"><span class="chedaya" id="id389">389</span>. කතමෙ2 ධම‍්මා අකුසලා: යස‍්මිං සමයෙ අකුසලං චිත‍්තං
             උප‍්පන‍්නං හොති උපෙක‍්ඛාසහගතං දිට‍්ඨිගතසම‍්පයුත‍්තං රූපාරම‍්මණං වා <a href="##">-පෙ-</a> ධම‍්මාරම‍්මණං වා යං
             යං වා පනාරබ‍්භ, තස‍්මිං සමයෙ අවිජ‍්ජාපච‍්චයා සඞ‍්ඛාරො, සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං, විඤ‍්ඤාණපච‍්චයා නාමං,
@@ -1828,7 +2033,6 @@
             ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
         <div class="sectionend">අකුසල නිද‍්දෙසො.</div>
         <div class="sectionend">අකුශලනිර්දේශ යි.</div>
-
         <div class="sectionheading2" id="කුසල">02 කුසල නිද‍්දෙසො (හිත් 21)</div>
         <div class="pali"><span class="chedaya" id="id395">395</span>. කතමෙ ධම‍්මා කුසලා: යස‍්මිං සමයෙ කාමාවචරං කුසලං
             චිත‍්තං උප‍්පන‍්නං හොති සොමනස‍්සසහගතං ඤාණසම‍්පයුත‍්තං රූපාරම‍්මණං වා <a href="##">-පෙ-</a> ධම‍්මාරම‍්මණං වා
@@ -2056,7 +2260,6 @@
             පහළවීම වේ. එහෙයින් කියනු ලැබෙයි: ‘එවමෙතෙසං ධම්මානං සමුදයෝ හොති’ යි.</div>
         <div class="pectionend">කුසල නිද‍්දෙසො.</div>
         <div class="sectionend">කුශලනිර්දේශ යි.</div>
-
         <div class="sectionheading2" id="අව්‍යාකතනිද‍්දෙසො">03 අව්‍යාකතනිද‍්දෙසො (හිත් 29/7/20)</div>
         <div class="pali"><span class="chedaya" id="id404">404</span>. කතමෙ ධම‍්මා අව්‍යාකතා: යස‍්මිං සමයෙ කාමාවචරස‍්ස
             කුසලස‍්ස කම‍්මස‍්ස කතත‍්තා උපචිතත‍්තා විපාකං චක‍්ඛුවිඤ‍්ඤාණං උප‍්පන‍්නං හොති උපෙක‍්ඛාසහගතං රූපාරම‍්මණං.
@@ -2671,17 +2874,13 @@
         <div class="sinh">ක්‍රියාසංස්කාරමූලකය නිමි.</div>
         <div class="pali">අව්‍යාකතනිද‍්දෙසො.</div>
         <div class="sinh">අව්‍යාකෘතනිර්දේශ යි.</div>
-
-
         <div class="pali"><span class="chedaya" id="id433">433</span>. කතමෙ ධම‍්මා කුසලා: යස‍්මිං සමයෙ කාමාවචරං කුසලං
             චිත‍්තං උප‍්පන‍්නං හොති සොමනස‍්සසහගතං ඤාණසම‍්පයුත‍්තං රූපාරම‍්මණං වා <a href="##">-පෙ-</a> ධම‍්මාරම‍්මණං වා
             යං යං වා පනාරබ‍්භ, තස‍්මිං සමයෙ අවිජ‍්ජාපච‍්චයා සඞ‍්ඛාරො, සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං, විඤ‍්ඤාණපච‍්චයා නාමං,
             නාමපච‍්චයා ඡට‍්ඨායතනං, ඡට‍්ඨායතනපච‍්චයා ඵස‍්සො, ඵස‍්සපච‍්චයා වෙදනා, වෙදනාපච‍්චයා පසාදො, පසාදපච‍්චයා
             අධිමොක‍්ඛො,1 අධිමොක‍්ඛපච‍්චයා භවො, භවපච‍්චයා ජාති, ජාතිපච‍්චයා ජරාමරණං. එවමෙතස‍්ස කෙවලස‍්ස
             දුක‍්ඛක‍්ඛන්‍ධස‍්ස සමුදයො හොති.</div>
-           
-
-            <div class="sectionheading2" id="අවිජ්ජාමුලකකුසල">04 අවිජ්ජාමුලකකුසල නීද්දේශය (සිත් 21)</div>
+        <div class="sectionheading2" id="අවිජ්ජාමුලකකුසල">04 අවිජ්ජාමුලකකුසල නීද්දේශය (සිත් 21)</div>
         <div class="sinh"><span class="chedaya" id="id433">433</span>. කුශලධර්‍මයෝ කවරහ යත්: යම් කලෙක රූපාලම්බන වේවයි <a
                 href="##"> …පෙ… </a> ධර්‍මාලම්බන වේවයි යළි යම් යම් අරමුණක් ඇරැබැ සොම්නස් සහගත වූ ඥානසම්ප්‍රයුක්ත වූ
             කාමාවචරකුශලචිත්තය උපදනේ වේ ද, එසමයෙහි අවිද්‍යාප්‍රත්‍යයෙන් සංස්කාරය වෙයි, සංස්කාරප්‍රත්‍යයෙන් විඥානය වෙයි,
@@ -2805,8 +3004,7 @@
         <div class="sinh">එහි අවිද්‍යාප්‍රත්‍යයෙන් සංස්කාර කවරෙ යත්: යම් චේතනාවක් සඤ්චේතනාවක් චේතයිත බවෙක් වේ ද, මේ
             ‘අවිද්‍යාප්‍රත්‍යයෙන් සංස්කාර’ යි කියනු ලැබේ. <a href="##"> …පෙ… </a> මෙසේ මේ ධර්‍මයන්ගේ සඞ්ගතිය වෙයි,
             සමාගමය වෙයි, සමෝධානය වෙයි, පහළවීම වේ. එහෙයින් කියනු ලැබෙයි ‘එවමෙතෙසං ධම්මානං සමුදයෝ හොති’ යි.</div>
-
-            <div class="sectionheading2" id="කුසලවිපාකමූලකං">05 කුසලවිපාකමූලකං නීද්දේශය (හිත් 29)</div>
+        <div class="sectionheading2" id="කුසලවිපාකමූලකං">05 කුසලවිපාකමූලකං නීද්දේශය (හිත් 29)</div>
         <div class="pali"><span class="chedaya" id="id439">439</span>. කතමෙ ධම‍්මා අව්‍යාකතා: යස‍්මිං සමයෙ කාමාවචරස‍්ස
             කුසලස‍්ස කම‍්මස‍්ස කතත‍්තා උපචිතත‍්තා විපාකං චක‍්ඛුවිඤ‍්ඤාණං උප‍්පන‍්නං හොති උපෙක‍්ඛාසහගතං රූපාරම‍්මණං,
             තස‍්මිං සමයෙ කුසලමූලපච‍්චයා සඞ‍්ඛාරො, සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං, විඤ‍්ඤාණපච‍්චයා නාමං, නාමපච‍්චයා ඡට‍්ඨායතනං,
@@ -3005,9 +3203,7 @@
             සමුදයෝ හොති’ යි.</div>
         <div class="sectionend">කුසලවිපාකමූලකං නිට‍්ඨිතං.</div>
         <div class="sectionend">කුශලවිපාකමූලකය නිමි.</div>
-        
         <div class="sectionend">කුසලමූලක විපාකනිර්දේශ යි.</div>
-
         <div class="sectionheading2" id="අකුසලවිපාකමූලකං">06 අකුසලවිපාකමූලකං නීද්දේශය (හිත් 07)</div>
         <div class="pali"><span class="chedaya" id="id450">450</span>. කතමෙ ධම‍්මා අව්‍යාකතා: යස‍්මිං සමයෙ අකුසලස‍්ස
             කම‍්මස‍්ස කතත‍්තා උපචිතත‍්තා විපාකං චක‍්ඛුවිඤ‍්ඤාණා උප‍්පන‍්නං හොති උපෙක‍්ඛාසහගතං රූපාරම‍්මණං. තස‍්මිං සමයෙ
@@ -3135,5 +3331,16 @@
         <div class="sectionend">අභිධර්‍මභාජනිය නිමි.</div>
         <div class="pali">පටිච‍්චසමුප‍්පාදවිභඞ‍්ගො නිට‍්ඨිතො ඡට‍්ඨො.</div>
         <div class="sinh">ප්‍රතීත්‍යසමුත්පාදවිභඞ්ගය නිමි.</div>
-    </body>
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+    </script>
+</body>
 </html>
