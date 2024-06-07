@@ -110,7 +110,8 @@
 			<option value="option40">2024-May-03 නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා 037</option>
 			<option value="option41">2024-May-10 නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා 038</option>
 			<option value="option42">2024-May-24 නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා 039</option>
-			<option value="option43" selected>2024-May-31 නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා 040</option>
+			<option value="option43">2024-May-31 නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා 040</option>
+			<option value="option44" selected>2024-Jun-07 නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා 041</option>
 		</select>
 		<div id="content"></div>
 		<div id="notes"></div>
@@ -119,7 +120,7 @@
 		const select = document.querySelector('#video_list');
 		const content = document.querySelector('#content');
 		content.innerHTML = 
-			'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/a4DFZ3E_-VE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/c5Cys_TgUGs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		select.addEventListener('change', function() {
 			if (this.value === 'option1') {
 				content.innerHTML = 
@@ -250,6 +251,9 @@
 			} else if (this.value === 'option43'){
 				content.innerHTML = 
 				'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/a4DFZ3E_-VE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			} else if (this.value === 'option44'){
+				content.innerHTML = 
+				'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/c5Cys_TgUGs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 			}
 		});
 	</script>
@@ -392,6 +396,8 @@
 			} else if (this.value === 'option42'){
 				notes.innerHTML = '';
 			} else if (this.value === 'option43'){
+				notes.innerHTML = '';
+			} else if (this.value === 'option44'){
 				notes.innerHTML = '';
 			}
 		});
