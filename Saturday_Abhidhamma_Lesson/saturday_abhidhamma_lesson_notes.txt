@@ -41,5 +41,6 @@ url::https://tipitaka.lk/ap-vbh-6-7
 #147 
 ගුරුතුමා විසින් පටිච‍්චසමුප‍්පාද විභඞ්ගය අධ්යයනය සඳහා සකස්කරන ලද විශේෂ සටහන pdf::විභඞ්ගප්පකරණං V 1.05 Final.pdf  
 pdf::විභංග නිද්දේසො.pdf
+(testing) url::https://waytoni.com/Saturday_Abhidhamma_Lesson/ap-vp-6-annotation.html
 #1000
 end

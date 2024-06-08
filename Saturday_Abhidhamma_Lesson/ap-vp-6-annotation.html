@@ -58,12 +58,51 @@
         td {
             border: 1px solid #96D4D4;
         }
+
+        /* ============ desktop view ============ */
+        @media all and (min-width: 992px) {
+            .dropdown-menu li {
+                position: relative;
+            }
+
+            .nav-item .submenu {
+                display: none;
+                position: absolute;
+                left: 100%;
+                top: -7px;
+            }
+
+            .nav-item .submenu-left {
+                right: 100%;
+                left: auto;
+            }
+
+            .dropdown-menu>li:hover {
+                background-color: #f1f1f1
+            }
+
+            .dropdown-menu>li:hover>.submenu {
+                display: block;
+            }
+        }
+
+        /* ============ desktop view .end// ============ */
+        /* ============ small devices ============ */
+        @media (max-width: 991px) {
+            .dropdown-menu .dropdown-menu {
+                margin-left: 0.7rem;
+                margin-right: 0.7rem;
+                margin-bottom: .5rem;
+            }
+        }
+
+        /* ============ small devices .end// ============ */
     </style>
 </head>
 <body>
     <header>
         <!-- place navbar here -->
-        <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-warning">
+        <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
             <div class="container-fluid">
                 <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
@@ -76,8 +115,8 @@
                             <a class="nav-link active" href="#සුත්තන්තභොජනියං">සූත්‍රාන්තභාජනිය</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#මාතිකා" id="dropdownId" data-bs-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">අභිධර්‍මභාජනිය</a>
+                            <a class="nav-link dropdown-toggle" href="#අභිධර්‍මභාජනිය" id="dropdownId"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">අභිධර්‍මභාජනිය</a>
                             <div class="dropdown-menu" aria-labelledby="dropdownId">
                                 <a class="dropdown-item" href="#මාතිකා">මාතිකා</a>
                                 <a class="dropdown-item" href="#පච‍්චයචතුක‍්කං">පච‍්චයචතුක‍්කං මාතිකා ආරම්භය</a>
@@ -92,10 +131,12 @@
                                 <a class="dropdown-item" href="#කුසල">02 කුසල නිද‍්දෙසො (හිත් 21)</a>
                                 <a class="dropdown-item" href="#අව්‍යාකතනිද‍්දෙසො">03 අව්‍යාකතනිද‍්දෙසො (හිත්
                                     29/7/20)</a>
-                                <a class="dropdown-item" href="#කුශලවිපාකසඞ්ඛාරමූලකය">I. කුශලවිපාකසඞ්ඛාරමූලකය (හිත්
-                                    29)</a>
-                                    <a class="dropdown-item" href="#අකුසලවිපාකසඞ්ඛාරමූලකය">II. අකුසලවිපාකසඞ්ඛාරමූලකය (සිත් 7)</a>
-                                    <a class="dropdown-item" href="#ක්‍රියාසංස්කාරමූලකය">III. ක්‍රියාසංස්කාරමූලකය (සිත් 20)</a>
+                                <a class="dropdown-item" href="#කුශලවිපාකසඞ්ඛාරමූලකය"> &nbsp; &nbsp; I.
+                                    කුශලවිපාකසඞ්ඛාරමූලකය (හිත් 29)</a>
+                                <a class="dropdown-item" href="#අකුසලවිපාකසඞ්ඛාරමූලකය"> &nbsp;&nbsp; II.
+                                    අකුසලවිපාකසඞ්ඛාරමූලකය (සිත් 7)</a>
+                                <a class="dropdown-item" href="#ක්‍රියාසංස්කාරමූලකය"> &nbsp; III. ක්‍රියාසංස්කාරමූලකය
+                                    (සිත් 20)</a>
                                 <a href="#අවිජ්ජාමුලකකුසල" class="dropdown-item">04 අවිජ්ජාමුලකකුසල නීද්දේශය (සිත් 21)
                                     433</a>
                                 <a class="dropdown-item" href="#කුසලවිපාකමූලකං">05 කුසලවිපාකමූලකං නීද්දේශය (හිත් 29)
@@ -116,22 +157,30 @@
                                 <a class="dropdown-item" href="#NawaMulaPadaMathika">නව (9) මූල පද මාතිකා ආරම්භය</a>
                                 <a class="dropdown-item" href="#chiththaya01">(01) 1/1 සෝමනස්ස සහගත දිට්ඨිගත සම්පයුත්ත
                                     අසංඛාරික චිත්තය 370</a>
-                                <a class="dropdown-item" href="#hita1panchathukkya1">පච‍්චයචතුක‍්කං 1 වාරය</a>
-                                <a class="dropdown-item" href="#hita1panchathukkya2">පච‍්චයචතුක‍්කං 2 වාරය</a>
-                                <a class="dropdown-item" href="#hita1panchathukkya3">පච‍්චයචතුක‍්කං 3 වාරය</a>
-                                <a class="dropdown-item" href="#hita1panchathukkya4">පච‍්චයචතුක‍්කං 4 වාරය</a>
-                                <a class="dropdown-item" href="#hita1hethuka1">හෙතුචතුක‍්කං 1 වාරය</a>
-                                <a class="dropdown-item" href="#hita1hethuka2">හෙතුචතුක‍්කං 2 වාරය</a>
-                                <a class="dropdown-item" href="#hita1hethuka3">හෙතුචතුක‍්කං 3 වාරය</a>
-                                <a class="dropdown-item" href="#hita1hethuka4">හෙතුචතුක‍්කං 4 වාරය</a>
-                                <a class="dropdown-item" href="#hita1sampayuththa1">සම‍්පයුත‍්තචතුක‍්කං 1 වාරය</a>
-                                <a class="dropdown-item" href="#hita1sampayuththa2">සම‍්පයුත‍්තචතුක‍්කං 2 වාරය</a>
-                                <a class="dropdown-item" href="#hita1sampayuththa3">සම‍්පයුත‍්තචතුක‍්කං 3 වාරය</a>
-                                <a class="dropdown-item" href="#hita1sampayuththa4">සම‍්පයුත‍්තචතුක‍්කං 4 වාරය</a>
-                                <a class="dropdown-item" href="#hita1an1">අඤ‍්ඤමඤ‍්ඤචතුක‍්කං 1 වාරය</a>
-                                <a class="dropdown-item" href="#hita1an2">අඤ‍්ඤමඤ‍්ඤචතුක‍්කං 2 වාරය</a>
-                                <a class="dropdown-item" href="#hita1an3">අඤ‍්ඤමඤ‍්ඤචතුක‍්කං 3 වාරය</a>
-                                <a class="dropdown-item" href="#hita1an4">අඤ‍්ඤමඤ‍්ඤචතුක‍්කං 4 වාරය</a>
+                                <a class="dropdown-item" href="#hita1panchathukkya1"> &nbsp;&nbsp; පච‍්චයචතුක‍්කං 1
+                                    වාරය</a>
+                                <a class="dropdown-item" href="#hita1panchathukkya2"> &nbsp;&nbsp; පච‍්චයචතුක‍්කං 2
+                                    වාරය</a>
+                                <a class="dropdown-item" href="#hita1panchathukkya3"> &nbsp;&nbsp; පච‍්චයචතුක‍්කං 3
+                                    වාරය</a>
+                                <a class="dropdown-item" href="#hita1panchathukkya4"> &nbsp;&nbsp; පච‍්චයචතුක‍්කං 4
+                                    වාරය</a>
+                                <a class="dropdown-item" href="#hita1hethuka1">&nbsp;&nbsp; හෙතුචතුක‍්කං 1 වාරය</a>
+                                <a class="dropdown-item" href="#hita1hethuka2">&nbsp;&nbsp; හෙතුචතුක‍්කං 2 වාරය</a>
+                                <a class="dropdown-item" href="#hita1hethuka3">&nbsp;&nbsp; හෙතුචතුක‍්කං 3 වාරය</a>
+                                <a class="dropdown-item" href="#hita1hethuka4">&nbsp;&nbsp; හෙතුචතුක‍්කං 4 වාරය</a>
+                                <a class="dropdown-item" href="#hita1sampayuththa1">&nbsp;&nbsp; සම‍්පයුත‍්තචතුක‍්කං 1
+                                    වාරය</a>
+                                <a class="dropdown-item" href="#hita1sampayuththa2">&nbsp;&nbsp; සම‍්පයුත‍්තචතුක‍්කං 2
+                                    වාරය</a>
+                                <a class="dropdown-item" href="#hita1sampayuththa3">&nbsp;&nbsp; සම‍්පයුත‍්තචතුක‍්කං 3
+                                    වාරය</a>
+                                <a class="dropdown-item" href="#hita1sampayuththa4">&nbsp;&nbsp; සම‍්පයුත‍්තචතුක‍්කං 4
+                                    වාරය</a>
+                                <a class="dropdown-item" href="#hita1an1">&nbsp;&nbsp; අඤ‍්ඤමඤ‍්ඤචතුක‍්කං 1 වාරය</a>
+                                <a class="dropdown-item" href="#hita1an2">&nbsp;&nbsp; අඤ‍්ඤමඤ‍්ඤචතුක‍්කං 2 වාරය</a>
+                                <a class="dropdown-item" href="#hita1an3">&nbsp;&nbsp; අඤ‍්ඤමඤ‍්ඤචතුක‍්කං 3 වාරය</a>
+                                <a class="dropdown-item" href="#hita1an4">&nbsp;&nbsp; අඤ‍්ඤමඤ‍්ඤචතුක‍්කං 4 වාරය</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
@@ -206,131 +255,263 @@
                                 <a class="dropdown-item" href="#chiththaya85">(85) 1/2 අරහත්ත මග්ග චිත්තය 402-403</a>
                             </div>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown" id="myDropdown">
+                            <!--
                             <a class="nav-link dropdown-toggle" href="#අව්‍යාකතනිද‍්දෙසො" id="dropdownId"
                                 data-bs-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false">අව්‍යාකතනිද‍්දෙසො</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                <a class="dropdown-item" href="#කුශලවිපාකසඞ්ඛාරමූලකය">I. කුශලවිපාකසඞ්ඛාරමූලකය (සිත් 29)</a>
-                                <a class="dropdown-item" href="#chiththaya20_1">(20) 1/2 කුසල විපාක උපෙක්ඛා සහගත චක්ඛු විඤ්ඤාණය 404</a>
-                                <a class="dropdown-item" href="#chiththaya21_1">(21) 1/2 කුසල විපාක උපෙක්ඛා සහගත සොත විඤ්ඤාණය 408</a>
-                                <a class="dropdown-item" href="#chiththaya22_1">(22) 1/2 කුසල විපාක උපෙක්ඛා සහගත ඝාණ විඤ්ඤාණය 408</a>
-                                <a class="dropdown-item" href="#chiththaya23_1">(23) 1/2 කුසල විපාක උපෙක්ඛා සහගත ජිව්හා විඤ්ඤාණය 408</a>
-                                <a class="dropdown-item" href="#chiththaya24_1">(24) 1/2 කුසල විපාක සුඛ සහගත කාය විඤ්ඤාණය 408</a>
-                                <a class="dropdown-item" href="#chiththaya25_1">(25) 1/2 කුසල විපාක උපෙක්ඛා සහගත සම්පටිච්ඡන චිත්තය 409</a>
-                                <a class="dropdown-item" href="#chiththaya26_1">(26) 1/2 කුසල විපාක සොමනස්ස සහගත සන්තීරණ චිත්තය 410</a>
-                                <a class="dropdown-item" href="#chiththaya27_1">(27) 1/2 කුසල විපාක උපෙක්ඛා සහගත සන්තීරණ චිත්තය 411</a>
-                                <a class="dropdown-item" href="#chiththaya39_1">(39) 1/2 සොමනස්ස සහගත ඤාණසම්පයුත්ත අසංඛාර විපාක චිත්තය 412</a>
-                                <a class="dropdown-item" href="#chiththaya40_1">(40) 1/2 සොමනස්ස සහගත ඤාණසම්පයුත්ත සසංඛාර විපාක චිත්තය 413</a>
-                                <a class="dropdown-item" href="#chiththaya41_1">(41) 1/2 සොමනස්ස සහගත ඤාණවිප්පයුත්ත අසංඛාර විපාක චිත්තය 413</a>
-                                <a class="dropdown-item" href="#chiththaya42_1">(42) 1/2 සොමනස්ස සහගත ඤාණවිප්පයුත්ත සසංඛාර විපාක චිත්තය 413</a>
-                                <a class="dropdown-item" href="#chiththaya43_1">(43) 1/2 උපෙක්ඛා සහගත ඤාණසම්පයුත්ත අසංඛාර විපාක චිත්තය 413</a>
-                                <a class="dropdown-item" href="#chiththaya44_1">(44) 1/2 උපෙක්ඛා සහගත ඤාණසම්පයුත්ත සසංඛාර විපාක චිත්තය 413</a>
-                                <a class="dropdown-item" href="#chiththaya45_1">(45) 1/2 උපෙක්ඛා සහගත ඤාණ විප්පයුත්ත අසංඛාර විපාක චිත්තය 413</a>
-                                <a class="dropdown-item" href="#chiththaya46_1">(46) 1/2 උපෙක්ඛා සහගත ඤාණ විප්පයුත්ත සසංඛාර විපාක චිත්තය 413</a>
-                                <a class="dropdown-item" href="#chiththaya60_1">(60) 1/2 විතක්ක, විචාර, පීති, සුඛ, එකග්ගතා සහිත පඨමජ්ඣාන විපාක චිත්තය 414</a>
-                                <a class="dropdown-item" href="#chiththaya61_1">(61) 1/2 විචාර, පීති, සුඛ, එකග්ගතා සහිත දුතියජ්ඣාන විපාක චිත්තය 415</a>
-                                <a class="dropdown-item" href="#chiththaya62_1">(62) 1/2 පීති, සුඛ, එකග්ගතා සහිත තතියජ්ඣාන විපාක චිත්තය 415</a>
-                                <a class="dropdown-item" href="#chiththaya63_1">(63) 1/2 සුඛ, එකග්ගතා සහිත චතුත්‍ථජ්ඣාන විපාක චිත්තය 415</a>
-                                <a class="dropdown-item" href="#chiththaya64_1">(64) 1/2 උපෙක්ඛා, එකග්ගතා සහිත පඤ්චමජ්ඣාන විපාක චිත්තය 415</a>
-                                <a class="dropdown-item" href="#chiththaya74_1">(74) 1/2 ආකාසානඤ්චායතන විපාක චිත්තය 416</a>
-                                <a class="dropdown-item" href="#chiththaya75_1">(75) 1/2 විඤ්ඤාණඤ්චායතන විපාක චිත්තය 416</a>
-                                <a class="dropdown-item" href="#chiththaya76_1">(76) 1/2 ආකිඤ්චඤ්ඤායතන විපාක චිත්තය 416</a>
-                                <a class="dropdown-item" href="#chiththaya77_1">(77) 1/2 නෙවසඤ්ඤානාසඤ්ඤායතන විපාක චිත්තය 416</a>
-                                <a class="dropdown-item" href="#chiththaya86_1">(86) 1/2 සෝතාපත්ති ඵල (විපාක) චිත්තය 417</a>
-                                <a class="dropdown-item" href="#chiththaya87_1">(87) 1/2 සකදාගාමි ඵල (විපාක) චිත්තය 417/<a>
-                                <a class="dropdown-item" href="#chiththaya88_1">(88) 1/2 අනාගාමි ඵල (විපාක) චිත්තය 417</a>
-                                <a class="dropdown-item" href="#chiththaya89_1">(89) 1/2 අරහත්ත ඵල (විපාක) චිත්තය 417</a>
-                                <a class="dropdown-item" href="#අකුසලවිපාකසඞ්ඛාරමූලකය">II. අකුසලවිපාකසඞ්ඛාරමූලකය (සිත් 7)</a>
-                                <a class="dropdown-item" href="#chiththaya13_1">(13) 1/2 අකුසල විපාක උපෙක්ඛා සහගත චක්ඛු විඤ්ඤාණය 418</a>
-                                <a class="dropdown-item" href="#chiththaya14_1">(14) 1/2 අකුසල විපාක උපෙක්ඛා සහගත සොත විඤ්ඤාණය 419</a>
-                                <a class="dropdown-item" href="#chiththaya15_1">(15) 1/2 අකුසල විපාක උපෙක්ඛා සහගත ඝාණවිඤ්ඤාණය 419</a>
-                                <a class="dropdown-item" href="#chiththaya16_1">(16) 1/2 අකුසල විපාක උපෙක්ඛා සහගත ජිව්හාවිඤ්ඤාණය 419</a>
-                                <a class="dropdown-item" href="#chiththaya17_1">(17) 1/2 අකුසල විපාක දුක්ඛ සහගත කායවිඤ්ඤාණය 419</a>
-                                <a class="dropdown-item" href="#chiththaya18_1">(18) 1/2 අකුසල විපාක උපෙක්ඛා සහගත සම්පටිච්ඡන විඤ්ඤාණය 420</a>
-                                <a class="dropdown-item" href="#chiththaya19_1">(19) 1/2 අකුසල විපාක උපෙක්ඛා සහගත සන්තිරණ විඤ්ඤාණය 421</a>
-                                <a class="dropdown-item" href="#ක්‍රියාසංස්කාරමූලකය">III. ක්‍රියාසංස්කාරමූලකය (සිත් 20)</a>
-                                <a class="dropdown-item" href="#chiththaya28">(28) 1/1 උපෙක්ඛා සහගත පඤ්චද්වාරාවජ්ජන ක්‍රියා සිත 422</a>
-                                <a class="dropdown-item" href="#chiththaya30">(30) 1/1 සොමනස්ස සහගත හසිතුප්පාද ක්‍රියා සිත 423</a>
-                                <a class="dropdown-item" href="#chiththaya29">(29) 1/1 උපෙක්ඛා සහගත මනොද්වාරාවජ්ජන ක්‍රියා සිත 424</a>
-                                <a class="dropdown-item" href="#chiththaya47">(47) 1/1 සෝමනස්ස සහගත ඤාණ සම්පයුත්ත අසංඛාර ක්‍රියා සිත 425</a>
-                                <a class="dropdown-item" href="#chiththaya48">(48) 1/1 සෝමනස්ස සහගත ඤාණ සම්පයුත්ත සසංඛාර ක්‍රියා සිත 426</a>
-                                <a class="dropdown-item" href="#chiththaya49">(49) 1/1 සෝමනස්ස සහගත ඤාණ විප්පයුත්ත අසංඛාර ක්‍රියා සිත 426</a>
-                                <a class="dropdown-item" href="#chiththaya50">(50) 1/1 සෝමනස්ස සහගත ඤාණ විප්පයුත්ත සසංඛාර ක්‍රියා සිත 426</a>
-                                <a class="dropdown-item" href="#chiththaya51">(51) 1/1 උපෙක්ඛා සහගත ඤාණ සම්පයුත්ත අසංඛාර ක්‍රියා සිත 426</a>
-                                <a class="dropdown-item" href="#chiththaya52">(52) 1/1 උපෙක්ඛා සහගත ඤාණ සම්පයුත්ත සසංඛාර ක්‍රියා සිත 426</a>
-                                <a class="dropdown-item" href="#chiththaya53">(53) 1/1 උපෙක්ඛා සහගත ඤාණ සම්පයුත්ත අසංඛාර ක්‍රියා සිත 426</a>
-                                <a class="dropdown-item" href="#chiththaya54">(54) 1/1 උපෙක්ඛා සහගත ඤාණ සම්පයුත්ත සසංඛාර ක්‍රියා සිත 426</a>
-                                <a class="dropdown-item" href="#chiththaya65">(65) 1/1 විතක්ක, විචාර, පීති, සුඛ, එකග්ගතා සහිත පඨමජ්ඣාන ක්‍රියා චිත්තය 427</a>
-                                <a class="dropdown-item" href="#chiththaya66">(66) 1/1 විචාර, පීති, සුඛ, එකග්ගතා සහිත දුතියජ්ඣාන ක්‍රියා චිත්තය 428</a>
-                                <a class="dropdown-item" href="#chiththaya67">(67) 1/1 පීති, සුඛ, එකග්ගතා සහිත තතියජ්ඣාන ක්‍රියා චිත්තය 428</a>
-                                <a class="dropdown-item" href="#chiththaya68">(68) 1/1 සුඛ, එකග්ගතා සහිත චතුත්‍ථජ්ඣාන ක්‍රියා චිත්තය 428</a>
-                                <a class="dropdown-item" href="#chiththaya69">(69) 1/1 උපෙක්ඛා, එකග්ගතා සහිත පඤ්චමජ්ඣාන ක්‍රියා චිත්තය 428</a>
-                                <a class="dropdown-item" href="#chiththaya78">(78) 1/1 ආකාසානඤ්චායතන ක්‍රියා චිත්තය 429</a>
-                                <a class="dropdown-item" href="#chiththaya79">(79) 1/1 විඤ්ඤාණඤ්චායතන ක්‍රියා චිත්තය 429</a>
-                                <a class="dropdown-item" href="#chiththaya80">(80) 1/1 ආකිඤ්චඤ්ඤායතන ක්‍රියා චිත්තය 429</a>
-                                <a class="dropdown-item" href="#chiththaya81">(81) 1/1 නේවසඤ්ඤානාසඤ්ඤායතන ක්‍රියා චිත්තය 429</a>
-                            </div>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownId">
+                            -->
+                            <a class="nav-link dropdown-toggle" href="#අව්‍යාකතනිද‍්දෙසො" data-bs-toggle="dropdown">
+                                අව්‍යාකතනිද‍්දෙසො </a>
+                            <ul class="dropdown-menu">
+                                <a class="dropdown-item" href="#කුශලවිපාකසඞ්ඛාරමූලකය">I. කුශලවිපාකසඞ්ඛාරමූලකය (සිත් 29)
+                                    &raquo;</a>
+                                <!--<ul class="submenu dropdown-menu">-->
+                                <a class="dropdown-item" href="#chiththaya20_1"> &nbsp;&nbsp; අහෙතුක කුසල විපාක සිත් 8
+                                    &raquo;</a>
+                                <!--
+                                <li><a class="dropdown-item" href="#chiththaya20_1">(20) 1/2 කුසල විපාක උපෙක්ඛා සහගත
+                                        චක්ඛු විඤ්ඤාණය 404</a></li>
+                                <li><a class="dropdown-item" href="#chiththaya21_1">(21) 1/2 කුසල විපාක උපෙක්ඛා සහගත සොත
+                                        විඤ්ඤාණය 408</a></li>
+                                <a class="dropdown-item" href="#chiththaya22_1">(22) 1/2 කුසල විපාක උපෙක්ඛා සහගත ඝාණ
+                                    විඤ්ඤාණය 408</a>
+                                <a class="dropdown-item" href="#chiththaya23_1">(23) 1/2 කුසල විපාක උපෙක්ඛා සහගත ජිව්හා
+                                    විඤ්ඤාණය 408</a>
+                                <a class="dropdown-item" href="#chiththaya24_1">(24) 1/2 කුසල විපාක සුඛ සහගත කාය
+                                    විඤ්ඤාණය 408</a>
+                                <a class="dropdown-item" href="#chiththaya25_1">(25) 1/2 කුසල විපාක උපෙක්ඛා සහගත
+                                    සම්පටිච්ඡන චිත්තය 409</a>
+                                <a class="dropdown-item" href="#chiththaya26_1">(26) 1/2 කුසල විපාක සොමනස්ස සහගත සන්තීරණ
+                                    චිත්තය 410</a>
+                                <a class="dropdown-item" href="#chiththaya27_1">(27) 1/2 කුසල විපාක උපෙක්ඛා සහගත සන්තීරණ
+                                    චිත්තය 411</a>
+                                -->
+                                <a class="dropdown-item" href="#chiththaya39_1"> &nbsp;&nbsp; සහේතුක කාමාවචර විපාක සිත්
+                                    8 &raquo;</a>
+                                <!--
+                                <a class="dropdown-item" href="#chiththaya39_1">(39) 1/2 සොමනස්ස සහගත ඤාණසම්පයුත්ත
+                                    අසංඛාර විපාක චිත්තය 412</a>
+                                <a class="dropdown-item" href="#chiththaya40_1">(40) 1/2 සොමනස්ස සහගත ඤාණසම්පයුත්ත
+                                    සසංඛාර විපාක චිත්තය 413</a>
+                                <a class="dropdown-item" href="#chiththaya41_1">(41) 1/2 සොමනස්ස සහගත ඤාණවිප්පයුත්ත
+                                    අසංඛාර විපාක චිත්තය 413</a>
+                                <a class="dropdown-item" href="#chiththaya42_1">(42) 1/2 සොමනස්ස සහගත ඤාණවිප්පයුත්ත
+                                    සසංඛාර විපාක චිත්තය 413</a>
+                                <a class="dropdown-item" href="#chiththaya43_1">(43) 1/2 උපෙක්ඛා සහගත ඤාණසම්පයුත්ත
+                                    අසංඛාර විපාක චිත්තය 413</a>
+                                <a class="dropdown-item" href="#chiththaya44_1">(44) 1/2 උපෙක්ඛා සහගත ඤාණසම්පයුත්ත
+                                    සසංඛාර විපාක චිත්තය 413</a>
+                                <a class="dropdown-item" href="#chiththaya45_1">(45) 1/2 උපෙක්ඛා සහගත ඤාණ විප්පයුත්ත
+                                    අසංඛාර විපාක චිත්තය 413</a>
+                                <a class="dropdown-item" href="#chiththaya46_1">(46) 1/2 උපෙක්ඛා සහගත ඤාණ විප්පයුත්ත
+                                    සසංඛාර විපාක චිත්තය 413</a>
+                                -->
+                                <a class="dropdown-item" href="#chiththaya60_1"> &nbsp;&nbsp; රූපාවචර විපාක සිත් 5
+                                    &raquo;</a>
+                                <!--
+                                <a class="dropdown-item" href="#chiththaya60_1">(60) 1/2  පඨමජ්ඣාන විපාක චිත්තය 414</a>
+                                <a class="dropdown-item" href="#chiththaya61_1">(61) 1/2  දුතියජ්ඣාන විපාක චිත්තය 415</a>
+                                <a class="dropdown-item" href="#chiththaya62_1">(62) 1/2  තතියජ්ඣාන විපාක චිත්තය 415</a>
+                                <a class="dropdown-item" href="#chiththaya63_1">(63) 1/2  චතුත්‍ථජ්ඣාන
+                                    විපාක චිත්තය 415</a>
+                                <a class="dropdown-item" href="#chiththaya64_1">(64) 1/2 උපෙක්ඛා, එකග්ගතා සහිත
+                                    පඤ්චමජ්ඣාන විපාක චිත්තය 415</a>
+                                -->
+                                <a class="dropdown-item" href="#chiththaya74_1"> &nbsp;&nbsp; අරූපාවචර විපාක සිත් 4
+                                    &raquo;</a>
+                                <!--
+                                    <a class="dropdown-item" href="#chiththaya74_1">(74) 1/2 ආකාසානඤ්චායතන විපාක චිත්තය
+                                        416</a>
+                                    <a class="dropdown-item" href="#chiththaya75_1">(75) 1/2 විඤ්ඤාණඤ්චායතන විපාක චිත්තය
+                                        416</a>
+                                    <a class="dropdown-item" href="#chiththaya76_1">(76) 1/2 ආකිඤ්චඤ්ඤායතන විපාක චිත්තය
+                                        416</a>
+                                    <a class="dropdown-item" href="#chiththaya77_1">(77) 1/2 නෙවසඤ්ඤානාසඤ්ඤායතන විපාක
+                                        චිත්තය 416</a>
+                                    -->
+                                <li><a class="dropdown-item" href="#chiththaya86_1"> &nbsp;&nbsp; ලෝකෝත්තර විපාක සිත් 4
+                                        &raquo; </a>
+                                    <!--
+                                    <a class="dropdown-item" href="#chiththaya86_1">(86) 1/2 සෝතාපත්ති ඵල (විපාක) චිත්තය
+                                        417</a>
+                                    <a class="dropdown-item" href="#chiththaya87_1">(87) 1/2 සකදාගාමි ඵල (විපාක) චිත්තය
+                                        417</a>
+                                            <a class="dropdown-item" href="#chiththaya88_1">(88) 1/2 අනාගාමි ඵල (විපාක)
+                                                චිත්තය 417</a>
+                                            <a class="dropdown-item" href="#chiththaya89_1">(89) 1/2 අරහත්ත ඵල (විපාක)
+                                                චිත්තය 417</a>
+                                            -->
+                                    <!--</ul>-->
+                                    <a class="dropdown-item" href="#අකුසලවිපාකසඞ්ඛාරමූලකය">II. අකුසලවිපාකසඞ්ඛාරමූලකය
+                                        (සිත් 7)</a>
+                                    <a class="dropdown-item" href="#chiththaya13_1">(13) 1/2 අකුසල විපාක උපෙක්ඛා සහගත
+                                        චක්ඛු විඤ්ඤාණය 418</a>
+                                    <a class="dropdown-item" href="#chiththaya14_1">(14) 1/2 අකුසල විපාක උපෙක්ඛා සහගත
+                                        සොත විඤ්ඤාණය 419</a>
+                                    <a class="dropdown-item" href="#chiththaya15_1">(15) 1/2 අකුසල විපාක උපෙක්ඛා සහගත
+                                        ඝාණවිඤ්ඤාණය 419</a>
+                                    <a class="dropdown-item" href="#chiththaya16_1">(16) 1/2 අකුසල විපාක උපෙක්ඛා සහගත
+                                        ජිව්හාවිඤ්ඤාණය 419</a>
+                                    <a class="dropdown-item" href="#chiththaya17_1">(17) 1/2 අකුසල විපාක දුක්ඛ සහගත
+                                        කායවිඤ්ඤාණය 419</a>
+                                    <a class="dropdown-item" href="#chiththaya18_1">(18) 1/2 අකුසල විපාක උපෙක්ඛා සහගත
+                                        සම්පටිච්ඡන විඤ්ඤාණය 420</a>
+                                    <a class="dropdown-item" href="#chiththaya19_1">(19) 1/2 අකුසල විපාක උපෙක්ඛා සහගත
+                                        සන්තිරණ විඤ්ඤාණය 421</a>
+                                    <a class="dropdown-item" href="#ක්‍රියාසංස්කාරමූලකය">III. ක්‍රියාසංස්කාරමූලකය (සිත්
+                                        20)</a>
+                                    <a class="dropdown-item" href="#chiththaya28">(28) 1/1 උපෙක්ඛා සහගත පඤ්චද්වාරාවජ්ජන
+                                        ක්‍රියා සිත 422</a>
+                                    <a class="dropdown-item" href="#chiththaya30">(30) 1/1 සොමනස්ස සහගත හසිතුප්පාද
+                                        ක්‍රියා සිත 423</a>
+                                    <a class="dropdown-item" href="#chiththaya29">(29) 1/1 උපෙක්ඛා සහගත මනොද්වාරාවජ්ජන
+                                        ක්‍රියා සිත 424</a>
+                                    <a class="dropdown-item" href="#chiththaya47">(47) 1/1 සෝමනස්ස සහගත ඤාණ සම්පයුත්ත
+                                        අසංඛාර ක්‍රියා සිත 425</a>
+                                    <a class="dropdown-item" href="#chiththaya48">(48) 1/1 සෝමනස්ස සහගත ඤාණ සම්පයුත්ත
+                                        සසංඛාර ක්‍රියා සිත 426</a>
+                                    <a class="dropdown-item" href="#chiththaya49">(49) 1/1 සෝමනස්ස සහගත ඤාණ විප්පයුත්ත
+                                        අසංඛාර ක්‍රියා සිත 426</a>
+                                    <a class="dropdown-item" href="#chiththaya50">(50) 1/1 සෝමනස්ස සහගත ඤාණ විප්පයුත්ත
+                                        සසංඛාර ක්‍රියා සිත 426</a>
+                                    <a class="dropdown-item" href="#chiththaya51">(51) 1/1 උපෙක්ඛා සහගත ඤාණ සම්පයුත්ත
+                                        අසංඛාර ක්‍රියා සිත 426</a>
+                                    <a class="dropdown-item" href="#chiththaya52">(52) 1/1 උපෙක්ඛා සහගත ඤාණ සම්පයුත්ත
+                                        සසංඛාර ක්‍රියා සිත 426</a>
+                                    <a class="dropdown-item" href="#chiththaya53">(53) 1/1 උපෙක්ඛා සහගත ඤාණ සම්පයුත්ත
+                                        අසංඛාර ක්‍රියා සිත 426</a>
+                                    <a class="dropdown-item" href="#chiththaya54">(54) 1/1 උපෙක්ඛා සහගත ඤාණ සම්පයුත්ත
+                                        සසංඛාර ක්‍රියා සිත 426</a>
+                                        <a class="dropdown-item" href="#chiththaya65"> &nbsp;&nbsp; රූපාවචර ක්‍රියා සිත් 
+                                            5 &raquo; </a>
+                                            <!--
+                                    <a class="dropdown-item" href="#chiththaya65">(65) 1/1 පඨමජ්ඣාන ක්‍රියා චිත්තය
+                                        427</a>
+                                    <a class="dropdown-item" href="#chiththaya66">(66) 1/1 දුතියජ්ඣාන ක්‍රියා චිත්තය
+                                        428</a>
+                                    <a class="dropdown-item" href="#chiththaya67">(67) 1/1 තතියජ්ඣාන ක්‍රියා චිත්තය
+                                        428</a>
+                                    <a class="dropdown-item" href="#chiththaya68">(68) 1/1 චතුත්‍ථජ්ඣාන ක්‍රියා චිත්තය
+                                        428</a>
+                                    <a class="dropdown-item" href="#chiththaya69">(69) 1/1 පඤ්චමජ්ඣාන ක්‍රියා චිත්තය
+                                        428</a>
+                                    -->
+                                    <a class="dropdown-item" href="#chiththaya78"> &nbsp;&nbsp; අරූපාවචර ක්‍රියා සිත් 
+                                        4 &raquo; </a>
+                                    <!--
+                                    <a class="dropdown-item" href="#chiththaya78">(78) 1/1 ආකාසානඤ්චායතන ක්‍රියා චිත්තය
+                                        429</a>
+                                    <a class="dropdown-item" href="#chiththaya79">(79) 1/1 විඤ්ඤාණඤ්චායතන ක්‍රියා චිත්තය
+                                        429</a>
+                                    <a class="dropdown-item" href="#chiththaya80">(80) 1/1 ආකිඤ්චඤ්ඤායතන ක්‍රියා චිත්තය
+                                        429</a>
+                                    <a class="dropdown-item" href="#chiththaya81">(81) 1/1 නේවසඤ්ඤානාසඤ්ඤායතන ක්‍රියා
+                                        චිත්තය 429</a>
+                                    -->
+                            </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#අවිජ්ජාමුලකකුසල" id="dropdownId"
                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">අවිජ්ජාමුලකකුසල
                                 නීද්දේශය</a>
                             <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                <a class="dropdown-item" href="#chiththaya31_2">(31) 2/2 සොමනස්ස සහගත ඤාණසම්පයුත්ත අසංඛාර චිත්තය 433</a>
-                                <a class="dropdown-item" href="#chiththaya32_2">(32) 2/2 සොමනස්ස සහගත ඤාණසම්පයුත්ත සසංඛාර චිත්තය 434</a>
-                                <a class="dropdown-item" href="#chiththaya33_2">(33) 2/2 සොමනස්ස සහගත ඤාණවිප්පයුත්ත අසංඛාර චිත්තය 434</a>
-                                <a class="dropdown-item" href="#chiththaya34_2">(34) 2/2 සොමනස්ස සහගත ඤාණවිප්පයුත්ත සසංඛාර චිත්තය 434</a>
-                                <a class="dropdown-item" href="#chiththaya35_2">(35) 2/2 උපෙක්ඛා සහගත ඤාණසම්පයුත්ත අසංඛාර චිත්තය 434</a>
-                                <a class="dropdown-item" href="#chiththaya36_2">(36) 2/2 උපෙක්ඛා සහගත ඤාණසම්පයුත්ත සසංඛාර චිත්තය 434</a>
-                                <a class="dropdown-item" href="#chiththaya37_2">(37) 2/2 උපෙක්ඛා සහගත ඤාණවිප්පයුත්ත අසංඛාර චිත්තය 434</a>
-                                <a class="dropdown-item" href="#chiththaya38_2">(38) 2/2 උපෙක්ඛා සහගත ඤාණවිප්පයුත්ත සසංඛාර චිත්තය 434</a>
-                                <a class="dropdown-item" href="#chiththaya55_2">(55) 2/2 විතක්ක, විචාර, පීති, සුඛ, එකග්ගතා, සහිත පඨමජ්ඣාන කුසල චිත්තය 435</a>
-                                <a class="dropdown-item" href="#chiththaya56_2">(56) 2/2 විචාර, පීති, සුඛ, එකග්ගතා සහිත දුතියජ්ඣාන කුසල චිත්තය 436</a>
-                                <a class="dropdown-item" href="#chiththaya57_2">(57) 2/2 පීති, සුඛ, එකග්ගතා සහිත තතියජ්ඣාන කුසල චිත්තය 436</a>
-                                <a class="dropdown-item" href="#chiththaya58_2">(58) 2/2 සුඛ, එකග්ගතා සහිත චතුත්‍ථජ්ඣාන කුසල චිත්තය 436</a>
-                                <a class="dropdown-item" href="#chiththaya59_2">(59) 2/2 උපෙක්ඛා, එකග්ගතා සහිත පඤ්චමජ්ඣාන කුසල චිත්තය 436</a>
-                                <a class="dropdown-item" href="#chiththaya70_2">(70) 2/2 ආකාසානඤ්චායතන කුසල චිත්තය 437</a>
-                                <a class="dropdown-item" href="#chiththaya71_2">(71) 2/2 විඤ්ඤාණඤ්චායතන කුසල චිත්තය 437</a>
-                                <a class="dropdown-item" href="#chiththaya72_2">(72) 2/2 ආකිඤ්චඤ්ඤායතන කුසල චිත්තය 437</a>
-                                <a class="dropdown-item" href="#chiththaya73_2">(73) 2/2 නෙවසඤ්ඤානාසඤ්ඤායතන කුසල චිත්තය 437</a>
+                                <a class="dropdown-item" href="#chiththaya31_2">(31) 2/2 සොමනස්ස සහගත ඤාණසම්පයුත්ත
+                                    අසංඛාර චිත්තය 433</a>
+                                <a class="dropdown-item" href="#chiththaya32_2">(32) 2/2 සොමනස්ස සහගත ඤාණසම්පයුත්ත
+                                    සසංඛාර චිත්තය 434</a>
+                                <a class="dropdown-item" href="#chiththaya33_2">(33) 2/2 සොමනස්ස සහගත ඤාණවිප්පයුත්ත
+                                    අසංඛාර චිත්තය 434</a>
+                                <a class="dropdown-item" href="#chiththaya34_2">(34) 2/2 සොමනස්ස සහගත ඤාණවිප්පයුත්ත
+                                    සසංඛාර චිත්තය 434</a>
+                                <a class="dropdown-item" href="#chiththaya35_2">(35) 2/2 උපෙක්ඛා සහගත ඤාණසම්පයුත්ත
+                                    අසංඛාර චිත්තය 434</a>
+                                <a class="dropdown-item" href="#chiththaya36_2">(36) 2/2 උපෙක්ඛා සහගත ඤාණසම්පයුත්ත
+                                    සසංඛාර චිත්තය 434</a>
+                                <a class="dropdown-item" href="#chiththaya37_2">(37) 2/2 උපෙක්ඛා සහගත ඤාණවිප්පයුත්ත
+                                    අසංඛාර චිත්තය 434</a>
+                                <a class="dropdown-item" href="#chiththaya38_2">(38) 2/2 උපෙක්ඛා සහගත ඤාණවිප්පයුත්ත
+                                    සසංඛාර චිත්තය 434</a>
+                                <a class="dropdown-item" href="#chiththaya55_2">(55) 2/2 විතක්ක, විචාර, පීති, සුඛ,
+                                    එකග්ගතා, සහිත පඨමජ්ඣාන කුසල චිත්තය 435</a>
+                                <a class="dropdown-item" href="#chiththaya56_2">(56) 2/2 විචාර, පීති, සුඛ, එකග්ගතා සහිත
+                                    දුතියජ්ඣාන කුසල චිත්තය 436</a>
+                                <a class="dropdown-item" href="#chiththaya57_2">(57) 2/2 පීති, සුඛ, එකග්ගතා සහිත
+                                    තතියජ්ඣාන කුසල චිත්තය 436</a>
+                                <a class="dropdown-item" href="#chiththaya58_2">(58) 2/2 සුඛ, එකග්ගතා සහිත චතුත්‍ථජ්ඣාන
+                                    කුසල චිත්තය 436</a>
+                                <a class="dropdown-item" href="#chiththaya59_2">(59) 2/2 උපෙක්ඛා, එකග්ගතා සහිත
+                                    පඤ්චමජ්ඣාන කුසල චිත්තය 436</a>
+                                <a class="dropdown-item" href="#chiththaya70_2">(70) 2/2 ආකාසානඤ්චායතන කුසල චිත්තය
+                                    437</a>
+                                <a class="dropdown-item" href="#chiththaya71_2">(71) 2/2 විඤ්ඤාණඤ්චායතන කුසල චිත්තය
+                                    437</a>
+                                <a class="dropdown-item" href="#chiththaya72_2">(72) 2/2 ආකිඤ්චඤ්ඤායතන කුසල චිත්තය
+                                    437</a>
+                                <a class="dropdown-item" href="#chiththaya73_2">(73) 2/2 නෙවසඤ්ඤානාසඤ්ඤායතන කුසල චිත්තය
+                                    437</a>
                                 <a class="dropdown-item" href="#chiththaya82_2">(82) 2/2 සොතාපත්ති මග්ග චිත්තය 438</a>
                                 <a class="dropdown-item" href="#chiththaya83_2">(83) 2/2 සකදාගාමි මග්ග චිත්තය 438</a>
                                 <a class="dropdown-item" href="#chiththaya84_2">(84) 2/2 අනාගාමි මග්ග චිත්තය 438</a>
                                 <a class="dropdown-item" href="#chiththaya85_2">(85) 2/2 අරහත්ත මග්ග චිත්තය 438</a>
-
-                                
                             </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#කුසලවිපාකමූලකං" id="dropdownId"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">කුසලවිපාකමූලකං නීද්දේශය</a>
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">කුසලවිපාකමූලකං
+                                නීද්දේශය</a>
                             <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                <a class="dropdown-item" href="#chiththaya20_2">(20) 2/2 කුසල විපාක උපෙක්ඛා සහගත චක්ඛු විඤ්ඤාණය 439</a>
-                                <a class="dropdown-item" href="#chiththaya21_2">(21) 2/2 කුසල විපාක උපෙක්ඛා සහගත සොත විඤ්ඤාණය 440</a>
-                                <a class="dropdown-item" href="#chiththaya22_2">(22) 2/2 කුසල විපාක උපෙක්ඛා සහගත ඝාණ විඤ්ඤාණය 440</a>
-                                <a class="dropdown-item" href="#chiththaya23_2">(23) 2/2 කුසල විපාක උපෙක්ඛා සහගත ජිව්හා විඤ්ඤාණය 440</a>
-                                <a class="dropdown-item" href="#chiththaya24_2">(24) 2/2 කුසල විපාක සුඛ සහගත කාය විඤ්ඤාණය 440</a>
-                                <a class="dropdown-item" href="#chiththaya25_2">(25) 2/2 කුසල විපාක උපෙක්ඛා සහගත සම්පටිච්ඡන චිත්තය 441</a>
-                                <a class="dropdown-item" href="#chiththaya26_2">(26) 2/2 කුසල විපාක සොමනස්ස සහගත සන්තීරණ චිත්තය 442</a>
-                                <a class="dropdown-item" href="#chiththaya27_2">(27) 2/2 කුසල විපාක උපෙක්ඛා සහගත සන්තීරණ චිත්තය 443</a>
-                                <a class="dropdown-item" href="#chiththaya31_2">(31 ??) 2/2 සොමනස්ස සහගත ඤාණසම්පයුත්ත අසංඛාර විපාක චිත්තය 444</a>
-                                <a class="dropdown-item" href="#chiththaya32_2">(32 ??) 2/2 සොමනස්ස සහගත ඤාණසම්පයුත්ත සසංඛාර විපාක චිත්තය 445</a>
-                                <a class="dropdown-item" href="#chiththaya33_2">(33 ??) 2/2 සොමනස්ස සහගත ඤාණවිප්පයුත්ත අසංඛාර විපාක චිත්තය 445</a>
-                                <a class="dropdown-item" href="#chiththaya34_2">(34 ??) 2/2 සොමනස්ස සහගත ඤාණවිප්පයුත්ත සසංඛාර විපාක චිත්තය 445</a>
-                                <a class="dropdown-item" href="#chiththaya35_2">(35 ??) 2/2 උපෙක්ඛා සහගත ඤාණසම්පයුත්ත අසංඛාර විපාක චිත්තය 445</a>
-                                <a class="dropdown-item" href="#chiththaya36_2">(36 ??) 2/2 උපෙක්ඛා සහගත ඤාණසම්පයුත්ත සසංඛාර විපාක චිත්තය 445</a>
-                                <a class="dropdown-item" href="#chiththaya37_2">(37 ??) 2/2 උපෙක්ඛා සහගත ඤාණවිප්පයුත්ත අසංඛාර විපාක චිත්තය 445</a>
-                                <a class="dropdown-item" href="#chiththaya38_2">(38 ??) 2/2 උපෙක්ඛා සහගත ඤාණවිප්පයුත්ත සසංඛාර විපාක චිත්තය 445</a>
-                                <a class="dropdown-item" href="#chiththaya60_2">(60) 2/2 විතක්ක, විචාර, පීති, සුඛ, එකග්ගතා සහිත පඨමජ්ඣාන විපාක චිත්තය 446</a>
-                                <a class="dropdown-item" href="#chiththaya61_2">(61) 2/2 විචාර, පීති, සුඛ, එකග්ගතා සහිත දුතියජ්ඣාන විපාක චිත්තය 447</a>
-                                <a class="dropdown-item" href="#chiththaya62_2">(62) 2/2 පීති, සුඛ, එකග්ගතා සහිත තතියජ්ඣාන විපාක චිත්තය 447</a>
-                                <a class="dropdown-item" href="#chiththaya63_2">(63) 2/2 සුඛ, එකග්ගතා සහිත චතුත්‍ථජ්ඣාන විපාක චිත්තය 447</a>
-                                <a class="dropdown-item" href="#chiththaya64_2">(64) 2/2 උපෙක්ඛා, එකග්ගතා සහිත පඤ්චමජ්ඣාන විපාක චිත්තය 447</a>
-                                <a class="dropdown-item" href="#chiththaya74_2">(74) 2/2 ආකාසානඤ්චායතන විපාක චිත්තය 448</a>
-                                <a class="dropdown-item" href="#chiththaya75_2">(75) 2/2 විඤ්ඤාණඤ්චායතන විපාක චිත්තය 448</a>
-                                <a class="dropdown-item" href="#chiththaya76_2">(76) 2/2 ආකිඤ්චඤ්ඤායතන විපාක චිත්තය 448</a>
-                                <a class="dropdown-item" href="#chiththaya77_2">(77) 2/2 නෙවසඤ්ඤානාසඤ්ඤායතන විපාක චිත්තය 448</a>
+                                <a class="dropdown-item" href="#chiththaya20_2">(20) 2/2 කුසල විපාක උපෙක්ඛා සහගත චක්ඛු
+                                    විඤ්ඤාණය 439</a>
+                                <a class="dropdown-item" href="#chiththaya21_2">(21) 2/2 කුසල විපාක උපෙක්ඛා සහගත සොත
+                                    විඤ්ඤාණය 440</a>
+                                <a class="dropdown-item" href="#chiththaya22_2">(22) 2/2 කුසල විපාක උපෙක්ඛා සහගත ඝාණ
+                                    විඤ්ඤාණය 440</a>
+                                <a class="dropdown-item" href="#chiththaya23_2">(23) 2/2 කුසල විපාක උපෙක්ඛා සහගත ජිව්හා
+                                    විඤ්ඤාණය 440</a>
+                                <a class="dropdown-item" href="#chiththaya24_2">(24) 2/2 කුසල විපාක සුඛ සහගත කාය
+                                    විඤ්ඤාණය 440</a>
+                                <a class="dropdown-item" href="#chiththaya25_2">(25) 2/2 කුසල විපාක උපෙක්ඛා සහගත
+                                    සම්පටිච්ඡන චිත්තය 441</a>
+                                <a class="dropdown-item" href="#chiththaya26_2">(26) 2/2 කුසල විපාක සොමනස්ස සහගත සන්තීරණ
+                                    චිත්තය 442</a>
+                                <a class="dropdown-item" href="#chiththaya27_2">(27) 2/2 කුසල විපාක උපෙක්ඛා සහගත සන්තීරණ
+                                    චිත්තය 443</a>
+                                <a class="dropdown-item" href="#chiththaya31_2">(31 ??) 2/2 සොමනස්ස සහගත ඤාණසම්පයුත්ත
+                                    අසංඛාර විපාක චිත්තය 444</a>
+                                <a class="dropdown-item" href="#chiththaya32_2">(32 ??) 2/2 සොමනස්ස සහගත ඤාණසම්පයුත්ත
+                                    සසංඛාර විපාක චිත්තය 445</a>
+                                <a class="dropdown-item" href="#chiththaya33_2">(33 ??) 2/2 සොමනස්ස සහගත ඤාණවිප්පයුත්ත
+                                    අසංඛාර විපාක චිත්තය 445</a>
+                                <a class="dropdown-item" href="#chiththaya34_2">(34 ??) 2/2 සොමනස්ස සහගත ඤාණවිප්පයුත්ත
+                                    සසංඛාර විපාක චිත්තය 445</a>
+                                <a class="dropdown-item" href="#chiththaya35_2">(35 ??) 2/2 උපෙක්ඛා සහගත ඤාණසම්පයුත්ත
+                                    අසංඛාර විපාක චිත්තය 445</a>
+                                <a class="dropdown-item" href="#chiththaya36_2">(36 ??) 2/2 උපෙක්ඛා සහගත ඤාණසම්පයුත්ත
+                                    සසංඛාර විපාක චිත්තය 445</a>
+                                <a class="dropdown-item" href="#chiththaya37_2">(37 ??) 2/2 උපෙක්ඛා සහගත ඤාණවිප්පයුත්ත
+                                    අසංඛාර විපාක චිත්තය 445</a>
+                                <a class="dropdown-item" href="#chiththaya38_2">(38 ??) 2/2 උපෙක්ඛා සහගත ඤාණවිප්පයුත්ත
+                                    සසංඛාර විපාක චිත්තය 445</a>
+                                <a class="dropdown-item" href="#chiththaya60_2">(60) 2/2 විතක්ක, විචාර, පීති, සුඛ,
+                                    එකග්ගතා සහිත පඨමජ්ඣාන විපාක චිත්තය 446</a>
+                                <a class="dropdown-item" href="#chiththaya61_2">(61) 2/2 විචාර, පීති, සුඛ, එකග්ගතා සහිත
+                                    දුතියජ්ඣාන විපාක චිත්තය 447</a>
+                                <a class="dropdown-item" href="#chiththaya62_2">(62) 2/2 පීති, සුඛ, එකග්ගතා සහිත
+                                    තතියජ්ඣාන විපාක චිත්තය 447</a>
+                                <a class="dropdown-item" href="#chiththaya63_2">(63) 2/2 සුඛ, එකග්ගතා සහිත චතුත්‍ථජ්ඣාන
+                                    විපාක චිත්තය 447</a>
+                                <a class="dropdown-item" href="#chiththaya64_2">(64) 2/2 උපෙක්ඛා, එකග්ගතා සහිත
+                                    පඤ්චමජ්ඣාන විපාක චිත්තය 447</a>
+                                <a class="dropdown-item" href="#chiththaya74_2">(74) 2/2 ආකාසානඤ්චායතන විපාක චිත්තය
+                                    448</a>
+                                <a class="dropdown-item" href="#chiththaya75_2">(75) 2/2 විඤ්ඤාණඤ්චායතන විපාක චිත්තය
+                                    448</a>
+                                <a class="dropdown-item" href="#chiththaya76_2">(76) 2/2 ආකිඤ්චඤ්ඤායතන විපාක චිත්තය
+                                    448</a>
+                                <a class="dropdown-item" href="#chiththaya77_2">(77) 2/2 නෙවසඤ්ඤානාසඤ්ඤායතන විපාක චිත්තය
+                                    448</a>
                                 <a class="dropdown-item" href="#chiththaya86_2">(86) 2/2 සෝතාපත්ති ඵල චිත්තය 449</a>
                                 <a class="dropdown-item" href="#chiththaya87_2">(87) 2/2 සකදාගාමි ඵල චිත්තය 449</a>
                                 <a class="dropdown-item" href="#chiththaya88_2">(88) 2/2 අනාගාමි ඵල චිත්තය 449</a>
@@ -361,11 +542,8 @@
                             <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">ඡේද වශයෙන්</a>
                             <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                <a href="#id347" class="dropdown-item">347</a>
-                                <a href="#id348" class="dropdown-item">348</a>
-                                <a href="#id350" class="dropdown-item">350</a>
-                                <a href="#id355" class="dropdown-item">355</a>
-                                <a href="#id360" class="dropdown-item">360</a>
+                                <a href="#id347" class="dropdown-item">347 Page 245</a>
+                                <a href="#id348" class="dropdown-item">348 Page 245</a>
                                 <a href="#id365" class="dropdown-item">365 Page 249</a>
                                 <a href="#id366" class="dropdown-item">366 Page 252</a>
                                 <a href="#id367" class="dropdown-item">367 Page 253</a>
@@ -395,6 +573,113 @@
                                 <a href="#id453" class="dropdown-item">453</a>
                             </div>
                         </li>
+                        <!--
+                        <li class="nav-item dropdown" id="x1">
+                            <a class="nav-link dropdown-toggle" href="#අව්‍යාකතනිද‍්දෙසො" data-bs-toggle="dropdown">
+                                අව්‍යාකතනිද‍්දෙසො </a>
+                            <ul class="dropdown-menu dropdown-menu-lg-start">
+                                <li> <a class="dropdown-item" href="#කුශලවිපාකසඞ්ඛාරමූලකය"> I. කුශලවිපාකසඞ්ඛාරමූලකය
+                                        (සිත් 29) &raquo; </a>
+                                    <ul class="submenu dropdown-menu">
+                                        <a class="dropdown-item" href="#chiththaya20_1">(20) 1/2 කුසල විපාක උපෙක්ඛා සහගත
+                                            චක්ඛු විඤ්ඤාණය 404</a>
+                                        <li><a class="dropdown-item" href="#chiththaya21_1">(21) 1/2 කුසල විපාක උපෙක්ඛා
+                                                සහගත සොත විඤ්ඤාණය 408</a></li>
+                                        <a class="dropdown-item" href="#chiththaya22_1">(22) 1/2 කුසල විපාක උපෙක්ඛා සහගත
+                                            ඝාණ විඤ්ඤාණය 408</a>
+                                        <a class="dropdown-item" href="#chiththaya23_1">(23) 1/2 කුසල විපාක උපෙක්ඛා සහගත
+                                            ජිව්හා විඤ්ඤාණය 408</a>
+                                        <a class="dropdown-item" href="#chiththaya24_1">(24) 1/2 කුසල විපාක සුඛ සහගත කාය
+                                            විඤ්ඤාණය 408</a>
+                                        <a class="dropdown-item" href="#chiththaya25_1">(25) 1/2 කුසල විපාක උපෙක්ඛා සහගත
+                                            සම්පටිච්ඡන චිත්තය 409</a>
+                                        <a class="dropdown-item" href="#chiththaya26_1">(26) 1/2 කුසල විපාක සොමනස්ස සහගත
+                                            සන්තීරණ චිත්තය 410</a>
+                                        <a class="dropdown-item" href="#chiththaya27_1">(27) 1/2 කුසල විපාක උපෙක්ඛා සහගත
+                                            සන්තීරණ චිත්තය 411</a>
+                                        <a class="dropdown-item" href="#chiththaya39_1">(39) 1/2 සොමනස්ස සහගත
+                                            ඤාණසම්පයුත්ත අසංඛාර විපාක චිත්තය 412</a>
+                                        <a class="dropdown-item" href="#chiththaya40_1">(40) 1/2 සොමනස්ස සහගත
+                                            ඤාණසම්පයුත්ත සසංඛාර විපාක චිත්තය 413</a>
+                                        <a class="dropdown-item" href="#chiththaya41_1">(41) 1/2 සොමනස්ස සහගත
+                                            ඤාණවිප්පයුත්ත අසංඛාර විපාක චිත්තය 413</a>
+                                        <a class="dropdown-item" href="#chiththaya42_1">(42) 1/2 සොමනස්ස සහගත
+                                            ඤාණවිප්පයුත්ත සසංඛාර විපාක චිත්තය 413</a>
+                                        <a class="dropdown-item" href="#chiththaya43_1">(43) 1/2 උපෙක්ඛා සහගත
+                                            ඤාණසම්පයුත්ත අසංඛාර විපාක චිත්තය 413</a>
+                                        <a class="dropdown-item" href="#chiththaya44_1">(44) 1/2 උපෙක්ඛා සහගත
+                                            ඤාණසම්පයුත්ත සසංඛාර විපාක චිත්තය 413</a>
+                                        <a class="dropdown-item" href="#chiththaya45_1">(45) 1/2 උපෙක්ඛා සහගත ඤාණ
+                                            විප්පයුත්ත අසංඛාර විපාක චිත්තය 413</a>
+                                        <a class="dropdown-item" href="#chiththaya46_1">(46) 1/2 උපෙක්ඛා සහගත ඤාණ
+                                            විප්පයුත්ත සසංඛාර විපාක චිත්තය 413</a>
+                                        <a class="dropdown-item" href="#chiththaya60_1">(60) 1/2 විතක්ක, විචාර, පීති,
+                                            සුඛ, එකග්ගතා සහිත පඨමජ්ඣාන විපාක චිත්තය 414</a>
+                                        <a class="dropdown-item" href="#chiththaya61_1">(61) 1/2 විචාර, පීති, සුඛ,
+                                            එකග්ගතා සහිත දුතියජ්ඣාන විපාක චිත්තය 415</a>
+                                        <a class="dropdown-item" href="#chiththaya62_1">(62) 1/2 පීති, සුඛ, එකග්ගතා සහිත
+                                            තතියජ්ඣාන විපාක චිත්තය 415</a>
+                                        <a class="dropdown-item" href="#chiththaya63_1">(63) 1/2 සුඛ, එකග්ගතා සහිත
+                                            චතුත්‍ථජ්ඣාන විපාක චිත්තය 415</a>
+                                        <a class="dropdown-item" href="#chiththaya64_1">(64) 1/2 උපෙක්ඛා, එකග්ගතා සහිත
+                                            පඤ්චමජ්ඣාන විපාක චිත්තය 415</a>
+                                        <a class="dropdown-item" href="#chiththaya74_1">(74) 1/2 ආකාසානඤ්චායතන විපාක
+                                            චිත්තය 416</a>
+                                        <a class="dropdown-item" href="#chiththaya75_1">(75) 1/2 විඤ්ඤාණඤ්චායතන විපාක
+                                            චිත්තය 416</a>
+                                        <a class="dropdown-item" href="#chiththaya76_1">(76) 1/2 ආකිඤ්චඤ්ඤායතන විපාක
+                                            චිත්තය 416</a>
+                                        <a class="dropdown-item" href="#chiththaya77_1">(77) 1/2 නෙවසඤ්ඤානාසඤ්ඤායතන
+                                            විපාක චිත්තය 416</a>
+                                        <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+                                        <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
+                                        <li><a class="dropdown-item" href="#">Submenu item 3 &raquo; </a>
+                                            <ul class="submenu dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Multi level 1</a></li>
+                                                <li><a class="dropdown-item" href="#">Multi level 2</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#chiththaya86_1">ලෝකෝත්තර විපාක සිත් 4
+                                                &raquo; </a>
+                                            <ul class="submenu dropdown-menu dropdown-menu-end">
+                                                <a class="dropdown-item" href="#chiththaya86_1">(86) 1/2 සෝතාපත්ති ඵල
+                                                    (විපාක) චිත්තය 417</a>
+                                                <li><a class="dropdown-item" href="#chiththaya87_1">(87) 1/2 සකදාගාමි ඵල
+                                                        (විපාක) චිත්තය 417</a></li>
+                                                <a class="dropdown-item" href="#chiththaya88_1">(88) 1/2 අනාගාමි ඵල
+                                                    (විපාක) චිත්තය 417</a>
+                                                <li><a class="dropdown-item" href="#chiththaya89_1">(89) 1/2 අරහත්ත ඵල
+                                                        (විපාක) චිත්තය 417</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Submenu item 4</a></li>
+                                        <li><a class="dropdown-item" href="#">Submenu item 5</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="#"> Dropdown item 3 </a></li>
+                                <li><a class="dropdown-item" href="#"> Dropdown item 4 </a></li>
+                                <li> <a class="dropdown-item" href="#කුශලවිපාකසඞ්ඛාරමූලකය"> II. අකුසලවිපාකසඞ්ඛාරමූලකය
+                                        (සිත් 7) &raquo; </a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item" href="#chiththaya13_1">(13) 1/2 අකුසල විපාක උපෙක්ඛා
+                                                සහගත චක්ඛු විඤ්ඤාණය 418</a></li>
+                                        <li><a class="dropdown-item" href="#chiththaya14_1">(14) 1/2 අකුසල විපාක උපෙක්ඛා
+                                                සහගත සොත විඤ්ඤාණය 419</a></li>
+                                        <a class="dropdown-item" href="#chiththaya15_1">(15) 1/2 අකුසල විපාක උපෙක්ඛා
+                                            සහගත ඝාණවිඤ්ඤාණය 419</a>
+                                        <a class="dropdown-item" href="#chiththaya16_1">(16) 1/2 අකුසල විපාක උපෙක්ඛා
+                                            සහගත ජිව්හාවිඤ්ඤාණය 419</a>
+                                        <a class="dropdown-item" href="#chiththaya17_1">(17) 1/2 අකුසල විපාක දුක්ඛ සහගත
+                                            කායවිඤ්ඤාණය 419</a>
+                                        <a class="dropdown-item" href="#chiththaya18_1">(18) 1/2 අකුසල විපාක උපෙක්ඛා
+                                            සහගත සම්පටිච්ඡන විඤ්ඤාණය 420</a>
+                                        <li><a class="dropdown-item" href="#chiththaya19_1">(19) 1/2 අකුසල විපාක උපෙක්ඛා
+                                                සහගත සන්තිරණ විඤ්ඤාණය 421</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    -->
                     </ul>
                 </div>
             </div>
@@ -406,14 +691,27 @@
             <br>
             <h1>ප්‍රතීත්‍යසමුත්පාද විභඞ්ගය අධ්යයනය සඳහා සටහනක්</h1>
             <br>
+            <br> &nbsp;
             <br>
             <h2><mark>Warning:</mark> මෙහි වැරදි ගොඩක් අන්තර්ගතව ඇත. මෙම වෙබ් පිටුව තවම සම්පූර්ණ නැත.</h2>
-            <h3>මෙහි අරමුණ ගුරුතුමා විසින් පටිච‍්චසමුප‍්පාද විභඞ්ගය අධ්යයන පිණිස සකස් කරන ලද PDF document එක වෙබ්
+            <br>
+            <h2>නමෝ තස්ස භගවතෝ අරහතෝ සම්මා                 සම්බුද්ධස්ස</h2>
+            <br>
+            <h3>ගුරුතුමා විසින් පටිච‍්චසමුප‍්පාද විභඞ්ගය අධ්යයන පිණිස සකස් කරන ලද PDF විශේෂ සටහන ලබා ගැනීමට: <a
+                href="https://waytoni.com/documents/විභඞ්ගප්පකරණං%20V%201.05%20Final.pdf"
+                target="_blank">විභඞ්ගප්පකරණං V 1.05 Final.pdf </a>) </h3>
+                <!--
+            <h3>මෙහි අරමුණ ගුරුතුමා විසින් පටිච‍්චසමුප‍්පාද විභඞ්ගය අධ්යයන පිණිස සකස් කරන ලද PDF විශේෂ සටහන (ලබා ගැනීමට: <a
+                href="https://waytoni.com/documents/විභඞ්ගප්පකරණං%20V%201.05%20Final.pdf"
+                target="_blank">විභඞ්ගප්පකරණං V 1.05 Final.pdf </a>) වෙබ්
                 පිටුවක් (html file) ලෙස ඉදිරිපත් කීරීමට සහ ගුරුතුමාට කරන පුණ්‍යානුමෝදනාවක් ලෙසය.</h3>
+            -->
+                <!--
             <h4>ගුරුතුමා විසින් පටිච‍්චසමුප‍්පාද විභඞ්ගය අධ්යයනය සඳහා සකස්කරන ලද විශේෂ සටහන ලබා ගැනීමට: <a
                     href="https://waytoni.com/documents/විභඞ්ගප්පකරණං%20V%201.05%20Final.pdf"
                     target="_blank">විභඞ්ගප්පකරණං V 1.05 Final.pdf </a>
             </h4>
+        -->
             <h4>විභංගප්පකරණ (1) PDF ලෙස ලබා ගැනීමට: [click on View/Open to download the pdf version] <a
                     href="http://dr.lib.sjp.ac.lk/handle/123456789/2139" target="_blank">
                     http://dr.lib.sjp.ac.lk/handle/123456789/2139</a> </h4>
@@ -2098,6 +2396,17 @@
                 ඡට‍්ඨායතනපච‍්චයා ඵස‍්සො, ඵස‍්සපච‍්චයා වෙදනා, වෙදනාපච‍්චයා තණ‍්හා, තණ‍්හාපච‍්චයා අධිමොක‍්ඛො,1
                 අධිමොක‍්ඛපච‍්චයා භවො, භවපච‍්චයා ජාති, ජාතිපච‍්චයා ජරාමරණං, එවමෙතස‍්ස කෙවලස‍්ස දුක‍්ඛක‍්ඛන්‍ධස‍්ස සමුදයො
                 හොති.</div>
+            <div class="notes" style="background-color: aqua;" ;>
+                <p>Note: <a href="https://tipitaka.app/?a=2b5-234-si"
+                        target="_blank">https://tipitaka.app/?a=2b5-234-si</a>
+                </p>
+                <b>280.</b>කතමෙ ධම්මා අකුසලා? යස්මිං සමයෙ අකුසලං චිත්තං උප්පන්නං හොති සොමනස්සසහගතං දිට්ඨිගතසම්පයුත්තං
+                සසඞ්ඛාරෙන…පෙ… සොමනස්සසහගතං දිට්ඨිගතවිප්පයුත්තං රූපාරම්මණං වා…පෙ… සොමනස්සසහගතං දිට්ඨිගතවිප්පයුත්තං
+                සසඞ්ඛාරෙන රූපාරම්මණං වා සද්දාරම්මණං වා ගන්ධාරම්මණං වා රසාරම්මණං වා ඵොට්ඨබ්බාරම්මණං වා ධම්මාරම්මණං වා යං
+                යං වා පනාරබ්භ, තස්මිං සමයෙ අවිජ්ජාපච්චයා සඞ්ඛාරො, සඞ්ඛාරපච්චයා විඤ්ඤාණං, විඤ්ඤාණපච්චයා නාමං, නාමපච්චයා
+                ඡට්ඨායතනං, ඡට්ඨායතනපච්චයා ඵස්සො, ඵස්සපච්චයා වෙදනා, වෙදනාපච්චයා තණ්හා, තණ්හාපච්චයා අධිමොක්ඛො,
+                අධිමොක්ඛපච්චයා භවො, භවපච්චයා ජාති, ජාතිපච්චයා ජරාමරණං. එවමෙතස්ස කෙවලස්ස දුක්ඛක්ඛන්ධස්ස සමුදයො හොති.
+            </div>
             <div class="sinh"><span class="chedaya" id="id387">387</span>. අකුශලධර්‍මයෝ කවරහ යත්: යම් කලෙක සොම්නස් සහගත
                 වූ දෘෂ්ටිගත සම්ප්‍රයුක්ත වූ අකුශලචිත්තය සංස්කාර සහිත ව උපදනේ වේ ද, <a href="##"> …පෙ… </a> සොම්නස් සහගත
                 වූ දෘෂ්ටිගතවිප්‍රයුක්ත වූ <a href="##"> …පෙ… </a> රූපාලම්බන වේවයි <a href="##"> …පෙ… </a> ධර්‍මාලම්බන
@@ -2107,16 +2416,6 @@
                 ස්පර්‍ශප්‍රත්‍යයෙන් වේදනාව වෙයි, වේදනාප්‍රත්‍යයෙන් තෘෂ්ණාව වෙයි, තෘෂ්ණාප්‍රත්‍යයෙන් අධිමෝක්‍ෂය වෙයි,
                 අධිමෝක්‍ෂප්‍රත්‍යයෙන් භවය වෙයි, භවප්‍රත්‍යයෙන් ජාතිය වෙයි, ජාතිප්‍රත්‍යයෙන් ජරාමරණ වේ. මෙසේ මේ සියලු
                 දුඃඛස්කන්‍ධයාගේ සමුදය වේ.</div>
-            <div class="notes" style="background-color: aqua;" ;>
-                <p><a href="https://tipitaka.app/?a=2b5-234-si" target="_blank">https://tipitaka.app/?a=2b5-234-si</a>
-                </p>
-                <b>280.</b>කතමෙ ¶ ධම්මා අකුසලා? යස්මිං සමයෙ අකුසලං චිත්තං උප්පන්නං හොති සොමනස්සසහගතං දිට්ඨිගතසම්පයුත්තං
-                සසඞ්ඛාරෙන…පෙ… සොමනස්සසහගතං දිට්ඨිගතවිප්පයුත්තං රූපාරම්මණං වා…පෙ… සොමනස්සසහගතං ¶ දිට්ඨිගතවිප්පයුත්තං
-                සසඞ්ඛාරෙන රූපාරම්මණං වා සද්දාරම්මණං වා ගන්ධාරම්මණං වා රසාරම්මණං වා ඵොට්ඨබ්බාරම්මණං වා ධම්මාරම්මණං වා යං
-                යං වා පනාරබ්භ, තස්මිං සමයෙ අවිජ්ජාපච්චයා සඞ්ඛාරො, සඞ්ඛාරපච්චයා විඤ්ඤාණං, විඤ්ඤාණපච්චයා නාමං, නාමපච්චයා
-                ඡට්ඨායතනං, ඡට්ඨායතනපච්චයා ඵස්සො, ඵස්සපච්චයා වෙදනා, වෙදනාපච්චයා තණ්හා, තණ්හාපච්චයා අධිමොක්ඛො,
-                අධිමොක්ඛපච්චයා භවො, භවපච්චයා ජාති, ජාතිපච්චයා ජරාමරණං. එවමෙතස්ස කෙවලස්ස දුක්ඛක්ඛන්ධස්ස සමුදයො හොති.
-            </div>
             <div class="pali"><span class="chedaya" id="id388">388</span>. තත්‍ථ කතමා අවිජ‍්ජා: යං අඤ‍්ඤාණං අදස‍්සනං <a
                     href="##">-පෙ-</a> අවිජ‍්ජාලඞ‍්ගි මොහො අකුසලමූලං, අයං වුච‍්චති අවිජ‍්ජා.</div>
             <div class="sinh"><span class="chedaya" id="id388">388</span>. එහි අවිද්‍යා කවර යත්: යම් අඥානයෙක්
@@ -2628,7 +2927,7 @@
             <div class="sinh">‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යනු: මෙසේ මේ සියලු දුඃඛරාශිහුගේ සඞ්ගතිය
                 වෙයි, සමාගමය වෙයි, සමවධානය වෙයි ප්‍රාදුර්‍භාවය වේ. එහෙයින් කියනු ලැබෙයි: ‘එවමෙතස්ස කේවලස්ස
                 දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
-                <p class="sectionheading3">2 වාරය (හේතු)</p>
+            <p class="sectionheading3">2 වාරය (හේතු)</p>
             <div class="pali"><span class="chedaya" id="id405">405</span>. තස‍්මිං සමයෙ සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං
                 සඞ‍්ඛාරහෙතුකං, විඤ‍්ඤාණපච‍්චයා නාමං විඤ‍්ඤාණහෙතුකං, නාමපච‍්චයා ඡට‍්ඨායතනං නාමහෙතුකං, ඡට‍්ඨායතනපච‍්චයා
                 ඵස‍්සො ඡට‍්ඨායතනහෙතුකො, ඵස‍්සපච‍්චයා වෙදනා ඵස‍්සහෙතුකා, වෙදනාපච‍්චයා භවො, භවපච‍්චයා ජාති, ජාතිපච‍්චයා
@@ -2638,7 +2937,7 @@
                 ෂෂ්ඨායතනප්‍රත්‍යයෙන් ෂෂ්ඨායතනහේතුක වූ ස්පර්‍ශය වෙයි, ස්පර්‍ශප්‍රත්‍යයෙන් ස්පර්‍ශහේතුක වූ වේදනාව වෙයි,
                 වේදනාප්‍රත්‍යයෙන් භවය වෙයි, භවප්‍රත්‍යයෙන් ජාතිය වෙයි, ජාතිප්‍රත්‍යයෙන් ජරාමරණ වේ. <a href="##"> …පෙ…
                 </a> එහෙයින් කියනු ලැබෙයි: ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
-                <p class="sectionheading3">3 වාරය (සම‍්පයුත‍්තචතුක‍්කං)</p>
+            <p class="sectionheading3">3 වාරය (සම‍්පයුත‍්තචතුක‍්කං)</p>
             <div class="pali"><span class="chedaya" id="id406">406</span>. තස‍්මිං සමයෙ සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං
                 සඞ‍්ඛාරසම‍්පයුත‍්තං, විඤ‍්ඤාණපච‍්චයා නාමං විඤ‍්ඤාණසම‍්පයුත‍්තං, නාමපච‍්චයා ඡට‍්ඨායතනං නාමසම‍්පයුත‍්තං,
                 ඡට‍්ඨායතනපච‍්චයා ඵස‍්සො ඡට‍්ඨායතනසම‍්පයුත‍්තො, ඵස‍්සපච‍්චයා වෙදනා ඵස‍්සසම‍්පයුත‍්තා, වෙදනාපච‍්චයා භවො,
@@ -2650,7 +2949,7 @@
                 ස්පර්‍ශප්‍රත්‍යයෙන් ස්පර්‍ශසම්ප්‍රයුක්ත වූ වේදනාව වෙයි, වේදනාප්‍රත්‍යයෙන් භවය වෙයි, භව ප්‍රත්‍යයෙන්
                 ජාතිය වෙයි, ජාතිප්‍රත්‍යයෙන් ජරාමරණ වේ. <a href="##"> …පෙ… </a> එහෙයින් කියනු ලැබෙයි: ‘එවමෙතස්ස කේවලස්ස
                 දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි. </div>
-                <p class="sectionheading3">4 වාරය (අඤ‍්ඤමඤ‍්ඤචතුක‍්කං)</p>
+            <p class="sectionheading3">4 වාරය (අඤ‍්ඤමඤ‍්ඤචතුක‍්කං)</p>
             <div class="pali"><span class="chedaya" id="id407">407</span>. තස‍්මිං සමයෙ සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං
                 විඤ‍්ඤාණපච‍්චයා’පි සඞ‍්ඛාරො, විඤ‍්ඤාණපච‍්චයා නාමං නාමපච‍්චයා’පි විඤ‍්ඤාණං, නාමපච‍්චයා ඡට‍්ඨායතනං
                 ඡට‍්ඨායතනපච‍්චයා’පි නාමං, ඡට‍්ඨායතපච‍්චයා ඵස‍්සො ඵස‍්සපච‍්චයා’පි ඡට‍්ඨායතනං, ඵස‍්සපච‍්චයා වෙදනා
@@ -2662,11 +2961,10 @@
                 ස්පර්‍ශප්‍රත්‍යයෙනුදු ෂෂ්ඨායතනය වේ. ස්පර්‍ශප්‍රත්‍යයෙන් වේදනාව වෙයි, වේදනාප්‍රත්‍යයෙනුදු ස්පර්‍ශ වේ.
                 වේදනාප්‍රත්‍යයෙන් භවය වෙයි, භවප්‍රත්‍යයෙන් ජාතිය වෙයි, ජාතිප්‍රත්‍යයෙන් ජරාමරණ වේ. <a href="##"> …පෙ…
                 </a> එහෙයින් කියනු ලැබෙයි: ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
-
-                <p class="sectionheading3" id="chiththaya21_1">(21) 1/2 කුසල විපාක උපෙක්ඛා සහගත සොත විඤ්ඤාණය 408</p>
-                <p class="sectionheading3" id="chiththaya22_1">(22) 1/2 කුසල විපාක උපෙක්ඛා සහගත ඝාණ විඤ්ඤාණය 408</p>
-                <p class="sectionheading3" id="chiththaya23_1">(23) 1/2 කුසල විපාක උපෙක්ඛා සහගත ජිව්හා විඤ්ඤාණය 408</p>
-                <p class="sectionheading3" id="chiththaya24_1">(24) 1/2 කුසල විපාක සුඛ සහගත කාය විඤ්ඤාණය 408</p>
+            <p class="sectionheading3" id="chiththaya21_1">(21) 1/2 කුසල විපාක උපෙක්ඛා සහගත සොත විඤ්ඤාණය 408</p>
+            <p class="sectionheading3" id="chiththaya22_1">(22) 1/2 කුසල විපාක උපෙක්ඛා සහගත ඝාණ විඤ්ඤාණය 408</p>
+            <p class="sectionheading3" id="chiththaya23_1">(23) 1/2 කුසල විපාක උපෙක්ඛා සහගත ජිව්හා විඤ්ඤාණය 408</p>
+            <p class="sectionheading3" id="chiththaya24_1">(24) 1/2 කුසල විපාක සුඛ සහගත කාය විඤ්ඤාණය 408</p>
             <div class="pali"><span class="chedaya" id="id408">408</span>. කතමෙ ධම‍්මා අව්‍යාකතා: යස‍්මිං සමයෙ
                 කාමාවචරස‍්ස කුසලස‍්ස කම‍්මස‍්ස කතත‍්තා උපචිතත‍්තා විපාකං සොතවිඤ‍්ඤාණං උප‍්පන‍්නං හොති උපෙක‍්ඛාසහගතං
                 සද‍්දාරම‍්මණං <a href="##">-පෙ-</a> ඝානවිඤ‍්ඤාණං උප‍්පන‍්නං හොති උපෙක‍්ඛාසහගතං ගන්‍ධාරම‍්මණං <a
@@ -2711,7 +3009,7 @@
             <div class="sinh">එහි වේදනාප්‍රත්‍යයෙන් භවය කවරෙ යත්: වේදනාව තබා සංඥාස්කන්‍ධ ය, සංස්කාරස්කන්‍ධ ය,
                 විඥානස්කන්‍ධ යි. මේ ‘වේදනාප්‍රත්‍යයෙන් භව’ යි කියනු ලැබේ. <a href="##"> …පෙ… </a> එහෙයින් කියනු ලැබෙයි
                 ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
-                <p class="sectionheading3" id="chiththaya25_1">(25) 1/2 කුසල විපාක උපෙක්ඛා සහගත සම්පටිච්ඡන චිත්තය 409</p>
+            <p class="sectionheading3" id="chiththaya25_1">(25) 1/2 කුසල විපාක උපෙක්ඛා සහගත සම්පටිච්ඡන චිත්තය 409</p>
             <div class="pali"><span class="chedaya" id="id409">409</span>. කතමෙ ධම‍්මා අව්‍යාකතා: යස‍්මිං සමයෙ
                 කාමාවචරස‍්ස කුසලස‍්ස කම‍්මස‍්ස කතත‍්තා උපචිතත‍්තා විපාකා මනොධාතු උප‍්පන‍්නා හොති උපෙක‍්ඛාසහගතා
                 රූපාරම‍්මණං වා <a href="##">-පෙ-</a> ඵොට‍්ඨබ‍්බාරම‍්මණං වා යං යං වා පනාරබ‍්භ, තස‍්මිං සමයෙ
@@ -2758,14 +3056,13 @@
             <div class="sinh">එහි අධිමෝක්‍ෂප්‍රත්‍යයෙන් භව කවරෙ යත්: අධිමෝක්‍ෂය තබා වේදනාස්කන්‍ධ ය, සංඥාස්කන්‍ධ ය,
                 සංස්කාරස්කන්‍ධ ය, විඥානස්කන්‍ධ යි. මේ ‘අධිමෝක්‍ෂප්‍රත්‍යයෙන් භව’ යි කියනු ලැබේ. <a href="##"> …පෙ… </a>
                 එහෙයින් කියනු ලැබෙයි: ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
-                <p class="sectionheading3" id="chiththaya26_1">(26) 1/2 කුසල විපාක සොමනස්ස සහගත සන්තීරණ චිත්තය 410</p>
+            <p class="sectionheading3" id="chiththaya26_1">(26) 1/2 කුසල විපාක සොමනස්ස සහගත සන්තීරණ චිත්තය 410</p>
             <div class="pali"><span class="chedaya" id="id410">410</span>. කතමෙ ධම‍්මා අව්‍යාකතා: යස‍්මිං සමයෙ
                 කාමාවචරස‍්ස කුසලස‍්ස කම‍්මස‍්ස කතත‍්තා උපචිතත‍්තා විපාකා මනොවිඤ‍්ඤාණධාතු උප‍්පන‍්නා හොති සොමනස‍්සසහගතා
                 රූපාරම‍්මණං වා <a href="##">-පෙ-</a> ධම‍්මාරම‍්මණං වා යං යං වා පනාරබ‍්භ, තස‍්මිං සමයෙ සඞ‍්ඛාරපච‍්චයා
                 විඤ‍්ඤාණං, විඤ‍්ඤාණපච‍්චයා නාමං, නාමපච‍්චයා ඡට‍්ඨායතනං, ඡට‍්ඨායතනපච‍්චයා ඵස‍්සො, ඵස‍්සපච‍්චයා වෙදනා,
                 වෙදනාපච‍්චයා අධිමොක‍්ඛො, අධිමොක‍්ඛපච‍්චයා භවො, භවපච‍්චයා ජාති, ජාතිපච‍්චයා ජරාමරණං <a href="##">-පෙ-</a>
                 තෙන වුච‍්චති ‘එවමෙතස‍්ස කෙවලස‍්ස දුක‍්ඛක‍්ඛන්‍ධස‍්ස සමුදයො හොතී’ති.</div>
-                
             <div class="sinh"><span class="chedaya" id="id410">410</span>. අව්‍යාකෘතධර්‍මයෝ කවරහ යත්: යම් කලෙක කාමාවචර
                 කුශලකර්‍මය කළ බැවින් රැස් කළ බැවින් රූපාලම්බන වේවයි, <a href="##"> …පෙ… </a> ධර්‍මාලම්බන වේවයි, යළි යම්
                 යම් අරමුණක් හෝ ඇරැබැ සොම්නස් සහගත වූ විපාකමනෝවිඥානධාතුව උපදනේ වේ ද, එසමයෙහි සංස්කාරප්‍රත්‍යයෙන් විඥානය
@@ -2773,7 +3070,7 @@
                 ස්පර්‍ශප්‍රත්‍යයෙන් වේදනාව වෙයි, වේදනාප්‍රත්‍යයෙන් අධිමෝක්‍ෂය වෙයි, අධිමෝක්‍ෂප්‍රත්‍යයෙන් භවය වෙයි,
                 භවප්‍රත්‍යයෙන් ජාතිය වෙයි, ජාතිප්‍රත්‍යයෙන් ජරාමරණ වේ. <a href="##"> …පෙ… </a> එහෙයින් කියනු ලැබෙයි:
                 ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
-                <p class="sectionheading3" id="chiththaya27_1">(27) 1/2 කුසල විපාක උපෙක්ඛා සහගත සන්තීරණ චිත්තය 411</p>
+            <p class="sectionheading3" id="chiththaya27_1">(27) 1/2 කුසල විපාක උපෙක්ඛා සහගත සන්තීරණ චිත්තය 411</p>
             <div class="pali"><span class="chedaya" id="id411">411</span>. කතමෙ ධම‍්මා අව්‍යාකතා: යස‍්මිං සමයෙ
                 කාමාවචරස‍්ස කුසලස‍්ස කම‍්මස‍්ස කතත‍්තා උපචිතත‍්තා විපාකා මනොවිඤ‍්ඤාණධාතු උප‍්පන‍්නා හොති උපෙක‍්ඛාසහගතා
                 රූපාරම‍්මණං වා <a href="##">-පෙ-</a> ධම‍්මාරම‍්මණං වා යං යං වා පනාරබ‍්භ, තස‍්මිං සමයෙ සඞ‍්ඛාරපච‍්චයා
@@ -2787,7 +3084,8 @@
                 වෙයි, ස්පර්‍ශප්‍රත්‍යයෙන් වේදනාව වෙයි, වේදනාප්‍රත්‍යයෙන් අධිමෝක්‍ෂය වෙයි, අධිමෝක්‍ෂප්‍රත්‍යයෙන් භවය
                 වෙයි, භවප්‍රත්‍යයෙන් ජාතිය වෙයි, ජාතිප්‍රත්‍යයෙන් ජරාමරණ වේ. <a href="##"> …පෙ… </a> එහෙයින් කියනු
                 ලැබෙයි: ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
-                <p class="sectionheading3" id="chiththaya39_1">(39) 1/2 සොමනස්ස සහගත ඤාණසම්පයුත්ත අසංඛාර විපාක චිත්තය 412</p>
+            <p class="sectionheading3" id="chiththaya39_1">(39) 1/2 සොමනස්ස සහගත ඤාණසම්පයුත්ත අසංඛාර විපාක චිත්තය 412
+            </p>
             <div class="pali"><span class="chedaya" id="id412">412</span>. කතමෙ ධම‍්මා අව්‍යාකතා: යස‍්මිං සමයෙ
                 කාමාවචරස‍්ස කුසලස‍්ස කම‍්මස‍්ස කතත‍්තා උපචිතත‍්තා විපාකං මනොවිඤ‍්ඤාණධාතු උප‍්පන‍්නා හොති සොමනස‍්සසහගතා
                 ඤාණසම‍්පයුත‍්තා රූපාරම‍්මණං වා <a href="##">-පෙ-</a> ධම‍්මාරම‍්මණං වා යං යං වා පනාරබ‍්භ, තස‍්මිං සමයෙ
@@ -2803,14 +3101,20 @@
                 ප්‍රසාදප්‍රත්‍යයෙන් අධිමෝක්‍ෂය වෙයි, අධිමෝක්‍ෂප්‍රත්‍යයෙන් භවය වෙයි, භවප්‍රත්‍යයෙන් ජාතිය වෙයි,
                 ජාතිප්‍රත්‍යයෙන් ජරාමරණ වේ. <a href="##"> …පෙ… </a> එයින් කියනු ලැබෙයි: ‘එවමෙතස්ස කේවලස්ස
                 දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
-
-                <p class="sectionheading3" id="chiththaya40_1">(40) 1/2 සොමනස්ස සහගත ඤාණසම්පයුත්ත සසංඛාර විපාක චිත්තය 413</p>
-                <p class="sectionheading3" id="chiththaya41_1">(41) 1/2 සොමනස්ස සහගත ඤාණවිප්පයුත්ත අසංඛාර විපාක චිත්තය 413</p>
-                <p class="sectionheading3" id="chiththaya42_1">(42) 1/2 සොමනස්ස සහගත ඤාණවිප්පයුත්ත සසංඛාර විපාක චිත්තය 413</p>
-                <p class="sectionheading3" id="chiththaya43_1">(43) 1/2 උපෙක්ඛා සහගත ඤාණසම්පයුත්ත අසංඛාර විපාක චිත්තය 413</p>
-                <p class="sectionheading3" id="chiththaya44_1">(44) 1/2 උපෙක්ඛා සහගත ඤාණසම්පයුත්ත සසංඛාර විපාක චිත්තය 413</p>
-                <p class="sectionheading3" id="chiththaya45_1">(45) 1/2 උපෙක්ඛා සහගත ඤාණ විප්පයුත්ත අසංඛාර විපාක චිත්තය 413</p>
-                <p class="sectionheading3" id="chiththaya46_1">(46) 1/2 උපෙක්ඛා සහගත ඤාණ විප්පයුත්ත සසංඛාර විපාක චිත්තය 413</p>
+            <p class="sectionheading3" id="chiththaya40_1">(40) 1/2 සොමනස්ස සහගත ඤාණසම්පයුත්ත සසංඛාර විපාක චිත්තය 413
+            </p>
+            <p class="sectionheading3" id="chiththaya41_1">(41) 1/2 සොමනස්ස සහගත ඤාණවිප්පයුත්ත අසංඛාර විපාක චිත්තය 413
+            </p>
+            <p class="sectionheading3" id="chiththaya42_1">(42) 1/2 සොමනස්ස සහගත ඤාණවිප්පයුත්ත සසංඛාර විපාක චිත්තය 413
+            </p>
+            <p class="sectionheading3" id="chiththaya43_1">(43) 1/2 උපෙක්ඛා සහගත ඤාණසම්පයුත්ත අසංඛාර විපාක චිත්තය 413
+            </p>
+            <p class="sectionheading3" id="chiththaya44_1">(44) 1/2 උපෙක්ඛා සහගත ඤාණසම්පයුත්ත සසංඛාර විපාක චිත්තය 413
+            </p>
+            <p class="sectionheading3" id="chiththaya45_1">(45) 1/2 උපෙක්ඛා සහගත ඤාණ විප්පයුත්ත අසංඛාර විපාක චිත්තය 413
+            </p>
+            <p class="sectionheading3" id="chiththaya46_1">(46) 1/2 උපෙක්ඛා සහගත ඤාණ විප්පයුත්ත සසංඛාර විපාක චිත්තය 413
+            </p>
             <div class="pali"><span class="chedaya" id="id413">413</span>. කතමෙ ධම‍්මා අව්‍යාකතා: යස‍්මිං සමයෙ
                 කාමාවචරස‍්ස කුසලස‍්ස කම‍්මස‍්ස කතත‍්තා උපචිතත‍්තා විපාකා මනොවිඤ‍්ඤාණධාතු උප‍්පන‍්නා හොති සොමනස‍්සසහගතා
                 ඤාණසම‍්පයුත‍්තා සසඞ‍්ඛාරෙන <a href="##">-පෙ-</a> සොමනස‍්සසහගතා ඤාණවිප‍්පයුත‍්තා <a href="##">-පෙ-</a>
@@ -2855,7 +3159,8 @@
             <div class="sinh">එහි අධිමෝක්‍ෂප්‍රත්‍යයෙන් භවය කවරෙ යත්: අධිමෝක්‍ෂය තබා වේදනා ස්කන්‍ධ ය සංඥාස්කන්‍ධ ය
                 සංස්කාරස්කන්‍ධ ය විඥානස්කන්‍ධ යි. එහෙයින් කියනු ලැබෙයි: ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’
                 යි. </div>
-                <p class="sectionheading3" id="chiththaya60_1">(60) 1/2 විතක්ක, විචාර, පීති, සුඛ, එකග්ගතා සහිත පඨමජ්ඣාන විපාක චිත්තය 414</p>
+            <p class="sectionheading3" id="chiththaya60_1">(60) 1/2 විතක්ක, විචාර, පීති, සුඛ, එකග්ගතා සහිත පඨමජ්ඣාන
+                විපාක චිත්තය 414</p>
             <div class="pali"><span class="chedaya" id="id414">414</span>. කතමෙ ධම‍්මා අව්‍යාකතා: යස‍්මිං සමයෙ
                 රූපූපපත‍්තියා මග‍්ගං භාවෙති විවිච‍්චෙ’ව කාමෙහි <a href="##">-පෙ-</a> පඨමං ඣානං උපසම‍්පජ‍්ජ විහරති
                 පඨවීකසිණං. තස‍්මිං සමයෙ ඵස‍්සො හොති <a href="##">-පෙ-</a> අවික‍්ඛෙපො හොති, ඉමෙ ධම‍්මා කුසලා. තස‍්සෙව
@@ -2873,10 +3178,13 @@
                 වෙයි, වේදනාප්‍රත්‍යයෙන් ප්‍රසාදය වෙයි, ප්‍රසාදප්‍රත්‍යයෙන් අධිමෝක්‍ෂය වෙයි, අධිමෝක්‍ෂප්‍රත්‍යයෙන් භවය
                 වෙයි, භවප්‍රත්‍යයෙන් ජාතිය වෙයි, ජාතිප්‍රත්‍යයෙන් ජරාමරණ වේ. <a href="##"> …පෙ… </a> එහෙයින් කියනු
                 ලැබෙයි: ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
-                <p class="sectionheading3" id="chiththaya61_1">(61) 1/2 විචාර, පීති, සුඛ, එකග්ගතා සහිත දුතියජ්ඣාන විපාක චිත්තය 415</p>
-                <p class="sectionheading3" id="chiththaya62_1">(62) 1/2 පීති, සුඛ, එකග්ගතා සහිත තතියජ්ඣාන විපාක චිත්තය 415</p>
-                <p class="sectionheading3" id="chiththaya63_1">(63) 1/2 සුඛ, එකග්ගතා සහිත චතුත්‍ථජ්ඣාන විපාක චිත්තය 415</p>
-                <p class="sectionheading3" id="chiththaya64_1">(64) 1/2 උපෙක්ඛා, එකග්ගතා සහිත පඤ්චමජ්ඣාන විපාක චිත්තය 415</p>
+            <p class="sectionheading3" id="chiththaya61_1">(61) 1/2 විචාර, පීති, සුඛ, එකග්ගතා සහිත දුතියජ්ඣාන විපාක
+                චිත්තය 415</p>
+            <p class="sectionheading3" id="chiththaya62_1">(62) 1/2 පීති, සුඛ, එකග්ගතා සහිත තතියජ්ඣාන විපාක චිත්තය 415
+            </p>
+            <p class="sectionheading3" id="chiththaya63_1">(63) 1/2 සුඛ, එකග්ගතා සහිත චතුත්‍ථජ්ඣාන විපාක චිත්තය 415</p>
+            <p class="sectionheading3" id="chiththaya64_1">(64) 1/2 උපෙක්ඛා, එකග්ගතා සහිත පඤ්චමජ්ඣාන විපාක චිත්තය 415
+            </p>
             <div class="pali"><span class="chedaya" id="id415">415</span>. කතමෙ ධම‍්මා අව්‍යාකතා: යස‍්මිං සමයෙ
                 රූපූපපත‍්තියා මග‍්ගං භාවෙති විතක‍්කවිචාරානං වූපසමා <a href="##">-පෙ-</a> දුතියං ඣානං <a
                     href="##">-පෙ-</a> තතියං ඣානං <a href="##">-පෙ-</a> චතුත්‍ථං ඣානං <a href="##">-පෙ-</a> පඨමං ඣානං <a
@@ -2898,10 +3206,10 @@
                 ස්පර්‍ශප්‍රත්‍යයෙන් වේදනාව වෙයි, වේදනාප්‍රත්‍යයෙන් ප්‍රසාදය වෙයි, ප්‍රසාදප්‍රත්‍යයෙන් අධිමෝක්‍ෂය වෙයි,
                 අධිමෝක්‍ෂප්‍රත්‍යයෙන් භවය වෙයි, භවප්‍රත්‍යයෙන් ජාතිය වෙයි, ජාතිප්‍රත්‍යයෙන් ජරාමරණ වේ. <a href="##">
                     …පෙ… </a> එහෙයින් කියනු ලැබෙයි: ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
-                    <p class="sectionheading3" id="chiththaya74_1">(74) 1/2 ආකාසානඤ්චායතන විපාක චිත්තය 416</p>
-                    <p class="sectionheading3" id="chiththaya75_1">(75) 1/2 විඤ්ඤාණඤ්චායතන විපාක චිත්තය 416</p>
-                    <p class="sectionheading3" id="chiththaya76_1">(76) 1/2 ආකිඤ්චඤ්ඤායතන විපාක චිත්තය 416</p>
-                    <p class="sectionheading3" id="chiththaya77_1">(77) 1/2 නෙවසඤ්ඤානාසඤ්ඤායතන විපාක චිත්තය 416</p>
+            <p class="sectionheading3" id="chiththaya74_1">(74) 1/2 ආකාසානඤ්චායතන විපාක චිත්තය 416</p>
+            <p class="sectionheading3" id="chiththaya75_1">(75) 1/2 විඤ්ඤාණඤ්චායතන විපාක චිත්තය 416</p>
+            <p class="sectionheading3" id="chiththaya76_1">(76) 1/2 ආකිඤ්චඤ්ඤායතන විපාක චිත්තය 416</p>
+            <p class="sectionheading3" id="chiththaya77_1">(77) 1/2 නෙවසඤ්ඤානාසඤ්ඤායතන විපාක චිත්තය 416</p>
             <div class="pali"><span class="chedaya" id="id416">416</span>. කතමෙ ධම‍්මා අව්‍යාකතා: යස‍්මිං සමයෙ
                 අරූපූපපත‍්තියා මග‍්ගං භාවෙති <a href="##">-පෙ-</a> සබ‍්බසො ආකිඤ‍්චඤ‍්ඤායතනං සමතික‍්කම‍්ම
                 නෙවසඤ‍්ඤානාසඤ‍්ඤායතනසඤ‍්ඤාසහගතං සුඛස‍්ස ච පහානා <a href="##">-පෙ-</a> චතුත්‍ථං ඣානං උපසම‍්පජ‍්ජ විහරති.
@@ -2923,10 +3231,10 @@
                 ප්‍රසාදප්‍රත්‍යයෙන් අධිමෝක්‍ෂය වෙයි, අධිමෝක්‍ෂප්‍රත්‍යයෙන් භවය වෙයි, භව ප්‍රත්‍යයෙන් ජාතිය වෙයි,
                 ජාතිප්‍රත්‍යයෙන් ජරාමරණ වේ <a href="##"> …පෙ… </a> එයින් කියනු ලැබෙයි: ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස
                 සමුදයෝ හොති’ යි.</div>
-                <p class="sectionheading3" id="chiththaya86_1">(86) 1/2 සෝතාපත්ති ඵල (විපාක) චිත්තය 417</p>
-                <p class="sectionheading3" id="chiththaya87_1">(87) 1/2 සකදාගාමි ඵල (විපාක) චිත්තය 417</p>
-                <p class="sectionheading3" id="chiththaya88_1">(88) 1/2 අනාගාමි ඵල (විපාක) චිත්තය 417</p>
-                <p class="sectionheading3" id="chiththaya89_1">(89) 1/2 අරහත්ත ඵල (විපාක) චිත්තය 417</p>
+            <p class="sectionheading3" id="chiththaya86_1">(86) 1/2 සෝතාපත්ති ඵල (විපාක) චිත්තය 417</p>
+            <p class="sectionheading3" id="chiththaya87_1">(87) 1/2 සකදාගාමි ඵල (විපාක) චිත්තය 417</p>
+            <p class="sectionheading3" id="chiththaya88_1">(88) 1/2 අනාගාමි ඵල (විපාක) චිත්තය 417</p>
+            <p class="sectionheading3" id="chiththaya89_1">(89) 1/2 අරහත්ත ඵල (විපාක) චිත්තය 417</p>
             <div class="pali"><span class="chedaya" id="id417">417</span>. කතමෙ ධම‍්මා අව්‍යාකතා: යස‍්මිං සමයෙ
                 ලොකුත‍්තරං ඣානං භාවෙති නිය්‍යානිකං අපචයගාමිං දිට‍්ඨිගතානං පහානාය පඨමාය භූමියා පත‍්තියා විවිච‍්චෙව කාමෙහි
                 <a href="##">-පෙ-</a> පඨමං ඣානං -උපසම‍්පජ‍්ජ විහරති දුක‍්ඛාපටිපදං දන්‍ධාභිඤ‍්ඤං. තස‍්මිං සමයෙ ඵස‍්සො
@@ -2972,7 +3280,6 @@
                 එයින් කියනු ලැබෙයි: ‘එවමෙතෙසං ධම්මානං සමුදයෝ හොති’ යි.</div>
             <div class="pali sectionend">කුසලවිපාකසඞ‍්ඛාරමුලකං නිට‍්ඨිතං.</div>
             <div class="sinh sectionend">කුශලවිපාකසඞ්ඛාරමූලකය නිමි.</div>
-
             <div class="sectionheading2" id="අකුසලවිපාකසඞ්ඛාරමූලකය">II. අකුසලවිපාකසඞ්ඛාරමූලකය (සිත් 7)</div>
             <p class="sectionheading3" id="chiththaya13_1">(13) 1/2 අකුසල විපාක උපෙක්ඛා සහගත චක්ඛු විඤ්ඤාණය 418</p>
             <div class="pali"><span class="chedaya" id="id418">418</span>. කතමෙ ධම‍්මා අව්‍යාකතා: යස‍්මිං සමයෙ අකුසලස‍්ස
@@ -2994,10 +3301,10 @@
             <div class="sinh">එහි සංස්කාරප්‍රත්‍යයෙන් විඥානය කවරෙ යත්: යම් චිත්තයෙක් මනසෙක් මානසයෙක් <a href="##"> …පෙ…
                 </a> තදනුරූපමනෝවිඥානධාතුයෙක් වේ ද, මේ ‘සංස්කාරප්‍රත්‍යයෙන් විඥාන’ යි කියනු ලැබේ. එයින් කියනු ලැබෙයි. ...
                 ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
-                <p class="sectionheading3" id="chiththaya14_1">(14) 1/2 අකුසල විපාක උපෙක්ඛා සහගත සොත විඤ්ඤාණය 419</p>
-                <p class="sectionheading3" id="chiththaya15_1">(15) 1/2 අකුසල විපාක උපෙක්ඛා සහගත ඝාණවිඤ්ඤාණය 419</p>
-                <p class="sectionheading3" id="chiththaya16_1">(16) 1/2 අකුසල විපාක උපෙක්ඛා සහගත ජිව්හාවිඤ්ඤාණය 419</p>
-                <p class="sectionheading3" id="chiththaya17_1">(17) 1/2 අකුසල විපාක දුක්ඛ සහගත කායවිඤ්ඤාණය 419</p>
+            <p class="sectionheading3" id="chiththaya14_1">(14) 1/2 අකුසල විපාක උපෙක්ඛා සහගත සොත විඤ්ඤාණය 419</p>
+            <p class="sectionheading3" id="chiththaya15_1">(15) 1/2 අකුසල විපාක උපෙක්ඛා සහගත ඝාණවිඤ්ඤාණය 419</p>
+            <p class="sectionheading3" id="chiththaya16_1">(16) 1/2 අකුසල විපාක උපෙක්ඛා සහගත ජිව්හාවිඤ්ඤාණය 419</p>
+            <p class="sectionheading3" id="chiththaya17_1">(17) 1/2 අකුසල විපාක දුක්ඛ සහගත කායවිඤ්ඤාණය 419</p>
             <div class="pali"><span class="chedaya" id="id419">419</span>. කතමෙ ධම‍්මා අව්‍යාකතා: යස‍්මිං සමයෙ අකුලස‍්ස
                 කම‍්මස‍්ස කතත‍්තා උපචිතත‍්තා විපාකං සොතවිඤ‍්ඤාණං උප‍්පන‍්නං හොති උපෙක‍්ඛාසහගතං සද‍්දාරම‍්මණං <a
                     href="##">-පෙ-</a> ඝානවිඤ‍්ඤාණං උප‍්පන‍්නං හොති උපෙක‍්ඛාසහගතං ගන්‍ධාරම‍්මණං <a href="##">-පෙ-</a>
@@ -3030,8 +3337,7 @@
             <div class="sinh">එහි වේදනාප්‍රත්‍යයෙන් භවය කවරෙ යත්: වේදනාව තබා සංඥාස්කන්‍ධ ය සංස්කාරස්කන්‍ධ ය විඥානස්කන්‍ධ
                 යි. මේ ‘වේදනාප්‍රත්‍යයෙන් භව’ යි කියනු ලැබේ. <a href="##"> …පෙ… </a> එයින් කියනු ලැබෙයි ‘එවමෙතස්ස
                 කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
-
-                <p class="sectionheading3" id="chiththaya18_1">(18) 1/2 අකුසල විපාක උපෙක්ඛා සහගත සම්පටිච්ඡන විඤ්ඤාණය 420</p>
+            <p class="sectionheading3" id="chiththaya18_1">(18) 1/2 අකුසල විපාක උපෙක්ඛා සහගත සම්පටිච්ඡන විඤ්ඤාණය 420</p>
             <div class="pali"><span class="chedaya" id="id420">420</span>. කතමෙ ධම‍්මා අව්‍යාකතා: යස‍්මිං සමයෙ අකුසලස‍්ස
                 කම‍්මස‍්ස කතත‍්තා උපචිතත‍්තා විපාකා මනොධාතු උප‍්පන‍්නා හොති උපෙක‍්ඛාසහගතා රූපාරම‍්මණං වා <a
                     href="##">-පෙ-</a> ඵොට‍්ඨබ‍්බාරම‍්මණං වා යං යං වා පනාරබ‍්භ, තස‍්මිං සමයෙ සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං,
@@ -3045,7 +3351,7 @@
                 වෙයි, ස්පර්‍ශප්‍රත්‍යයෙන් වේදනාව වෙයි, වේදනාප්‍රත්‍යයෙන් අධිමෝක්‍ෂය වෙයි, අධිමෝක්‍ෂප්‍රත්‍යයෙන් භවය
                 වෙයි, භව ප්‍රත්‍යයෙන් ජාතිය වෙයි, ජාතිප්‍රත්‍යයෙන් ජරාමරණ වේ <a href="##"> …පෙ… </a> එයින් කියනු ලැබෙයි
                 ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
-                <p class="sectionheading3" id="chiththaya19_1">(19) 1/2 අකුසල විපාක උපෙක්ඛා සහගත සන්තිරණ විඤ්ඤාණය 421</p>
+            <p class="sectionheading3" id="chiththaya19_1">(19) 1/2 අකුසල විපාක උපෙක්ඛා සහගත සන්තිරණ විඤ්ඤාණය 421</p>
             <div class="pali"><span class="chedaya" id="id421">421</span>. කතමෙ ධම‍්මා අව්‍යාකතා: යස‍්මිං සමයෙ අකුසලස‍්ස
                 කම‍්මස‍්ස කතත‍්තා උපචිතත‍්තා විපාකා මනොවිඤ‍්ඤාණධාතු උප‍්පන‍්නා හොති උපෙක‍්ඛාසහගතා රූපාරම‍්මණං වා <a
                     href="##">-පෙ-</a> ධම‍්මාරම‍්මණං වා යං යං වා පනාරබ‍්භ. තස‍්මිං සමයෙ සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං,
@@ -3061,10 +3367,8 @@
                 කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
             <div class="pali sectionend">අකුසලවිපාකසඞ‍්ඛාරමුලකං නිට‍්ඨිතං.</div>
             <div class="sinh sectionend">අකුසලවිපාකසඞ්ඛාරමූලකය නිමි.</div>
-
             <div class="sectionheading2" id="ක්‍රියාසංස්කාරමූලකය">III. ක්‍රියාසංස්කාරමූලකය (සිත් 20)</div>
             <p class="sectionheading3" id="chiththaya28">(28) 1/1 උපෙක්ඛා සහගත පඤ්චද්වාරාවජ්ජන ක්‍රියා සිත 422</p>
-
             <div class="pali"><span class="chedaya" id="id422">422</span>. කතමෙ ධම‍්මා අව්‍යාකතා: යස‍්මිං සමයෙ මනොධාතු
                 උප‍්පන‍්නා හොති කිරියා නෙව කුසලා නාකුසලා න ච කම‍්මවිපාකා උපෙක‍්ඛාසහගතා රූපාරම‍්මණං වා <a
                     href="##">-පෙ-</a> ඵොට‍්ඨබ‍්බාරම‍්මණං වා, යං යං වා පනාරබ‍්භ, තස‍්මිං සමයෙ සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං,
@@ -3100,8 +3404,7 @@
             <div class="sinh">එහි අධිමෝක්‍ෂප්‍රත්‍යයෙන් භවය කවරෙ යත්: අධිමෝක්‍ෂය තබා වේදනාස්කන්‍ධ ය සංඥාස්කන්‍ධ ය
                 සංස්කාරස්කන්‍ධ ය විඥානස්කන්‍ධ යි. මේ ‘අධිමෝක්‍ෂප්‍රත්‍යයෙන් භව’ යි කියනු ලැබේ. <a href="##"> …පෙ… </a>
                 එයින් කියනු ලැබෙයි ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
-
-                <p class="sectionheading3" id="chiththaya30">(30) 1/1 සොමනස්ස සහගත හසිතුප්පාද ක්‍රියා සිත 423</p>
+            <p class="sectionheading3" id="chiththaya30">(30) 1/1 සොමනස්ස සහගත හසිතුප්පාද ක්‍රියා සිත 423</p>
             <div class="pali"><span class="chedaya" id="id423">423</span>. කතමෙ ධම‍්මා අව්‍යාකතා: යස‍්මිං සමයෙ
                 මනොවිඤ‍්ඤාණධාතු උප‍්පන‍්නා හොති කිරියා නෙව කුසලා නාකුසලා න ච කම‍්මවිපාකා සොමනසස‍්සහගතා රූපාරම‍්මණං වා <a
                     href="##">-පෙ-</a> ධම‍්මාරම‍්මණං වා යං යං වා පනාරබ‍්භ. තස‍්මිං සමයෙ සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං,
@@ -3115,7 +3418,7 @@
                 ස්පර්‍ශප්‍රත්‍යයෙන් වේදනාව වෙයි, වේදනාප්‍රත්‍යයෙන් අධිමෝක්‍ෂය වෙයි, අධිමෝක්‍ෂප්‍රත්‍යයෙන් භවය වෙයි,
                 භවප්‍රත්‍යයෙන් ජාතිය වෙයි, ජාතිප්‍රත්‍යයෙන් ජරාමරණ වේ <a href="##"> …පෙ… </a> එයින් කියනු ලැබෙයි
                 ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
-                <p class="sectionheading3" id="chiththaya29">(29) 1/1 උපෙක්ඛා සහගත මනොද්වාරාවජ්ජන ක්‍රියා සිත 424</p>
+            <p class="sectionheading3" id="chiththaya29">(29) 1/1 උපෙක්ඛා සහගත මනොද්වාරාවජ්ජන ක්‍රියා සිත 424</p>
             <div class="pali"><span class="chedaya" id="id424">424</span>. කතමෙ ධම‍්මා අව්‍යාකතා: යස‍්මිං සමයෙ
                 මනොවිඤ‍්ඤාණධාතු උප‍්පන‍්නා හොති කිරියා නෙවකුසලා නාකුසලා න ච කම‍්මවිපාකා උපෙක‍්ඛාසහගතා රූපාරම‍්මණං වා <a
                     href="##">-පෙ-</a> ධම‍්මාරම‍්මණං වා යං යං වා පනාරබ‍්භ. තස‍්මිං සමයෙ සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං,
@@ -3129,7 +3432,7 @@
                 ස්පර්‍ශප්‍රත්‍යයෙන් වේදනාව වෙයි, වේදනාප්‍රත්‍යයෙන් අධිමෝක්‍ෂය වෙයි, අධිමෝක්‍ෂප්‍රත්‍යයෙන් භවය වෙයි,
                 භවප්‍රත්‍යයෙන් ජාතිය වෙයි, ජාතිප්‍රත්‍යයෙන් ජරාමරණ වේ <a href="##"> …පෙ… </a> එයින් කියනු ලැබෙයි
                 ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
-                <p class="sectionheading3" id="chiththaya47">(47) 1/1 සෝමනස්ස සහගත ඤාණ සම්පයුත්ත අසංඛාර ක්‍රියා සිත 425</p>
+            <p class="sectionheading3" id="chiththaya47">(47) 1/1 සෝමනස්ස සහගත ඤාණ සම්පයුත්ත අසංඛාර ක්‍රියා සිත 425</p>
             <div class="pali"><span class="chedaya" id="id425">425</span>. කතමෙ ධම‍්මා අව්‍යාකතා: යස‍්මිං සමයෙ
                 මනොවිඤ‍්ඤාණධාතු උප‍්පන‍්නා හොති කිරියා නෙවකුසලා නාකුසලා න ච කම‍්මවිපාකා සොමනසස‍්සහගතා ඤාණසම‍්පයුත‍්තා
                 රූපාරම‍්මණං වා <a href="##">-පෙ-</a> ධම‍්මාරම‍්මණං වා යං යං වා පනාරබ‍්භ. තස‍්මිං සමයෙ සඞ‍්ඛාරපච‍්චයා
@@ -3144,13 +3447,13 @@
                 ප්‍රසාදප්‍රත්‍යයෙන් අධිමෝක්‍ෂය වෙයි, අධිමෝක්‍ෂප්‍රත්‍යයෙන් භවය වෙයි, භවප්‍රත්‍යයෙන් ජාතිය වෙයි,
                 ජාතිප්‍රත්‍යයෙන් ජරාමරණ වේ <a href="##"> …පෙ… </a> එයින් කියනු ලැබෙයි ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස
                 සමුදයෝ හොති’ යි.</div>
-                <p class="sectionheading3" id="chiththaya48">(48) 1/1 සෝමනස්ස සහගත ඤාණ සම්පයුත්ත සසංඛාර ක්‍රියා සිත 426</p>
-                <p class="sectionheading3" id="chiththaya49">(49) 1/1 සෝමනස්ස සහගත ඤාණ විප්පයුත්ත අසංඛාර ක්‍රියා සිත 426</p>
-                <p class="sectionheading3" id="chiththaya50">(50) 1/1 සෝමනස්ස සහගත ඤාණ විප්පයුත්ත සසංඛාර ක්‍රියා සිත 426</p>
-                <p class="sectionheading3" id="chiththaya51">(51) 1/1 උපෙක්ඛා සහගත ඤාණ සම්පයුත්ත අසංඛාර ක්‍රියා සිත 426</p>
-                <p class="sectionheading3" id="chiththaya52">(52) 1/1 උපෙක්ඛා සහගත ඤාණ සම්පයුත්ත සසංඛාර ක්‍රියා සිත 426</p>
-                <p class="sectionheading3" id="chiththaya53">(53) 1/1 උපෙක්ඛා සහගත ඤාණ සම්පයුත්ත අසංඛාර ක්‍රියා සිත 426</p>
-                <p class="sectionheading3" id="chiththaya54">(54) 1/1 උපෙක්ඛා සහගත ඤාණ සම්පයුත්ත සසංඛාර ක්‍රියා සිත 426</p>
+            <p class="sectionheading3" id="chiththaya48">(48) 1/1 සෝමනස්ස සහගත ඤාණ සම්පයුත්ත සසංඛාර ක්‍රියා සිත 426</p>
+            <p class="sectionheading3" id="chiththaya49">(49) 1/1 සෝමනස්ස සහගත ඤාණ විප්පයුත්ත අසංඛාර ක්‍රියා සිත 426</p>
+            <p class="sectionheading3" id="chiththaya50">(50) 1/1 සෝමනස්ස සහගත ඤාණ විප්පයුත්ත සසංඛාර ක්‍රියා සිත 426</p>
+            <p class="sectionheading3" id="chiththaya51">(51) 1/1 උපෙක්ඛා සහගත ඤාණ සම්පයුත්ත අසංඛාර ක්‍රියා සිත 426</p>
+            <p class="sectionheading3" id="chiththaya52">(52) 1/1 උපෙක්ඛා සහගත ඤාණ සම්පයුත්ත සසංඛාර ක්‍රියා සිත 426</p>
+            <p class="sectionheading3" id="chiththaya53">(53) 1/1 උපෙක්ඛා සහගත ඤාණ සම්පයුත්ත අසංඛාර ක්‍රියා සිත 426</p>
+            <p class="sectionheading3" id="chiththaya54">(54) 1/1 උපෙක්ඛා සහගත ඤාණ සම්පයුත්ත සසංඛාර ක්‍රියා සිත 426</p>
             <div class="pali"><span class="chedaya" id="id426">426</span>. කතමෙ ධම‍්මා අව්‍යාකතා: යස‍්මිං සමයෙ
                 මනොවිඤ‍්ඤාණධාතු උප‍්පන‍්නා හොති කිරියා නෙවකුසලා නාකුසලා න ච කම‍්මවිපාකා සොමනස‍්සසහගතා ඤාණසම‍්පයුත‍්තා
                 සසඞ‍්ඛාරෙන <a href="##">-පෙ-</a> සොමනස‍්සසහගතා ඤාණවිප‍්පයුත‍්තා <a href="##">-පෙ-</a> සොමනස‍්සසහගතා
@@ -3173,7 +3476,8 @@
                 ස්පර්‍ශප්‍රත්‍යයෙන් වේදනාව වෙයි, වේදනාප්‍රත්‍යයෙන් ප්‍රසාදය වෙයි, ප්‍රසාදප්‍රත්‍යයෙන් අධිමෝක්‍ෂය වෙයි,
                 අධිමෝක්‍ෂප්‍රත්‍යයෙන් භවය වෙයි, භවප්‍රත්‍යයෙන් ජාතිය වෙයි, ජාතිප්‍රත්‍යයෙන් ජරාමරණ වේ <a href="##"> …පෙ…
                 </a> එයින් කියනු ලැබෙයි ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
-                <p class="sectionheading3" id="chiththaya65">(65) 1/1 විතක්ක, විචාර, පීති, සුඛ, එකග්ගතා සහිත පඨමජ්ඣාන ක්‍රියා චිත්තය 427</p>
+            <p class="sectionheading3" id="chiththaya65">(65) 1/1 විතක්ක, විචාර, පීති, සුඛ, එකග්ගතා සහිත පඨමජ්ඣාන
+                ක්‍රියා චිත්තය 427</p>
             <div class="pali"><span class="chedaya" id="id427">427</span>. කතමෙ ධම‍්මා අව්‍යාකතා: යස‍්මිං සමයෙ රූපාවචරං
                 ඣානං භාවෙති කිරියං නෙවකුසලං නාකුසලං න ච කම‍්මවිපාකං දිට‍්ඨධම‍්ම සුඛවිහාරං, විවිච‍්චෙව කාමෙහි <a
                     href="##">-පෙ-</a> පඨමං ඣානං උපසම‍්පජ‍්ජ විහරති පඨවීකසිණං. තස‍්මිං සමයෙ සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං,
@@ -3188,10 +3492,13 @@
                 ප්‍රසාදප්‍රත්‍යයෙන් අධිමෝක්‍ෂය වෙයි, අධිමෝක්‍ෂප්‍රත්‍යයෙන් භවය වෙයි, භවප්‍රත්‍යයෙන් ජාතිය වෙයි,
                 ජාතිප්‍රත්‍යයෙන් ජරාමරණ වේ. <a href="##"> …පෙ… </a> එයින් කියනු ලැබෙයි ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස
                 සමුදයෝ හොති’ යි.</div>
-                <p class="sectionheading3" id="chiththaya66">(66) 1/1 විචාර, පීති, සුඛ, එකග්ගතා සහිත දුතියජ්ඣාන ක්‍රියා චිත්තය 428</p>
-                <p class="sectionheading3" id="chiththaya67">(67) 1/1 පීති, සුඛ, එකග්ගතා සහිත තතියජ්ඣාන ක්‍රියා චිත්තය 428</p>
-                <p class="sectionheading3" id="chiththaya68">(68) 1/1 සුඛ, එකග්ගතා සහිත චතුත්‍ථජ්ඣාන ක්‍රියා චිත්තය 428</p>
-                <p class="sectionheading3" id="chiththaya69">(69) 1/1 උපෙක්ඛා, එකග්ගතා සහිත පඤ්චමජ්ඣාන ක්‍රියා චිත්තය 428</p>
+            <p class="sectionheading3" id="chiththaya66">(66) 1/1 විචාර, පීති, සුඛ, එකග්ගතා සහිත දුතියජ්ඣාන ක්‍රියා
+                චිත්තය 428</p>
+            <p class="sectionheading3" id="chiththaya67">(67) 1/1 පීති, සුඛ, එකග්ගතා සහිත තතියජ්ඣාන ක්‍රියා චිත්තය 428
+            </p>
+            <p class="sectionheading3" id="chiththaya68">(68) 1/1 සුඛ, එකග්ගතා සහිත චතුත්‍ථජ්ඣාන ක්‍රියා චිත්තය 428</p>
+            <p class="sectionheading3" id="chiththaya69">(69) 1/1 උපෙක්ඛා, එකග්ගතා සහිත පඤ්චමජ්ඣාන ක්‍රියා චිත්තය 428
+            </p>
             <div class="pali"><span class="chedaya" id="id428">428</span>. කතමෙ ධම‍්මා අව්‍යාකතා: යස‍්මිං සමයෙ රූපාවචරං
                 ඣානං භාවෙති කිරියං නෙවකුසලං නාකුසලං න ච කම‍්මවිපාකං දිට‍්ඨිධම‍්ම සුඛවිහාරං, විතක‍්කවිචාරානං වූපසමා <a
                     href="##">-පෙ-</a> දුතියං ඣානං <a href="##">-පෙ-</a> චතුත්‍ථං ඣානං <a href="##">-පෙ-</a> පඨමං ඣානං
@@ -3208,11 +3515,11 @@
                 ප්‍රසාදය වෙයි, ප්‍රසාදප්‍රත්‍යයෙන් අධිමෝක්‍ෂය වෙයි, අධිමෝක්‍ෂප්‍රත්‍යයෙන් භවය වෙයි, භවප්‍රත්‍යයෙන් ජාතිය
                 වෙයි, ජාතිප්‍රත්‍යයෙන් ජරාමරණ වේ. <a href="##"> …පෙ… </a> එයින් කියනු ලැබෙයි ‘එවමෙතස්ස කේවලස්ස
                 දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
-                <p class="sectionheading3" id="chiththaya78">(78) 1/1 ආකාසානඤ්චායතන ක්‍රියා චිත්තය 429</p>
-                <p class="sectionheading3" id="chiththaya79">(79) 1/1 විඤ්ඤාණඤ්චායතන ක්‍රියා චිත්තය 429</p>
-                <p class="sectionheading3" id="chiththaya80">(80) 1/1 ආකිඤ්චඤ්ඤායතන ක්‍රියා චිත්තය 429</p>
-                <p class="sectionheading3" id="chiththaya81">(81) 1/1 නේවසඤ්ඤානාසඤ්ඤායතන ක්‍රියා චිත්තය 429</p>
-                <p class="sectionheading3">1 වාරය (පච‍්චයා)</p>
+            <p class="sectionheading3" id="chiththaya78">(78) 1/1 ආකාසානඤ්චායතන ක්‍රියා චිත්තය 429</p>
+            <p class="sectionheading3" id="chiththaya79">(79) 1/1 විඤ්ඤාණඤ්චායතන ක්‍රියා චිත්තය 429</p>
+            <p class="sectionheading3" id="chiththaya80">(80) 1/1 ආකිඤ්චඤ්ඤායතන ක්‍රියා චිත්තය 429</p>
+            <p class="sectionheading3" id="chiththaya81">(81) 1/1 නේවසඤ්ඤානාසඤ්ඤායතන ක්‍රියා චිත්තය 429</p>
+            <p class="sectionheading3">1 වාරය (පච‍්චයා)</p>
             <div class="pali"><span class="chedaya" id="id429">429</span>. කතමෙ ධම‍්මා අව්‍යාකතා: යස‍්මිං සමයෙ අරූපාවචරං
                 ඣානං භාවෙති කිරියං නෙව කුසලං නාකුසලං න ච කම‍්මවිපාකං දිට‍්ඨිධම‍්ම සුඛවිහාරං, සබ‍්බසො අකිඤ‍්චඤ‍්ඤායතනං
                 සමතික‍්කම‍්ම නෙවසඤ‍්ඤානාසඤ‍්ඤායතනසඤ‍්ඤාසහගතං සුඛස‍්ස ච පහානා <a href="##">-පෙ-</a> චතුත්‍ථං ඣානං
@@ -3228,7 +3535,7 @@
                 වේදනාව වෙයි, වේදනාප්‍රත්‍යයෙන් ප්‍රසාදය වෙයි, ප්‍රසාදප්‍රත්‍යයෙන් අධිමෝක්‍ෂය වෙයි, අධිමෝක්‍ෂප්‍රත්‍යයෙන්
                 භවය වෙයි, භවප්‍රත්‍යයෙන් ජාතිය වෙයි, ජාතිප්‍රත්‍යයෙන් ජරාමරණ වේ. <a href="##"> …පෙ… </a> එයින් කියනු
                 ලැබෙයි ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
-                <p class="sectionheading3">2 වාරය (හේතු)</p>
+            <p class="sectionheading3">2 වාරය (හේතු)</p>
             <div class="pali"><span class="chedaya" id="id430">430</span>. තස‍්මිං සමයෙ සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං
                 සඞ‍්ඛාරහෙතුකං. විඤ‍්ඤාණපච‍්චයා නාමං විඤ‍්ඤාණහෙතුකං, නාමපච‍්චයා ඡට‍්ඨායතනං නාමහෙතුකං, ඡට‍්ඨායතනපච‍්චයා
                 ඵස‍්සො ඡට‍්ඨායතනහෙතුකො, ඵස‍්සපච‍්චයා වෙදනා ඵස‍්සහෙතුකා, වෙදනාපච‍්චයා පසාදො, පසාදපච‍්චයා අධිමොක‍්ඛො,1
@@ -3240,7 +3547,7 @@
                 වේදනාප්‍රත්‍යයෙන් ප්‍රසාදය වෙයි, ප්‍රසාදප්‍රත්‍යයෙන් අධිමෝක්‍ෂය වෙයි, අධිමෝක්‍ෂප්‍රත්‍යයෙන් භවය වෙයි,
                 භවප්‍රත්‍යයෙන් ජාතිය වෙයි, ජාතිප්‍රත්‍යයෙන් ජරාමරණ වේ. <a href="##"> …පෙ… </a> එයින් කියනු ලැබෙයි
                 ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
-                <p class="sectionheading3">3 වාරය (සම‍්පයුත‍්තචතුක‍්කං)</p>
+            <p class="sectionheading3">3 වාරය (සම‍්පයුත‍්තචතුක‍්කං)</p>
             <div class="pali"><span class="chedaya" id="id431">431</span>. තස‍්මිං සමයෙ සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං
                 සඞ‍්ඛාරසම‍්පයුත‍්තං, විඤ‍්ඤාණපච‍්චයා නාමං විඤ‍්ඤාණසම‍්පයුත‍්තං, නාමපච‍්චයා ඡට‍්ඨායතනං නාමසම‍්පයුත‍්තං,
                 ඡට‍්ඨායතනපච‍්චයා ඵස‍්සො ඡට‍්ඨායතනසම‍්පයුත‍්තො, ඵස‍්සපච‍්චයා වෙදනා ඵස‍්සසම‍්පයුත‍්තා, වෙදනාපච‍්චයා පසාදො,
@@ -3252,7 +3559,7 @@
                 ස්පර්‍ශසම්ප්‍රයුක්ත වූ වේදනාව වෙයි, වේදනාප්‍රත්‍යයෙන් ප්‍රසාදය වෙයි, ප්‍රසාදප්‍රත්‍යයෙන් අධිමෝක්‍ෂය
                 වෙයි, අධිමෝක්‍ෂප්‍රත්‍යයෙන් භවය වෙයි, භවප්‍රත්‍යයෙන් ජාතිය වෙයි, ජාතිප්‍රත්‍යයෙන් ජරාමරණ වේ. <a
                     href="##"> …පෙ… </a> එයින් කියනු ලැබෙයි ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
-                    <p class="sectionheading3">4 වාරය (අඤ‍්ඤමඤ‍්ඤචතුක‍්කං)</p>
+            <p class="sectionheading3">4 වාරය (අඤ‍්ඤමඤ‍්ඤචතුක‍්කං)</p>
             <div class="pali"><span class="chedaya" id="id432">432</span>. තස‍්මිං සමයෙ සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං
                 විඤ‍්ඤාණපච‍්චයා’පි සඞ‍්ඛාරො, විඤ‍්ඤාණපච‍්චයා නාමං නාමපච‍්චයා’පි විඤ‍්ඤාණං, නාමපච‍්චයා ඡට‍්ඨායතනං
                 ඡට‍්ඨායතනපච‍්චයා’පි නාමං, ඡට‍්ඨායතනපච‍්චයා, ඵස‍්සො ඵස‍්සපපච‍්චයා’පි ඡට‍්ඨායතනං, ඵස‍්සපච‍්චයා වෙදනා
@@ -3270,18 +3577,15 @@
             <div class="sinh sectionend">ක්‍රියාසංස්කාරමූලකය නිමි.</div>
             <div class="pali sectionend">අව්‍යාකතනිද‍්දෙසො.</div>
             <div class="sinh sectionend">අව්‍යාකෘතනිර්දේශ යි.</div>
-
             <div class="sectionheading2" id="අවිජ්ජාමුලකකුසල">04 අවිජ්ජාමුලකකුසල නීද්දේශය (සිත් 21)</div>
             <p class="sectionheading3" id="chiththaya31_2">(31) 2/2 සොමනස්ස සහගත ඤාණසම්පයුත්ත අසංඛාර චිත්තය 433</p>
-
             <div class="sectionheading3 id="">1 වාරය (පච‍්චයා)</div>
-            <div class="pali"><span class="chedaya" id="id433">433</span>. කතමෙ ධම‍්මා කුසලා: යස‍්මිං සමයෙ කාමාවචරං
+            <div class=" pali"><span class="chedaya" id="id433">433</span>. කතමෙ ධම‍්මා කුසලා: යස‍්මිං සමයෙ කාමාවචරං
                 කුසලං චිත‍්තං උප‍්පන‍්නං හොති සොමනස‍්සසහගතං ඤාණසම‍්පයුත‍්තං රූපාරම‍්මණං වා <a href="##">-පෙ-</a>
                 ධම‍්මාරම‍්මණං වා යං යං වා පනාරබ‍්භ, තස‍්මිං සමයෙ අවිජ‍්ජාපච‍්චයා සඞ‍්ඛාරො, සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං,
                 විඤ‍්ඤාණපච‍්චයා නාමං, නාමපච‍්චයා ඡට‍්ඨායතනං, ඡට‍්ඨායතනපච‍්චයා ඵස‍්සො, ඵස‍්සපච‍්චයා වෙදනා, වෙදනාපච‍්චයා
                 පසාදො, පසාදපච‍්චයා අධිමොක‍්ඛො,1 අධිමොක‍්ඛපච‍්චයා භවො, භවපච‍්චයා ජාති, ජාතිපච‍්චයා ජරාමරණං. එවමෙතස‍්ස
                 කෙවලස‍්ස දුක‍්ඛක‍්ඛන්‍ධස‍්ස සමුදයො හොති.</div>
-            
             <div class="sinh"><span class="chedaya" id="id433">433</span>. කුශලධර්‍මයෝ කවරහ යත්: යම් කලෙක රූපාලම්බන
                 වේවයි <a href="##"> …පෙ… </a> ධර්‍මාලම්බන වේවයි යළි යම් යම් අරමුණක් ඇරැබැ සොම්නස් සහගත වූ
                 ඥානසම්ප්‍රයුක්ත වූ කාමාවචරකුශලචිත්තය උපදනේ වේ ද, එසමයෙහි අවිද්‍යාප්‍රත්‍යයෙන් සංස්කාරය වෙයි,
@@ -3295,8 +3599,8 @@
             <div class="sinh">එහි අවිද්‍යාප්‍රත්‍යයෙන් සංස්කාර කවරෙ යත්: යම් චේතනාවක් සඤ්චේතනාවක් සිතන ලද බවෙක් වේ ද, මේ
                 ‘අවිද්‍යාප්‍රත්‍යයෙන් සංස්කාර’ යි කියනු ලැබේ. <a href="##"> …පෙ… </a> එයින් කියනු ලැබෙයි ‘එවමෙතස්ස
                 කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
-                <div class="sectionheading3 id="">2 වාරය (පච‍්චයා)</div>
-            <div class="pali">තස‍්මිං සමයෙ අවිජ‍්ජාපච‍්චයා සඞ‍්ඛාරො, සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං, විඤ‍්ඤාණපච‍්චයා නාමං.
+            <div class="sectionheading3 id="">2 වාරය (පච‍්චයා)</div>
+            <div class=" pali">තස‍්මිං සමයෙ අවිජ‍්ජාපච‍්චයා සඞ‍්ඛාරො, සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං, විඤ‍්ඤාණපච‍්චයා නාමං.
                 නාමපච‍්චයා ඵස‍්සො, ඵස‍්සපච‍්චයා වෙදනා, වෙදනාපච‍්චයා පසාදො, පසාදපච‍්චයා අධිමොක‍්ඛො, අධිමොක‍්ඛපච‍්චයා භවො,
                 භවපච‍්චයා ජාති, ජාතිපච‍්චයා ජරාමරණං <a href="##">-පෙ-</a> තෙන වුච‍්චති එවමෙතස‍්ස කෙවලස‍්ස
                 දුක‍්ඛක‍්ඛන්‍ධස‍්ස සමුදයො හොතී’ති</div>
@@ -3305,33 +3609,34 @@
                 වේදනාප්‍රත්‍යයෙන් ප්‍රසාදය වෙයි, ප්‍රසාදප්‍රත්‍යයෙන් අධිමෝක්‍ෂය වෙයි, අධිමෝක්‍ෂප්‍රත්‍යයෙන් භවය වෙයි,
                 භවප්‍රත්‍යයෙන් ජාතිය වෙයි, ජාතිප්‍රත්‍යයෙන් ජරාමරණ වේ. <a href="##"> …පෙ… </a> එයින් කියනු ලැබෙයි
                 ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
-                <div class="sectionheading3 id="">3 වාරය (පච‍්චයා)</div>
-            <div class="pali">තස‍්මිං සමයෙ අවිජ‍්ජාපච‍්චයා සඞ‍්ඛාරො, සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං, විඤ‍්ඤාණපච‍්චයා නාමරූපං.
-                නාමරූපපච‍්චයා ඡට‍්ඨායතනං, ඡට‍්ඨායතනපච‍්චයා ඵස‍්සො, ඵස‍්සපච‍්චයා වෙදනා, වෙදනාපච‍්චයා පසාදො, පසාදපච‍්චයා
-                අධිමොක‍්ඛො, අධිමොක‍්ඛපච‍්චයා භවො, භවපච‍්චයා ජාති, ජාතිපච‍්චයා ජරාමරණං <a href="##">-පෙ-</a> තෙන වුච‍්චති
-                එවමෙතස‍්ස කෙවලස‍්ස දුක‍්ඛක‍්ඛන්‍ධස‍්ස සමුදයො හොතී’ති.</div>
+            <div class="sectionheading3 id="">3 වාරය (පච‍්චයා)</div>
+            <div class=" pali">තස‍්මිං සමයෙ අවිජ‍්ජාපච‍්චයා සඞ‍්ඛාරො, සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං, විඤ‍්ඤාණපච‍්චයා
+                නාමරූපං. නාමරූපපච‍්චයා ඡට‍්ඨායතනං, ඡට‍්ඨායතනපච‍්චයා ඵස‍්සො, ඵස‍්සපච‍්චයා වෙදනා, වෙදනාපච‍්චයා පසාදො,
+                පසාදපච‍්චයා අධිමොක‍්ඛො, අධිමොක‍්ඛපච‍්චයා භවො, භවපච‍්චයා ජාති, ජාතිපච‍්චයා ජරාමරණං <a href="##">-පෙ-</a>
+                තෙන වුච‍්චති එවමෙතස‍්ස කෙවලස‍්ස දුක‍්ඛක‍්ඛන්‍ධස‍්ස සමුදයො හොතී’ති.</div>
             <div class="sinh">එසමයෙහි අවිද්‍යාප්‍රත්‍යයෙන් සංස්කාරය වෙයි, සංස්කාරප්‍රත්‍යයෙන් විඥානය වෙයි,
                 විඥානප්‍රත්‍යයෙන් නාමරූපය වෙයි, නාමරූපප්‍රත්‍යයෙන් ෂෂ්ඨායතනය වෙයි, ෂෂ්ඨායතනප්‍රත්‍යයෙන් ස්පර්‍ශය වෙයි,
                 ස්පර්‍ශප්‍රත්‍යයෙන් වේදනාව වෙයි, වේදනාප්‍රත්‍යයෙන් ප්‍රසාදය වෙයි, ප්‍රසාදප්‍රත්‍යයෙන් අධිමෝක්‍ෂය වෙයි,
                 අධිමෝක්‍ෂප්‍රත්‍යයෙන් භවය වෙයි, භවප්‍රත්‍යයෙන් ජාතිය වෙයි, ජාතිප්‍රත්‍යයෙන් ජරාමරණ වේ. <a href="##">
                     …පෙ… </a> එයින් කියනු ලැබෙයි ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
-                    <div class="sectionheading3 id="">4 වාරය (පච‍්චයා)</div>
-            <div class="pali">තස‍්මිං සමයෙ අවිජ‍්ජාපච‍්චයා සඞ‍්ඛාරො, සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං, විඤ‍්ඤාණපච‍්චයා නාමරූපං.
-                නාමරූපපච‍්චයා සළායතනං, ඡට‍්ඨායතනපච‍්චයා ඵස‍්සො, ඵස‍්සපච‍්චයා වෙදනා, වෙදනාපච‍්චයා පසාදො, පසාදපච‍්චයා
-                අධිමොක‍්ඛො, අධිමොක‍්ඛපච‍්චයා භවො, භවපච‍්චයා ජාති, ජාතිපච‍්චයා ජරාමරණං <a href="##">-පෙ-</a> තෙන වුච‍්චති
-                ‘එවමෙතස‍්ස කෙවලස‍්ස දුක‍්ඛක‍්ඛන්‍ධස‍්ස සමුදයො හොතී’ති.</div>
+            <div class="sectionheading3 id="">4 වාරය (පච‍්චයා)</div>
+            <div class=" pali">තස‍්මිං සමයෙ අවිජ‍්ජාපච‍්චයා සඞ‍්ඛාරො, සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං, විඤ‍්ඤාණපච‍්චයා
+                නාමරූපං. නාමරූපපච‍්චයා සළායතනං, ඡට‍්ඨායතනපච‍්චයා ඵස‍්සො, ඵස‍්සපච‍්චයා වෙදනා, වෙදනාපච‍්චයා පසාදො,
+                පසාදපච‍්චයා අධිමොක‍්ඛො, අධිමොක‍්ඛපච‍්චයා භවො, භවපච‍්චයා ජාති, ජාතිපච‍්චයා ජරාමරණං <a href="##">-පෙ-</a>
+                තෙන වුච‍්චති ‘එවමෙතස‍්ස කෙවලස‍්ස දුක‍්ඛක‍්ඛන්‍ධස‍්ස සමුදයො හොතී’ති.</div>
             <div class="sinh">එසමයෙහි අවිද්‍යාප්‍රත්‍යයෙන් සංස්කාරය වෙයි, සංස්කාරප්‍රත්‍යයෙන් විඥානය වෙයි,
                 විඥානප්‍රත්‍යයෙන් නාමරූපය වෙයි, නාමරූපප්‍රත්‍යයෙන් ෂඩායතනය වෙයි, ෂෂ්ඨායතනප්‍රත්‍යයෙන් ස්පර්‍ශය වෙයි,
                 ස්පර්‍ශප්‍රත්‍යයෙන් වේදනාව වෙයි, වේදනාප්‍රත්‍යයෙන් ප්‍රසාදය වෙයි, ප්‍රසාදප්‍රත්‍යයෙන් අධිමෝක්‍ෂය වෙයි,
-                අධිමෝක්‍ෂප්‍රත්‍යයෙන් භවය වෙයි, භවප්‍රත්‍යයෙන් ජාතිය වෙයි, ජාතිප්‍රත්‍යයෙන් ජරාමරණ වේ. <a href="##">        …පෙ… </a> එයින් කියනු ලැබෙයි ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
-                <p class="sectionheading3" id="chiththaya32_2">(32) 2/2 සොමනස්ස සහගත ඤාණසම්පයුත්ත සසංඛාර චිත්තය 434</p>
-                <p class="sectionheading3" id="chiththaya33_2">(33) 2/2 සොමනස්ස සහගත ඤාණවිප්පයුත්ත අසංඛාර චිත්තය 434</p>
-                <p class="sectionheading3" id="chiththaya34_2">(34) 2/2 සොමනස්ස සහගත ඤාණවිප්පයුත්ත සසංඛාර චිත්තය 434</p>
-                <p class="sectionheading3" id="chiththaya35_2">(35) 2/2 උපෙක්ඛා සහගත ඤාණසම්පයුත්ත අසංඛාර චිත්තය 434</p>
-                <p class="sectionheading3" id="chiththaya36_2">(36) 2/2 උපෙක්ඛා සහගත ඤාණසම්පයුත්ත සසංඛාර චිත්තය 434</p>
-                <p class="sectionheading3" id="chiththaya37_2">(37) 2/2 උපෙක්ඛා සහගත ඤාණවිප්පයුත්ත අසංඛාර චිත්තය 434</p>
-                <p class="sectionheading3" id="chiththaya38_2">(38) 2/2 උපෙක්ඛා සහගත ඤාණවිප්පයුත්ත සසංඛාර චිත්තය 434</p>
-                <div class="pali"><span class="chedaya" id="id434">434</span>. කතමෙ ධම‍්මා කුසලා: යස‍්මිං සමයෙ කාමාවචරං
+                අධිමෝක්‍ෂප්‍රත්‍යයෙන් භවය වෙයි, භවප්‍රත්‍යයෙන් ජාතිය වෙයි, ජාතිප්‍රත්‍යයෙන් ජරාමරණ වේ. <a href="##">
+                    …පෙ… </a> එයින් කියනු ලැබෙයි ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
+            <p class="sectionheading3" id="chiththaya32_2">(32) 2/2 සොමනස්ස සහගත ඤාණසම්පයුත්ත සසංඛාර චිත්තය 434</p>
+            <p class="sectionheading3" id="chiththaya33_2">(33) 2/2 සොමනස්ස සහගත ඤාණවිප්පයුත්ත අසංඛාර චිත්තය 434</p>
+            <p class="sectionheading3" id="chiththaya34_2">(34) 2/2 සොමනස්ස සහගත ඤාණවිප්පයුත්ත සසංඛාර චිත්තය 434</p>
+            <p class="sectionheading3" id="chiththaya35_2">(35) 2/2 උපෙක්ඛා සහගත ඤාණසම්පයුත්ත අසංඛාර චිත්තය 434</p>
+            <p class="sectionheading3" id="chiththaya36_2">(36) 2/2 උපෙක්ඛා සහගත ඤාණසම්පයුත්ත සසංඛාර චිත්තය 434</p>
+            <p class="sectionheading3" id="chiththaya37_2">(37) 2/2 උපෙක්ඛා සහගත ඤාණවිප්පයුත්ත අසංඛාර චිත්තය 434</p>
+            <p class="sectionheading3" id="chiththaya38_2">(38) 2/2 උපෙක්ඛා සහගත ඤාණවිප්පයුත්ත සසංඛාර චිත්තය 434</p>
+            <div class="pali"><span class="chedaya" id="id434">434</span>. කතමෙ ධම‍්මා කුසලා: යස‍්මිං සමයෙ කාමාවචරං
                 කුසලං චිත‍්තං උප‍්පන‍්නං හොති සොමනසස‍්සහගතං ඤාණසම‍්පයුත‍්තං සසඞ‍්ඛාරෙන <a href="##">-පෙ-</a>
                 සොමනස‍්සසහගතං ඤාණවිප‍්පයුත‍්තං <a href="##">-පෙ-</a> සොමනස‍්සසහගතං ඤාණවිප‍්පයුත‍්තං සසඞ‍්ඛාරෙන <a
                     href="##">-පෙ-</a> උපෙක‍්ඛාසහගතං ඤාණසම‍්පයුත‍්තං <a href="##">-පෙ-</a> උපෙක‍්ඛාසහගතං ඤාණසම‍්පයුත‍්තං
@@ -3352,8 +3657,9 @@
                 විඥානප්‍රත්‍යයෙන් නාමය වෙයි, නාමප්‍රත්‍යයෙන් ෂෂ්ඨායතනය වෙයි, ෂෂ්ඨායතනප්‍රත්‍යයෙන් ස්පර්‍ශය වෙයි,
                 ස්පර්‍ශප්‍රත්‍යයෙන් වේදනාව වෙයි, වේදනාප්‍රත්‍යයෙන් ප්‍රසාදය වෙයි, ප්‍රසාදප්‍රත්‍යයෙන් අධිමෝක්‍ෂය වෙයි,
                 අධිමෝක්‍ෂප්‍රත්‍යයෙන් භවය වෙයි, භවප්‍රත්‍යයෙන් ජාතිය වෙයි, ජාතිප්‍රත්‍යයෙන් ජරාමරණ වේ. <a href="##">
-                …පෙ… </a> එයින් කියනු ලැබෙයි ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
-                <p class="sectionheading3" id="chiththaya55_2">(55) 2/2 විතක්ක, විචාර, පීති, සුඛ, එකග්ගතා, සහිත පඨමජ්ඣාන කුසල චිත්තය 435</p>
+                    …පෙ… </a> එයින් කියනු ලැබෙයි ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
+            <p class="sectionheading3" id="chiththaya55_2">(55) 2/2 විතක්ක, විචාර, පීති, සුඛ, එකග්ගතා, සහිත පඨමජ්ඣාන
+                කුසල චිත්තය 435</p>
             <div class="pali"><span class="chedaya" id="id435">435</span>. කතමෙ ධම‍්මා කුසලා: යස‍්මිං සමයෙ රූපූපපත‍්තියා
                 මග‍්ගං භාවෙති විවිච‍්චෙව කාමෙහි <a href="##">-පෙ-</a> පඨමං ඣානං උපසම‍්පජ‍්ජ විහරති පඨවීකසිණං. තස‍්මිං
                 සමයෙ අවිජ‍්ජාපච‍්චයා සඞ‍්ඛාරො, සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං, විඤ‍්ඤාණපච‍්චයා නාමං, නාමපච‍්චයා ඡට‍්ඨායතනං,
@@ -3367,10 +3673,12 @@
                 වෙයි, වේදනාප්‍රත්‍යයෙන් ප්‍රසාදය වෙයි, ප්‍රසාදප්‍රත්‍යයෙන් අධිමෝක්‍ෂය වෙයි, අධිමෝක්‍ෂප්‍රත්‍යයෙන් භවය
                 වෙයි, භවප්‍රත්‍යයෙන් ජාතිය වෙයි, ජාතිප්‍රත්‍යයෙන් ජරාමරණ වේ. <a href="##"> …පෙ… </a> එයින් කියනු ලැබෙයි
                 ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
-                <p class="sectionheading3" id="chiththaya56_2">(56) 2/2 විචාර, පීති, සුඛ, එකග්ගතා සහිත දුතියජ්ඣාන කුසල චිත්තය 436</p>
-                <p class="sectionheading3" id="chiththaya57_2">(57) 2/2 පීති, සුඛ, එකග්ගතා සහිත තතියජ්ඣාන කුසල චිත්තය 436</p>
-                <p class="sectionheading3" id="chiththaya58_2">(58) 2/2 සුඛ, එකග්ගතා සහිත චතුත්‍ථජ්ඣාන කුසල චිත්තය 436</p>
-                <p class="sectionheading3" id="chiththaya59_2">(59) 2/2 උපෙක්ඛා, එකග්ගතා සහිත පඤ්චමජ්ඣාන කුසල චිත්තය 436</p>
+            <p class="sectionheading3" id="chiththaya56_2">(56) 2/2 විචාර, පීති, සුඛ, එකග්ගතා සහිත දුතියජ්ඣාන කුසල
+                චිත්තය 436</p>
+            <p class="sectionheading3" id="chiththaya57_2">(57) 2/2 පීති, සුඛ, එකග්ගතා සහිත තතියජ්ඣාන කුසල චිත්තය 436
+            </p>
+            <p class="sectionheading3" id="chiththaya58_2">(58) 2/2 සුඛ, එකග්ගතා සහිත චතුත්‍ථජ්ඣාන කුසල චිත්තය 436</p>
+            <p class="sectionheading3" id="chiththaya59_2">(59) 2/2 උපෙක්ඛා, එකග්ගතා සහිත පඤ්චමජ්ඣාන කුසල චිත්තය 436</p>
             <div class="pali"><span class="chedaya" id="id436">436</span>. කතමෙ ධම‍්මා කුසලා: යස‍්මිං සමයෙ රූපූපපත‍්තියා
                 මග‍්ගං භාවෙති. විතක‍්කවිචාරානං වූපසමා <a href="##">-පෙ-</a> දුතියං ඣානං <a href="##">-පෙ-</a> තතියං ඣානං
                 <a href="##">-පෙ-</a> චතුත්‍ථං ඣානං <a href="##">-පෙ-</a> පඨමං ඣානං <a href="##">-පෙ-</a> පඤ‍්චමං ඣානං
@@ -3387,10 +3695,10 @@
                 ප්‍රසාදප්‍රත්‍යයෙන් අධිමෝක්‍ෂය වෙයි, අධිමෝක්‍ෂප්‍රත්‍යයෙන් භවය වෙයි, භවප්‍රත්‍යයෙන් ජාතිය වෙයි,
                 ජාතිප්‍රත්‍යයෙන් ජරාමරණ වේ. <a href="##"> …පෙ… </a> එයින් කියනු ලැබෙයි ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස
                 සමුදයෝ හොති’ යි.</div>
-                <p class="sectionheading3" id="chiththaya70_2">(70) 2/2 ආකාසානඤ්චායතන කුසල චිත්තය 437</p>
-                <p class="sectionheading3" id="chiththaya71_2">(71) 2/2 විඤ්ඤාණඤ්චායතන කුසල චිත්තය 437</p>
-                <p class="sectionheading3" id="chiththaya72_2">(72) 2/2 ආකිඤ්චඤ්ඤායතන කුසල චිත්තය 437</p>
-                <p class="sectionheading3" id="chiththaya73_2">(73) 2/2 නෙවසඤ්ඤානාසඤ්ඤායතන කුසල චිත්තය 437</p>
+            <p class="sectionheading3" id="chiththaya70_2">(70) 2/2 ආකාසානඤ්චායතන කුසල චිත්තය 437</p>
+            <p class="sectionheading3" id="chiththaya71_2">(71) 2/2 විඤ්ඤාණඤ්චායතන කුසල චිත්තය 437</p>
+            <p class="sectionheading3" id="chiththaya72_2">(72) 2/2 ආකිඤ්චඤ්ඤායතන කුසල චිත්තය 437</p>
+            <p class="sectionheading3" id="chiththaya73_2">(73) 2/2 නෙවසඤ්ඤානාසඤ්ඤායතන කුසල චිත්තය 437</p>
             <div class="pali"><span class="chedaya" id="id437">437</span>. කතමෙ ධම‍්මා කුසලා: යස‍්මිං සමයෙ
                 අරූපූපපත‍්තියා මග‍්ගං භාවෙති. සබ‍්බසො ආකිඤ‍්චඤ‍්ඤායතනං සමතික‍්කම‍්ම නෙවසඤ‍්ඤානාසඤ‍්ඤායතනසඤ‍්ඤාසහගතං
                 සුඛස‍්ස ච පහානා <a href="##">-පෙ-</a> චතුත්‍ථං ඣානං උපසම‍්පජ‍්ජ විහරති. තස‍්මිං සමයෙ අවිජ‍්ජාපච‍්චයා
@@ -3406,12 +3714,10 @@
                 වේදනාප්‍රත්‍යයෙන් ප්‍රසාදය වෙයි, ප්‍රසාදප්‍රත්‍යයෙන් අධිමෝක්‍ෂය වෙයි, අධිමෝක්‍ෂප්‍රත්‍යයෙන් භවය වෙයි,
                 භවප්‍රත්‍යයෙන් ජාතිය වෙයි, ජාතිප්‍රත්‍යයෙන් ජරාමරණ වේ. <a href="##"> …පෙ… </a> එයින් කියනු ලැබෙයි
                 ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
-                <p class="sectionheading3" id="chiththaya82_2">(82) 2/2 සොතාපත්ති මග්ග චිත්තය 438</p>
-                <p class="sectionheading3" id="chiththaya83_2">(83) 2/2 සකදාගාමි මග්ග චිත්තය 438</p>
-                <p class="sectionheading3" id="chiththaya84_2">(84) 2/2 අනාගාමි මග්ග චිත්තය 438</p>
-                <p class="sectionheading3" id="chiththaya85_2">(85) 2/2 අරහත්ත මග්ග චිත්තය 438</p>
-
-      
+            <p class="sectionheading3" id="chiththaya82_2">(82) 2/2 සොතාපත්ති මග්ග චිත්තය 438</p>
+            <p class="sectionheading3" id="chiththaya83_2">(83) 2/2 සකදාගාමි මග්ග චිත්තය 438</p>
+            <p class="sectionheading3" id="chiththaya84_2">(84) 2/2 අනාගාමි මග්ග චිත්තය 438</p>
+            <p class="sectionheading3" id="chiththaya85_2">(85) 2/2 අරහත්ත මග්ග චිත්තය 438</p>
             <div class="pali"><span class="chedaya" id="id438">438</span>. කතමෙ ධම‍්මා කුසලා: යස‍්මිං සමයෙ ලොකුත‍්තරං
                 ඣානං භාවෙති නිය්‍යානිකං අපචයගාමිං දිට‍්ඨිගතානං පහානාය පඨමාය භූමියා පත‍්තියා විවිච‍්චෙ ව කාමෙහි <a
                     href="##">-පෙ-</a> පඨමං ඣානං උපසම‍්පජ‍්ජ විහරති දුක‍්ඛාපටිපදං දන්‍ධාභිඤ‍්ඤං, තස‍්මිං සමයෙ
@@ -3433,7 +3739,6 @@
                 සමාගමය වෙයි, සමෝධානය වෙයි, පහළවීම වේ. එහෙයින් කියනු ලැබෙයි ‘එවමෙතෙසං ධම්මානං සමුදයෝ හොති’ යි.</div>
             <div class="sectionheading2" id="කුසලවිපාකමූලකං">05 කුසලවිපාකමූලකං නීද්දේශය (හිත් 29)</div>
             <p class="sectionheading3" id="chiththaya20_2">(20) 2/2 කුසල විපාක උපෙක්ඛා සහගත චක්ඛු විඤ්ඤාණය 439</p>
-            
             <div class="pali"><span class="chedaya" id="id439">439</span>. කතමෙ ධම‍්මා අව්‍යාකතා: යස‍්මිං සමයෙ
                 කාමාවචරස‍්ස කුසලස‍්ස කම‍්මස‍්ස කතත‍්තා උපචිතත‍්තා විපාකං චක‍්ඛුවිඤ‍්ඤාණං උප‍්පන‍්නං හොති උපෙක‍්ඛාසහගතං
                 රූපාරම‍්මණං, තස‍්මිං සමයෙ කුසලමූලපච‍්චයා සඞ‍්ඛාරො, සඞ‍්ඛාරපච‍්චයා විඤ‍්ඤාණං, විඤ‍්ඤාණපච‍්චයා නාමං,
@@ -3451,12 +3756,10 @@
             <div class="sinh">එහි කුශලමූලප්‍රත්‍යයෙන් සංස්කාර කවරෙ යත්: යම් චේතනාවක් සඤ්චේතනාවක් චේතයිත බවෙක් වේ ද, මේ
                 ‘කුශලමූලප්‍රත්‍යයෙන් සංස්කාර’ යි කියනු ලැබේ. <a href="##"> …පෙ… </a> එහෙයින් කියනු ලැබෙයි ‘එවමෙතස්ස
                 කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
-
-                <p class="sectionheading3" id="chiththaya21_2">(21) 2/2 කුසල විපාක උපෙක්ඛා සහගත සොත විඤ්ඤාණය 440</p>
-                <p class="sectionheading3" id="chiththaya22_2">(22) 2/2 කුසල විපාක උපෙක්ඛා සහගත ඝාණ විඤ්ඤාණය 440</p>
-                <p class="sectionheading3" id="chiththaya23_2">(23) 2/2 කුසල විපාක උපෙක්ඛා සහගත ජිව්හා විඤ්ඤාණය 440</p>
-                <p class="sectionheading3" id="chiththaya24_2">(24) 2/2 කුසල විපාක සුඛ සහගත කාය විඤ්ඤාණය 440</p>
-                
+            <p class="sectionheading3" id="chiththaya21_2">(21) 2/2 කුසල විපාක උපෙක්ඛා සහගත සොත විඤ්ඤාණය 440</p>
+            <p class="sectionheading3" id="chiththaya22_2">(22) 2/2 කුසල විපාක උපෙක්ඛා සහගත ඝාණ විඤ්ඤාණය 440</p>
+            <p class="sectionheading3" id="chiththaya23_2">(23) 2/2 කුසල විපාක උපෙක්ඛා සහගත ජිව්හා විඤ්ඤාණය 440</p>
+            <p class="sectionheading3" id="chiththaya24_2">(24) 2/2 කුසල විපාක සුඛ සහගත කාය විඤ්ඤාණය 440</p>
             <div class="pali"><span class="chedaya" id="id440">440</span>. කතමෙ ධම‍්මා අව්‍යාකතා: යස‍්මිං සමයෙ
                 කාමාවචරස‍්ස කුසලස‍්ස කම‍්මස‍්ස කතත‍්තා උපචිතත‍්තා විපාකං සොතවිඤ‍්ඤාණං උප‍්පන‍්නං හොති උපෙක‍්ඛාසහගතං
                 සද‍්දාරම‍්මණං <a href="##">-පෙ-</a> ඝානවිඤ‍්ඤාණං උප‍්පන‍්නං හොති උපෙක‍්ඛාසහගතං ගන්‍ධාරම‍්මණං <a
@@ -3488,8 +3791,8 @@
                 සංස්කාරය වෙයි, සංස්කාරප්‍රත්‍යයෙන් විඥානය වෙයි, විඥානප්‍රත්‍යයෙන් නාමය වෙයි, නාමප්‍රත්‍යයෙන් ෂෂ්ඨායතනය
                 වෙයි, ෂෂ්ඨායතනප්‍රත්‍යයෙන් ස්පර්‍ශය වෙයි, ස්පර්‍ශප්‍රත්‍යයෙන් වේදනාව වෙයි, වේදනාප්‍රත්‍යයෙන් අධිමෝක්‍ෂය
                 වෙයි, අධිමෝක්‍ෂප්‍රත්‍යයෙන් භවය වෙයි, භවප්‍රත්‍යයෙන් ජාතිය වෙයි, ජාතිප්‍රත්‍යයෙන් ජරාමරණ වේ. <a
-                href="##"> …පෙ… </a> එයින් කියනු ලැබෙයි ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
-                <p class="sectionheading3" id="chiththaya26_2">(26) 2/2 කුසල විපාක සොමනස්ස සහගත සන්තීරණ චිත්තය 442</p>
+                    href="##"> …පෙ… </a> එයින් කියනු ලැබෙයි ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
+            <p class="sectionheading3" id="chiththaya26_2">(26) 2/2 කුසල විපාක සොමනස්ස සහගත සන්තීරණ චිත්තය 442</p>
             <div class="pali"><span class="chedaya" id="id442">442</span>. කතමෙ ධම‍්මා අව්‍යාකතා: යස‍්මිං සමයෙ
                 කාමාවචරස‍්ස කුසලස‍්ස කම‍්මස‍්ස කතත‍්තා උපචිතත‍්තා විපාකා මනොවිඤ‍්ඤාණධාතු උප‍්පන‍්නා හොති සොමනස‍්සසහගතා
                 රූපාරම‍්මණං වා <a href="##">-පෙ-</a> ධම‍්මාරම‍්මණං වා යං යං වා පනාරබ‍්භ, තස‍්මිං සමයෙ කුසලමූලපච‍්චයා
@@ -3502,8 +3805,8 @@
                 වෙයි, සංස්කාරප්‍රත්‍යයෙන් විඥානය වෙයි, විඥානප්‍රත්‍යයෙන් නාමය වෙයි, නාමප්‍රත්‍යයෙන් ෂෂ්ඨායතනය වෙයි,
                 ෂෂ්ඨායතනප්‍රත්‍යයෙන් ස්පර්‍ශය වෙයි, ස්පර්‍ශප්‍රත්‍යයෙන් වේදනාව වෙයි, වේදනාප්‍රත්‍යයෙන් අධිමෝක්‍ෂය වෙයි,
                 අධිමෝක්‍ෂප්‍රත්‍යයෙන් භවය වෙයි, භවප්‍රත්‍යයෙන් ජාතිය වෙයි, ජාතිප්‍රත්‍යයෙන් ජරාමරණ වේ. <a href="##">
-                …පෙ… </a> එයින් කියනු ලැබෙයි ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
-                <p class="sectionheading3" id="chiththaya27_2">(27) 2/2 කුසල විපාක උපෙක්ඛා සහගත සන්තීරණ චිත්තය 443</p>
+                    …පෙ… </a> එයින් කියනු ලැබෙයි ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
+            <p class="sectionheading3" id="chiththaya27_2">(27) 2/2 කුසල විපාක උපෙක්ඛා සහගත සන්තීරණ චිත්තය 443</p>
             <div class="pali"><span class="chedaya" id="id443">443</span>. කතමෙ ධම‍්මා අව්‍යාකතා: යස‍්මිං සමයෙ
                 කාමාවචරස‍්ස කුසලස‍්ස කම‍්මස‍්ස කතත‍්තා උපචිතත‍්තා විපාකා මනොවිඤ‍්ඤාණධාතු උප‍්පන‍්නා හොති උපෙක‍්ඛාසහගතා
                 රූපාරම‍්මණං වා <a href="##">-පෙ-</a> ධම‍්මාරම‍්මණං වා යං යං වා පනාරබ‍්භ, තස‍්මිං සමයෙ කුසලමූලපච‍්චයා
@@ -3523,7 +3826,8 @@
             <div class="sinh">එහි කුශලමූලප්‍රත්‍යයෙන් සංස්කාර කවරෙ යත්: යම් චේතනාවක් සඤ්චේතනාවක් චේතයිත බවෙක් වේ ද, මේ
                 ‘කුශලමූලප්‍රත්‍යයෙන් සංස්කාර’ යි කියනු ලැබේ. <a href="##"> …පෙ… </a> එයින් කියනු ලැබෙයි ‘එවමෙතස්ස
                 කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
-                <p class="sectionheading3" id="chiththaya31_2">(31 or 39??) 2/2 සොමනස්ස සහගත ඤාණසම්පයුත්ත අසංඛාර විපාක චිත්තය 444</p>
+            <p class="sectionheading3" id="chiththaya31_2">(31 or 39??) 2/2 සොමනස්ස සහගත ඤාණසම්පයුත්ත අසංඛාර විපාක
+                චිත්තය 444</p>
             <div class="pali"><span class="chedaya" id="id444">444</span>. කතමෙ ධම‍්මා අව්‍යාකතා: යස‍්මිං සමයෙ
                 කාමාවචරස‍්ස කුසලස‍්ස කම‍්මස‍්ස කතත‍්තා උපචිතත‍්තා විපාකා මනොවිඤ‍්ඤාණධාතු උප‍්පන‍්නා හොති සොමනස‍්සසහගතා
                 ඤාණසම‍්පයුත‍්තා රූපාරම‍්මණං වා <a href="##">-පෙ-</a> ධම‍්මාරම‍්මණං වා යං යං වා පනාරබ‍්භ. තස‍්මිං සමයෙ
@@ -3539,14 +3843,20 @@
                 වේදනාප්‍රත්‍යයෙන් ප්‍රසාදය වෙයි, ප්‍රසාදප්‍රත්‍යයෙන් අධිමෝක්‍ෂය වෙයි, අධිමෝක්‍ෂප්‍රත්‍යයෙන් භවය වෙයි,
                 භවප්‍රත්‍යයෙන් ජාතිය වෙයි, ජාතිප්‍රත්‍යයෙන් ජරාමරණ වේ. <a href="##"> …පෙ… </a> එයින් කියනු ලැබෙයි
                 ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
-                <p class="sectionheading3" id="chiththaya32_2">(32 ??) 2/2 සොමනස්ස සහගත ඤාණසම්පයුත්ත සසංඛාර විපාක චිත්තය 445</p>
-                <p class="sectionheading3" id="chiththaya33_2">(33 ??) 2/2 සොමනස්ස සහගත ඤාණවිප්පයුත්ත අසංඛාර විපාක චිත්තය 445</p>
-                <p class="sectionheading3" id="chiththaya34_2">(34 ??) 2/2 සොමනස්ස සහගත ඤාණවිප්පයුත්ත සසංඛාර විපාක චිත්තය 445</p>
-                <p class="sectionheading3" id="chiththaya35_2">(35 ??) 2/2 උපෙක්ඛා සහගත ඤාණසම්පයුත්ත අසංඛාර විපාක චිත්තය 445</p>
-                <p class="sectionheading3" id="chiththaya36_2">(36 ??) 2/2 උපෙක්ඛා සහගත ඤාණසම්පයුත්ත සසංඛාර විපාක චිත්තය 445</p>
-                <p class="sectionheading3" id="chiththaya37_2">(37 ??) 2/2 උපෙක්ඛා සහගත ඤාණවිප්පයුත්ත අසංඛාර විපාක චිත්තය 445</p>
-                <p class="sectionheading3" id="chiththaya38_2">(38 ??) 2/2 උපෙක්ඛා සහගත ඤාණවිප්පයුත්ත සසංඛාර විපාක චිත්තය 445</p>
-
+            <p class="sectionheading3" id="chiththaya32_2">(32 ??) 2/2 සොමනස්ස සහගත ඤාණසම්පයුත්ත සසංඛාර විපාක චිත්තය 445
+            </p>
+            <p class="sectionheading3" id="chiththaya33_2">(33 ??) 2/2 සොමනස්ස සහගත ඤාණවිප්පයුත්ත අසංඛාර විපාක චිත්තය
+                445</p>
+            <p class="sectionheading3" id="chiththaya34_2">(34 ??) 2/2 සොමනස්ස සහගත ඤාණවිප්පයුත්ත සසංඛාර විපාක චිත්තය
+                445</p>
+            <p class="sectionheading3" id="chiththaya35_2">(35 ??) 2/2 උපෙක්ඛා සහගත ඤාණසම්පයුත්ත අසංඛාර විපාක චිත්තය 445
+            </p>
+            <p class="sectionheading3" id="chiththaya36_2">(36 ??) 2/2 උපෙක්ඛා සහගත ඤාණසම්පයුත්ත සසංඛාර විපාක චිත්තය 445
+            </p>
+            <p class="sectionheading3" id="chiththaya37_2">(37 ??) 2/2 උපෙක්ඛා සහගත ඤාණවිප්පයුත්ත අසංඛාර විපාක චිත්තය
+                445</p>
+            <p class="sectionheading3" id="chiththaya38_2">(38 ??) 2/2 උපෙක්ඛා සහගත ඤාණවිප්පයුත්ත සසංඛාර විපාක චිත්තය
+                445</p>
             <div class="pali"><span class="chedaya" id="id445">445</span>. කතමෙ ධම‍්මා අව්‍යාකතා: යස‍්මිං සමයෙ
                 කාමාවචරස‍්ස කුසලස‍්ස කම‍්මස‍්ස කතත‍්තා උපචිතත‍්තා විපාකා මනොවිඤ‍්ඤාණධාතු උප‍්පන‍්නා හොති සොමනස‍්සසහගතා
                 ඤාණසම‍්පයුත‍්තා සසඞ‍්ඛාරෙන <a href="##">-පෙ-</a> සොමනස‍්සසහගතා ඤාණවිප‍්පයුත‍්තා <a href="##">-පෙ-</a>
@@ -3570,7 +3880,8 @@
                 වේදනාප්‍රත්‍යයෙන් ප්‍රසාදය වෙයි, ප්‍රසාදප්‍රත්‍යයෙන් අධිමෝක්‍ෂය වෙයි, අධිමෝක්‍ෂප්‍රත්‍යයෙන් භවය වෙයි,
                 භවප්‍රත්‍යයෙන් ජාතිය වෙයි, ජාතිප්‍රත්‍යයෙන් ජරාමරණ වේ. <a href="##"> …පෙ… </a> එයින් කියනු ලැබෙයි
                 ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
-                <p class="sectionheading3" id="chiththaya60_2">(60) 2/2 විතක්ක, විචාර, පීති, සුඛ, එකග්ගතා සහිත පඨමජ්ඣාන විපාක චිත්තය 446</p>
+            <p class="sectionheading3" id="chiththaya60_2">(60) 2/2 විතක්ක, විචාර, පීති, සුඛ, එකග්ගතා සහිත පඨමජ්ඣාන
+                විපාක චිත්තය 446</p>
             <div class="pali"><span class="chedaya" id="id446">446</span>. කතමෙ ධම‍්මා අව්‍යාකතා: යස‍්මිං සමයෙ
                 රූපූපපත‍්තියා මග‍්ගං භාවෙති විවිච‍්චෙව කාමෙහි <a href="##">-පෙ-</a> පඨමං ඣානං උපසම‍්පජ‍්ජ විහරති පඨවී
                 කසිණං. තස‍්මිං සමයෙ ඵස‍්සො හොති <a href="##">-පෙ-</a> අවික‍්ඛෙපො හොති, ඉමෙ ධම‍්මා කුසලා. තස‍්සෙ’ව
@@ -3586,11 +3897,15 @@
                 පඨවිකසිණප්‍රථමධ්‍යානයට පැමිණ වෙසේ ද, එසමයෙහි කුශලමූලප්‍රත්‍යයෙන් සංස්කාරය වෙයි, සංස්කාරප්‍රත්‍යයෙන්
                 විඥානය වෙයි, විඥානප්‍රත්‍යයෙන් නාමය වෙයි, නාමප්‍රත්‍යයෙන් ෂෂ්ඨායතනය වෙයි, ෂෂ්ඨායතනප්‍රත්‍යයෙන් ස්පර්‍ශය
                 වෙයි, ස්පර්‍ශප්‍රත්‍යයෙන් වේදනාව වෙයි, වේදනාප්‍රත්‍යයෙන් ප්‍රසාදය වෙයි, ප්‍රසාදප්‍රත්‍යයෙන් අධිමෝක්‍ෂය
-                වෙයි, අධිමෝක්‍ෂප්‍රත්‍යයෙන් භවය වෙයි, භවප්‍රත්‍යයෙන් ජාතිය වෙයි, ජාතිප්‍රත්‍යයෙන් ජරාමරණ වේ. <a href="##"> …පෙ… </a> එයින් කියනු ලැබෙයි ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
-                <p class="sectionheading3" id="chiththaya61_2">(61) 2/2 විචාර, පීති, සුඛ, එකග්ගතා සහිත දුතියජ්ඣාන විපාක චිත්තය 447</p>
-                <p class="sectionheading3" id="chiththaya62_2">(62) 2/2 පීති, සුඛ, එකග්ගතා සහිත තතියජ්ඣාන විපාක චිත්තය 447</p>
-                <p class="sectionheading3" id="chiththaya63_2">(63) 2/2 සුඛ, එකග්ගතා සහිත චතුත්‍ථජ්ඣාන විපාක චිත්තය 447</p>
-                <p class="sectionheading3" id="chiththaya64_2">(64) 2/2 උපෙක්ඛා, එකග්ගතා සහිත පඤ්චමජ්ඣාන විපාක චිත්තය 447</p>
+                වෙයි, අධිමෝක්‍ෂප්‍රත්‍යයෙන් භවය වෙයි, භවප්‍රත්‍යයෙන් ජාතිය වෙයි, ජාතිප්‍රත්‍යයෙන් ජරාමරණ වේ. <a
+                    href="##"> …පෙ… </a> එයින් කියනු ලැබෙයි ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
+            <p class="sectionheading3" id="chiththaya61_2">(61) 2/2 විචාර, පීති, සුඛ, එකග්ගතා සහිත දුතියජ්ඣාන විපාක
+                චිත්තය 447</p>
+            <p class="sectionheading3" id="chiththaya62_2">(62) 2/2 පීති, සුඛ, එකග්ගතා සහිත තතියජ්ඣාන විපාක චිත්තය 447
+            </p>
+            <p class="sectionheading3" id="chiththaya63_2">(63) 2/2 සුඛ, එකග්ගතා සහිත චතුත්‍ථජ්ඣාන විපාක චිත්තය 447</p>
+            <p class="sectionheading3" id="chiththaya64_2">(64) 2/2 උපෙක්ඛා, එකග්ගතා සහිත පඤ්චමජ්ඣාන විපාක චිත්තය 447
+            </p>
             <div class="pali"><span class="chedaya" id="id447">447</span>. කතමෙ ධම‍්මා අව්‍යාකතා: යස‍්මිං සමයෙ
                 රූපූපපත‍්තියා මග‍්ගං භාවෙති. විතක‍්කවිචාරානං වූපසමා <a href="##">-පෙ-</a> දුතියං ඣානං <a
                     href="##">-පෙ-</a> තතියං ඣානං <a href="##">-පෙ-</a> චතුත්‍ථං ඣානං <a href="##">-පෙ-</a> පඨමං ඣානං <a
@@ -3612,10 +3927,10 @@
                 වේදනාප්‍රත්‍යයෙන් ප්‍රසාදය වෙයි, ප්‍රසාදප්‍රත්‍යයෙන් අධිමෝක්‍ෂය වෙයි, අධිමෝක්‍ෂප්‍රත්‍යයෙන් භවය වෙයි,
                 භවප්‍රත්‍යයෙන් ජාතිය වෙයි, ජාතිප්‍රත්‍යයෙන් ජරාමරණ වේ. <a href="##"> …පෙ… </a> එයින් කියනු ලැබෙයි
                 ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස සමුදයෝ හොති’ යි.</div>
-                <p class="sectionheading3" id="chiththaya74_2">(74) 2/2 ආකාසානඤ්චායතන විපාක චිත්තය 448</p>
-                <p class="sectionheading3" id="chiththaya75_2">(75) 2/2 විඤ්ඤාණඤ්චායතන විපාක චිත්තය 448</p>
-                <p class="sectionheading3" id="chiththaya76_2">(76) 2/2 ආකිඤ්චඤ්ඤායතන විපාක චිත්තය 448</p>
-                <p class="sectionheading3" id="chiththaya77_2">(77) 2/2 නෙවසඤ්ඤානාසඤ්ඤායතන විපාක චිත්තය 448</p>
+            <p class="sectionheading3" id="chiththaya74_2">(74) 2/2 ආකාසානඤ්චායතන විපාක චිත්තය 448</p>
+            <p class="sectionheading3" id="chiththaya75_2">(75) 2/2 විඤ්ඤාණඤ්චායතන විපාක චිත්තය 448</p>
+            <p class="sectionheading3" id="chiththaya76_2">(76) 2/2 ආකිඤ්චඤ්ඤායතන විපාක චිත්තය 448</p>
+            <p class="sectionheading3" id="chiththaya77_2">(77) 2/2 නෙවසඤ්ඤානාසඤ්ඤායතන විපාක චිත්තය 448</p>
             <div class="pali"><span class="chedaya" id="id448">448</span>. කතමෙ ධම‍්මා අව්‍යාකතා: යස‍්මිං සමයෙ
                 අරූපූපපත‍්තියා මග‍්ගං භාවෙති, සබ‍්බසො ආකිඤ‍්චඤ‍්ඤායතනං සමතික‍්කම‍්ම නෙවසඤ‍්ඤානාසඤ‍්ඤායතනසඤ‍්ඤාසහගතං
                 සුඛස‍්ස ච පහානා <a href="##">-පෙ-</a> චතුත්‍ථං ඣානං උපසම‍්පජ‍්ජ විහරති. තස‍්මිං සමයෙ ඵස‍්සො හොති <a
@@ -3637,10 +3952,10 @@
                 ප්‍රසාදප්‍රත්‍යයෙන් අධිමෝක්‍ෂය වෙයි, අධිමෝක්‍ෂප්‍රත්‍යයෙන් භවය වෙයි, භවප්‍රත්‍යයෙන් ජාතිය වෙයි,
                 ජාතිප්‍රත්‍යයෙන් ජරාමරණ වේ. <a href="##"> …පෙ… </a> එයින් කියනු ලැබෙයි ‘එවමෙතස්ස කේවලස්ස දුක්ඛක්ඛන්‍ධස්ස
                 සමුදයෝ හොති’ යි.</div>
-                <p class="sectionheading3" id="chiththaya86_2">(86) 2/2 සෝතාපත්ති ඵල (??) (විපාක) චිත්තය 449</p>
-                <p class="sectionheading3" id="chiththaya87_2">(87) 2/2 සකදාගාමි ඵල  (??) (විපාක) චිත්තය 449</p>
-                <p class="sectionheading3" id="chiththaya88_2">(88) 2/2 අනාගාමි ඵල (??) (විපාක) චිත්තය 449</p>
-                <p class="sectionheading3" id="chiththaya89_2">(89) 2/2 අරහත්ත ඵල (??) (විපාක) චිත්තය 449</p>
+            <p class="sectionheading3" id="chiththaya86_2">(86) 2/2 සෝතාපත්ති ඵල (??) (විපාක) චිත්තය 449</p>
+            <p class="sectionheading3" id="chiththaya87_2">(87) 2/2 සකදාගාමි ඵල (??) (විපාක) චිත්තය 449</p>
+            <p class="sectionheading3" id="chiththaya88_2">(88) 2/2 අනාගාමි ඵල (??) (විපාක) චිත්තය 449</p>
+            <p class="sectionheading3" id="chiththaya89_2">(89) 2/2 අරහත්ත ඵල (??) (විපාක) චිත්තය 449</p>
             <div class="pali"><span class="chedaya" id="id449">449</span>. කතමෙ ධම‍්මා අව්‍යාකතා: යස‍්මිං සමයෙ
                 ලොකුත‍්තරං ඣානං භාවෙති නිය්‍යානිකං අපචයගාමිං දිට‍්ඨිගතානං පහානාය පඨමාය භූමියා පත‍්තියා විවිච‍්චෙව කාමෙහි
                 <a href="##">-පෙ-</a> පඨමං ඣානං උපසම‍්පජ‍්ජ විහරති දුක‍්ඛාපටිපදං දන්‍ධාභිඤ‍්ඤං. තස‍්මිං සමයෙ ඵස‍්සො හොති
@@ -3824,6 +4139,39 @@
         document.getElementById("go-back").addEventListener("click", () => {
             history.back();
         });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // make it as accordion for smaller screens
+            if (window.innerWidth < 992) {
+                // close all inner dropdowns when parent is closed
+                document.querySelectorAll('.navbar .dropdown').forEach(function (everydropdown) {
+                    everydropdown.addEventListener('hidden.bs.dropdown', function () {
+                        // after dropdown is hidden, then find all submenus
+                        this.querySelectorAll('.submenu').forEach(function (everysubmenu) {
+                            // hide every submenu as well
+                            everysubmenu.style.display = 'none';
+                        });
+                    })
+                });
+                document.querySelectorAll('.dropdown-menu a').forEach(function (element) {
+                    element.addEventListener('click', function (e) {
+                        let nextEl = this.nextElementSibling;
+                        if (nextEl && nextEl.classList.contains('submenu')) {
+                            // prevent opening link if link needs to open dropdown
+                            e.preventDefault();
+                            if (nextEl.style.display == 'block') {
+                                nextEl.style.display = 'none';
+                            } else {
+                                nextEl.style.display = 'block';
+                            }
+                        }
+                    });
+                })
+            }
+            // end if innerWidth
+        });
+        // DOMContentLoaded  end
     </script>
 </body>
 </html>
