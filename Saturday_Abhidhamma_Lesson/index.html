@@ -676,7 +676,7 @@
 	<script>
 		const selectS = document.querySelector('#video_list');
 		const notes = document.querySelector('#notes');
-		notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
+		notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p><p>ගුරුතුමා විසින් පටිච‍්චසමුප‍්පාද විභඞ්ගය අධ්යයනය සඳහා සකස්කරන ලද විශේෂ සටහන <a href="විභඞ්ගප්පකරණං V 1.05 Final.pdf"  target="_blank">විභඞ්ගප්පකරණං V 1.05 Final.pdf</a></p><p> <a href="විභංග නිද්දේසො.pdf"  target="_blank">විභංග නිද්දේසො.pdf</a></p>';
 		selectS.addEventListener('change', function() {
 			if (this.value === 'option1') {
 				notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
@@ -1014,7 +1014,10 @@
 				notes.innerHTML +='<p>(testing) <a href="https://waytoni.com/Saturday_Abhidhamma_Lesson/ap-vp-6-annotation.html" target="_blank" >https://waytoni.com/Saturday_Abhidhamma_Lesson/ap-vp-6-annotation.html</a></p>';
 
 			} else if (this.value === 'option148'){
-				notes.innerHTML = '';
+					notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
+				notes.innerHTML +='<p>ගුරුතුමා විසින් පටිච‍්චසමුප‍්පාද විභඞ්ගය අධ්යයනය සඳහා සකස්කරන ලද විශේෂ සටහන <a href="විභඞ්ගප්පකරණං V 1.05 Final.pdf"  target="_blank">විභඞ්ගප්පකරණං V 1.05 Final.pdf</a></p>';
+				notes.innerHTML +='<p> <a href="විභංග නිද්දේසො.pdf"  target="_blank">විභංග නිද්දේසො.pdf</a></p>';
+
 			}
 		});
 	</script>
