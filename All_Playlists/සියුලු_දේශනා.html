@@ -295,13 +295,14 @@
 	<option value="option30">2024-May-09 Abhidharma Aruth - B 030</option>
 	<option value="option31">2024-May-16 Abhidharma Aruth - B 031</option>
 	<option value="option32">2024-May-30 Abhidharma Aruth - B 032</option>
-	<option value="option33" selected>2024-Jun-06 Abhidharma Aruth - B 033</option>
+	<option value="option33">2024-Jun-06 Abhidharma Aruth - B 033</option>
+	<option value="option34" selected>2024-Jun-13 Abhidharma Aruth - B 034</option>
 </select>
 <div id="content4"></div>
 <script>
 	const select4 = document.querySelector('#video_list4');
 	const content4 = document.querySelector('#content4');
-			content4.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/qnuBlyRtIp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			content4.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/WAoLSwUI_-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	select4.addEventListener('change', function() {
 		if (this.value === 'option1') {
 			content4.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/Ae6uZUbDfZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
@@ -369,6 +370,8 @@
 			content4.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/HiNEePjVV_M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		} else if (this.value === 'option33'){
 			content4.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/qnuBlyRtIp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+		} else if (this.value === 'option34'){
+			content4.innerHTML = '<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/WAoLSwUI_-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 	}
 });
 </script>
