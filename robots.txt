@@ -1,0 +1,11 @@
+
+
+User-agent: *
+Disallow: /testing/
+Disallow: /scripts/
+Disallow: /css/
+Disallow: /*.txt
+Disallow: /*.doc*
+Disallow: /*.xls*
+
+Sitemap: https://www.waytoni.com/sitemap.xml
