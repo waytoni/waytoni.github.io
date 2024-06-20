@@ -4,9 +4,9 @@
 # then add an entry to the last line of the file: 
 #   Saturday_Abhidhamma_Lesson/saturday_abhidhamma_lesson_youtube_links.txt
 #
-# If there is an update to the I series,
+# If there is an update to the J series,
 # then add an entry to the last line of the file:
-#   All_Playlists/I_series.txt
+#   KalutharaBhodiya/J_series//J_series.txt
 #
 # Both files have the following format
 # <index> <youtube link (URL)> <date>
