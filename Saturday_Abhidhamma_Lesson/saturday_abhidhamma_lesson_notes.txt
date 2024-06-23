@@ -42,9 +42,14 @@ url::https://tipitaka.lk/ap-vbh-6-7
 ගුරුතුමා විසින් පටිච‍්චසමුප‍්පාද විභඞ්ගය අධ්යයනය සඳහා සකස්කරන ලද විශේෂ සටහන pdf::විභඞ්ගප්පකරණං V 1.05 Final.pdf  
 pdf::විභංග නිද්දේසො.pdf
 (testing) url::https://waytoni.com/Saturday_Abhidhamma_Lesson/ap-vp-6-annotation.html
-(testing) url::https://waytoni.com/Saturday_Abhidhamma_Lesson/එකචිත්තක්ඛණික_පටිච්චසමුප්පාදය.html
+(testing) url::https://waytoni.com/Saturday_Abhidhamma_Lesson/ecps.html
 #148
 ගුරුතුමා විසින් පටිච‍්චසමුප‍්පාද විභඞ්ගය අධ්යයනය සඳහා සකස්කරන ලද විශේෂ සටහන pdf::විභඞ්ගප්පකරණං V 1.05 Final.pdf  
 pdf::විභංග නිද්දේසො.pdf
+#149
+ගුරුතුමා විසින් පටිච‍්චසමුප‍්පාද විභඞ්ගය අධ්යයනය සඳහා සකස්කරන ලද විශේෂ සටහන pdf::විභඞ්ගප්පකරණං V 1.05 Final.pdf  
+pdf::විභංග නිද්දේසො.pdf
+රේරුකානේ චන්ද්‍රවිමල හිමි විසින් ලියන ලද අභිධර්මයේ මූලික කරුණු url::https://tipitaka.lk/library/485
+රේරුකානේ චන්ද්‍රවිමල හිමි විසින් ලියන ලද අභිධර්ම මාර්ගය url::https://tipitaka.lk/library/484
 #1000
 end
