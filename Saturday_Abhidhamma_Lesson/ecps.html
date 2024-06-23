@@ -68,6 +68,11 @@
         transform: rotate(180deg);
       }
 
+      .ios table.sheet0 td.v {
+        text-align: center;
+        vertical-align: middle;
+      }
+
       table.sheet0 th {
         text-align: center;
         vertical-align: middle;
@@ -80,6 +85,11 @@
         text-orientation: mixed;
         -webkit-transform: rotate(180deg);
         transform: rotate(180deg);
+      }
+
+      .ios table.sheet0 th.v {
+        text-align: center;
+        vertical-align: middle;
       }
 
       table.sheet0 .column0 { font-weight: bold};
@@ -3896,5 +3906,18 @@ body { margin-left: 0.23622047244094in; margin-right: 0.23622047244094in; margin
           </tr>
         </tbody>
     </table>
+    <script>
+      // Function to detect iOS devices
+      function isIOS() {
+          return /iPhone|iPad|iPod/i.test(navigator.userAgent);
+      }
+
+      // If it's an iOS device, add a class to the body
+      if (isIOS()) {
+          document.addEventListener('DOMContentLoaded', function () {
+              document.body.classList.add('ios');
+          });
+      }
+  </script>
   </body>
 </html>
