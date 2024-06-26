@@ -87,32 +87,28 @@
         transform: rotate(180deg);
       }
 
-      .ios table.sheet0 th.v {
-        text-align: center;
-        vertical-align: middle;
-      }
+
 
       table.sheet0 .column0 { font-weight: bold};
 
-      table.sheet0 span.kk {
-        color:blueviolet important;
-        background-color: greenyellow;
-        z-index: 10;
-        /*
-        writing-mode: vertical-lr important;
-        text-orientation: mixed; 
-        transform: rotate(180deg);
-        */
-    
-      }
-      .w {
-            transform: rotate(-90deg);
-      
-            word-wrap: break-all;
-            /* Standard rotation for non-iOS */
-        }
-
-        .w1 {
+      table.sheet0 th.w {
+            
+            color: #f00;
+            text-align: center;
+            vertical-align: middle;
+            /*
+            width: 20px;
+            margin: 0px;
+            padding: 0px;
+            padding-left: 3px;
+            padding-right: 3px;
+            padding-top: 10px;
+            white-space: nowrap;
+*/
+            -webkit-transform: rotate(-90deg); 
+            -moz-transform: rotate(-90deg); 
+    }
+    .w1 {
       color: #00f;
 
             /* transform: rotate(-90deg); */
@@ -131,17 +127,7 @@
             word-wrap: break-all;
             /* Standard rotation for non-iOS */
         }
-        .w2 {
-          color: rgb(161, 225, 241);
-        }
 
-        .w3 {
-          background-color: chartreuse;
-        }
-
-        .w4 {
-          background-color: lightgray;
-        }
     </style>
   </head>
 
@@ -201,20 +187,20 @@ body { margin-left: 0.23622047244094in; margin-right: 0.23622047244094in; margin
           </tr>
           <tr class="row1">
             <th class="column0">&nbsp;</th>
-            <th class="column1 w2">&nbsp;XX</th>
-            <th class="column2 w2">&nbsp;XX</th>
-            <th class="column3 w2">&nbsp; XX</th>
+            <th class="column1">&nbsp;</th>
+            <th class="column2">&nbsp;</th>
+            <th class="column3">&nbsp;</th>
             <th class="column4">&nbsp;</th>
             <th class="column5">&nbsp;</th>
             <th class="column6  s">ආකාර </th>
             <th class="column7  s">ඡේදය</th>
             <th class="column8  null"></th>
-            <th class="column9  s"><span class="w1">01 අකුසල නිද‍්දෙසො</span></th>
-            <th class="column10  s"><span class="w1">02 කුසල නිද‍්දෙසො</span></th>
-            <th class="column11  s "><span class="w1">03 අව්‍යාකතනිද‍්දෙසො</span></th>
-            <th class="column12  s "><span class="w1">04 අවිජ්ජාමුලකකුසල</span></th>
-            <th class="column13  s "><span class="w1">05 කුසලවිපාකමූලකං</span></th>
-            <th class="column14  s "><span class="w1">06 අකුසලවිපාකමූලකං</span></th>
+            <th class="column9  s w1">01 අකුසල නිද‍්දෙසො</th>
+            <th class="column10  s w1">02 කුසල නිද‍්දෙසො</th>
+            <th class="column11  s w1">03 අව්‍යාකතනිද‍්දෙසො</th>
+            <th class="column12  s w1">04 අවිජ්ජාමුලකකුසල</th>
+            <th class="column13  s v">05 කුසලවිපාකමූලකං</th>
+            <th class="column14  s v">06 අකුසලවිපාකමූලකං</th>
             <th class="column15  s">යුගල 1</th>
             <th class="column16  s">යුගල 2</th>
             <th class="column17  s">යුගල 3</th>
@@ -232,9 +218,9 @@ body { margin-left: 0.23622047244094in; margin-right: 0.23622047244094in; margin
         <tbody>
           <tr class="row2 color1">
             <td class="column0  n">1</td>
-            <td class="column1  s w3" rowspan="85"><span class="w1">කාමාවචර සිත් 54</span></td>
-            <td class="column2  s" rowspan="12"><span class="w1">දොළොස් අකුසල් සිත් 12</span></td>
-            <td class="column3  s" rowspan="8"><span class="w1">ලෝභ මූලික සිත් 8</span></td>
+            <td class="column1  s  v" rowspan="85">කාමාවචර සිත් 54</td>
+            <td class="column2  s  v" rowspan="12">දොළොස් අකුසල් සිත් (12)</td>
+            <td class="column3  s  v" rowspan="8">ලෝභ මූලික සිත් 8</td>
             <td class="column4  s">සෝමනස්ස සහගත දිට්ඨිගත සම්පයුත්ත අසංඛාරික චිත්තය</td>
             <td class="column5  null"></td>
             <td class="column6  n">1</td>
@@ -443,7 +429,7 @@ body { margin-left: 0.23622047244094in; margin-right: 0.23622047244094in; margin
           </tr>
           <tr class="row10">
             <td class="column0  n">9</td>
-            <td class="column3  s" rowspan="2"><span class="w1">දොස මූලික සිත් 2</span></td>
+            <td class="column3  s v" rowspan="2">දොස මූලික සිත් 2</td>
             <td class="column4  s">දෝමනස්ස සහගත පටිඝ සම්පයුත්ත අසංඛාරික චිත්තය</td>
             <td class="column5  null"></td>
             <td class="column6  n">1</td>
@@ -496,7 +482,7 @@ body { margin-left: 0.23622047244094in; margin-right: 0.23622047244094in; margin
           </tr>
           <tr class="row12">
             <td class="column0  n">11</td>
-            <td class="column3  s" rowspan="2"><span class="w1">මෝහමූලික සිත් 2</span></td>
+            <td class="column3  s v" rowspan="2">මෝහමූලික සිත් 2</td>
             <td class="column4  s">උපෙක්ඛා සහගත විචිකිච්ඡා සම්පයුත්ත චිත්තය</td>
             <td class="column5  null"></td>
             <td class="column6  n">1</td>
@@ -549,8 +535,8 @@ body { margin-left: 0.23622047244094in; margin-right: 0.23622047244094in; margin
           </tr>
           <tr class="row14">
             <td class="column0  n " rowspan="2">13</td>
-            <td class="column2  s" rowspan="33"><span class="w1">අහෙතුක සිත් 18</span></td>
-            <td class="column3  s" rowspan="14"><span class="w1">අකුසල් විපාක සිත් 7</span></td>
+            <td class="column2  s v" rowspan="33">අහෙතුක සිත් 18</td>
+            <td class="column3  s v" rowspan="14">අකුසල් විපාක සිත් 7</td>
             <td class="column4  s " rowspan="2">උපෙක්ඛා සහගත චක්ඛුවිඤ්ඤාණය</td>
             <td class="column5  null"></td>
             <td class="column6  s">1 / 2</td>
@@ -900,8 +886,8 @@ body { margin-left: 0.23622047244094in; margin-right: 0.23622047244094in; margin
             <td class="column26  s">එවමෙතස‍්ස කෙවලස‍්ස දුක‍්ඛක‍්ඛන්‍ධස‍්ස සමුදයො හොති</td>
           </tr>
           <tr class="row28">
-            <td class="column0  n" rowspan="2">20</td>
-            <td class="column3  s" rowspan="16"><span class="w1">කුසල අහෙතුක විපාක සිත් 8</span></td>
+            <td class="column0  n " rowspan="2">20</td>
+            <td class="column3  s v" rowspan="16">කුසල අහෙතුක විපාක සිත් 8</td>
             <td class="column4  s " rowspan="2">උපෙක්ඛා සහගත චක්ඛු විඤ්ඤාණය</td>
             <td class="column5  null"></td>
             <td class="column6  s">1 / 2</td>
@@ -1302,7 +1288,7 @@ body { margin-left: 0.23622047244094in; margin-right: 0.23622047244094in; margin
           </tr>
           <tr class="row44">
             <td class="column0  n">28</td>
-            <td class="column3  s" rowspan="3"><span class="w1">අහේතුක ක්‍රියා සිත් 3</span></td>
+            <td class="column3  s v" rowspan="3">අහේතුක ක්‍රියා සිත් 3</td>
             <td class="column4  s">උපෙක්ඛා සහගත පඤ්චද්වාරාවජ්ජන චිත්තය</td>
             <td class="column5  null"></td>
             <td class="column6  n">1</td>
@@ -1381,8 +1367,8 @@ body { margin-left: 0.23622047244094in; margin-right: 0.23622047244094in; margin
           </tr>
           <tr class="row47">
             <td class="column0  n " rowspan="2">31</td>
-            <td class="column2  s " rowspan="40"><span class="w1">කාමාවචර සෝභන සිත් 24</span></td>
-            <td class="column3  s " rowspan="16"><span class="w1">කාමාවචර කුසල සිත් 8</span></td>
+            <td class="column2  s v" rowspan="40">කාමාවචර සෝභන සිත් 24</td>
+            <td class="column3  s v" rowspan="16">කාමාවචර කුසල සිත් 8</td>
             <td class="column4  s " rowspan="2">සොමනස්ස සහගත ඤාණසම්පයුත්ත අසංඛාර චිත්තය</td>
             <td class="column5  null"></td>
             <td class="column6  s">1 / 2</td>
@@ -1783,7 +1769,7 @@ body { margin-left: 0.23622047244094in; margin-right: 0.23622047244094in; margin
           </tr>
           <tr class="row63">
             <td class="column0  n " rowspan="2">39</td>
-            <td class="column3  s " rowspan="16"><span class="w1">කාමාවචර සහේතුක විපාක සිත් 8</span></td>
+            <td class="column3  s v" rowspan="16">කාමාවචර සහේතුක විපාක සිත් 8</td>
             <td class="column4  s " rowspan="2">සොමනස්ස සහගත ඤාණසම්පයුත්ත අසංඛාර චිත්තය</td>
             <td class="column5  null"></td>
             <td class="column6  s">1 / 2</td>
@@ -2134,7 +2120,7 @@ body { margin-left: 0.23622047244094in; margin-right: 0.23622047244094in; margin
           </tr>
           <tr class="row77">
             <td class="column0  n " rowspan="2">46</td>
-            <td class="column4  s " rowspan="2">උපෙක්ඛා සහගත ඤාණ විප්පයුත්ත සසංඛාර චිත්තය</td>
+            <td class="column4  s 6" rowspan="2">උපෙක්ඛා සහගත ඤාණ විප්පයුත්ත සසංඛාර චිත්තය</td>
             <td class="column5  null"></td>
             <td class="column6  s">1 / 2</td>
             <td class="column7  n">413</td>
@@ -2184,7 +2170,7 @@ body { margin-left: 0.23622047244094in; margin-right: 0.23622047244094in; margin
           </tr>
           <tr class="row79">
             <td class="column0  n">47</td>
-            <td class="column3  s"  rowspan="8"><span class="w1">කාමාවචර සහේතුක ක්‍රියා සිත් 8</span></td>
+            <td class="column3  s v" rowspan="8">කාමාවචර සහේතුක ක්‍රියා සිත් 8</td>
             <td class="column4  s">සෝමනස්ස සහගත ඤාණ සම්පයුත්ත අසංඛාර චිත්තය</td>
             <td class="column5  null"></td>
             <td class="column6  n">1</td>
@@ -2393,9 +2379,9 @@ body { margin-left: 0.23622047244094in; margin-right: 0.23622047244094in; margin
           </tr>
           <tr class="row87">
             <td class="column0  n " rowspan="2">55</td>
-            <td class="column1  s w4" rowspan="25"><span class="w1">රූපාවචර සිත් 15</span></td>
+            <td class="column1  s v" rowspan="25">රූපාවචර සිත් 15</td>
             <td class="column2  null " rowspan="25"></td>
-            <td class="column3  s " rowspan="10"><span class="w1">රූපාවචර කුසල සිත් 5</span></td>
+            <td class="column3 style41 s v" rowspan="10">රූපාවචර කුසල සිත් 5</td>
             <td class="column4 8 s 9" rowspan="2">පඨමජ්ඣාන කුසල චිත්තය</td>
             <td class="column5  null"></td>
             <td class="column6  s">1 / 2</td>
@@ -2646,7 +2632,7 @@ body { margin-left: 0.23622047244094in; margin-right: 0.23622047244094in; margin
           </tr>
           <tr class="row97">
             <td class="column0  n " rowspan="2">60</td>
-            <td class="column3  s " rowspan="10"><span class="w1">රූපාවචර විපාක සිත් 5</span></td>
+            <td class="column3  s v" rowspan="10">රූපාවචර විපාක සිත් 5</td>
             <td class="column4  s " rowspan="2">පඨමජ්ඣාන විපාක චිත්තය</td>
             <td class="column5  null"></td>
             <td class="column6  s">1 / 2</td>
@@ -2897,7 +2883,7 @@ body { margin-left: 0.23622047244094in; margin-right: 0.23622047244094in; margin
           </tr>
           <tr class="row107">
             <td class="column0  n">65</td>
-            <td class="column3  s " rowspan="5"><span class="w1">රූපාවචර ක්‍රියා සිත් 5</span></td>
+            <td class="column3  s v" rowspan="5">රූපාවචර ක්‍රියා සිත් 5</td>
             <td class="column4  s">පඨමජ්ඣාන ක්‍රියා චිත්තය</td>
             <td class="column5  null"></td>
             <td class="column6  n">1</td>
@@ -3028,9 +3014,9 @@ body { margin-left: 0.23622047244094in; margin-right: 0.23622047244094in; margin
           </tr>
           <tr class="row112">
             <td class="column0  n " rowspan="2">70</td>
-            <td class="column1  s w3" rowspan="20"><span class="w1">අරූපාවචර සිත් 12</span></td>
+            <td class="column1  s v" rowspan="20">අරූපාවචර සිත් 12</td>
             <td class="column2  null " rowspan="20"></td>
-            <td class="column3  s " rowspan="8"><span class="w1">අරූපාවචර කුසල සිත් 4</span></td>
+            <td class="column3 style41 s v" rowspan="8">අරූපාවචර කුසල සිත් 4</td>
             <td class="column4  s " rowspan="2">ආකාසානඤ්චායතන කුසල චිත්තය</td>
             <td class="column5  null"></td>
             <td class="column6  s">1 / 2</td>
@@ -3231,7 +3217,7 @@ body { margin-left: 0.23622047244094in; margin-right: 0.23622047244094in; margin
           </tr>
           <tr class="row120">
             <td class="column0  n " rowspan="2">74</td>
-            <td class="column3  s " rowspan="8"><span class="w1">අරූපාවචර විපාක සිත් 4</span></td>
+            <td class="column3  s v" rowspan="8">අරූපාවචර විපාක සිත් 4</td>
             <td class="column4  s " rowspan="2">ආකාසානඤ්චායතන විපාක චිත්තය</td>
             <td class="column5  null"></td>
             <td class="column6  s">1 / 2</td>
@@ -3432,7 +3418,7 @@ body { margin-left: 0.23622047244094in; margin-right: 0.23622047244094in; margin
           </tr>
           <tr class="row128">
             <td class="column0  n">78</td>
-            <td class="column3  s " rowspan="4"><span class="w1">අරූපාවචර ක්‍රියා සිත් 4</span></td>
+            <td class="column3  s v" rowspan="4">අරූපාවචර ක්‍රියා සිත් 4</td>
             <td class="column4  s">ආකාසානඤ්චායතන ක්‍රියා චිත්තය</td>
             <td class="column5  null"></td>
             <td class="column6  n">1</td>
@@ -3537,9 +3523,9 @@ body { margin-left: 0.23622047244094in; margin-right: 0.23622047244094in; margin
           </tr>
           <tr class="row132">
             <td class="column0  n" rowspan="2">82</td>
-            <td class="column1  s w4" rowspan="16"><span class="w1">ලෝකෝත්තර සිත් 8</span></td>
+            <td class="column1  s v" rowspan="16">ලෝකෝත්තර සිත් 8</td>
             <td class="column2  null " rowspan="16"></td>
-            <td class="column3  s " rowspan="8"><span class="w1">ලෝකෝත්තර මාර්ග සිත් 4</span></td>
+            <td class="column3  s v" rowspan="8">ලෝකෝත්තර මාර්ග සිත් 4</td>
             <td class="column4  s " rowspan="2">සොතාපත්ති මග්ග චිත්තය</td>
             <td class="column5  null"></td>
             <td class="column6  s">1 / 2</td>
@@ -3590,7 +3576,7 @@ body { margin-left: 0.23622047244094in; margin-right: 0.23622047244094in; margin
           </tr>
           <tr class="row134">
             <td class="column0  n " rowspan="2">83</td>
-            <td class="column4  s " rowspan="2">සකදාගාමි මග්ග චිත්තය</td>
+            <td class="column4  s 9" rowspan="2">සකදාගාමි මග්ග චිත්තය</td>
             <td class="column5  null"></td>
             <td class="column6  s">1 / 2</td>
             <td class="column7 style3 s">402-403</td>
@@ -3740,7 +3726,7 @@ body { margin-left: 0.23622047244094in; margin-right: 0.23622047244094in; margin
           </tr>
           <tr class="row140">
             <td class="column0  n " rowspan="2">86</td>
-            <td class="column3  s " rowspan="8"><span class="w1">ලෝකෝත්තර විපාක සිත් 4</span></td>
+            <td class="column3  s v" rowspan="8">ලෝකෝත්තර විපාක සිත් 4</td>
             <td class="column4  s " rowspan="2">සෝතාපත්ති ඵල චිත්තය</td>
             <td class="column5  null"></td>
             <td class="column6  s">1 / 2</td>
@@ -3941,18 +3927,6 @@ body { margin-left: 0.23622047244094in; margin-right: 0.23622047244094in; margin
           </tr>
         </tbody>
     </table>
-    <script>
-      // Function to detect iOS devices
-      function isIOS() {
-          return /iPhone|iPad|iPod/i.test(navigator.userAgent);
-      }
 
-      // If it's an iOS device, add a class to the body
-      if (isIOS()) {
-          document.addEventListener('DOMContentLoaded', function () {
-              document.body.classList.add('ios');
-          });
-      }
-  </script>
   </body>
 </html>
