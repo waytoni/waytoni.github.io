@@ -128,7 +128,8 @@
 			<option value="option57">2024-May-09 අභිධර්ම අරුත් - දේශනා EP063</option>
 			<option value="option58">2024-May-16 අභිධර්ම අරුත් - දේශනා EP064</option>
 			<option value="option59">2024-Jun-06 අභිධර්ම අරුත් - දේශනා EP065</option>
-			<option value="option60" selected>2024-Jun-13 අභිධර්ම අරුත් - දේශනා EP066</option>
+			<option value="option60">2024-Jun-13 අභිධර්ම අරුත් - දේශනා EP066</option>
+			<option value="option61" selected>2024-Jun-27 අභිධර්ම අරුත් - දේශනා EP067</option>
 		</select>
 		<div id="content1"></div>
 		<div id="notes1"></div>
@@ -137,7 +138,7 @@
 		const select1 = document.querySelector('#video_list1');
 		const content1 = document.querySelector('#content1');
 		content1.innerHTML = 
-			'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/SNlJY85eYvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/rmpH8EC2Y68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		select1.addEventListener('change', function() {
 			if (this.value === 'option1') {
 				content1.innerHTML = 
@@ -319,13 +320,16 @@
 			} else if (this.value === 'option60'){
 				content1.innerHTML = 
 				'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/SNlJY85eYvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			} else if (this.value === 'option61'){
+				content1.innerHTML = 
+				'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/rmpH8EC2Y68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 			}
 		});
 	</script>
 	<script>
 		const selectS1 = document.querySelector('#video_list1');
 		const notes1 = document.querySelector('#notes1');
-		notes1.innerHTML = '<p>දේශනාව සඳහා සටහන්</p><p> <a href="/documents/විභඞ්ගප්පකරණං V 1.05 Final.pdf"  target="_blank">/documents/විභඞ්ගප්පකරණං V 1.05 Final.pdf</a></p>';
+		notes1.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
 		selectS1.addEventListener('change', function() {
 			if (this.value === 'option1') {
 				notes1.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
@@ -453,6 +457,8 @@
 					notes1.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
 				notes1.innerHTML +='<p> <a href="/documents/විභඞ්ගප්පකරණං V 1.05 Final.pdf"  target="_blank">/documents/විභඞ්ගප්පකරණං V 1.05 Final.pdf</a></p>';
 
+			} else if (this.value === 'option61'){
+				notes1.innerHTML = '';
 			}
 		});
 	</script>
@@ -499,7 +505,8 @@
 			<option value="option32">2024-May-30 Abhidharma Aruth - B 032</option>
 			<option value="option33">2024-Jun-06 Abhidharma Aruth - B 033</option>
 			<option value="option34">2024-Jun-13 Abhidharma Aruth - B 034</option>
-			<option value="option35" selected>2024-Jun-20 Abhidharma Aruth - B 035</option>
+			<option value="option35">2024-Jun-20 Abhidharma Aruth - B 035</option>
+			<option value="option36" selected>2024-Jun-27 Abhidharma Aruth - B 036</option>
 		</select>
 		<div id="content2"></div>
 		<div id="notes2"></div>
@@ -508,7 +515,7 @@
 		const select2 = document.querySelector('#video_list2');
 		const content2 = document.querySelector('#content2');
 		content2.innerHTML = 
-			'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/-IsMwUZwACE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/K6W1lsaSA54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		select2.addEventListener('change', function() {
 			if (this.value === 'option1') {
 				content2.innerHTML = 
@@ -615,6 +622,9 @@
 			} else if (this.value === 'option35'){
 				content2.innerHTML = 
 				'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/-IsMwUZwACE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			} else if (this.value === 'option36'){
+				content2.innerHTML = 
+				'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/K6W1lsaSA54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 			}
 		});
 	</script>
@@ -692,6 +702,8 @@
 			} else if (this.value === 'option34'){
 				notes2.innerHTML = '';
 			} else if (this.value === 'option35'){
+				notes2.innerHTML = '';
+			} else if (this.value === 'option36'){
 				notes2.innerHTML = '';
 			}
 		});
