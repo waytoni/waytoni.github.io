@@ -329,7 +329,7 @@
 	<script>
 		const selectS1 = document.querySelector('#video_list1');
 		const notes1 = document.querySelector('#notes1');
-		notes1.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
+		notes1.innerHTML = '<p>දේශනාව සඳහා සටහන්</p><p> <a href="/documents/විභඞ්ගප්පකරණං V 1.05 Final.pdf"  target="_blank">/documents/විභඞ්ගප්පකරණං V 1.05 Final.pdf</a></p>';
 		selectS1.addEventListener('change', function() {
 			if (this.value === 'option1') {
 				notes1.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
@@ -458,7 +458,9 @@
 				notes1.innerHTML +='<p> <a href="/documents/විභඞ්ගප්පකරණං V 1.05 Final.pdf"  target="_blank">/documents/විභඞ්ගප්පකරණං V 1.05 Final.pdf</a></p>';
 
 			} else if (this.value === 'option61'){
-				notes1.innerHTML = '';
+					notes1.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
+				notes1.innerHTML +='<p> <a href="/documents/විභඞ්ගප්පකරණං V 1.05 Final.pdf"  target="_blank">/documents/විභඞ්ගප්පකරණං V 1.05 Final.pdf</a></p>';
+
 			}
 		});
 	</script>

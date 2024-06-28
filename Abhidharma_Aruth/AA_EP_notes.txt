@@ -5,4 +5,6 @@ pdf::docs/Ep 62 abidamma aruth 2024 04 25.pdf
 pdf::/documents/විභඞ්ගප්පකරණං V 1.05 Final.pdf
 #60
 pdf::/documents/විභඞ්ගප්පකරණං V 1.05 Final.pdf
+#61
+pdf::/documents/විභඞ්ගප්පකරණං V 1.05 Final.pdf
 #1000
