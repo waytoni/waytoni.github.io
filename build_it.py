@@ -26,7 +26,7 @@ sys.path.append('../scripts_new')
 import waytoni_all_videos_new
 
 
-menu_change = False
+menu_change = True
 
 if menu_change == True:
     from scripts.py import build_series_I
