@@ -216,7 +216,8 @@
 			<option value="option146">2024-May-18 තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා 145</option>
 			<option value="option147">2024-Jun-01 තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා 146</option>
 			<option value="option148">2024-Jun-08 තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා 147</option>
-			<option value="option149" selected>2024-Jun-22 තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා 148</option>
+			<option value="option149">2024-Jun-22 තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා 148</option>
+			<option value="option150" selected>2024-Jul-06 තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා 149</option>
 		</select>
 		<div id="content"></div>
 		<div id="notes"></div>
@@ -225,7 +226,7 @@
 		const select = document.querySelector('#video_list');
 		const content = document.querySelector('#content');
 		content.innerHTML = 
-			'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/AfmDi8anuUI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/5kA43L7o_eo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		select.addEventListener('change', function() {
 			if (this.value === 'option1') {
 				content.innerHTML = 
@@ -674,13 +675,16 @@
 			} else if (this.value === 'option149'){
 				content.innerHTML = 
 				'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/AfmDi8anuUI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			} else if (this.value === 'option150'){
+				content.innerHTML = 
+				'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/5kA43L7o_eo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 			}
 		});
 	</script>
 	<script>
 		const selectS = document.querySelector('#video_list');
 		const notes = document.querySelector('#notes');
-		notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p><p>ගුරුතුමා විසින් පටිච‍්චසමුප‍්පාද විභඞ්ගය අධ්යයනය සඳහා සකස්කරන ලද විශේෂ සටහන <a href="විභඞ්ගප්පකරණං V 1.05 Final.pdf"  target="_blank">විභඞ්ගප්පකරණං V 1.05 Final.pdf</a></p><p> <a href="විභංග නිද්දේසො.pdf"  target="_blank">විභංග නිද්දේසො.pdf</a></p><p>රේරුකානේ චන්ද්‍රවිමල හිමි විසින් ලියන ලද අභිධර්මයේ මූලික කරුණු <a href="https://tipitaka.lk/library/485" target="_blank" >https://tipitaka.lk/library/485</a></p><p>රේරුකානේ චන්ද්‍රවිමල හිමි විසින් ලියන ලද අභිධර්ම මාර්ගය <a href="https://tipitaka.lk/library/484" target="_blank" >https://tipitaka.lk/library/484</a></p>';
+		notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p><p>ගුරුතුමා විසින් පටිච‍්චසමුප‍්පාද විභඞ්ගය අධ්යයනය සඳහා සකස්කරන ලද විශේෂ සටහන <a href="විභඞ්ගප්පකරණං V 1.05 Final.pdf"  target="_blank">විභඞ්ගප්පකරණං V 1.05 Final.pdf</a></p><p> <a href="විභංග නිද්දේසො.pdf"  target="_blank">විභංග නිද්දේසො.pdf</a></p>';
 		selectS.addEventListener('change', function() {
 			if (this.value === 'option1') {
 				notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
@@ -1029,6 +1033,11 @@
 				notes.innerHTML +='<p> <a href="විභංග නිද්දේසො.pdf"  target="_blank">විභංග නිද්දේසො.pdf</a></p>';
 				notes.innerHTML +='<p>රේරුකානේ චන්ද්‍රවිමල හිමි විසින් ලියන ලද අභිධර්මයේ මූලික කරුණු <a href="https://tipitaka.lk/library/485" target="_blank" >https://tipitaka.lk/library/485</a></p>';
 				notes.innerHTML +='<p>රේරුකානේ චන්ද්‍රවිමල හිමි විසින් ලියන ලද අභිධර්ම මාර්ගය <a href="https://tipitaka.lk/library/484" target="_blank" >https://tipitaka.lk/library/484</a></p>';
+
+			} else if (this.value === 'option150'){
+					notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
+				notes.innerHTML +='<p>ගුරුතුමා විසින් පටිච‍්චසමුප‍්පාද විභඞ්ගය අධ්යයනය සඳහා සකස්කරන ලද විශේෂ සටහන <a href="විභඞ්ගප්පකරණං V 1.05 Final.pdf"  target="_blank">විභඞ්ගප්පකරණං V 1.05 Final.pdf</a></p>';
+				notes.innerHTML +='<p> <a href="විභංග නිද්දේසො.pdf"  target="_blank">විභංග නිද්දේසො.pdf</a></p>';
 
 			}
 		});
