@@ -47,7 +47,7 @@ series_title = 'පරමාර්ථ ලෝකය දේශනා'
 print(intro_file)
 print(html_file)
 
-PrepareHeadTop_Bootstrap(html_file, series_title, '')
+PrepareHeadTop(html_file, series_title, '')
 
 with open(html_file, 'a', encoding='utf-8') as fp:
     
