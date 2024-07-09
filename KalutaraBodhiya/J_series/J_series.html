@@ -121,7 +121,7 @@
 	<script>
 		const selectS = document.querySelector('#video_list');
 		const notes = document.querySelector('#notes');
-		notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
+		notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p><p>නිවන් මග උදෙසා දර්ශන ඥාණය සඳහා මූලික සූත්‍ර <a href="/documents/දර්ශන ඥාණය මූලික සූත්‍ර 01.pdf"  target="_blank">/documents/දර්ශන ඥාණය මූලික සූත්‍ර 01.pdf</a></p>';
 		selectS.addEventListener('change', function() {
 			if (this.value === 'option1') {
 				notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
@@ -140,7 +140,9 @@
 			} else if (this.value === 'option8'){
 				notes.innerHTML = '';
 			} else if (this.value === 'option9'){
-				notes.innerHTML = '';
+					notes.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
+				notes.innerHTML +='<p>නිවන් මග උදෙසා දර්ශන ඥාණය සඳහා මූලික සූත්‍ර <a href="/documents/දර්ශන ඥාණය මූලික සූත්‍ර 01.pdf"  target="_blank">/documents/දර්ශන ඥාණය මූලික සූත්‍ර 01.pdf</a></p>';
+
 			}
 		});
 	</script>
