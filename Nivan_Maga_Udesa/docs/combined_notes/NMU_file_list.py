@@ -64,12 +64,19 @@ file_header = """<!DOCTYPE html>
     </div>
     
     <div>
-    <h2><center>රේරුකානේ චන්දවිමල හිමියන්ගේ <a href="./අභිධර්ම මාර්ගය.pdf" target="blank">අභිධර්ම මාර්ගය</a> පොත
-    </center></h2>
-    <h2><center>රේරුකානේ චන්දවිමල හිමියන්ගේ <a href="https://www.ogatharana.org/bookDownCounter.php?booknumber=17" target="blank">පටිච්ච සමුප්පාද විවරණය</a> පොත
-    </center></h2>
-    <h2><center>රේරුකානේ චන්දවිමල හිමියන්ගේ <a href="https://www.ogatharana.org/" target="blank">සියුලු පොත් සඳහා</a>
-    </center></h2>
+   
+    <center>
+    <h2>රේරුකානේ චන්දවිමල හිමියන්ගේ අභිධර්ම මාර්ගය පොත <a href="./අභිධර්ම මාර්ගය.pdf" target="blank">PDF ලෙස</a> 
+    හෝ <a  href="https://tipitaka.lk/library/463">වෙබ් පිටුවක් ලෙස</a></h2>
+    <h2>රේරුකානේ චන්දවිමල හිමියන්ගේ අභිධර්මයේ මූලික කරුණු පොත <a href="https://www.ogatharana.org/bookDownCounter.php?booknumber=15" target="blank">PDF ලෙස</a>
+    හෝ <a  href="https://tipitaka.lk/library/464">වෙබ් පිටුවක් ලෙස</a></h2>
+    <h2>රේරුකානේ චන්දවිමල හිමියන්ගේ පටිච්ච සමුප්පාද විවරණය පොත <a href="https://www.ogatharana.org/bookDownCounter.php?booknumber=17" target="blank">PDF ලෙස</a> 
+    හෝ <a  href="https://tipitaka.lk/library/474">වෙබ් පිටුවක් ලෙස</a></h2>
+    <h2>රේරුකානේ චන්දවිමල හිමියන්ගේ පොහොය දිනය පොත <a href="https://tipitaka.lk/library/498">PDF ලෙස</a> හෝ  <a href="https://tipitaka.lk/library/475">වෙබ් පිටුවක් ලෙස</a></h2>
+    <h2>රේරුකානේ චන්දවිමල හිමියන්ගේ සියුලු පොත් සඳහා: <a href="https://www.ogatharana.org/" target="blank">https://www.ogatharana.org/</a> 
+    හෝ <a href="https://tipitaka.lk/library/462" target="blank">https://tipitaka.lk/library/462</a></h2>
+    <h2><a href="/documents/දර්ශන ඥාණය මූලික සූත්‍ර 01.pdf" target="_blank">නිවන් මග උදෙසා දර්ශන ඥාණය සඳහා මූලික සූත්‍ර</a></h2>
+    </center>
     </div>
 """
 # create file for writing
