@@ -33,6 +33,7 @@
         </div>
         <div class="col">
           <h3><a href="https://www.youtube.com/watch?v=g85jhAU6Xsk" target="_blank">පරමාර්ථ ලෝකය දේශනා 06 / 10</a></h3>
+          <p>චිත්ත විථි උදෙසා පදනම  &nbsp; 00:01:14</p>
           <p><a href="https://www.youtube.com/watch?v=g85jhAU6Xsk" target="_blank"><img src="DVD 6 Cover.jpeg" alt="DVD 1 Cover"></a></p>
         </div>
       </div>
