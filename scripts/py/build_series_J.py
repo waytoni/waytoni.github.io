@@ -20,7 +20,7 @@ html_file = os.path.join(basepath,'J_series.html')
 
 playlist_url = ''
 
-series_title = 'කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන 2024 වසර සඳහා නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව'
+series_title = 'නිවන් මග උදෙසා දර්ශන ඥාණය (B කණ්ඩායම) දේශනා මාලාව'
 
 print(intro_file)
 print(notes_file)
