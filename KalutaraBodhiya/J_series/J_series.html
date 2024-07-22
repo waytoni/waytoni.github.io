@@ -79,7 +79,7 @@
 			<option value="option8">2024-Jun-30 නිවන් මග උදෙසා දර්ශන ඥාණය (B කණ්ඩායම) දේශනා මාලාව 8_පංචස්කන්ධ-පංචඋපාදානස්කන්ධ_හට_ගැනීම-සතර_මහාභූත_උපාදා_රූප</option>
 			<option value="option9">2024-Jul-07 නිවන් මග උදෙසා දර්ශන ඥාණය (B කණ්ඩායම) දේශනා මාලාව 9_මූලික_ධර්ම_දේශනා_පංචස්කන්ධ-රූප-සංස්කාර_(චේතනා)_කෘත්‍යය</option>
 			<option value="option10">2024-Jul-14 නිවන් මග උදෙසා දර්ශන ඥාණය (B කණ්ඩායම) දේශනා මාලාව 10_සංස්කාර_(චේතනා)_කෘත්‍යය-අනිච්ච_දුක්ඛ_අනත්ත_භාවනා</option>
-			<option value="option11" selected>https://www.youtube.com/watch?v=_N1J5AlYWks නිවන් මග උදෙසා දර්ශන ඥාණය (B කණ්ඩායම) දේශනා මාලාව 11_මූලික_ධර්ම</option>
+			<option value="option11" selected>2024-Jul-21 නිවන් මග උදෙසා දර්ශන ඥාණය (B කණ්ඩායම) දේශනා මාලාව 11_මූලික_ධර්ම_දේශනා-සංස්කාර_(චේතනා)_කෘත්‍යය-පංචඋපාදානස්කන්ධ</option>
 		</select>
 		<div id="content"></div>
 		<div id="notes"></div>
@@ -88,7 +88,7 @@
 		const select = document.querySelector('#video_list');
 		const content = document.querySelector('#content');
 		content.innerHTML = 
-			'<p></p> ';
+			'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/_N1J5AlYWks" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		select.addEventListener('change', function() {
 			if (this.value === 'option1') {
 				content.innerHTML = 
@@ -122,7 +122,7 @@
 				'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/yw74kAq-4A8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 			} else if (this.value === 'option11'){
 				content.innerHTML = 
-				'<p></p> ';
+				'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/_N1J5AlYWks" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 			}
 		});
 	</script>
