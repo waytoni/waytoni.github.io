@@ -16,13 +16,15 @@ from utilities import *
 basepath = 'Suthamaya'
 
 intro_file = os.path.join(basepath,'suthamaya_intro.html')
-notes_file = os.path.join(basepath,'suthamaya_eththapana_notes.txt')
-utube_links = os.path.join(basepath,'suthamaya_eththapana.txt')
+#notes_file = os.path.join(basepath,'suthamaya_eththapana_notes.txt')
+#utube_links = os.path.join(basepath,'suthamaya_eththapana.txt')
+notes_file = os.path.join(basepath,'suthamaya_hirigal_notes.txt')
+utube_links = os.path.join(basepath,'suthamaya_hirigal.txt')
 html_file = os.path.join(basepath,'index.html')
 
 playlist_url = ''
 
-series_title = 'සුතමයඤාණං - ඉත්තෑපාන අක්කර දේශනා'
+series_title = 'සුතමයඤාණං දේශනා - හිරිගල් ගොඩැල්ල ශ්‍රී පුෂ්පාරාමය'
 
 print(intro_file)
 print(notes_file)
