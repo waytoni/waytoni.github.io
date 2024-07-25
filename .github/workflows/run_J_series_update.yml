@@ -17,7 +17,7 @@ jobs:
         with:
           python-version: 3.11 # Set your desired Python version
 
-      - name: Read I_serires
+      - name: Read J_serires
         run: python scripts/py/build_series_J.py
 
       - name: Update All_Playlists for J_series addition
@@ -27,5 +27,5 @@ jobs:
         run: |
           git config user.name "$(git log -n 1 --pretty=format:%an)"
           git config user.email "$(git log -n 1 --pretty=format:%ae)"
-          git commit -a -m "updated I series desana"
+          git commit -a -m "updated J series desana"
           git push
