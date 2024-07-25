@@ -131,7 +131,8 @@
 			<option value="option60">2024-Jun-13 අභිධර්ම අරුත් - දේශනා EP066</option>
 			<option value="option61">2024-Jun-27 අභිධර්ම අරුත් - දේශනා EP067</option>
 			<option value="option62">2024-Jul-04 අභිධර්ම අරුත් - දේශනා EP068</option>
-			<option value="option63" selected>2024-Jul-18 අභිධර්ම අරුත් - දේශනා EP069</option>
+			<option value="option63">2024-Jul-18 අභිධර්ම අරුත් - දේශනා EP069</option>
+			<option value="option64" selected>2024-Jul-25 අභිධර්ම අරුත් - දේශනා EP070</option>
 		</select>
 		<div id="content1"></div>
 		<div id="notes1"></div>
@@ -140,7 +141,7 @@
 		const select1 = document.querySelector('#video_list1');
 		const content1 = document.querySelector('#content1');
 		content1.innerHTML = 
-			'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/wAl11a-xB18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/2HcDsc92ZBo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		select1.addEventListener('change', function() {
 			if (this.value === 'option1') {
 				content1.innerHTML = 
@@ -331,13 +332,16 @@
 			} else if (this.value === 'option63'){
 				content1.innerHTML = 
 				'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/wAl11a-xB18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			} else if (this.value === 'option64'){
+				content1.innerHTML = 
+				'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/2HcDsc92ZBo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 			}
 		});
 	</script>
 	<script>
 		const selectS1 = document.querySelector('#video_list1');
 		const notes1 = document.querySelector('#notes1');
-		notes1.innerHTML = '<p>දේශනාව සඳහා සටහන්</p><p>රේරුකානේ චන්ද්‍රවිමල හිමි විසින් ලියන ලද පට්ඨාන මහා පකරණ සන්නය <a href="https://tipitaka.lk/library/494" target="_blank" >https://tipitaka.lk/library/494</a></p>';
+		notes1.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
 		selectS1.addEventListener('change', function() {
 			if (this.value === 'option1') {
 				notes1.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
@@ -477,6 +481,8 @@
 					notes1.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
 				notes1.innerHTML +='<p>රේරුකානේ චන්ද්‍රවිමල හිමි විසින් ලියන ලද පට්ඨාන මහා පකරණ සන්නය <a href="https://tipitaka.lk/library/494" target="_blank" >https://tipitaka.lk/library/494</a></p>';
 
+			} else if (this.value === 'option64'){
+				notes1.innerHTML = '';
 			}
 		});
 	</script>
