@@ -16,7 +16,7 @@ basepath = 'KalutaraBodhiya/J_series'
 intro_file = os.path.join(basepath,'J_series_intro.txt')
 notes_file = os.path.join(basepath,'J_series_notes.txt')
 utube_links = os.path.join(basepath,'J_series.txt')
-html_file = os.path.join(basepath,'J_series.html')
+html_file = os.path.join(basepath,'J_series_v1.html')
 
 playlist_url = ''
 

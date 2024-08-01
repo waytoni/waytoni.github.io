@@ -19,6 +19,7 @@ from scripts.py import build_series_Abidharma_Aruth
 from scripts.py import build_series_Suthamaya
 from scripts.py import build_series_SiyaluDesana
 from scripts.py import build_series_J
+from scripts.py import build_series_J_new
 
 import sys
 # sys.path.append('E:/src/github/waytoni_io/waytoni_desktop/scripts_new')
@@ -54,5 +55,6 @@ build_series_Nivan_Maga_Udesa
 build_series_Saturday_Abhidhamma_Lesson
 build_series_Abidharma_Aruth
 build_series_J
+build_series_J_new
 build_series_Suthamaya
 build_series_SiyaluDesana
