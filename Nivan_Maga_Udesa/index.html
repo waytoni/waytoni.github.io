@@ -117,7 +117,8 @@
 			<option value="option47">2024-Jul-05 නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා 043</option>
 			<option value="option48">2024-Jul-12 නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා 044</option>
 			<option value="option49">2024-Jul-19 නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා 045</option>
-			<option value="option50" selected>2024-Jul-26 නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා 046</option>
+			<option value="option50">2024-Jul-26 නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා 46_Extra</option>
+			<option value="option51" selected>2024-Aug-02 නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා 046</option>
 		</select>
 		<div id="content"></div>
 		<div id="notes"></div>
@@ -126,7 +127,7 @@
 		const select = document.querySelector('#video_list');
 		const content = document.querySelector('#content');
 		content.innerHTML = 
-			'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/JxfgKwYjEpo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/4ZmScgnNbks" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		select.addEventListener('change', function() {
 			if (this.value === 'option1') {
 				content.innerHTML = 
@@ -278,6 +279,9 @@
 			} else if (this.value === 'option50'){
 				content.innerHTML = 
 				'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/JxfgKwYjEpo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			} else if (this.value === 'option51'){
+				content.innerHTML = 
+				'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/4ZmScgnNbks" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 			}
 		});
 	</script>
@@ -439,6 +443,8 @@
 			} else if (this.value === 'option49'){
 				notes.innerHTML = '';
 			} else if (this.value === 'option50'){
+				notes.innerHTML = '';
+			} else if (this.value === 'option51'){
 				notes.innerHTML = '';
 			}
 		});
