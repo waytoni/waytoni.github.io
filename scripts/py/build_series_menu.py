@@ -52,7 +52,7 @@ def parse_notes(file_path):
                 # Check if there are more than one part
                 if len(parts) > 1:
                     # Get the intro text as the first element of the list
-                    intro_text = parts[0].strip()
+                    intro_text = "<p>" + parts[0].strip()
                     # Initialize an empty string for the new string
                     new_string = intro_text
                     # Loop through the rest of the parts in pairs of keyword and text related to keyword
@@ -67,13 +67,13 @@ def parse_notes(file_path):
                             # Format the html tag with the text related to keyword
                             html_tag = html_tag.format(text_related_to_keyword, text_related_to_keyword)
                             # Append a space and the html tag to the new string
-                            new_string += " " + html_tag
+                            new_string += " " + html_tag + "</p>"
                         else:
                             # If the keyword is not a valid keyword, append a space and the original pair of parts to the new string
-                            new_string += " " + keyword + "::" + text_related_to_keyword
+                            new_string += " " + keyword + "::" + text_related_to_keyword + "</p>"
                 else:
                     # If there is only one part, use it as the new string
-                    new_string = parts[0]
+                    new_string = "<p>" + parts[0] + "</p>"
                 # Print the new string
                 print(new_string)
                 current_notes.append(new_string)
