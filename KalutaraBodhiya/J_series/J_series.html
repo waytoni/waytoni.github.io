@@ -132,8 +132,8 @@
 			data.forEach(item => {
 				const option = document.createElement('option');
 				option.value = item.url;
-				option.text = item.comment ? `${item.index} ${item.comment} ${item.date}` :
-					`${item.index} ${seriesTitle} ${item.date}`;
+				option.text = item.comment ? `${item.index}:  ${item.comment} ${item.date}` :
+					`${item.index}:  ${seriesTitle} ${item.date}`;
 				option.dataset.index = item.index;
 				selector.appendChild(option);
 			});
