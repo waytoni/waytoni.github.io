@@ -1,0 +1,67 @@
+<style>
+        .container {
+            padding: 2px;
+        }
+
+        #myViewport {
+            cursor: grab;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #myContent img {
+            width: auto;
+            height: auto;
+            margin: auto;
+            padding: 2px;
+        }
+
+        #myContent div {
+            position: absolute;
+            font-size: 80px;
+        }
+
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin: 0%;
+            width: 100%;
+            background-color: azure;
+        }
+        
+        h1 {
+            font-family: 'Roboto', sans-serif;
+            /*font-size: 5vw;*/
+            font-size: 24pt;
+            text-align: center;
+            margin: 0% 0% 0% 0%;
+            letter-spacing: 1px;
+            color: rgb(71, 59, 59);
+        }
+        
+        h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2vw;
+            text-align: center;
+            margin: 10% 5% 7% 5%;
+            letter-spacing: 5px;
+            color: rgb(71, 59, 59);
+        }
+        h3 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 10pt;
+            text-align: center;
+            color: rgb(71, 59, 59);
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            width: 96%;
+            margin: 0 auto;
+          }
+          
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>

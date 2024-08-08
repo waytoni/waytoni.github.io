@@ -428,6 +428,47 @@ def PrepareHeadTop_Bootstrap(text_filename, series_title, styles):
     return None
 ########### PrepareHeadTop_Bootstrap End ###################################
 
+
+######## PrepareHeadWithStyles ##########
+def PrepareHeadWithSyles(text_filename, series_title, style_file): 
+    
+    with open(text_filename, 'w', encoding="utf-8") as fp:
+        fp.write('<html>\n<head>\n')
+    
+        with open('scripts/py/analytics_tag.txt', 'r', encoding="utf-8") as ftag:
+            tag_info = ftag.read()
+            fp.write(tag_info)
+            ftag.close()
+        
+        with open('scripts/py/page_head.txt', 'r', encoding="utf-8") as fhead:
+            head_info = fhead.read()
+            fp.write(head_info)
+            fhead.close()   
+             
+        fp.write('\n')    
+        
+        with open(style_file, 'r', encoding="utf-8") as fstyle:
+            style_info = fstyle.read()
+            fp.write(style_info)
+            fstyle.close() 
+        
+        title_line = '\t<title>'+ series_title + '</title>\n'
+        fp.write(title_line)
+        
+        fp.write('</head>\n')
+        fp.write('<body>\n')
+        
+        with open('scripts/py/navigation_header_top.html', 'r', encoding="utf-8") as fnavbar:
+            navbar_info = fnavbar.read()
+            fp.write(navbar_info)
+            fnavbar.close()
+        
+        fp.close()
+    return None
+########### PrepareHeadWithStyles End ###################################
+
+
+
 ######## PrepareHead ##########
 def PrepareHead(text_filename, series_title): 
     

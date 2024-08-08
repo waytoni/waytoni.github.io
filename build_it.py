@@ -18,10 +18,11 @@ from scripts.py import build_series_NivanMagaUdesa
 # from scripts.py import build_series_Saturday_Abhidhamma_Lesson
 from scripts.py import build_series_AbhidharmaASeries
 from scripts.py import build_series_Abidharma_Aruth
-from scripts.py import build_series_Suthamaya
+from scripts.py import build_series_SuthamayaHirigal
 from scripts.py import build_series_SiyaluDesana
 from scripts.py import build_series_J
 from scripts.py import build_series_J_new
+
 
 
 import sys
@@ -30,7 +31,7 @@ sys.path.append('../scripts_new')
 import waytoni_all_videos_new
 
 
-menu_change = False
+menu_change = True
 
 if menu_change == True:
     from scripts.py import build_series_I
@@ -45,9 +46,10 @@ if menu_change == True:
     from scripts.py import build_file_list
     # when new images are added run create_thubnails.py in Documents
     build_file_list
-    
+    from scripts.py import build_page_ChiththaChithasika
+    build_page_ChiththaChithasika
     # Update
-    # Chithatha_Chithasika, and Vishesha Desana
+    # Chithatha_Chithasika (old page), and Vishesha Desana
     # also update all_videos header
    
 
@@ -61,5 +63,5 @@ build_series_AbhidharmaASeries
 build_series_Abidharma_Aruth
 build_series_J
 build_series_J_new
-build_series_Suthamaya
+build_series_SuthamayaHirigal
 build_series_SiyaluDesana
