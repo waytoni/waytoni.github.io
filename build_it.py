@@ -51,6 +51,7 @@ if menu_change == True:
     # Update
     # Chithatha_Chithasika (old page), and Vishesha Desana
     # also update all_videos header
+    # KalutharaBodhiya B C D Batches html
    
 
 waytoni_all_videos_new

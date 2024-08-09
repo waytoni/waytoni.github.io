@@ -143,7 +143,7 @@
 		const select1 = document.querySelector('#video_list1');
 		const content1 = document.querySelector('#content1');
 		content1.innerHTML = 
-			'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/nylCHb0eeaw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/SIE6xJVMTmA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		select1.addEventListener('change', function() {
 			if (this.value === 'option1') {
 				content1.innerHTML = 
@@ -342,14 +342,14 @@
 				'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/Y6aiJ1K63mA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 			} else if (this.value === 'option66'){
 				content1.innerHTML = 
-				'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/nylCHb0eeaw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+				'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/SIE6xJVMTmA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 			}
 		});
 	</script>
 	<script>
 		const selectS1 = document.querySelector('#video_list1');
 		const notes1 = document.querySelector('#notes1');
-		notes1.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
+		notes1.innerHTML = '<p>දේශනාව සඳහා සටහන්</p><p>රේරුකානේ චන්ද්‍රවිමල හිමි විසින් ලියන ලද පට්ඨාන මහා පකරණ සන්නය <a href="https://tipitaka.lk/library/494" target="_blank" >https://tipitaka.lk/library/494</a></p>';
 		selectS1.addEventListener('change', function() {
 			if (this.value === 'option1') {
 				notes1.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
@@ -492,9 +492,13 @@
 			} else if (this.value === 'option64'){
 				notes1.innerHTML = '';
 			} else if (this.value === 'option65'){
-				notes1.innerHTML = '';
+					notes1.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
+				notes1.innerHTML +='<p>රේරුකානේ චන්ද්‍රවිමල හිමි විසින් ලියන ලද පට්ඨාන මහා පකරණ සන්නය <a href="https://tipitaka.lk/library/494" target="_blank" >https://tipitaka.lk/library/494</a></p>';
+
 			} else if (this.value === 'option66'){
-				notes1.innerHTML = '';
+					notes1.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
+				notes1.innerHTML +='<p>රේරුකානේ චන්ද්‍රවිමල හිමි විසින් ලියන ලද පට්ඨාන මහා පකරණ සන්නය <a href="https://tipitaka.lk/library/494" target="_blank" >https://tipitaka.lk/library/494</a></p>';
+
 			}
 		});
 	</script>
