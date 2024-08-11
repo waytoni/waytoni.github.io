@@ -80,7 +80,9 @@
 			<option value="option9">2024-Jul-07 නිවන් මග උදෙසා දර්ශන ඥාණය (B කණ්ඩායම) දේශනා මාලාව 9_මූලික_ධර්ම_දේශනා_පංචස්කන්ධ-රූප-සංස්කාර_(චේතනා)_කෘත්‍යය</option>
 			<option value="option10">2024-Jul-14 නිවන් මග උදෙසා දර්ශන ඥාණය (B කණ්ඩායම) දේශනා මාලාව 10_සංස්කාර_(චේතනා)_කෘත්‍යය-අනිච්ච_දුක්ඛ_අනත්ත_භාවනා</option>
 			<option value="option11">2024-Jul-21 නිවන් මග උදෙසා දර්ශන ඥාණය (B කණ්ඩායම) දේශනා මාලාව 11_මූලික_ධර්ම_දේශනා-සංස්කාර_(චේතනා)_කෘත්‍යය-පංචඋපාදානස්කන්ධ</option>
-			<option value="option12" selected>2024-Jul-28 නිවන් මග උදෙසා දර්ශන ඥාණය (B කණ්ඩායම) දේශනා මාලාව 012</option>
+			<option value="option12">2024-Jul-28 නිවන් මග උදෙසා දර්ශන ඥාණය (B කණ්ඩායම) දේශනා මාලාව 012</option>
+			<option value="option13">2024-Aug-04 නිවන් මග උදෙසා දර්ශන ඥාණය (B කණ්ඩායම) දේශනා මාලාව 013</option>
+			<option value="option14" selected>2024-Aug-11 නිවන් මග උදෙසා දර්ශන ඥාණය (B කණ්ඩායම) දේශනා මාලාව 014</option>
 		</select>
 		<div id="content"></div>
 		<div id="notes"></div>
@@ -89,7 +91,7 @@
 		const select = document.querySelector('#video_list');
 		const content = document.querySelector('#content');
 		content.innerHTML = 
-			'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/9xwNjM4JJqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/cAwOGKwNa6Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		select.addEventListener('change', function() {
 			if (this.value === 'option1') {
 				content.innerHTML = 
@@ -127,6 +129,12 @@
 			} else if (this.value === 'option12'){
 				content.innerHTML = 
 				'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/9xwNjM4JJqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			} else if (this.value === 'option13'){
+				content.innerHTML = 
+				'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/DqcGbLU9164" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			} else if (this.value === 'option14'){
+				content.innerHTML = 
+				'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/cAwOGKwNa6Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 			}
 		});
 	</script>
@@ -162,6 +170,10 @@
 			} else if (this.value === 'option11'){
 				notes.innerHTML = '';
 			} else if (this.value === 'option12'){
+				notes.innerHTML = '';
+			} else if (this.value === 'option13'){
+				notes.innerHTML = '';
+			} else if (this.value === 'option14'){
 				notes.innerHTML = '';
 			}
 		});
