@@ -14,7 +14,7 @@ from utilities import *
 
 
 basepath = 'Anichcha_Dukka_Anathma_Series'
-intro_file = os.path.join(basepath,'Anichcha_Dukka_Anathma_intro.txt')
+intro_file = os.path.join(basepath,'AnichchaDukkaAnathma_base.html')
 html_file = os.path.join(basepath,'Anichcha_Dukka_Anathma.html')
 
 playlist_url = ''
@@ -38,7 +38,7 @@ PrepareTail(html_file)
 ######  Paramartha Video ############
 
 basepath = 'Paramartha_Video'
-intro_file = os.path.join(basepath,'Paramartha_Lokaya_intro.txt')
+intro_file = os.path.join(basepath,'ParamarthaLokaya_base.html')
 html_file = os.path.join(basepath,'Paramartha_Video.html')
 
 playlist_url = ''
