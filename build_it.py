@@ -20,8 +20,8 @@ from scripts.py import build_series_AbhidharmaASeries
 from scripts.py import build_series_Abidharma_Aruth
 from scripts.py import build_series_SuthamayaHirigal
 from scripts.py import build_series_SiyaluDesana
+from scripts.py import build_series_J_old
 from scripts.py import build_series_J
-from scripts.py import build_series_J_new
 
 
 
@@ -62,7 +62,7 @@ build_series_NivanMagaUdesa
 #build_series_Saturday_Abhidhamma_Lesson
 build_series_AbhidharmaASeries
 build_series_Abidharma_Aruth
+build_series_J_old
 build_series_J
-build_series_J_new
 build_series_SuthamayaHirigal
 build_series_SiyaluDesana

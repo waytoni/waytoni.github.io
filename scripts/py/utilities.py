@@ -361,7 +361,9 @@ def HtmlDropdownBlockNoSections(block_id, in_file, playlist_title, outfile, play
 def PrepareHeadTop(text_filename, series_title, styles): 
     
     with open(text_filename, 'w', encoding="utf-8") as fp:
-        fp.write('<html>\n<head>\n')
+        fp.write('<!DOCTYPE html>\n')
+        fp.write('<html lang="en">\n')
+        fp.write('<head>\n')
     
         with open('scripts/py/analytics_tag.txt', 'r', encoding="utf-8") as ftag:
             tag_info = ftag.read()

@@ -48,5 +48,5 @@
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navFunction()">&#9776;</a>
   </div>
   <div style="padding: 20px;">
-    <h1>සියලුම දේශනා - @WayToNibbana YouTube Channel</h1>
+    <h1>සියලුම දේශනා - @WayToNibbana YouTube Channel</h1><p
     <br>
