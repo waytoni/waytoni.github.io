@@ -52,6 +52,7 @@ if menu_change == True:
     # Chithatha_Chithasika (old page), and Vishesha Desana
     # also update all_videos header
     # KalutharaBodhiya B C D Batches html
+    # Zoom info Nivan Maga Udesa, and AbhidhmmaASeries
    
 
 waytoni_all_videos_new

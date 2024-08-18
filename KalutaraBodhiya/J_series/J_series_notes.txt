@@ -10,7 +10,11 @@
 නිවන් මග උදෙසා දර්ශන ඥාණය සඳහා මූලික සූත්‍ර pdf::/documents/දර්ශන ඥාණය මූලික සූත්‍ර 01.pdf
 #11
 #12
-#13
+#15 
+Zoom හරහා සම්බන්ධ වීමට url::https://us06web.zoom.us/j/84226390602?pwd=SkdZUUhNcFNWT0lhMksrRisyWnJWZz09
+Zoom Meeting ID: 842 2639 0602    Passcode: 100100
+pdf::2024 08 18  Kalutara Bodhiya දර්ශන ඥානය.pdf
+Zoom
 #20
 #27
 #28
