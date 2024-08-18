@@ -40,8 +40,6 @@ url::https://tipitaka.lk/ap-vbh-6-7
 #146 
 ගුරුතුමා විසින් පටිච‍්චසමුප‍්පාද විභඞ්ගය අධ්යයනය සඳහා සකස්කරන ලද විශේෂ සටහන pdf::විභඞ්ගප්පකරණං V 1.05 Final.pdf  
 pdf::විභංග නිද්දේසො.pdf
-(testing) url::https://waytoni.com/documents/ap-vp-6-annotation.html
-(testing) url::https://waytoni.com/documents/ecps.html
 #147
 ගුරුතුමා විසින් පටිච‍්චසමුප‍්පාද විභඞ්ගය අධ්යයනය සඳහා සකස්කරන ලද විශේෂ සටහන pdf::විභඞ්ගප්පකරණං V 1.05 Final.pdf  
 pdf::විභංග නිද්දේසො.pdf
