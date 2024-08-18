@@ -15,12 +15,12 @@
 
 from scripts.py import build_series_Nivan_Maga_Udesa
 from scripts.py import build_series_NivanMagaUdesa
-# from scripts.py import build_series_Saturday_Abhidhamma_Lesson
+from scripts.py import build_series_Saturday_Abhidhamma_Lesson
 from scripts.py import build_series_AbhidharmaASeries
 from scripts.py import build_series_Abidharma_Aruth
 from scripts.py import build_series_SuthamayaHirigal
 from scripts.py import build_series_SiyaluDesana
-from scripts.py import build_series_J_old
+#from scripts.py import build_series_J_old
 from scripts.py import build_series_J
 
 
@@ -31,7 +31,7 @@ sys.path.append('../scripts_new')
 import waytoni_all_videos_new
 
 
-menu_change = True
+menu_change = False
 
 if menu_change == True:
     from scripts.py import build_series_I
@@ -59,10 +59,10 @@ waytoni_all_videos_new
 
 build_series_Nivan_Maga_Udesa
 build_series_NivanMagaUdesa
-#build_series_Saturday_Abhidhamma_Lesson
+build_series_Saturday_Abhidhamma_Lesson
 build_series_AbhidharmaASeries
 build_series_Abidharma_Aruth
-build_series_J_old
+#build_series_J_old
 build_series_J
 build_series_SuthamayaHirigal
 build_series_SiyaluDesana

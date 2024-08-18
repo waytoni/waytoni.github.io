@@ -4,6 +4,7 @@ import sys
 # print('Original sys.path:', sys.path)
 
 import os
+import shutil
 sys.path.append('scripts/py')
 
 # print('Updated sys.path:', sys.path)
@@ -12,7 +13,7 @@ from utilities import *
 from build_series_menu import *
 
 
-basepath = 'Saturday_Abhidhamma_Lesson'
+basepath = 'AbhidharmaSeries'
 
 intro_file = os.path.join(basepath,'AbhidharmaASeries_base.html')
 notes_file = os.path.join(basepath,'AbhidharmaASeries_notes.txt')
@@ -43,3 +44,8 @@ with open(html_file, 'a', encoding='utf-8') as fp:
         fp.write(page_intro)
         fintro.close()
 
+old_dir = 'Saturday_Abhidhamma_Lesson'
+old_html_file = os.path.join(old_dir,'index.html')
+old_json_file = os.path.join(old_dir,'AbhidharmaASeries.json') 
+shutil.copy(html_file, old_html_file)
+shutil.copy(json_file, old_json_file)
