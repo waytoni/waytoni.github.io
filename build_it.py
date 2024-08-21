@@ -17,7 +17,8 @@ from scripts.py import build_series_Nivan_Maga_Udesa
 from scripts.py import build_series_NivanMagaUdesa
 from scripts.py import build_series_Saturday_Abhidhamma_Lesson
 from scripts.py import build_series_AbhidharmaASeries
-from scripts.py import build_series_Abidharma_Aruth
+from scripts.py import build_series_Abhidharma_Aruth
+from scripts.py import build_series_AbhidharmaAruth
 from scripts.py import build_series_SuthamayaHirigal
 from scripts.py import build_series_SiyaluDesana
 #from scripts.py import build_series_J_old
@@ -62,7 +63,8 @@ build_series_Nivan_Maga_Udesa
 build_series_NivanMagaUdesa
 build_series_Saturday_Abhidhamma_Lesson
 build_series_AbhidharmaASeries
-build_series_Abidharma_Aruth
+build_series_Abhidharma_Aruth
+build_series_AbhidharmaAruth
 #build_series_J_old
 build_series_J
 build_series_SuthamayaHirigal

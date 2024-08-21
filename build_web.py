@@ -21,7 +21,7 @@
 
 from scripts.py import build_series_Nivan_Maga_Udesa
 from scripts.py import build_series_Saturday_Abhidhamma_Lesson
-from scripts.py import build_series_Abidharma_Aruth
+from scripts.py import build_series_Abhidharma_Aruth
 from scripts.py import build_series_Suthamaya
 from scripts.py import build_series_SiyaluDesana
 from scripts.py import build_series_J_old
@@ -57,7 +57,7 @@ if menu_change == True:
 
 build_series_Nivan_Maga_Udesa
 build_series_Saturday_Abhidhamma_Lesson
-build_series_Abidharma_Aruth
+build_series_Abhidharma_Aruth
 build_series_J_old
 build_series_Suthamaya
 build_series_SiyaluDesana
