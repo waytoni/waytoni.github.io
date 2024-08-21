@@ -45,11 +45,11 @@
           </button>
           <div class="dropdown-content">
             <a href="../Nivan_Maga_Udesa/index.html">නිවන් මග උදෙසා දර්ශන ඥාණය (A කණ්ඩායම)</a>
-            <a href="../Saturday_Abhidhamma_Lesson/index.html">තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා</a>
+            <a href="../AbhidharmaSeries/index.html">තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා</a>
             <a href="../Abhidharma_Aruth/">අභිධර්ම අරුත් දේශනා</a>
             <a href="../KalutaraBodhiya/J_series/J_series.html">කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය (B කණ්ඩායම) දේශනා මාලාව</a>
             <a href="../Suthamaya/SuthamayaHirigal.html">සුතමයඤාණං දේශනා</a>
-            <a href="../VisheshaDesana/VisheshaDesana.html">විශේෂ දේශනා</a>
+            <a href="../VisheshaDesana/index.html">විශේෂ දේශනා</a>
             <a href="../KalutaraBodhiya/I_series/I_series.html">කළුතර බෝධි පරිශ්‍රයේදී පැවැත්වුන 9වෙනි දේශනා මාලාව</a>
           </div>
         </div> 
@@ -65,10 +65,13 @@
     <p>විමසීම්: 0777 047174, 0714 480752</p>
     <p></p>
 
-<p><label for="link-selectorEP">Select a video from the dropdown menu:</label></p>
+    1. Abhidharma Aruth
+<p><label for="link-selectorEP">Select a video from the dropdown menu (EP):</label></p>
 <p><select id="link-selectorEP" onchange="updateContentEP()">
     <!-- Options will be populated dynamically -->
 </select></p>
+
+
 <div id="controls">
     <center>
 
@@ -76,6 +79,7 @@
     <button onclick="navigateEP(1)">Next</button>
 </center>
 </div>
+
 <div id="video-containerEP">
     <!-- YouTube video will be embedded here -->
 </div>
@@ -83,22 +87,45 @@
     <!-- Notes will be displayed here -->
 </div>
 
+<br>
+2. Abhidharma Aruth - B
+
+<p><label for="link-selectorB">Select a video from the dropdown menu (B):</label></p>
+<p><select id="link-selectorB" onchange="updateContentB()">
+    <!-- Options will be populated dynamically -->
+</select></p>
+
+<div id="controlsB">
+    <center>
+
+    <button onclick="navigateB(-1)">Previous</button>
+    <button onclick="navigateB(1)">Next</button>
+</center>
+<div id="video-containerB">
+    <!-- YouTube video will be embedded here -->
+</div>
+
+<div id="notesB">
+    <!-- Notes will be displayed here -->
+</div>
+
 <script>
-    let dataEP, dataB;
+    let data;
     let seriesTitle_EP = "අභිධර්ම අරුත් EP - දේශනා"; // Changeable series title
     let seriesTitle_B = "අභිධර්ම අරුත් B - දේශනා"; // Changeable series title
     // Fetch the JSON data and populate the dropdown menu
     fetch('AbhidharmaAruthEP.json').then(response => {
         if (!response.ok) {
-            throw new Error('Network response was not ok - EP' + response.statusText);
+            throw new Error('Network response was not ok ' + response.statusText);
         }
         return response.json();
     }).then(json => {
         dataEP = json;
         populateDropdownEP();
         displayLastEntryEP();
+         console.log('x1')
     }).catch(error => {
-        console.error('There has been a problem with your fetch operation for EP:', error);
+        console.error('There has been a problem with your fetch operation:', error);
     });
     // Function to populate the dropdown menu
     function populateDropdownEP() {
@@ -115,16 +142,18 @@
     // Function to update the YouTube video and notes based on the selected option
     function updateContentEP() {
         const selector = document.getElementById('link-selectorEP');
+        console.log('selector : ',selector)
+        console.log('selectedIndex : ', selector.selectedIndex)
         const selectedOption = selector.options[selector.selectedIndex];
         const url = selectedOption.value;
         const index = selectedOption.dataset.index;
-        const notes = dataEP.find(item => item.index == index).notes;
+        const notesEP = dataEP.find(item => item.index == index).notes;
         const videoContainer = document.getElementById('video-containerEP');
         videoContainer.innerHTML =
             `<p><iframe width="560" height="315" src="${url.replace('watch?v=', 'embed/')}" frameborder="0" allowfullscreen></iframe></p>`;
-        const notesContainer = document.getElementById('notes');
+        const notesContainer = document.getElementById('notesEP');
         
-        notesContainer.innerHTML = '<p>'+ notes + '</p>'; // Use innerHTML to render clickable links
+        notesContainer.innerHTML = '<p>'+ notesEP + '</p>'; // Use innerHTML to render clickable links
         
     }
     // Function to display the last entry from the JSON data on the initial load
@@ -149,7 +178,7 @@
         updateContentEP();
     }
 
-
+/*
     // Function to populate the dropdown menu
     function populateDropdownB() {
         const selector = document.getElementById('link-selectorB');
@@ -198,6 +227,7 @@
         selector.selectedIndex = newIndex;
         updateContentB();
     }
+    */
 </script>
 </body>
 </html>

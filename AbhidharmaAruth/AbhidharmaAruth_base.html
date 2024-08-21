@@ -8,10 +8,13 @@
     <p>විමසීම්: 0777 047174, 0714 480752</p>
     <p></p>
 
-<p><label for="link-selectorEP">Select a video from the dropdown menu:</label></p>
+    1. Abhidharma Aruth
+<p><label for="link-selectorEP">Select a video from the dropdown menu (EP):</label></p>
 <p><select id="link-selectorEP" onchange="updateContentEP()">
     <!-- Options will be populated dynamically -->
 </select></p>
+
+
 <div id="controls">
     <center>
 
@@ -19,10 +22,33 @@
     <button onclick="navigateEP(1)">Next</button>
 </center>
 </div>
+
 <div id="video-containerEP">
     <!-- YouTube video will be embedded here -->
 </div>
 <div id="notesEP">
+    <!-- Notes will be displayed here -->
+</div>
+
+<br>
+2. Abhidharma Aruth - B
+
+<p><label for="link-selectorB">Select a video from the dropdown menu (B):</label></p>
+<p><select id="link-selectorB" onchange="updateContentB()">
+    <!-- Options will be populated dynamically -->
+</select></p>
+
+<div id="controlsB">
+    <center>
+
+    <button onclick="navigateB(-1)">Previous</button>
+    <button onclick="navigateB(1)">Next</button>
+</center>
+<div id="video-containerB">
+    <!-- YouTube video will be embedded here -->
+</div>
+
+<div id="notesB">
     <!-- Notes will be displayed here -->
 </div>
 
@@ -40,6 +66,7 @@
         dataEP = json;
         populateDropdownEP();
         displayLastEntryEP();
+         console.log('x1')
     }).catch(error => {
         console.error('There has been a problem with your fetch operation:', error);
     });
@@ -61,19 +88,19 @@
         const selectedOption = selector.options[selector.selectedIndex];
         const url = selectedOption.value;
         const index = selectedOption.dataset.index;
-        const notes = data.find(item => item.index == index).notes;
+        const notes = dataEP.find(item => item.index == index).notes;
         const videoContainer = document.getElementById('video-containerEP');
         videoContainer.innerHTML =
             `<p><iframe width="560" height="315" src="${url.replace('watch?v=', 'embed/')}" frameborder="0" allowfullscreen></iframe></p>`;
-        const notesContainer = document.getElementById('notes');
+        const notesContainer = document.getElementById('notesEP');
         
         notesContainer.innerHTML = '<p>'+ notes + '</p>'; // Use innerHTML to render clickable links
         
     }
     // Function to display the last entry from the JSON data on the initial load
     function displayLastEntryEP() {
-        if (data.length > 0) {
-            const lastEntry = data[data.length - 1];
+        if (dataEP.length > 0) {
+            const lastEntry = dataEP[dataEP.length - 1];
             const selector = document.getElementById('link-selectorEP');
             selector.value = lastEntry.url;
             updateContentEP();
@@ -111,19 +138,19 @@
         const selectedOption = selector.options[selector.selectedIndex];
         const url = selectedOption.value;
         const index = selectedOption.dataset.index;
-        const notes = data.find(item => item.index == index).notes;
+        const notesB = dataB.find(item => item.index == index).notes;
         const videoContainer = document.getElementById('video-containerB');
         videoContainer.innerHTML =
             `<p><iframe width="560" height="315" src="${url.replace('watch?v=', 'embed/')}" frameborder="0" allowfullscreen></iframe></p>`;
         const notesContainer = document.getElementById('notesB');
         
-        notesContainer.innerHTML = '<p>'+ notes + '</p>'; // Use innerHTML to render clickable links
+        notesContainer.innerHTML = '<p>'+ notesB + '</p>'; // Use innerHTML to render clickable links
         
     }
     // Function to display the last entry from the JSON data on the initial load
     function displayLastEntryB() {
-        if (data.length > 0) {
-            const lastEntry = data[data.length - 1];
+        if (dataB.length > 0) {
+            const lastEntry = dataB[dataB.length - 1];
             const selector = document.getElementById('link-selectorB');
             selector.value = lastEntry.url;
             updateContentB();
