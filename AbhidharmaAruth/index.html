@@ -65,7 +65,7 @@
 <p>විමසීම්: 0777 047174, 0714 480752</p>
 <p></p>
 
-1. Abhidharma Aruth
+<h2>1. Abhidharma Aruth</h2>
 
 	<p><label for="link-selector">Select a video from the dropdown menu:</label></p>
 	<p><select id="link-selector" onchange="updateContent()">
@@ -85,9 +85,30 @@
 		<!-- Notes will be displayed here -->
 	</div>
 
+	<h2>2. Abhidharma Aruth B</h2>
+
+	<p><label for="link-selector_B">Select a video from the dropdown menu:</label></p>
+	<p><select id="link-selector_B" onchange="updateContent_B()">
+		<!-- Options will be populated dynamically -->
+	</select></p>
+	<div id="controls">
+		<center>
+
+		<button onclick="navigate_B(-1)">Previous</button>
+		<button onclick="navigate_B(1)">Next</button>
+	</center>
+	</div>
+	<div id="video-container_B">
+		<!-- YouTube video will be embedded here -->
+	</div>
+	<div id="notes_B">
+		<!-- Notes will be displayed here -->
+	</div>
+
 	<script>
 		let data;
 		let seriesTitle = "අභිධර්ම අරුත් EP - දේශනා"; // Changeable series title
+		let seriesTitle_B = "අභිධර්ම අරුත් B - දේශනා"; // Changeable series title
 		// Fetch the JSON data and populate the dropdown menu
 		fetch('AbhidharmaAruthEP.json').then(response => {
 			if (!response.ok) {
@@ -101,6 +122,20 @@
 		}).catch(error => {
 			console.error('There has been a problem with your fetch operation:', error);
 		});
+
+		fetch('AbhidharmaAruthB.json').then(response => {
+			if (!response.ok) {
+				throw new Error('Network response was not ok ' + response.statusText);
+			}
+			return response.json();
+		}).then(json => {
+			data_B = json;
+			populateDropdown_B();
+			displayLastEntry_B();
+		}).catch(error => {
+			console.error('There has been a problem with your fetch operation (B):', error);
+		});
+
 		// Function to populate the dropdown menu
 		function populateDropdown() {
 			const selector = document.getElementById('link-selector');
@@ -111,12 +146,31 @@
 					`${item.index} ●  ${seriesTitle} ● ${item.date}`;
 				option.dataset.index = item.index;
 				selector.appendChild(option);
+				console.log('option_EP:  ',selector.options)
 			});
 		}
+
+		// Function to populate the dropdown menu B
+		function populateDropdown_B() {
+			const selector_B = document.getElementById('link-selector_B');
+			data_B.forEach(item => {
+				console.log(item)
+				const option = document.createElement('option_B');
+				option.value = item.url;
+				option.text = item.comment ? `${item.index} ●  ${item.comment} ● ${item.date}` :
+					`${item.index} ●  ${seriesTitle_B} ● ${item.date}`;
+				option.dataset.index = item.index;
+				selector_B.appendChild(option);
+				console.log('option_B:  ',selector_B.options)
+			});
+			console.log('popuateDropdown_B  selector_B: ',selector_B)
+		}
+
 		// Function to update the YouTube video and notes based on the selected option
 		function updateContent() {
 			const selector = document.getElementById('link-selector');
 			const selectedOption = selector.options[selector.selectedIndex];
+			console.log('selectedOption_EP:  ', selectedOption)
 			const url = selectedOption.value;
 			const index = selectedOption.dataset.index;
 			const notes = data.find(item => item.index == index).notes;
@@ -128,6 +182,26 @@
 			notesContainer.innerHTML = '<p>'+ notes + '</p>'; // Use innerHTML to render clickable links
 			
 		}
+
+
+		// Function to update the YouTube video and notes based on the selected option B
+		function updateContent_B() {
+			const selector_B = document.getElementById('link-selector_B');
+			console.log('selector_B:  ', selector_B)
+			const selectedOption_B = selector_B.options[selector_B.selectedIndex];
+			console.log('selectedOption_B:  ', selectedOption_B)
+			const url = selectedOption_B.value;
+			const index = selectedOption_B.dataset.index;
+			const notes_B = data_B.find(item => item.index == index).notes;
+			const videoContainer_B = document.getElementById('video-container_B');
+			videoContainer_B.innerHTML =
+				`<p><iframe width="560" height="315" src="${url.replace('watch?v=', 'embed/')}" frameborder="0" allowfullscreen></iframe></p>`;
+			const notesContainer_B = document.getElementById('notes_B');
+			
+			notesContainer_B.innerHTML = '<p>'+ notes_B + '</p>'; // Use innerHTML to render clickable links
+			
+		}
+
 		// Function to display the last entry from the JSON data on the initial load
 		function displayLastEntry() {
 			if (data.length > 0) {
@@ -135,6 +209,16 @@
 				const selector = document.getElementById('link-selector');
 				selector.value = lastEntry.url;
 				updateContent();
+			}
+		}
+
+		// Function to display the last entry from the JSON data on the initial load B
+		function displayLastEntry_B() {
+			if (data_B.length > 0) {
+				const lastEntry_B = data_B[data_B.length - 1];
+				const selector_B = document.getElementById('link-selector_B');
+				selector_B.value = lastEntry_B.url;
+				updateContent_B();
 			}
 		}
 		// Function to navigate to the previous or next video
