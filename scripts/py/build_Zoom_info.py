@@ -64,7 +64,7 @@ html_file = html_file_Saturday4pm
 intro_file = intro_file_Saturday4pm 
 print(intro_file)
 print(html_file)
-series_title = 'Zoom Info - නිවන් මග උදෙසා දර්ශන ඥාණය'
+series_title = 'Zoom Info - නිවන් මග උදෙසා දර්ශන ඥාණය - සෙනසුරාදා සවස 4.00'
 
 PrepareHead(html_file, series_title)
 
