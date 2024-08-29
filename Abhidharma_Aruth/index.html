@@ -137,7 +137,8 @@
 			<option value="option64">2024-Jul-25 අභිධර්ම අරුත් - දේශනා EP069</option>
 			<option value="option65">2024-Aug-01 අභිධර්ම අරුත් - දේශනා EP070</option>
 			<option value="option66">2024-Aug-08 අභිධර්ම අරුත් - දේශනා EP071</option>
-			<option value="option67" selected>2024-Aug-15 අභිධර්ම අරුත් - දේශනා EP072</option>
+			<option value="option67">2024-Aug-15 අභිධර්ම අරුත් - දේශනා EP072</option>
+			<option value="option68" selected>2024-Aug-29 අභිධර්ම අරුත් - දේශනා EP073</option>
 		</select>
 		<div id="content1"></div>
 		<div id="notes1"></div>
@@ -146,7 +147,7 @@
 		const select1 = document.querySelector('#video_list1');
 		const content1 = document.querySelector('#content1');
 		content1.innerHTML = 
-			'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/T1qablYeKUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/womSnrygUPA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		select1.addEventListener('change', function() {
 			if (this.value === 'option1') {
 				content1.innerHTML = 
@@ -349,6 +350,9 @@
 			} else if (this.value === 'option67'){
 				content1.innerHTML = 
 				'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/T1qablYeKUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			} else if (this.value === 'option68'){
+				content1.innerHTML = 
+				'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/womSnrygUPA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 			}
 		});
 	</script>
@@ -506,6 +510,8 @@
 				notes1.innerHTML +='<p>රේරුකානේ චන්ද්‍රවිමල හිමි විසින් ලියන ලද පට්ඨාන මහා පකරණ සන්නය <a href="https://tipitaka.lk/library/494" target="_blank" >https://tipitaka.lk/library/494</a></p>';
 
 			} else if (this.value === 'option67'){
+				notes1.innerHTML = '';
+			} else if (this.value === 'option68'){
 				notes1.innerHTML = '';
 			}
 		});
