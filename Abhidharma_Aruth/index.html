@@ -138,7 +138,8 @@
 			<option value="option65">2024-Aug-01 අභිධර්ම අරුත් - දේශනා EP071</option>
 			<option value="option66">2024-Aug-08 අභිධර්ම අරුත් - දේශනා EP072</option>
 			<option value="option67">2024-Aug-15 අභිධර්ම අරුත් - දේශනා EP073</option>
-			<option value="option68" selected>2024-Aug-29 අභිධර්ම අරුත් - දේශනා EP074</option>
+			<option value="option68">2024-Aug-29 අභිධර්ම අරුත් - දේශනා EP074</option>
+			<option value="option69" selected>2024-Sep-12 අභිධර්ම අරුත් - දේශනා EP075</option>
 		</select>
 		<div id="content1"></div>
 		<div id="notes1"></div>
@@ -147,7 +148,7 @@
 		const select1 = document.querySelector('#video_list1');
 		const content1 = document.querySelector('#content1');
 		content1.innerHTML = 
-			'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/WuIVVYnt4YE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/5RkXVd1ul68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		select1.addEventListener('change', function() {
 			if (this.value === 'option1') {
 				content1.innerHTML = 
@@ -353,6 +354,9 @@
 			} else if (this.value === 'option68'){
 				content1.innerHTML = 
 				'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/WuIVVYnt4YE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			} else if (this.value === 'option69'){
+				content1.innerHTML = 
+				'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/5RkXVd1ul68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 			}
 		});
 	</script>
@@ -512,6 +516,8 @@
 			} else if (this.value === 'option67'){
 				notes1.innerHTML = '';
 			} else if (this.value === 'option68'){
+				notes1.innerHTML = '';
+			} else if (this.value === 'option69'){
 				notes1.innerHTML = '';
 			}
 		});
