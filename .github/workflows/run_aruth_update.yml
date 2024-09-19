@@ -20,7 +20,7 @@ jobs:
           python-version: 3.11 # Python Version
 
       - name: Run Python Script for Abhidharma Aruth Desana
-        run: python scripts/py/build_series_Abidharma_Aruth.py
+        run: python scripts/py/build_series_Abhidharma_Aruth.py
       
       - name: Update All_Playlists for Abhidharma Aruth Desana updates
         run: python scripts/py/build_series_SiyaluDesana.py
