@@ -17,9 +17,12 @@ jobs:
         with:
           python-version: 3.11 #  Python version
 
-      - name: Update Nivan_Maga_Udesa
+      - name: Update Nivan_Maga_Udesa old
         run: python scripts/py/build_series_Nivan_Maga_Udesa.py # Python script for Nivan Maga Udesa update
-
+      
+      - name: Update Nivan_Maga_Udesa 
+        run: python scripts/py/build_series_NivanMagaUdesa.py 
+      
       - name: commit changes
         run: |
           git config user.name "$(git log -n 1 --pretty=format:%an)"
