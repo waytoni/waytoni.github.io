@@ -15,7 +15,7 @@ from build_series_menu import *
 basepath = 'Nivan_Maga_Udesa'
 
 intro_file = os.path.join(basepath,'NivanMagaUdesa_base.html')
-notes_file = os.path.join(basepath,'NivanMagaUdesa_notes.txt')
+notes_file = os.path.join(basepath,'NivanMagaUdesa_Notes.txt')
 utube_links = os.path.join(basepath,'NivanMagaUdesa_ytlinks.txt')
 #html_file = os.path.join(basepath,'NivanMagaUdesa.html')
 html_file = os.path.join(basepath,'index.html')
