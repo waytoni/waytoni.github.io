@@ -3,7 +3,8 @@ name: Update Nivan Maga Udesa Desana
 on:
   push:
     paths:
-      - 'Nivan_Maga_Udesa/nivan_maga_udesa_youtube_links.txt' # Nivan Maga Udesa text file
+      - 'Nivan_Maga_Udesa/nivan_maga_udesa_youtube_links.txt' # Nivan Maga Udesa text file (old)
+      - 'Nivan_Maga_Udesa/NivanMagaUdesa_ytlinks.txt' # Nivan Maga Udesa youtube links text file
       - 'Nivan_Maga_Udesa/Nivan_Maga_Udesa_Notes.txt' # Nivan Maga Udesa notes text file
 jobs:
   run-python-script-Nivan-Maga-Udesa-Desana:
