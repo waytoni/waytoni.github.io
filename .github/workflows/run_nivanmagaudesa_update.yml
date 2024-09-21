@@ -18,11 +18,8 @@ jobs:
         with:
           python-version: 3.11 #  Python version
 
-      - name: Update Nivan_Maga_Udesa old
-        run: python scripts/py/build_series_Nivan_Maga_Udesa.py # Python script for Nivan Maga Udesa update
-      
       - name: Update Nivan_Maga_Udesa 
-        run: python scripts/py/build_series_NivanMagaUdesa.py 
+        run: python scripts/py/build_series_NivanMagaUdesa.py # Python script for Nivan Maga Udesa update
       
       - name: commit changes
         run: |
