@@ -125,7 +125,12 @@
 			<option value="option50">2024-Jul-26 නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා 46_Extra</option>
 			<option value="option51">2024-Aug-02 නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා 046</option>
 			<option value="option52">2024-Aug-09 නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා 047</option>
-			<option value="option53" selected>2024-Aug-16 නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා 048</option>
+			<option value="option53">2024-Aug-16 නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා 048</option>
+			<option value="option54">2024-Aug-24 නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා 049</option>
+			<option value="option55">2024-Aug-31 නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා 050</option>
+			<option value="option56">2024-Sep-07 නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා 51_missing</option>
+			<option value="option57">2024-Sep-14 නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා 051</option>
+			<option value="option58" selected>2024-Sep-21 නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා 052</option>
 		</select>
 		<div id="content"></div>
 		<div id="notes"></div>
@@ -134,7 +139,7 @@
 		const select = document.querySelector('#video_list');
 		const content = document.querySelector('#content');
 		content.innerHTML = 
-			'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/_SSbHkwKdqo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/_b3X7_kNsTo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		select.addEventListener('change', function() {
 			if (this.value === 'option1') {
 				content.innerHTML = 
@@ -295,6 +300,21 @@
 			} else if (this.value === 'option53'){
 				content.innerHTML = 
 				'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/_SSbHkwKdqo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			} else if (this.value === 'option54'){
+				content.innerHTML = 
+				'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/MnA8dhjrkq4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			} else if (this.value === 'option55'){
+				content.innerHTML = 
+				'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/gjER8g4DJgI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			} else if (this.value === 'option56'){
+				content.innerHTML = 
+				'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/TnWUdoXBIKM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			} else if (this.value === 'option57'){
+				content.innerHTML = 
+				'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/NjToVKybXbA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			} else if (this.value === 'option58'){
+				content.innerHTML = 
+				'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/_b3X7_kNsTo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 			}
 		});
 	</script>
@@ -462,6 +482,16 @@
 			} else if (this.value === 'option52'){
 				notes.innerHTML = '';
 			} else if (this.value === 'option53'){
+				notes.innerHTML = '';
+			} else if (this.value === 'option54'){
+				notes.innerHTML = '';
+			} else if (this.value === 'option55'){
+				notes.innerHTML = '';
+			} else if (this.value === 'option56'){
+				notes.innerHTML = '';
+			} else if (this.value === 'option57'){
+				notes.innerHTML = '';
+			} else if (this.value === 'option58'){
 				notes.innerHTML = '';
 			}
 		});
