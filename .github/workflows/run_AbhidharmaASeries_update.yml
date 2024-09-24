@@ -1,9 +1,10 @@
-name: Update Saturday Abhidhamma Lesson Links
+name: Update Abhidharma A Series Lessons
 
 on:
   push:
     paths:
-      - 'Saturday_Abhidhamma_Lesson/saturday_abhidhamma_lesson_youtube_links.txt' # Update with the actual path to your text file
+      - 'AbhidharmmaSeries/AbhidharmaASeries_ytlinks.txt' 
+      - 'AbhidharmmaSeries/AbhidharmaASeries_notes.txt'
 jobs:
   run-python-script-Saturday-Lesson:
     runs-on: ubuntu-latest
@@ -17,7 +18,7 @@ jobs:
           python-version: 3.11 # Python version
 
       - name: Run Python Script for Saturday Abhidharma Lessons
-        run: python scripts/py/build_series_Saturday_Abhidhamma_Lesson.py
+        run: python scripts/py/build_series_AbhidharmaASeries.py
 
       - name: Update All_Playlists for Saturdaya Abhidharma Lesson updates
         run: python scripts/py/build_series_SiyaluDesana.py
@@ -26,5 +27,5 @@ jobs:
         run: |
           git config user.name "$(git log -n 1 --pretty=format:%an)"
           git config user.email "$(git log -n 1 --pretty=format:%ae)"
-          git commit -a -m "updated Saturday Lesson"
+          git commit -a -m "updated Abhidharma A SeriesLesson"
           git push
