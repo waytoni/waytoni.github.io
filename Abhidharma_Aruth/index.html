@@ -371,7 +371,7 @@
 	<script>
 		const selectS1 = document.querySelector('#video_list1');
 		const notes1 = document.querySelector('#notes1');
-		notes1.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
+		notes1.innerHTML = '<p>දේශනාව සඳහා සටහන්</p><p>රේරුකානේ චන්ද්‍රවිමල හිමි විසින් ලියන ලද චත්තාළීසාකාර විපස්සනා භාවනාව <a href="https://tipitaka.lk/library/469" target="_blank" >https://tipitaka.lk/library/469</a></p>';
 		selectS1.addEventListener('change', function() {
 			if (this.value === 'option1') {
 				notes1.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
@@ -530,7 +530,9 @@
 			} else if (this.value === 'option70'){
 				notes1.innerHTML = '';
 			} else if (this.value === 'option71'){
-				notes1.innerHTML = '';
+					notes1.innerHTML = '<p>දේශනාව සඳහා සටහන්</p>';
+				notes1.innerHTML +='<p>රේරුකානේ චන්ද්‍රවිමල හිමි විසින් ලියන ලද චත්තාළීසාකාර විපස්සනා භාවනාව <a href="https://tipitaka.lk/library/469" target="_blank" >https://tipitaka.lk/library/469</a></p>';
+
 			}
 		});
 	</script>
