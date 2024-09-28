@@ -13,9 +13,9 @@
 
 
 
-from scripts.py import build_series_Nivan_Maga_Udesa
+# from scripts.py import build_series_Nivan_Maga_Udesa
 from scripts.py import build_series_NivanMagaUdesa
-from scripts.py import build_series_Saturday_Abhidhamma_Lesson
+# from scripts.py import build_series_Saturday_Abhidhamma_Lesson
 from scripts.py import build_series_AbhidharmaASeries
 from scripts.py import build_series_AbhidharmaMulaSita
 from scripts.py import build_series_Abhidharma_Aruth
@@ -60,9 +60,9 @@ if menu_change == True:
 waytoni_all_videos_new
 
 
-build_series_Nivan_Maga_Udesa
+# build_series_Nivan_Maga_Udesa
 build_series_NivanMagaUdesa
-build_series_Saturday_Abhidhamma_Lesson
+# build_series_Saturday_Abhidhamma_Lesson
 build_series_AbhidharmaASeries
 build_series_AbhidharmaMulaSita
 build_series_Abhidharma_Aruth
