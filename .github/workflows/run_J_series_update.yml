@@ -3,7 +3,7 @@ name: Update J series Lesson Links
 on:
   push:
     paths:
-      - 'KalutaraBodhiya/J_series/J_series.txt'    
+      - 'KalutaraBodhiya/J_series/J_series_ytlinks.txt'  
       - 'KalutaraBodhiya/J_series/J_series_notes.txt'    
 jobs:
   run-python-script-Iseries:
