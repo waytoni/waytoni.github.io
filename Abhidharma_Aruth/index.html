@@ -142,7 +142,8 @@
 			<option value="option69">2024-Sep-12 අභිධර්ම අරුත් - දේශනා EP074</option>
 			<option value="option70">2024-Sep-19 අභිධර්ම අරුත් - දේශනා EP075</option>
 			<option value="option71">2024-Sep-26 අභිධර්ම අරුත් - දේශනා EP076</option>
-			<option value="option72" selected>2024-Oct-03 අභිධර්ම අරුත් - දේශනා EP077</option>
+			<option value="option72">2024-Oct-03 අභිධර්ම අරුත් - දේශනා EP077</option>
+			<option value="option73" selected>2024-Oct-31 අභිධර්ම අරුත් - දේශනා EP001_ආවර්ජනා</option>
 		</select>
 		<div id="content1"></div>
 		<div id="notes1"></div>
@@ -151,7 +152,7 @@
 		const select1 = document.querySelector('#video_list1');
 		const content1 = document.querySelector('#content1');
 		content1.innerHTML = 
-			'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/-e5xc-dO_q0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/bqCtCSqerMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		select1.addEventListener('change', function() {
 			if (this.value === 'option1') {
 				content1.innerHTML = 
@@ -369,6 +370,9 @@
 			} else if (this.value === 'option72'){
 				content1.innerHTML = 
 				'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/-e5xc-dO_q0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			} else if (this.value === 'option73'){
+				content1.innerHTML = 
+				'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/bqCtCSqerMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 			}
 		});
 	</script>
@@ -538,6 +542,8 @@
 				notes1.innerHTML +='<p>රේරුකානේ චන්ද්‍රවිමල හිමි විසින් ලියන ලද චත්තාළීසාකාර විපස්සනා භාවනාව <a href="https://tipitaka.lk/library/469" target="_blank" >https://tipitaka.lk/library/469</a></p>';
 
 			} else if (this.value === 'option72'){
+				notes1.innerHTML = '';
+			} else if (this.value === 'option73'){
 				notes1.innerHTML = '';
 			}
 		});
