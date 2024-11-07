@@ -145,7 +145,8 @@
 			<option value="option72">2024-Oct-03 අභිධර්ම අරුත් - දේශනා EP077</option>
 			<option value="option73">2024-Oct-31 අභිධර්ම අරුත් - දේශනා EP001_ආවර්ජනා</option>
 			<option value="option74">2024-Oct-31 අභිධර්ම අරුත් - දේශනා EP002_ආවර්ජනා</option>
-			<option value="option75" selected>2024-Oct-31 අභිධර්ම අරුත් - දේශනා EP003_ආවර්ජනා</option>
+			<option value="option75">2024-Oct-31 අභිධර්ම අරුත් - දේශනා EP003_ආවර්ජනා</option>
+			<option value="option76" selected>2024-Nov-07 අභිධර්ම අරුත් - දේශනා EP001_ආවර්ජනා</option>
 		</select>
 		<div id="content1"></div>
 		<div id="notes1"></div>
@@ -154,7 +155,7 @@
 		const select1 = document.querySelector('#video_list1');
 		const content1 = document.querySelector('#content1');
 		content1.innerHTML = 
-			'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/JRr-os3VHXw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/V4nJbWkcFBc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 		select1.addEventListener('change', function() {
 			if (this.value === 'option1') {
 				content1.innerHTML = 
@@ -381,6 +382,9 @@
 			} else if (this.value === 'option75'){
 				content1.innerHTML = 
 				'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/JRr-os3VHXw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+			} else if (this.value === 'option76'){
+				content1.innerHTML = 
+				'<p></p><iframe width="560" height="315" src="https://www.youtube.com/embed/V4nJbWkcFBc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 			}
 		});
 	</script>
@@ -556,6 +560,8 @@
 			} else if (this.value === 'option74'){
 				notes1.innerHTML = '';
 			} else if (this.value === 'option75'){
+				notes1.innerHTML = '';
+			} else if (this.value === 'option76'){
 				notes1.innerHTML = '';
 			}
 		});
