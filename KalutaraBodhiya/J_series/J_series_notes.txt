@@ -12,7 +12,9 @@
 #12
 #15 
 pdf::/VisheshaDesana/2024 08 18  Kalutara Bodhiya දර්ශන ඥානය.pdf
-#20
+#25
+මහා සළායතනික සුත්තං pdf::/documents/pdfs/මහා සළායතනික සුත්තං.pdf
+මහා සළායතනික සුත්තං url::https://tripitaka.online/sutta/870
 #27
 #28
 #1000
