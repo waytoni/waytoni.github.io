@@ -77,6 +77,9 @@ img::036 -2024.04.26 Note_Page_2.jpg
 #58
 මහා සළායතනික සුත්තං pdf::/documents/pdfs/මහා සළායතනික සුත්තං.pdf
 මහා සළායතනික සුත්තං url::https://tripitaka.online/sutta/870
+#59
+ධම්මචක්කප්පවත්තන සූත්‍රය url::https://tipitaka.lk/sn-5-12-2
+පරිඤ්ඤෙය්‍ය සූත්‍රය url::https://tipitaka.lk/sn-5-12-3-9
 #100
 #150
 #200
