@@ -80,6 +80,8 @@ img::036 -2024.04.26 Note_Page_2.jpg
 #59
 ධම්මචක්කප්පවත්තන සූත්‍රය url::https://tipitaka.lk/sn-5-12-2
 පරිඤ්ඤෙය්‍ය සූත්‍රය url::https://tipitaka.lk/sn-5-12-3-9
+#60
+සංකල්ප නිසා දුක url::https://www.youtube.com/watch?v=pBSn3BjwFIU 
 #100
 #150
 #200
