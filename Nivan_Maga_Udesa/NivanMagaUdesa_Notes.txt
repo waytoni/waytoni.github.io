@@ -82,6 +82,8 @@ img::036 -2024.04.26 Note_Page_2.jpg
 පරිඤ්ඤෙය්‍ය සූත්‍රය url::https://tipitaka.lk/sn-5-12-3-9
 #60
 සංකල්ප නිසා දුක url::https://www.youtube.com/watch?v=pBSn3BjwFIU 
+#61
+ආසවා දස්සනා පහාතබ්බා url::https://www.youtube.com/watch?v=bLq1jVh9qRU
 #100
 #150
 #200
