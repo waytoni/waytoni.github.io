@@ -51,5 +51,5 @@
 
 
   <div style="padding: 20px;">
-    <h1>සියලුම දේශනා - @WayToNibbana YouTube Channel</h1><p
+    <h1>සියලුම දේශනා - @WayToNibbana YouTube Channel</h1>
     <br>

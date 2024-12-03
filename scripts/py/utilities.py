@@ -510,6 +510,41 @@ def PrepareHead(text_filename, series_title):
 
 
 
+######## PrepareHeadSimple ##########
+def PrepareHeadSimple(text_filename, series_title): 
+    
+    with open(text_filename, 'w', encoding="utf-8") as fp:
+        fp.write('<html>\n<head>\n')
+    
+        with open('scripts/py/analytics_tag.txt', 'r', encoding="utf-8") as ftag:
+            tag_info = ftag.read()
+            fp.write(tag_info)
+            ftag.close()
+        
+        with open('scripts/py/page_head_simple.txt', 'r', encoding="utf-8") as fhead:
+            head_info = fhead.read()
+            fp.write(head_info)
+            fhead.close()   
+             
+        fp.write('\n')    
+        
+        title_line = '\t<title>'+ series_title + '</title>\n'
+        fp.write(title_line)
+        
+        fp.write('</head>\n')
+        fp.write('<body>\n')
+        
+        with open('scripts/py/navigation_header.html', 'r', encoding="utf-8") as fnavbar:
+            navbar_info = fnavbar.read()
+            fp.write(navbar_info)
+            fnavbar.close()
+        
+        fp.close()
+    return None
+########### PrepareHeadSimple End ###################################
+
+
+
 ######## PrepareHead_2ndLevel Testing ##########
 def PrepareHead_2ndLevel(text_filename, series_title): 
     

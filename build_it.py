@@ -24,13 +24,14 @@ from scripts.py import build_series_SuthamayaHirigal
 from scripts.py import build_series_SiyaluDesana
 #from scripts.py import build_series_J_old
 from scripts.py import build_series_J
+from testing import list_AllVideos
 
 
 
 import sys
 # sys.path.append('E:/src/github/waytoni_io/waytoni_desktop/scripts_new')
-sys.path.append('../scripts_new')
-import waytoni_all_videos_new
+# sys.path.append('../scripts_new')
+#import waytoni_all_videos_new
 
 
 menu_change = False
@@ -57,17 +58,15 @@ if menu_change == True:
     # Zoom info Nivan Maga Udesa, and AbhidhmmaASeries
    
 
-waytoni_all_videos_new
+# waytoni_all_videos_new
+list_AllVideos
 
 
-# build_series_Nivan_Maga_Udesa
 build_series_NivanMagaUdesa
-# build_series_Saturday_Abhidhamma_Lesson
 build_series_AbhidharmaASeries
 build_series_AbhidharmaMulaSita
 build_series_Abhidharma_Aruth
 build_series_AbhidharmaAruth
-#build_series_J_old
 build_series_J
 build_series_SuthamayaHirigal
 build_series_SiyaluDesana

@@ -239,7 +239,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('<li><a href="../documents/file_list.html">සියලු අභිධම්ම දේශනා සඳහා සටහන්</a></li>\n')
     fp.write('<br>\n')
 
-    fp.write('<h3><a href="all_videos.html">සියලුම දේශනා - @WayToNibbana YouTube Channel</a></h3>\n')
+    fp.write('<h3><a href="AllVideos.html">සියලුම දේශනා - @WayToNibbana YouTube Channel</a></h3>\n')
     fp.close()
 
 PrepareTail(html_file)
