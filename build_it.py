@@ -22,7 +22,6 @@ from scripts.py import build_series_Abhidharma_Aruth
 from scripts.py import build_series_AbhidharmaAruth
 from scripts.py import build_series_SuthamayaHirigal
 from scripts.py import build_series_SiyaluDesana
-#from scripts.py import build_series_J_old
 from scripts.py import build_series_J
 from testing import list_AllVideos
 
