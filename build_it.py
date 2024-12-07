@@ -23,6 +23,7 @@ from scripts.py import build_series_AbhidharmaAruth
 from scripts.py import build_series_SuthamayaHirigal
 from scripts.py import build_series_SiyaluDesana
 from scripts.py import build_series_J
+from scripts.py import build_series_ShortDhammaDiscussions
 from testing import list_AllVideos
 
 
@@ -33,9 +34,9 @@ import sys
 #import waytoni_all_videos_new
 
 
-menu_change = False
+menu_change = True
 
-if menu_change == True:
+if menu_change == False:
     from scripts.py import build_series_I
     build_series_I
     from scripts.py import build_Zoom_info
@@ -69,3 +70,4 @@ build_series_AbhidharmaAruth
 build_series_J
 build_series_SuthamayaHirigal
 build_series_SiyaluDesana
+build_series_ShortDhammaDiscussions
