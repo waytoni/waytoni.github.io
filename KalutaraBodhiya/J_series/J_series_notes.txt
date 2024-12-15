@@ -21,10 +21,16 @@ pdf::/VisheshaDesana/2024 08 18  Kalutara Bodhiya දර්ශන ඥානය.p
 #27
 #28
 #30 
-ඛජ්ජනීය සුත්තං pdf::/documents/pdfs/ඛජ්ජනීය සුත්තං.pdf
-මධුපිණ්ඩික සුත්තං pdf::/documents/pdfs/මධුපිණ්ඩික සුත්තං.pdf
-මහාචත්තාරීසක සුත්තං pdf::/documents/pdfs/මහාචත්තාරීසක සුත්තං.pdf
-ඡ ඡක්ක සුත්තං pdf::/documents/pdfs/ඡ ඡක්ක සුත්තං.pdf
-මහා සළායතනික සුත්තං pdf::/documents/pdfs/මහා සළායතනික සුත්තං.pdf
-සබ්බාසව සුත්තං pdf::/documents/pdfs/සබ්බාසව සුත්තං.pdf
+ඛජ්ජනීය සුත්තං (PDF) pdf::/documents/pdfs/ඛජ්ජනීය සුත්තං.pdf
+ඛජ්ජනීය සුත්තං (Online) url::https://tripitaka.online/sutta/3413
+මධුපිණ්ඩික සුත්තං (PDF) pdf::/documents/pdfs/මධුපිණ්ඩික සුත්තං.pdf
+මධුපිණ්ඩික සුත්තං (Online) url::https://tripitaka.online/sutta/311
+මහාචත්තාරීසක සුත්තං (PDF) pdf::/documents/pdfs/මහාචත්තාරීසක සුත්තං.pdf
+මහාචත්තාරීසක සුත්තං (Online) url::https://tripitaka.online/sutta/739
+ඡ ඡක්ක සුත්තං (PDF) pdf::/documents/pdfs/ඡ ඡක්ක සුත්තං.pdf
+ඡ ඡක්ක සුත්තං (Online) url::https://tripitaka.online/sutta/865
+මහා සළායතනික සුත්තං (PDF) pdf::/documents/pdfs/මහා සළායතනික සුත්තං.pdf
+මහා සළායතනික සුත්තං (Online) url::https://tripitaka.online/sutta/870
+සබ්බාසව සුත්තං (PDF) pdf::/documents/pdfs/සබ්බාසව සුත්තං.pdf
+සබ්බාසව සුත්තං (Online) url::https://tripitaka.online/sutta/268
 #1000

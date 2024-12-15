@@ -28,7 +28,11 @@ J_series_styles = """
    	<style>
 		body {
 			font-family: Arial, sans-serif;
-			margin: 20px;
+			margin: 10px;
+		}
+
+		p {
+			margin: 0;
 		}
 
 		#video-container {
