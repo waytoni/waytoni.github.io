@@ -33,4 +33,8 @@ pdf::/VisheshaDesana/2024 08 18  Kalutara Bodhiya දර්ශන ඥානය.p
 මහා සළායතනික සුත්තං (Online) url::https://tripitaka.online/sutta/870
 සබ්බාසව සුත්තං (PDF) pdf::/documents/pdfs/සබ්බාසව සුත්තං.pdf
 සබ්බාසව සුත්තං (Online) url::https://tripitaka.online/sutta/268
+ගද්දූලබද්ධ සුත්තං (PDF) pdf::/documents/pdfs/ගද්දූලබද්ධ සුත්තං.pdf
+ගද්දූලබද්ධ සුත්තං (Online) url::https://tripitaka.online/sutta/3575
+නිබ්බේධික සුත්තං (PDF) pdf::/documents/pdfs/නිබ්බේධික සුත්තං.pdf
+නිබ්බේධික සුත්තං (Online) url::https://tripitaka.online/sutta/10420
 #1000
