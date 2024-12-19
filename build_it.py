@@ -17,8 +17,8 @@
 from scripts.py import build_series_NivanMagaUdesa
 # from scripts.py import build_series_Saturday_Abhidhamma_Lesson
 from scripts.py import build_series_AbhidharmaASeries
-from scripts.py import build_series_AbhidharmaMulaSita
-from scripts.py import build_series_Abhidharma_Aruth
+#from scripts.py import build_series_AbhidharmaMulaSita
+
 from scripts.py import build_series_AbhidharmaAruth
 from scripts.py import build_series_SuthamayaHirigal
 from scripts.py import build_series_SiyaluDesana
@@ -51,11 +51,13 @@ if menu_change == True:
     build_file_list
     from scripts.py import build_page_ChiththaChithasika
     build_page_ChiththaChithasika
+    from scripts.py import build_series_Abhidharma_Aruth
+    build_series_Abhidharma_Aruth
     # Update
     # Chithatha_Chithasika (old page), and Vishesha Desana
     # also update all_videos header
     # KalutharaBodhiya B C D Batches html
-    # Zoom info Nivan Maga Udesa, and AbhidhmmaASeries
+    
    
 
 # waytoni_all_videos_new
@@ -64,8 +66,8 @@ list_AllVideos
 
 build_series_NivanMagaUdesa
 build_series_AbhidharmaASeries
-build_series_AbhidharmaMulaSita
-build_series_Abhidharma_Aruth
+# build_series_AbhidharmaMulaSita
+
 build_series_AbhidharmaAruth
 build_series_J
 build_series_SuthamayaHirigal
