@@ -38,7 +38,7 @@ pdf::/VisheshaDesana/2024 08 18  Kalutara Bodhiya දර්ශන ඥානය.p
 නිබ්බේධික සුත්තං (PDF) pdf::/documents/pdfs/නිබ්බේධික සුත්තං.pdf
 නිබ්බේධික සුත්තං (Online) url::https://tripitaka.online/sutta/10420
 #31
-දේසනාව සඳහා සටහන: (PDF) pdf::/documents/pdfs/Kalutara Bodhiya දර්ශන ඥානය (2024-12-22) v2.pdf
+දේසනාව සඳහා පත්‍රිකාව (PDF) pdf::/documents/pdfs/Kalutara Bodhiya දර්ශන ඥානය (2024-12-22) v2.pdf
 ඛජ්ජනීය සුත්තං (PDF) pdf::/documents/pdfs/ඛජ්ජනීය සුත්තං.pdf
 ඛජ්ජනීය සුත්තං (Online) url::https://tripitaka.online/sutta/3413
 මධුපිණ්ඩික සුත්තං (PDF) pdf::/documents/pdfs/මධුපිණ්ඩික සුත්තං.pdf
