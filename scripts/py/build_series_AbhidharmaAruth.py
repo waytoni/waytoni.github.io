@@ -26,7 +26,7 @@ html_file = os.path.join(basepath,'index.html')
 
 playlist_url = ''
 
-series_title = 'නිවන් මග උදෙසා දර්ශන ඥාණය - අභිධර්ම විග්‍රහය'
+series_title = 'පොල්ගස්ඕවිට පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව'
 
 print(intro_file)
 print(notes_file)
