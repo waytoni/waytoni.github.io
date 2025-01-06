@@ -56,5 +56,5 @@ pdf::/VisheshaDesana/2024 08 18  Kalutara Bodhiya දර්ශන ඥානය.p
 නිබ්බේධික සුත්තං (PDF) pdf::/documents/pdfs/නිබ්බේධික සුත්තං.pdf
 නිබ්බේධික සුත්තං (Online) url::https://tripitaka.online/sutta/10420
 #32
-ආවර්ජනාව දේශනා pdf::/documents/pdfs/Niwan Maga Udesa (2025-01-04) v2 - Share Compress.pdf
+ආවර්ජනාව දේශනා සාරාංශය pdf::/documents/pdfs/Niwan Maga Udesa (2025-01-04) v2 - Share Compress.pdf
 #1000
