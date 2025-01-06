@@ -1,0 +1,1 @@
+PrepareHeadTop(html_file, series_title, J_series_styles)
