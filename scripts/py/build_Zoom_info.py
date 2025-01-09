@@ -29,7 +29,18 @@ intro_file = intro_file_Saturday2pm
 print(intro_file)
 print(html_file)
 
-PrepareHead(html_file, series_title)
+simple_style = """
+	<style>
+		h1,
+	 	h2, 
+		h3, 
+		p, 
+		a {
+			text-align: center;
+		}
+	</style>
+"""
+PrepareHeadTop(html_file, series_title, simple_style)
 
 with open(html_file, 'a', encoding='utf-8') as fp:
     with open(intro_file, 'r', encoding='utf-8') as fintro:

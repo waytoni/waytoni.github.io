@@ -20,7 +20,7 @@ html_file = os.path.join(basepath,'I_series.html')
 
 playlist_url = 'https://www.youtube.com/playlist?list=PLqESXbJ82aIjuYvXqOWBWMs-moFFukBbN'
 
-series_title = 'කළුතර බෝධියේදී පැවැත්වුන 9වෙනි දේශනා මාලාව'
+series_title = 'කළුතර බෝධියේදී පැවැත්වුන 9වෙනි දේශනා මාලාව (I Series)'
 
 print(intro_file)
 print(notes_file)
@@ -29,7 +29,18 @@ print(html_file)
 
 sections = ReadSections(notes_file)
 
-PrepareHead_2ndLevel(html_file, series_title)
+simple_style = """
+	<style>
+		h1,
+	 	h2, 
+		h3, 
+		p, 
+		a {
+			text-align: center;
+		}
+	</style>
+"""
+PrepareHeadTop(html_file, series_title, simple_style)
 
 
 with open(html_file, 'a', encoding='utf-8') as fp:
@@ -44,4 +55,4 @@ idx_prefix = ''
 
 HtmlDropdownBlock(block_id, utube_links, series_title, html_file, playlist_url, idx_prefix, sections)
 
-PrepareTail_2ndLevel(html_file)
+PrepareTail(html_file)

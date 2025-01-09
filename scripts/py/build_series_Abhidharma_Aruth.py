@@ -39,7 +39,18 @@ print(html_file)
 sections_EP = ReadSections(notes_file_EP)
 sections_B = ReadSections(notes_file_B)
 
-PrepareHead(html_file, series_title)
+simple_style = """
+	<style>
+		h1,
+	 	h2, 
+		h3, 
+		p, 
+		a {
+			text-align: center;
+		}
+	</style>
+"""
+PrepareHeadTop(html_file, series_title, simple_style)
 
 
 with open(html_file, 'a', encoding='utf-8') as fp:

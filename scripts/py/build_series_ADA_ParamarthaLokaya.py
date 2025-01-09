@@ -23,7 +23,18 @@ series_title = 'අනිච්ච, දුක්ඛ, අනත්ත ප්‍�
 print(intro_file)
 print(html_file)
 
-PrepareHead(html_file, series_title)
+simple_style = """
+	<style>
+		h1,
+	 	h2, 
+		h3, 
+		p, 
+		a {
+			text-align: center;
+		}
+	</style>
+"""
+PrepareHeadTop(html_file, series_title, simple_style)
 
 with open(html_file, 'a', encoding='utf-8') as fp:
     
@@ -47,7 +58,7 @@ series_title = 'පරමාර්ථ ලෝකය දේශනා'
 print(intro_file)
 print(html_file)
 
-PrepareHeadTop(html_file, series_title, '')
+PrepareHead(html_file, series_title)
 
 with open(html_file, 'a', encoding='utf-8') as fp:
     

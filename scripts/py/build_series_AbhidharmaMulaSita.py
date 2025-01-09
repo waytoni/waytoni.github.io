@@ -34,7 +34,18 @@ print(json_file)
 # build the json file from the youtube links and notes files
 BuildDropDownMenuWithNavigation(utube_links, notes_file, json_file)
 
-PrepareHead(html_file, series_title)
+simple_style = """
+	<style>
+		h1,
+	 	h2, 
+		h3, 
+		p, 
+		a {
+			text-align: center;
+		}
+	</style>
+"""
+PrepareHeadTop(html_file, series_title, simple_style)
 
 with open(html_file, 'a', encoding='utf-8') as fp:
     

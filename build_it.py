@@ -22,9 +22,10 @@ from scripts.py import build_series_AbhidharmaASeries
 from scripts.py import build_series_AbhidharmaAruth
 from scripts.py import build_series_SuthamayaHirigal
 from scripts.py import build_series_SiyaluDesana
-from scripts.py import build_series_J
+from scripts.py import build_series_K
 from scripts.py import build_series_ShortDhammaDiscussions
-# from testing import list_AllVideos
+from scripts.py import build_homepage
+from testing import list_AllVideos_Jan9
 
 
 
@@ -34,11 +35,13 @@ import sys
 #import waytoni_all_videos_new
 
 
-menu_change = True
+menu_change = False
 
 if menu_change == True:
     from scripts.py import build_series_I
     build_series_I
+    from scripts.py import build_series_J
+    build_series_J
     from scripts.py import build_Zoom_info
     build_Zoom_info
     from scripts.py import build_series_ADA_ParamarthaLokaya
@@ -53,23 +56,26 @@ if menu_change == True:
     build_page_ChiththaChithasika
     from scripts.py import build_series_Abhidharma_Aruth
     build_series_Abhidharma_Aruth
+    from scripts.py import build_series_BCD
+    build_series_BCD
     # Update
     # Chithatha_Chithasika (old page), and Vishesha Desana
-    # also update all_videos header
-    # KalutharaBodhiya B C D Batches html
+  
+   
     
    
 
 # waytoni_all_videos_new
 #list_AllVideos
-
+list_AllVideos_Jan9
 
 build_series_NivanMagaUdesa
 build_series_AbhidharmaASeries
 # build_series_AbhidharmaMulaSita
 
 build_series_AbhidharmaAruth
-build_series_J
+build_series_K
 build_series_SuthamayaHirigal
 build_series_SiyaluDesana
 build_series_ShortDhammaDiscussions
+build_homepage

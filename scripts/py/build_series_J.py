@@ -22,13 +22,12 @@ json_file = os.path.join(basepath,'J_series.json')
 
 playlist_url = ''
 
-series_title = '2024 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය (B කණ්ඩායම) දේශනා මාලාව'
+series_title = '2024 කළුතර බෝධියේදී පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (J Series)'
 
 J_series_styles = """
    	<style>
 		body {
 			font-family: Arial, sans-serif;
-			margin: 10px;
 		}
 
 		p {

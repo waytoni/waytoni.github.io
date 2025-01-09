@@ -423,7 +423,7 @@ def PrepareHeadTop_Bootstrap(text_filename, series_title, styles):
         fp.write('</head>\n')
         fp.write('<body>\n')
         
-        with open('scripts/py/navigation_header_top.html', 'r', encoding="utf-8") as fnavbar:
+        with open('scripts/py/navigation_header.html', 'r', encoding="utf-8") as fnavbar:
             navbar_info = fnavbar.read()
             fp.write(navbar_info)
             fnavbar.close()
@@ -464,7 +464,7 @@ def PrepareHeadWithSyles(text_filename, series_title, style_file):
         fp.write('</head>\n')
         fp.write('<body>\n')
         
-        with open('scripts/py/navigation_header_top.html', 'r', encoding="utf-8") as fnavbar:
+        with open('scripts/py/navigation_header.html', 'r', encoding="utf-8") as fnavbar:
             navbar_info = fnavbar.read()
             fp.write(navbar_info)
             fnavbar.close()
@@ -499,7 +499,7 @@ def PrepareHead(text_filename, series_title):
         fp.write('</head>\n')
         fp.write('<body>\n')
         
-        with open('scripts/py/navigation_header_1stLevel.html', 'r', encoding="utf-8") as fnavbar:
+        with open('scripts/py/navigation_header.html', 'r', encoding="utf-8") as fnavbar:
             navbar_info = fnavbar.read()
             fp.write(navbar_info)
             fnavbar.close()
@@ -545,40 +545,6 @@ def PrepareHeadSimple(text_filename, series_title):
 
 
 
-######## PrepareHead_2ndLevel Testing ##########
-def PrepareHead_2ndLevel(text_filename, series_title): 
-    
-    with open(text_filename, 'w', encoding="utf-8") as fp:
-        fp.write('<html>\n<head>\n')
-    
-        with open('scripts/py/analytics_tag.txt', 'r', encoding="utf-8") as ftag:
-            tag_info = ftag.read()
-            fp.write(tag_info)
-            ftag.close()
-        
-        with open('scripts/py/page_head_2ndLevel.txt', 'r', encoding="utf-8") as fhead:
-            head_info = fhead.read()
-            fp.write(head_info)
-            fhead.close()   
-             
-        fp.write('\n')    
-        
-        title_line = '\t<title>'+ series_title + '</title>\n'
-        fp.write(title_line)
-        
-        fp.write('</head>\n')
-        fp.write('<body>\n')
-        
-        with open('scripts/py/navigation_header_2ndLevel.html', 'r', encoding="utf-8") as fnavbar:
-            navbar_info = fnavbar.read()
-            fp.write(navbar_info)
-            fnavbar.close()
-        
-        fp.close()
-    return None
-########### PrepareHead_2ndLevel End ###################################
-
-
 ######## PrepareTail ##########
 def PrepareTail(text_filename): 
     with open(text_filename, 'a', encoding="utf-8") as fp:
@@ -589,16 +555,3 @@ def PrepareTail(text_filename):
         fp.close()
     return None
 ########### PrepareTail End ###################################
-
-
-######## PrepareTail - 2nd level ##########
-def PrepareTail_2ndLevel(text_filename): 
-    with open(text_filename, 'a', encoding="utf-8") as fp:
-        # fp.write('<script src="../../assets/vendors/jquery/jquery-3.4.1.js"></script>\n')
-        # fp.write('<script src="../../assets/vendors/bootstrap/bootstrap.bundle.js"></script>\n')
-        fp.write('</body>\n')
-        fp.write('</html>\n')
-        fp.close()
-    return None
-    
-##############################################################################

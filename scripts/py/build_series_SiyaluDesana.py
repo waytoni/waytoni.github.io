@@ -50,25 +50,24 @@ with open(html_file, 'w', encoding="utf-8") as fp:
     fp.write('\t<meta name="viewport" content="width=device-width, initial-scale=1.0">\n')
     fp.write('\t<link rel="stylesheet" type="text/css" href="../css/nav_menu.css">\n')
     fp.write('\t<link rel="stylesheet" type="text/css" href="../css/dp_block.css">\n')
-    #fp.write('\t<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">\n')
     fp.write('\t<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />\n')
-    fp.write('\t<script src="../scripts/nav_function.js"></script>\n')
-    fp.write('\t<script src="../scripts/jquery-3.7.1.min.js"></script>\n')
-    fp.write('\t<script src="../scripts/dp_function.js"></script>\n')
+    fp.write('\t<script src="/scripts/nav_function.js"></script>\n')
+    fp.write('\t<script src="/scripts/jquery-3.7.1.min.js"></script>\n')
+    fp.write('\t<script src="/scripts/dp_function.js"></script>\n')
     fp.write('\t<body style="font-family:calibri;"></body>\n')
     fp.write('\t<link rel="icon" type="image/png" href="../images/favicon-16x16.png" sizes="16x16" />\n')
     fp.write('\t<title>අභිධම්ම දේශනා  - සියල්ල</title>\n')
     
     fp.write('</head>\n<body>\n')
 
-    with open('scripts/py/navigation_header_1stLevel.html', 'r', encoding="utf-8") as fnavbar:
+    with open('scripts/py/navigation_header.html', 'r', encoding="utf-8") as fnavbar:
         navbar_info = fnavbar.read()
         fp.write(navbar_info)
         fnavbar.close()
 
     fp.write('<h1>අභිධම්ම දේශනා  - සියල්ල</h1>\n')
     
-    fp.write('<h2><li><a href="../documents/file_list.html">සියලු අභිධම්ම දේශනා සඳහා සටහන්</a></li></h2>\n')
+    fp.write('<h2><li><a href="/documents/file_list.html">සියලු අභිධම්ම දේශනා සඳහා සටහන්</a></li></h2>\n')
     # fp.write('<br>\n')
     
     fp.close()
@@ -78,51 +77,61 @@ id = 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
     fp.write('<div class="normal-head">\n')
-    fp.write(f'<h2>{id}. <a href="../Saturday_Abhidhamma_Lesson/index.html">තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා මාලාව</a></h2>\n')
+    fp.write(f'<h2>{id}. <a href="/Nivan_Maga_Udesa/index.html">නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (A කණ්ඩායම)</a></h2>\n')
     fp.write('</div>\n')
     fp.close()
-    
+
 #### 2nd
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
-    #fp.write('<br>\n')
     fp.write('<div class="normal-head">\n')
-    fp.write(f'<h2>{id}. <a href="../Nivan_Maga_Udesa/index.html">නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (A කණ්ඩායම)</a></h2>\n')
+    fp.write(f'<h2>{id}. <a href="/KalutaraBodhiya/K_series/K_series.html">2025 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (K Series)</a></h2>\n')
     fp.write('</div>\n')
     fp.close()
-
-#### 3rd
+    
+####  3rd
+id = id + 1
+with open(html_file, 'a', encoding="utf-8") as fp:
+    fp.write('<div class="normal-head">\n')
+    fp.write(f'<h2>{id}. <a href="/AbhidharmaAruth/index.html">පොල්ගස්ඕවිට පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව</a></h2>\n')
+    fp.write('</div>\n')
+    fp.close()  
+    
+#### 4th
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
     fp.write('<div class="normal-head">\n')
-    fp.write(f'<h2>{id}. <a href="../KalutaraBodhiya/J_series/J_series.html">කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (B කණ්ඩායම)</a></h2>\n')
+    fp.write(f'<h2>{id}. <a href="/KalutaraBodhiya/J_series/J_series.html">2024 කළුතර බෝධි පරිශ්‍රයේදී පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (J Series)</a></h2>\n')
     fp.write('</div>\n')
     fp.close()
 
 
+#### 5th
+id = id + 1
+with open(html_file, 'a', encoding="utf-8") as fp:
+    #fp.write('<br>\n')
+    fp.write('<div class="normal-head">\n')
+    fp.write(f'<h2>{id}. <a href="/AbhidharmaSeries/index.html">තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා මාලාව</a></h2>\n')
+    fp.write('</div>\n')
+    fp.close()
 
-# should be updated to the file J_series.html if notes are added.
-#playlist_KB_J = 'KalutaraBodhiya/J_series/J_series.txt'
-#playlist_title_KB_J = "Kalutara Bodhiya J Series"
-#series_title_KB_J = "කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය (B කණ්ඩායම) දේශනා මාලාව"
-#HtmlDropdownBlockNoSections(3, playlist_KB_J, playlist_title_KB_J, html_file, '', '', series_title_KB_J)
 
-#### 4th
+#### 6th
 id = id + 1
 playlist_AA_EP = 'Abhidharma_Aruth/Abhidharma_Aruth_youtube_links.txt'
 playlist_title_AA_EP = "Abhidharma Aruth"
-series_title_AA_EP = "අභිධර්ම අරුත් දේශනා මාලාව"
+series_title_AA_EP = "අභිධර්ම අරුත් දේශනා මාලාව (EP)"
 HtmlDropdownBlockNoSections(id, playlist_AA_EP, playlist_title_AA_EP, html_file, '', 'EP', series_title_AA_EP)
 
-#### 5th
+#### 7th
 id = id + 1
 playlist_AA_B = 'Abhidharma_Aruth/Abhidharma_Aruth_B_youtube_links.txt'
 playlist_title_AA_B = "Abhidharma Aruth - B"
 series_title_AA_B = "අභිධර්ම අරුත් - B දේශනා මාලාව"
 HtmlDropdownBlockNoSections(id, playlist_AA_B, playlist_title_AA_B, html_file, '', '', series_title_AA_B)
 
-#### 6th
+#### 8th
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
@@ -131,13 +140,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('</div>\n')
     fp.close()
 
-#playlist_url_suthamaya_hirigal = ''
-#playlist_suthamaya_hirigal = 'Suthamaya/suthamaya_hirigal.txt'
-#playlist_title_suthamaya_hirigal = "සුතමයඤාණං - හිරිගල් ගොඩැල්ල ශ්‍රී පුෂ්පාරාමය"
-#series_title_suthamaya_hirigal = "සුතමයඤාණං දේශනා මාලාව - හිරිගල් ගොඩැල්ල ශ්‍රී පුෂ්පාරාමය"
-#HtmlDropdownBlockNoSections(6, playlist_suthamaya_hirigal, playlist_title_suthamaya_hirigal, html_file, '', '', series_title_suthamaya_hirigal)
-
-##### 7th
+##### 9th
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
@@ -146,7 +149,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('</div>\n')
     fp.close()
 
-#### 8th
+#### 10th
 id = id + 1
 playlist_url_suthamaya_eththapana = ''
 playlist_suthamaya_eththapana = 'Suthamaya/suthamaya_eththapana.txt'
@@ -155,7 +158,7 @@ series_title_suthamaya_eththapana = "සුතමයඤාණං දේශනා
 HtmlDropdownBlockNoSections(id, playlist_suthamaya_eththapana, playlist_title_suthamaya_eththapana, html_file, '', '', series_title_suthamaya_eththapana)
 
     
-##### 9th
+##### 11th
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
@@ -164,7 +167,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('</div>\n')
     fp.close()
 
-##### 10th
+##### 12th
 id = id + 1
 playlist_url_SU_M = 'https://www.youtube.com/playlist?list=PLqESXbJ82aIgmWdPzXFdJplUOPJgRXpZN'
 playlist_SU_M = 'Suthamaya/suthamaya_mathugama.txt'
@@ -172,14 +175,14 @@ playlist_title_SU_M = "සුතමයඤාණං - Sri Sudharshanarama Maha Vi
 series_title_SU_M = "සුතමයඤාණං දේශනා මාලාව - ශ්‍රී සුධර්ශනාරාම මහා විහාරය මතුගම"
 HtmlDropdownBlockNoSections(id, playlist_SU_M, playlist_title_SU_M, html_file, '', '', series_title_SU_M)
 
-###### 11th
+###### 13th
 id = id + 1
 playlist_KB_H = 'KalutaraBodhiya/H_series.txt'
 playlist_title_KB_H = "Kalutara Bodhiya H Series"
 series_title_KB_H = "කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වුන අටවෙනි දේශනා මාලාව (H Series)"
 HtmlDropdownBlockNoSections(id, playlist_KB_H, playlist_title_KB_H, html_file, '', '', series_title_KB_H)
 
-####### 12th
+####### 14th
 id = id + 1
 playlist_KB_G = 'KalutaraBodhiya/G_series.txt'
 playlist_title_KB_G = "Kalutara Bodhiya G Series"
@@ -187,21 +190,21 @@ series_title_KB_G = "කළුතර බෝධි පරිශ්‍රයේද
 HtmlDropdownBlockNoSections(id, playlist_KB_G, playlist_title_KB_G, html_file, '', '', series_title_KB_G)
 
 
-##### 13th
+##### 15th
 id = id + 1
 playlist_KB_F = 'KalutaraBodhiya/F_series.txt'
 playlist_title_KB_F = "Kalutara Bodhiya F Series"
 series_title_KB_F = "කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වුන හයවෙනි දේශනා මාලාව (F Series)"
 HtmlDropdownBlockNoSections(id, playlist_KB_F, playlist_title_KB_F, html_file, '', '',series_title_KB_F)
 
-##### 14th
+##### 16th
 id = id + 1
 playlist_KB_E = 'KalutaraBodhiya/E_series.txt'
 playlist_title_KB_E = "Kalutara Bodhiya E Series"
 series_title_KB_E = "කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වුන පස්වෙනි දේශනා මාලාව (E Series)"
 HtmlDropdownBlockNoSections(id, playlist_KB_E, playlist_title_KB_E, html_file, '', '', series_title_KB_E)
 
-##### 15th
+##### 17th
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
@@ -210,7 +213,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('</div>\n')
     fp.close()
 
-###### 16th
+###### 18th
 id = id + 1
 playlist_KB_A = 'KalutaraBodhiya/ParamarthaLokayaKalutharaBodhiya.txt'
 playlist_title_KB_A = "Paramartha Lokaya Kalutara Bodhiya A"
@@ -236,10 +239,10 @@ with open(html_file, 'a', encoding="utf-8") as fp:
 with open(html_file, 'a', encoding="utf-8") as fp:
 #    fp.write('<h5>&emsp; F කාණ්ඩය අසම්පූර්ණයි</h5>\n')
     fp.write('<br>\n')
-    fp.write('<li><a href="../documents/file_list.html">සියලු අභිධම්ම දේශනා සඳහා සටහන්</a></li>\n')
+    fp.write('<li><a href="/documents/file_list.html">සියලු අභිධම්ම දේශනා සඳහා සටහන්</a></li>\n')
     fp.write('<br>\n')
 
-    fp.write('<h3><a href="AllVideos.html">සියලුම දේශනා - @WayToNibbana YouTube Channel</a></h3>\n')
+    fp.write('<h3><a href="AllVideos_V2.html">සියලුම දේශනා - @WayToNibbana YouTube Channel</a></h3>\n')
     fp.close()
 
 PrepareTail(html_file)
