@@ -18,7 +18,7 @@ contentpath = 'Homepage'
 base_file = os.path.join(contentpath,'index_base.html')
 messages_file = os.path.join(contentpath,'messages.html')
 contents_file = os.path.join(contentpath,'homepage_content.html')
-html_file = os.path.join(basepath,'index_new.html')
+html_file = os.path.join(basepath,'index.html')
 
 
 playlist_url = ''

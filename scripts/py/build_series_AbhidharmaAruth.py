@@ -32,7 +32,6 @@ AA_series_styles = """
    	<style>
 		body {
 			font-family: Arial, sans-serif;
-			margin: 10px;
 		}
 
 		p {
