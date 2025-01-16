@@ -15,13 +15,9 @@ from build_series_menu import *
 basepath = 'AbhidharmaAruth'
 
 intro_file = os.path.join(basepath, 'AbhidharmaAruth_B1_base.html')
-
-
 notes_file = os.path.join(basepath, 'AbhidharmaAruth_B1_notes.txt')
 utube_links = os.path.join(basepath,'AbhidharmaAruth_B1_ytlinks.txt')
 json_file = os.path.join(basepath,  'AbhidharmaAruth_B1.json')
-
-
 html_file = os.path.join(basepath,  'AbhidharmaAruthB1.html')
 
 playlist_url = ''

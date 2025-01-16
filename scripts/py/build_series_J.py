@@ -20,7 +20,7 @@ utube_links = os.path.join(basepath,'J_series_ytlinks.txt')
 html_file = os.path.join(basepath,'J_series.html')
 json_file = os.path.join(basepath,'J_series.json')
 
-playlist_url = ''
+playlist_url = 'https://www.youtube.com/playlist?list=PLqESXbJ82aIghC3CWi0XB2_4Ttx_6y8Cq'
 
 series_title = '2024 කළුතර බෝධියේදී පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (J Series)'
 
