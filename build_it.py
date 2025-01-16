@@ -19,7 +19,9 @@ from scripts.py import build_series_NivanMagaUdesa
 from scripts.py import build_series_AbhidharmaASeries
 #from scripts.py import build_series_AbhidharmaMulaSita
 
-from scripts.py import build_series_AbhidharmaAruth
+
+from scripts.py import build_series_AbhidharmaAruth_B2
+from scripts.py import build_series_AbhidharmaAruth_C
 from scripts.py import build_series_SuthamayaHirigal
 from scripts.py import build_series_SiyaluDesana
 from scripts.py import build_series_K
@@ -58,6 +60,10 @@ if menu_change == True:
     build_series_Abhidharma_Aruth
     from scripts.py import build_series_BCD
     build_series_BCD
+    from scripts.py import build_series_AbhidharmaAruth
+    build_series_AbhidharmaAruth
+    from scripts.py import build_series_AbhidharmaAruth_B1
+    build_series_AbhidharmaAruth_B1
     # Update
     # Chithatha_Chithasika (old page), and Vishesha Desana
   
@@ -68,12 +74,13 @@ if menu_change == True:
 # waytoni_all_videos_new
 #list_AllVideos
 list_AllVideos_Jan9
-
+build_series_AbhidharmaAruth_B2
+build_series_AbhidharmaAruth_C
 build_series_NivanMagaUdesa
 build_series_AbhidharmaASeries
 # build_series_AbhidharmaMulaSita
 
-build_series_AbhidharmaAruth
+
 build_series_K
 build_series_SuthamayaHirigal
 build_series_SiyaluDesana
