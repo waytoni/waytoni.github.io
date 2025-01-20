@@ -1,10 +1,10 @@
-name: Update K series Lesson Links
+name: Update homepage contents
 
 on:
   push:
     paths:
-      - 'KalutaraBodhiya/K_series/K_series_ytlinks.txt'     
-      - 'KalutaraBodhiya/K_series/K_series_notes.txt'     
+      - 'Homepage/homepage_content.html'
+      - 'Homepage/messages.html'  
 jobs:
   run-python-script-Iseries:
     runs-on: ubuntu-latest
@@ -17,15 +17,13 @@ jobs:
         with:
           python-version: 3.11 # Set your desired Python version
 
-      - name: Read K_serires
-        run: python scripts/py/build_series_K.py
+      - name: Updated homepage
+        run: python scripts/py/build_homepage.py
 
-      - name: Update All_Playlists for K_series addition
-        run: python scripts/py/build_series_SiyaluDesana.py
 
       - name: commit changes
         run: |
           git config user.name "$(git log -n 1 --pretty=format:%an)"
           git config user.email "$(git log -n 1 --pretty=format:%ae)"
-          git commit -a -m "updated K series"
+          git commit -a -m "updated homepage"
           git push
