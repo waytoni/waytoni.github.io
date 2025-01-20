@@ -3,7 +3,8 @@ name: Update I series Lesson Links
 on:
   push:
     paths:
-      - 'KalutaraBodhiya/I_series/I_series.txt' # Update with the actual path to your text file        
+      - 'KalutaraBodhiya/K_series/K_series_ytlinks.txt'     
+      - 'KalutaraBodhiya/K_series/K_series_notes.txt'     
 jobs:
   run-python-script-Iseries:
     runs-on: ubuntu-latest
@@ -16,15 +17,15 @@ jobs:
         with:
           python-version: 3.11 # Set your desired Python version
 
-      - name: Read I_serires
-        run: python scripts/py/build_series_I.py
+      - name: Read K_serires
+        run: python scripts/py/build_series_K.py
 
-      - name: Update All_Playlists for I_series addition
+      - name: Update All_Playlists for K_series addition
         run: python scripts/py/build_series_SiyaluDesana.py
 
       - name: commit changes
         run: |
           git config user.name "$(git log -n 1 --pretty=format:%an)"
           git config user.email "$(git log -n 1 --pretty=format:%ae)"
-          git commit -a -m "updated I series desana"
+          git commit -a -m "updated K series"
           git push

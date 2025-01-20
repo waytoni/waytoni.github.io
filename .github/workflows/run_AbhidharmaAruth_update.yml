@@ -3,10 +3,10 @@ name: Update Abhidhamma Aruth Desana
 on:
   push:
     paths:
-      - 'Abhidharma_Aruth/Abhidharma_Aruth_B_youtube_links.txt' # AA B text file
-      - 'Abhidharma_Aruth/Abhidharma_Aruth_youtube_links.txt'   # AA EP text file
-      - 'Abhidharma_Aruth/AA_EP_notes.txt'   # AA EP notes text file
-      - 'Abhidharma_Aruth/AA_B_notes.txt'   # AA B notes text file
+      - 'AbhidharmaAruth/AbhidharmaAruth_B2_ytlinks.txt' 
+      - 'AbhidharmaAruth/AbhidharmaAruth_B2_notes.txt'   
+      - 'AbhidharmaAruth/AbhidharmaAruth_C_ytlinks.txt.txt'   # AA EP notes text file
+      - 'AbhidharmaAruth/AbhidharmaAruth_C_notes.txt'   # AA B notes text file
 jobs:
   run-python-script-Abhidhamma-Aruth:
     runs-on: ubuntu-latest
@@ -20,7 +20,7 @@ jobs:
           python-version: 3.11 # Python Version
 
       - name: Run Python Script for Abhidharma Aruth Desana
-        run: python scripts/py/build_series_Abhidharma_Aruth.py
+        run: python scripts/py/build_series_AbhidharmaAruth.py
       
       - name: Update All_Playlists for Abhidharma Aruth Desana updates
         run: python scripts/py/build_series_SiyaluDesana.py
