@@ -19,8 +19,11 @@ jobs:
         with:
           python-version: 3.11 # Python Version
 
-      - name: Run Python Script for Abhidharma Aruth Desana
-        run: python scripts/py/build_series_AbhidharmaAruth.py
+      - name: Run Python Script for Abhidharma Aruth Desana B2
+        run: python scripts/py/build_series_AbhidharmaAruth_B2.py
+
+      - name: Run Python Script for Abhidharma Aruth Desana C
+        run: python scripts/py/build_series_AbhidharmaAruth_C.py  
       
       - name: Update All_Playlists for Abhidharma Aruth Desana updates
         run: python scripts/py/build_series_SiyaluDesana.py
