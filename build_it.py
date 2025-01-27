@@ -12,13 +12,8 @@
 # <index> <youtube link (URL)> <date>
 
 
-
-# from scripts.py import build_series_Nivan_Maga_Udesa
 from scripts.py import build_series_NivanMagaUdesa
-# from scripts.py import build_series_Saturday_Abhidhamma_Lesson
 from scripts.py import build_series_AbhidharmaASeries
-#from scripts.py import build_series_AbhidharmaMulaSita
-
 
 from scripts.py import build_series_AbhidharmaAruth_B2
 from scripts.py import build_series_AbhidharmaAruth_C
@@ -27,15 +22,8 @@ from scripts.py import build_series_SiyaluDesana
 from scripts.py import build_series_K
 from scripts.py import build_series_ShortDhammaDiscussions
 from scripts.py import build_homepage
-from testing import list_AllVideos_Jan9
-
-
 
 import sys
-# sys.path.append('E:/src/github/waytoni_io/waytoni_desktop/scripts_new')
-# sys.path.append('../scripts_new')
-#import waytoni_all_videos_new
-
 
 menu_change = False
 
@@ -49,10 +37,10 @@ if menu_change == True:
     from scripts.py import build_series_ADA_ParamarthaLokaya
     build_series_ADA_ParamarthaLokaya
     from scripts.py import build_NMU_file_list
-    # when new images are added run create_thubnails.py in Nivan_Maga_Udesa.docs.combined_notes
+   
     build_NMU_file_list
     from scripts.py import build_file_list
-    # when new images are added run create_thubnails.py in Documents
+   
     build_file_list
     from scripts.py import build_page_ChiththaChithasika
     build_page_ChiththaChithasika
@@ -68,12 +56,6 @@ if menu_change == True:
     # Chithatha_Chithasika (old page), and Vishesha Desana
   
    
-    
-   
-
-# waytoni_all_videos_new
-#list_AllVideos
-list_AllVideos_Jan9
 build_series_AbhidharmaAruth_B2
 build_series_AbhidharmaAruth_C
 build_series_NivanMagaUdesa
