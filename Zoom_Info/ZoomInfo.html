@@ -42,7 +42,7 @@
 			text-align: center;
 		}
 	</style>
-	<title>සුතමයඤාණං දේශනා - හිරිගල් ගොඩැල්ල ශ්‍රී පුෂ්පාරාමය</title>
+	<title>Zoom Info</title>
 </head>
 <body>
 
@@ -62,7 +62,6 @@
             <!-- a href="/AbhidharmaAruth/index.html">පොල්ගස්ඕවිට පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව</a-->
             <a href="/AbhidharmaAruth/AbhidharmaAruthB2.html">පොල්ගස්ඕවිට පැවෙත්වෙන දේශනා මාලාව (B කන්ඩායම)</a>
             <a href="/AbhidharmaAruth/AbhidharmaAruthC.html">පොල්ගස්ඕවිට පැවෙත්වෙන දේශනා මාලාව (C කන්ඩායම)</a>
-            <a href="/NivanMagaUdesaDesana/Thalawathugoda/Thalawathugoda.html">තලවතුගොඩ පැවෙත්වෙන දේශනා මාලාව</a>
             <a href="/Suthamaya/SuthamayaHirigal.html">සුතමයඤාණං දේශනා</a>
             <a href="/VisheshaDesana/index.html">විශේෂ දේශනා</a>
             <a href="/KalutaraBodhiya/DhammaDiscussions/ShortDhammaDiscussions.html">ධර්ම සාකච්ඡා</a>
@@ -75,96 +74,46 @@
         </div> 
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navFunction()">&#9776;</a>
     </div>
-    
-<h1>සුතමයඤාණං දේශනා</h1>
-<h2>හිරිගල් ගොඩැල්ල ශ්‍රී පුෂ්පාරාමය</h2>
-<h2>කල්‍යාණ මිත්‍ර අජන්ත සම්පත් ගුරුතුමන් ගේ දේශනා මාලාව</h2>
-<p></p>
+        <div style="margin:5px 5px 5px 15px";>
+        <h1 id="meeting-title">නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා</h1>
+        <h2>කල්‍යාණ මිත්‍ර අජන්ත සම්පත් ගුරුතුමන් ගේ දේශනා මාලාව</h2>
+        <p></p>
+        <p><span id="meeting-day"></span> දින සවස <span id="meeting-time"></span> සිට <span id="meeting-end-time"> දක්වා</span> (ලංකාවේ වේලාවෙන්)</p>
 
-<p></p>	
+        <h3>Zoom Meeting Details</h3>
+        <li>Zoom ID: 842 2639 0602</li>
+        <li>Passcode: 100100</li>
 
-<p><label for="link-selector">Select a video from the dropdown menu:</label></p>
-<p><select id="link-selector" onchange="updateContent()">
-    <!-- Options will be populated dynamically -->
-</select></p>
-<div id="controls">
-    <center>
+        <li>Link for the Zoom meeting: <a href="https://us02web.zoom.us/j/88604126311?pwd=aVBpNEVoYVZyRmJ3UENXUlc3NmRoUT09">
+            https://us02web.zoom.us/j/88604126311?pwd=aVBpNEVoYVZyRmJ3UENXUlc3NmRoUT09</a></li>
+    </div>
 
-    <button onclick="navigate(-1)">Previous</button>
-    <button onclick="navigate(1)">Next</button>
-</center>
-</div>
-<div id="video-container">
-    <!-- YouTube video will be embedded here -->
-</div>
-<div id="notes">
-    <!-- Notes will be displayed here -->
-</div>
 
-<script>
-    let data;
-    let seriesTitle = "සුතමයඤාණං දේශනා - හිරිගල් ගොඩැල්ල ශ්‍රී පුෂ්පාරාමය"; // Changeable series title
-    // Fetch the JSON data and populate the dropdown menu
-    fetch('SuthamayaHirigal.json').then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok ' + response.statusText);
+    <script>
+        // Function to get URL parameters
+        function getQueryParams() {
+            const params = new URLSearchParams(window.location.search);
+            return {
+                time: params.get("time") || "Not provided",
+                etime: params.get("etime") || "Not provided",
+                day: params.get("day") || "Not provided",
+                title: params.get("title") || "Meeting Details"
+            };
         }
-        return response.json();
-    }).then(json => {
-        data = json;
-        populateDropdown();
-        displayLastEntry();
-    }).catch(error => {
-        console.error('There has been a problem with your fetch operation:', error);
-    });
-    // Function to populate the dropdown menu
-    function populateDropdown() {
-        const selector = document.getElementById('link-selector');
-        data.forEach(item => {
-            const option = document.createElement('option');
-            option.value = item.url;
-            option.text = item.comment ? `${item.index} ● ${item.comment} ● ${item.date}` :
-                `${item.index} ● ${seriesTitle} ● ${item.date}`;
-            option.dataset.index = item.index;
-            selector.appendChild(option);
-        });
-    }
-    // Function to update the YouTube video and notes based on the selected option
-    function updateContent() {
-        const selector = document.getElementById('link-selector');
-        const selectedOption = selector.options[selector.selectedIndex];
-        const url = selectedOption.value;
-        const index = selectedOption.dataset.index;
-        const notes = data.find(item => item.index == index).notes;
-        const videoContainer = document.getElementById('video-container');
-        videoContainer.innerHTML =
-            `<p><iframe width="560" height="315" src="${url.replace('watch?v=', 'embed/')}" frameborder="0" allowfullscreen></iframe></p>`;
-        const notesContainer = document.getElementById('notes');
-        
-        notesContainer.innerHTML = '<p>'+ notes + '</p>'; // Use innerHTML to render clickable links
-        
-    }
-    // Function to display the last entry from the JSON data on the initial load
-    function displayLastEntry() {
-        if (data.length > 0) {
-            const lastEntry = data[data.length - 1];
-            const selector = document.getElementById('link-selector');
-            selector.value = lastEntry.url;
-            updateContent();
+
+        // Function to display meeting details and update title
+        function displayMeetingDetails() {
+            const { time, etime, day, title } = getQueryParams();
+            document.title = title;
+            document.getElementById("meeting-title").textContent = title;
+            document.getElementById("meeting-time").textContent = time;
+            document.getElementById("meeting-end-time").textContent = etime;
+            document.getElementById("meeting-day").textContent = day;
         }
-    }
-    // Function to navigate to the previous or next video
-    function navigate(direction) {
-        const selector = document.getElementById('link-selector');
-        let newIndex = selector.selectedIndex + direction;
-        if (newIndex < 0) {
-            newIndex = selector.options.length - 1;
-        } else if (newIndex >= selector.options.length) {
-            newIndex = 0;
-        }
-        selector.selectedIndex = newIndex;
-        updateContent();
-    }
-</script>
-</body>
-</html>
+        // Run on page load
+        window.onload = function () {
+            displayMeetingDetails();
+           // loadNavigation();
+        };
+    </script>
+

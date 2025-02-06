@@ -15,13 +15,10 @@
 
 # from scripts.py import build_series_Nivan_Maga_Udesa
 from scripts.py import build_series_NivanMagaUdesa
-# from scripts.py import build_series_Saturday_Abhidhamma_Lesson
-from scripts.py import build_series_AbhidharmaASeries
-#from scripts.py import build_series_AbhidharmaMulaSita
-
 
 from scripts.py import build_series_AbhidharmaAruth_B2
 from scripts.py import build_series_AbhidharmaAruth_C
+from scripts.py import build_series_Thalawathugoda
 from scripts.py import build_series_SuthamayaHirigal
 from scripts.py import build_series_SiyaluDesana
 from scripts.py import build_series_K
@@ -40,6 +37,8 @@ import sys
 menu_change = False
 
 if menu_change == True:
+    from scripts.py import build_series_AbhidharmaASeries
+    build_series_AbhidharmaASeries
     from scripts.py import build_series_I
     build_series_I
     from scripts.py import build_series_J
@@ -78,8 +77,6 @@ build_series_AbhidharmaAruth_B2
 build_series_AbhidharmaAruth_C
 build_series_NivanMagaUdesa
 build_series_AbhidharmaASeries
-# build_series_AbhidharmaMulaSita
-
 
 build_series_K
 build_series_SuthamayaHirigal

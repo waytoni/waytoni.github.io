@@ -1,0 +1,43 @@
+    <div style="margin:5px 5px 5px 15px";>
+        <h1 id="meeting-title">නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා</h1>
+        <h2>කල්‍යාණ මිත්‍ර අජන්ත සම්පත් ගුරුතුමන් ගේ දේශනා මාලාව</h2>
+        <p></p>
+        <p><span id="meeting-day"></span> දින සවස <span id="meeting-time"></span> සිට <span id="meeting-end-time"> දක්වා</span> (ලංකාවේ වේලාවෙන්)</p>
+
+        <h3>Zoom Meeting Details</h3>
+        <li>Zoom ID: 842 2639 0602</li>
+        <li>Passcode: 100100</li>
+
+        <li>Link for the Zoom meeting: <a href="https://us02web.zoom.us/j/88604126311?pwd=aVBpNEVoYVZyRmJ3UENXUlc3NmRoUT09">
+            https://us02web.zoom.us/j/88604126311?pwd=aVBpNEVoYVZyRmJ3UENXUlc3NmRoUT09</a></li>
+    </div>
+
+
+    <script>
+        // Function to get URL parameters
+        function getQueryParams() {
+            const params = new URLSearchParams(window.location.search);
+            return {
+                time: params.get("time") || "Not provided",
+                etime: params.get("etime") || "Not provided",
+                day: params.get("day") || "Not provided",
+                title: params.get("title") || "Meeting Details"
+            };
+        }
+
+        // Function to display meeting details and update title
+        function displayMeetingDetails() {
+            const { time, etime, day, title } = getQueryParams();
+            document.title = title;
+            document.getElementById("meeting-title").textContent = title;
+            document.getElementById("meeting-time").textContent = time;
+            document.getElementById("meeting-end-time").textContent = etime;
+            document.getElementById("meeting-day").textContent = day;
+        }
+        // Run on page load
+        window.onload = function () {
+            displayMeetingDetails();
+           // loadNavigation();
+        };
+    </script>
+
