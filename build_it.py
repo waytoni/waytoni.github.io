@@ -6,7 +6,7 @@
 #
 # If there is an update to the J series,
 # then add an entry to the last line of the file:
-#   KalutharaBhodiya/J_series//J_series.txt
+#   KalutharaBhodiya/K_series//K_series.txt
 #
 # All files have the following format
 # <index> <youtube link (URL)> <date>
