@@ -1,6 +1,6 @@
 # Instructions for updating current set of files
 #
-# If there is an update (new video) in Saturday 2:00 pm series,
+# If there is an update (new video) Nivan Maga Udesa series,
 # then add an entry to the last line of the file: 
 #   Saturday_Abhidhamma_Lesson/saturday_abhidhamma_lesson_youtube_links.txt
 #
@@ -76,8 +76,7 @@ list_AllVideos_Jan9
 build_series_AbhidharmaAruth_B2
 build_series_AbhidharmaAruth_C
 build_series_NivanMagaUdesa
-build_series_AbhidharmaASeries
-
+build_series_Thalawathugoda
 build_series_K
 build_series_SuthamayaHirigal
 build_series_SiyaluDesana
