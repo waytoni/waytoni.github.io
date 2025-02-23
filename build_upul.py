@@ -45,6 +45,8 @@ if menu_change == True:
     build_series_J
     from scripts.py import build_Zoom_info
     build_Zoom_info
+    from scripts.py import build_ZoomPage
+    build_ZoomPage
     from scripts.py import build_series_ADA_ParamarthaLokaya
     build_series_ADA_ParamarthaLokaya
     from scripts.py import build_NMU_file_list
