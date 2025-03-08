@@ -25,7 +25,7 @@ from scripts.py import build_homepage
 
 import sys
 
-menu_change = True
+menu_change = False
 
 if menu_change == True:
     from scripts.py import build_series_AbhidharmaASeries
