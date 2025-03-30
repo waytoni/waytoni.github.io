@@ -4,7 +4,7 @@ import re
 # Define a dictionary to map keywords to html tags
 keyword_dict = {
     "pdf": "<a href=\"{}\"  target=\"_blank\">{}</a>",
-    "img": "<img src=\"docs/{}\" width=95%>",
+    "img": "<img src=\"{}\" width=95%>",
     "url": "<a href=\"{}\" target=\"_blank\" >{}</a>",
     "PDF": "<a href='\"docs/{}\"  target=\"_blank\">{}</a>",
     "IMG": "<img src=\"docs/{}\" width=95%>",
