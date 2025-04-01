@@ -36,23 +36,6 @@ pdf::/VisheshaDesana/2024 08 18  Kalutara Bodhiya දර්ශන ඥානය.p
 #260
 මහා සළායතනික සුත්තං pdf::/documents/pdfs/මහා සළායතනික සුත්තං.pdf
 මහා සළායතනික සුත්තං url::https://tripitaka.online/sutta/870
-#300 
-ඛජ්ජනීය සුත්තං (PDF) pdf::/documents/pdfs/ඛජ්ජනීය සුත්තං.pdf
-ඛජ්ජනීය සුත්තං (Online) url::https://tripitaka.online/sutta/3413
-මධුපිණ්ඩික සුත්තං (PDF) pdf::/documents/pdfs/මධුපිණ්ඩික සුත්තං.pdf
-මධුපිණ්ඩික සුත්තං (Online) url::https://tripitaka.online/sutta/311
-මහාචත්තාරීසක සුත්තං (PDF) pdf::/documents/pdfs/මහාචත්තාරීසක සුත්තං.pdf
-මහාචත්තාරීසක සුත්තං (Online) url::https://tripitaka.online/sutta/739
-ඡ ඡක්ක සුත්තං (PDF) pdf::/documents/pdfs/ඡ ඡක්ක සුත්තං.pdf
-ඡ ඡක්ක සුත්තං (Online) url::https://tripitaka.online/sutta/865
-මහා සළායතනික සුත්තං (PDF) pdf::/documents/pdfs/මහා සළායතනික සුත්තං.pdf
-මහා සළායතනික සුත්තං (Online) url::https://tripitaka.online/sutta/870
-සබ්බාසව සුත්තං (PDF) pdf::/documents/pdfs/සබ්බාසව සුත්තං.pdf
-සබ්බාසව සුත්තං (Online) url::https://tripitaka.online/sutta/268
-ගද්දූලබද්ධ සුත්තං (PDF) pdf::/documents/pdfs/ගද්දූලබද්ධ සුත්තං.pdf
-ගද්දූලබද්ධ සුත්තං (Online) url::https://tripitaka.online/sutta/3575
-නිබ්බේධික සුත්තං (PDF) pdf::/documents/pdfs/නිබ්බේධික සුත්තං.pdf
-නිබ්බේධික සුත්තං (Online) url::https://tripitaka.online/sutta/10420
 #301
 දේසනාව සඳහා පත්‍රිකාව (PDF) pdf::/documents/pdfs/Kalutara Bodhiya දර්ශන ඥානය (2024-12-22) v2.pdf
 ඛජ්ජනීය සුත්තං (PDF) pdf::/documents/pdfs/ඛජ්ජනීය සුත්තං.pdf
@@ -71,6 +54,4 @@ pdf::/VisheshaDesana/2024 08 18  Kalutara Bodhiya දර්ශන ඥානය.p
 ගද්දූලබද්ධ සුත්තං (Online) url::https://tripitaka.online/sutta/3575
 නිබ්බේධික සුත්තං (PDF) pdf::/documents/pdfs/නිබ්බේධික සුත්තං.pdf
 නිබ්බේධික සුත්තං (Online) url::https://tripitaka.online/sutta/10420
-#302
-ආවර්ජනාව දේශනා සාරාංශය pdf::/documents/pdfs/Niwan Maga Udesa (2025-01-04) v2 - Share Compress.pdf
 #1000
