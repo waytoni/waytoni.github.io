@@ -138,7 +138,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('<div class="normal-head">\n')
-    fp.write(f'<h2>{id}. <a href="/AbhidharmaAruth/AbhidharmaAruthB1.html">පොල්ගස්ඕවිට පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (B කන්ඩායම - පළමු කොටස)</a></h2>\n')
+    fp.write(f'<h2>{id}. <a href="/AbhidharmaAruth/B1_series/AbhidharmaAruthB1.html">පොල්ගස්ඕවිට පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (B කන්ඩායම - පළමු කොටස)</a></h2>\n')
     fp.write('</div>\n')
     fp.close()  
     

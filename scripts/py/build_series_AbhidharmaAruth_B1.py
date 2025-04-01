@@ -12,7 +12,7 @@ from utilities import *
 from build_series_menu import *
 
 
-basepath = 'AbhidharmaAruth'
+basepath = 'AbhidharmaAruth/B1_series'
 
 intro_file = os.path.join(basepath, 'AbhidharmaAruth_B1_base.html')
 notes_file = os.path.join(basepath, 'AbhidharmaAruth_B1_notes.txt')
