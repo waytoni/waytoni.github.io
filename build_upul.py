@@ -34,7 +34,7 @@ import sys
 #import waytoni_all_videos_new
 
 
-menu_change = True
+menu_change = False
 
 if menu_change == True:
     from scripts.py import build_series_AbhidharmaASeries

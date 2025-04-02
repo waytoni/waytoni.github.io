@@ -19,7 +19,7 @@ style_file = os.path.join(basepath,'ChiththaChithasika_style.txt')
 html_file = os.path.join(basepath,'index.html')
 
 
-page_title = 'චිත්ත සහ චෛතසික'
+page_title = 'චිත්ත සහ චෛතසික  Chiththa Saha Chithisika'
 
 print(base_file)
 print(style_file)
