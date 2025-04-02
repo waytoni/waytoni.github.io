@@ -55,6 +55,9 @@ if menu_change == True:
     from scripts.py import build_file_list
     # when new images are added run create_thubnails.py in Documents
     build_file_list
+    from scripts.py import build_FileListForNotes
+    # when new images are added run create_thubnails.py in Documents
+    build_FileListForNotes
     from scripts.py import build_page_ChiththaChithasika
     build_page_ChiththaChithasika
     from scripts.py import build_series_BCD
