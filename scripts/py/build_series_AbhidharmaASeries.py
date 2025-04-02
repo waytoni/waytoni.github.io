@@ -55,8 +55,8 @@ with open(html_file, 'a', encoding='utf-8') as fp:
         fp.write(page_intro)
         fintro.close()
 
-old_dir = 'Saturday_Abhidhamma_Lesson'
-old_html_file = os.path.join(old_dir,'index.html')
-old_json_file = os.path.join(old_dir,'AbhidharmaASeries.json') 
-shutil.copy(html_file, old_html_file)
-shutil.copy(json_file, old_json_file)
+# old_dir = 'Saturday_Abhidhamma_Lesson'
+# old_html_file = os.path.join(old_dir,'index.html')
+# old_json_file = os.path.join(old_dir,'AbhidharmaASeries.json') 
+# shutil.copy(html_file, old_html_file)
+# shutil.copy(json_file, old_json_file)
