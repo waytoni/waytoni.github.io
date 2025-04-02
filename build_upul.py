@@ -34,7 +34,7 @@ import sys
 #import waytoni_all_videos_new
 
 
-menu_change = False
+menu_change = True
 
 if menu_change == True:
     from scripts.py import build_series_AbhidharmaASeries
@@ -43,10 +43,10 @@ if menu_change == True:
     build_series_I
     from scripts.py import build_series_J
     build_series_J
-    from scripts.py import build_Zoom_info
-    build_Zoom_info
     from scripts.py import build_ZoomPage
     build_ZoomPage
+    from scripts.py import build_404Page
+    build_404Page
     from scripts.py import build_series_ADA_ParamarthaLokaya
     build_series_ADA_ParamarthaLokaya
     from scripts.py import build_NMU_file_list
@@ -57,17 +57,14 @@ if menu_change == True:
     build_file_list
     from scripts.py import build_page_ChiththaChithasika
     build_page_ChiththaChithasika
-    from scripts.py import build_series_Abhidharma_Aruth
-    build_series_Abhidharma_Aruth
     from scripts.py import build_series_BCD
     build_series_BCD
-    from scripts.py import build_series_AbhidharmaAruth
-    build_series_AbhidharmaAruth
+    from scripts.py import build_series_AbhidharmaAruth_EP
+    build_series_AbhidharmaAruth_EP
     from scripts.py import build_series_AbhidharmaAruth_B1
     build_series_AbhidharmaAruth_B1
     # Update
     # Chithatha_Chithasika (old page), and Vishesha Desana
-    # 404.html 
   
    
     
