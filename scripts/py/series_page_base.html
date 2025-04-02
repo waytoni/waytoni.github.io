@@ -64,53 +64,15 @@
 		}
 
 	</style>
-	<title>පොල්ගස්ඕවිට පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (C කන්ඩායම)</title>
+	<title>%%Title%%</title>
 </head>
 <body>
 
-    <div class="topnav" id="Topnavbar">
-        <a href="https://waytoni.com/" class="active"><i style="font-size:24px" class="fa">&#xf015;</i></a>
-        <a href="/All_Playlists/SiyaluDesana.html">පසුගිය සහ සියලුම දේශනා</a>
-        <a href="/Paramartha_Video/Paramartha_Video.html">පරමාර්ථ ලෝකය දේශනා </a>
-        <a href="/Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html">අනිච්ච, දුක්ඛ, අනත්ත දේශනා </a>
-        <a href="/ChiththaChithasika/index.html">චිත්ත සහ චෛතසික</a>
-        <div class="dropdown">
-          <button class="dropbtn">දැනට පැවැත්වෙන දේශනා
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="/KalutaraBodhiya/K_series/K_series.html">2025 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන දේශනා මාලාව</a>
-            <a href="/NivanMagaUdesaDesana/Thalawathugoda/Thalawathugoda.html">තලවතුගොඩ පැවෙත්වෙන දේශනා මාලාව</a>
-            <a href="/AbhidharmaAruth/AbhidharmaAruthC.html">පොල්ගස්ඕවිට පැවෙත්වෙන දේශනා මාලාව (C කන්ඩායම)</a>
-           
-            <a href="/Nivan_Maga_Udesa/index.html">නිවන් මග උදෙසා දර්ශන ඥාණය (A කණ්ඩායම)</a>
-            <a href="/AbhidharmaAruth/AbhidharmaAruthB2.html">පොල්ගස්ඕවිට පැවෙත්වෙන දේශනා මාලාව (B කන්ඩායම)</a>
-            <!-- a href="/AbhidharmaAruth/index.html">පොල්ගස්ඕවිට පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව</a-->
-            <a href="/Suthamaya/SuthamayaHirigal.html">සුතමයඤාණං දේශනා</a>
-            <a href="/VisheshaDesana/index.html">විශේෂ දේශනා</a>
-            <a href="/KalutaraBodhiya/DhammaDiscussions/ShortDhammaDiscussions.html">ධර්ම සාකච්ඡා</a>
-            <a href="/AbhidharmaSeries/index.html">තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා</a>
-            <a href="/KalutaraBodhiya/J_series/J_series.html">2024 කළුතර බෝධි පරිශ්‍රයේදී පැවැත්වුන දේශනා මාලාව (J Series)</a>
-            <!--
-            <a href="/KalutaraBodhiya/I_series/I_series.html">කළුතර බෝධි පරිශ්‍රයේදී පැවැත්වුන 9වෙනි දේශනා මාලාව</a>
-          -->
-          </div>
-        </div> 
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navFunction()">&#9776;</a>
-    </div>
-    <!--h1>අභිධර්ම අරුත් - දේශනා</h1-->
-<p></p>
-<h1><strong>කල්‍යාණ මිත්‍ර අජන්ත සම්පත් ගුරුතුමා මෙහෙයවන</strong></h1>
-<h1>පොල්ගස්ඕවිට පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (තෙවෙන (C) කන්ඩායම)</h1>
+%%Navigation_Header_Top%%
 
-<p></p>
-<p>බ්‍රහස්පතින්දා ප.ව. 12:30 සිට 2:30 දක්වා</p>
-<p>විමසීම්: 0777 047174, 0760 813439</p>
-<p></p>
-<h2>
-	<li><a href="/Nivan_Maga_Udesa/docs/combined_notes/NMU_file_list.html"> නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා සඳහා
-			සටහන්</a></li>
-</h2>
+%%Page_Intro%%
+
+<
 <p></p>
 <p><label for="link-selector">Select a video from the dropdown menu:</label></p>
 <p><select id="link-selector" onchange="updateContent()">
@@ -134,9 +96,9 @@
 </div>
 <script>
 	let data;
-	let seriesTitle = "පොල්ගස්ඕවිට පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (B කන්ඩායම - දෙවන කොටස)"; // Changeable series title
+	let seriesTitle = "%%Title%%"; // Changeable series title
 	// Fetch the JSON data and populate the dropdown menu
-	fetch('AbhidharmaAruth_C.json').then(response => {
+	fetch('%%JSON_File%%').then(response => {
 		if (!response.ok) {
 			throw new Error('Network response was not ok ' + response.statusText);
 		}

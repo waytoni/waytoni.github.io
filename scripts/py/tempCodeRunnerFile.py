@@ -1,1 +1,1 @@
-තලවතුගොඩ
+basepath = 'AbhidharmaAruth/EP_series'

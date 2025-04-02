@@ -93,7 +93,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('<div class="normal-head">\n')
-    fp.write(f'<h2>{id}. <a href="/AbhidharmaAruth/AbhidharmaAruthC.html">පොල්ගස්ඕවිට පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (C කන්ඩායම)</a></h2>\n')
+    fp.write(f'<h2>{id}. <a href="/AbhidharmaAruth/C_series/AbhidharmaAruthC.html">පොල්ගස්ඕවිට පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (C කන්ඩායම)</a></h2>\n')
     fp.write('</div>\n')
     fp.close() 
     
@@ -111,7 +111,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('<div class="normal-head">\n')
-    fp.write(f'<h2>{id}. <a href="/AbhidharmaAruth/AbhidharmaAruthB2.html">පොල්ගස්ඕවිට පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (B කන්ඩායම)</a></h2>\n')
+    fp.write(f'<h2>{id}. <a href="/AbhidharmaAruth/B2_series/AbhidharmaAruthB2.html">පොල්ගස්ඕවිට පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (B කන්ඩායම)</a></h2>\n')
     fp.write('</div>\n')
     fp.close()  
     
@@ -144,10 +144,18 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     
 #### 9th
 id = id + 1
-playlist_AA_EP = 'Abhidharma_Aruth/Abhidharma_Aruth_youtube_links.txt'
-playlist_title_AA_EP = "Abhidharma Aruth"
-series_title_AA_EP = "අභිධර්ම අරුත් දේශනා මාලාව (EP)"
-HtmlDropdownBlockNoSections(id, playlist_AA_EP, playlist_title_AA_EP, html_file, '', 'EP', series_title_AA_EP)
+with open(html_file, 'a', encoding="utf-8") as fp:
+    fp.write('<div class="normal-head">\n')
+    fp.write(f'<h2>{id}. <a href="/AbhidharmaAruth/EP_series/AbhidharmaAruthEP.html">පොල්ගස්ඕවිට පැවැත්වුන අභිධර්ම අරුත් දේශනා මාලාව (EP)</a></h2>\n')
+    fp.write('</div>\n')
+    fp.close()  
+
+# # to be removed
+# id = id + 1
+# playlist_AA_EP = 'Abhidharma_Aruth/Abhidharma_Aruth_youtube_links.txt'
+# playlist_title_AA_EP = "Abhidharma Aruth"
+# series_title_AA_EP = "අභිධර්ම අරුත් දේශනා මාලාව (EP)"
+# HtmlDropdownBlockNoSections(id, playlist_AA_EP, playlist_title_AA_EP, html_file, '', 'EP', series_title_AA_EP)
 
 #### 10th
 id = id + 1

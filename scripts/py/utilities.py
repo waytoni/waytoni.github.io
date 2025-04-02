@@ -2,6 +2,7 @@ import io
 import shutil
 
 import re
+import os
 
 # Define a dictionary to map keywords to html tags
 keyword_dict = {
@@ -555,3 +556,62 @@ def PrepareTail(text_filename):
         fp.close()
     return None
 ########### PrepareTail End ###################################
+
+
+
+######### 
+def BuildSeriesPageUsingTemplate(intro_file, series_title, json_file, output_file):
+    """
+    Reads a template file and replaces marked sections with specified content.
+    
+    Args:
+        intro file (str): Path to the intro HTML file
+        series_title (str): Title of the series    
+        json_file (str): name of the json file (without the path)
+        output_file (str): Path where the modified HTML will be saved
+        replacements (dict): Dictionary of markers to replacement content
+    """
+    basepath_utilities = 'scripts/py'
+    navigation_header_top_file = os.path.join(basepath_utilities, 'navigation_header_top.html') 
+    template_file = os.path.join(basepath_utilities,'series_page_base.html')
+    # Read content from external HTML files
+    try:
+        with open(navigation_header_top_file, 'r', encoding='utf-8') as file:
+            nav_header_top_content = file.read()
+        
+        with open(intro_file, 'r', encoding='utf-8') as file:
+            page_intro_content = file.read()
+    except FileNotFoundError as e:
+        print(f"Error reading replacement files: {e.filename}")
+        exit(1)
+    
+    # Define all replacements
+    replacements = {
+        '%%Title%%': series_title,
+        '%%Navigation_Header_Top%%': nav_header_top_content,
+        '%%Page_Intro%%': page_intro_content,
+        '%%JSON_File%%': json_file
+    }
+    
+    
+    
+    try:
+        # Read the template file
+        with open(template_file, 'r', encoding='utf-8') as file:
+            content = file.read()
+        
+        # Perform all replacements
+        for marker, replacement in replacements.items():
+            content = content.replace(marker, replacement)
+        
+        # Write the modified content to output file
+        with open(output_file, 'w', encoding='utf-8') as file:
+            file.write(content)
+            
+        print(f"Successfully generated {output_file}")
+        
+    except FileNotFoundError as e:
+        print(f"Error: File not found - {e.filename}")
+    except Exception as e:
+        print(f"An error occurred: {str(e)}")
+
