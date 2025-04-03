@@ -44,6 +44,28 @@ with open(html_file, 'a', encoding="utf-8") as f:
     f.write('</body>\n')
     f.write('</html>\n')
 
+from PIL import Image
+import os
+
+# Set the desired width for the resized images
+width = 300
+
+# Set the path to the folder containing the images
+# folder_path = './documents/'
+
+# Loop through all the files in the folder
+for filename in os.listdir(basepath):
+    # Check if the file is an image
+    if filename.endswith('.jpg') or filename.endswith('.png') or filename.endswith('.jpeg'):
+        # Open the image file
+        with Image.open(os.path.join(basepath, filename)) as img:
+            # Calculate the height of the resized image to maintain aspect ratio
+            height = int((float(img.size[1]) * float(width / float(img.size[0]))))
+            # Resize the image
+            img = img.resize((width, height))
+            # Save the resized image with a new filename
+            #img.save(os.path.join(folder_path+'/'+'thumbnails', f'{filename[:-4]}_resized.jpg'))
+            img.save(os.path.join(basepath+'/'+'thumbnails', f'{filename}')) 
 
     
     

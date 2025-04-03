@@ -4,11 +4,12 @@ sys.path.append('scripts/py')
 from utilities import *
 
 basepath = './documents/NotesForDesana'
+intro_file = os.path.join(basepath, 'NotesForDesana_intro.html')
 html_file = os.path.join(basepath,'NotesForDesana.html')
 files = os.listdir(basepath)
 series_title = 'සියලු දේශනා සඳහා සටහන්'
 Filelist_styles = """
-    <link rel="stylesheet" type="text/css" href="file_list.css">
+    <link rel="stylesheet" type="text/css" href="/css/file_list.css">
 """
 
 print(html_file)
@@ -34,9 +35,15 @@ FileList_intro = """
     </div>
 """
 
-
+with open(html_file, 'a', encoding='utf-8') as fp:
+    with open(intro_file, 'r', encoding='utf-8') as fintro:
+        page_intro = fintro.read()
+        fp.write(page_intro)
+        fintro.close()
+        fp.close()
+        
 with open(html_file, 'a', encoding="utf-8") as f:
-    f.write(FileList_intro)
+    # f.write(FileList_intro)
     # iterate over all the files
     f.write('\t<div class="grid-container">\n')
     for file in files:
@@ -52,6 +59,27 @@ with open(html_file, 'a', encoding="utf-8") as f:
     f.write('</html>\n')
 
 
-    
+from PIL import Image
+import os
+
+# Set the desired width for the resized images
+width = 300
+
+# Set the path to the folder containing the images
+folder_path = './documents/NotesForDesana'
+
+# Loop through all the files in the folder
+for filename in os.listdir(folder_path):
+    # Check if the file is an image
+    if filename.endswith('.jpg') or filename.endswith('.png') or filename.endswith('.jpeg'):
+        # Open the image file
+        with Image.open(os.path.join(folder_path, filename)) as img:
+            # Calculate the height of the resized image to maintain aspect ratio
+            height = int((float(img.size[1]) * float(width / float(img.size[0]))))
+            # Resize the image
+            img = img.resize((width, height))
+            # Save the resized image with a new filename
+            #img.save(os.path.join(folder_path+'/'+'thumbnails', f'{filename[:-4]}_resized.jpg'))
+            img.save(os.path.join(folder_path+'/'+'thumbnails', f'{filename}'))    
     
  
