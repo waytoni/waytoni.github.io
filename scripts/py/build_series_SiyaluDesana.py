@@ -67,7 +67,9 @@ with open(html_file, 'w', encoding="utf-8") as fp:
 
     fp.write('<h1>අභිධම්ම දේශනා  - සියල්ල</h1>\n')
     
-    fp.write('<h2><li><a href="/documents/file_list.html">සියලු අභිධම්ම දේශනා සඳහා සටහන්</a></li></h2>\n')
+    #fp.write('<h2><li><a href="/documents/file_list.html">සියලු අභිධම්ම දේශනා සඳහා සටහන්</a></li></h2>\n')
+    
+    fp.write('<h2><li><a href="/documents/NotesForDesana/NotesForDesana.html">සියුලු දේශනා සඳහා සටහන්</a></li></h2>\n')
     # fp.write('<br>\n')
     
     fp.close()
