@@ -11,9 +11,10 @@ series_title = 'සියලු දේශනා සඳහා සටහන්'
 Filelist_styles = """
     <link rel="stylesheet" type="text/css" href="/css/file_list.css">
 """
+styles_file ='css/file_list.css'
 
 print(html_file)
-PrepareHeadTop(html_file, series_title, Filelist_styles)
+PrepareHeadSimpleStyles(html_file, series_title, Filelist_styles)
 
 FileList_intro = """
     <div>
