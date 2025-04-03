@@ -25,7 +25,7 @@ from scripts.py import build_homepage
 
 import sys
 
-menu_change = True
+menu_change = False
 
 if menu_change == True:
     from scripts.py import build_series_AbhidharmaASeries
@@ -40,9 +40,10 @@ if menu_change == True:
     build_404Page
     from scripts.py import build_series_ADA_ParamarthaLokaya
     build_series_ADA_ParamarthaLokaya
-    from scripts.py import build_NMU_file_list
+    #from scripts.py import build_NMU_file_list
    
-    build_NMU_file_list
+    #build_NMU_file_list
+    
     from scripts.py import build_file_list
    
     build_file_list
