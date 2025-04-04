@@ -49,14 +49,7 @@ if menu_change == True:
     build_404Page
     from scripts.py import build_series_ADA_ParamarthaLokaya
     build_series_ADA_ParamarthaLokaya
-    #from scripts.py import build_NMU_file_list
-    # when new images are added run create_thubnails.py in Nivan_Maga_Udesa.docs.combined_notes
-    #build_NMU_file_list
-    from scripts.py import build_file_list
-    # when new images are added run create_thubnails.py in Documents
-    build_file_list
     from scripts.py import build_FileListForNotes
-    # when new images are added run create_thubnails.py in Documents
     build_FileListForNotes
     from scripts.py import build_page_ChiththaChithasika
     build_page_ChiththaChithasika

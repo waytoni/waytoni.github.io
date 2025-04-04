@@ -39,17 +39,9 @@ if menu_change == True:
     from scripts.py import build_404Page
     build_404Page
     from scripts.py import build_series_ADA_ParamarthaLokaya
-    build_series_ADA_ParamarthaLokaya
-    #from scripts.py import build_NMU_file_list
+    build_series_ADA_ParamarthaLokaya   
    
-    #build_NMU_file_list
-    
-    from scripts.py import build_file_list
-   
-    build_file_list
-    
     from scripts.py import build_FileListForNotes
-    # when new images are added run create_thubnails.py in Documents
     build_FileListForNotes
     
     from scripts.py import build_page_ChiththaChithasika

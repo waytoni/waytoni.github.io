@@ -1,2 +1,2 @@
 
-    build_series_J
+if menu_change == True:
