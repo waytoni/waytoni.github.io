@@ -1,2 +1,2 @@
 
-if menu_change == True:
+    from scripts.py import build_series_I
