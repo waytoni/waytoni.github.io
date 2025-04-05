@@ -12,7 +12,7 @@ from utilities import *
 from build_series_menu import *
 
 
-basepath = 'Nivan_Maga_Udesa'
+basepath = 'NivanMagaUdesaDesana/A_series'
 
 intro_file = os.path.join(basepath,'NivanMagaUdesa_base.html')
 notes_file = os.path.join(basepath,'NivanMagaUdesa_Notes.txt')

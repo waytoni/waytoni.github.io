@@ -3,8 +3,8 @@ name: Update Abhidharma A Series Lessons
 on:
   push:
     paths:
-      - 'AbhidharmmaSeries/AbhidharmaASeries_ytlinks.txt' 
-      - 'AbhidharmmaSeries/AbhidharmaASeries_notes.txt'
+      - 'AbhidharmmaSeries/A_series/AbhidharmaASeries_ytlinks.txt' 
+      - 'AbhidharmmaSeries/A_series/AbhidharmaASeries_notes.txt'
 jobs:
   run-python-script-Saturday-Lesson:
     runs-on: ubuntu-latest
