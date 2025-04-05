@@ -1,10 +1,11 @@
-name: Update J series Lesson Links
+name: Update Thalawathugoda Lesson Links
 
 on:
   push:
     paths:
-      - 'KalutaraBodhiya/J_series/J_series_ytlinks.txt'  
-      - 'KalutaraBodhiya/J_series/J_series_notes.txt'    
+      - 'NivanMagaUdesaDesana/Thalawathugoda/Thalawathugoda_ytlinks.txt'
+      - 'NivanMagaUdesaDesana/Thalawathugoda/Thalawathugoda_notes.txt'
+ 
 jobs:
   run-python-script-Iseries:
     runs-on: ubuntu-latest
@@ -18,7 +19,7 @@ jobs:
           python-version: 3.11 # Set your desired Python version
 
       - name: Read J_serires
-        run: python scripts/py/build_series_J.py
+        run: python scripts/py/build_series_Thalawathugoda.py
 
       - name: Update All_Playlists for J_series addition
         run: python scripts/py/build_series_SiyaluDesana.py
@@ -27,5 +28,5 @@ jobs:
         run: |
           git config user.name "$(git log -n 1 --pretty=format:%an)"
           git config user.email "$(git log -n 1 --pretty=format:%ae)"
-          git commit -a -m "updated J series desana"
+          git commit -a -m "updated Thalawathugoda series desana"
           git push

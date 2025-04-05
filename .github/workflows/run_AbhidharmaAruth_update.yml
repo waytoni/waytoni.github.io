@@ -3,10 +3,10 @@ name: Update Abhidhamma Aruth Desana
 on:
   push:
     paths:
-      - 'AbhidharmaAruth/AbhidharmaAruth_B2_ytlinks.txt' 
-      - 'AbhidharmaAruth/AbhidharmaAruth_B2_notes.txt'   
-      - 'AbhidharmaAruth/AbhidharmaAruth_C_ytlinks.txt.txt'   # AA EP notes text file
-      - 'AbhidharmaAruth/AbhidharmaAruth_C_notes.txt'   # AA B notes text file
+      - 'AbhidharmaAruth/B2_series/AbhidharmaAruth_B2_ytlinks.txt' 
+      - 'AbhidharmaAruth/B2_series/AbhidharmaAruth_B2_notes.txt'   
+      - 'AbhidharmaAruth/C_series/AbhidharmaAruth_C_ytlinks.txt.txt'   
+      - 'AbhidharmaAruth/C_series/AbhidharmaAruth_C_notes.txt'   
 jobs:
   run-python-script-Abhidhamma-Aruth:
     runs-on: ubuntu-latest
