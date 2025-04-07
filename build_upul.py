@@ -1,15 +1,19 @@
 # Instructions for updating current set of files
 #
-# If there is an update (new video) Nivan Maga Udesa series,
+# If there is an update (new video) in Kaluthala Bodhiya K lesson series
 # then add an entry to the last line of the file: 
-#   Saturday_Abhidhamma_Lesson/saturday_abhidhamma_lesson_youtube_links.txt
+#   KalutaraBodhiya/K_series/K_series_ytlinks.txt
 #
-# If there is an update to the J series,
+# If there is an update to the Thalawathugoda series,
 # then add an entry to the last line of the file:
-#   KalutharaBhodiya/J_series//J_series.txt
+#   NivanMagaUdesaDesana/Thalawathugoda/Thalawathugoda_ytlinks.txt
+#
+# If there is an update to the Abhidharma Aruth C (Polgasowita) series,
+# then add an entry to the last line of the file:
+#   AbhidharmaAruth/C_series/AbhidharmaAruth_C_ytlinks.txt
 #
 # All files have the following format
-# <index> <youtube link (URL)> <date>
+# <index> <optional description> <youtube link (URL)> <date>
 
 
 
