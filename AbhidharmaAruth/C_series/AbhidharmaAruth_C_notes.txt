@@ -1,6 +1,9 @@
 #1
 #4
-
+#12
+ඛජ්ජනීය සුත්තං  pdf::/documents/pdfs/ඛජ්ජනීය සුත්තං.pdf
+ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
+img::/documents/NotesForDesana/ආර්ය ලෝකය.png
 #56
 pdf::docs/Ep 62 abidamma aruth 2024 04 25.pdf
 #59
