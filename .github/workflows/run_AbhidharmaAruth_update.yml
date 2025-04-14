@@ -5,7 +5,7 @@ on:
     paths:
       - 'AbhidharmaAruth/B2_series/AbhidharmaAruth_B2_ytlinks.txt' 
       - 'AbhidharmaAruth/B2_series/AbhidharmaAruth_B2_notes.txt'   
-      - 'AbhidharmaAruth/C_series/AbhidharmaAruth_C_ytlinks.txt.txt'   
+      - 'AbhidharmaAruth/C_series/AbhidharmaAruth_C_ytlinks.txt'   
       - 'AbhidharmaAruth/C_series/AbhidharmaAruth_C_notes.txt'   
 jobs:
   run-python-script-Abhidhamma-Aruth:
