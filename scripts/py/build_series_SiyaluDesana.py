@@ -104,7 +104,7 @@ id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
     fp.write('<div class="normal-head">\n')
-    fp.write(f'<h2>{id}. <a href="/Nivan_Maga_Udesa/index.html">නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (A කණ්ඩායම)</a></h2>\n')
+    fp.write(f'<h2>{id}. <a href="/NivanMagaUdesaDesana/A_series/index.html">නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (A කණ්ඩායම)</a></h2>\n')
     fp.write('</div>\n')
     fp.close()
 
@@ -132,7 +132,7 @@ id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
     fp.write('<div class="normal-head">\n')
-    fp.write(f'<h2>{id}. <a href="/AbhidharmaSeries/index.html">තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා මාලාව</a></h2>\n')
+    fp.write(f'<h2>{id}. <a href="/AbhidharmaSeries/A_series/index.html">තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා මාලාව</a></h2>\n')
     fp.write('</div>\n')
     fp.close()
 
