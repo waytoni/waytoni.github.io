@@ -3,11 +3,10 @@
 #12
 ඛජ්ජනීය සුත්තං  pdf::/documents/pdfs/ඛජ්ජනීය සුත්තං.pdf
 ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
-
-
+ඛජ්ජනීය සූත්‍ර කෙටි සජ්ජායනාව url::https://www.youtube.com/watch?v=hnfE4MWSn-U
 ආර්ය ලෝකය සටහන <a href="https://waytoni.com/documents/Sabba%20VER%201.01.html" target="_blank"><img src="/documents/NotesForDesana/thumbnails/ආර්ය ලෝකය.png"></a> (සටහන නව ටැබ් [tab] එකක විවෘත වේ.)
 
-
+#13
 #56
 pdf::docs/Ep 62 abidamma aruth 2024 04 25.pdf
 #59
