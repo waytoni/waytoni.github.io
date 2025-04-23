@@ -1,0 +1,32 @@
+name: Update YouthForTruth Lesson Links
+
+on:
+  push:
+    paths:
+      - 'YouthForTruth/YouthForTruth_ytlinks.txt'
+      - 'YouthForTruth/YouthForTruth_notes.txt'
+ 
+jobs:
+  run-python-script-Iseries:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.11 # Set your desired Python version
+
+      - name: build YouthForTruth
+        run: python scripts/py/build_series_YouthForTruth.py
+
+      - name: Update All_Playlists for YouthForTruth addition
+        run: python scripts/py/build_series_SiyaluDesana.py
+
+      - name: commit changes
+        run: |
+          git config user.name "$(git log -n 1 --pretty=format:%an)"
+          git config user.email "$(git log -n 1 --pretty=format:%ae)"
+          git commit -a -m "updated YouthForTruth series desana"
+          git push

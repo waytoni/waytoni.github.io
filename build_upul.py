@@ -16,8 +16,6 @@
 # <index> <optional description> <youtube link (URL)> <date>
 
 
-
-# from scripts.py import build_series_Nivan_Maga_Udesa
 from scripts.py import build_series_NivanMagaUdesa
 
 from scripts.py import build_series_AbhidharmaAruth_B2
@@ -28,6 +26,8 @@ from scripts.py import build_series_SiyaluDesana
 from scripts.py import build_series_K
 from scripts.py import build_series_ShortDhammaDiscussions
 from scripts.py import build_homepage
+from scripts.py import build_series_YouthForTruth
+
 from testing import list_AllVideos_Jan9
 
 
@@ -81,4 +81,5 @@ build_series_K
 build_series_SuthamayaHirigal
 build_series_SiyaluDesana
 build_series_ShortDhammaDiscussions
+build_series_YouthForTruth
 build_homepage

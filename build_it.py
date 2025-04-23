@@ -25,6 +25,7 @@ from scripts.py import build_series_SuthamayaHirigal
 from scripts.py import build_series_SiyaluDesana
 from scripts.py import build_series_K
 from scripts.py import build_series_ShortDhammaDiscussions
+from scripts.py import build_series_YouthForTruth
 from scripts.py import build_homepage
 
 import sys
@@ -70,4 +71,5 @@ build_series_K
 build_series_SuthamayaHirigal
 build_series_SiyaluDesana
 build_series_ShortDhammaDiscussions
+build_series_YouthForTruth
 build_homepage
