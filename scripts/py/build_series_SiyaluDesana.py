@@ -267,7 +267,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
 with open(html_file, 'a', encoding="utf-8") as fp:
 #    fp.write('<h5>&emsp; F කාණ්ඩය අසම්පූර්ණයි</h5>\n')
     fp.write('<br>\n')
-    fp.write('<li><a href="/documents/file_list.html">සියලු අභිධම්ම දේශනා සඳහා සටහන්</a></li>\n')
+    fp.write('<li><a href="/documents/NotesForDesana/NotesForDesana.html">සියලු අභිධම්ම දේශනා සඳහා සටහන්</a></li>\n')
     fp.write('<br>\n')
 
     fp.write('<h3><a href="AllVideos_V2.html">සියලුම දේශනා - @WayToNibbana YouTube Channel</a></h3>\n')
