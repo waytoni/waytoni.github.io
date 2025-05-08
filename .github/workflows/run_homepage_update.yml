@@ -6,7 +6,7 @@ on:
       - 'Homepage/homepage_content.html'
       - 'Homepage/messages.html'  
 jobs:
-  run-python-script-Iseries:
+  run-python-script-homepage-update:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository

@@ -6,7 +6,7 @@ on:
       - 'AbhidharmmaSeries/A_series/AbhidharmaASeries_ytlinks.txt' 
       - 'AbhidharmmaSeries/A_series/AbhidharmaASeries_notes.txt'
 jobs:
-  run-python-script-Saturday-Lesson:
+  run-python-script-Abhidharma-A-Series:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository

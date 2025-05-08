@@ -7,7 +7,7 @@ on:
       - 'YouthForTruth/YouthForTruth_notes.txt'
  
 jobs:
-  run-python-script-Iseries:
+  run-python-script-YouthForTruth:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository

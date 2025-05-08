@@ -6,7 +6,7 @@ on:
       - 'KalutaraBodhiya/K_series/K_series_ytlinks.txt'     
       - 'KalutaraBodhiya/K_series/K_series_notes.txt'     
 jobs:
-  run-python-script-Iseries:
+  run-python-script-Kseries:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository

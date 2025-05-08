@@ -7,7 +7,7 @@ on:
       - 'NivanMagaUdesaDesana/Thalawathugoda/Thalawathugoda_notes.txt'
  
 jobs:
-  run-python-script-Iseries:
+  run-python-script-Thalawathugoda:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
