@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="gform" id="gform" enctype="text/plain"
+        action="https://docs.google.com/forms/d/e/1FAIpQLSe3x9kVCwo4lqh2OB2Wej816f3GynYNhZ91OwSCxMRGj0pypg/formResponse?"
+        target="hidden_iframe" onsubmit="submitted=true;"> 
+        Missing Page (copy from above)<br>
+        <input type="text" name="entry.803131664" id="entry.803131664"><br> 
+        Linked from (optional)<br>
+        <input type="text" name="entry.318794381" id="entry.318794381">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+    <script src="/scripts/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+        // Get the broken URL (current 404 page)
+        const brokenUrl = window.location.href;
+        document.getElementById('entry.803131664').value = brokenUrl;
+
+        // Get the referring page (where the user came from)
+        const referrer = document.referrer || 'Direct entry (no referrer)';
+        //const referrerField = document.getElementById('entry.318794381');
+        document.getElementById('entry.318794381').value = referrer;
+/*
+        if (referrer && referrerField) {
+            // Only set if coming from external site
+            if (!referrer.includes(window.location.hostname)) {
+                referrerField.value = referrer;
+            }
+        }
+*/
+        // Log to Google Analytics (GA4)
+        if (typeof gtag === 'function') {
+            gtag('event', '404_error', {
+                broken_url: brokenUrl,
+                referrer: referrer,
+                page_path: window.location.pathname
+            });
+        }
+        </script>
+
+        // Log to console for debugging
+        // console.log('404 Error Details:', { brokenUrl, referrer });
+    <script type="text/javascript">
+        var submitted = false;
+    </script>
+    <script type="text/javascript">
+        $('#gform').on('submit', function (e) {
+            $('#gform *').fadeOut(2000);
+            $('#gform').prepend('Your submission has been processed...');
+        });
+    </script>
+</body>
+</html>
