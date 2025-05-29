@@ -39,6 +39,9 @@
 #16 
 චූළවේදල්ල සූත්‍රය url::https://tipitaka.lk/mn-1-5-4
 මහාවේදල්ල සූත්‍රය url::https://tipitaka.lk/mn-1-5-3
+#17
+ඛජ්ජනීය සුත්තං  pdf::/documents/pdfs/ඛජ්ජනීය සුත්තං.pdf
+ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
 #56
 pdf::docs/Ep 62 abidamma aruth 2024 04 25.pdf
 #59
