@@ -24,6 +24,9 @@
 #12
 #17
 පුණ්ණමා සූත්‍රය url::https://tipitaka.lk/sn-3-1-2-3-10/sinh
+#20
+ඛජ්ජනීය සුත්තං  pdf::/documents/pdfs/ඛජ්ජනීය සුත්තං.pdf
+ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
 #27
 #28
 #200 
