@@ -42,6 +42,10 @@
 #17
 ඛජ්ජනීය සුත්තං  pdf::/documents/pdfs/ඛජ්ජනීය සුත්තං.pdf
 ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
+#18
+ස්කන්‍ධ විභඞ්ගය url::https://tipitaka.lk/ap-vbh-1-1
+ඛජ්ජනීය සුත්තං  url::https://tipitaka.lk/sn-3-1-2-3-7
+
 #56
 pdf::docs/Ep 62 abidamma aruth 2024 04 25.pdf
 #59
