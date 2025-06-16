@@ -27,6 +27,9 @@
 #20
 ඛජ්ජනීය සුත්තං  pdf::/documents/pdfs/ඛජ්ජනීය සුත්තං.pdf
 ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
+#21
+ස්කන්‍ධ විභඞ්ගය url::https://tipitaka.lk/ap-vbh-1-1
+ඛජ්ජනීය සුත්තං  url::https://tipitaka.lk/sn-3-1-2-3-7
 #27
 #28
 #200 
