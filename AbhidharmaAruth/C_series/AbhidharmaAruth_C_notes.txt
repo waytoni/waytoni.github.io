@@ -50,6 +50,7 @@
 රේරුකානේ චන්දවිමල හිමියන්ගේ චතුරාර්‍ය්‍ය සත්‍යය පොත (HTML) url::https://tipitaka.lk/library/470
 #21
 රේරුකානේ චන්දවිමල හිමියන්ගේ පටිච්ච සමුප්පාද විවරණය පොත (HTML) url::https://tipitaka.lk/library/474
+රේරුකානේ චන්දවිමල හිමියන්ගේ පටිච්ච සමුප්පාද විවරණය පොත (PDF) url::https://www.ogatharana.org/bookDownCounter.php?booknumber=17
 #30
 රේරුකානේ චන්දවිමල හිමියන්ගේ පටිච්ච සමුප්පාද විවරණය පොත (PDF) url::https://www.ogatharana.org/bookDownCounter.php?booknumber=17
 රේරුකානේ චන්දවිමල හිමියන්ගේ පටිච්ච සමුප්පාද විවරණය පොත (HTML) url::https://tipitaka.lk/library/474
