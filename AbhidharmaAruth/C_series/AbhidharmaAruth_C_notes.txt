@@ -51,7 +51,9 @@
 #21
 රේරුකානේ චන්දවිමල හිමියන්ගේ පටිච්ච සමුප්පාද විවරණය පොත (HTML) url::https://tipitaka.lk/library/474
 රේරුකානේ චන්දවිමල හිමියන්ගේ පටිච්ච සමුප්පාද විවරණය පොත (PDF) url::https://www.ogatharana.org/bookDownCounter.php?booknumber=17
-#30
+#22
+img::/documents/images/පටිච්චසමුප්පාදය 02.jpg
+#50
 රේරුකානේ චන්දවිමල හිමියන්ගේ පටිච්ච සමුප්පාද විවරණය පොත (PDF) url::https://www.ogatharana.org/bookDownCounter.php?booknumber=17
 රේරුකානේ චන්දවිමල හිමියන්ගේ පටිච්ච සමුප්පාද විවරණය පොත (HTML) url::https://tipitaka.lk/library/474
 #56
