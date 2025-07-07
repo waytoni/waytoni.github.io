@@ -30,6 +30,8 @@
 #21
 ස්කන්‍ධ විභඞ්ගය url::https://tipitaka.lk/ap-vbh-1-1
 ඛජ්ජනීය සුත්තං  url::https://tipitaka.lk/sn-3-1-2-3-7
+#25
+img::/documents/images/පටිච්චසමුප්පාදය 02.jpg
 #27
 #28
 #200 
