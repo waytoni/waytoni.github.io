@@ -73,13 +73,13 @@ if menu_change == True:
 # waytoni_all_videos_new
 #list_AllVideos
 list_AllVideos_Jan9
-build_series_AbhidharmaAruth_B2
+#build_series_AbhidharmaAruth_B2
 build_series_AbhidharmaAruth_C
-build_series_NivanMagaUdesa
+#build_series_NivanMagaUdesa
 build_series_Thalawathugoda
 build_series_K
-build_series_SuthamayaHirigal
+#build_series_SuthamayaHirigal
 build_series_SiyaluDesana
-build_series_ShortDhammaDiscussions
+#build_series_ShortDhammaDiscussions
 build_series_YouthForTruth
 build_homepage
