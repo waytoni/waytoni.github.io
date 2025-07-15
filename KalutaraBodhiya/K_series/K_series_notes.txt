@@ -32,6 +32,8 @@
 ඛජ්ජනීය සුත්තං  url::https://tipitaka.lk/sn-3-1-2-3-7
 #25
 img::/documents/images/පටිච්චසමුප්පාදය 02.jpg
+#26
+img::/documents/images/පටිච්චසමුප්පාදය 03 Low Re.jpg
 #27
 #28
 #200 
