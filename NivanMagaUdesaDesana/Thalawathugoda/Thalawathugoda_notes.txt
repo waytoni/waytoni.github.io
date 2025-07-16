@@ -10,6 +10,8 @@
 #15
 #20
 img::/documents/images/පටිච්චසමුප්පාදය 02.jpg
+#21
+img::/documents/images/පටිච්චසමුප්පාදය 03 Low Re.jpg
 #300 
 ඛජ්ජනීය සුත්තං (PDF) pdf::/documents/pdfs/ඛජ්ජනීය සුත්තං.pdf
 ඛජ්ජනීය සුත්තං (Online) url::https://tripitaka.online/sutta/3413
