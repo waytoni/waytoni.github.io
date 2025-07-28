@@ -12,19 +12,19 @@ from utilities import *
 from build_series_menu import *
 
 
-basepath = 'KalutaraBodhiya/K_series'
+basepath = 'KalutaraBodhiya/L_series'
 
-base_file = os.path.join(basepath,'K_series_base.html')
-notes_file = os.path.join(basepath,'K_series_notes.txt')
-utube_links = os.path.join(basepath,'K_series_ytlinks.txt')
-html_file = os.path.join(basepath,'K_series.html')
-json_file = os.path.join(basepath,'K_series.json')
+base_file = os.path.join(basepath,'L_series_base.html')
+notes_file = os.path.join(basepath,'L_series_notes.txt')
+utube_links = os.path.join(basepath,'L_series_ytlinks.txt')
+html_file = os.path.join(basepath,'L_series.html')
+json_file = os.path.join(basepath,'L_series.json')
 
 playlist_url = ''
 
-series_title = '2025 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (K Series)'
+series_title = '2025 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන දේශනා මාලාව (L Series)'
 
-K_series_styles = """
+L_series_styles = """
    	<style>
 		body {
 			font-family: Arial, sans-serif;
@@ -58,7 +58,7 @@ print(json_file)
 
 BuildDropDownMenuWithNavigation(utube_links, notes_file, json_file)
 
-PrepareHeadTop(html_file, series_title, K_series_styles)
+PrepareHeadTop(html_file, series_title, L_series_styles)
 
 with open(html_file, 'a', encoding='utf-8') as fp:
     
