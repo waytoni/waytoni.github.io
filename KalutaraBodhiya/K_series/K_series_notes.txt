@@ -39,6 +39,9 @@ img::/documents/images/පටිච්චසමුප්පාදය 03 Low Re.j
 img::/documents/NotesForDesana/030 ජීවිතේන්ද්‍රිය.jpg
 #28
 img::/documents/NotesForDesana/030 ජීවිතේන්ද්‍රිය.jpg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02 සන්තතිය.jpeg
+#29
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02 සන්තතිය.jpeg
 #200 
 #250
 මහා සළායතනික සුත්තං pdf::/documents/pdfs/මහා සළායතනික සුත්තං.pdf
