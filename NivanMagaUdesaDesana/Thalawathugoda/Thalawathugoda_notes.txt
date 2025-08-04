@@ -17,6 +17,9 @@ img::/documents/NotesForDesana/030 ජීවිතේන්ද්‍රිය.jp
 #23
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02 සන්තතිය.jpeg
 #24
+විභංග සුත්තං (PDF) pdf::/documents/pdfs/විභංග සුත්තං.pdf
+මහා නිදාන සුත්තං (PDF) pdf::/documents/pdfs/මහා නිදාන සුත්තං.pdf
+අචේලකස්සප සුත්තං (PDF) pdf::/documents/pdfs/අචේලකස්සප සුත්තං.pdf
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02 සන්තතිය.jpeg
 #300 
 ඛජ්ජනීය සුත්තං (PDF) pdf::/documents/pdfs/ඛජ්ජනීය සුත්තං.pdf
