@@ -16,24 +16,113 @@
   <!-- check multiple places for css - the last one overrides the first one in case both are found -->
   <link href="https://pitaka.lk/books/common/print-pdf.css" rel="stylesheet" />
 
+<style>
+  /* Constrain text content to 80 characters */
+.content-container {
+    max-width: 80ch;
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 100px; /* Space for audio player */
+    line-height: 1.6;
+}
+
+/* Full-width audio player */
+#audio-player-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+#now-playing {
+    min-width: 200px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#main-audio-player {
+    flex-grow: 1;
+    min-width: 250px;
+    max-width: 500px;
+}
+
+#audio-tracks {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Section markers inherit the content width */
+.audio-section-marker {
+    margin-top: 20px;
+    position: relative;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .content-container {
+        padding: 15px;
+        padding-bottom: 150px; /* More space for stacked audio controls */
+    }
+    
+    #audio-player-container {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+    
+    #now-playing, #main-audio-player {
+        width: 100%;
+    }
+    
+    #audio-tracks {
+        justify-content: center;
+    }
+}
+
+/* Button styles remain the same */
+.audio-btn {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.audio-btn:hover {
+    background: #45a049;
+}
+
+.audio-btn.active {
+    background: #f39c12;
+    box-shadow: 0 0 10px #f39c12;
+}
+</style>
 </head>
 <body>
-
+  <div class="content-container">
   <div style="position: sticky; top: 0; background: #f0f0f0; padding: 10px; z-index: 999;">
     <label for="fontSlider">Font Size:</label>
     <input type="range" id="fontSlider" min="12" max="36" value="18" />
     <span id="fontSizeLabel">18px</span>
   </div>
-
-
-    <div id="disclaimer">
+  <div id="disclaimer">
     <h3>මෙය පර්යේෂණාත්මක අරමුණක් සඳහා ය.</h3>
-
-<h3>මෙම පිටුව සඳහා අන්තර්ගතය https://tipitaka.lk/ (https://tipitaka.lk/library/474) වෙබ් අඩවියෙන් ලබාගෙන ඇත.
-ගොනු පිටපත් කිරීමේ ක්‍රියාවලියේදී දෝෂ ඇති වී තිබිය හැකි බව කරුණාවෙන් සලකන්න.</h3>
+    <h3>මෙම පිටුව සඳහා අන්තර්ගතය https://tipitaka.lk/ (https://tipitaka.lk/library/474) වෙබ් අඩවියෙන් ලබාගෙන ඇත. ගොනු
+      පිටපත් කිරීමේ ක්‍රියාවලියේදී දෝෂ ඇති වී තිබිය හැකි බව කරුණාවෙන් සලකන්න.</h3>
   </div>
-
-
   <div>
     <div class="title">පටිච්ච සමුප්පාද විවරණය</div>
     <div class="author">රේරුකානේ චන්දවිමල හිමි</div>
@@ -159,7 +248,7 @@
     <p>2008 ජනවාරි 25 වන දින,</p>
     <p>පොකුණුවිටදී ය.</p>
   </div>
-  <h1 class="sinh-toc" id="heading-0">සංඥාපනය</h1>
+  <h1 class="sinh-toc" id="toc-ind-0">සංඥාපනය</h1>
   <p>ලොවුතුරා බුදුබවට පැමිණෙන්නා වූ සකල මහා බෝධිසත්ත්වයන් ම ආනාපාන චතුර්ථධ්‍යානයට සමවැදී, නුවණ දියුණු - තියුණු කොට ගෙන,
     එසේ තියුණු කරගත් නුවණ ප්‍ර‍තීත්‍යසමුත්පාදධර්‍මයට යොමු කොට එය අනුලෝම-ප්‍ර‍තිලෝම වශයෙන් සම්මර්‍ශනය කොට සංසාර චක්‍රයේ
     සැටි නිවැරදි ලෙස තේරුම් ගෙන, අර්හන්මාර්ගඥානය උපදවා සංසාර ප්‍ර‍වෘත්තියට හේතු වන අවිද්‍යා - තෘෂ්ණා ප්‍ර‍ධාන එක්දහස්
@@ -4191,6 +4280,15 @@
     විස්තර කර ඇත්තේ ය.</p>
   <p>මෙහි දක්වා ඇත්තේ අන්තරාභවය පිළිබඳව කාහටත් පහසුවෙන් තේරුම් ගත හැකි කරුණු ස්වල්පයකි. මේ පිළිබඳ ගැඹුරු කරුණු කිසිවක්
     මෙයට ඇතුළත් නො කළ බව ද සැලකිය යුතු ය. </p>
+</div>
+<div id="audio-player-container">
+    <div id="now-playing">No audio selected</div>
+    <audio id="main-audio-player" controls>
+        Your browser does not support the audio element.
+    </audio>
+    <div id="audio-tracks"></div>
+</div>
+
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const slider = document.getElementById('fontSlider');
@@ -4207,5 +4305,110 @@
       updateFontSize(slider.value);
     });
   </script>
+
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Audio sections configuration
+    const audioSections = [
+        {
+            id: 'toc-ind-0-audio',
+            title: 'සංඥාපනය',
+            audioFile: 'audio/0_preface.mp3',
+            elementId: 'toc-ind-0' // ID of the section element
+        },
+        {
+            id: 'toc-ind-1-audio',
+            title: 'පටිච්ච සමුප්පාද විවරණය',
+            audioFile: 'audio/1_intro.mp3',
+            elementId: 'toc-ind-1'
+        },
+        {
+            id: 'toc-ind-6-audio',
+            title: 'අවිජ්ජාපච්චයා සංඛාරා',
+            audioFile: 'audio/2_aps.mp3',
+            elementId: 'toc-ind-6'
+        },
+                {
+            id: 'toc-ind-8-audio',
+            title: 'සංඛාරපච්චයා විඤ්ඤාණං',
+            audioFile: 'audio/3_spv.mp3',
+            elementId: 'toc-ind-8'
+        }
+        // Add more sections as needed
+    ];
+
+    const playerContainer = document.getElementById('audio-player-container');
+    const nowPlayingDiv = document.getElementById('now-playing');
+    const audioPlayer = document.getElementById('main-audio-player');
+    const audioTracksDiv = document.getElementById('audio-tracks');
+
+    // Create buttons for each audio section
+    audioSections.forEach(section => {
+        const btn = document.createElement('button');
+        btn.className = 'audio-btn';
+        btn.dataset.sectionId = section.id;
+        btn.dataset.audioFile = section.audioFile;
+        btn.textContent = section.title;
+        
+        btn.addEventListener('click', function() {
+            playAudioSection(section);
+        });
+        
+        audioTracksDiv.appendChild(btn);
+    });
+
+    // Function to play audio section
+    function playAudioSection(section) {
+        nowPlayingDiv.textContent = `Now Playing: ${section.title}`;
+        audioPlayer.src = section.audioFile;
+        audioPlayer.play();
+        
+        // Highlight the active button
+        document.querySelectorAll('.audio-btn').forEach(btn => {
+            btn.classList.remove('active');
+        });
+        document.querySelector(`.audio-btn[data-section-id="${section.id}"]`).classList.add('active');
+        
+        // Scroll to the section
+        const sectionElement = document.getElementById(section.elementId);
+        if (sectionElement) {
+            sectionElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
+    // Intersection Observer to highlight buttons when sections are visible
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const sectionId = entry.target.id;
+                const correspondingSection = audioSections.find(s => s.elementId === sectionId);
+                if (correspondingSection) {
+                    document.querySelectorAll('.audio-btn').forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    const activeBtn = document.querySelector(`.audio-btn[data-section-id="${correspondingSection.id}"]`);
+                    if (activeBtn) {
+                        activeBtn.classList.add('active');
+                    }
+                }
+            }
+        });
+    }, { threshold: 0.5 });
+
+    // Observe all sections with audio
+    audioSections.forEach(section => {
+        const element = document.getElementById(section.elementId);
+        if (element) {
+            observer.observe(element);
+            
+            // Add marker to the section (optional)
+            const marker = document.createElement('div');
+            marker.className = 'audio-section-marker';
+            marker.innerHTML = `<small>Audio available: ${section.title}</small>`;
+            element.insertBefore(marker, element.firstChild);
+        }
+    });
+});
+</script>
 </body>
 </html>
