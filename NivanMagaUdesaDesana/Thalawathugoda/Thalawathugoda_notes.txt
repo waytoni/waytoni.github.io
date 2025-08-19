@@ -21,6 +21,8 @@ img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02 
 මහා නිදාන සුත්තං (PDF) pdf::/documents/pdfs/මහා නිදාන සුත්තං.pdf
 අචේලකස්සප සුත්තං (PDF) pdf::/documents/pdfs/අචේලකස්සප සුත්තං.pdf
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02 සන්තතිය.jpeg
+#25
+pdf::/NivanMagaUdesaDesana/Thalawathugoda/docs/Thalawathugoda_2025-08-16.pdf
 #300 
 ඛජ්ජනීය සුත්තං (PDF) pdf::/documents/pdfs/ඛජ්ජනීය සුත්තං.pdf
 ඛජ්ජනීය සුත්තං (Online) url::https://tripitaka.online/sutta/3413
