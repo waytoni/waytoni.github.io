@@ -1,0 +1,31 @@
+name: Update L series Lesson Links
+
+on:
+  push:
+    paths:
+      - 'KalutaraBodhiya/L_series/L_series_ytlinks.txt'     
+      - 'KalutaraBodhiya/L_series/L_series_notes.txt'     
+jobs:
+  run-python-script-Kseries:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.11 # Set your desired Python version
+
+      - name: Read L_serires
+        run: python scripts/py/build_series_L.py
+
+      - name: Update All_Playlists for L_series addition
+        run: python scripts/py/build_series_SiyaluDesana.py
+
+      - name: commit changes
+        run: |
+          git config user.name "$(git log -n 1 --pretty=format:%an)"
+          git config user.email "$(git log -n 1 --pretty=format:%ae)"
+          git commit -a -m "updated L series"
+          git push
