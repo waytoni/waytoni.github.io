@@ -23,7 +23,7 @@ from scripts.py import build_series_AbhidharmaAruth_C
 from scripts.py import build_series_Thalawathugoda
 from scripts.py import build_series_SuthamayaHirigal
 from scripts.py import build_series_SiyaluDesana
-from scripts.py import build_series_K
+
 from scripts.py import build_series_L
 from scripts.py import build_series_ShortDhammaDiscussions
 from scripts.py import build_homepage
@@ -48,6 +48,8 @@ if menu_change == True:
     build_series_I
     from scripts.py import build_series_J
     build_series_J
+    from scripts.py import build_series_K
+    build_series_K
     from scripts.py import build_ZoomPage
     build_ZoomPage
     from scripts.py import build_404Page
@@ -78,7 +80,7 @@ list_AllVideos_Jan9
 build_series_AbhidharmaAruth_C
 #build_series_NivanMagaUdesa
 build_series_Thalawathugoda
-build_series_K
+
 build_series_L
 #build_series_SuthamayaHirigal
 build_series_SiyaluDesana
