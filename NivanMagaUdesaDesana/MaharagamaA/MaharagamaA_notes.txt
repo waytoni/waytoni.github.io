@@ -1,0 +1,34 @@
+#1
+#7
+#110
+ඛජ්ජනීය සුත්තං  pdf::/documents/pdfs/ඛජ්ජනීය සුත්තං.pdf
+ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
+ඛජ්ජනීය සූත්‍ර කෙටි සජ්ජායනාව url::https://www.youtube.com/watch?v=hnfE4MWSn-U
+ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම pdf::/documents/pdfs/ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම.pdf
+img::/documents/images/පටිච්චසමුප්පාදය 02.jpg
+img::/documents/images/පටිච්චසමුප්පාදය 03 Low Re.jpg
+img::/documents/NotesForDesana/030 ජීවිතේන්ද්‍රිය.jpg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02 සන්තතිය.jpeg
+විභංග සුත්තං (PDF) pdf::/documents/pdfs/විභංග සුත්තං.pdf
+මහා නිදාන සුත්තං (PDF) pdf::/documents/pdfs/මහා නිදාන සුත්තං.pdf
+අචේලකස්සප සුත්තං (PDF) pdf::/documents/pdfs/අචේලකස්සප සුත්තං.pdf
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02 සන්තතිය.jpeg
+pdf::/NivanMagaUdesaDesana/Thalawathugoda/docs/Thalawathugoda_2025-08-16.pdf
+#300 
+මධුපිණ්ඩික සුත්තං (PDF) pdf::/documents/pdfs/මධුපිණ්ඩික සුත්තං.pdf
+මධුපිණ්ඩික සුත්තං (Online) url::https://tripitaka.online/sutta/311
+මහාචත්තාරීසක සුත්තං (PDF) pdf::/documents/pdfs/මහාචත්තාරීසක සුත්තං.pdf
+මහාචත්තාරීසක සුත්තං (Online) url::https://tripitaka.online/sutta/739
+ඡ ඡක්ක සුත්තං (PDF) pdf::/documents/pdfs/ඡ ඡක්ක සුත්තං.pdf
+ඡ ඡක්ක සුත්තං (Online) url::https://tripitaka.online/sutta/865
+මහා සළායතනික සුත්තං (PDF) pdf::/documents/pdfs/මහා සළායතනික සුත්තං.pdf
+මහා සළායතනික සුත්තං (Online) url::https://tripitaka.online/sutta/870
+සබ්බාසව සුත්තං (PDF) pdf::/documents/pdfs/සබ්බාසව සුත්තං.pdf
+සබ්බාසව සුත්තං (Online) url::https://tripitaka.online/sutta/268
+ගද්දූලබද්ධ සුත්තං (PDF) pdf::/documents/pdfs/ගද්දූලබද්ධ සුත්තං.pdf
+ගද්දූලබද්ධ සුත්තං (Online) url::https://tripitaka.online/sutta/3575
+නිබ්බේධික සුත්තං (PDF) pdf::/documents/pdfs/නිබ්බේධික සුත්තං.pdf
+නිබ්බේධික සුත්තං (Online) url::https://tripitaka.online/sutta/10420
+#301
+#302
+#1000

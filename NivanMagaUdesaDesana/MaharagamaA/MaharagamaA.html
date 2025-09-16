@@ -64,7 +64,7 @@
 		}
 
 	</style>
-	<title>පොල්ගස්ඕවිට පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (C කන්ඩායම)</title>
+	<title>මහරගම තරුණ බෞද්ධ මන්දිරයේ පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව</title>
 </head>
 <body>
 
@@ -100,116 +100,105 @@
           </div>
         </div> 
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navFunction()">&#9776;</a>
-    </div><!--h1>අභිධර්ම අරුත් - දේශනා</h1-->
-<p></p>
-<h1><strong>කල්‍යාණ මිත්‍ර අජන්ත සම්පත් ගුරුතුමා මෙහෙයවන</strong></h1>
-<h1>පොල්ගස්ඕවිට පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (තෙවෙන (C) කන්ඩායම)</h1>
-
-<p></p>
-<p>බ්‍රහස්පතින්දා ප.ව. 12:30 සිට 2:30 දක්වා</p>
-<p>විමසීම්: 0777 047174, 0760 813439</p>
+    </div>
+	<h1>මහරගම තරුණ බෞද්ධ මන්දිරයේ පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව</h1>
+	<h2>කල්‍යාණ මිත්‍ර අජන්ත සම්පත් ගුරුතුමන් ගේ ධහම් සාකච්චා මාලාව</h2>
+	<p></p>
+	<h2>සෑම අඟහරුවාදා දින සවස 4.00 සිට 6.30 දක්වා</h2>
+	<h2>ස්ථානය (Location): මහරගම තරුණ බෞද්ධ මන්දිරය</h2>
 	<h3><a
-		href="/Zoom_Info/ZoomInfo.html?time=12:00&day=බ්‍රහස්පතින්දා&etime=3:00&title=පොල්ගස්ඕවිට%20පැවෙත්වෙන%20නිවන්%20මග%20උදෙසා%20දර්ශන%20ඥාණය%20දේශනා%20මාලාව">
-		Zoom සජීවීව සම්බන්ධ වීමට</a>
+	href="/Zoom_Info/ZoomInfo.html?time=4:00&day=අඟහරුවාදා&etime=6:30&title=මහරගම%20තරුණ%20බෞද්ධ%20මන්දිරයේපැවෙත්වෙන%20නිවන්%20මග%20උදෙසා%20දර්ශන%20ඥාණය%20දේශනා&venue=මහරගම%20තරුණ%20බෞද්ධ%20මන්දිරය">
+	Zoom සජීවීව සම්බන්ධ වීමට</a>
 	</h3>
-<p></p>
-<h2>
-	<li><a href="/documents/NotesForDesana/NotesForDesana.html">සියුලු දේශනා සඳහා සටහන්</a></li>
-</h2>
-<p></p>
-<p><label for="link-selector">Select a video from the dropdown menu:</label></p>
-<p><select id="link-selector" onchange="updateContent()">
+	<p></p>
+
+	<h2>
+		<li><a href="/documents/NotesForDesana/NotesForDesana.html">සියුලු දේශනා සඳහා සටහන්</a></li>
+	</h2>
+
+
+	<p><label for="link-selector">Select a video from the dropdown menu:</label></p>
+	<p><select id="link-selector" onchange="updateContent()">
 		<!-- Options will be populated dynamically -->
 	</select></p>
-<div id="controls">
-	<center>
+	<div id="controls">
+		<center>
+
 		<button onclick="navigate(-1)">Previous</button>
 		<button onclick="navigate(1)">Next</button>
 	</center>
-</div>
-<div id="video-container">
-	<!-- YouTube video will be embedded here -->
-</div>
-<div class="slider-container" style="text-align: center; margin-top: 20px;">
-	<label for="fontSizeSlider">A අ: </label>
-	<input type="range" id="fontSizeSlider" min="12" max="48" value="16">
-</div>
-<div id="notes">
-	<!-- Notes will be displayed here -->
-</div>
-<script>
-	let data;
-	let seriesTitle = "පොල්ගස්ඕවිට පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (B කන්ඩායම - දෙවන කොටස)"; // Changeable series title
-	// Fetch the JSON data and populate the dropdown menu
-	fetch('AbhidharmaAruth_C.json').then(response => {
-		if (!response.ok) {
-			throw new Error('Network response was not ok ' + response.statusText);
-		}
-		return response.json();
-	}).then(json => {
-		data = json;
-		populateDropdown();
-		displayLastEntry();
-	}).catch(error => {
-		console.error('There has been a problem with your fetch operation:', error);
-	});
-	// Function to populate the dropdown menu
-	function populateDropdown() {
-		const selector = document.getElementById('link-selector');
-		data.forEach(item => {
-			const option = document.createElement('option');
-			option.value = item.url;
-			option.text = item.comment ? `${item.index} ●  ${item.comment} ● ${item.date}` :
-				`${item.index} ●  ${seriesTitle} ● ${item.date}`;
-			option.dataset.index = item.index;
-			selector.appendChild(option);
+	</div>
+	<div id="video-container">
+		<!-- YouTube video will be embedded here -->
+	</div>
+	<div id="notes">
+		<!-- Notes will be displayed here -->
+	</div>
+
+	<script>
+		let data;
+		let seriesTitle = "මහරගම තරුණ බෞද්ධ මන්දිරයේ පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව"; // Series title
+		// Fetch the JSON data and populate the dropdown menu
+		fetch('MaharagamaA.json').then(response => {
+			if (!response.ok) {
+				throw new Error('Network response was not ok ' + response.statusText);
+			}
+			return response.json();
+		}).then(json => {
+			data = json;
+			populateDropdown();
+			displayLastEntry();
+		}).catch(error => {
+			console.error('There has been a problem with your fetch operation:', error);
 		});
-	}
-	// Function to update the YouTube video and notes based on the selected option
-	function updateContent() {
-		const selector = document.getElementById('link-selector');
-		const selectedOption = selector.options[selector.selectedIndex];
-		const url = selectedOption.value;
-		const index = selectedOption.dataset.index;
-		const notes = data.find(item => item.index == index).notes;
-		const videoContainer = document.getElementById('video-container');
-		videoContainer.innerHTML =
-			`<p><iframe width="560" height="315" src="${url.replace('watch?v=', 'embed/')}" frameborder="0" allowfullscreen></iframe></p>`;
-		const notesContainer = document.getElementById('notes');
-		notesContainer.innerHTML = '<p>' + notes + '</p>'; // Use innerHTML to render clickable links
-	}
-	// Function to display the last entry from the JSON data on the initial load
-	function displayLastEntry() {
-		if (data.length > 0) {
-			const lastEntry = data[data.length - 1];
+		// Function to populate the dropdown menu
+		function populateDropdown() {
 			const selector = document.getElementById('link-selector');
-			selector.value = lastEntry.url;
+			data.forEach(item => {
+				const option = document.createElement('option');
+				option.value = item.url;
+				option.text = item.comment ? `${item.index} ●  ${item.comment} ● ${item.date}` :
+					`${item.index} ●  ${seriesTitle} ● ${item.date}`;
+				option.dataset.index = item.index;
+				selector.appendChild(option);
+			});
+		}
+		// Function to update the YouTube video and notes based on the selected option
+		function updateContent() {
+			const selector = document.getElementById('link-selector');
+			const selectedOption = selector.options[selector.selectedIndex];
+			const url = selectedOption.value;
+			const index = selectedOption.dataset.index;
+			const notes = data.find(item => item.index == index).notes;
+			const videoContainer = document.getElementById('video-container');
+			videoContainer.innerHTML =
+				`<p><iframe width="560" height="315" src="${url.replace('watch?v=', 'embed/')}" frameborder="0" allowfullscreen></iframe></p>`;
+			const notesContainer = document.getElementById('notes');
+			
+			notesContainer.innerHTML = '<p>'+ notes + '</p>'; // Use innerHTML to render clickable links
+			
+		}
+		// Function to display the last entry from the JSON data on the initial load
+		function displayLastEntry() {
+			if (data.length > 0) {
+				const lastEntry = data[data.length - 1];
+				const selector = document.getElementById('link-selector');
+				selector.value = lastEntry.url;
+				updateContent();
+			}
+		}
+		// Function to navigate to the previous or next video
+		function navigate(direction) {
+			const selector = document.getElementById('link-selector');
+			let newIndex = selector.selectedIndex + direction;
+			if (newIndex < 0) {
+				newIndex = selector.options.length - 1;
+			} else if (newIndex >= selector.options.length) {
+				newIndex = 0;
+			}
+			selector.selectedIndex = newIndex;
 			updateContent();
 		}
-	}
-	// Function to navigate to the previous or next video
-	function navigate(direction) {
-		const selector = document.getElementById('link-selector');
-		let newIndex = selector.selectedIndex + direction;
-		if (newIndex < 0) {
-			newIndex = selector.options.length - 1;
-		} else if (newIndex >= selector.options.length) {
-			newIndex = 0;
-		}
-		selector.selectedIndex = newIndex;
-		updateContent();
-	}
-</script>
-
-<script>
-	const fontSizeSlider = document.getElementById('fontSizeSlider');
-	const textContent = document.getElementById('notes');
-
-	// Update font size based on slider value
-	fontSizeSlider.addEventListener('input', function () {
-	  const newFontSize = `${fontSizeSlider.value}px`;
-	  textContent.style.fontSize = newFontSize;
-	});
-  </script>
+	</script>
 </body>
 </html>
