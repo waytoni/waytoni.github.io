@@ -1,10 +1,10 @@
-name: Update K series Lesson Links
+name: Update MaharagamaA series Lesson Links
 
 on:
   push:
     paths:
-      - 'KalutaraBodhiya/K_series/K_series_ytlinks.txt'     
-      - 'KalutaraBodhiya/K_series/K_series_notes.txt'     
+      - 'NivanMagaUdesaDesana/MaharagamaA/MaharagamaA_ytlinks.txt'     
+      - 'NivanMagaUdesaDesana/MaharagamaA/MaharagamaA_notes.txt'     
 jobs:
   run-python-script-Kseries:
     runs-on: ubuntu-latest
@@ -17,15 +17,15 @@ jobs:
         with:
           python-version: 3.11 # Set your desired Python version
 
-      - name: Read K_serires
-        run: python scripts/py/build_series_K.py
+      - name: Read MaharagamaA_serires
+        run: python scripts/py/build_series_MaharagamaA.py
 
-      - name: Update All_Playlists for K_series addition
+      - name: Update All_Playlists for MaharagamaA addition
         run: python scripts/py/build_series_SiyaluDesana.py
 
       - name: commit changes
         run: |
           git config user.name "$(git log -n 1 --pretty=format:%an)"
           git config user.email "$(git log -n 1 --pretty=format:%ae)"
-          git commit -a -m "updated K series"
+          git commit -a -m "updated MaharagamaA series"
           git push
