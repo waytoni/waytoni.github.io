@@ -78,11 +78,19 @@ with open(html_file, 'w', encoding="utf-8") as fp:
 id = 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('<div class="normal-head">\n')
+    fp.write(f'<h2>{id}. <a href="/NivanMagaUdesaDesana/MaharagamaA/MaharagamaA.html">මහරගම තරුණ බෞද්ධ මන්දිරයේ පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව</a></h2>\n')
+    fp.write('</div>\n')
+    fp.close()
+
+### 2nd
+id = id + 1
+with open(html_file, 'a', encoding="utf-8") as fp:
+    fp.write('<div class="normal-head">\n')
     fp.write(f'<h2>{id}. <a href="/KalutaraBodhiya/L_series/L_series.html">2025 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (L Series)</a></h2>\n')
     fp.write('</div>\n')
     fp.close()
 
-#### 2nd
+#### 3rd
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('<div class="normal-head">\n')
@@ -90,7 +98,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('</div>\n')
     fp.close()
     
-#### 3rd
+#### 4th
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
@@ -99,7 +107,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('</div>\n')
     fp.close()
 
-#### 4th
+#### 5th
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('<div class="normal-head">\n')
@@ -107,7 +115,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('</div>\n')
     fp.close() 
     
-#### 5th
+#### 6th
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
@@ -117,7 +125,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.close()
 
     
-#### 6th
+#### 7th
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('<div class="normal-head">\n')
@@ -125,7 +133,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('</div>\n')
     fp.close()  
     
-#### 7th
+#### 8th
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
@@ -135,7 +143,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.close()
 
 
-#### 8th
+#### 9th
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
@@ -144,7 +152,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('</div>\n')
     fp.close()
 
-####  9th
+####  10th
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('<div class="normal-head">\n')
@@ -152,7 +160,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('</div>\n')
     fp.close()  
     
-#### 10th
+#### 11th
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('<div class="normal-head">\n')
@@ -167,7 +175,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
 # series_title_AA_EP = "අභිධර්ම අරුත් දේශනා මාලාව (EP)"
 # HtmlDropdownBlockNoSections(id, playlist_AA_EP, playlist_title_AA_EP, html_file, '', 'EP', series_title_AA_EP)
 
-#### 11th
+#### 12th
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
@@ -176,7 +184,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('</div>\n')
     fp.close()
 
-##### 12th
+##### 13th
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
@@ -185,7 +193,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('</div>\n')
     fp.close()
 
-#### 13th
+#### 14th
 id = id + 1
 playlist_url_suthamaya_eththapana = ''
 playlist_suthamaya_eththapana = 'Suthamaya/suthamaya_eththapana.txt'
@@ -194,7 +202,7 @@ series_title_suthamaya_eththapana = "සුතමයඤාණං දේශනා
 HtmlDropdownBlockNoSections(id, playlist_suthamaya_eththapana, playlist_title_suthamaya_eththapana, html_file, '', '', series_title_suthamaya_eththapana)
 
     
-##### 14th
+##### 15th
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
@@ -203,7 +211,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('</div>\n')
     fp.close()
 
-##### 15th
+##### 16th
 id = id + 1
 playlist_url_SU_M = 'https://www.youtube.com/playlist?list=PLqESXbJ82aIgmWdPzXFdJplUOPJgRXpZN'
 playlist_SU_M = 'Suthamaya/suthamaya_mathugama.txt'
@@ -211,14 +219,14 @@ playlist_title_SU_M = "සුතමයඤාණං - Sri Sudharshanarama Maha Vi
 series_title_SU_M = "සුතමයඤාණං දේශනා මාලාව - ශ්‍රී සුධර්ශනාරාම මහා විහාරය මතුගම"
 HtmlDropdownBlockNoSections(id, playlist_SU_M, playlist_title_SU_M, html_file, '', '', series_title_SU_M)
 
-###### 16th
+###### 17th
 id = id + 1
 playlist_KB_H = 'KalutaraBodhiya/H_series.txt'
 playlist_title_KB_H = "Kalutara Bodhiya H Series"
 series_title_KB_H = "කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වුන අටවෙනි දේශනා මාලාව (H Series)"
 HtmlDropdownBlockNoSections(id, playlist_KB_H, playlist_title_KB_H, html_file, '', '', series_title_KB_H)
 
-####### 17th
+##### 18th
 id = id + 1
 playlist_KB_G = 'KalutaraBodhiya/G_series.txt'
 playlist_title_KB_G = "Kalutara Bodhiya G Series"
@@ -226,21 +234,21 @@ series_title_KB_G = "කළුතර බෝධි පරිශ්‍රයේද
 HtmlDropdownBlockNoSections(id, playlist_KB_G, playlist_title_KB_G, html_file, '', '', series_title_KB_G)
 
 
-##### 18th
+##### 19th
 id = id + 1
 playlist_KB_F = 'KalutaraBodhiya/F_series.txt'
 playlist_title_KB_F = "Kalutara Bodhiya F Series"
 series_title_KB_F = "කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වුන හයවෙනි දේශනා මාලාව (F Series)"
 HtmlDropdownBlockNoSections(id, playlist_KB_F, playlist_title_KB_F, html_file, '', '',series_title_KB_F)
 
-##### 19th
+##### 20th
 id = id + 1
 playlist_KB_E = 'KalutaraBodhiya/E_series.txt'
 playlist_title_KB_E = "Kalutara Bodhiya E Series"
 series_title_KB_E = "කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වුන පස්වෙනි දේශනා මාලාව (E Series)"
 HtmlDropdownBlockNoSections(id, playlist_KB_E, playlist_title_KB_E, html_file, '', '', series_title_KB_E)
 
-##### 20th
+##### 21st
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
@@ -249,7 +257,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('</div>\n')
     fp.close()
 
-###### 21st
+###### 22nd
 id = id + 1
 playlist_KB_A = 'KalutaraBodhiya/ParamarthaLokayaKalutharaBodhiya.txt'
 playlist_title_KB_A = "Paramartha Lokaya Kalutara Bodhiya A"
