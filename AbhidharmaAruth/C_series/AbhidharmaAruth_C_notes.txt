@@ -72,6 +72,10 @@ img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02 
 රේරුකානේ චන්දවිමල හිමියන්ගේ පටිච්ච සමුප්පාද විවරණය පොත (HTML) url::https://tipitaka.lk/library/474
 #28
 අභිධර්ම පිඨකය විභඞ්ගප්පකරණං - පටිච්චසමුප්පාද-සුත්තන්තභාජනියං pdf::/documents/pdfs/අභිධර්ම පිඨකය විභඞ්ගප්පකරණං - පටිච්චසමුප්පාද-සුත්තන්තභාජනියං.pdf
+#29
+රේරුකානේ චන්දවිමල හිමියන්ගේ පටිච්ච සමුප්පාද විවරණය පොත (PDF) url::https://www.ogatharana.org/bookDownCounter.php?booknumber=17
+රේරුකානේ චන්දවිමල හිමියන්ගේ පටිච්ච සමුප්පාද විවරණය පොත (HTML) url::https://tipitaka.lk/library/474
+#200 
 #31
 මහානිදාන සූත්‍රය (PDF) pdf::/documents/pdfs/මහානිදාන සූත්‍රය.pdf
 #90

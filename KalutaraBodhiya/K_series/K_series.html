@@ -78,10 +78,7 @@
             <a href="/NivanMagaUdesaDesana/MaharagamaA/MaharagamaA.html">මහරගම පැවෙත්වෙන දේශනා මාලාව (A කන්ඩායම)</a>
             <a href="/VisheshaDesana/index.html">විශේෂ දේශනා</a>
             
-            <!--
-            <a href="/AbhidharmaAruth/A_series/AbhidharmaAruthA.html">පොල්ගස්ඕවිට පැවෙත්වෙන දේශනා මාලාව (A කන්ඩායම)</a>
-            <a href="/AbhidharmaAruth/B2_series/AbhidharmaAruthB2.html">පොල්ගස්ඕවිට පැවෙත්වෙන දේශනා මාලාව (B කන්ඩායම)</a>
-            -->
+
             <a href="/Suthamaya/SuthamayaHirigal.html">සුතමයඤාණං දේශනා</a>
             <a href="/KalutaraBodhiya/DhammaDiscussions/ShortDhammaDiscussions.html">ධර්ම සාකච්ඡා</a>
             
@@ -131,7 +128,7 @@
 
 	<script>
 		let data;
-		let seriesTitle = "2025 කළුතර බෝධියේ පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව"; // Series title
+		let seriesTitle = "2025 කළුතර බෝධියේ පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව"; // Series title
 		// Fetch the JSON data and populate the dropdown menu
 		fetch('K_series.json').then(response => {
 			if (!response.ok) {
@@ -166,7 +163,7 @@
 			const notes = data.find(item => item.index == index).notes;
 			const videoContainer = document.getElementById('video-container');
 			videoContainer.innerHTML =
-				`<p><iframe width="560" height="315" src="${url.replace('watch?v=', 'embed/')}" frameborder="0" allowfullscreen></iframe></p>`;
+				`<p><iframe width="80%" height="500" src="${url.replace('watch?v=', 'embed/')}" frameborder="0" allowfullscreen></iframe></p>`;
 			const notesContainer = document.getElementById('notes');
 			
 			notesContainer.innerHTML = '<p>'+ notes + '</p>'; // Use innerHTML to render clickable links
@@ -175,7 +172,8 @@
 		// Function to display the last entry from the JSON data on the initial load
 		function displayLastEntry() {
 			if (data.length > 0) {
-				const lastEntry = data[data.length - 1];
+				// const lastEntry = data[data.length - 1];
+				const lastEntry = data[0];
 				const selector = document.getElementById('link-selector');
 				selector.value = lastEntry.url;
 				updateContent();
