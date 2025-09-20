@@ -23,6 +23,7 @@ from scripts.py import build_series_AbhidharmaAruth_C
 from scripts.py import build_series_Thalawathugoda
 from scripts.py import build_series_MaharagamaA
 from scripts.py import build_series_SuthamayaHirigal
+from scripts.py import build_series_RuwanweliMahaSeya
 from scripts.py import build_series_SiyaluDesana
 
 from scripts.py import build_series_L
@@ -87,4 +88,5 @@ build_series_L
 build_series_SiyaluDesana
 #build_series_ShortDhammaDiscussions
 # build_series_YouthForTruth
+build_series_RuwanweliMahaSeya
 build_homepage
