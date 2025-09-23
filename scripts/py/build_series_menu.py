@@ -19,6 +19,7 @@ def parse_utlinks(file_path):
         for line in file:
             # Use a regular expression to match the line structure with optional comments
             match = re.match(r'(\d+)\s+(.*?)\s*(https?://\S+)?\s+(\d{4}-[A-Za-z]{3}-\d{2})', line.strip())
+            # print (match)
             if match:
                 index, comment, url, date = match.groups()
                 if url:  # Ignore lines without a URL
