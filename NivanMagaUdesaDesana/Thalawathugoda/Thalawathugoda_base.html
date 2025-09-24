@@ -70,7 +70,7 @@
 			const notes = data.find(item => item.index == index).notes;
 			const videoContainer = document.getElementById('video-container');
 			videoContainer.innerHTML =
-				`<p><iframe width="560" height="315" src="${url.replace('watch?v=', 'embed/')}" frameborder="0" allowfullscreen></iframe></p>`;
+				`<p><iframe width="85%" height="500" src="${url.replace('watch?v=', 'embed/')}" frameborder="0" allowfullscreen></iframe></p>`;
 			const notesContainer = document.getElementById('notes');
 			
 			notesContainer.innerHTML = '<p>'+ notes + '</p>'; // Use innerHTML to render clickable links
