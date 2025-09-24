@@ -2,11 +2,11 @@ name: Update Abhidhamma Aruth Desana
 
 on:
   push:
-    paths:
-      - 'AbhidharmaAruth/B2_series/AbhidharmaAruth_B2_ytlinks.txt' 
-      - 'AbhidharmaAruth/B2_series/AbhidharmaAruth_B2_notes.txt'   
+    paths:   
       - 'AbhidharmaAruth/C_series/AbhidharmaAruth_C_ytlinks.txt'   
       - 'AbhidharmaAruth/C_series/AbhidharmaAruth_C_notes.txt'   
+      - 'AbhidharmaAruth/C_series/AbhidharmaAruth_D_ytlinks.txt'   
+      - 'AbhidharmaAruth/C_series/AbhidharmaAruth_D_notes.txt'  
 jobs:
   run-python-script-Abhidhamma-Aruth:
     runs-on: ubuntu-latest
@@ -19,8 +19,8 @@ jobs:
         with:
           python-version: 3.11 # Python Version
 
-      - name: Run Python Script for Abhidharma Aruth Desana B2
-        run: python scripts/py/build_series_AbhidharmaAruth_B2.py
+      - name: Run Python Script for Abhidharma Aruth Desana D
+        run: python scripts/py/build_series_AbhidharmaAruth_D.py
 
       - name: Run Python Script for Abhidharma Aruth Desana C
         run: python scripts/py/build_series_AbhidharmaAruth_C.py  

@@ -76,6 +76,13 @@ with open(html_file, 'w', encoding="utf-8") as fp:
 
 ### 1st
 id = 1
+# with open(html_file, 'a', encoding="utf-8") as fp:
+#     fp.write('<div class="normal-head">\n')
+#     fp.write(f'<h2>{id}. <a href="/AbhidharmaAruth/D_series/AbhidharmaAruthD.html">පොල්ගස්ඕවිට පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (D කන්ඩායම)</a></h2>\n')
+#     fp.write('</div>\n')
+#     fp.close() 
+
+# id = 1 + 1   
 with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('<div class="normal-head">\n')
     fp.write(f'<h2>{id}. <a href="/NivanMagaUdesaDesana/MaharagamaA/MaharagamaA.html">මහරගම තරුණ බෞද්ධ මන්දිරයේ පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව</a></h2>\n')
