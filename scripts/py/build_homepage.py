@@ -23,7 +23,8 @@ html_file = os.path.join(basepath,'index.html')
 
 playlist_url = ''
 
-series_title = 'පරමාර්ථ ලෝකය – සර්වඥ දේශනා'
+# series_title = 'පරමාර්ථ ලෝකය – සර්වඥ දේශනා'
+series_title = 'Way to Nibbana - අජන්ත සම්පත් ගුරුතුමන් ගේ දේශනා මාලා'
 
 homepage_styles = """
     <!--link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
@@ -40,11 +41,14 @@ homepage_styles = """
 
 	</style>
 """
+# <h1> පරමාර්ථ ලෝකය </h1>
+# <h2>Way to Nibbana - YouTube channel</h2>
 
 homepage_heading = """
     <div id="main_text" style="margin:5px 5px 5px 15px" ;>
-        <h1> පරමාර්ථ ලෝකය </h1>
-        <h2>කල්‍යාණ මිත්‍ර අජන්ත සම්පත් ගුරුතුමන් ගේ දේශනා මාලා</h2>
+        
+        <h1>කල්‍යාණ මිත්‍ර අජන්ත සම්පත් ගුරුතුමන් ගේ දේශනා මාලා</h1>
+       
 """
 
 print(base_file)
