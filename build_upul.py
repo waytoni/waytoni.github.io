@@ -30,7 +30,7 @@ from scripts.py import build_series_SiyaluDesana
 from scripts.py import build_series_L
 from scripts.py import build_series_ShortDhammaDiscussions
 from scripts.py import build_homepage
-from scripts.py import build_series_YouthForTruth
+
 
 from testing import list_AllVideos_Jan9
 
@@ -71,6 +71,8 @@ if menu_change == True:
     build_series_AbhidharmaAruth_B1
     from scripts.py import build_series_AbhidharmaAruth_B2
     build_series_AbhidharmaAruth_B2
+    from scripts.py import build_series_YouthForTruth
+    build_series_YouthForTruth
     # Update
     # Chithatha_Chithasika (old page), and Vishesha Desana
   
@@ -90,6 +92,5 @@ build_series_L
 #build_series_SuthamayaHirigal
 build_series_SiyaluDesana
 #build_series_ShortDhammaDiscussions
-# build_series_YouthForTruth
 build_series_RuwanweliMahaSeya
 build_homepage

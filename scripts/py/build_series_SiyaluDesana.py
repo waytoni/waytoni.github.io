@@ -89,22 +89,24 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('</div>\n')
     fp.close()
 
-### 2nd
+### 3rd
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('<div class="normal-head">\n')
     fp.write(f'<h2>{id}. <a href="/KalutaraBodhiya/L_series/L_series.html">2025 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (L Series)</a></h2>\n')
     fp.write('</div>\n')
     fp.close()
-
-#### 3rd
+    
+#### 2nd
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
+    #fp.write('<br>\n')
     fp.write('<div class="normal-head">\n')
-    fp.write(f'<h2>{id}. <a href="/KalutaraBodhiya/K_series/K_series.html">2025 කළුතර බෝධි පරිශ්‍රයේදී පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (K Series)</a></h2>\n')
+    fp.write(f'<h2>{id}. <a href="../VisheshaDesana/index.html">විශේෂ දේශනා</a></h2>\n')
     fp.write('</div>\n')
     fp.close()
     
+
 #### 4th
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
@@ -121,8 +123,16 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write(f'<h2>{id}. <a href="/AbhidharmaAruth/C_series/AbhidharmaAruthC.html">පොල්ගස්ඕවිට පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (C කන්ඩායම)</a></h2>\n')
     fp.write('</div>\n')
     fp.close() 
-    
+
 #### 6th
+id = id + 1
+with open(html_file, 'a', encoding="utf-8") as fp:
+    fp.write('<div class="normal-head">\n')
+    fp.write(f'<h2>{id}. <a href="/KalutaraBodhiya/K_series/K_series.html">2025 කළුතර බෝධි පරිශ්‍රයේදී පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (K Series)</a></h2>\n')
+    fp.write('</div>\n')
+    fp.close()
+        
+#### 7th
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
@@ -130,9 +140,8 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write(f'<h2>{id}. <a href="/NivanMagaUdesaDesana/A_series/index.html">නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (A කණ්ඩායම)</a></h2>\n')
     fp.write('</div>\n')
     fp.close()
-
-    
-#### 7th
+        
+#### 8th
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('<div class="normal-head">\n')
@@ -140,7 +149,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('</div>\n')
     fp.close()  
     
-#### 8th
+#### 9th
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
@@ -150,7 +159,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.close()
 
 
-#### 9th
+#### 0th
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
@@ -159,7 +168,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('</div>\n')
     fp.close()
 
-####  10th
+####  11th
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('<div class="normal-head">\n')
@@ -167,7 +176,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('</div>\n')
     fp.close()  
     
-#### 11th
+#### 12th
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('<div class="normal-head">\n')
@@ -175,28 +184,12 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('</div>\n')
     fp.close()  
 
-# # to be removed
-# id = id + 1
-# playlist_AA_EP = 'Abhidharma_Aruth/Abhidharma_Aruth_youtube_links.txt'
-# playlist_title_AA_EP = "Abhidharma Aruth"
-# series_title_AA_EP = "අභිධර්ම අරුත් දේශනා මාලාව (EP)"
-# HtmlDropdownBlockNoSections(id, playlist_AA_EP, playlist_title_AA_EP, html_file, '', 'EP', series_title_AA_EP)
-
-#### 12th
+#### 13th
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
     fp.write('<div class="normal-head">\n')
     fp.write(f'<h2>{id}. <a href="/Suthamaya/SuthamayaHirigal.html">සුතමයඤාණං දේශනා මාලාව - හිරිගල් ගොඩැල්ල ශ්‍රී පුෂ්පාරාමය</a></h2>\n')
-    fp.write('</div>\n')
-    fp.close()
-
-##### 13th
-id = id + 1
-with open(html_file, 'a', encoding="utf-8") as fp:
-    #fp.write('<br>\n')
-    fp.write('<div class="normal-head">\n')
-    fp.write(f'<h2>{id}. <a href="../VisheshaDesana/VisheshaDesana.html">විශේෂ දේශනා</a></h2>\n')
     fp.write('</div>\n')
     fp.close()
 
