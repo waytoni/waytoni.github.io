@@ -38,7 +38,19 @@ homepage_styles = """
 		h1, h2, h3, h4, a, p {
 			text-align: left;
 		}
+    /* For all list items in the first section */
+    .section1 h3 {
+        font-size: 1.5em;
+    }
+    .section1 ul li {
+    margin-bottom: 15px; /* Adds 10px spacing below each list item */
+    font-size: 1.2em;
+    }
 
+    /* For all list items in the second section */
+    .section2 ul li {
+    margin-bottom: 5px; /* Adds 20px spacing below each list item */
+    }
 	</style>
 """
 # <h1> පරමාර්ථ ලෝකය </h1>

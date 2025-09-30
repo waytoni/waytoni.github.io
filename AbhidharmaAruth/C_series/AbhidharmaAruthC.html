@@ -100,11 +100,12 @@
     </div><!--h1>අභිධර්ම අරුත් - දේශනා</h1-->
 <p></p>
 <h1><strong>කල්‍යාණ මිත්‍ර අජන්ත සම්පත් ගුරුතුමා මෙහෙයවන</strong></h1>
-<h1>පොල්ගස්ඕවිට පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (තෙවෙන (C) කන්ඩායම)</h1>
+<h1>පොල්ගස්ඕවිට පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (තෙවෙන (C) කන්ඩායම)</h1>
 
 <p></p>
-<p>බ්‍රහස්පතින්දා ප.ව. 12:30 සිට 2:30 දක්වා</p>
+
 <!-- 
+<p>බ්‍රහස්පතින්දා ප.ව. 12:30 සිට 2:30 දක්වා</p>
 Location: පොල්ගස්ඕවිට, පලාගම, ත
 White Peacocks and Birds Resort
 https://www.google.com/maps/place/White+Peacocks+and+Birds+Resort/@6.768556,79.97268,997m/data=!3m2!1e3!4b1!4m9!3m8!1s0x3ae24efa2a6ae673:0xefde4e54539e3735!5m2!4m1!1i2!8m2!3d6.768556!4d79.97268!16s%2Fg%2F11gy4nzy5c?entry=ttu&g_ep=EgoyMDI1MDkxNy4wIKXMDSoASAFQAw%3D%3D
@@ -193,7 +194,8 @@ kurulubeddaresort.com
 	// Function to display the last entry from the JSON data on the initial load
 	function displayLastEntry() {
 		if (data.length > 0) {
-			const lastEntry = data[data.length - 1];
+			// const lastEntry = data[data.length - 1];
+			const lastEntry = data[0];
 			const selector = document.getElementById('link-selector');
 			selector.value = lastEntry.url;
 			updateContent();
