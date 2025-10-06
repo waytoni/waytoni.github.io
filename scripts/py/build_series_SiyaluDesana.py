@@ -287,6 +287,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('<br>\n')
 
     fp.write('<h3><a href="AllVideos_V2.html">සියලුම දේශනා - @WayToNibbana YouTube Channel</a></h3>\n')
+    fp.write('<h3><a href="AllVideos_AA.html">සියලුම දේශනා - Abhidharma Aruth - අභිධර්ම අරුත් YouTube Channel</a></h3>\n')
     fp.close()
 
 PrepareTail(html_file)

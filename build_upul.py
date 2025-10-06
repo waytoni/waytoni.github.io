@@ -33,6 +33,7 @@ from scripts.py import build_homepage
 
 
 from testing import list_AllVideos_Jan9
+from testing import list_AllVideos_AA
 
 
 
@@ -83,6 +84,7 @@ if menu_change == True:
 # waytoni_all_videos_new
 #list_AllVideos
 list_AllVideos_Jan9
+list_AllVideos_AA
 build_series_AbhidharmaAruth_C
 build_series_AbhidharmaAruth_D
 #build_series_NivanMagaUdesa
