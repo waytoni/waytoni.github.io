@@ -79,7 +79,8 @@
 		// Function to display the last entry from the JSON data on the initial load
 		function displayLastEntry() {
 			if (data.length > 0) {
-				const lastEntry = data[data.length - 1];
+				// const lastEntry = data[data.length - 1];
+				const lastEntry = data[30];
 				const selector = document.getElementById('link-selector');
 				selector.value = lastEntry.url;
 				updateContent();
