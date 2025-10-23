@@ -37,10 +37,6 @@ from testing import list_AllVideos_AA
 
 
 
-import sys
-# sys.path.append('E:/src/github/waytoni_io/waytoni_desktop/scripts_new')
-# sys.path.append('../scripts_new')
-#import waytoni_all_videos_new
 
 
 menu_change = True
