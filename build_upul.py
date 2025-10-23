@@ -19,7 +19,7 @@
 from scripts.py import build_series_NivanMagaUdesa
 
 
-from scripts.py import build_series_AbhidharmaAruth_C
+
 from scripts.py import build_series_AbhidharmaAruth_D
 from scripts.py import build_series_Thalawathugoda
 from scripts.py import build_series_MaharagamaA
@@ -43,7 +43,7 @@ import sys
 #import waytoni_all_videos_new
 
 
-menu_change = False
+menu_change = True
 
 if menu_change == True:
     from scripts.py import build_series_AbhidharmaASeries
@@ -72,6 +72,8 @@ if menu_change == True:
     build_series_AbhidharmaAruth_B1
     from scripts.py import build_series_AbhidharmaAruth_B2
     build_series_AbhidharmaAruth_B2
+    from scripts.py import build_series_AbhidharmaAruth_C
+    build_series_AbhidharmaAruth_C
     from scripts.py import build_series_YouthForTruth
     build_series_YouthForTruth
     # Update
@@ -85,7 +87,7 @@ if menu_change == True:
 #list_AllVideos
 list_AllVideos_Jan9
 list_AllVideos_AA
-build_series_AbhidharmaAruth_C
+
 build_series_AbhidharmaAruth_D
 #build_series_NivanMagaUdesa
 build_series_Thalawathugoda
