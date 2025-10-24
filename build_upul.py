@@ -22,6 +22,7 @@ from scripts.py import build_series_NivanMagaUdesa
 
 from scripts.py import build_series_AbhidharmaAruth_D
 from scripts.py import build_series_Thalawathugoda
+from scripts.py import build_series_ThalawathugodaB
 from scripts.py import build_series_MaharagamaA
 from scripts.py import build_series_SuthamayaHirigal
 from scripts.py import build_series_RuwanweliMahaSeya
@@ -87,6 +88,7 @@ list_AllVideos_AA
 build_series_AbhidharmaAruth_D
 #build_series_NivanMagaUdesa
 build_series_Thalawathugoda
+build_series_ThalawathugodaB
 build_series_MaharagamaA
 build_series_L
 #build_series_SuthamayaHirigal
