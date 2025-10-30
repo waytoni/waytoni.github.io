@@ -1,125 +1,302 @@
-<?xml version="1.0" encoding="utf-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<!--  created with sitemap generator https://octopus.do  -->
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-    <url>
-        <loc>https://waytoni.com</loc>
-        <lastmod>2024-06-13</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://waytoni.com/All_Playlists/SiyaluDesana.html</loc>
-        <lastmod>2024-06-13</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://waytoni.com/All_Playlists/all_videos.html</loc>
-        <lastmod>2024-06-13</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://waytoni.com/Paramartha_Video/Paramartha_Video.html</loc>
-        <lastmod>2024-06-13</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://waytoni.com/Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html</loc>
-        <lastmod>2024-06-13</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://waytoni.com/Chithatha_Chithasika/Chiththa_Chithasika.html</loc>
-        <lastmod>2024-06-13</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://waytoni.com/Nivan_Maga_Udesa/index.html</loc>
-        <lastmod>2024-06-13</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://waytoni.com/Nivan_Maga_Udesa/docs/combined_notes/NMU_file_list.html</loc>
-        <lastmod>2024-06-13</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://waytoni.com/KalutaraBodhiya/J_series/J_series.html</loc>
-        <lastmod>2024-06-13</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://waytoni.com/KalutaraBodhiya/I_series/I_series.html</loc>
-        <lastmod>2024-06-13</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://waytoni.com/KalutaraBodhiya/B_C_D_Batches.html</loc>
-        <lastmod>2024-06-13</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://waytoni.com/Suthamaya/index.html</loc>
-        <lastmod>2024-06-13</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://waytoni.com/VisheshaDesana/index.html</loc>
-        <lastmod>2024-06-13</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://waytoni.com/Zoom_Info/zoom_info_NMU.html</loc>
-        <lastmod>2024-06-13</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://waytoni.com/Saturday_Abhidhamma_Lesson</loc>
-        <lastmod>2024-06-13</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://waytoni.com/AbhidharmaSeries/index.html</loc>
-        <lastmod>2024-06-13</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://waytoni.com/Abhidharma_Aruth</loc>
-        <lastmod>2024-06-13</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://waytoni.com/Abhidharma_Aruth/index.html</loc>
-        <lastmod>2024-06-13</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://waytoni.com/documents/file_list.html</loc>
-        <lastmod>2024-06-13</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://waytoni.com/documents/%E0%B7%80%E0%B7%92%E0%B6%B7%E0%B6%9E%E0%B7%8A%E0%B6%9C%E0%B6%B4%E0%B7%8A%E0%B6%B4%E0%B6%9A%E0%B6%BB%E0%B6%AB%E0%B6%82%20V%201.05%20Final.pdf</loc>
-        <lastmod>2024-06-13</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
+
+<url>
+  <loc>https://waytoni.com/</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/All_Playlists/SiyaluDesana.html</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/Paramartha_Video/Paramartha_Video.html</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/ChiththaChithasika/index.html</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/KalutaraBodhiya/L_series/L_series.html</loc>
+  <lastmod>2025-10-28T22:52:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/NivanMagaUdesaDesana/Thalawathugoda/Thalawathugoda.html</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/AbhidharmaAruth/D_series/AbhidharmaAruthD.html</loc>
+  <lastmod>2025-10-28T22:52:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/NivanMagaUdesaDesana/MaharagamaA/MaharagamaA.html</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/VisheshaDesana/index.html</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/AbhidharmaAruth/C_series/AbhidharmaAruthC.html</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/KalutaraBodhiya/J_series/J_series.html</loc>
+  <lastmod>2025-10-28T22:52:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/KalutaraBodhiya/K_series/K_series.html</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/AbhidharmaSeries/A_series/index.html</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/NivanMagaUdesaDesana/A_series/index.html</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/VisheshaDesana/RuwanweliMahaSeya/RuwanweliMahaSeya.html</loc>
+  <lastmod>2025-10-28T22:52:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/KalutaraBodhiya/DhammaDiscussions/ShortDhammaDiscussions.html</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/AbhidharmaAruth/B2_series/AbhidharmaAruthB2.html</loc>
+  <lastmod>2025-10-28T22:52:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/Suthamaya/SuthamayaHirigal.html</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/documents/NotesForDesana/NotesForDesana.html</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/AbhidharmaAruth/B1_series/AbhidharmaAruthB1.html</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/AbhidharmaAruth/EP_series/AbhidharmaAruthEP.html</loc>
+  <lastmod>2025-10-28T22:52:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/KalutaraBodhiya/I_series/I_series.html</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/KalutaraBodhiya/B_C_D_Batches.html</loc>
+  <lastmod>2025-10-28T22:52:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/All_Playlists/AllVideos_V2.html</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/All_Playlists/AllVideos_AA.html</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/Zoom_Info/ZoomInfo.html?time=2:00&amp;day=%E0%B6%89%E0%B6%BB%E0%B7%92%E0%B6%AF%E0%B7%8F&amp;etime=4:00&amp;title=%E0%B6%9A%E0%B7%85%E0%B7%94%E0%B6%AD%E0%B6%BB%20%E0%B6%B6%E0%B7%9D%E0%B6%B0%E0%B7%92%20%E0%B6%B4%E0%B6%BB%E0%B7%92%E0%B7%81%E0%B7%8A%E2%80%8D%E0%B6%BB%E0%B6%BA%E0%B7%9A%E0%B6%AF%E0%B7%93%20%E0%B6%B4%E0%B7%90%E0%B7%80%E0%B7%99%E0%B6%AD%E0%B7%8A%E0%B7%80%E0%B7%99%E0%B6%B1%20%E0%B6%B1%E0%B7%92%E0%B7%80%E0%B6%B1%E0%B7%8A%20%E0%B6%B8%E0%B6%9C%20%E0%B6%8B%E0%B6%AF%E0%B7%99%E0%B7%83%E0%B7%8F%20%E0%B6%AF%E0%B6%BB%E0%B7%8A%E0%B7%81%E0%B6%B1%20%E0%B6%A5%E0%B7%8F%E0%B6%AB%E0%B6%BA%20%E0%B6%AF%E0%B7%9A%E0%B7%81%E0%B6%B1%E0%B7%8F%20%E0%B6%B8%E0%B7%8F%E0%B6%BD%E0%B7%8F%E0%B7%80</loc>
+  <lastmod>2025-10-28T22:52:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/Zoom_Info/ZoomInfo.html?time=1:00&amp;day=%E0%B7%83%E0%B7%99%E0%B6%B1%E0%B7%83%E0%B7%94%E0%B6%BB%E0%B7%8F%E0%B6%AF%E0%B7%8F&amp;etime=5:00&amp;title=%E0%B6%AD%E0%B6%BD%E0%B7%80%E0%B6%AD%E0%B7%94%E0%B6%9C%E0%B7%9C%E0%B6%A9%20%E0%B6%B4%E0%B7%90%E0%B7%80%E0%B7%99%E0%B6%AD%E0%B7%8A%E0%B7%80%E0%B7%99%E0%B6%B1%20%E0%B6%B1%E0%B7%92%E0%B7%80%E0%B6%B1%E0%B7%8A%20%E0%B6%B8%E0%B6%9C%20%E0%B6%8B%E0%B6%AF%E0%B7%99%E0%B7%83%E0%B7%8F%20%E0%B6%AF%E0%B6%BB%E0%B7%8A%E0%B7%81%E0%B6%B1%20%E0%B6%A5%E0%B7%8F%E0%B6%AB%E0%B6%BA%20%E0%B6%AF%E0%B7%9A%E0%B7%81%E0%B6%B1%E0%B7%8F&amp;venue=%E0%B6%9C%E0%B6%B1%E0%B7%9A%E0%B6%BD%E0%B6%B1%E0%B7%8A%E0%B6%AF%20%E0%B6%B4%E0%B7%94%E0%B6%BB%E0%B7%8F%E0%B6%AB%20%E0%B6%B6%E0%B7%9E%E0%B6%AF%E0%B7%8A%E0%B6%B0%20%E0%B7%80%E0%B7%92%E0%B7%84%E0%B7%8F%E0%B6%BB%E0%B6%BA</loc>
+  <lastmod>2025-10-28T22:52:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/Zoom_Info/ZoomInfo.html?time=12:00&amp;day=%E0%B6%B6%E0%B7%8A%E2%80%8D%E0%B6%BB%E0%B7%84%E0%B7%83%E0%B7%8A%E0%B6%B4%E0%B6%AD%E0%B7%92%E0%B6%B1%E0%B7%8A%E0%B6%AF%E0%B7%8F&amp;etime=3:30&amp;title=%E0%B6%B4%E0%B7%9C%E0%B6%BD%E0%B7%8A%E0%B6%9C%E0%B7%83%E0%B7%8A%E0%B6%95%E0%B7%80%E0%B7%92%E0%B6%A7%20%E0%B6%B4%E0%B7%90%E0%B7%80%E0%B7%99%E0%B6%AD%E0%B7%8A%E0%B7%80%E0%B7%99%E0%B6%B1%20%E0%B6%B1%E0%B7%92%E0%B7%80%E0%B6%B1%E0%B7%8A%20%E0%B6%B8%E0%B6%9C%20%E0%B6%8B%E0%B6%AF%E0%B7%99%E0%B7%83%E0%B7%8F%20%E0%B6%AF%E0%B6%BB%E0%B7%8A%E0%B7%81%E0%B6%B1%20%E0%B6%A5%E0%B7%8F%E0%B6%AB%E0%B6%BA%20%E0%B6%AF%E0%B7%9A%E0%B7%81%E0%B6%B1%E0%B7%8F%20%E0%B6%B8%E0%B7%8F%E0%B6%BD%E0%B7%8F%E0%B7%80</loc>
+  <lastmod>2025-10-28T22:52:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/Zoom_Info/ZoomInfo.html?time=4:30&amp;day=%E0%B6%85%E0%B6%9F%E0%B7%84%E0%B6%BB%E0%B7%94%E0%B7%80%E0%B7%8F%E0%B6%AF%E0%B7%8F&amp;etime=6:30&amp;title=%E0%B6%B8%E0%B7%84%E0%B6%BB%E0%B6%9C%E0%B6%B8%20%E0%B6%AD%E0%B6%BB%E0%B7%94%E0%B6%AB%20%E0%B6%B6%E0%B7%9E%E0%B6%AF%E0%B7%8A%E0%B6%B0%20%E0%B6%B8%E0%B6%B1%E0%B7%8A%E0%B6%AF%E0%B7%92%E0%B6%BB%E0%B6%BA%E0%B7%9A%E0%B6%B4%E0%B7%90%E0%B7%80%E0%B7%99%E0%B6%AD%E0%B7%8A%E0%B7%80%E0%B7%99%E0%B6%B1%20%E0%B6%B1%E0%B7%92%E0%B7%80%E0%B6%B1%E0%B7%8A%20%E0%B6%B8%E0%B6%9C%20%E0%B6%8B%E0%B6%AF%E0%B7%99%E0%B7%83%E0%B7%8F%20%E0%B6%AF%E0%B6%BB%E0%B7%8A%E0%B7%81%E0%B6%B1%20%E0%B6%A5%E0%B7%8F%E0%B6%AB%E0%B6%BA%20%E0%B6%AF%E0%B7%9A%E0%B7%81%E0%B6%B1%E0%B7%8F&amp;venue=%E0%B6%B8%E0%B7%84%E0%B6%BB%E0%B6%9C%E0%B6%B8%20%E0%B6%AD%E0%B6%BB%E0%B7%94%E0%B6%AB%20%E0%B6%B6%E0%B7%9E%E0%B6%AF%E0%B7%8A%E0%B6%B0%20%E0%B6%B8%E0%B6%B1%E0%B7%8A%E0%B6%AF%E0%B7%92%E0%B6%BB%E0%B6%BA</loc>
+  <lastmod>2025-10-28T22:52:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/VisheshaDesana/2025%2007%2010%20%E0%B6%B4%E0%B6%A7%E0%B7%92%E0%B6%A0%E0%B7%8A%E0%B6%A0%E0%B7%83%E0%B6%B8%E0%B7%94%E0%B6%B4%E0%B7%8A%E0%B6%B4%E0%B7%8F%E0%B6%AF%E0%B6%BA%20%E0%B7%83%E0%B6%A7%E0%B7%84%E0%B6%B1.pdf</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/documents/pdfs/Kalutara%20Bodhiya%20%E0%B6%AF%E0%B6%BB%E0%B7%8A%E0%B7%81%E0%B6%B1%20%E0%B6%A5%E0%B7%8F%E0%B6%B1%E0%B6%BA%20(2024-12-22)%20v2.pdf</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/documents/pdfs/%E0%B6%B1%E0%B7%92%E0%B6%B6%E0%B7%8A%E0%B6%B6%E0%B7%9A%E0%B6%B0%E0%B7%92%E0%B6%9A%20%E0%B7%83%E0%B7%94%E0%B6%AD%E0%B7%8A%E0%B6%AD%E0%B6%82.pdf</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/VisheshaDesana/2024%2008%2018%20%20Kalutara%20Bodhiya%20%E0%B6%AF%E0%B6%BB%E0%B7%8A%E0%B7%81%E0%B6%B1%20%E0%B6%A5%E0%B7%8F%E0%B6%B1%E0%B6%BA.pdf</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/VisheshaDesana/%E0%B6%B8%E0%B7%96%E0%B6%BD%E0%B7%92%E0%B6%9A%20%E0%B6%B4%E0%B6%A7%E0%B7%92%E0%B6%A0%E0%B7%8A%E0%B6%A0%E0%B7%83%E0%B6%B8%E0%B7%94%E0%B6%B4%E0%B7%8A%E0%B6%B4%E0%B7%8F%E0%B6%AF%20%E0%B6%AF%E0%B7%9A%E0%B7%81%E0%B6%B1%E0%B7%8F%E0%B7%80%E0%B6%9A%E0%B6%A7%20%E0%B6%8B%E0%B6%B4%E0%B6%9A%E0%B7%8F%E0%B6%BB%E0%B6%9A%20%E0%B7%80%E0%B6%B1%20%E0%B6%AF%E0%B7%84%E0%B6%B8%E0%B7%8A%20%E0%B6%9A%E0%B6%BB%E0%B7%94%E0%B6%AB%E0%B7%94%20%E0%B6%B4%E0%B7%99%E0%B7%85%E0%B6%9C%E0%B7%90%E0%B7%83%E0%B7%8A%E0%B7%80%E0%B7%93%E0%B6%B8%E0%B6%9A%E0%B7%92.pdf</loc>
+  <lastmod>2025-10-28T22:52:45+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/documents/pdfs/%E0%B6%85%E0%B6%B7%E0%B7%92%E0%B6%B0%E0%B6%BB%E0%B7%8A%E0%B6%B8%E0%B6%BA%20(Abhidhamma)%20%E0%B6%B8%E0%B6%B1%E0%B7%8A%E0%B6%AF%E0%B7%90%E0%B6%BA%E0%B7%92%20%E0%B7%80%E0%B7%92%E0%B6%B8%E0%B7%83%E0%B7%96%20%E0%B7%80%E0%B7%92%E0%B6%A7.pdf</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/documents/%E0%B6%85%E0%B6%B7%E0%B7%92%E0%B6%B0%E0%B6%BB%E0%B7%8A%E0%B6%B8%E0%B6%BA%20(Abhidhamma)%20%E0%B6%B8%E0%B6%B1%E0%B7%8A%E0%B6%AF%E0%B7%90%E0%B6%BA%E0%B7%92%20%E0%B7%80%E0%B7%92%E0%B6%B8%E0%B7%83%E0%B7%96%20%E0%B7%80%E0%B7%92%E0%B6%A7.html</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/documents/%E0%B6%AF%E0%B6%BB%E0%B7%8A%E0%B7%81%E0%B6%B1%20%E0%B6%A5%E0%B7%8F%E0%B6%AB%E0%B6%BA%20%E0%B6%B8%E0%B7%96%E0%B6%BD%E0%B7%92%E0%B6%9A%20%E0%B7%83%E0%B7%96%E0%B6%AD%E0%B7%8A%E2%80%8D%E0%B6%BB%2001.pdf</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/documents/SutraPathrika.html</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/documents/pdfs/Pragna%20Paramithawa.pdf</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/documents/pdfs/%E0%B6%85%E0%B6%A0%E0%B7%9A%E0%B6%BD%E0%B6%9A%E0%B7%83%E0%B7%8A%E0%B7%83%E0%B6%B4%20%E0%B7%83%E0%B7%94%E0%B6%AD%E0%B7%8A%E0%B6%AD%E0%B6%82.pdf</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/documents/pdfs/%E0%B6%9B%E0%B6%A2%E0%B7%8A%E0%B6%A2%E0%B6%B1%E0%B7%93%E0%B6%BA%20%E0%B7%83%E0%B7%94%E0%B6%AD%E0%B7%8A%E0%B6%AD%E0%B6%82.pdf</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/documents/pdfs/%E0%B6%9C%E0%B6%AF%E0%B7%8A%E0%B6%AF%E0%B7%96%E0%B6%BD%E0%B6%B6%E0%B6%AF%E0%B7%8A%E0%B6%B0%20%E0%B7%83%E0%B7%94%E0%B6%AD%E0%B7%8A%E0%B6%AD%E0%B6%82.pdf</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/documents/pdfs/%E0%B6%A1%20%E0%B6%A1%E0%B6%9A%E0%B7%8A%E0%B6%9A%20%E0%B7%83%E0%B7%94%E0%B6%AD%E0%B7%8A%E0%B6%AD%E0%B6%82.pdf</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/documents/pdfs/%E0%B6%AD%E0%B6%AD%E0%B7%92%E0%B6%BA%20%E0%B6%85%E0%B7%83%E0%B7%8A%E0%B7%83%E0%B7%8F%E0%B6%AF%20%E0%B7%83%E0%B7%94%E0%B6%AD%E0%B7%8A%E0%B6%AD%E0%B6%82.pdf</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/documents/pdfs/%E0%B6%AF%E0%B7%94%E0%B6%9A%E0%B7%8A%E0%B6%9B%20%E0%B6%BD%E0%B6%9A%E0%B7%8A%E0%B6%9B%E0%B6%AB%20%E0%B7%83%E0%B7%94%E0%B6%AD%E0%B7%8A%E0%B6%AD%E0%B6%82.pdf</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/documents/pdfs/%E0%B6%AF%E0%B7%94%E0%B6%AD%E0%B7%92%E0%B6%BA%20%E0%B6%85%E0%B7%83%E0%B7%8A%E0%B7%83%E0%B7%8F%E0%B6%AF%20%E0%B7%83%E0%B7%94%E0%B6%AD%E0%B7%8A%E0%B6%AD%E0%B6%82.pdf</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/documents/pdfs/%E0%B6%B4%E0%B6%A8%E0%B6%B8%20%E0%B6%85%E0%B7%83%E0%B7%8A%E0%B7%83%E0%B7%8F%E0%B6%AF%20%E0%B7%83%E0%B7%94%E0%B6%AD%E0%B7%8A%E0%B6%AD%E0%B6%82.pdf</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/documents/pdfs/%E0%B6%B8%E0%B6%B0%E0%B7%94%E0%B6%B4%E0%B7%92%E0%B6%AB%E0%B7%8A%E0%B6%A9%E0%B7%92%E0%B6%9A%20%E0%B7%83%E0%B7%94%E0%B6%AD%E0%B7%8A%E0%B6%AD%E0%B6%82.pdf</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/documents/pdfs/%E0%B6%B8%E0%B6%B1%E0%B7%83%E0%B7%92%E0%B6%9A%E0%B7%8F%E0%B6%BB%20%E0%B7%83%E0%B7%94%E0%B6%AD%E0%B7%8A%E0%B6%AD%E0%B6%82.pdf</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/documents/pdfs/%E0%B6%B8%E0%B7%84%E0%B7%8F%20%E0%B6%B1%E0%B7%92%E0%B6%AF%E0%B7%8F%E0%B6%B1%20%E0%B7%83%E0%B7%94%E0%B6%AD%E0%B7%8A%E0%B6%AD%E0%B6%82.pdf</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/documents/pdfs/%E0%B6%B8%E0%B7%84%E0%B7%8F%20%E0%B6%B1%E0%B7%92%E0%B6%AF%E0%B7%8F%E0%B6%B1%20%E0%B7%83%E0%B7%96%E0%B6%AD%E0%B7%8A%E2%80%8D%E0%B6%BB%E0%B6%BA%20%E0%B7%80%E0%B7%92%E0%B7%83%E0%B7%8A%E0%B6%AD%E0%B6%BB%E0%B6%BA%20%E0%B7%83%E0%B6%82%E0%B7%83%E0%B7%8A%E0%B6%9A%E0%B6%BB%E0%B6%AB%E0%B6%BA%20%E0%B6%9A%E0%B6%BB%E0%B6%B1%20%E0%B6%BD%E0%B6%AF.pdf</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/documents/pdfs/%E0%B6%B8%E0%B7%84%E0%B7%8F%20%E0%B7%83%E0%B7%85%E0%B7%8F%E0%B6%BA%E0%B6%AD%E0%B6%B1%E0%B7%92%E0%B6%9A%20%E0%B7%83%E0%B7%94%E0%B6%AD%E0%B7%8A%E0%B6%AD%E0%B6%82.pdf</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/documents/pdfs/%E0%B6%B8%E0%B7%84%E0%B7%8F%E0%B6%A0%E0%B6%AD%E0%B7%8A%E0%B6%AD%E0%B7%8F%E0%B6%BB%E0%B7%93%E0%B7%83%E0%B6%9A%20%E0%B7%83%E0%B7%94%E0%B6%AD%E0%B7%8A%E0%B6%AD%E0%B6%82.pdf</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/documents/pdfs/%E0%B6%B8%E0%B7%84%E0%B7%8F%E0%B6%B1%E0%B7%92%E0%B6%AF%E0%B7%8F%E0%B6%B1%20%E0%B7%83%E0%B7%96%E0%B6%AD%E0%B7%8A%E2%80%8D%E0%B6%BB%E0%B6%BA.pdf</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/documents/pdfs/%E0%B7%80%E0%B7%92%E0%B6%B7%E0%B6%82%E0%B6%9C%20%E0%B7%83%E0%B7%94%E0%B6%AD%E0%B7%8A%E0%B6%AD%E0%B6%82.pdf</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/documents/pdfs/%E0%B7%83%E0%B6%B6%E0%B7%8A%E0%B6%B6%E0%B7%8F%E0%B7%83%E0%B7%80%20%E0%B7%83%E0%B7%94%E0%B6%AD%E0%B7%8A%E0%B6%AD%E0%B6%82.pdf</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://waytoni.com/documents/pdfs/%E0%B7%84%E0%B7%9A%E0%B6%AD%E0%B7%94%20%E0%B7%83%E0%B7%96%E0%B6%AD%E0%B7%8A%E2%80%8D%E0%B6%BB%E0%B6%BA.pdf</loc>
+  <lastmod>2025-10-28T22:52:44+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
 </urlset>
