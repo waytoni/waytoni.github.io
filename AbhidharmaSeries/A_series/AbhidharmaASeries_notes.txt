@@ -36,10 +36,14 @@ url::https://tipitaka.lk/ap-vbh-4-1/sinh
 url::https://tipitaka.lk/ap-vbh-6-6
 url::https://tipitaka.lk/ap-vbh-6-7
 චිත්ත සහ චෛතසික සටහන url::/ChiththaChithasika/index.html
-චක්ෂුර්ද්වාරික අතිමහන්තාරම්මණ විථිය  url::https://waytoni.com/Chithatha_Chithasika/Chiththa_Chithasika.html#sideA2
+<a href="https://waytoni.com/documents/NotesForDesana/0008%20%E0%B6%A0%E0%B6%9A%E0%B7%8A%E0%B7%82%E0%B7%94%E0%B6%BB%E0%B7%8A%E0%B6%AF%E0%B7%8A%E0%B7%80%E0%B7%8F%E0%B6%BB%E0%B7%92%E0%B6%9A%20%E0%B6%85%E0%B6%AD%E0%B7%92%E0%B6%B8%E0%B7%84%E0%B6%B1%E0%B7%8A%E0%B6%AD%E0%B7%8F%E0%B6%BB%E0%B6%B8%E0%B7%8A%E0%B6%B8%E0%B6%AB%20%E0%B7%80%E0%B7%93%E0%B6%AE%E0%B7%92%E0%B6%BA.jpg" target="_blank">චක්ෂුර්ද්වාරික අතිමහන්තාරම්මණ විථිය </a>
+#145
+ගුරුතුමා විසින් පටිච‍්චසමුප‍්පාද විභඞ්ගය අධ්යයනය සඳහා සකස්කරන ලද විශේෂ සටහන pdf::විභඞ්ගප්පකරණං V 1.05 Final.pdf  
+pdf::විභංග නිද්දේසො.pdf
 #146 
 ගුරුතුමා විසින් පටිච‍්චසමුප‍්පාද විභඞ්ගය අධ්යයනය සඳහා සකස්කරන ලද විශේෂ සටහන pdf::විභඞ්ගප්පකරණං V 1.05 Final.pdf  
 pdf::විභංග නිද්දේසො.pdf
+url::/documents/ap-vp-6-annotation.html
 #147
 ගුරුතුමා විසින් පටිච‍්චසමුප‍්පාද විභඞ්ගය අධ්යයනය සඳහා සකස්කරන ලද විශේෂ සටහන pdf::විභඞ්ගප්පකරණං V 1.05 Final.pdf  
 pdf::විභංග නිද්දේසො.pdf
