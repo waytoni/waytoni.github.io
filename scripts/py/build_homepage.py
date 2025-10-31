@@ -43,7 +43,7 @@ homepage_styles = """
         font-size: 1.5em;
     }
     .section1 ul li {
-    margin-bottom: 15px; /* Adds 10px spacing below each list item */
+    margin-bottom: 10px; /* Adds 10px spacing below each list item */
     font-size: 1.2em;
     }
 
@@ -58,8 +58,10 @@ homepage_styles = """
 
 homepage_heading = """
     <div id="main_text" style="margin:5px 5px 5px 15px" ;>
-        
-        <h1>කල්‍යාණ මිත්‍ර අජන්ත සම්පත් ගුරුතුමන් ගේ දේශනා මාලා</h1>
+        <h1>නිවන් මග උදෙසා දර්ශන ඥාණය</h1>
+       
+        <h2>කල්‍යාණ මිත්‍ර අජන්ත සම්පත් ගුරුතුමන් ගේ සදහම් දේශනා සහ සාකච්ඡා මාලා</h2>
+        <h4>Way to Nibbana - Dhamma Sermons and Discussion Series by Honourable Ajanta Sampath Guruthuma</h4>
        
 """
 
