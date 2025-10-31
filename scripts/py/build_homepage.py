@@ -61,7 +61,7 @@ homepage_heading = """
         <h1>නිවන් මග උදෙසා දර්ශන ඥාණය</h1>
        
         <h2>කල්‍යාණ මිත්‍ර අජන්ත සම්පත් ගුරුතුමන් ගේ සදහම් දේශනා සහ සාකච්ඡා මාලා</h2>
-        <h4>Way to Nibbana - Dhamma Sermons and Discussion Series by Honourable Ajantha Sampath Guruthuma</h4>
+        <h4>Way to Nibbana - Dhamma Sermon and Discussion Series by Honourable Ajantha Sampath Guruthuma</h4>
        
 """
 
