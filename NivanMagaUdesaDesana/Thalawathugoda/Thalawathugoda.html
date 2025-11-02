@@ -136,6 +136,10 @@
 	<div id="video-container">
 		<!-- YouTube video will be embedded here -->
 	</div>
+	<div class="slider-container" style="text-align: center; margin-top: 20px;">
+		<label for="fontSizeSlider">A අ: </label>
+		<input type="range" id="fontSizeSlider" min="12" max="48" value="16">
+	</div>
 	<div id="notes">
 		<!-- Notes will be displayed here -->
 	</div>
@@ -206,5 +210,15 @@
 			updateContent();
 		}
 	</script>
+	<script>
+		const fontSizeSlider = document.getElementById('fontSizeSlider');
+		const textContent = document.getElementById('notes');
+
+		// Update font size based on slider value
+		fontSizeSlider.addEventListener('input', function () {
+		const newFontSize = `${fontSizeSlider.value}px`;
+		textContent.style.fontSize = newFontSize;
+		});
+  	</script>
 </body>
 </html>
