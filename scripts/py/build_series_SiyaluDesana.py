@@ -74,6 +74,15 @@ with open(html_file, 'w', encoding="utf-8") as fp:
     
     fp.close()
 
+#### 1st
+# id = 1
+# with open(html_file, 'a', encoding="utf-8") as fp:
+#     #fp.write('<br>\n')
+#     fp.write('<div class="normal-head">\n')
+#     fp.write(f'<h2>{id}. <a href="/NivanMagaUdesaDesana/ThalawathugodaB/ThalawathugodaB.html">තලවතුගොඩ ගනේලන්ද පන්සලේ පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (B කන්ඩායම)</a></h2>\n')
+#     fp.write('</div>\n')
+#     fp.close()
+    
 ### 1st
 id = 1
 with open(html_file, 'a', encoding="utf-8") as fp:
@@ -97,8 +106,17 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write(f'<h2>{id}. <a href="/KalutaraBodhiya/L_series/L_series.html">2025 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (L Series)</a></h2>\n')
     fp.write('</div>\n')
     fp.close()
+
+#### 5th
+id = id + 1
+with open(html_file, 'a', encoding="utf-8") as fp:
+    #fp.write('<br>\n')
+    fp.write('<div class="normal-head">\n')
+    fp.write(f'<h2>{id}. <a href="/VisheshaDesana/RuwanweliMahaSeya/RuwanweliMahaSeya.html">පොහොය දිනවල රුවන්වැලි මහාසෑය අභියස පැවෙත්වෙන දේශනා</a></h2>\n')
+    fp.write('</div>\n')
+    fp.close()
     
-#### 4th
+#### 6th
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
@@ -108,16 +126,16 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.close()
     
 
-#### 5th
+#### 7th
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
     fp.write('<div class="normal-head">\n')
-    fp.write(f'<h2>{id}. <a href="/NivanMagaUdesaDesana/Thalawathugoda/Thalawathugoda.html">තලවතුගොඩ (ගනේලන්ද පන්සල) පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව</a></h2>\n')
+    fp.write(f'<h2>{id}. <a href="/NivanMagaUdesaDesana/Thalawathugoda/Thalawathugoda.html">තලවතුගොඩ ගනේලන්ද පන්සලේ  පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව</a></h2>\n')
     fp.write('</div>\n')
     fp.close()
 
-#### 6th
+#### 8th
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('<div class="normal-head">\n')
