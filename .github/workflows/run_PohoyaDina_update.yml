@@ -1,0 +1,31 @@
+name: Update MaharagamaA series Lesson Links
+
+on:
+  push:
+    paths:
+      - 'NivanMagaUdesaDesana/MaharagamaA/MaharagamaA_ytlinks.txt'     
+      - 'NivanMagaUdesaDesana/MaharagamaA/MaharagamaA_notes.txt'     
+jobs:
+  run-python-script-Kseries:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.11 # Set your desired Python version
+
+      - name: Read MaharagamaA_serires
+        run: python scripts/py/build_series_MaharagamaA.py
+
+      - name: Update All_Playlists for MaharagamaA addition
+        run: python scripts/py/build_series_SiyaluDesana.py
+
+      - name: commit changes
+        run: |
+          git config user.name "$(git log -n 1 --pretty=format:%an)"
+          git config user.email "$(git log -n 1 --pretty=format:%ae)"
+          git commit -a -m "updated MaharagamaA series"
+          git push
