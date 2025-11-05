@@ -6,7 +6,7 @@ on:
       - 'NivanMagaUdesaDesana/MaharagamaA/MaharagamaA_ytlinks.txt'     
       - 'NivanMagaUdesaDesana/MaharagamaA/MaharagamaA_notes.txt'     
 jobs:
-  run-python-script-Kseries:
+  run-python-script-MaharagamaAseries:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
