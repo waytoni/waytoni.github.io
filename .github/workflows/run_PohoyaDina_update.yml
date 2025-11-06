@@ -1,12 +1,14 @@
-name: Update MaharagamaA series Lesson Links
+name: Update Ruwanweli Saya Deshana series Lesson Links
 
 on:
   push:
     paths:
-      - 'NivanMagaUdesaDesana/MaharagamaA/MaharagamaA_ytlinks.txt'     
-      - 'NivanMagaUdesaDesana/MaharagamaA/MaharagamaA_notes.txt'     
+      - 'VisheshaDeshana/RuwanweliMahaSeya/RuwanweliMahaSeya_ytlinks.txt'     
+      - 'VisheshaDeshana/RuwanweliMahaSeya/RuwanweliMahaSeya_notes.txt'     
+      - 'VisheshaDeshana/RuwanweliMahaSeya/RuwanweliMahaSeya_base.html'     
+   
 jobs:
-  run-python-script-MaharagamaAseries:
+  run-python-script-RuwanweliMahaSeya:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -17,8 +19,8 @@ jobs:
         with:
           python-version: 3.11 # Set your desired Python version
 
-      - name: Read MaharagamaA_serires
-        run: python scripts/py/build_series_MaharagamaA.py
+      - name: Read RuwanweliMahaSeya_serires
+        run: python scripts/py/build_series_RuwanweliMahaSeya.py
 
       - name: Update All_Playlists for MaharagamaA addition
         run: python scripts/py/build_series_SiyaluDesana.py
@@ -27,5 +29,5 @@ jobs:
         run: |
           git config user.name "$(git log -n 1 --pretty=format:%an)"
           git config user.email "$(git log -n 1 --pretty=format:%ae)"
-          git commit -a -m "updated MaharagamaA series"
+          git commit -a -m "updated RuwamweliMahaSeya series"
           git push
