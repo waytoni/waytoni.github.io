@@ -31,6 +31,29 @@ homepage_styles = """
     rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
     crossorigin="anonymous"-->
    	<style>
+        .section_header h1 {
+            text-align: center;
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+        .section_header h2  {
+            text-align: center;
+            margin-bottom: 0px;
+        }
+        .section_header h3 {
+            text-align: center;
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+        .section_header h4{
+            text-align: center;
+            margin-bottom: 0px;
+        }
+        .section_header p {
+            text-align: center;
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
 		body {
 			font-family: Arial, sans-serif;
 		}
@@ -51,6 +74,8 @@ homepage_styles = """
     .section2 ul li {
     margin-bottom: 5px; /* Adds 20px spacing below each list item */
     }
+    
+
 	</style>
 """
 # <h1> පරමාර්ථ ලෝකය </h1>
@@ -58,11 +83,15 @@ homepage_styles = """
 
 homepage_heading = """
     <div id="main_text" style="margin:5px 5px 5px 15px" ;>
+    <div class="section_header">
+        <p>වසර පහළොවකට අධික කාලයක් මුළුල්ලේ සිට දස දහසක් පිරිසකගේ දහම් ඇස පාදා ගැනීමට උරදුන් කල්‍යාණ මිත්‍ර පින්වත්</p>
+        <h1>ගරු අජන්ත සම්පත් ගුරුතුමා</h1>
+        <p>මෙහෙයවන</p>
         <h1>නිවන් මග උදෙසා දර්ශන ඥාණය</h1>
-       
-        <h2>කල්‍යාණ මිත්‍ර අජන්ත සම්පත් ගුරුතුමන් ගේ සදහම් දේශනා සහ සාකච්ඡා මාලා</h2>
-        <h4>Way to Nibbana - Dhamma Sermon and Discussion Series by Honourable Ajantha Sampath Guruthuma</h4>
-       
+        <h2>සදහම් දේශනා සහ සාකච්ඡා මාලා</h2>
+        <h4>Way to Nibbana - Dhamma Sermon and Discussion Series by</h4>
+        <h2>Honourable Ajantha Sampath Guruthuma</h2>
+     </div>  
 """
 
 print(base_file)
