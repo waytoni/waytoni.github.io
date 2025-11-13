@@ -50,11 +50,16 @@ AA_series_styles = """
         #sutta {
 			margin-left: 20px;
 			margin-right: 20px;
+   			max-width: 70ch;
+      		margin: 0 auto;
         }
 		#sutta p {
 			text-align: left;
 		}
-
+		#sutta .pali {
+			font-weight: bold;
+			color: darkblue;
+		}
 	</style>
 """
 
