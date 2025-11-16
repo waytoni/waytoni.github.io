@@ -1,0 +1,34 @@
+## INTRO ###
+# This is the introductory information of the page.
+# This information must be present.
+# The introductory information will contain html code
+
+            <h1>කල්‍යාණ මිත්‍ර අජන්ත සම්පත් ගුරුතුමා මෙහෙයවන</h1>
+            <h2>පොල්ගස්ඕවිට කුරුළුබැද්ද පරිශ්‍රයේ දී පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව</h2>
+            <p>(හතරවන (D) කන්ඩායම)</p>
+
+## TIME ###
+# This information is necessary for all on-going series.
+
+<p>බ්‍රහස්පතින්දා ප.ව. 12:30 සිට 3:00 දක්වා</p>
+
+## LOCATION ##
+# This information is optional; however, add this for all on-going series
+# You may add html code to this selection.
+
+පොල්ගස්ඕවිට, පලාගම (කුරුළුබැද්ද)
+
+## CONTACT ##
+# This information is optional; however, add this for all on-going series
+
+071 448 0752 හෝ 077 704 7174
+
+## ZOOM_INFO ##
+# This section is necessary only if special Zoom instructions are to be provided.
+# If included provide the date until which the Zoom information is valid.
+# Use the date format YYYY-MM-DD
+# Provide the file name in Zoom_Info folder that contains the Zoom information.
+# Default file name is ZoomInfo_basic.html
+2025-11-14
+ZoomInfo_special.html
+
