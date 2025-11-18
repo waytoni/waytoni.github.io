@@ -18,7 +18,7 @@ jobs:
           python-version: 3.11 # Set your desired Python version
 
       - name: Read L_serires
-        run: python scripts/py/build_series_L.py
+        run: python scripts/gen_series_current.py
 
       - name: Update All_Playlists for L_series addition
         run: python scripts/py/build_series_SiyaluDesana.py
