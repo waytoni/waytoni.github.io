@@ -4,8 +4,7 @@ on:
   push:
     paths:
       - 'VisheshaDeshana/RuwanweliMahaSeya/RuwanweliMahaSeya_ytlinks.txt'     
-      - 'VisheshaDeshana/RuwanweliMahaSeya/RuwanweliMahaSeya_notes.txt'     
-      - 'VisheshaDeshana/RuwanweliMahaSeya/RuwanweliMahaSeya_base.html'     
+      - 'VisheshaDeshana/RuwanweliMahaSeya/RuwanweliMahaSeya_notes.txt'       
    
 jobs:
   run-python-script-RuwanweliMahaSeya:
@@ -19,10 +18,10 @@ jobs:
         with:
           python-version: 3.11 # Set your desired Python version
 
-      - name: Read RuwanweliMahaSeya_serires
+      - name: Read RuwanweliMahaSeya_series
         run: python scripts/gen_series_current.py
 
-      - name: Update All_Playlists for MaharagamaA addition
+      - name: Update All_Playlists for RuwanweliMahaSeya_series addition
         run: python scripts/py/build_series_SiyaluDesana.py
 
       - name: commit changes
