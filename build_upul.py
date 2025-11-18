@@ -40,7 +40,7 @@ from testing import list_AllVideos_AA
 
 
 
-menu_change = False 
+menu_change = True 
 
 if menu_change == True:
     from scripts.py import build_series_AbhidharmaASeries
