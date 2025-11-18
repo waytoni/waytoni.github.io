@@ -280,7 +280,7 @@ def generate_series_page(base_folder, html_file, json_file, css_file, on_going, 
     if contact_section:
         contact_block = f'''
             <div class="info-card">
-                <h3><i class="fa fa-phone"></i> දුරකථන</h3>
+                <h3><i class="fa fa-phone"></i> විමසීම්</h3>
                 <p>{contact_section}</p>
             </div>'''
         template_content = template_content.replace('$CONTACT_BLOCK$', contact_block)
@@ -292,12 +292,21 @@ def generate_series_page(base_folder, html_file, json_file, css_file, on_going, 
         try:
             zoom_file_path = os.path.join('Zoom_Info', zoom_file)
             with open(zoom_file_path, 'r', encoding='utf-8') as f:
+                # zoom_content = f.read()
                 zoom_content = f.read()
-            
+            first_newline_index = zoom_content.find('\n')
+            zoom_content = zoom_content[first_newline_index+1:].strip()
+            print(zoom_content)
+        #     zoom_block = f'''
+        # <div class="info-box">
+        #     {zoom_content}
+        # </div>'''
             zoom_block = f'''
-        <div class="info-box">
-            {zoom_content}
-        </div>'''
+            <div class="info-card">
+                <h3><i class="fa fa-video-camera"></i> Zoom සජීවීව සම්බන්ධ වීමට</h3>
+                <p>{zoom_content}</p>
+            </div>'''
+
             template_content = template_content.replace('$ZOOM_INFO_BLOCK$', zoom_block)
         except Exception as e:
             if debug_info:

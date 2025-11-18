@@ -1,0 +1,62 @@
+# This file contains info on current desana
+# Leave the HTML tags such as <li> ... </li> intact
+
+## SECTION_HEADER ##
+    රුවන්වැලි මහා සෑ පුදබිම
+## SECTION_INFO ##
+    <li><a href="/VisheshaDesana/RuwanweliMahaSeya/RuwanweliMahaSeya.html">රුවන්වැලි මහා සෑ පුදබිම - වැලිමළුව, බටහිර දොරටුව අභියස දී
+    පැවැත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව</a></li>
+    <li>සෑම පොහොදිනකම පෙරවරු 8:00 සිට 11:00 දක්වා</li>
+    <li>විමසීම්: 0777 551 911</li>
+
+## SECTION_HEADER ##
+    කළුතර බෝධින් වහන්සේ පරිශ්‍රය
+## SECTION_INFO ##
+    <li><a href="/KalutaraBodhiya/L_series/L_series.html">කළුතර බෝධින් වහන්සේ පරිශ්‍රයේ දී පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (දොළොස්වන (L) කන්ඩායම)</a></li>
+    <li>සෑම ඉරිදාවකම සවස 2:00 සිට 4:30 දක්වා</li>
+    <li>විමසීම්: 0777 031 0768</li>
+
+## SECTION_HEADER ##
+    පොල්ගස්ඕවිට කුරුළුබැද්ද පරිශ්‍රය
+## SECTION_INFO ##
+    <li><a href="/AbhidharmaAruth/D_series/AAD1.html">පොල්ගස්ඕවිට කුරුළුබැද්ද පරිශ්‍රයේ දී පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (හතරවන (D) කන්ඩායම)</a></li>
+    <li>සෑම බ්‍රහස්පතින්දා දිනකම දහවල් 12:30 සිට සවස 3:00 දක්වා</li>
+    <li>විමසීම්: 071 448 0752 හෝ 0777 047 174</li>
+
+## SECTION_HEADER ##
+    තලවතුගොඩ ගනේලන්ද පුරාණ විහාරස්ථානය
+## SECTION_INFO ##
+    <li><a href="/NivanMagaUdesaDesana/ThalawathugodaB/ThalawathugodaB.html">තලවතුගොඩ ගනේලන්ද පුරාණ විහාරස්ථානයේ පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව</a></li>
+    <li>සෑම සෙනසුරාදාම දිනකම සවස 1.00 සිට 3.30 දක්වා</li>
+    <li>විමසීම්: 077 291 4857 හෝ 071 408 9536</li>
+
+## SECTION_HEADER ##
+    මහරගම තරුණ බෞද්ධ මන්දිරය
+## SECTION_INFO ##
+    <li><a href="/NivanMagaUdesaDesana/MaharagamaA/MaharagamaA.html">මහරගම තරුණ බෞද්ධ මන්දිරයේදී පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව</a></li>
+    <li>සෑම අගහරුවාදා දිනකම සවස 4.30 සිට 6.30 දක්වා</li>
+    <li>විමසීම්: 071 341 9060</li>
+
+## ZOOM_HEADER ##
+Zoom සජීවීව සම්බන්ධ වීමට (නොවැම්බර් 15 හැර)
+## ZOOM_MEETINGID ##
+899 1349 3367
+## ZOOM_PASSCODE ##
+100100
+## ZOOM_LINK ##
+https://us06web.zoom.us/j/89913493367?pwd=UkQ2LzlUTUpKRG9QQTk5YUdTa0FIUT09
+## ZOOM_DESCRIPTION ##
+Zoom සම්බන්ධතාව සඳහා සෘජු සබැඳිය (Zoom Link)
+
+
+## ZOOM_HEADER ##
+සදහම් මණ්ඩපය, ගනේලන්ද පුරාණ බෞද්ධ විහාරය නොවැම්බර් 15 දේශනාව සඳහා පමණක් Zoom සජීවීව සම්බන්ධ වීමට
+## ZOOM_MEETINGID ##
+815 7407 5239
+## ZOOM_PASSCODE ##
+255675
+## ZOOM_LINK ##
+https://us06web.zoom.us/j/81574075239?pwd=d4dEGBb8LmLj8HtfVQmQ0RjJeL2hnb.1
+## ZOOM_DESCRIPTION ##
+2025-11-15 දින Zoom සම්බන්ධතාව සඳහා සෘජු සබැඳිය (Zoom Link)
+
