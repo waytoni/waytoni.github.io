@@ -2,6 +2,8 @@
 රේරුකානේ චන්දවිමල හිමියන්ගේ අභිධර්ම මාර්ගය පොත් ලබා ගැනීමට (PDF හෝ HTML ආකාරයට): url::https://tipitaka.lk/library/462
 #2
 #7
+#10
+පටිච්චසමුප්පාදය img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 03.jpg
 #110
 ඛජ්ජනීය සුත්තං  pdf::/documents/pdfs/ඛජ්ජනීය සුත්තං.pdf
 ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413

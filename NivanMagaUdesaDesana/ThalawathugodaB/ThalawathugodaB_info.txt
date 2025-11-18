@@ -1,0 +1,51 @@
+## INTRO ###
+# This is the introductory information of the page.
+# This information must be present.
+# The introductory information will contain html code
+
+            <h1>කල්‍යාණ මිත්‍ර අජන්ත සම්පත් ගුරුතුමා මෙහෙයවන</h1>
+            <h2>තලවතුගොඩ ගනේලන්ද පුරාණ විහාරස්ථානයේ පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව</h2>
+            <p>(B Series)</p>
+            
+
+## TITLE ##
+# This is the title used in the final HTML file
+
+තලවතුගොඩ (ගනේලන්ද පන්සල) පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (B Series)
+
+## SERIES_TITLE ##
+# This is optional. If not specified, sames the TITLE info will be used.
+# This is the default title used in the dropdown menu.
+
+තලවතුගොඩ පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (B Series)
+
+## TIME ###
+# This information is necessary for all on-going series.
+
+සෑම සෙනසුරාදාම ප.ව. 1:00 සිට ප.ව. 3:30 දක්වා 
+
+## LOCATION ##
+# This information is optional; however, add this for all on-going series
+# You may add html code to this selection.
+
+<a href="https://maps.app.goo.gl/3qfV6TMmaVUKSVC2A">ගනේලන්ද පුරාණ බෞද්ධ විහාරය</a>
+
+## CONTACT ##
+# This information is optional; however, add this for all on-going series
+
+077 291 4857 හෝ 071 408 9536
+
+## ZOOM_INFO ##
+# This section is necessary only if special Zoom instructions are to be provided.
+# If included provide the date until which the Zoom information is valid.
+# Use the date format YYYY-MM-DD
+# Provide the file name in Zoom_Info folder that contains the Zoom information.
+# Default file name is ZoomInfo_basic.html
+2025-11-11
+ZoomInfo_basic.html
+
+## VIDEO_SELECTOR ##
+# The video_number given in this section will point to the video that will be shown when a series page is opened.
+# It is better to remove this section unless there is a special reason.
+100
+
