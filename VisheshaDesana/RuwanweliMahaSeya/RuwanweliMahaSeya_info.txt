@@ -1,0 +1,49 @@
+## INTRO ###
+# This is the introductory information of the page.
+# This information must be present.
+# The introductory information will contain html code
+
+            <h1>කල්‍යාණ මිත්‍ර අජන්ත සම්පත් ගුරුතුමා මෙහෙයවන</h1>
+            <h2>සෑම පොහොදිනකම රුවන්වැලි මහාසෑය අභියස පැවෙත්වෙන දේශනා මාලාව</h2>
+            
+## TITLE ##
+# This is the title used in the final HTML file
+
+සෑම පොහොදිනකම රුවන්වැලි මහාසෑය අභියස පැවෙත්වෙන දේශනා
+
+## SERIES_TITLE ##
+# This is optional. If not specified, sames the TITLE info will be used.
+# This is the default title used in the dropdown menu.
+
+සෑම පොහොදිනකම රුවන්වැලි මහාසෑය අභියස පැවෙත්වෙන දේශනා
+
+## TIME ###
+# This information is necessary for all on-going series.
+
+<p>සෑම පොහොදිනකම පෙරවරු 8:00 සිට 11:00 දක්වා</p>
+
+## LOCATION ##
+# This information is optional; however, add this for all on-going series
+# You may add html code to this selection.
+
+රුවන්වැලි මහා සෑ පුදබිම - වැලිමළුව, බටහිර දොරටුව අභියස දී
+
+## CONTACT ##
+# This information is optional; however, add this for all on-going series
+
+899 1349 3367
+
+## ZOOM_INFO ##
+# This section is necessary only if special Zoom instructions are to be provided.
+# If included provide the date until which the Zoom information is valid.
+# Use the date format YYYY-MM-DD
+# Provide the file name in Zoom_Info folder that contains the Zoom information.
+# Default file name is ZoomInfo_basic.html
+2025-11-11
+ZoomInfo_basic.html
+
+## VIDEO_SELECTOR ##
+# The video_number given in this section will point to the video that will be shown when a series page is opened.
+# It is better to remove this section unless there is a special reason.
+100
+
