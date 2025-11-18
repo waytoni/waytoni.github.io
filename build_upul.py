@@ -16,8 +16,8 @@
 # <index> <optional description> <youtube link (URL)> <date>
 
 
-from scripts.py import build_series_NivanMagaUdesa
-from scripts import gen_series_current
+
+
 
 
 
@@ -25,17 +25,16 @@ from scripts import gen_series_current
 
 # from scripts.py import build_series_ThalawathugodaB
 # from scripts.py import build_series_MaharagamaA
-from scripts.py import build_series_SuthamayaHirigal
+
 # from scripts.py import build_series_RuwanweliMahaSeya
-from scripts.py import build_series_SiyaluDesana
+
 
 # from scripts.py import build_series_L
 # from scripts.py import build_series_ShortDhammaDiscussions
-from scripts.py import build_homepage
 
 
-from testing import list_AllVideos_Jan9
-from testing import list_AllVideos_AA
+
+
 
 
 
@@ -76,28 +75,33 @@ if menu_change == True:
     build_series_YouthForTruth
     from scripts.py import build_series_Thalawathugoda
     build_series_Thalawathugoda
+    from scripts.py import build_series_SuthamayaHirigal
+    build_series_SuthamayaHirigal
+    from scripts.py import build_series_NivanMagaUdesa
     # Update
     # Chithatha_Chithasika (old page), and Vishesha Desana
   
-   
-    
-   
-gen_series_current
-
-# waytoni_all_videos_new
+ 
 #list_AllVideos
+from testing import list_AllVideos_Jan9
+from testing import list_AllVideos_AA
 list_AllVideos_Jan9
 list_AllVideos_AA
 
-# build_series_AbhidharmaAruth_D
-#build_series_NivanMagaUdesa
 
+# build_series_RuwanweliMahaSeya
+# build_series_L
+# build_series_AbhidharmaAruth_D
 # build_series_ThalawathugodaB
 # build_series_MaharagamaA
-# build_series_L
 
-#build_series_SuthamayaHirigal
+
+
+from scripts.py import build_series_SiyaluDesana
 build_series_SiyaluDesana
 #build_series_ShortDhammaDiscussions
-# build_series_RuwanweliMahaSeya
+from scripts.py import build_homepage
 build_homepage
+
+from scripts import gen_series_current
+gen_series_current

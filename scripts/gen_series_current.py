@@ -33,42 +33,42 @@ def gen_series():
             print("Check the log file for detailed error information.")
         sys.exit(1)
 
-if __name__ == "__main__":
-    
-    # RuwanweliMahaSeya
-    base_folder = "VisheshaDesana/RuwanweliMahaSeya"  # Replace with your series folder name
-    html_file = "RuwanweliMahaSeya.html"  # Output HTML file name
-    css_file = "series_page_style_green.css"  # CSS file to use
-    json_file = "RuwanweliMahaSeya.json"  # Output JSON file name
 
-    gen_series()
     
-    # L_series
-    base_folder = "KalutaraBodhiya/L_series"  # Replace with your series folder name
-    html_file = "L_series.html"  # Output HTML file name
-    css_file = "series_page_style_green.css"  # CSS file to use
-    json_file = "L_series.json"  # Output JSON file name
+# RuwanweliMahaSeya
+base_folder = "VisheshaDesana/RuwanweliMahaSeya"  # Replace with your series folder name
+html_file = "RuwanweliMahaSeya.html"  # Output HTML file name
+css_file = "series_page_style_green.css"  # CSS file to use
+json_file = "RuwanweliMahaSeya.json"  # Output JSON file name
 
-    gen_series()
-    
-    # AbhidharmaAruthD
-    base_folder = "AbhidharmaAruth/D_series"  # Replace with your series folder name
-    html_file = "AbhidharmaAruthD.html"  # Output HTML file name
-    css_file = "series_page_style_green.css"  # CSS file to use
-    json_file = "AbhidharmaAruthD.json"  # Output JSON file name
-    
-     # ThalawathugodaB
-    base_folder = "NivanMagaUdesaDesana/ThalawathugodaB/"  # Replace with your series folder name
-    html_file = "ThalawathugodaB.html"  # Output HTML file name
-    css_file = "series_page_style_green.css"  # CSS file to use
-    json_file = "ThalawathugodaB.json"  # Output JSON file name
-    
-    gen_series()
-    
-    # MaharagamaA
-    base_folder = "NivanMagaUdesaDesana/MaharagamaA"  # Replace with your series folder name
-    html_file = "MaharagamaA.html"  # Output HTML file name
-    css_file = "series_page_style_green.css"  # CSS file to use
-    json_file = "MaharagamaA.json"  # Output JSON file name
+gen_series()
 
-    gen_series()
+# L_series
+base_folder = "KalutaraBodhiya/L_series"  # Replace with your series folder name
+html_file = "L_series.html"  # Output HTML file name
+css_file = "series_page_style_green.css"  # CSS file to use
+json_file = "L_series.json"  # Output JSON file name
+
+gen_series()
+
+# AbhidharmaAruthD
+base_folder = "AbhidharmaAruth/D_series"  # Replace with your series folder name
+html_file = "AbhidharmaAruthD.html"  # Output HTML file name
+css_file = "series_page_style_green.css"  # CSS file to use
+json_file = "AbhidharmaAruthD.json"  # Output JSON file name
+
+    # ThalawathugodaB
+base_folder = "NivanMagaUdesaDesana/ThalawathugodaB/"  # Replace with your series folder name
+html_file = "ThalawathugodaB.html"  # Output HTML file name
+css_file = "series_page_style_green.css"  # CSS file to use
+json_file = "ThalawathugodaB.json"  # Output JSON file name
+
+gen_series()
+
+# MaharagamaA
+base_folder = "NivanMagaUdesaDesana/MaharagamaA"  # Replace with your series folder name
+html_file = "MaharagamaA.html"  # Output HTML file name
+css_file = "series_page_style_green.css"  # CSS file to use
+json_file = "MaharagamaA.json"  # Output JSON file name
+
+gen_series()
