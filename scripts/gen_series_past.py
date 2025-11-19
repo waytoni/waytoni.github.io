@@ -10,7 +10,7 @@ from gen_json_file import BuildDropDownMenuWithNavigation
 
 # Configuration variables
 ON_GOING = False  # Set to True if series is ongoing, False if completed
-DEBUG_INFO = False  # Set to True for debugging, False for production
+DEBUG_INFO = False # Set to True for debugging, False for production
 
 # Define file paths
 
