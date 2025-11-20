@@ -153,7 +153,86 @@
             font-size: 0.9rem;
             text-align: center;
         }
+
+        .chiththa-card {
+            background-image: url('/images/cc_chart_small.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: white;
+        }
+        .chiththa-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
         
+        .chiththa-card .card-header,
+        .chiththa-card .card-body {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .chiththa-card .card-body a {
+            color: #d4af37; /* Using the accent color for better visibility */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .chiththa-card .card-body a:hover {
+            text-decoration: underline;
+            color: #f0c850; /* Slightly lighter gold for hover effect */
+        }
+
+     
+        .image-card {
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            /*color: white; */
+            color: darkgreen;
+            --card-image: url('/images/cc_chart_small.jpg');
+            background-image: var(--card-image);
+        }
+
+        .image-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+
+        .image-card .card-header,
+        .image-card .card-body {
+            position: relative;
+            z-index: 2;
+        }
+
+        .image-card .card-body a {
+            
+            
+            color: darkgreen;
+            /* color: #d4af37; 
+            color: darkblue;  */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .image-card .card-body a:hover {
+            text-decoration: underline;
+            /* color: #f0c850; */
+            color: darkblue;
+        }
+
         .footer {
             text-align: center;
             padding: 20px;
@@ -161,7 +240,8 @@
             color: #666;
             font-size: 0.9rem;
         }
-        
+
+
         @media (max-width: 768px) {
             .card-container {
                 grid-template-columns: 1fr;
