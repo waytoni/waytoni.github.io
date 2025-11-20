@@ -292,7 +292,6 @@ def generate_series_page(base_folder, html_file, json_file, css_file, on_going, 
         try:
             zoom_file_path = os.path.join('Zoom_Info', zoom_file)
             with open(zoom_file_path, 'r', encoding='utf-8') as f:
-                # zoom_content = f.read()
                 zoom_content = f.read()
             first_newline_index = zoom_content.find('\n')
             zoom_content = zoom_content[first_newline_index+1:].strip()
