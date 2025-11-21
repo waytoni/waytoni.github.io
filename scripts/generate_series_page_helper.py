@@ -139,7 +139,7 @@ def parse_info_file(info_file, on_going, debug_info):
             sections['TIME'], sections['LOCATION'], sections['CONTACT'],
             zoom_file, video_number)
 
-def generate_series_page(base_folder, html_file, json_file, css_file, on_going, debug_info):
+def generate_series_page(base_folder, html_file, json_file, css_file, on_going, debug_info, verbose=False):
     """
     Generate the series page HTML file.
     
@@ -154,6 +154,10 @@ def generate_series_page(base_folder, html_file, json_file, css_file, on_going, 
     Returns:
         tuple: (ytlink_file, notes_file) paths
     """
+    
+    if verbose:
+        print(f"Generating series page in {base_folder}...")   
+    
     
     # Setup logging if debug_info is True
     if debug_info:
@@ -222,6 +226,10 @@ def generate_series_page(base_folder, html_file, json_file, css_file, on_going, 
     elif video_number <= 0:
         video_number = 1
     
+    if verbose:
+        print(f"{base_folder}: Video number set to: {video_number}")
+    
+      
     # Read template
     template_path = os.path.join('scripts', 'series_page_template.html')
     try:
@@ -295,7 +303,9 @@ def generate_series_page(base_folder, html_file, json_file, css_file, on_going, 
                 zoom_content = f.read()
             first_newline_index = zoom_content.find('\n')
             zoom_content = zoom_content[first_newline_index+1:].strip()
-            print(zoom_content)
+            
+            if verbose:
+                print(zoom_content)
         #     zoom_block = f'''
         # <div class="info-box">
         #     {zoom_content}
@@ -323,9 +333,11 @@ def generate_series_page(base_folder, html_file, json_file, css_file, on_going, 
     # Replace series title
     template_content = template_content.replace('$SERIESTITLE$', series_title_section)
     
+    #print(f"ZZZZZ Writing HTML file to {base_folder}...{debug_info}")
     # Write HTML file if not in debug mode
     if not debug_info:
         html_file_path = os.path.join(base_folder, html_file)
+        # print(f"XXXXXX Writing HTML file to {html_file_path}...")
         try:
             with open(html_file_path, 'w', encoding='utf-8') as f:
                 f.write(template_content)
@@ -334,4 +346,5 @@ def generate_series_page(base_folder, html_file, json_file, css_file, on_going, 
                 logging.error(f"Error writing HTML file {html_file_path}: {e}")
             raise
     
+    print(f'HTML file creation complete: {base_folder}: Generated {html_file} successfully. Video number: {video_number}')
     return ytlink_file, notes_file

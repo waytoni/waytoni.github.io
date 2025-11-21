@@ -33,7 +33,7 @@ def parse_utlinks(file_path):
                     })
     return utlinks
 
-def parse_notes(file_path):
+def parse_notes(file_path, verbose=False):
     notes = {}
     with open(file_path, 'r', encoding='utf-8') as file:
         current_index = None
@@ -76,7 +76,8 @@ def parse_notes(file_path):
                     # If there is only one part, use it as the new string
                     new_string = "<p>" + parts[0] + "</p>"
                 # Print the new string
-                print(new_string)
+                if verbose:
+                    print(new_string)
                 current_notes.append(new_string)
                 
         if current_index is not None:
@@ -86,10 +87,10 @@ def parse_notes(file_path):
 
 
 
-def BuildDropDownMenuWithNavigation(utlinks_file, notes_file, json_file):
+def BuildDropDownMenuWithNavigation(utlinks_file, notes_file, json_file, verbose=False):
 
     utlinks = parse_utlinks(utlinks_file)
-    notes = parse_notes(notes_file)
+    notes = parse_notes(notes_file, verbose=verbose)
 
 
     for utlink in utlinks:

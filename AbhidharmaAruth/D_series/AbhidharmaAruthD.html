@@ -97,21 +97,23 @@
             
             <div class="info-card">
                 <h3><i class="fa fa-video-camera"></i> Zoom සජීවීව සම්බන්ධ වීමට</h3>
-                <p><p><strong>Meeting ID:</strong> 899 1349 3367</p>
+                <p><span style="margin: 0; margin-top: 0; margin-bottom: 0; font-size: 0.8em;">
+            <p><strong>Meeting ID:</strong> 899 1349 3367</p>
             <p><strong>Passcode:</strong> 100100</p>
             <p><a href="https://us06web.zoom.us/j/89913493367?pwd=UkQ2LzlUTUpKRG9QQTk5YUdTa0FIUT09">
-                Zoom සම්බන්ධතාව සඳහා සෘජු සබැඳිය</a></p></p>
+                Zoom සම්බන්ධතාව සඳහා සෘජු සබැඳිය</a></p>
+                </span></p>
             </div>
 
         </div>
 
         
-
+<!--
         <div class="info-box">
             <h2>දේශනා සඳහා සටහන්</h2>
             <p><a href="/documents/NotesForDesana/NotesForDesana.html">සියලුම දේශනා සඳහා සටහන් බලන්න</a></p>
         </div>
-
+    -->
         <div class="video-container">
             <div class="video-controls">
                 <select id="link-selector" class="video-selector" onchange="updateContent()">
@@ -130,7 +132,7 @@
 
         <div class="notes-container">
             <h3>
-                දේශනා සටහන්
+                දේශනාව සඳහා සටහන්
                 <div class="font-control">
                     <label for="fontSizeSlider">අකුරු ප්‍රමාණය:</label>
                     <input type="range" id="fontSizeSlider" class="font-slider" min="12" max="36" value="16">
@@ -193,7 +195,7 @@
         function displayLastEntry() {
             if (data.length > 0) {
                 // const lastEntry = data[data.length - 1];
-                const lastEntry = data[3];
+                const lastEntry = data[4];
                 const selector = document.getElementById('link-selector');
                 selector.value = lastEntry.url;
                 updateContent();
