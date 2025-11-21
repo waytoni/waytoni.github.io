@@ -188,11 +188,11 @@ def generate_series_page(base_folder, html_file, json_file, css_file, on_going, 
     # Check for multiple files or missing files
     errors = []
     if len(info_files) != 1:
-        errors.append(f"Expected 1 _info.txt file, found {len(info_files)}: {info_files}")
+        errors.append(f"{base_folder}: Expected 1 _info.txt file, found {len(info_files)}: {info_files}")
     if len(ytlink_files) != 1:
-        errors.append(f"Expected 1 _ytlinks.txt file, found {len(ytlink_files)}: {ytlink_files}")
+        errors.append(f"{base_folder}: Expected 1 _ytlinks.txt file, found {len(ytlink_files)}: {ytlink_files}")
     if len(notes_files) != 1:
-        errors.append(f"Expected 1 _notes.txt file, found {len(notes_files)}: {notes_files}")
+        errors.append(f"{base_folder}: Expected 1 _notes.txt file, found {len(notes_files)}: {notes_files}")
     
     if errors:
         error_msg = ";\n".join(errors)
