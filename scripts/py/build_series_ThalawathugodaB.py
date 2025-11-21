@@ -22,7 +22,7 @@ html_file = os.path.join(basepath,  'ThalawathugodaB.html')
 
 playlist_url = ''
 
-series_title = 'තලවතුගොඩ (ගනේලන්ද පන්සල) පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (B Series)'
+series_title = 'තලවතුගොඩ (ගනේලන්ද පන්සල) පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (B Series)'
 
 AA_series_styles = """
    	<style>

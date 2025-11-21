@@ -24,7 +24,7 @@ html_file_new = os.path.join(basepath,  'AbhidharmaAruthD_new.html')
 
 playlist_url = ''
 
-series_title = 'පොල්ගස්ඕවිට පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (D කන්ඩායම)'
+series_title = 'පොල්ගස්ඕවිට පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (D කන්ඩායම)'
 
 AA_series_styles = """
    	<style>

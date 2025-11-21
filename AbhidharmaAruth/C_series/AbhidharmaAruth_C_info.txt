@@ -4,19 +4,19 @@
 # The introductory information will contain html code
 
             <h1>කල්‍යාණ මිත්‍ර අජන්ත සම්පත් ගුරුතුමා මෙහෙයවන</h1>
-            <h2>පොල්ගස්ඕවිට කුරුළුබැද්ද පරිශ්‍රයේ දී පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව</h2>
+            <h2>පොල්ගස්ඕවිට කුරුළුබැද්ද පරිශ්‍රයේ දී පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව</h2>
             <p>(තෙවෙන  (C) කන්ඩායම)</p>
 
 ## TITLE ##
 # This is the title used in the final HTML file
 
-පොල්ගස්ඕවිට පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (C කන්ඩායම)
+පොල්ගස්ඕවිට පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (C කන්ඩායම)
 
 ## SERIES_TITLE ##
 # This is optional. If not specified, sames the TITLE info will be used.
 # This is the default title used in the dropdown menu.
 
-පොල්ගස්ඕවිට පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (C කන්ඩායම - තෙවැන කොටස)
+පොල්ගස්ඕවිට පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (C කන්ඩායම - තෙවැන කොටස)
 
 ## TIME ###
 # This information is necessary for all on-going series.

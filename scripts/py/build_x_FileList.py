@@ -30,7 +30,7 @@ FileList_intro = """
     <h2>රේරුකානේ චන්දවිමල හිමියන්ගේ පොහොය දිනය පොත <a href="https://tipitaka.lk/library/498" target="_blank">PDF ලෙස</a> හෝ  <a href="https://tipitaka.lk/library/475">වෙබ් පිටුවක් ලෙස</a></h2>
     <h2>රේරුකානේ චන්දවිමල හිමියන්ගේ සියුලු පොත් සඳහා: <a href="https://www.ogatharana.org/" target="_blank">https://www.ogatharana.org/</a> 
     හෝ <a href="https://tipitaka.lk/library/462" target="_blank">https://tipitaka.lk/library/462</a></h2>
-    <h2><a href="/documents/දර්ශන ඥාණය මූලික සූත්‍ර 01.pdf" target="_blank">දේශනා සඳහා භාවිතා කරන ලද මූලික සූත්‍ර</a></h2>
+    <h2><a href="/documents/දර්ශන ඥානය මූලික සූත්‍ර 01.pdf" target="_blank">දේශනා සඳහා භාවිතා කරන ලද මූලික සූත්‍ර</a></h2>
     <h2><a href="/documents/pdfs/Pragna Paramithawa.pdf" target="_blank">ප්‍රඥා පාරමිතාව</a> [දේශනා වලට සම්බන්ධ වන විට මෙම ලේඛනය A3 පොතක් ලෙස මුද්‍රණය කර පන්තියට රැගෙන එන්න.]</h2>
     </center>
     </div>

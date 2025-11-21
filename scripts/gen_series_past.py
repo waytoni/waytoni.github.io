@@ -90,6 +90,13 @@ css_file = "series_page_style_green.css"  # CSS file to use
 json_file = "Thalawathugoda.json"  # Output JSON file name
 gen_series()
 
+
+# NivanMagaUdesaDesana  A_series
+base_folder = "NivanMagaUdesaDesana/A_series"  #
+
+
+# තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය - දේශනා
+
 # YouthForTruth
 base_folder = "NivanMagaUdesaDesana/YouthForTruth"  # Replace with your series folder name
 html_file = "YouthForTruth.html"  # Output HTML file name

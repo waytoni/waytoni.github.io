@@ -181,14 +181,14 @@ idx_prefix_0 = 'A'
 with open(text_filename, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
     fp.write('<div class="normal-head">\n')
-    fp.write('<h2>2. <a href="../Nivan_Maga_Udesa/index.html">නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (A කණ්ඩායම)</a></h2>\n')
+    fp.write('<h2>2. <a href="../Nivan_Maga_Udesa/index.html">නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (A කණ්ඩායම)</a></h2>\n')
     fp.write('</div>\n')
     fp.close()
 
 playlist_url_2 = 'https://www.youtube.com/playlist?list=PLqESXbJ82aIgflkHivXH-cYXlz1onvNCi'
 playlist_2 = 'Nivan_Maga_Udesa/nivan_maga_udesa_youtube_links.txt'
-playlist_title_2 = "නිවන් මග උදෙසා දර්ශන ඥාණය (A කණ්ඩායම)"
-series_title_2 = "නිවන් මග උදෙසා දර්ශන ඥාණය (A කණ්ඩායම)"
+playlist_title_2 = "නිවන් මග උදෙසා දර්ශන ඥානය (A කණ්ඩායම)"
+series_title_2 = "නිවන් මග උදෙසා දර්ශන ඥානය (A කණ්ඩායම)"
 # prepare_html_block(2, playlist_2, playlist_title_2, text_filename, playlist_url_2, '')
 # DropdownBlockWorking(2, playlist_2, playlist_title_2, text_filename, '', '', series_title_2)
 

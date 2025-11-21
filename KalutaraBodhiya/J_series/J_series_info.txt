@@ -4,19 +4,19 @@
 # The introductory information will contain html code
 
             <h1>කල්‍යාණ මිත්‍ර අජන්ත සම්පත් ගුරුතුමා මෙහෙයවන</h1>
-            <h2>2024 කළුතර බෝධි පරිශ්‍රයේදී පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව </h2>
+            <h2>2024 කළුතර බෝධි පරිශ්‍රයේදී පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව </h2>
             <p>දහවන (J) කන්ඩායම</p>
 
 ## TITLE ##
 # This is the title used in the final HTML file
 
-22024 කළුතර බෝධියේදී පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (J Series)
+22024 කළුතර බෝධියේදී පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (J Series)
 
 ## SERIES_TITLE ##
 # This is optional. If not specified, sames the TITLE info will be used.
 # This is the default title used in the dropdown menu.
 
-2024 නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව (J Series)
+2024 නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (J Series)
 
 ## TIME ###
 # This information is necessary for all on-going series.

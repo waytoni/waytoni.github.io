@@ -22,7 +22,7 @@ html_file = os.path.join(basepath,  'MaharagamaA.html')
 
 playlist_url = ''
 
-series_title = 'මහරගම තරුණ බෞද්ධ මන්දිරයේ පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව'
+series_title = 'මහරගම තරුණ බෞද්ධ මන්දිරයේ පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව'
 
 AA_series_styles = """
    	<style>

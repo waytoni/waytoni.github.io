@@ -23,7 +23,7 @@ json_file = os.path.join(basepath,'NivanMagaUdesa.json')
 
 playlist_url = 'https://www.youtube.com/playlist?list=PLqESXbJ82aIgflkHivXH-cYXlz1onvNCi'
 
-series_title = 'නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා'
+series_title = 'නිවන් මග උදෙසා දර්ශන ඥානය දේශනා'
 
 print(intro_file)
 print(notes_file)

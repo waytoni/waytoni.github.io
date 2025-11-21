@@ -4,19 +4,19 @@
 # The introductory information will contain html code
 
             <h1>කල්‍යාණ මිත්‍ර අජන්ත සම්පත් ගුරුතුමා මෙහෙයවන</h1>
-            <h2>මහරගම තරුණ බෞද්ධ මන්දිරයේ පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව</h2>
+            <h2>මහරගම තරුණ බෞද්ධ මන්දිරයේ පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව</h2>
             
 
 ## TITLE ##
 # This is the title used in the final HTML file
 
-මහරගම තරුණ බෞද්ධ මන්දිරයේ පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව
+මහරගම තරුණ බෞද්ධ මන්දිරයේ පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව
 
 ## SERIES_TITLE ##
 # This is optional. If not specified, sames the TITLE info will be used.
 # This is the default title used in the dropdown menu.
 
-මහරගම තරුණ බෞද්ධ මන්දිරයේ පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව
+මහරගම තරුණ බෞද්ධ මන්දිරයේ පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව
 
 ## TIME ###
 # This information is necessary for all on-going series.
