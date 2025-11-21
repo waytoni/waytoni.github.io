@@ -69,7 +69,7 @@ with open(html_file, 'w', encoding="utf-8") as fp:
     
     #fp.write('<h2><li><a href="/documents/file_list.html">සියලු අභිධම්ම දේශනා සඳහා සටහන්</a></li></h2>\n')
     
-    fp.write('<h2><li><a href="/documents/NotesForDesana/NotesForDesana.html">සියුලු දේශනා සඳහා සටහන්</a></li></h2>\n')
+    # fp.write('<h2><li><a href="/documents/NotesForDesana/NotesForDesana.html">සියුලු දේශනා සඳහා සටහන්</a></li></h2>\n')
     # fp.write('<br>\n')
     
     fp.close()
@@ -131,7 +131,7 @@ id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
     fp.write('<div class="normal-head">\n')
-    fp.write(f'<h2>{id}. <a href="/NivanMagaUdesaDesana/Thalawathugoda/Thalawathugoda.html">තලවතුගොඩ ගනේලන්ද පන්සලේ  පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව</a></h2>\n')
+    fp.write(f'<h2>{id}. <a href="/NivanMagaUdesaDesana/Thalawathugoda/Thalawathugoda.html">තලවතුගොඩ ගනේලන්ද පන්සලේ පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥාණය දේශනා මාලාව</a></h2>\n')
     fp.write('</div>\n')
     fp.close()
 
@@ -303,8 +303,8 @@ with open(html_file, 'a', encoding="utf-8") as fp:
 with open(html_file, 'a', encoding="utf-8") as fp:
 #    fp.write('<h5>&emsp; F කාණ්ඩය අසම්පූර්ණයි</h5>\n')
     fp.write('<br>\n')
-    fp.write('<li><a href="/documents/NotesForDesana/NotesForDesana.html">සියලු අභිධම්ම දේශනා සඳහා සටහන්</a></li>\n')
-    fp.write('<br>\n')
+    # fp.write('<li><a href="/documents/NotesForDesana/NotesForDesana.html">සියලු අභිධම්ම දේශනා සඳහා සටහන්</a></li>\n')
+    # fp.write('<br>\n')
 
     fp.write('<h3><a href="AllVideos_V2.html">සියලුම දේශනා - @WayToNibbana YouTube Channel</a></h3>\n')
     fp.write('<h3><a href="AllVideos_AA.html">සියලුම දේශනා - Abhidharma Aruth - අභිධර්ම අරුත් YouTube Channel</a></h3>\n')
