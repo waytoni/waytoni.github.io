@@ -10,6 +10,14 @@
             <li>රේරුකානේ චන්දවිමල හිමියන්ගේ සියුලු පොත් සඳහා: <a href="https://www.ogatharana.org/" target="_blank">https://www.ogatharana.org/</a> හෝ <a href="https://tipitaka.lk/library/462" target="_blank">https://tipitaka.lk/library/462</a></li>
         </ol>
 </div>
+රෝහිතස්ස සූත්‍රය url::https://tipitaka.lk/sn-1-2-3-6/sinh
+#2
+img::/NivanMagaUdesaDesana/ThalawathugodaB/docs/ThalawathugodaB2_1080.jpg
+රෝහිතස්ස සූත්‍රය url::https://tipitaka.lk/sn-1-2-3-6/sinh
+සබ්බ සූත්‍රය  url::https://tipitaka.lk/sn-4-1-3-1
+සමිද්ධි සත්තපඤ්හ සූත්‍රය url::https://tipitaka.lk/sn-4-1-7-4 
+සමිද්ධි දුක්ඛපඤ්හ සූත්‍රය url::https://tipitaka.lk/sn-4-1-7-5
+සමිද්ධි ලෝකපඤ්හ සූත්‍රය url::https://tipitaka.lk/sn-4-1-7-6
 #7
 #301
 #1000

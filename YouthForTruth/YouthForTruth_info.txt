@@ -1,0 +1,58 @@
+## INTRO ###
+# This is the introductory information of the page.
+# This information must be present.
+# The introductory information will contain html code
+
+
+
+	
+	<h1>සත්‍යය සොයා යන තාරුණ්‍යය දේශනා මාලාව</h1>
+
+	<p>පාසල් අධ්‍යාපනය ලබන, උසස් අධ්‍යාපනය හදාරණ, හෝ රැකියාව ක නියුතු තරුණ වයසේ දරුවන් හට, 
+		ජීවිතයේ යථාර්ථය තරුණ වයසේ දී ම අවබෝධ කොටගෙන , අවබෝධයෙන් ජීවත් වීම පිණිස , 
+		සර්වඥයින් වහන්සේ දේශිත අකාලික වූ ශ්‍රී සද්ධර්මය මුල් කොටගෙන , 
+		ඔවුනට ගැලපෙන කෝණයකින්, 
+		විද්‍යාත්මක ව සාකච්ඡා කෙරෙන නව දේශනා මාලවක ආරම්භය...
+		ඔබේ දුව පුතා ටත් මේ හා  සම්බන්ධ වීමට අවස්ථාව සලසා දෙන්න.</p>
+
+## TITLE ##
+# This is the title used in the final HTML file
+
+සත්‍යය සොයා යන තාරුණ්‍යය දේශනා මාලාව
+
+## SERIES_TITLE ##
+# This is optional. If not specified, sames the TITLE info will be used.
+# This is the default title used in the dropdown menu.
+
+සත්‍යය සොයා යන තාරුණ්‍යය දේශනා මාලාව
+
+## TIME ###
+# This information is necessary for all on-going series.
+
+<p>සෑම අඟහරුවාදාම ප.ව. 6:30 සිට ප.ව. 8:00 දක්වා</p>
+
+## LOCATION ##
+# This information is optional; however, add this for all on-going series
+# You may add html code to this selection.
+
+අන්තර්ජාලය හරහා (Zoom)
+
+# # CONTACT ##
+# This information is optional; however, add this for all on-going series
+
+# 077 031 0768
+
+## ZOOM_INFO ##
+# This section is necessary only if special Zoom instructions are to be provided.
+# If included provide the date until which the Zoom information is valid.
+# Use the date format YYYY-MM-DD
+# Provide the file name in Zoom_Info folder that contains the Zoom information.
+# Default file name is ZoomInfo_basic.html
+2025-11-11
+ZoomInfo_basic.html
+
+## VIDEO_SELECTOR ##
+# The video_number given in this section will point to the video that will be shown when a series page is opened.
+# It is better to remove this section unless there is a special reason.
+1
+
