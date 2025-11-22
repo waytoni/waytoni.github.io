@@ -93,9 +93,16 @@ gen_series()
 
 # NivanMagaUdesaDesana  A_series
 base_folder = "NivanMagaUdesaDesana/A_series"  #
-
+html_file = "index.html"  # Output HTML file name
+css_file = "series_page_style_green.css"  # CSS file to use
+json_file = "NivanMagaUdesa.json"  # Output JSON file name
 
 # තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය - දේශනා
+base_folder = "AbhidharmaSeries/A_series/"  # Replace with your series folder name
+html_file = "index.html"  # Output HTML file name
+css_file = "series_page_style_green.css"  # CSS file to use
+json_file = "AbhidharmaASeries.json"  # Output JSON file name
+gen_series()
 
 # YouthForTruth
 base_folder = "NivanMagaUdesaDesana/YouthForTruth"  # Replace with your series folder name

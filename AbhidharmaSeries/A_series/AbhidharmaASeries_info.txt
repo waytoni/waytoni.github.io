@@ -1,0 +1,51 @@
+## INTRO ###
+# This is the introductory information of the page.
+# This information must be present.
+# The introductory information will contain html code
+
+<h1>කල්‍යාණ මිත්‍ර අජන්ත සම්පත් ගුරුතුමා මෙහෙයවන ලද</h1>
+<h1>තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා මාලාව</h1>
+<p>මානවයාගේ වැරදි දෘෂ්ඨීන්ගෙන් මුදවා ගැනීමේ අදහසින්, තරුණ දූදරුවන්ට ගැලපෙන පරිදි, Science විෂයට (සම්මුති විද්‍යා විෂයට) ගලපමින් පවත්වන දේශනා මාලාව. සරලව මුල සිට……. </p>
+            
+<h2>(152 දේශනාවෙන් පසු <a href=/NivanMagaUdesaDesana/A_series/index.html>නිවන් මග උදෙසා දර්ශන ඥානය දේසනා (A කණ්ඩායම)</a> දේශනා මාලාව සමග ඒකාබද්ධ කරන ලදී.)</h2>
+## TITLE ##
+# This is the title used in the final HTML file
+
+තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය
+
+## SERIES_TITLE ##
+# This is optional. If not specified, sames the TITLE info will be used.
+# This is the default title used in the dropdown menu.
+
+තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය
+
+## TIME ###
+# This information is necessary for all on-going series.
+
+<p>සෑම සෙනසුරාදාම ප.ව. 2:00 සිට ප.ව. 4:30 දක්වා</p>
+
+## LOCATION ##
+# This information is optional; however, add this for all on-going series
+# You may add html code to this selection.
+
+අන්තර්ජාලය හරහා (Zoom)
+
+# # CONTACT ##
+# This information is optional; however, add this for all on-going series
+
+# 077 031 0768
+
+## ZOOM_INFO ##
+# This section is necessary only if special Zoom instructions are to be provided.
+# If included provide the date until which the Zoom information is valid.
+# Use the date format YYYY-MM-DD
+# Provide the file name in Zoom_Info folder that contains the Zoom information.
+# Default file name is ZoomInfo_basic.html
+2025-11-11
+ZoomInfo_basic.html
+
+## VIDEO_SELECTOR ##
+# The video_number given in this section will point to the video that will be shown when a series page is opened.
+# It is better to remove this section unless there is a special reason.
+1
+

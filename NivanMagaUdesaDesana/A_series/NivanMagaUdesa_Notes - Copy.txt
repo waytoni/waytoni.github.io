@@ -1,0 +1,100 @@
+#1
+pdf::docs/001- නිවන් මග උදෙසා දර්ශන ඥානය_2023-08-04.pdf
+img::docs/001_Page_1.png
+img::docs/001_Page_2.png
+img::docs/001_Page_3.png
+#2
+සත්ත සූත්‍රය url::https://tipitaka.lk/sn-3-2-1-2
+pdf::docs/002-නිවන් මග උදෙසා දර්ශන ඥානය  [2023-08-11].pdf
+img::docs/002_Page_1.png
+img::docs/002_Page_2.png
+img::docs/002_Page_3.png
+#3
+සබ්බ සූත්‍රය  url::https://tipitaka.lk/sn-4-1-3-1
+සමිද්ධි සත්තපඤ්හ සූත්‍රය url::https://tipitaka.lk/sn-4-1-7-4 
+සමිද්ධි දුක්ඛපඤ්හ සූත්‍රය url::https://tipitaka.lk/sn-4-1-7-5
+සමිද්ධි ලෝකපඤ්හ සූත්‍රය url::https://tipitaka.lk/sn-4-1-7-6
+රෝහිතස්ස සූත්‍රය url::https://tipitaka.lk/sn-1-2-3-6/sinh
+pdf::docs/003- නිවන් මඟ උදෙසා දර්ශන ඥානය(2023-08-18).pdf
+img::docs/003_Page_1.png
+img::docs/003_Page_2.png
+img::docs/003_Page_3.png
+img::docs/003_Page_4.png
+#4
+#5
+#6
+#7
+#8
+#9
+#10
+#11
+#12
+ඵෙණ පිණ්ඩූපම සූත්‍රය url::https://tipitaka.lk/sn-3-1-2-5-3
+ඵේණපිණ්ඩූපම සුත්තං url::https://tripitaka.online/sutta/3571
+#13
+#14
+ගවම්පති සූත්‍රය url::https://tipitaka.lk/sn-5-12-3-10
+අනුපුබ්බාභිසමයකථා url::https://tipitaka.lk/ap-kvu-2-9
+රූපක‍්ඛන්‍ධො url::https://tipitaka.lk/ap-vbh-1-2
+#18
+#23
+#24
+පටිච්චසමුප්පාදයේ නය සතර pdf::docs/024 පටිච්චසමුප්පාදයේ නය සතර.pdf
+#25
+පටිච්චසමුප්පාදයේ නය සතර pdf::docs/024 පටිච්චසමුප්පාදයේ නය සතර.pdf
+#26
+pdf::docs/026 2024-02-09 Nivan Maga Udesa Desana.pdf
+img::026 2024-02-09 Nivan Maga Udesa Desana.jpg 
+#27
+pdf::docs/027 2024 02 16.pdf
+img::027 2024 02 16.jpg
+#28
+pdf::docs/028 2024 02 23.pdf
+#35
+මහාහත්‍ථිපදෝපම සූත්‍රය url::https://tipitaka.lk/mn-1-3-8/sinh
+pdf::docs/035 2024.04.19 Note.pdf
+img::035 2024.04.19 Note_Page_1.jpg
+img::035 2024.04.19 Note_Page_2.jpg
+img::035 2024.04.19 Note_Page_3.jpg
+#36
+මහාහත්‍ථිපදෝපම සූත්‍රය url::https://tipitaka.lk/mn-1-3-8/sinh
+pdf::docs/036 -2024.04.26 -නිවන් මග උදෙසා දර්ශන ඥානය.pdf
+img::036 -2024.04.26 Note_Page_1.jpg
+img::036 -2024.04.26 Note_Page_2.jpg
+#37
+ප්‍රතීත්‍යසමුත්පාද විභඞ්ගය url::https://tipitaka.lk/ap-vbh-6
+#42
+රේරුකානේ චන්ද්‍රවිමල හිමි විසින් ලියන ලද සතිපට්ඨාන භාවනා ක්‍ර‍මය (PDF): url::https://tipitaka.lk/library/511/
+රේරුකානේ චන්ද්‍රවිමල හිමි විසින් ලියන ලද සතිපට්ඨාන භාවනා ක්‍ර‍මය (webpage): url::https://pitaka.lk/books/sathipttana-bhavana-kramaya/
+රේරුකානේ චන්ද්‍රවිමල හිමි විසින් ලියන ලද චත්තාළීසාකාර විපස්සනා භාවනාව (PDF): url::https://tipitaka.lk/library/490/
+රේරුකානේ චන්ද්‍රවිමල හිමි විසින් ලියන ලද චත්තාළීසාකාර විපස්සනා භාවනාව (webpage): url::https://pitaka.lk/books/chaththalisakara-vipassana/
+#50
+රේරුකානේ චන්ද්‍රවිමල හිමි විසින් ලියන ලද අභිධර්ම මාර්ගය (PDF) url::https://tipitaka.lk/library/484
+#52
+රේරුකානේ චන්ද්‍රවිමල හිමි විසින් ලියන ලද අභිධර්ම මාර්ගය (PDF) url::https://tipitaka.lk/library/484
+#54
+රේරුකානේ චන්ද්‍රවිමල හිමි විසින් ලියන ලද අභිධර්ම මාර්ගය (PDF) url::https://tipitaka.lk/library/484
+#58
+මහා සළායතනික සුත්තං pdf::/documents/pdfs/මහා සළායතනික සුත්තං.pdf
+මහා සළායතනික සුත්තං url::https://tripitaka.online/sutta/870
+#59
+ධම්මචක්කප්පවත්තන සූත්‍රය url::https://tipitaka.lk/sn-5-12-2
+පරිඤ්ඤෙය්‍ය සූත්‍රය url::https://tipitaka.lk/sn-5-12-3-9
+#60
+සංකල්ප නිසා දුක url::https://www.youtube.com/watch?v=pBSn3BjwFIU 
+#61
+#67
+හදිසි කරුණක් නිසා 2025-02-07 පන්තිය නොපවත්වන බව ගුරුතුමා සඳහන් කරයි. ඒ වෙනුවට ඉහත දේශනාව ඇසුරු කරන්නටයි ගුරුතුමා සඳහන් කරයි.
+#68
+හදිසි කරුණක් නිසා 2025-02-14 පන්තිය නොපවත්වන බව ගුරුතුමා සඳහන් කරයි. ඒ වෙනුවට ඉහත දේශනාව ඇසුරු කරන්නටයි ගුරුතුමා සඳහන් කරයි.
+#69
+#660
+හදිසි කරුණක් නිසා ජනවාරි 18 දින පන්තිය නො පවත්වන බව ද, ඒ වෙනුවට ඉහත දේශනාව ඇසුරු කරන්නටයි ගුරුතුමා සඳහන් කරයි. 
+#670
+ආධයාත්මික  කටයුත්තක් නිසා අද 2025 01 25  සෙනසුරාදා  දේශනාව නොපවත්වන බව ද, ඒ වෙනුවට ඉහත දේශනාව ඇසුරු කරන්නටයි ගුරුතුමා සඳහන් කරයි. 
+#68
+#100
+#150
+#200
+#1000
+end
