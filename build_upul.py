@@ -2,15 +2,15 @@
 #
 # If there is an update (new video) in Kaluthala Bodhiya K lesson series
 # then add an entry to the last line of the file: 
-#   KalutaraBodhiya/K_series/K_series_ytlinks.txt
+#   KalutaraBodhiya/L_series/L_series_ytlinks.txt
 #
 # If there is an update to the Thalawathugoda series,
 # then add an entry to the last line of the file:
-#   NivanMagaUdesaDesana/Thalawathugoda/Thalawathugoda_ytlinks.txt
+#   NivanMagaUdesaDesana/ThalawathugodaB/ThalawathugodaB_ytlinks.txt
 #
-# If there is an update to the Abhidharma Aruth C (Polgasowita) series,
+# If there is an update to the Abhidharma Aruth D (Polgasowita) series,
 # then add an entry to the last line of the file:
-#   AbhidharmaAruth/C_series/AbhidharmaAruth_C_ytlinks.txt
+#   AbhidharmaAruth/D_series/AbhidharmaAruth_D_ytlinks.txt
 #
 # All files have the following format
 # <index> <optional description> <youtube link (URL)> <date>
@@ -43,14 +43,16 @@
 menu_change = False 
 
 if menu_change == True:
-    from scripts.py import build_series_AbhidharmaASeries
-    build_series_AbhidharmaASeries
-    from scripts.py import build_series_I
-    build_series_I
-    from scripts.py import build_series_J
-    build_series_J
-    from scripts.py import build_series_K
-    build_series_K
+    from scripts import gen_series_past
+    gen_series_past
+    #from scripts.py import build_series_AbhidharmaASeries
+    #build_series_AbhidharmaASeries
+    #from scripts.py import build_series_I
+    #build_series_I
+    #from scripts.py import build_series_J
+    #build_series_J
+    #from scripts.py import build_series_K
+    #build_series_K
     from scripts.py import build_ZoomPage
     build_ZoomPage
     from scripts.py import build_404Page
@@ -63,21 +65,23 @@ if menu_change == True:
     build_page_ChiththaChithasika
     from scripts.py import build_series_BCD
     build_series_BCD
-    from scripts.py import build_series_AbhidharmaAruth_EP
-    build_series_AbhidharmaAruth_EP
-    from scripts.py import build_series_AbhidharmaAruth_B1
-    build_series_AbhidharmaAruth_B1
-    from scripts.py import build_series_AbhidharmaAruth_B2
-    build_series_AbhidharmaAruth_B2
-    from scripts.py import build_series_AbhidharmaAruth_C
-    build_series_AbhidharmaAruth_C
-    from scripts.py import build_series_YouthForTruth
-    build_series_YouthForTruth
-    from scripts.py import build_series_Thalawathugoda
-    build_series_Thalawathugoda
+    #from scripts.py import build_series_AbhidharmaAruth_EP
+    #build_series_AbhidharmaAruth_EP
+    #from scripts.py import build_series_AbhidharmaAruth_B1
+    #build_series_AbhidharmaAruth_B1
+    #from scripts.py import build_series_AbhidharmaAruth_B2
+    #build_series_AbhidharmaAruth_B2
+    #from scripts.py import build_series_AbhidharmaAruth_C
+    #build_series_AbhidharmaAruth_C
+    #from scripts.py import build_series_YouthForTruth
+    #build_series_YouthForTruth
+    #from scripts.py import build_series_Thalawathugoda
+    #build_series_Thalawathugoda
     from scripts.py import build_series_SuthamayaHirigal
     build_series_SuthamayaHirigal
-    from scripts.py import build_series_NivanMagaUdesa
+    
+    
+    
     # Update
     # Chithatha_Chithasika (old page), and Vishesha Desana
   
@@ -100,6 +104,10 @@ list_AllVideos_AA
 from scripts.py import build_series_SiyaluDesana
 build_series_SiyaluDesana
 #build_series_ShortDhammaDiscussions
+
+from scripts import gen_homepage
+gen_homepage
+
 from scripts.py import build_homepage
 build_homepage
 

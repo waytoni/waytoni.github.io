@@ -105,6 +105,13 @@ css_file = "series_page_style_green.css"  # CSS file to use
 json_file = "AbhidharmaASeries.json"  # Output JSON file name
 gen_series()
 
+# සුතමයඤාණං - ඉත්තෑපාන අක්කර
+base_folder = "Suthamaya/Ittapane/"  # Replace with your series folder name
+html_file = "SuthamayaIttapane.html"  # Output HTML file name
+css_file = "series_page_style_green.css"  # CSS file to use
+json_file = "suthmaya_Ittapane.json"  # Output JSON file name
+gen_series()
+
 # YouthForTruth
 base_folder = "YouthForTruth"  # Replace with your series folder name
 html_file = "YouthForTruth.html"  # Output HTML file name

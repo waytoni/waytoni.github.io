@@ -25,7 +25,7 @@ html_file = os.path.join(basepath,'SiyaluDesana.html')
 playlist_url_EP = ''
 playlist_url_B = ''
 
-series_title = 'අභිධම්ම දේශනා  - සියල්ල'
+series_title = 'ගරු අජන්ත සම්පත් ගුරුතුමා මෙහෙයවන සහ මෙහෙයවූ දේශනා සියල්ල'
 
 print(intro_file)
 print(html_file)
@@ -48,15 +48,15 @@ with open(html_file, 'w', encoding="utf-8") as fp:
         ffavicon.close()
     
     fp.write('\t<meta name="viewport" content="width=device-width, initial-scale=1.0">\n')
-    fp.write('\t<link rel="stylesheet" type="text/css" href="../css/nav_menu.css">\n')
-    fp.write('\t<link rel="stylesheet" type="text/css" href="../css/dp_block.css">\n')
+    fp.write('\t<link rel="stylesheet" type="text/css" href="/css/nav_menu.css">\n')
+    fp.write('\t<link rel="stylesheet" type="text/css" href="/css/dp_block.css">\n')
     fp.write('\t<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />\n')
     fp.write('\t<script src="/scripts/nav_function.js"></script>\n')
     fp.write('\t<script src="/scripts/jquery-3.7.1.min.js"></script>\n')
     fp.write('\t<script src="/scripts/dp_function.js"></script>\n')
     fp.write('\t<body style="font-family:calibri;"></body>\n')
     fp.write('\t<link rel="icon" type="image/png" href="../images/favicon-16x16.png" sizes="16x16" />\n')
-    fp.write('\t<title>අභිධම්ම දේශනා  - සියල්ල</title>\n')
+    fp.write('\t<title>ගරු අජන්ත සම්පත් ගුරුතුමා මෙහෙයවන සහ මෙහෙයවූ දේශනා සියල්ල</title>\n')
     
     fp.write('</head>\n<body>\n')
 
@@ -65,7 +65,7 @@ with open(html_file, 'w', encoding="utf-8") as fp:
         fp.write(navbar_info)
         fnavbar.close()
 
-    fp.write('<h1>අභිධම්ම දේශනා  - සියල්ල</h1>\n')
+    fp.write('<h1>ගරු අජන්ත සම්පත් ගුරුතුමා මෙහෙයවන සහ මෙහෙයවූ දේශනා සියල්ල</h1>\n')
     
     #fp.write('<h2><li><a href="/documents/file_list.html">සියලු අභිධම්ම දේශනා සඳහා සටහන්</a></li></h2>\n')
     
@@ -83,7 +83,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('</div>\n')
     fp.close()
     
-### 1st
+### 2nd
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('<div class="normal-head">\n')
@@ -91,7 +91,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('</div>\n')
     fp.close() 
 
-### 2nd
+### 3rd
 id = id + 1   
 with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('<div class="normal-head">\n')
@@ -99,7 +99,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('</div>\n')
     fp.close()
 
-### 3rd
+### 4th
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('<div class="normal-head">\n')
@@ -143,7 +143,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('</div>\n')
     fp.close() 
 
-#### 7th
+#### 9th
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('<div class="normal-head">\n')
@@ -151,7 +151,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('</div>\n')
     fp.close()
         
-#### 8th
+#### 10th
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
@@ -160,7 +160,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('</div>\n')
     fp.close()
         
-#### 9th
+#### 11th
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('<div class="normal-head">\n')
@@ -168,7 +168,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('</div>\n')
     fp.close()  
     
-#### 10th
+#### 12th
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
@@ -178,7 +178,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.close()
 
 
-#### 11th
+#### 13th
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
@@ -187,7 +187,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('</div>\n')
     fp.close()
 
-####  12th
+####  14th
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('<div class="normal-head">\n')
@@ -195,7 +195,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('</div>\n')
     fp.close()  
     
-#### 13th
+#### 15th
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('<div class="normal-head">\n')
@@ -203,7 +203,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('</div>\n')
     fp.close()  
 
-#### 14th
+#### 16th
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
@@ -213,15 +213,25 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.close()
 
 #### 15th
+# id = id + 1
+# playlist_url_suthamaya_eththapana = ''
+# playlist_suthamaya_eththapana = 'Suthamaya/suthamaya_eththapana.txt'
+# playlist_title_suthamaya_eththapana = "සුතමයඤාණං - ඉත්තෑපාන අක්කර"
+# series_title_suthamaya_eththapana = "සුතමයඤාණං දේශනා මාලාව - ඉත්තෑපාන අක්කර"
+# HtmlDropdownBlockNoSections(id, playlist_suthamaya_eththapana, playlist_title_suthamaya_eththapana, html_file, '', '', series_title_suthamaya_eththapana)
+
+
+#### 17th
 id = id + 1
-playlist_url_suthamaya_eththapana = ''
-playlist_suthamaya_eththapana = 'Suthamaya/suthamaya_eththapana.txt'
-playlist_title_suthamaya_eththapana = "සුතමයඤාණං - ඉත්තෑපාන අක්කර"
-series_title_suthamaya_eththapana = "සුතමයඤාණං දේශනා මාලාව - ඉත්තෑපාන අක්කර"
-HtmlDropdownBlockNoSections(id, playlist_suthamaya_eththapana, playlist_title_suthamaya_eththapana, html_file, '', '', series_title_suthamaya_eththapana)
+with open(html_file, 'a', encoding="utf-8") as fp:
+    #fp.write('<br>\n')
+    fp.write('<div class="normal-head">\n')
+    fp.write(f'<h2>{id}. <a href="/Suthamaya/Ittapane/SuthamayaIttapane.html">සුතමයඤාණං දේශනා මාලාව - ඉත්තෑපාන අක්කර</a></h2>\n')
+    fp.write('</div>\n')
+    fp.close()
 
     
-##### 16th
+##### 18th
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')

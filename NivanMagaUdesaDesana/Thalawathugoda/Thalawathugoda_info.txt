@@ -3,7 +3,7 @@
 # This information must be present.
 # The introductory information will contain html code
 
-            <h1>කල්‍යාණ මිත්‍ර අජන්ත සම්පත් ගුරුතුමා මෙහෙයවන</h1>
+            <h1>ගරු අජන්ත සම්පත් ගුරුතුමා මෙහෙයවූ</h1>
             <h2>තලවතුගොඩ (ගනේලන්ද පන්සල) පැවෙත්වුන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව</h2>
            
 

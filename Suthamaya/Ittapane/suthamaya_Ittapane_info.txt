@@ -1,38 +1,37 @@
 ## INTRO ###
 # This is the introductory information of the page.
 # This information must be present.
-# The introductory information will contain html code
+# The introductory information may contain HTML code
 
             <h1>ගරු අජන්ත සම්පත් ගුරුතුමා මෙහෙයවූ</h1>
-            <h2>පොල්ගස්ඕවිට කුරුළුබැද්ද පරිශ්‍රයේ දී පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව</h2>
-            <p>(B කන්ඩායම - පළමු කොටස)</p>
+            <h1>ඉත්තෑපාන අක්කර දී පැවැත්වුන සුතමයඤාණං දේශනා මාලාව</h1>
 
 ## TITLE ##
 # This is the title used in the final HTML file
 
-පොල්ගස්ඕවිට පැවෙත්වුන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (B කන්ඩායම - පළමු කොටස)
+සුතමයඤාණං - ඉත්තෑපාන අක්කර
 
 ## SERIES_TITLE ##
 # This is optional. If not specified, sames the TITLE info will be used.
 # This is the default title used in the dropdown menu.
 
-පොල්ගස්ඕවිට පැවෙත්වුන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (B කන්ඩායම - පළමු කොටස)
+සුතමයඤාණං - ඉත්තෑපාන අක්කර
 
 ## TIME ###
 # This information is necessary for all on-going series.
 
-<p>බ්‍රහස්පතින්දා ප.ව. 12:30 සිට 3:00 දක්වා</p>
+පොහෝ දින
 
 ## LOCATION ##
 # This information is optional; however, add this for all on-going series
 # You may add html code to this selection.
 
-පොල්ගස්ඕවිට, පලාගම (කුරුළුබැද්ද)
+ඉත්තෑපාන අක්කර
 
 # ## CONTACT ##
 # This information is optional; however, add this for all on-going series
 
-# 071 448 0752 හෝ 077 704 7174
+# 
 
 ## ZOOM_INFO ##
 # This section is necessary only if special Zoom instructions are to be provided.
@@ -40,7 +39,7 @@
 # Use the date format YYYY-MM-DD
 # Provide the file name in Zoom_Info folder that contains the Zoom information.
 # Default file name is ZoomInfo_basic.html
-2025-11-11
+
 ZoomInfo_basic.html
 
 ## VIDEO_SELECTOR ##
