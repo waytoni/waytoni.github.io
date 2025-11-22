@@ -43,6 +43,25 @@ body {
     font-size: 1.8rem;
 }
 
+.hero-section h2 {
+    margin: 0 0 15px;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.hero-section h2 a {
+    margin: 0 0 15px;
+    color:  #d4af37; /* or use orange;  */
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.hero-section h2 a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #f0c850; /* Slightly lighter gold for hover effect */
+}
+
 .hero-section p {
     margin: 5px 0;
     font-size: 1rem;
