@@ -17,21 +17,13 @@ basepath = 'All_Playlists'
 
 intro_file = os.path.join(basepath,'SiyaluDesana_intro.html')
 
-
-utube_links_EP = os.path.join(basepath,'Abhidharma_Aruth_youtube_links.txt')
-utube_links_B = os.path.join(basepath,'Abhidharma_Aruth_B_youtube_links.txt')
 html_file = os.path.join(basepath,'SiyaluDesana.html')
-
-playlist_url_EP = ''
-playlist_url_B = ''
 
 series_title = 'ගරු අජන්ත සම්පත් ගුරුතුමා මෙහෙයවන සහ මෙහෙයවූ දේශනා සියල්ල'
 
 print(intro_file)
 print(html_file)
 
-
-# PrepareHead(html_file, series_title)
 
 ##### prepare head for Siyalu Desana
 with open(html_file, 'w', encoding="utf-8") as fp:
