@@ -27,43 +27,30 @@ print(intro_file)
 print(html_file)
 
 
+def siyalu_desana():
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    template_file = os.path.join(base_dir, 'script', 'SiyuluDesana_template.html ')
+    navigation_file = 'scripts/py/navigation_header.html'  # Adjusted path
+    # Read template
+    try:
+        with open(template_file, 'r', encoding='utf-8') as file:
+            template_content = file.read()
+    except FileNotFoundError:
+        print(f"Error: Template file {template_file} not found.")
+        return
 
-##### prepare head for Siyalu Desana
-with open(html_file, 'w', encoding="utf-8") as fp:
-    fp.write('<html>\n<head>\n')
+    # Replace navigation header
+    try:
+        with open(navigation_file, 'r', encoding='utf-8') as file:
+            navigation_content = file.read()
+        template_content = template_content.replace('$NAVIGATION_HEADER$', navigation_content)
+        print("Successfully replaced navigation header")
+    except FileNotFoundError:
+        print(f"Error: Navigation file {navigation_file} not found.")
+        return
     
-    with open('scripts/analytics_tag.txt', 'r', encoding="utf-8") as ftag:
-        tag_info = ftag.read()
-        fp.write(tag_info)
-        ftag.close()
     
-    with open('scripts/py/favicon_temp.html', 'r', encoding="utf-8") as ffavicon:
-        favicon_info = ffavicon.read()
-        fp.write(favicon_info)
-        ffavicon.close()
-    
-    fp.write('\t<meta name="viewport" content="width=device-width, initial-scale=1.0">\n')
-    fp.write('\t<link rel="stylesheet" type="text/css" href="/css/nav_menu.css">\n')
-    fp.write('\t<link rel="stylesheet" type="text/css" href="/css/dp_block.css">\n')
-    fp.write('\t<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />\n')
-    fp.write('\t<script src="/scripts/nav_function.js"></script>\n')
-    fp.write('\t<script src="/scripts/jquery-3.7.1.min.js"></script>\n')
-    fp.write('\t<script src="/scripts/dp_function.js"></script>\n')
-    fp.write('\t<body style="font-family:calibri;"></body>\n')
-    fp.write('\t<link rel="icon" type="image/png" href="../images/favicon-16x16.png" sizes="16x16" />\n')
-    fp.write('\t<title>ගරු අජන්ත සම්පත් ගුරුතුමා මෙහෙයවන සහ මෙහෙයවූ දේශනා සියල්ල</title>\n')
-    
-    fp.write('</head>\n<body>\n')
 
-    with open('scripts/py/navigation_header.html', 'r', encoding="utf-8") as fnavbar:
-        navbar_info = fnavbar.read()
-        fp.write(navbar_info)
-        fnavbar.close()
-
-    fp.write('<h1>ගරු අජන්ත සම්පත් ගුරුතුමා මෙහෙයවන සහ මෙහෙයවූ දේශනා සියල්ල</h1>\n')
-    
-   
-    fp.close()
 
 #### 1st
 id = 1
@@ -202,15 +189,6 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write(f'<h2>{id}. <a href="/Suthamaya/SuthamayaHirigal.html">සුතමයඤාණං දේශනා මාලාව - හිරිගල් ගොඩැල්ල ශ්‍රී පුෂ්පාරාමය</a></h2>\n')
     fp.write('</div>\n')
     fp.close()
-
-#### 15th
-# id = id + 1
-# playlist_url_suthamaya_eththapana = ''
-# playlist_suthamaya_eththapana = 'Suthamaya/suthamaya_eththapana.txt'
-# playlist_title_suthamaya_eththapana = "සුතමයඤාණං - ඉත්තෑපාන අක්කර"
-# series_title_suthamaya_eththapana = "සුතමයඤාණං දේශනා මාලාව - ඉත්තෑපාන අක්කර"
-# HtmlDropdownBlockNoSections(id, playlist_suthamaya_eththapana, playlist_title_suthamaya_eththapana, html_file, '', '', series_title_suthamaya_eththapana)
-
 
 #### 17th
 id = id + 1

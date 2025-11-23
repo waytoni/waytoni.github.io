@@ -1,38 +1,38 @@
 ## INTRO ###
 # This is the introductory information of the page.
 # This information must be present.
-# The introductory information will contain html code
+# The introductory information will contain HTML code
 
-            <h1>කල්‍යාණ මිත්‍ර අජන්ත සම්පත් ගුරුතුමා මෙහෙයවන</h1>
-            <h2>තලවතුගොඩ (ගනේලන්ද පන්සල) පැවෙත්වුන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව</h2>
-           
+            <h1>ගරු අජන්ත සම්පත් ගුරුතුමා මෙහෙයවූ</h1>
+            <h2>කළුතර බෝධි පරිශ්‍රයේදී පැවැත්වුන පරමාර්ථ ලෝකය දේශනා මාලාව</h2>
+            <p>ප්‍රථම (A) කන්ඩායම</p>
 
 ## TITLE ##
 # This is the title used in the final HTML file
 
-තලවතුගොඩ (ගනේලන්ද පන්සල) පැවෙත්වුන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව
+කළුතර බෝධියේදී පැවැත්වුන  ප්‍රථම දේශනා මාලාව (A Series)
 
 ## SERIES_TITLE ##
 # This is optional. If not specified, sames the TITLE info will be used.
 # This is the default title used in the dropdown menu.
 
-තලවතුගොඩ (ගනේලන්ද පන්සල) පැවෙත්වුන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව
+කළුතර බෝධි පරිශ්‍රයේදී පැවැත්වුන ප්‍රථම දේශනා මාලාව (A Series)
 
 ## TIME ###
 # This information is necessary for all on-going series.
 
-සෑම සෙනසුරාදාම ප.ව. 1:00 සිට ප.ව. 5:00 දක්වා
+<p>සෑම ඉරිදාවකම ප.ව. 2:00 සිට ප.ව. 4:30 දක්වා</p>
 
 ## LOCATION ##
 # This information is optional; however, add this for all on-going series
 # You may add html code to this selection.
 
-<a href="https://maps.app.goo.gl/3qfV6TMmaVUKSVC2A">ගනේලන්ද පුරාණ බෞද්ධ විහාරය</a>
+කළුතර බෝධි පරිශ්‍රයේදී 
 
-# ## CONTACT ##
+# # CONTACT ##
 # This information is optional; however, add this for all on-going series
 
-# 077 291 4857 හෝ 071 408 9536
+# 077 031 0768
 
 ## ZOOM_INFO ##
 # This section is necessary only if special Zoom instructions are to be provided.

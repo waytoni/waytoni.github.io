@@ -55,6 +55,20 @@ css_file = "series_page_style_green.css"  # CSS file to use
 json_file = "I_series.json"  # Output JSON file name
 gen_series()
 
+# I_series
+base_folder = "KalutaraBodhiya/H_series"  # Replace with your series folder name
+html_file = "H_series.html"  # Output HTML file name
+css_file = "series_page_style_green.css"  # CSS file to use
+json_file = "H_series.json"  # Output JSON file name
+gen_series()
+
+# A_series
+base_folder = "KalutaraBodhiya/A_series"  # Replace with your series folder name
+html_file = "A_series.html"  # Output HTML file name
+css_file = "series_page_style_green.css"  # CSS file to use
+json_file = "A_series.json"  # Output JSON file name
+gen_series()
+
 # AbhidharmaAruthC
 base_folder = "AbhidharmaAruth/C_series"  # Replace with your series folder name
 html_file = "AbhidharmaAruthC.html"  # Output HTML file name
@@ -110,6 +124,20 @@ base_folder = "Suthamaya/Ittapane/"  # Replace with your series folder name
 html_file = "SuthamayaIttapane.html"  # Output HTML file name
 css_file = "series_page_style_green.css"  # CSS file to use
 json_file = "suthmaya_Ittapane.json"  # Output JSON file name
+gen_series()
+
+# සුතමයඤාණං - හිරිගල් ගොඩැල්ල ශ්‍රී පුෂ්පාරාමය
+base_folder = "Suthamaya/Hirigal/"  # Replace with your series folder name
+html_file = "SuthamayaHirigal.html"  # Output HTML file name
+css_file = "series_page_style_green.css"  # CSS file to use
+json_file = "suthmayaHirigal.json"  # Output JSON file name
+gen_series()
+
+# සුතමයඤාණං දේශනා මාලාව - ශ්‍රී සුධර්ශනාරාම මහා විහාරය මතුගම
+base_folder = "Suthamaya/Mathugama/"  # Replace with your series folder name
+html_file = "SuthamayaMathugama.html"  # Output HTML file name
+css_file = "series_page_style_green.css"  # CSS file to use
+json_file = "suthmayaMathugama.json"  # Output JSON file name
 gen_series()
 
 # YouthForTruth

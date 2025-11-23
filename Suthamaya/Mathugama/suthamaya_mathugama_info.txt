@@ -1,0 +1,49 @@
+## INTRO ###
+# This is the introductory information of the page.
+# This information must be present.
+# The introductory information may contain HTML code
+
+            <h1>ගරු අජන්ත සම්පත් ගුරුතුමා මෙහෙයවූ</h1>
+            <h1>ශ්‍රී සුධර්ශනාරාම මහා විහාරය මතුගම දී පැවැත්වුන සුතමයඤාණං දේශනා මාලාව</h1>
+
+## TITLE ##
+# This is the title used in the final HTML file
+
+සුතමයඤාණං දේශනා මාලාව - ශ්‍රී සුධර්ශනාරාම මහා විහාරය මතුගම
+
+## SERIES_TITLE ##
+# This is optional. If not specified, sames the TITLE info will be used.
+# This is the default title used in the dropdown menu.
+
+සුතමයඤාණං දේශනා මාලාව - ශ්‍රී සුධර්ශනාරාම මහා විහාරය මතුගම
+
+## TIME ###
+# This information is necessary for all on-going series.
+
+පොහෝ දින
+
+## LOCATION ##
+# This information is optional; however, add this for all on-going series
+# You may add html code to this selection.
+
+ශ්‍රී සුධර්ශනාරාම මහා විහාරය මතුගම
+
+# ## CONTACT ##
+# This information is optional; however, add this for all on-going series
+
+# 
+
+## ZOOM_INFO ##
+# This section is necessary only if special Zoom instructions are to be provided.
+# If included provide the date until which the Zoom information is valid.
+# Use the date format YYYY-MM-DD
+# Provide the file name in Zoom_Info folder that contains the Zoom information.
+# Default file name is ZoomInfo_basic.html
+
+ZoomInfo_basic.html
+
+## VIDEO_SELECTOR ##
+# The video_number given in this section will point to the video that will be shown when a series page is opened.
+# It is better to remove this section unless there is a special reason.
+1
+
