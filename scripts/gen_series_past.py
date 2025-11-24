@@ -76,6 +76,13 @@ css_file = "series_page_style_green.css"  # CSS file to use
 json_file = "F_series.json"  # Output JSON file name
 gen_series()
 
+# E_series
+base_folder = "KalutaraBodhiya/E_series"  # Replace with your series folder name
+html_file = "E_series.html"  # Output HTML file name
+css_file = "series_page_style_green.css"  # CSS file to use
+json_file = "E_series.json"  # Output JSON file name
+gen_series()
+
 # A_series
 base_folder = "KalutaraBodhiya/A_series"  # Replace with your series folder name
 html_file = "A_series.html"  # Output HTML file name

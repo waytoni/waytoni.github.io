@@ -270,24 +270,24 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('</div>\n')
     fp.close()
 
-##### 21st
-id = id + 1
-playlist_KB_E = 'KalutaraBodhiya/E_series.txt'
-playlist_title_KB_E = "Kalutara Bodhiya E Series"
-series_title_KB_E = "කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වුන පස්වෙනි දේශනා මාලාව (E Series)"
-HtmlDropdownBlockNoSections(6, playlist_KB_E, playlist_title_KB_E, html_file, '', '', series_title_KB_E)
-
-##### 25th
+##### 6th
+with open(html_file, 'a', encoding="utf-8") as fp:
+    fp.write('<div class="normal-head">\n')
+    fp.write(f'<h2>6. <a href="/KalutaraBodhiya/E_series/E_series.html">2018-2019 කළුතර බෝධි පරිශ්‍රයේදී පැවැත්වුන පස්වෙනි දේශනා මාලාව (E Series)</a></h2>\n')
+    fp.write('</div>\n')
+    fp.close()
+    
+##### 3, 4, 5
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
     fp.write('<div class="normal-head">\n')
-    fp.write(f'<h2>3, 4 සහ 5. <a href="/KalutaraBodhiya/B_C_D_Batches.html">කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වුන දෙවන, තෙවන සහ සිව්වන අභිධම්ම දේශනා කාණ්ඩ (B, C, සහ D)</a>\n</h2>')
+    fp.write(f'<h2>3, 4 සහ 5. <a href="/KalutaraBodhiya/B_C_D_Batches.html">2015-2018 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වුන දෙවන, තෙවන සහ සිව්වන දේශනා කාණ්ඩ (B, C, සහ D)</a>\n</h2>')
     fp.write('</div>\n')
     fp.close()
 
 
-##### 26th
+##### 2nd
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
@@ -296,7 +296,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('</div>\n')
     fp.close()
     
-###### 27th
+###### 1st
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('<div class="normal-head">\n')
