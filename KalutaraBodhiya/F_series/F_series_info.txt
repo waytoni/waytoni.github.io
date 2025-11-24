@@ -1,22 +1,23 @@
 ## INTRO ###
 # This is the introductory information of the page.
 # This information must be present.
-# The introductory information will contain HTML code
+# The introductory information will contain html code
 
             <h1>ගරු අජන්ත සම්පත් ගුරුතුමා මෙහෙයවූ</h1>
-            <h2>2013-2015 කළුතර බෝධි පරිශ්‍රයේදී පැවැත්වුන පරමාර්ථ ලෝකය දේශනා මාලාව</h2>
-            <p>ප්‍රථම (A) කන්ඩායම</p>
+            <h2>2019 කළුතර බෝධි පරිශ්‍රයේදී පැවැත්වුන දේශනා මාලාව </h2>
+            <p>හයවෙනි  (F) කන්ඩායම</p>
+<p><strong>දේශනා 1 සිට 5 දක්වා ලබා ගත නොහැක.</strong></p>
 
 ## TITLE ##
 # This is the title used in the final HTML file
 
-කළුතර බෝධියේදී පැවැත්වුන  ප්‍රථම දේශනා මාලාව (A Series)
+කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වුන හයවෙනි  දේශනා මාලාව (F Series)
 
 ## SERIES_TITLE ##
 # This is optional. If not specified, sames the TITLE info will be used.
 # This is the default title used in the dropdown menu.
 
-කළුතර බෝධි පරිශ්‍රයේදී පැවැත්වුන ප්‍රථම දේශනා මාලාව (A Series)
+කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වුන හයවෙනි  දේශනා මාලාව (F Series)
 
 ## TIME ###
 # This information is necessary for all on-going series.

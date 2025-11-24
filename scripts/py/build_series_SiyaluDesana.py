@@ -71,7 +71,7 @@ id = 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
     fp.write('<div class="normal-head">\n')
-    fp.write(f'<h2>{id}. <a href="/NivanMagaUdesaDesana/ThalawathugodaB/ThalawathugodaB.html">තලවතුගොඩ ගනේලන්ද පන්සලේ පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (B කන්ඩායම)</a></h2>\n')
+    fp.write(f'<h2>29. <a href="/NivanMagaUdesaDesana/ThalawathugodaB/ThalawathugodaB.html">තලවතුගොඩ ගනේලන්ද පන්සලේ පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (B කන්ඩායම)</a></h2>\n')
     fp.write('</div>\n')
     fp.close()
     
@@ -79,7 +79,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('<div class="normal-head">\n')
-    fp.write(f'<h2>{id}. <a href="/AbhidharmaAruth/D_series/AbhidharmaAruthD.html">පොල්ගස්ඕවිට පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (D කන්ඩායම)</a></h2>\n')
+    fp.write(f'<h2>28. <a href="/AbhidharmaAruth/D_series/AbhidharmaAruthD.html">පොල්ගස්ඕවිට පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (D කන්ඩායම)</a></h2>\n')
     fp.write('</div>\n')
     fp.close() 
 
@@ -87,7 +87,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
 id = id + 1   
 with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('<div class="normal-head">\n')
-    fp.write(f'<h2>{id}. <a href="/NivanMagaUdesaDesana/MaharagamaA/MaharagamaA.html">මහරගම තරුණ බෞද්ධ මන්දිරයේ පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව</a></h2>\n')
+    fp.write(f'<h2>27. <a href="/NivanMagaUdesaDesana/MaharagamaA/MaharagamaA.html">මහරගම තරුණ බෞද්ධ මන්දිරයේ පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව</a></h2>\n')
     fp.write('</div>\n')
     fp.close()
 
@@ -95,7 +95,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('<div class="normal-head">\n')
-    fp.write(f'<h2>{id}. <a href="/KalutaraBodhiya/L_series/L_series.html">2025 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (L Series)</a></h2>\n')
+    fp.write(f'<h2>26. <a href="/KalutaraBodhiya/L_series/L_series.html">2025 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (L Series)</a></h2>\n')
     fp.write('</div>\n')
     fp.close()
 
@@ -104,7 +104,7 @@ id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
     fp.write('<div class="normal-head">\n')
-    fp.write(f'<h2>{id}. <a href="/VisheshaDesana/RuwanweliMahaSeya/RuwanweliMahaSeya.html">පොහොය දිනවල රුවන්වැලි මහාසෑය අභියස පැවෙත්වෙන දේශනා</a></h2>\n')
+    fp.write(f'<h2>25. <a href="/VisheshaDesana/RuwanweliMahaSeya/RuwanweliMahaSeya.html">පොහොය දිනවල රුවන්වැලි මහාසෑය අභියස පැවෙත්වෙන දේශනා</a></h2>\n')
     fp.write('</div>\n')
     fp.close()
     
@@ -113,7 +113,7 @@ id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
     fp.write('<div class="normal-head">\n')
-    fp.write(f'<h2>{id}. <a href="../VisheshaDesana/index.html">විශේෂ දේශනා</a></h2>\n')
+    fp.write(f'<h2>24. <a href="../VisheshaDesana/index.html">විශේෂ දේශනා</a></h2>\n')
     fp.write('</div>\n')
     fp.close()
     
@@ -123,7 +123,7 @@ id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
     fp.write('<div class="normal-head">\n')
-    fp.write(f'<h2>{id}. <a href="/NivanMagaUdesaDesana/Thalawathugoda/Thalawathugoda.html">තලවතුගොඩ ගනේලන්ද පන්සලේ පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව</a></h2>\n')
+    fp.write(f'<h2>23. <a href="/NivanMagaUdesaDesana/Thalawathugoda/Thalawathugoda.html">තලවතුගොඩ ගනේලන්ද පන්සලේ පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව</a></h2>\n')
     fp.write('</div>\n')
     fp.close()
 
@@ -131,7 +131,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('<div class="normal-head">\n')
-    fp.write(f'<h2>{id}. <a href="/AbhidharmaAruth/C_series/AbhidharmaAruthC.html">පොල්ගස්ඕවිට පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (C කන්ඩායම)</a></h2>\n')
+    fp.write(f'<h2>22. <a href="/AbhidharmaAruth/C_series/AbhidharmaAruthC.html">පොල්ගස්ඕවිට පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (C කන්ඩායම)</a></h2>\n')
     fp.write('</div>\n')
     fp.close() 
 
@@ -139,7 +139,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('<div class="normal-head">\n')
-    fp.write(f'<h2>{id}. <a href="/KalutaraBodhiya/K_series/K_series.html">2025 කළුතර බෝධි පරිශ්‍රයේදී පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (K Series)</a></h2>\n')
+    fp.write(f'<h2>21. <a href="/KalutaraBodhiya/K_series/K_series.html">2025 කළුතර බෝධි පරිශ්‍රයේදී පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (K Series)</a></h2>\n')
     fp.write('</div>\n')
     fp.close()
         
@@ -148,7 +148,7 @@ id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
     fp.write('<div class="normal-head">\n')
-    fp.write(f'<h2>{id}. <a href="/NivanMagaUdesaDesana/A_series/index.html">නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (A කණ්ඩායම)</a></h2>\n')
+    fp.write(f'<h2>20. <a href="/NivanMagaUdesaDesana/A_series/index.html">නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (A කණ්ඩායම)</a></h2>\n')
     fp.write('</div>\n')
     fp.close()
         
@@ -156,7 +156,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('<div class="normal-head">\n')
-    fp.write(f'<h2>{id}. <a href="/AbhidharmaAruth/B2_series/AbhidharmaAruthB2.html">පොල්ගස්ඕවිට පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (B කන්ඩායම - දෙවන කොටස)</a></h2>\n')
+    fp.write(f'<h2>19. <a href="/AbhidharmaAruth/B2_series/AbhidharmaAruthB2.html">පොල්ගස්ඕවිට පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (B කන්ඩායම - දෙවන කොටස)</a></h2>\n')
     fp.write('</div>\n')
     fp.close()  
     
@@ -165,7 +165,7 @@ id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
     fp.write('<div class="normal-head">\n')
-    fp.write(f'<h2>{id}. <a href="/KalutaraBodhiya/J_series/J_series.html">2024 කළුතර බෝධි පරිශ්‍රයේදී පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (J Series)</a></h2>\n')
+    fp.write(f'<h2>18. <a href="/KalutaraBodhiya/J_series/J_series.html">2024 කළුතර බෝධි පරිශ්‍රයේදී පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (J Series)</a></h2>\n')
     fp.write('</div>\n')
     fp.close()
 
@@ -175,7 +175,7 @@ id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
     fp.write('<div class="normal-head">\n')
-    fp.write(f'<h2>{id}. <a href="/AbhidharmaSeries/A_series/index.html">තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා මාලාව</a></h2>\n')
+    fp.write(f'<h2>17. <a href="/AbhidharmaSeries/A_series/index.html">තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා මාලාව</a></h2>\n')
     fp.write('</div>\n')
     fp.close()
 
@@ -183,7 +183,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('<div class="normal-head">\n')
-    fp.write(f'<h2>{id}. <a href="/AbhidharmaAruth/B1_series/AbhidharmaAruthB1.html">පොල්ගස්ඕවිට පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (B කන්ඩායම - පළමු කොටස)</a></h2>\n')
+    fp.write(f'<h2>16. <a href="/AbhidharmaAruth/B1_series/AbhidharmaAruthB1.html">පොල්ගස්ඕවිට පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (B කන්ඩායම - පළමු කොටස)</a></h2>\n')
     fp.write('</div>\n')
     fp.close()  
     
@@ -191,7 +191,7 @@ with open(html_file, 'a', encoding="utf-8") as fp:
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('<div class="normal-head">\n')
-    fp.write(f'<h2>{id}. <a href="/AbhidharmaAruth/EP_series/AbhidharmaAruthEP.html">පොල්ගස්ඕවිට පැවැත්වුන අභිධර්ම අරුත් දේශනා මාලාව (EP)</a></h2>\n')
+    fp.write(f'<h2>15. <a href="/AbhidharmaAruth/EP_series/AbhidharmaAruthEP.html">පොල්ගස්ඕවිට පැවැත්වුන අභිධර්ම අරුත් දේශනා මාලාව (EP)</a></h2>\n')
     fp.write('</div>\n')
     fp.close()  
 
@@ -200,7 +200,7 @@ id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
     fp.write('<div class="normal-head">\n')
-    fp.write(f'<h2>{id}. <a href="/Suthamaya/Hirigal/SuthamayaHirigal.html">සුතමයඤාණං දේශනා මාලාව - හිරිගල් ගොඩැල්ල ශ්‍රී පුෂ්පාරාමය</a></h2>\n')
+    fp.write(f'<h2>14. <a href="/Suthamaya/Hirigal/SuthamayaHirigal.html">සුතමයඤාණං දේශනා මාලාව - හිරිගල් ගොඩැල්ල ශ්‍රී පුෂ්පාරාමය</a></h2>\n')
     fp.write('</div>\n')
     fp.close()
 
@@ -209,7 +209,7 @@ id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
     fp.write('<div class="normal-head">\n')
-    fp.write(f'<h2>{id}. <a href="/Suthamaya/Ittapane/SuthamayaIttapane.html">සුතමයඤාණං දේශනා මාලාව - ඉත්තෑපාන අක්කර</a></h2>\n')
+    fp.write(f'<h2>13. <a href="/Suthamaya/Ittapane/SuthamayaIttapane.html">සුතමයඤාණං දේශනා මාලාව - ඉත්තෑපාන අක්කර</a></h2>\n')
     fp.write('</div>\n')
     fp.close()
 
@@ -219,7 +219,7 @@ id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
     fp.write('<div class="normal-head">\n')
-    fp.write(f'<h2>{id}. <a href="/KalutaraBodhiya/I_series/I_series.html">කළුතර බෝධි පරිශ්‍රයේදී පැවැත්වුන 9වෙනි දේශනා මාලාව (I Series)</a></h2>\n')
+    fp.write(f'<h2>12. <a href="/KalutaraBodhiya/I_series/I_series.html">කළුතර බෝධි පරිශ්‍රයේදී පැවැත්වුන 9වෙනි දේශනා මාලාව (I Series)</a></h2>\n')
     fp.write('</div>\n')
     fp.close()
 
@@ -228,7 +228,7 @@ id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
     fp.write('<div class="normal-head">\n')
-    fp.write(f'<h2>{id}. <a href="/Suthamaya/Mathugama/SuthamayaMathugama.html">සුතමයඤාණං දේශනා මාලාව - ශ්‍රී සුධර්ශනාරාම මහා විහාරය මතුගම</a></h2>\n')
+    fp.write(f'<h2>11. <a href="/Suthamaya/Mathugama/SuthamayaMathugama.html">සුතමයඤාණං දේශනා මාලාව - ශ්‍රී සුධර්ශනාරාම මහා විහාරය මතුගම</a></h2>\n')
     fp.write('</div>\n')
     fp.close()
     
@@ -237,7 +237,7 @@ id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
     fp.write('<div class="normal-head">\n')
-    fp.write(f'<h2>{id}. <a href="/KalutaraBodhiya/H_series/H_series.html">කළුතර බෝධි පරිශ්‍රයේදී පැවැත්වුන අටවෙනි දේශනා මාලාව (H Series)</a></h2>\n')
+    fp.write(f'<h2>10. <a href="/KalutaraBodhiya/H_series/H_series.html">2022-2023 කළුතර බෝධි පරිශ්‍රයේදී පැවැත්වුන අටවෙනි දේශනා මාලාව (H Series)</a></h2>\n')
     fp.write('</div>\n')
     fp.close()
 
@@ -246,40 +246,43 @@ with open(html_file, 'a', encoding="utf-8") as fp:
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('<div class="normal-head">\n')
-    fp.write(f'<h2>{id}. <a href="/Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html">අනිච්ච, දුක්ඛ, අනත්ත දේශනා</a>\n</h2>')
+    fp.write(f'<h2>9. <a href="/Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html">අනිච්ච, දුක්ඛ, අනත්ත දේශනා</a>\n</h2>')
     fp.write('</div>\n')
     fp.close()
     
 ##### 22nd
 id = id + 1
-playlist_KB_G = 'KalutaraBodhiya/G_series.txt'
-playlist_title_KB_G = "Kalutara Bodhiya G Series"
-series_title_KB_G = "කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වුන හත්වෙනි දේශනා මාලාව (G Series)"
-HtmlDropdownBlockNoSections(id, playlist_KB_G, playlist_title_KB_G, html_file, '', '', series_title_KB_G)
-
+with open(html_file, 'a', encoding="utf-8") as fp:
+    #fp.write('<br>\n')
+    fp.write('<div class="normal-head">\n')
+    fp.write(f'<h2>8. <a href="/KalutaraBodhiya/G_series/G_series.html">2020 කළුතර බෝධි පරිශ්‍රයේදී පැවැත්වුන හත්වෙනි දේශනා මාලාව (G Series)</a></h2>\n')
+    fp.write('</div>\n')
+    fp.close()
 
 
 
 ##### 20th
 id = id + 1
-playlist_KB_F = 'KalutaraBodhiya/F_series.txt'
-playlist_title_KB_F = "Kalutara Bodhiya F Series"
-series_title_KB_F = "කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වුන හයවෙනි දේශනා මාලාව (F Series)"
-HtmlDropdownBlockNoSections(id, playlist_KB_F, playlist_title_KB_F, html_file, '', '',series_title_KB_F)
+with open(html_file, 'a', encoding="utf-8") as fp:
+    #fp.write('<br>\n')
+    fp.write('<div class="normal-head">\n')
+    fp.write(f'<h2>7. <a href="/KalutaraBodhiya/F_series/F_series.html">2019 කළුතර බෝධි පරිශ්‍රයේදී පැවැත්වුන හයවෙනි දේශනා මාලාව (F Series)</a></h2>\n')
+    fp.write('</div>\n')
+    fp.close()
 
 ##### 21st
 id = id + 1
 playlist_KB_E = 'KalutaraBodhiya/E_series.txt'
 playlist_title_KB_E = "Kalutara Bodhiya E Series"
 series_title_KB_E = "කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වුන පස්වෙනි දේශනා මාලාව (E Series)"
-HtmlDropdownBlockNoSections(id, playlist_KB_E, playlist_title_KB_E, html_file, '', '', series_title_KB_E)
+HtmlDropdownBlockNoSections(6, playlist_KB_E, playlist_title_KB_E, html_file, '', '', series_title_KB_E)
 
 ##### 25th
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
     fp.write('<div class="normal-head">\n')
-    fp.write(f'<h2>{id}. <a href="/KalutaraBodhiya/B_C_D_Batches.html">කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වුන දෙවන, තෙවන සහ සිව්වන අභිධම්ම දේශනා කාණ්ඩ (B, C, සහ D)</a>\n</h2>')
+    fp.write(f'<h2>3, 4 සහ 5. <a href="/KalutaraBodhiya/B_C_D_Batches.html">කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වුන දෙවන, තෙවන සහ සිව්වන අභිධම්ම දේශනා කාණ්ඩ (B, C, සහ D)</a>\n</h2>')
     fp.write('</div>\n')
     fp.close()
 
@@ -289,7 +292,7 @@ id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     #fp.write('<br>\n')
     fp.write('<div class="normal-head">\n')
-    fp.write(f'<h2>{id}. <a href="/KalutaraBodhiya/A_series/A_series.html">කළුතර බෝධි පරිශ්‍රයේදී පැවැත්වුන ප්‍රථම දේශනා මාලාව (A Series)</a></h2>\n')
+    fp.write(f'<h2>2. <a href="/KalutaraBodhiya/A_series/A_series.html">2013-2015 කළුතර බෝධි පරිශ්‍රයේදී පැවැත්වුන ප්‍රථම දේශනා මාලාව (A Series)</a></h2>\n')
     fp.write('</div>\n')
     fp.close()
     
@@ -297,7 +300,8 @@ with open(html_file, 'a', encoding="utf-8") as fp:
 id = id + 1
 with open(html_file, 'a', encoding="utf-8") as fp:
     fp.write('<div class="normal-head">\n')
-    fp.write(f'<h2>{id}. <a href="/Paramartha_Video/Paramartha_Video.html">පරමාර්ථ ලෝකය දේශනා</a>\n</h2>')
+    #fp.write(f'<h2>{id}. <a href="/Paramartha_Video/Paramartha_Video.html">පරමාර්ථ ලෝකය දේශනා</a>\n</h2>')
+    fp.write(f'<h2>1. <a href="/Paramartha_Video/Paramartha_Video.html">පරමාර්ථ ලෝකය දේශනා</a>\n</h2>')
     fp.write('</div>\n')
     fp.close()
 
