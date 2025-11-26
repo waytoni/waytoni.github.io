@@ -1,5 +1,6 @@
 import json
 import re
+from datetime import datetime
 
 # Define a dictionary to map keywords to html tags
 keyword_dict = {
@@ -32,6 +33,90 @@ def parse_utlinks(file_path):
                         'date': date
                     })
     return utlinks
+
+def parse_ytlinks(file_path):
+    utlinks = []
+    with open(file_path, 'r', encoding='utf-8') as file:
+        for line_num, line in enumerate(file, 1):
+            line = line.strip()
+            if not line or line.startswith('#'):  # Skip empty lines and comments
+                continue
+                
+            # Improved regex to handle various date formats and optional fields
+            match = re.match(r'(\d+)\s+(.*?)\s*(https?://\S+)?\s+([\d\-A-Za-z]{8,})', line)
+            
+            if match:
+                index, comment, url, date_str = match.groups()
+                
+                if not url:  # Skip lines without URL
+                    continue
+                    
+                # Clean up comment field
+                if not comment.strip() or comment.startswith("http"):
+                    comment = ""
+                
+                # Parse date with multiple format support
+                parsed_date = parse_flexible_date(date_str)
+                
+                utlinks.append({
+                    'index': int(index),
+                    'comment': comment.strip(),
+                    'url': url,
+                    'date': parsed_date,
+                    'date_string': date_str,  # Keep original string for reference
+                    'line_number': line_num   # For error tracking
+                })
+            else:
+                print(f"Warning: Could not parse line {line_num}: {line}")
+    
+    return utlinks
+
+def parse_flexible_date(date_str):
+    """Parse dates in various formats including:
+    - 2024-May-23
+    - 2024-09-10
+    - 10-05-2024
+    - 24-05-11
+    - 2024/May/23
+    """
+    date_formats = [
+        '%Y-%b-%d',    # 2024-May-23
+        '%Y-%B-%d',    # 2024-May-23 (full month name)
+        '%Y-%m-%d',    # 2024-09-10
+        '%d-%m-%Y',    # 10-05-2024
+        '%y-%m-%d',    # 24-05-11
+        '%m-%d-%Y',    # 05-23-2024
+        '%Y/%b/%d',    # 2024/May/23
+        '%Y/%B/%d',    # 2024/May/23 (full month name)
+    ]
+    
+    # Try each format
+    for fmt in date_formats:
+        try:
+            return datetime.strptime(date_str, fmt).date()
+        except ValueError:
+            continue
+    
+    # If none work, try to handle month names case-insensitively
+    for fmt in ['%Y-%b-%d', '%Y-%B-%d', '%Y/%b/%d', '%Y/%B/%d']:
+        try:
+            # Convert to title case for month names (Mar, Apr, etc.)
+            parts = re.split(r'[-/]', date_str)
+            if len(parts) == 3:
+                month_part = parts[1]
+                if month_part.isalpha():
+                    normalized_date = f"{parts[0]}-{month_part.title()}-{parts[2]}"
+                    separator = '-' if '-' in date_str else '/'
+                    normalized_date = normalized_date.replace('-', separator)
+                    return datetime.strptime(normalized_date, fmt).date()
+        except (ValueError, IndexError):
+            continue
+    
+    print(f"Warning: Could not parse date: {date_str}")
+    return None
+
+
+
 
 def parse_notes(file_path, verbose=False):
     notes = {}
@@ -89,12 +174,16 @@ def parse_notes(file_path, verbose=False):
 
 def BuildDropDownMenuWithNavigation(utlinks_file, notes_file, json_file, verbose=False):
 
-    utlinks = parse_utlinks(utlinks_file)
+    utlinks = parse_ytlinks(utlinks_file)
     notes = parse_notes(notes_file, verbose=verbose)
 
-
+    #print(utlinks)
     for utlink in utlinks:
         utlink['notes'] = notes.get(utlink['index'], "")
+
+    for item in utlinks:
+        if item['date']:
+            item['date'] = item['date'].isoformat()
 
     with open(json_file, 'w', encoding='utf-8') as file:
         json.dump(utlinks, file, indent=4, ensure_ascii=False)
