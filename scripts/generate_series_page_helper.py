@@ -231,7 +231,7 @@ def generate_series_page(base_folder, html_file, json_file, css_file, on_going, 
     
       
     # Read template
-    template_path = os.path.join('scripts', 'series_page_template.html')
+    template_path = os.path.join('scripts', 'templates/series_page_template.html')
     try:
         with open(template_path, 'r', encoding='utf-8') as f:
             template_content = f.read()
