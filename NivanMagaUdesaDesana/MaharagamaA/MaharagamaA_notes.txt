@@ -5,6 +5,9 @@
 #10
 පටිච්චසමුප්පාදය img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 03.jpg
 සිත් බෙදෙන අයුරු img::/documents/NotesForDesana/0015 සිත් බෙදෙන අයුරු.jpeg
+#11
+සිත් බෙදෙන අයුරු img::/documents/NotesForDesana/0015 සිත් බෙදෙන අයුරු.jpeg
+සත්ව තල img::/documents/NotesForDesana/0005 සත්ව තල.jpg
 #110
 ඛජ්ජනීය සුත්තං  pdf::/documents/pdfs/ඛජ්ජනීය සුත්තං.pdf
 ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
