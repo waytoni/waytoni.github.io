@@ -25,7 +25,7 @@ print(html_file)
 
 def siyalu_desana():
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    template_file = os.path.join(base_dir, 'script', 'SiyuluDesana_template.html ')
+    template_file = os.path.join(base_dir, 'script', 'templates/SiyuluDesana_template.html ')
     navigation_file = 'scripts/py/navigation_header.html'  # Adjusted path
     # Read template
     try:
