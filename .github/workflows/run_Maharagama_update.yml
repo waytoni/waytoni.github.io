@@ -18,10 +18,7 @@ jobs:
           python-version: 3.11 # Set your desired Python version
 
       - name: Read MaharagamaA_serires
-        run: python scripts/gen_series_current.py
-
-      - name: Update All_Playlists for MaharagamaA addition
-        run: python scripts/py/build_series_SiyaluDesana.py
+        run: python scripts/gen_series_MaharagamaA.py
 
       - name: commit changes
         run: |

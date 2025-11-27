@@ -18,14 +18,11 @@ jobs:
           python-version: 3.11 # Python Version
 
       - name: Run Python Script for Abhidharma Aruth Desana D
-        run: python scripts/gen_series_current.py
+        run: python scripts/gen_series_AbhidharmaAruthD.py
      
-      - name: Update All_Playlists for Abhidharma Aruth Desana updates
-        run: python scripts/py/build_series_SiyaluDesana.py
-
       - name: commit changes
         run: |
           git config user.name "$(git log -n 1 --pretty=format:%an)"
           git config user.email "$(git log -n 1 --pretty=format:%ae)"
-          git commit -a -m "updated Abhidhamma Aruth Desana"
+          git commit -a -m "updated Abhidhamma Aruth Desana D Series"
           git push
