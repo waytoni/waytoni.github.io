@@ -1,142 +1,202 @@
 [
-    {
-        "index": 1,
-        "comment": "Abhidhamma lesson Kalutara Bodhiya G",
-        "url": "https://www.youtube.com/watch?v=wfIscw8VwTI",
-        "date": "2020-Jan-05",
-        "notes": ""
-    },
-    {
-        "index": 2,
-        "comment": "Abhidhamma lesson Kalutara Bodhiya G",
-        "url": "https://www.youtube.com/watch?v=h3YcjJ4OysY",
-        "date": "2020-Jan-12",
-        "notes": ""
-    },
-    {
-        "index": 3,
-        "comment": "Abhidhamma lesson Kalutara Bodhiya G",
-        "url": "https://www.youtube.com/watch?v=6tX4fJguBn0",
-        "date": "2020-Jan-19",
-        "notes": ""
-    },
-    {
-        "index": 4,
-        "comment": "Abhidhamma lesson Kalutara Bodhiya G",
-        "url": "https://www.youtube.com/watch?v=2ncB_XsVnuQ",
-        "date": "2020-Jan-26",
-        "notes": ""
-    },
-    {
-        "index": 5,
-        "comment": "Abhidhamma lesson Kalutara Bodhiya G",
-        "url": "https://www.youtube.com/watch?v=NhHMvTZk1hI",
-        "date": "2020-Feb-02",
-        "notes": ""
-    },
-    {
-        "index": 6,
-        "comment": "Abhidhamma lesson Kalutara Bodhiya G",
-        "url": "https://www.youtube.com/watch?v=ms-Nylrnucg",
-        "date": "2020-Feb-09",
-        "notes": ""
-    },
-    {
-        "index": 7,
-        "comment": "Abhidhamma lesson Kalutara Bodhiya G",
-        "url": "https://www.youtube.com/watch?v=rXPt9jsqOT4",
-        "date": "2020-Feb-16",
-        "notes": ""
-    },
-    {
-        "index": 8,
-        "comment": "Abhidhamma lesson Kalutara Bodhiya G",
-        "url": "https://www.youtube.com/watch?v=VjLtySLYr_g",
-        "date": "2020-Feb-23",
-        "notes": ""
-    },
-    {
-        "index": 9,
-        "comment": "Abhidhamma lesson Kalutara Bodhiya G",
-        "url": "https://www.youtube.com/watch?v=-48rQdjnAdE",
-        "date": "2020-Mar-01",
-        "notes": ""
-    },
-    {
-        "index": 10,
-        "comment": "Abhidhamma lesson Kalutara Bodhiya G",
-        "url": "https://www.youtube.com/watch?v=fMRc8vsIqVY",
-        "date": "2020-Mar-08",
-        "notes": ""
-    },
-    {
-        "index": 11,
-        "comment": "Abhidhamma lesson Kalutara Bodhiya G",
-        "url": "https://www.youtube.com/watch?v=dHuWCCU93ZE",
-        "date": "2020-Aug-23",
-        "notes": ""
-    },
-    {
-        "index": 12,
-        "comment": "Abhidhamma lesson Kalutara Bodhiya G",
-        "url": "https://www.youtube.com/watch?v=wkUXfOFFbUk",
-        "date": "2020-Aug-30",
-        "notes": ""
-    },
-    {
-        "index": 13,
-        "comment": "Abhidhamma lesson Kalutara Bodhiya G",
-        "url": "https://www.youtube.com/watch?v=Qhm6lBQSM1c",
-        "date": "2020-Sep-06",
-        "notes": ""
-    },
-    {
-        "index": 14,
-        "comment": "Abhidhamma lesson Kalutara Bodhiya G",
-        "url": "https://www.youtube.com/watch?v=lPPZ6CjWOAk",
-        "date": "2020-Sep-13",
-        "notes": ""
-    },
-    {
-        "index": 15,
-        "comment": "Abhidhamma lesson Kalutara Bodhiya G",
-        "url": "https://www.youtube.com/watch?v=jDA-04g377I",
-        "date": "2020-Sep-20",
-        "notes": ""
-    },
-    {
-        "index": 16,
-        "comment": "Abhidhamma lesson Kalutara Bodhiya G",
-        "url": "https://www.youtube.com/watch?v=r56xjuWBt4A",
-        "date": "2020-Sep-27",
-        "notes": ""
-    },
-    {
-        "index": 17,
-        "comment": "17A. Abhidhamma lesson Kalutara Bodhiya G",
-        "url": "https://www.youtube.com/watch?v=xJX9EqARGIg",
-        "date": "2020-Oct-04",
-        "notes": ""
-    },
-    {
-        "index": 17,
-        "comment": "17B. Abhidhamma lesson Kalutara Bodhiya G G1A1",
-        "url": "https://www.youtube.com/watch?v=OrTbNXD16wk",
-        "date": "2020-Oct-11",
-        "notes": ""
-    },
-    {
-        "index": 18,
-        "comment": "18A1. Abhidhamma lesson Kalutara Bodhiya G",
-        "url": "https://www.youtube.com/watch?v=4Y3UxQvIgu8",
-        "date": "2020-Oct-19",
-        "notes": ""
-    },
-    {
-        "index": 18,
-        "comment": "18A2. Abhidhamma lesson Kalutara Bodhiya G",
-        "url": "https://www.youtube.com/watch?v=E38EJe5pO54",
-        "date": "2020-Oct-19",
-        "notes": ""
-    }
+     {
+          "index": 1,
+          "comment": "Abhidhamma lesson Kalutara Bodhiya G",
+          "url": "https://www.youtube.com/watch?v=wfIscw8VwTI",
+          "date": "2020-01-05",
+          "video_id": "wfIscw8VwTI",
+          "date_string": "2020-Jan-05",
+          "line_number": 1,
+          "notes": ""
+     },
+     {
+          "index": 2,
+          "comment": "Abhidhamma lesson Kalutara Bodhiya G",
+          "url": "https://www.youtube.com/watch?v=h3YcjJ4OysY",
+          "date": "2020-01-12",
+          "video_id": "h3YcjJ4OysY",
+          "date_string": "2020-Jan-12",
+          "line_number": 2,
+          "notes": ""
+     },
+     {
+          "index": 3,
+          "comment": "Abhidhamma lesson Kalutara Bodhiya G",
+          "url": "https://www.youtube.com/watch?v=6tX4fJguBn0",
+          "date": "2020-01-19",
+          "video_id": "6tX4fJguBn0",
+          "date_string": "2020-Jan-19",
+          "line_number": 3,
+          "notes": ""
+     },
+     {
+          "index": 4,
+          "comment": "Abhidhamma lesson Kalutara Bodhiya G",
+          "url": "https://www.youtube.com/watch?v=2ncB_XsVnuQ",
+          "date": "2020-01-26",
+          "video_id": "2ncB_XsVnuQ",
+          "date_string": "2020-Jan-26",
+          "line_number": 4,
+          "notes": ""
+     },
+     {
+          "index": 5,
+          "comment": "Abhidhamma lesson Kalutara Bodhiya G",
+          "url": "https://www.youtube.com/watch?v=NhHMvTZk1hI",
+          "date": "2020-02-02",
+          "video_id": "NhHMvTZk1hI",
+          "date_string": "2020-Feb-02",
+          "line_number": 5,
+          "notes": ""
+     },
+     {
+          "index": 6,
+          "comment": "Abhidhamma lesson Kalutara Bodhiya G",
+          "url": "https://www.youtube.com/watch?v=ms-Nylrnucg",
+          "date": "2020-02-09",
+          "video_id": "ms-Nylrnucg",
+          "date_string": "2020-Feb-09",
+          "line_number": 6,
+          "notes": ""
+     },
+     {
+          "index": 7,
+          "comment": "Abhidhamma lesson Kalutara Bodhiya G",
+          "url": "https://www.youtube.com/watch?v=rXPt9jsqOT4",
+          "date": "2020-02-16",
+          "video_id": "rXPt9jsqOT4",
+          "date_string": "2020-Feb-16",
+          "line_number": 7,
+          "notes": ""
+     },
+     {
+          "index": 8,
+          "comment": "Abhidhamma lesson Kalutara Bodhiya G",
+          "url": "https://www.youtube.com/watch?v=VjLtySLYr_g",
+          "date": "2020-02-23",
+          "video_id": "VjLtySLYr_g",
+          "date_string": "2020-Feb-23",
+          "line_number": 8,
+          "notes": ""
+     },
+     {
+          "index": 9,
+          "comment": "Abhidhamma lesson Kalutara Bodhiya G",
+          "url": "https://www.youtube.com/watch?v=-48rQdjnAdE",
+          "date": "2020-03-01",
+          "video_id": "-48rQdjnAdE",
+          "date_string": "2020-Mar-01",
+          "line_number": 9,
+          "notes": ""
+     },
+     {
+          "index": 10,
+          "comment": "Abhidhamma lesson Kalutara Bodhiya G",
+          "url": "https://www.youtube.com/watch?v=fMRc8vsIqVY",
+          "date": "2020-03-08",
+          "video_id": "fMRc8vsIqVY",
+          "date_string": "2020-Mar-08",
+          "line_number": 10,
+          "notes": ""
+     },
+     {
+          "index": 11,
+          "comment": "Abhidhamma lesson Kalutara Bodhiya G",
+          "url": "https://www.youtube.com/watch?v=dHuWCCU93ZE",
+          "date": "2020-08-23",
+          "video_id": "dHuWCCU93ZE",
+          "date_string": "2020-Aug-23",
+          "line_number": 11,
+          "notes": ""
+     },
+     {
+          "index": 12,
+          "comment": "Abhidhamma lesson Kalutara Bodhiya G",
+          "url": "https://www.youtube.com/watch?v=wkUXfOFFbUk",
+          "date": "2020-08-30",
+          "video_id": "wkUXfOFFbUk",
+          "date_string": "2020-Aug-30",
+          "line_number": 12,
+          "notes": ""
+     },
+     {
+          "index": 13,
+          "comment": "Abhidhamma lesson Kalutara Bodhiya G",
+          "url": "https://www.youtube.com/watch?v=Qhm6lBQSM1c",
+          "date": "2020-09-06",
+          "video_id": "Qhm6lBQSM1c",
+          "date_string": "2020-Sep-06",
+          "line_number": 13,
+          "notes": ""
+     },
+     {
+          "index": 14,
+          "comment": "Abhidhamma lesson Kalutara Bodhiya G",
+          "url": "https://www.youtube.com/watch?v=lPPZ6CjWOAk",
+          "date": "2020-09-13",
+          "video_id": "lPPZ6CjWOAk",
+          "date_string": "2020-Sep-13",
+          "line_number": 14,
+          "notes": ""
+     },
+     {
+          "index": 15,
+          "comment": "Abhidhamma lesson Kalutara Bodhiya G",
+          "url": "https://www.youtube.com/watch?v=jDA-04g377I",
+          "date": "2020-09-20",
+          "video_id": "jDA-04g377I",
+          "date_string": "2020-Sep-20",
+          "line_number": 15,
+          "notes": ""
+     },
+     {
+          "index": 16,
+          "comment": "Abhidhamma lesson Kalutara Bodhiya G",
+          "url": "https://www.youtube.com/watch?v=r56xjuWBt4A",
+          "date": "2020-09-27",
+          "video_id": "r56xjuWBt4A",
+          "date_string": "2020-Sep-27",
+          "line_number": 16,
+          "notes": ""
+     },
+     {
+          "index": 17,
+          "comment": "17A. Abhidhamma lesson Kalutara Bodhiya G",
+          "url": "https://www.youtube.com/watch?v=xJX9EqARGIg",
+          "date": "2020-10-04",
+          "video_id": "xJX9EqARGIg",
+          "date_string": "2020-Oct-04",
+          "line_number": 17,
+          "notes": ""
+     },
+     {
+          "index": 17,
+          "comment": "17B. Abhidhamma lesson Kalutara Bodhiya G G1A1",
+          "url": "https://www.youtube.com/watch?v=OrTbNXD16wk",
+          "date": "2020-10-11",
+          "video_id": "OrTbNXD16wk",
+          "date_string": "2020-Oct-11",
+          "line_number": 18,
+          "notes": ""
+     },
+     {
+          "index": 18,
+          "comment": "18A1. Abhidhamma lesson Kalutara Bodhiya G",
+          "url": "https://www.youtube.com/watch?v=4Y3UxQvIgu8",
+          "date": "2020-10-19",
+          "video_id": "4Y3UxQvIgu8",
+          "date_string": "2020-Oct-19",
+          "line_number": 19,
+          "notes": ""
+     },
+     {
+          "index": 18,
+          "comment": "18A2. Abhidhamma lesson Kalutara Bodhiya G",
+          "url": "https://www.youtube.com/watch?v=E38EJe5pO54",
+          "date": "2020-10-19",
+          "video_id": "E38EJe5pO54",
+          "date_string": "2020-Oct-19",
+          "line_number": 20,
+          "notes": ""
+     }
 ]

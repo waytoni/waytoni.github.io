@@ -123,7 +123,7 @@ $NAVIGATION_HEADER$
         }
         
         // Function to update the YouTube video and notes based on the selected option
-        function updateContent() {
+        function updateContent_old() {
             const selector = document.getElementById('link-selector');
             const selectedOption = selector.options[selector.selectedIndex];
             const url = selectedOption.value;
@@ -134,6 +134,43 @@ $NAVIGATION_HEADER$
             videoContainer.innerHTML = 
                 `<iframe class="youtube-frame" src="${url.replace('watch?v=', 'embed/')}" frameborder="0" allowfullscreen></iframe>`;
             
+            const notesContainer = document.getElementById('notes');
+            notesContainer.innerHTML = notes || '<p>මෙම දේශනාව සඳහා සටහන් නොමැත.</p>';
+        }
+        
+
+          function updateContent() {
+            const selector = document.getElementById('link-selector');
+            const selectedOption = selector.options[selector.selectedIndex];
+            const url = selectedOption.value;
+            const index = selectedOption.dataset.index;
+            const selectedData = data.find(item => item.index == index);
+            const videoId = selectedData.video_id;
+            const notes = selectedData.notes;
+            const videoContainer = document.getElementById('video-container');
+            // Check if video_id starts with "INVALID:"
+            if (videoId.startsWith('INVALID:')) {
+                // Extract the message after "INVALID:" and replace underscores with spaces
+                const rawMessage = videoId.substring(8).trim();
+                const formattedMessage = rawMessage.replace(/_/g, ' ');
+                // Create a styled message display instead of a YouTube video
+                videoContainer.innerHTML = `
+            <div class="invalid-video-message">
+                <div class="message-icon">⚠️</div>
+                <h3>දේශනාව නොමැත</h3>
+                <p>${formattedMessage || 'මෙම දේශනාව මේ වන විට නොමැත.'}</p>
+                <div class="message-details">
+                    <p><strong>දේශනා අංකය:</strong> ${selectedData.index}</p>
+                    <p><strong>දිනය:</strong> ${selectedData.date_string}</p>
+                    ${selectedData.comment ? `<p><strong>විස්තරය:</strong> ${selectedData.comment}</p>` : ''}
+                </div>
+            </div>
+        `;
+            } else {
+                // Valid YouTube video - embed normally
+                videoContainer.innerHTML =
+                    `<iframe class="youtube-frame" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>`;
+            }
             const notesContainer = document.getElementById('notes');
             notesContainer.innerHTML = notes || '<p>මෙම දේශනාව සඳහා සටහන් නොමැත.</p>';
         }

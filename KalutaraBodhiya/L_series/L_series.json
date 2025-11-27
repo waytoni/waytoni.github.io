@@ -1,92 +1,102 @@
 [
-    {
-        "index": 1,
-        "comment": "මූලික හැදින්වීම 01",
-        "url": "https://www.youtube.com/watch?v=Z1dMcG0LiHk",
-        "date": "2025-09-14",
-        "date_string": "2025-Sep-14",
-        "line_number": 1,
-        "notes": "<p>රේරුකානේ චන්දවිමල හිමියන්ගේ අභිධර්ම මාර්ගය පොත් ලබා ගැනීමට (PDF හෝ HTML ආකාරයට): <a href=\"https://tipitaka.lk/library/462\" target=\"_blank\" >https://tipitaka.lk/library/462</a></p>"
-    },
-    {
-        "index": 2,
-        "comment": "මූලික හැදින්වීම 02",
-        "url": "https://www.youtube.com/watch?v=36DtTKyiMkk",
-        "date": "2025-09-21",
-        "date_string": "2025-Sep-21",
-        "line_number": 2,
-        "notes": ""
-    },
-    {
-        "index": 3,
-        "comment": "මූලික හැදින්වීම 03",
-        "url": "https://www.youtube.com/watch?v=AEvepA1ibxs",
-        "date": "2025-09-28",
-        "date_string": "2025-Sep-28",
-        "line_number": 3,
-        "notes": ""
-    },
-    {
-        "index": 4,
-        "comment": "ධර්මතා 18",
-        "url": "https://www.youtube.com/watch?v=oy8lITJQbFo",
-        "date": "2025-10-05",
-        "date_string": "2025-Oct-05",
-        "line_number": 4,
-        "notes": ""
-    },
-    {
-        "index": 5,
-        "comment": "ධර්මතා 18 තිණ්ණං සඞ්ගති",
-        "url": "https://www.youtube.com/watch?v=Z9SXt3HPSKY",
-        "date": "2025-10-12",
-        "date_string": "2025-Oct-12",
-        "line_number": 5,
-        "notes": ""
-    },
-    {
-        "index": 6,
-        "comment": "ධර්මතා 18 තිණ්ණං සඞ්ගති 02",
-        "url": "https://www.youtube.com/watch?v=rvjh_WvA9TE",
-        "date": "2025-10-19",
-        "date_string": "2025-Oct-19",
-        "line_number": 6,
-        "notes": ""
-    },
-    {
-        "index": 7,
-        "comment": "ධර්මතා 18 භවාංග නානාත්වය",
-        "url": "https://www.youtube.com/watch?v=agdFRm5RcYE",
-        "date": "2025-11-02",
-        "date_string": "2025-Nov-02",
-        "line_number": 7,
-        "notes": ""
-    },
-    {
-        "index": 8,
-        "comment": "ධර්මතා 18 ද්වතාව",
-        "url": "https://www.youtube.com/watch?v=9IqzrvUWaXc",
-        "date": "2025-11-09",
-        "date_string": "2025-Nov-09",
-        "line_number": 8,
-        "notes": ""
-    },
-    {
-        "index": 9,
-        "comment": "ධර්මතා 18 ද්වතාව 2",
-        "url": "https://www.youtube.com/watch?v=ED6oV1JT5IA",
-        "date": "2025-11-17",
-        "date_string": "2025-Nov-17",
-        "line_number": 9,
-        "notes": "<p>සත්ව තල <img src=\"/documents/NotesForDesana/0005 සත්ව තල.jpg\" width=95%></p>\n<p>ආයතන ලෙස විග්‍රහය <img src=\"/documents/NotesForDesana/0013 ආයතන ලෙස විග්‍රහය.jpeg\" width=95%></p>\n<p>සිත් බෙදෙන අයුරු <img src=\"/documents/NotesForDesana/0015 සිත් බෙදෙන අයුරු.jpeg\" width=95%></p>\n<p>චතුර්භූමික සිත් සහ ධර්ම <img src=\"/documents/NotesForDesana/0016 චතුර්භූමික සිත් සහ ධර්ම.jpg\" width=95%></p>\n<p>සිත් සතර ආකාරය <img src=\"/documents/NotesForDesana/0022 සිත් සතර ආකාරය.jpg\" width=95%></p>\n<p>89 ක් වූ සිත් බෙදෙන ආකාර <img src=\"/documents/NotesForDesana/0023 89 ක් වූ සිත් බෙදෙන ආකාර.jpeg\" width=95%></p>\n<p></p>"
-    },
-    {
-        "index": 10,
-        "comment": "ධර්මතා 18 ද්වතාව 3",
-        "url": "https://www.youtube.com/watch?v=Hr490EDFN-c",
-        "date": "2025-11-24",
-        "date_string": "2025-Nov-24",
-        "line_number": 10,
-        "notes": ""
-    }
+     {
+          "index": 1,
+          "comment": "මූලික හැදින්වීම 01",
+          "url": "https://www.youtube.com/watch?v=Z1dMcG0LiHk",
+          "date": "2025-09-14",
+          "video_id": "Z1dMcG0LiHk",
+          "date_string": "2025-Sep-14",
+          "line_number": 1,
+          "notes": "<p>රේරුකානේ චන්දවිමල හිමියන්ගේ අභිධර්ම මාර්ගය පොත් ලබා ගැනීමට (PDF හෝ HTML ආකාරයට): <a href=\"https://tipitaka.lk/library/462\" target=\"_blank\" >https://tipitaka.lk/library/462</a></p>"
+     },
+     {
+          "index": 2,
+          "comment": "මූලික හැදින්වීම 02",
+          "url": "https://www.youtube.com/watch?v=36DtTKyiMkk",
+          "date": "2025-09-21",
+          "video_id": "36DtTKyiMkk",
+          "date_string": "2025-Sep-21",
+          "line_number": 2,
+          "notes": ""
+     },
+     {
+          "index": 3,
+          "comment": "මූලික හැදින්වීම 03",
+          "url": "https://www.youtube.com/watch?v=AEvepA1ibxs",
+          "date": "2025-09-28",
+          "video_id": "AEvepA1ibxs",
+          "date_string": "2025-Sep-28",
+          "line_number": 3,
+          "notes": ""
+     },
+     {
+          "index": 4,
+          "comment": "ධර්මතා 18",
+          "url": "https://www.youtube.com/watch?v=oy8lITJQbFo",
+          "date": "2025-10-05",
+          "video_id": "oy8lITJQbFo",
+          "date_string": "2025-Oct-05",
+          "line_number": 4,
+          "notes": ""
+     },
+     {
+          "index": 5,
+          "comment": "ධර්මතා 18 තිණ්ණං සඞ්ගති",
+          "url": "https://www.youtube.com/watch?v=Z9SXt3HPSKY",
+          "date": "2025-10-12",
+          "video_id": "Z9SXt3HPSKY",
+          "date_string": "2025-Oct-12",
+          "line_number": 5,
+          "notes": ""
+     },
+     {
+          "index": 6,
+          "comment": "ධර්මතා 18 තිණ්ණං සඞ්ගති 02",
+          "url": "https://www.youtube.com/watch?v=rvjh_WvA9TE",
+          "date": "2025-10-19",
+          "video_id": "rvjh_WvA9TE",
+          "date_string": "2025-Oct-19",
+          "line_number": 6,
+          "notes": ""
+     },
+     {
+          "index": 7,
+          "comment": "ධර්මතා 18 භවාංග නානාත්වය",
+          "url": "https://www.youtube.com/watch?v=agdFRm5RcYE",
+          "date": "2025-11-02",
+          "video_id": "agdFRm5RcYE",
+          "date_string": "2025-Nov-02",
+          "line_number": 7,
+          "notes": ""
+     },
+     {
+          "index": 8,
+          "comment": "ධර්මතා 18 ද්වතාව",
+          "url": "https://www.youtube.com/watch?v=9IqzrvUWaXc",
+          "date": "2025-11-09",
+          "video_id": "9IqzrvUWaXc",
+          "date_string": "2025-Nov-09",
+          "line_number": 8,
+          "notes": ""
+     },
+     {
+          "index": 9,
+          "comment": "ධර්මතා 18 ද්වතාව 2",
+          "url": "https://www.youtube.com/watch?v=ED6oV1JT5IA",
+          "date": "2025-11-17",
+          "video_id": "ED6oV1JT5IA",
+          "date_string": "2025-Nov-17",
+          "line_number": 9,
+          "notes": "<p>සත්ව තල <img src=\"/documents/NotesForDesana/0005 සත්ව තල.jpg\" width=95%></p>\n<p>ආයතන ලෙස විග්‍රහය <img src=\"/documents/NotesForDesana/0013 ආයතන ලෙස විග්‍රහය.jpeg\" width=95%></p>\n<p>සිත් බෙදෙන අයුරු <img src=\"/documents/NotesForDesana/0015 සිත් බෙදෙන අයුරු.jpeg\" width=95%></p>\n<p>චතුර්භූමික සිත් සහ ධර්ම <img src=\"/documents/NotesForDesana/0016 චතුර්භූමික සිත් සහ ධර්ම.jpg\" width=95%></p>\n<p>සිත් සතර ආකාරය <img src=\"/documents/NotesForDesana/0022 සිත් සතර ආකාරය.jpg\" width=95%></p>\n<p>89 ක් වූ සිත් බෙදෙන ආකාර <img src=\"/documents/NotesForDesana/0023 89 ක් වූ සිත් බෙදෙන ආකාර.jpeg\" width=95%></p>\n<p></p>"
+     },
+     {
+          "index": 10,
+          "comment": "ධර්මතා 18 ද්වතාව 3",
+          "url": "https://www.youtube.com/watch?v=Hr490EDFN-c",
+          "date": "2025-11-24",
+          "video_id": "Hr490EDFN-c",
+          "date_string": "2025-Nov-24",
+          "line_number": 10,
+          "notes": ""
+     }
 ]

@@ -1,47 +1,62 @@
 [
-    {
-        "index": 1,
-        "comment": "දුක පිළිබඳ මූලික අදහස",
-        "url": "https://www.youtube.com/watch?v=cqUdEulgg34",
-        "date": "2025-10-23",
-        "date_string": "2025-Oct-23",
-        "line_number": 1,
-        "notes": ""
-    },
-    {
-        "index": 2,
-        "comment": "දුක පිළිබඳ මූලික අදහස 02",
-        "url": "https://www.youtube.com/watch?v=aVQM6qu5w1g",
-        "date": "2025-10-30",
-        "date_string": "2025-Oct-30",
-        "line_number": 2,
-        "notes": ""
-    },
-    {
-        "index": 3,
-        "comment": "දුක පිළිබඳ මූලික අදහස",
-        "url": "https://www.youtube.com/watch?v=TTKi6Xp15bw",
-        "date": "2025-11-06",
-        "date_string": "2025-Nov-06",
-        "line_number": 3,
-        "notes": ""
-    },
-    {
-        "index": 4,
-        "comment": "පරමාර්ථ 4",
-        "url": "https://www.youtube.com/watch?v=jWDlQWYiBSY",
-        "date": "2025-11-13",
-        "date_string": "2025-Nov-13",
-        "line_number": 4,
-        "notes": "<p><div id=\"sutta\"></p>\n<p><h3>රේරුකානේ චන්දවිමල හිමියන්ගේ පොත්</h3></p>\n<p><ol></p>\n<p><li>අභිධර්ම මාර්ගය පොත <a href=\"https://tipitaka.lk/library/484\" target=\"_blank\">PDF ලෙස</a> හෝ <a href=\"https://pitaka.lk/books/abhidharma-margaya/index.html\" target=\"_blank\">වෙබ් පිටුවක් ලෙස</a></li></p>\n<p><li>අභිධර්මයේ මූලික කරුණු පොත <a href=\"https://www.ogatharana.org/bookDownCounter.php?booknumber=15\"  target=\"_blank\">PDF ලෙස</a> හෝ <a href=\"https://pitaka.lk/books/abhidharmaye-mulika-karunu/index.html\" target=\"_blank\">වෙබ් පිටුවක් ලෙස</a></li></p>\n<p><li> චතුරාර්‍ය්‍ය සත්‍යය පොත <a href=\"https://www.ogatharana.org/bookDownCounter.php?booknumber=9\" target=\"_blank\">PDF ලෙස</a> හෝ <a href=\"https://pitaka.lk/books/chathurarya-sathya/index.html\" target=\"_blank\">වෙබ් පිටුවක් ලෙස</a></li></p>\n<p><li>පටිච්ච සමුප්පාද විවරණය පොත <a href=\"https://www.ogatharana.org/bookDownCounter.php?booknumber=17\" target=\"_blank\">PDF ලෙස</a> හෝ <a href=\"https://pitaka.lk/books/patichcha-samuppada-vivaranaya/index.html\" target=\"_blank\">වෙබ් පිටුවක් ලෙස</a></li></p>\n<p><li>පොහොය දිනය පොත <a href=\"https://tipitaka.lk/library/498\" target=\"_blank\">PDF ලෙස</a> හෝ <a href=\"https://pitaka.lk/books/pohoya-dinaya/index.html\">වෙබ් පිටුවක් ලෙස</a></li></p>\n<p><li>රේරුකානේ චන්දවිමල හිමියන්ගේ සියුලු පොත් සඳහා: <a href=\"https://www.ogatharana.org/\" target=\"_blank\">https://www.ogatharana.org/</a> හෝ <a href=\"https://tipitaka.lk/library/462\" target=\"_blank\">https://tipitaka.lk/library/462</a></li></p>\n<p></ol></p>\n<p></div></p>"
-    },
-    {
-        "index": 5,
-        "comment": "අරමුණු හා ලෝකය",
-        "url": "https://www.youtube.com/watch?v=io835DKnZmA",
-        "date": "2025-11-20",
-        "date_string": "2025-Nov-20",
-        "line_number": 5,
-        "notes": ""
-    }
+     {
+          "index": 1,
+          "comment": "දුක පිළිබඳ මූලික අදහස",
+          "url": "https://www.youtube.com/watch?v=cqUdEulgg34",
+          "date": "2025-10-23",
+          "video_id": "cqUdEulgg34",
+          "date_string": "2025-Oct-23",
+          "line_number": 1,
+          "notes": ""
+     },
+     {
+          "index": 2,
+          "comment": "දුක පිළිබඳ මූලික අදහස 02",
+          "url": "https://www.youtube.com/watch?v=aVQM6qu5w1g",
+          "date": "2025-10-30",
+          "video_id": "aVQM6qu5w1g",
+          "date_string": "2025-Oct-30",
+          "line_number": 2,
+          "notes": ""
+     },
+     {
+          "index": 3,
+          "comment": "දුක පිළිබඳ මූලික අදහස",
+          "url": "https://www.youtube.com/watch?v=TTKi6Xp15bw",
+          "date": "2025-11-06",
+          "video_id": "TTKi6Xp15bw",
+          "date_string": "2025-Nov-06",
+          "line_number": 3,
+          "notes": ""
+     },
+     {
+          "index": 4,
+          "comment": "පරමාර්ථ 4",
+          "url": "https://www.youtube.com/watch?v=jWDlQWYiBSY",
+          "date": "2025-11-13",
+          "video_id": "jWDlQWYiBSY",
+          "date_string": "2025-Nov-13",
+          "line_number": 4,
+          "notes": "<p><div id=\"sutta\"></p>\n<p><h3>රේරුකානේ චන්දවිමල හිමියන්ගේ පොත්</h3></p>\n<p><ol></p>\n<p><li>අභිධර්ම මාර්ගය පොත <a href=\"https://tipitaka.lk/library/484\" target=\"_blank\">PDF ලෙස</a> හෝ <a href=\"https://pitaka.lk/books/abhidharma-margaya/index.html\" target=\"_blank\">වෙබ් පිටුවක් ලෙස</a></li></p>\n<p><li>අභිධර්මයේ මූලික කරුණු පොත <a href=\"https://www.ogatharana.org/bookDownCounter.php?booknumber=15\"  target=\"_blank\">PDF ලෙස</a> හෝ <a href=\"https://pitaka.lk/books/abhidharmaye-mulika-karunu/index.html\" target=\"_blank\">වෙබ් පිටුවක් ලෙස</a></li></p>\n<p><li> චතුරාර්‍ය්‍ය සත්‍යය පොත <a href=\"https://www.ogatharana.org/bookDownCounter.php?booknumber=9\" target=\"_blank\">PDF ලෙස</a> හෝ <a href=\"https://pitaka.lk/books/chathurarya-sathya/index.html\" target=\"_blank\">වෙබ් පිටුවක් ලෙස</a></li></p>\n<p><li>පටිච්ච සමුප්පාද විවරණය පොත <a href=\"https://www.ogatharana.org/bookDownCounter.php?booknumber=17\" target=\"_blank\">PDF ලෙස</a> හෝ <a href=\"https://pitaka.lk/books/patichcha-samuppada-vivaranaya/index.html\" target=\"_blank\">වෙබ් පිටුවක් ලෙස</a></li></p>\n<p><li>පොහොය දිනය පොත <a href=\"https://tipitaka.lk/library/498\" target=\"_blank\">PDF ලෙස</a> හෝ <a href=\"https://pitaka.lk/books/pohoya-dinaya/index.html\">වෙබ් පිටුවක් ලෙස</a></li></p>\n<p><li>රේරුකානේ චන්දවිමල හිමියන්ගේ සියුලු පොත් සඳහා: <a href=\"https://www.ogatharana.org/\" target=\"_blank\">https://www.ogatharana.org/</a> හෝ <a href=\"https://tipitaka.lk/library/462\" target=\"_blank\">https://tipitaka.lk/library/462</a></li></p>\n<p></ol></p>\n<p></div></p>"
+     },
+     {
+          "index": 5,
+          "comment": "අරමුණු හා ලෝකය",
+          "url": "https://www.youtube.com/watch?v=io835DKnZmA",
+          "date": "2025-11-20",
+          "video_id": "io835DKnZmA",
+          "date_string": "2025-Nov-20",
+          "line_number": 5,
+          "notes": ""
+     },
+     {
+          "index": 6,
+          "comment": "ධර්මතා 18",
+          "url": "https://www.youtube.com/watch?v=Td2bYNbeOH4",
+          "date": "2025-11-27",
+          "video_id": "Td2bYNbeOH4",
+          "date_string": "2025-Nov-27",
+          "line_number": 6,
+          "notes": ""
+     }
 ]

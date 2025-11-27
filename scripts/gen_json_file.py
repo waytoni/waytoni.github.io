@@ -1,6 +1,7 @@
 import json
 import re
 from datetime import datetime
+from urllib.parse import urlparse, parse_qs
 
 # Define a dictionary to map keywords to html tags
 keyword_dict = {
@@ -34,16 +35,20 @@ def parse_utlinks(file_path):
                     })
     return utlinks
 
-def parse_ytlinks(file_path):
+def parse_ytlinks_v1(file_path):
     utlinks = []
     with open(file_path, 'r', encoding='utf-8') as file:
         for line_num, line in enumerate(file, 1):
             line = line.strip()
+            
+            
             if not line or line.startswith('#'):  # Skip empty lines and comments
                 continue
-                
+            print(line)    
             # Improved regex to handle various date formats and optional fields
             match = re.match(r'(\d+)\s+(.*?)\s*(https?://\S+)?\s+([\d\-A-Za-z]{8,})', line)
+            
+            print(match)
             
             if match:
                 index, comment, url, date_str = match.groups()
@@ -63,6 +68,7 @@ def parse_ytlinks(file_path):
                     'comment': comment.strip(),
                     'url': url,
                     'date': parsed_date,
+                    'video_id': extract_youtube_id(url),
                     'date_string': date_str,  # Keep original string for reference
                     'line_number': line_num   # For error tracking
                 })
@@ -71,7 +77,181 @@ def parse_ytlinks(file_path):
     
     return utlinks
 
+
+def parse_ytlinks_v2(file_path):
+    utlinks = []
+    with open(file_path, 'r', encoding='utf-8') as file:
+        for line_num, line in enumerate(file, 1):
+            line = line.strip()
+            
+            if not line or line.startswith('#'):  # Skip empty lines and comments
+                continue
+            
+            # Improved regex to handle the actual data format
+            # Pattern explanation:
+            # (\d+)                    - index number
+            # \s+                      - whitespace
+            # (.*?)                    - comment (non-greedy)
+            # \s+                      - whitespace  
+            # (https?://[^\s]+)        - URL (stops at whitespace)
+            # \s+                      - whitespace
+            # (\d{4}-[A-Za-z]+-\d{1,2}) - date format (YYYY-Month-DD)
+            match = re.match(r'(\d+)\s+(.*?)\s+(https?://[^\s]+)\s+(\d{4}-[A-Za-z]+-\d{1,2})', line)
+            
+            if match:
+                index, comment, url, date_str = match.groups()
+                
+                # Clean up comment field
+                comment = comment.strip()
+                if not comment or comment.startswith("http"):
+                    comment = ""
+                
+                # Parse date
+                parsed_date = parse_flexible_date(date_str)
+                
+                utlinks.append({
+                    'index': int(index),
+                    'comment': comment,
+                    'url': url,
+                    'date': parsed_date,
+                    'video_id': extract_youtube_id(url),
+                    'date_string': date_str,
+                    'line_number': line_num
+                })
+            else:
+                print(f"Warning: Could not parse line {line_num}: {line}")
+                # Debug: show what parts we can extract
+                parts = line.split()
+                if len(parts) >= 4:
+                    print(f"  Parts found: index={parts[0]}, url={parts[-2] if len(parts) > 2 else 'N/A'}, date={parts[-1]}")
+    
+    return utlinks
+
+def parse_ytlinks(file_path):
+    utlinks = []
+    with open(file_path, 'r', encoding='utf-8') as file:
+        for line_num, line in enumerate(file, 1):
+            line = line.strip()
+            
+            if not line or line.startswith('#'):  # Skip empty lines and comments
+                continue
+            
+            # Improved regex to handle both alphabetic and numeric months in dates
+            # Pattern explanation:
+            # (\d+)                    - index number
+            # \s+                      - whitespace
+            # (.*?)                    - comment (non-greedy)
+            # \s+                      - whitespace  
+            # (https?://[^\s]+)        - URL (stops at whitespace)
+            # \s+                      - whitespace
+            # (\d{4}-[A-Za-z0-9]+-\d{1,2}) - date format (YYYY-Month-DD or YYYY-MM-DD)
+            match = re.match(r'(\d+)\s+(.*?)\s+(https?://[^\s]+)\s+(\d{4}-[A-Za-z0-9]+-\d{1,2})', line)
+            
+            if match:
+                index, comment, url, date_str = match.groups()
+                
+                # Clean up comment field
+                comment = comment.strip()
+                if not comment or comment.startswith("http"):
+                    comment = ""
+                
+                # Parse date
+                parsed_date = parse_flexible_date(date_str)
+                
+                utlinks.append({
+                    'index': int(index),
+                    'comment': comment,
+                    'url': url,
+                    'date': parsed_date,
+                    'video_id': extract_youtube_id(url),
+                    'date_string': date_str,
+                    'line_number': line_num
+                })
+            else:
+                print(f"Warning: Could not parse line {line_num}: {line}")
+                # Debug: show what parts we can extract
+                parts = line.split()
+                if len(parts) >= 4:
+                    print(f"  Parts found: index={parts[0]}, url={parts[-2] if len(parts) > 2 else 'N/A'}, date={parts[-1]}")
+    
+    return utlinks
+
+from urllib.parse import urlparse, parse_qs
+
+def extract_youtube_id(url):
+    parsed = urlparse(url)
+    host_and_path = f"{parsed.hostname}{parsed.path}"
+
+    # Case 1: https://www.youtube.com/watch?v=VIDEO_ID
+    if parsed.hostname in ["www.youtube.com", "youtube.com"]:
+        qs = parse_qs(parsed.query)
+        if "v" in qs:
+            return qs["v"][0]
+
+        # Example: https://www.youtube.com/embed/VIDEO_ID
+        if parsed.path.startswith("/embed/"):
+            return parsed.path.split("/")[2]
+
+        # Example: https://www.youtube.com/v/VIDEO_ID
+        if parsed.path.startswith("/v/"):
+            return parsed.path.split("/")[2]
+
+        return f"INVALID: {host_and_path}"
+
+    # Case 2: https://youtu.be/VIDEO_ID
+    if parsed.hostname == "youtu.be":
+        video_id = parsed.path.lstrip("/")
+        if video_id:
+            return video_id
+        return f"INVALID: {host_and_path}"
+
+    # Not a valid YouTube host
+    return f"INVALID: {host_and_path}"
+
+
 def parse_flexible_date(date_str):
+    """Parse dates in various formats including:
+    - 2024-May-23 (alphabetic month)
+    - 2024-09-10 (numeric month)
+    - 2025-11-25 (numeric month like in your last line)
+    """
+    date_formats = [
+        '%Y-%b-%d',    # 2024-May-23
+        '%Y-%B-%d',    # 2024-May-23 (full month name)
+        '%Y-%m-%d',    # 2024-09-10, 2025-11-25  # <- This handles numeric months
+        '%d-%m-%Y',    # 10-05-2024
+        '%y-%m-%d',    # 24-05-11
+        '%m-%d-%Y',    # 05-23-2024
+        '%Y/%b/%d',    # 2024/May/23
+        '%Y/%B/%d',    # 2024/May/23 (full month name)
+    ]
+    
+    # Try each format
+    for fmt in date_formats:
+        try:
+            return datetime.strptime(date_str, fmt).date()
+        except ValueError:
+            continue
+    
+    # If none work, try to handle month names case-insensitively
+    for fmt in ['%Y-%b-%d', '%Y-%B-%d', '%Y/%b/%d', '%Y/%B/%d']:
+        try:
+            # Convert to title case for month names (Mar, Apr, etc.)
+            parts = re.split(r'[-/]', date_str)
+            if len(parts) == 3:
+                month_part = parts[1]
+                if month_part.isalpha():
+                    normalized_date = f"{parts[0]}-{month_part.title()}-{parts[2]}"
+                    separator = '-' if '-' in date_str else '/'
+                    normalized_date = normalized_date.replace('-', separator)
+                    return datetime.strptime(normalized_date, fmt).date()
+        except (ValueError, IndexError):
+            continue
+    
+    print(f"Warning: Could not parse date: {date_str}")
+    return None
+
+def parse_flexible_date_v1(date_str):
     """Parse dates in various formats including:
     - 2024-May-23
     - 2024-09-10
@@ -186,6 +366,6 @@ def BuildDropDownMenuWithNavigation(utlinks_file, notes_file, json_file, verbose
             item['date'] = item['date'].isoformat()
 
     with open(json_file, 'w', encoding='utf-8') as file:
-        json.dump(utlinks, file, indent=4, ensure_ascii=False)
+        json.dump(utlinks, file, indent=5, ensure_ascii=False)
 
     print(f"Data processing complete. {json_file} file has been created.")

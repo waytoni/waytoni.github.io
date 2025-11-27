@@ -1,261 +1,372 @@
 [
-    {
-        "index": 1,
-        "comment": "මූලික ධර්ම දේශනා චක්ඛු සෝත ඝාණ ජිව්හා කාය මන",
-        "url": "https://www.youtube.com/watch?v=o7wCGZC1g6o",
-        "date": "2024-May-05",
-        "notes": ""
-    },
-    {
-        "index": 2,
-        "comment": "මූලික ධර්ම දේශනා චක්ඛු සෝත ඝාණ ජිව්හා කාය මන 02",
-        "url": "https://www.youtube.com/watch?v=1MVUsHFXML0",
-        "date": "2024-May-12",
-        "notes": ""
-    },
-    {
-        "index": 3,
-        "comment": "මූලික ධර්ම දේශනා යෝනිසෝ අයෝනිසෝ මනසිකාර - තිණ්ණං සංඝති",
-        "url": "https://www.youtube.com/watch?v=kMPzguMBhpI",
-        "date": "2024-May-19",
-        "notes": ""
-    },
-    {
-        "index": 4,
-        "comment": "මූලික ධර්ම දේශනා- මන - මනෝද්වාරය- භවාංග-මනෝවිඤ්ඤාණ-ආයතන",
-        "url": "https://www.youtube.com/watch?v=sjBF0k4TJ2k",
-        "date": "2024-Jun-02",
-        "notes": ""
-    },
-    {
-        "index": 5,
-        "comment": "මූලික ධර්ම දේශනා තිණ්ණං සංඝති - පංචස්කන්ධ - පංචඋපාදානස්කන්ධ",
-        "url": "https://www.youtube.com/watch?v=4X13o3e4UeY",
-        "date": "2024-Jun-09",
-        "notes": ""
-    },
-    {
-        "index": 6,
-        "comment": "මූලික ධර්ම දේශනා තිණ්ණං සංඝති - පංචස්කන්ධ -ධාතු-ආයතන",
-        "url": "https://www.youtube.com/watch?v=KC1KzFeHuAU",
-        "date": "2024-Jun-16",
-        "notes": ""
-    },
-    {
-        "index": 7,
-        "comment": "මූලික ධර්ම දේශනා තිණ්ණං සංඝති පංචස්කන්ධ පංචඋපාදානස්කන්ධ හට ගැනීම",
-        "url": "https://www.youtube.com/watch?v=hwkVDp-tajc",
-        "date": "2024-Jun-23",
-        "notes": ""
-    },
-    {
-        "index": 8,
-        "comment": "පංචස්කන්ධ පංචඋපාදානස්කන්ධ හට ගැනීම - සතර මහාභූත උපාදා රූප",
-        "url": "https://www.youtube.com/watch?v=_7KHIB5F5ZU",
-        "date": "2024-Jun-30",
-        "notes": ""
-    },
-    {
-        "index": 9,
-        "comment": "මූලික ධර්ම දේශනා පංචස්කන්ධ-රූප-සංස්කාර (චේතනා) කෘත්‍යය",
-        "url": "https://www.youtube.com/watch?v=JAvb-j9b7GY",
-        "date": "2024-Jul-07",
-        "notes": "<p>නිවන් මග උදෙසා දර්ශන ඥානය සඳහා මූලික සූත්‍ර <a href=\"/documents/දර්ශන ඥානය මූලික සූත්‍ර 01.pdf\"  target=\"_blank\">/documents/දර්ශන ඥානය මූලික සූත්‍ර 01.pdf</a></p>"
-    },
-    {
-        "index": 10,
-        "comment": "සංස්කාර (චේතනා) කෘත්‍යය - අනිච්ච දුක්ඛ අනත්ත භාවනා",
-        "url": "https://www.youtube.com/watch?v=yw74kAq-4A8",
-        "date": "2024-Jul-14",
-        "notes": "<p>නිවන් මග උදෙසා දර්ශන ඥානය සඳහා මූලික සූත්‍ර <a href=\"/documents/දර්ශන ඥානය මූලික සූත්‍ර 01.pdf\"  target=\"_blank\">/documents/දර්ශන ඥානය මූලික සූත්‍ර 01.pdf</a></p>"
-    },
-    {
-        "index": 11,
-        "comment": "මූලික ධර්ම දේශනා - සංස්කාර (චේතනා) කෘත්‍යය පංචඋපාදානස්කන්ධ",
-        "url": "https://www.youtube.com/watch?v=_N1J5AlYWks",
-        "date": "2024-Jul-21",
-        "notes": ""
-    },
-    {
-        "index": 12,
-        "comment": "මූලික ධර්ම දේශනා - සංස්කාර - පංචඋපාදානස්කන්ධ-හේතු ඵල දහම",
-        "url": "https://www.youtube.com/watch?v=9xwNjM4JJqE",
-        "date": "2024-Jul-28",
-        "notes": ""
-    },
-    {
-        "index": 13,
-        "comment": "මූලික ධර්ම දේශනා - ඵස්සය -රූපකලාප",
-        "url": "https://www.youtube.com/watch?v=DqcGbLU9164",
-        "date": "2024-Aug-04",
-        "notes": ""
-    },
-    {
-        "index": 14,
-        "comment": "මූලික ධර්ම දේශනා - පටිච්චසමුප්පාදය 01",
-        "url": "https://www.youtube.com/watch?v=cAwOGKwNa6Q",
-        "date": "2024-Aug-11",
-        "notes": ""
-    },
-    {
-        "index": 15,
-        "comment": "මූලික පංචස්කන්ධ දේශනාව රූප,වේදනා,සංඥා,සංඛාර,විඤ්ඤාණ 01",
-        "url": "https://www.youtube.com/watch?v=muLaeDuNXbA",
-        "date": "2024-Aug-18",
-        "notes": "<p> <a href=\"/VisheshaDesana/2024 08 18  Kalutara Bodhiya දර්ශන ඥානය.pdf\"  target=\"_blank\">/VisheshaDesana/2024 08 18  Kalutara Bodhiya දර්ශන ඥානය.pdf</a></p>"
-    },
-    {
-        "index": 15,
-        "comment": "මූලික පංචස්කන්ධ දේශනාව රූප,වේදනා,සංඥා,සංඛාර,විඤ්ඤාණ 02",
-        "url": "https://www.youtube.com/watch?v=ASCDL8mE0bI",
-        "date": "2024-Aug-18",
-        "notes": "<p> <a href=\"/VisheshaDesana/2024 08 18  Kalutara Bodhiya දර්ශන ඥානය.pdf\"  target=\"_blank\">/VisheshaDesana/2024 08 18  Kalutara Bodhiya දර්ශන ඥානය.pdf</a></p>"
-    },
-    {
-        "index": 15,
-        "comment": "මූලික ධර්ම දේශනා - රුප්පනය (පෙලීම, ඇවිස්සීම)",
-        "url": "https://www.youtube.com/watch?v=2EOx36wT3DE",
-        "date": "2024-Aug-25",
-        "notes": "<p> <a href=\"/VisheshaDesana/2024 08 18  Kalutara Bodhiya දර්ශන ඥානය.pdf\"  target=\"_blank\">/VisheshaDesana/2024 08 18  Kalutara Bodhiya දර්ශන ඥානය.pdf</a></p>"
-    },
-    {
-        "index": 16,
-        "comment": "රුප්පනය (පෙලීම, ඇවිස්සීම) නිසා සංකාර - එබැවින් කර්මජ රූප",
-        "url": "https://www.youtube.com/watch?v=IHuNxoSrlTw",
-        "date": "2024-Sep-01",
-        "notes": ""
-    },
-    {
-        "index": 17,
-        "comment": "මූලික ධර්ම දේශනා - පටිච්චසමුප්පාදය 01",
-        "url": "https://www.youtube.com/watch?v=-gXEscfl3qY",
-        "date": "2024-Sep-08",
-        "notes": ""
-    },
-    {
-        "index": 18,
-        "comment": "මූලික ධර්ම දේශනා - පටිච්චසමුප්පාදය 02",
-        "url": "https://www.youtube.com/watch?v=FjBUyrwHLkc",
-        "date": "2024-Sep-15",
-        "notes": ""
-    },
-    {
-        "index": 19,
-        "comment": "මූලික ධර්ම දේශනා - පටිච්චසමුප්පාදය 03",
-        "url": "https://www.youtube.com/watch?v=ULqxcmYAoQk",
-        "date": "2024-Sep-29",
-        "notes": ""
-    },
-    {
-        "index": 19,
-        "comment": "උපකාරක දේශනා (A)",
-        "url": "https://www.youtube.com/watch?v=AJFp8VWKhZ0",
-        "date": "2024-Oct-02",
-        "notes": ""
-    },
-    {
-        "index": 20,
-        "comment": "මූලික ධර්ම දේශනා",
-        "url": "https://www.youtube.com/watch?v=a3fdF_zdzqA",
-        "date": "2024-Oct-06",
-        "notes": ""
-    },
-    {
-        "index": 21,
-        "comment": "මූලික ධර්ම දේශනා - පටිච්චසමුප්පාදය 04",
-        "url": "https://www.youtube.com/watch?v=LMCbfUbTjzk",
-        "date": "2024-Oct-13",
-        "notes": ""
-    },
-    {
-        "index": 22,
-        "comment": "මූලික ධර්ම දේශනා - පටිච්චසමුප්පාදය 05",
-        "url": "https://www.youtube.com/watch?v=TIsW3JapDzY",
-        "date": "2024-Oct-20",
-        "notes": ""
-    },
-    {
-        "index": 23,
-        "comment": "මූලික ධර්ම දේශනා - පටිච්චසමුප්පාදය 06",
-        "url": "https://www.youtube.com/watch?v=pSZxBJU1iO8",
-        "date": "2024-Oct-27",
-        "notes": ""
-    },
-    {
-        "index": 24,
-        "comment": "මූලික ධර්ම දේශනා - පටිච්චසමුප්පාදය 07",
-        "url": "https://www.youtube.com/watch?v=1KBcS0H8L6w",
-        "date": "2024-Nov-03",
-        "notes": ""
-    },
-    {
-        "index": 25,
-        "comment": "මූලික ධර්ම දේශනා - පටිච්චසමුප්පාදය 08",
-        "url": "https://www.youtube.com/watch?v=I6UutNaaTWo",
-        "date": "2024-Nov-10",
-        "notes": "<p>මහා සළායතනික සුත්තං <a href=\"/documents/pdfs/මහා සළායතනික සුත්තං.pdf\"  target=\"_blank\">/documents/pdfs/මහා සළායතනික සුත්තං.pdf</a></p>\n<p>මහා සළායතනික සුත්තං <a href=\"https://tripitaka.online/sutta/870\" target=\"_blank\" >https://tripitaka.online/sutta/870</a></p>"
-    },
-    {
-        "index": 26,
-        "comment": "මූලික ධර්ම දේශනා - පටිච්චසමුප්පාදය 09 දුක",
-        "url": "https://www.youtube.com/watch?v=j_esHbAh_SA",
-        "date": "2024-Nov-17",
-        "notes": "<p>මහා සළායතනික සුත්තං <a href=\"/documents/pdfs/මහා සළායතනික සුත්තං.pdf\"  target=\"_blank\">/documents/pdfs/මහා සළායතනික සුත්තං.pdf</a></p>\n<p>මහා සළායතනික සුත්තං <a href=\"https://tripitaka.online/sutta/870\" target=\"_blank\" >https://tripitaka.online/sutta/870</a></p>"
-    },
-    {
-        "index": 27,
-        "comment": "මූලික ධර්ම දේශනා - පටිච්චසමුප්පාදය 10 දුක",
-        "url": "https://www.youtube.com/watch?v=CtmaIBgnkU8",
-        "date": "2024-Nov-24",
-        "notes": ""
-    },
-    {
-        "index": 28,
-        "comment": "මූලික ධර්ම දේශනා - පටිච්චසමුප්පාදය 11 දුක (අකුසලමූල-කුසලමූල)",
-        "url": "https://www.youtube.com/watch?v=1B9YFEvzzQw",
-        "date": "2024-Dec-01",
-        "notes": ""
-    },
-    {
-        "index": 29,
-        "comment": "මූලික ධර්ම දේශනා - පටිච්චසමුප්පාදය 12 දුක",
-        "url": "https://www.youtube.com/watch?v=rlQZFiX1-Yo",
-        "date": "2024-Dec-08",
-        "notes": ""
-    },
-    {
-        "index": 30,
-        "comment": "මූලික ධර්ම දේශනා - ආසව",
-        "url": "https://www.youtube.com/watch?v=6_AZJQ2rIuE",
-        "date": "2024-Dec-15",
-        "notes": "<p>ඛජ්ජනීය සුත්තං (PDF) <a href=\"/documents/pdfs/ඛජ්ජනීය සුත්තං.pdf\"  target=\"_blank\">/documents/pdfs/ඛජ්ජනීය සුත්තං.pdf</a></p>\n<p>ඛජ්ජනීය සුත්තං (Online) <a href=\"https://tripitaka.online/sutta/3413\" target=\"_blank\" >https://tripitaka.online/sutta/3413</a></p>\n<p>මධුපිණ්ඩික සුත්තං (PDF) <a href=\"/documents/pdfs/මධුපිණ්ඩික සුත්තං.pdf\"  target=\"_blank\">/documents/pdfs/මධුපිණ්ඩික සුත්තං.pdf</a></p>\n<p>මධුපිණ්ඩික සුත්තං (Online) <a href=\"https://tripitaka.online/sutta/311\" target=\"_blank\" >https://tripitaka.online/sutta/311</a></p>\n<p>මහාචත්තාරීසක සුත්තං (PDF) <a href=\"/documents/pdfs/මහාචත්තාරීසක සුත්තං.pdf\"  target=\"_blank\">/documents/pdfs/මහාචත්තාරීසක සුත්තං.pdf</a></p>\n<p>මහාචත්තාරීසක සුත්තං (Online) <a href=\"https://tripitaka.online/sutta/739\" target=\"_blank\" >https://tripitaka.online/sutta/739</a></p>\n<p>ඡ ඡක්ක සුත්තං (PDF) <a href=\"/documents/pdfs/ඡ ඡක්ක සුත්තං.pdf\"  target=\"_blank\">/documents/pdfs/ඡ ඡක්ක සුත්තං.pdf</a></p>\n<p>ඡ ඡක්ක සුත්තං (Online) <a href=\"https://tripitaka.online/sutta/865\" target=\"_blank\" >https://tripitaka.online/sutta/865</a></p>\n<p>මහා සළායතනික සුත්තං (PDF) <a href=\"/documents/pdfs/මහා සළායතනික සුත්තං.pdf\"  target=\"_blank\">/documents/pdfs/මහා සළායතනික සුත්තං.pdf</a></p>\n<p>මහා සළායතනික සුත්තං (Online) <a href=\"https://tripitaka.online/sutta/870\" target=\"_blank\" >https://tripitaka.online/sutta/870</a></p>\n<p>සබ්බාසව සුත්තං (PDF) <a href=\"/documents/pdfs/සබ්බාසව සුත්තං.pdf\"  target=\"_blank\">/documents/pdfs/සබ්බාසව සුත්තං.pdf</a></p>\n<p>සබ්බාසව සුත්තං (Online) <a href=\"https://tripitaka.online/sutta/268\" target=\"_blank\" >https://tripitaka.online/sutta/268</a></p>\n<p>ගද්දූලබද්ධ සුත්තං (PDF) <a href=\"/documents/pdfs/ගද්දූලබද්ධ සුත්තං.pdf\"  target=\"_blank\">/documents/pdfs/ගද්දූලබද්ධ සුත්තං.pdf</a></p>\n<p>ගද්දූලබද්ධ සුත්තං (Online) <a href=\"https://tripitaka.online/sutta/3575\" target=\"_blank\" >https://tripitaka.online/sutta/3575</a></p>\n<p>නිබ්බේධික සුත්තං (PDF) <a href=\"/documents/pdfs/නිබ්බේධික සුත්තං.pdf\"  target=\"_blank\">/documents/pdfs/නිබ්බේධික සුත්තං.pdf</a></p>\n<p>නිබ්බේධික සුත්තං (Online) <a href=\"https://tripitaka.online/sutta/10420\" target=\"_blank\" >https://tripitaka.online/sutta/10420</a></p>"
-    },
-    {
-        "index": 31,
-        "comment": "සාරාංශ දේශනාව",
-        "url": "https://www.youtube.com/watch?v=oU2TGYHN2DM",
-        "date": "2024-Dec-22",
-        "notes": "<p>දේසනාව සඳහා පත්‍රිකාව (PDF) <a href=\"/documents/pdfs/Kalutara Bodhiya දර්ශන ඥානය (2024-12-22) v2.pdf\"  target=\"_blank\">/documents/pdfs/Kalutara Bodhiya දර්ශන ඥානය (2024-12-22) v2.pdf</a></p>\n<p>ඛජ්ජනීය සුත්තං (PDF) <a href=\"/documents/pdfs/ඛජ්ජනීය සුත්තං.pdf\"  target=\"_blank\">/documents/pdfs/ඛජ්ජනීය සුත්තං.pdf</a></p>\n<p>ඛජ්ජනීය සුත්තං (Online) <a href=\"https://tripitaka.online/sutta/3413\" target=\"_blank\" >https://tripitaka.online/sutta/3413</a></p>\n<p>මධුපිණ්ඩික සුත්තං (PDF) <a href=\"/documents/pdfs/මධුපිණ්ඩික සුත්තං.pdf\"  target=\"_blank\">/documents/pdfs/මධුපිණ්ඩික සුත්තං.pdf</a></p>\n<p>මධුපිණ්ඩික සුත්තං (Online) <a href=\"https://tripitaka.online/sutta/311\" target=\"_blank\" >https://tripitaka.online/sutta/311</a></p>\n<p>මහාචත්තාරීසක සුත්තං (PDF) <a href=\"/documents/pdfs/මහාචත්තාරීසක සුත්තං.pdf\"  target=\"_blank\">/documents/pdfs/මහාචත්තාරීසක සුත්තං.pdf</a></p>\n<p>මහාචත්තාරීසක සුත්තං (Online) <a href=\"https://tripitaka.online/sutta/739\" target=\"_blank\" >https://tripitaka.online/sutta/739</a></p>\n<p>ඡ ඡක්ක සුත්තං (PDF) <a href=\"/documents/pdfs/ඡ ඡක්ක සුත්තං.pdf\"  target=\"_blank\">/documents/pdfs/ඡ ඡක්ක සුත්තං.pdf</a></p>\n<p>ඡ ඡක්ක සුත්තං (Online) <a href=\"https://tripitaka.online/sutta/865\" target=\"_blank\" >https://tripitaka.online/sutta/865</a></p>\n<p>මහා සළායතනික සුත්තං (PDF) <a href=\"/documents/pdfs/මහා සළායතනික සුත්තං.pdf\"  target=\"_blank\">/documents/pdfs/මහා සළායතනික සුත්තං.pdf</a></p>\n<p>මහා සළායතනික සුත්තං (Online) <a href=\"https://tripitaka.online/sutta/870\" target=\"_blank\" >https://tripitaka.online/sutta/870</a></p>\n<p>සබ්බාසව සුත්තං (PDF) <a href=\"/documents/pdfs/සබ්බාසව සුත්තං.pdf\"  target=\"_blank\">/documents/pdfs/සබ්බාසව සුත්තං.pdf</a></p>\n<p>සබ්බාසව සුත්තං (Online) <a href=\"https://tripitaka.online/sutta/268\" target=\"_blank\" >https://tripitaka.online/sutta/268</a></p>\n<p>ගද්දූලබද්ධ සුත්තං (PDF) <a href=\"/documents/pdfs/ගද්දූලබද්ධ සුත්තං.pdf\"  target=\"_blank\">/documents/pdfs/ගද්දූලබද්ධ සුත්තං.pdf</a></p>\n<p>ගද්දූලබද්ධ සුත්තං (Online) <a href=\"https://tripitaka.online/sutta/3575\" target=\"_blank\" >https://tripitaka.online/sutta/3575</a></p>\n<p>නිබ්බේධික සුත්තං (PDF) <a href=\"/documents/pdfs/නිබ්බේධික සුත්තං.pdf\"  target=\"_blank\">/documents/pdfs/නිබ්බේධික සුත්තං.pdf</a></p>\n<p>නිබ්බේධික සුත්තං (Online) <a href=\"https://tripitaka.online/sutta/10420\" target=\"_blank\" >https://tripitaka.online/sutta/10420</a></p>"
-    },
-    {
-        "index": 32,
-        "comment": "ආවර්ජනාව දේශනා අංක 01 02 03 04",
-        "url": "https://www.youtube.com/watch?v=hzFdSQeUdDI",
-        "date": "2025-Jan-05",
-        "notes": "<p>ආවර්ජනාව දේශනා සාරාංශය <a href=\"/documents/pdfs/Niwan Maga Udesa (2025-01-04) v2 - Share Compress.pdf\"  target=\"_blank\">/documents/pdfs/Niwan Maga Udesa (2025-01-04) v2 - Share Compress.pdf</a></p>"
-    },
-    {
-        "index": 33,
-        "comment": "ආවර්ජනාව දේශනා අංක (B) 05 06 07 08 09 10",
-        "url": "https://www.youtube.com/watch?v=0FmI1W_IHbE",
-        "date": "2025-Jan-05",
-        "notes": "<p>ආවර්ජනාව දේශනා සාරාංශය <a href=\"/documents/pdfs/Niwan Maga Udesa (2025-01-04) v2 - Share Compress.pdf\"  target=\"_blank\">/documents/pdfs/Niwan Maga Udesa (2025-01-04) v2 - Share Compress.pdf</a></p>"
-    },
-    {
-        "index": 34,
-        "comment": "ආවර්ජනාව දේශනා අංක (C) 11 12 13 14 15 16 17",
-        "url": "https://www.youtube.com/watch?v=lOEHWaPJXH0",
-        "date": "2025-Jan-05",
-        "notes": "<p>ආවර්ජනාව දේශනා සාරාංශය <a href=\"/documents/pdfs/Niwan Maga Udesa (2025-01-04) v2 - Share Compress.pdf\"  target=\"_blank\">/documents/pdfs/Niwan Maga Udesa (2025-01-04) v2 - Share Compress.pdf</a></p>"
-    }
+     {
+          "index": 1,
+          "comment": "මූලික ධර්ම දේශනා චක්ඛු සෝත ඝාණ ජිව්හා කාය මන",
+          "url": "https://www.youtube.com/watch?v=o7wCGZC1g6o",
+          "date": "2024-05-05",
+          "video_id": "o7wCGZC1g6o",
+          "date_string": "2024-May-05",
+          "line_number": 1,
+          "notes": ""
+     },
+     {
+          "index": 2,
+          "comment": "මූලික ධර්ම දේශනා චක්ඛු සෝත ඝාණ ජිව්හා කාය මන 02",
+          "url": "https://www.youtube.com/watch?v=1MVUsHFXML0",
+          "date": "2024-05-12",
+          "video_id": "1MVUsHFXML0",
+          "date_string": "2024-May-12",
+          "line_number": 2,
+          "notes": ""
+     },
+     {
+          "index": 3,
+          "comment": "මූලික ධර්ම දේශනා යෝනිසෝ අයෝනිසෝ මනසිකාර - තිණ්ණං සංඝති",
+          "url": "https://www.youtube.com/watch?v=kMPzguMBhpI",
+          "date": "2024-05-19",
+          "video_id": "kMPzguMBhpI",
+          "date_string": "2024-May-19",
+          "line_number": 3,
+          "notes": ""
+     },
+     {
+          "index": 4,
+          "comment": "මූලික ධර්ම දේශනා- මන - මනෝද්වාරය- භවාංග-මනෝවිඤ්ඤාණ-ආයතන",
+          "url": "https://www.youtube.com/watch?v=sjBF0k4TJ2k",
+          "date": "2024-06-02",
+          "video_id": "sjBF0k4TJ2k",
+          "date_string": "2024-Jun-02",
+          "line_number": 4,
+          "notes": ""
+     },
+     {
+          "index": 5,
+          "comment": "මූලික ධර්ම දේශනා තිණ්ණං සංඝති - පංචස්කන්ධ - පංචඋපාදානස්කන්ධ",
+          "url": "https://www.youtube.com/watch?v=4X13o3e4UeY",
+          "date": "2024-06-09",
+          "video_id": "4X13o3e4UeY",
+          "date_string": "2024-Jun-09",
+          "line_number": 5,
+          "notes": ""
+     },
+     {
+          "index": 6,
+          "comment": "මූලික ධර්ම දේශනා තිණ්ණං සංඝති - පංචස්කන්ධ -ධාතු-ආයතන",
+          "url": "https://www.youtube.com/watch?v=KC1KzFeHuAU",
+          "date": "2024-06-16",
+          "video_id": "KC1KzFeHuAU",
+          "date_string": "2024-Jun-16",
+          "line_number": 6,
+          "notes": ""
+     },
+     {
+          "index": 7,
+          "comment": "මූලික ධර්ම දේශනා තිණ්ණං සංඝති පංචස්කන්ධ පංචඋපාදානස්කන්ධ හට ගැනීම",
+          "url": "https://www.youtube.com/watch?v=hwkVDp-tajc",
+          "date": "2024-06-23",
+          "video_id": "hwkVDp-tajc",
+          "date_string": "2024-Jun-23",
+          "line_number": 7,
+          "notes": ""
+     },
+     {
+          "index": 8,
+          "comment": "පංචස්කන්ධ පංචඋපාදානස්කන්ධ හට ගැනීම - සතර මහාභූත උපාදා රූප",
+          "url": "https://www.youtube.com/watch?v=_7KHIB5F5ZU",
+          "date": "2024-06-30",
+          "video_id": "_7KHIB5F5ZU",
+          "date_string": "2024-Jun-30",
+          "line_number": 8,
+          "notes": ""
+     },
+     {
+          "index": 9,
+          "comment": "මූලික ධර්ම දේශනා පංචස්කන්ධ-රූප-සංස්කාර (චේතනා) කෘත්‍යය",
+          "url": "https://www.youtube.com/watch?v=JAvb-j9b7GY",
+          "date": "2024-07-07",
+          "video_id": "JAvb-j9b7GY",
+          "date_string": "2024-Jul-07",
+          "line_number": 9,
+          "notes": "<p>නිවන් මග උදෙසා දර්ශන ඥානය සඳහා මූලික සූත්‍ර <a href=\"/documents/දර්ශන ඥානය මූලික සූත්‍ර 01.pdf\"  target=\"_blank\">/documents/දර්ශන ඥානය මූලික සූත්‍ර 01.pdf</a></p>"
+     },
+     {
+          "index": 10,
+          "comment": "සංස්කාර (චේතනා) කෘත්‍යය - අනිච්ච දුක්ඛ අනත්ත භාවනා",
+          "url": "https://www.youtube.com/watch?v=yw74kAq-4A8",
+          "date": "2024-07-14",
+          "video_id": "yw74kAq-4A8",
+          "date_string": "2024-Jul-14",
+          "line_number": 10,
+          "notes": "<p>නිවන් මග උදෙසා දර්ශන ඥානය සඳහා මූලික සූත්‍ර <a href=\"/documents/දර්ශන ඥානය මූලික සූත්‍ර 01.pdf\"  target=\"_blank\">/documents/දර්ශන ඥානය මූලික සූත්‍ර 01.pdf</a></p>"
+     },
+     {
+          "index": 11,
+          "comment": "මූලික ධර්ම දේශනා - සංස්කාර (චේතනා) කෘත්‍යය පංචඋපාදානස්කන්ධ",
+          "url": "https://www.youtube.com/watch?v=_N1J5AlYWks",
+          "date": "2024-07-21",
+          "video_id": "_N1J5AlYWks",
+          "date_string": "2024-Jul-21",
+          "line_number": 11,
+          "notes": ""
+     },
+     {
+          "index": 12,
+          "comment": "මූලික ධර්ම දේශනා - සංස්කාර - පංචඋපාදානස්කන්ධ-හේතු ඵල දහම",
+          "url": "https://www.youtube.com/watch?v=9xwNjM4JJqE",
+          "date": "2024-07-28",
+          "video_id": "9xwNjM4JJqE",
+          "date_string": "2024-Jul-28",
+          "line_number": 12,
+          "notes": ""
+     },
+     {
+          "index": 13,
+          "comment": "මූලික ධර්ම දේශනා - ඵස්සය -රූපකලාප",
+          "url": "https://www.youtube.com/watch?v=DqcGbLU9164",
+          "date": "2024-08-04",
+          "video_id": "DqcGbLU9164",
+          "date_string": "2024-Aug-04",
+          "line_number": 13,
+          "notes": ""
+     },
+     {
+          "index": 14,
+          "comment": "මූලික ධර්ම දේශනා - පටිච්චසමුප්පාදය 01",
+          "url": "https://www.youtube.com/watch?v=cAwOGKwNa6Q",
+          "date": "2024-08-11",
+          "video_id": "cAwOGKwNa6Q",
+          "date_string": "2024-Aug-11",
+          "line_number": 14,
+          "notes": ""
+     },
+     {
+          "index": 15,
+          "comment": "මූලික පංචස්කන්ධ දේශනාව රූප,වේදනා,සංඥා,සංඛාර,විඤ්ඤාණ 01",
+          "url": "https://www.youtube.com/watch?v=muLaeDuNXbA",
+          "date": "2024-08-18",
+          "video_id": "muLaeDuNXbA",
+          "date_string": "2024-Aug-18",
+          "line_number": 15,
+          "notes": "<p> <a href=\"/VisheshaDesana/2024 08 18  Kalutara Bodhiya දර්ශන ඥානය.pdf\"  target=\"_blank\">/VisheshaDesana/2024 08 18  Kalutara Bodhiya දර්ශන ඥානය.pdf</a></p>"
+     },
+     {
+          "index": 15,
+          "comment": "මූලික පංචස්කන්ධ දේශනාව රූප,වේදනා,සංඥා,සංඛාර,විඤ්ඤාණ 02",
+          "url": "https://www.youtube.com/watch?v=ASCDL8mE0bI",
+          "date": "2024-08-18",
+          "video_id": "ASCDL8mE0bI",
+          "date_string": "2024-Aug-18",
+          "line_number": 16,
+          "notes": "<p> <a href=\"/VisheshaDesana/2024 08 18  Kalutara Bodhiya දර්ශන ඥානය.pdf\"  target=\"_blank\">/VisheshaDesana/2024 08 18  Kalutara Bodhiya දර්ශන ඥානය.pdf</a></p>"
+     },
+     {
+          "index": 15,
+          "comment": "මූලික ධර්ම දේශනා - රුප්පනය (පෙලීම, ඇවිස්සීම)",
+          "url": "https://www.youtube.com/watch?v=2EOx36wT3DE",
+          "date": "2024-08-25",
+          "video_id": "2EOx36wT3DE",
+          "date_string": "2024-Aug-25",
+          "line_number": 17,
+          "notes": "<p> <a href=\"/VisheshaDesana/2024 08 18  Kalutara Bodhiya දර්ශන ඥානය.pdf\"  target=\"_blank\">/VisheshaDesana/2024 08 18  Kalutara Bodhiya දර්ශන ඥානය.pdf</a></p>"
+     },
+     {
+          "index": 16,
+          "comment": "රුප්පනය (පෙලීම, ඇවිස්සීම) නිසා සංකාර - එබැවින් කර්මජ රූප",
+          "url": "https://www.youtube.com/watch?v=IHuNxoSrlTw",
+          "date": "2024-09-01",
+          "video_id": "IHuNxoSrlTw",
+          "date_string": "2024-Sep-01",
+          "line_number": 18,
+          "notes": ""
+     },
+     {
+          "index": 17,
+          "comment": "මූලික ධර්ම දේශනා - පටිච්චසමුප්පාදය 01",
+          "url": "https://www.youtube.com/watch?v=-gXEscfl3qY",
+          "date": "2024-09-08",
+          "video_id": "-gXEscfl3qY",
+          "date_string": "2024-Sep-08",
+          "line_number": 19,
+          "notes": ""
+     },
+     {
+          "index": 18,
+          "comment": "මූලික ධර්ම දේශනා - පටිච්චසමුප්පාදය 02",
+          "url": "https://www.youtube.com/watch?v=FjBUyrwHLkc",
+          "date": "2024-09-15",
+          "video_id": "FjBUyrwHLkc",
+          "date_string": "2024-Sep-15",
+          "line_number": 20,
+          "notes": ""
+     },
+     {
+          "index": 19,
+          "comment": "මූලික ධර්ම දේශනා - පටිච්චසමුප්පාදය 03",
+          "url": "https://www.youtube.com/watch?v=ULqxcmYAoQk",
+          "date": "2024-09-29",
+          "video_id": "ULqxcmYAoQk",
+          "date_string": "2024-Sep-29",
+          "line_number": 21,
+          "notes": ""
+     },
+     {
+          "index": 19,
+          "comment": "උපකාරක දේශනා (A)",
+          "url": "https://www.youtube.com/watch?v=AJFp8VWKhZ0",
+          "date": "2024-10-02",
+          "video_id": "AJFp8VWKhZ0",
+          "date_string": "2024-Oct-02",
+          "line_number": 22,
+          "notes": ""
+     },
+     {
+          "index": 20,
+          "comment": "මූලික ධර්ම දේශනා",
+          "url": "https://www.youtube.com/watch?v=a3fdF_zdzqA",
+          "date": "2024-10-06",
+          "video_id": "a3fdF_zdzqA",
+          "date_string": "2024-Oct-06",
+          "line_number": 23,
+          "notes": ""
+     },
+     {
+          "index": 21,
+          "comment": "මූලික ධර්ම දේශනා - පටිච්චසමුප්පාදය 04",
+          "url": "https://www.youtube.com/watch?v=LMCbfUbTjzk",
+          "date": "2024-10-13",
+          "video_id": "LMCbfUbTjzk",
+          "date_string": "2024-Oct-13",
+          "line_number": 24,
+          "notes": ""
+     },
+     {
+          "index": 22,
+          "comment": "මූලික ධර්ම දේශනා - පටිච්චසමුප්පාදය 05",
+          "url": "https://www.youtube.com/watch?v=TIsW3JapDzY",
+          "date": "2024-10-20",
+          "video_id": "TIsW3JapDzY",
+          "date_string": "2024-Oct-20",
+          "line_number": 25,
+          "notes": ""
+     },
+     {
+          "index": 23,
+          "comment": "මූලික ධර්ම දේශනා - පටිච්චසමුප්පාදය 06",
+          "url": "https://www.youtube.com/watch?v=pSZxBJU1iO8",
+          "date": "2024-10-27",
+          "video_id": "pSZxBJU1iO8",
+          "date_string": "2024-Oct-27",
+          "line_number": 26,
+          "notes": ""
+     },
+     {
+          "index": 24,
+          "comment": "මූලික ධර්ම දේශනා - පටිච්චසමුප්පාදය 07",
+          "url": "https://www.youtube.com/watch?v=1KBcS0H8L6w",
+          "date": "2024-11-03",
+          "video_id": "1KBcS0H8L6w",
+          "date_string": "2024-Nov-03",
+          "line_number": 27,
+          "notes": ""
+     },
+     {
+          "index": 25,
+          "comment": "මූලික ධර්ම දේශනා - පටිච්චසමුප්පාදය 08",
+          "url": "https://www.youtube.com/watch?v=I6UutNaaTWo",
+          "date": "2024-11-10",
+          "video_id": "I6UutNaaTWo",
+          "date_string": "2024-Nov-10",
+          "line_number": 28,
+          "notes": "<p>මහා සළායතනික සුත්තං <a href=\"/documents/pdfs/මහා සළායතනික සුත්තං.pdf\"  target=\"_blank\">/documents/pdfs/මහා සළායතනික සුත්තං.pdf</a></p>\n<p>මහා සළායතනික සුත්තං <a href=\"https://tripitaka.online/sutta/870\" target=\"_blank\" >https://tripitaka.online/sutta/870</a></p>"
+     },
+     {
+          "index": 26,
+          "comment": "මූලික ධර්ම දේශනා - පටිච්චසමුප්පාදය 09 දුක",
+          "url": "https://www.youtube.com/watch?v=j_esHbAh_SA",
+          "date": "2024-11-17",
+          "video_id": "j_esHbAh_SA",
+          "date_string": "2024-Nov-17",
+          "line_number": 29,
+          "notes": "<p>මහා සළායතනික සුත්තං <a href=\"/documents/pdfs/මහා සළායතනික සුත්තං.pdf\"  target=\"_blank\">/documents/pdfs/මහා සළායතනික සුත්තං.pdf</a></p>\n<p>මහා සළායතනික සුත්තං <a href=\"https://tripitaka.online/sutta/870\" target=\"_blank\" >https://tripitaka.online/sutta/870</a></p>"
+     },
+     {
+          "index": 27,
+          "comment": "මූලික ධර්ම දේශනා - පටිච්චසමුප්පාදය 10 දුක",
+          "url": "https://www.youtube.com/watch?v=CtmaIBgnkU8",
+          "date": "2024-11-24",
+          "video_id": "CtmaIBgnkU8",
+          "date_string": "2024-Nov-24",
+          "line_number": 30,
+          "notes": ""
+     },
+     {
+          "index": 28,
+          "comment": "මූලික ධර්ම දේශනා - පටිච්චසමුප්පාදය 11 දුක (අකුසලමූල-කුසලමූල)",
+          "url": "https://www.youtube.com/watch?v=1B9YFEvzzQw",
+          "date": "2024-12-01",
+          "video_id": "1B9YFEvzzQw",
+          "date_string": "2024-Dec-01",
+          "line_number": 31,
+          "notes": ""
+     },
+     {
+          "index": 29,
+          "comment": "මූලික ධර්ම දේශනා - පටිච්චසමුප්පාදය 12 දුක",
+          "url": "https://www.youtube.com/watch?v=rlQZFiX1-Yo",
+          "date": "2024-12-08",
+          "video_id": "rlQZFiX1-Yo",
+          "date_string": "2024-Dec-08",
+          "line_number": 32,
+          "notes": ""
+     },
+     {
+          "index": 30,
+          "comment": "මූලික ධර්ම දේශනා - ආසව",
+          "url": "https://www.youtube.com/watch?v=6_AZJQ2rIuE",
+          "date": "2024-12-15",
+          "video_id": "6_AZJQ2rIuE",
+          "date_string": "2024-Dec-15",
+          "line_number": 33,
+          "notes": "<p>ඛජ්ජනීය සුත්තං (PDF) <a href=\"/documents/pdfs/ඛජ්ජනීය සුත්තං.pdf\"  target=\"_blank\">/documents/pdfs/ඛජ්ජනීය සුත්තං.pdf</a></p>\n<p>ඛජ්ජනීය සුත්තං (Online) <a href=\"https://tripitaka.online/sutta/3413\" target=\"_blank\" >https://tripitaka.online/sutta/3413</a></p>\n<p>මධුපිණ්ඩික සුත්තං (PDF) <a href=\"/documents/pdfs/මධුපිණ්ඩික සුත්තං.pdf\"  target=\"_blank\">/documents/pdfs/මධුපිණ්ඩික සුත්තං.pdf</a></p>\n<p>මධුපිණ්ඩික සුත්තං (Online) <a href=\"https://tripitaka.online/sutta/311\" target=\"_blank\" >https://tripitaka.online/sutta/311</a></p>\n<p>මහාචත්තාරීසක සුත්තං (PDF) <a href=\"/documents/pdfs/මහාචත්තාරීසක සුත්තං.pdf\"  target=\"_blank\">/documents/pdfs/මහාචත්තාරීසක සුත්තං.pdf</a></p>\n<p>මහාචත්තාරීසක සුත්තං (Online) <a href=\"https://tripitaka.online/sutta/739\" target=\"_blank\" >https://tripitaka.online/sutta/739</a></p>\n<p>ඡ ඡක්ක සුත්තං (PDF) <a href=\"/documents/pdfs/ඡ ඡක්ක සුත්තං.pdf\"  target=\"_blank\">/documents/pdfs/ඡ ඡක්ක සුත්තං.pdf</a></p>\n<p>ඡ ඡක්ක සුත්තං (Online) <a href=\"https://tripitaka.online/sutta/865\" target=\"_blank\" >https://tripitaka.online/sutta/865</a></p>\n<p>මහා සළායතනික සුත්තං (PDF) <a href=\"/documents/pdfs/මහා සළායතනික සුත්තං.pdf\"  target=\"_blank\">/documents/pdfs/මහා සළායතනික සුත්තං.pdf</a></p>\n<p>මහා සළායතනික සුත්තං (Online) <a href=\"https://tripitaka.online/sutta/870\" target=\"_blank\" >https://tripitaka.online/sutta/870</a></p>\n<p>සබ්බාසව සුත්තං (PDF) <a href=\"/documents/pdfs/සබ්බාසව සුත්තං.pdf\"  target=\"_blank\">/documents/pdfs/සබ්බාසව සුත්තං.pdf</a></p>\n<p>සබ්බාසව සුත්තං (Online) <a href=\"https://tripitaka.online/sutta/268\" target=\"_blank\" >https://tripitaka.online/sutta/268</a></p>\n<p>ගද්දූලබද්ධ සුත්තං (PDF) <a href=\"/documents/pdfs/ගද්දූලබද්ධ සුත්තං.pdf\"  target=\"_blank\">/documents/pdfs/ගද්දූලබද්ධ සුත්තං.pdf</a></p>\n<p>ගද්දූලබද්ධ සුත්තං (Online) <a href=\"https://tripitaka.online/sutta/3575\" target=\"_blank\" >https://tripitaka.online/sutta/3575</a></p>\n<p>නිබ්බේධික සුත්තං (PDF) <a href=\"/documents/pdfs/නිබ්බේධික සුත්තං.pdf\"  target=\"_blank\">/documents/pdfs/නිබ්බේධික සුත්තං.pdf</a></p>\n<p>නිබ්බේධික සුත්තං (Online) <a href=\"https://tripitaka.online/sutta/10420\" target=\"_blank\" >https://tripitaka.online/sutta/10420</a></p>"
+     },
+     {
+          "index": 31,
+          "comment": "සාරාංශ දේශනාව",
+          "url": "https://www.youtube.com/watch?v=oU2TGYHN2DM",
+          "date": "2024-12-22",
+          "video_id": "oU2TGYHN2DM",
+          "date_string": "2024-Dec-22",
+          "line_number": 34,
+          "notes": "<p>දේසනාව සඳහා පත්‍රිකාව (PDF) <a href=\"/documents/pdfs/Kalutara Bodhiya දර්ශන ඥානය (2024-12-22) v2.pdf\"  target=\"_blank\">/documents/pdfs/Kalutara Bodhiya දර්ශන ඥානය (2024-12-22) v2.pdf</a></p>\n<p>ඛජ්ජනීය සුත්තං (PDF) <a href=\"/documents/pdfs/ඛජ්ජනීය සුත්තං.pdf\"  target=\"_blank\">/documents/pdfs/ඛජ්ජනීය සුත්තං.pdf</a></p>\n<p>ඛජ්ජනීය සුත්තං (Online) <a href=\"https://tripitaka.online/sutta/3413\" target=\"_blank\" >https://tripitaka.online/sutta/3413</a></p>\n<p>මධුපිණ්ඩික සුත්තං (PDF) <a href=\"/documents/pdfs/මධුපිණ්ඩික සුත්තං.pdf\"  target=\"_blank\">/documents/pdfs/මධුපිණ්ඩික සුත්තං.pdf</a></p>\n<p>මධුපිණ්ඩික සුත්තං (Online) <a href=\"https://tripitaka.online/sutta/311\" target=\"_blank\" >https://tripitaka.online/sutta/311</a></p>\n<p>මහාචත්තාරීසක සුත්තං (PDF) <a href=\"/documents/pdfs/මහාචත්තාරීසක සුත්තං.pdf\"  target=\"_blank\">/documents/pdfs/මහාචත්තාරීසක සුත්තං.pdf</a></p>\n<p>මහාචත්තාරීසක සුත්තං (Online) <a href=\"https://tripitaka.online/sutta/739\" target=\"_blank\" >https://tripitaka.online/sutta/739</a></p>\n<p>ඡ ඡක්ක සුත්තං (PDF) <a href=\"/documents/pdfs/ඡ ඡක්ක සුත්තං.pdf\"  target=\"_blank\">/documents/pdfs/ඡ ඡක්ක සුත්තං.pdf</a></p>\n<p>ඡ ඡක්ක සුත්තං (Online) <a href=\"https://tripitaka.online/sutta/865\" target=\"_blank\" >https://tripitaka.online/sutta/865</a></p>\n<p>මහා සළායතනික සුත්තං (PDF) <a href=\"/documents/pdfs/මහා සළායතනික සුත්තං.pdf\"  target=\"_blank\">/documents/pdfs/මහා සළායතනික සුත්තං.pdf</a></p>\n<p>මහා සළායතනික සුත්තං (Online) <a href=\"https://tripitaka.online/sutta/870\" target=\"_blank\" >https://tripitaka.online/sutta/870</a></p>\n<p>සබ්බාසව සුත්තං (PDF) <a href=\"/documents/pdfs/සබ්බාසව සුත්තං.pdf\"  target=\"_blank\">/documents/pdfs/සබ්බාසව සුත්තං.pdf</a></p>\n<p>සබ්බාසව සුත්තං (Online) <a href=\"https://tripitaka.online/sutta/268\" target=\"_blank\" >https://tripitaka.online/sutta/268</a></p>\n<p>ගද්දූලබද්ධ සුත්තං (PDF) <a href=\"/documents/pdfs/ගද්දූලබද්ධ සුත්තං.pdf\"  target=\"_blank\">/documents/pdfs/ගද්දූලබද්ධ සුත්තං.pdf</a></p>\n<p>ගද්දූලබද්ධ සුත්තං (Online) <a href=\"https://tripitaka.online/sutta/3575\" target=\"_blank\" >https://tripitaka.online/sutta/3575</a></p>\n<p>නිබ්බේධික සුත්තං (PDF) <a href=\"/documents/pdfs/නිබ්බේධික සුත්තං.pdf\"  target=\"_blank\">/documents/pdfs/නිබ්බේධික සුත්තං.pdf</a></p>\n<p>නිබ්බේධික සුත්තං (Online) <a href=\"https://tripitaka.online/sutta/10420\" target=\"_blank\" >https://tripitaka.online/sutta/10420</a></p>"
+     },
+     {
+          "index": 32,
+          "comment": "ආවර්ජනාව දේශනා අංක 01 02 03 04",
+          "url": "https://www.youtube.com/watch?v=hzFdSQeUdDI",
+          "date": "2025-01-05",
+          "video_id": "hzFdSQeUdDI",
+          "date_string": "2025-Jan-05",
+          "line_number": 35,
+          "notes": "<p>ආවර්ජනාව දේශනා සාරාංශය <a href=\"/documents/pdfs/Niwan Maga Udesa (2025-01-04) v2 - Share Compress.pdf\"  target=\"_blank\">/documents/pdfs/Niwan Maga Udesa (2025-01-04) v2 - Share Compress.pdf</a></p>"
+     },
+     {
+          "index": 33,
+          "comment": "ආවර්ජනාව දේශනා අංක (B) 05 06 07 08 09 10",
+          "url": "https://www.youtube.com/watch?v=0FmI1W_IHbE",
+          "date": "2025-01-05",
+          "video_id": "0FmI1W_IHbE",
+          "date_string": "2025-Jan-05",
+          "line_number": 36,
+          "notes": "<p>ආවර්ජනාව දේශනා සාරාංශය <a href=\"/documents/pdfs/Niwan Maga Udesa (2025-01-04) v2 - Share Compress.pdf\"  target=\"_blank\">/documents/pdfs/Niwan Maga Udesa (2025-01-04) v2 - Share Compress.pdf</a></p>"
+     },
+     {
+          "index": 34,
+          "comment": "ආවර්ජනාව දේශනා අංක (C) 11 12 13 14 15 16 17",
+          "url": "https://www.youtube.com/watch?v=lOEHWaPJXH0",
+          "date": "2025-01-05",
+          "video_id": "lOEHWaPJXH0",
+          "date_string": "2025-Jan-05",
+          "line_number": 37,
+          "notes": "<p>ආවර්ජනාව දේශනා සාරාංශය <a href=\"/documents/pdfs/Niwan Maga Udesa (2025-01-04) v2 - Share Compress.pdf\"  target=\"_blank\">/documents/pdfs/Niwan Maga Udesa (2025-01-04) v2 - Share Compress.pdf</a></p>"
+     }
 ]

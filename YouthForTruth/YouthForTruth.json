@@ -1,51 +1,72 @@
 [
-    {
-        "index": 1,
-        "comment": "Youth For Truth (සත්‍යය සොයා යන තාරුණ්‍යය)",
-        "url": "https://www.youtube.com/watch?v=pmwrnsJP6dE",
-        "date": "2025-Apr-22",
-        "notes": ""
-    },
-    {
-        "index": 2,
-        "comment": "Youth For Truth (සත්‍යය සොයා යන තාරුණ්‍යය)",
-        "url": "https://www.youtube.com/watch?v=E8ly1yn_BZ8",
-        "date": "2025-Apr-29",
-        "notes": ""
-    },
-    {
-        "index": 3,
-        "comment": "Youth For Truth (සත්‍යය සොයා යන තාරුණ්‍යය)",
-        "url": "https://www.youtube.com/watch?v=aQ82mijIuTc",
-        "date": "2025-May-06",
-        "notes": ""
-    },
-    {
-        "index": 4,
-        "comment": "Youth For Truth (සත්‍යය සොයා යන තාරුණ්‍යය)",
-        "url": "https://www.youtube.com/watch?v=AWpcfRYV6OA",
-        "date": "2025-May-13",
-        "notes": ""
-    },
-    {
-        "index": 5,
-        "comment": "Youth For Truth (සත්‍යය සොයා යන තාරුණ්‍යය)",
-        "url": "https://www.youtube.com/watch?v=Ye5_KHHGqjY",
-        "date": "2025-May-27",
-        "notes": ""
-    },
-    {
-        "index": 6,
-        "comment": "Youth For Truth ( සත්‍යය සොයා යන තාරුණ්‍යය) 006 පළමු කොටස",
-        "url": "https://www.youtube.com/watch?v=x59t3DkuDDk",
-        "date": "2025-Jun-03",
-        "notes": ""
-    },
-    {
-        "index": 6,
-        "comment": "Youth For Truth ( සත්‍යය සොයා යන තාරුණ්‍යය) 006 දෙවන කොටස",
-        "url": "https://www.youtube.com/watch?v=87Pn6Qk3mVM",
-        "date": "2025-Jun-03",
-        "notes": ""
-    }
+     {
+          "index": 1,
+          "comment": "Youth For Truth (සත්‍යය සොයා යන තාරුණ්‍යය)",
+          "url": "https://www.youtube.com/watch?v=pmwrnsJP6dE",
+          "date": "2025-04-22",
+          "video_id": "pmwrnsJP6dE",
+          "date_string": "2025-Apr-22",
+          "line_number": 1,
+          "notes": ""
+     },
+     {
+          "index": 2,
+          "comment": "Youth For Truth (සත්‍යය සොයා යන තාරුණ්‍යය)",
+          "url": "https://www.youtube.com/watch?v=E8ly1yn_BZ8",
+          "date": "2025-04-29",
+          "video_id": "E8ly1yn_BZ8",
+          "date_string": "2025-Apr-29",
+          "line_number": 2,
+          "notes": ""
+     },
+     {
+          "index": 3,
+          "comment": "Youth For Truth (සත්‍යය සොයා යන තාරුණ්‍යය)",
+          "url": "https://www.youtube.com/watch?v=aQ82mijIuTc",
+          "date": "2025-05-06",
+          "video_id": "aQ82mijIuTc",
+          "date_string": "2025-May-06",
+          "line_number": 3,
+          "notes": ""
+     },
+     {
+          "index": 4,
+          "comment": "Youth For Truth (සත්‍යය සොයා යන තාරුණ්‍යය)",
+          "url": "https://www.youtube.com/watch?v=AWpcfRYV6OA",
+          "date": "2025-05-13",
+          "video_id": "AWpcfRYV6OA",
+          "date_string": "2025-May-13",
+          "line_number": 4,
+          "notes": ""
+     },
+     {
+          "index": 5,
+          "comment": "Youth For Truth (සත්‍යය සොයා යන තාරුණ්‍යය)",
+          "url": "https://www.youtube.com/watch?v=Ye5_KHHGqjY",
+          "date": "2025-05-27",
+          "video_id": "Ye5_KHHGqjY",
+          "date_string": "2025-May-27",
+          "line_number": 5,
+          "notes": ""
+     },
+     {
+          "index": 6,
+          "comment": "Youth For Truth ( සත්‍යය සොයා යන තාරුණ්‍යය) 006 පළමු කොටස",
+          "url": "https://www.youtube.com/watch?v=x59t3DkuDDk",
+          "date": "2025-06-03",
+          "video_id": "x59t3DkuDDk",
+          "date_string": "2025-Jun-03",
+          "line_number": 6,
+          "notes": ""
+     },
+     {
+          "index": 6,
+          "comment": "Youth For Truth ( සත්‍යය සොයා යන තාරුණ්‍යය) 006 දෙවන කොටස",
+          "url": "https://www.youtube.com/watch?v=87Pn6Qk3mVM",
+          "date": "2025-06-03",
+          "video_id": "87Pn6Qk3mVM",
+          "date_string": "2025-Jun-03",
+          "line_number": 7,
+          "notes": ""
+     }
 ]

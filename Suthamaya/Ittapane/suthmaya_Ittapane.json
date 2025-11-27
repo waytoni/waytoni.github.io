@@ -1,37 +1,52 @@
 [
-    {
-        "index": 1,
-        "comment": "001 සුතමයඤාණං",
-        "url": "https://www.youtube.com/watch?v=ULaVxmgSn_c",
-        "date": "2023-Oct-28",
-        "notes": ""
-    },
-    {
-        "index": 2,
-        "comment": "002 සුතමයඤාණං",
-        "url": "https://www.youtube.com/watch?v=oIi-yEZp23o",
-        "date": "2023-Nov-26",
-        "notes": ""
-    },
-    {
-        "index": 3,
-        "comment": "003 සුතමයඤාණං",
-        "url": "https://www.youtube.com/watch?v=w1A0jmz1EVU",
-        "date": "2023-Dec-26",
-        "notes": ""
-    },
-    {
-        "index": 4,
-        "comment": "004 සුතමයඤාණං",
-        "url": "https://www.youtube.com/watch?v=DWkVdEulc-s",
-        "date": "2024-Jan-25",
-        "notes": ""
-    },
-    {
-        "index": 5,
-        "comment": "005 සුතමයඤාණං",
-        "url": "https://www.youtube.com/watch?v=QmlgVuvEy2M",
-        "date": "2024-Feb-23",
-        "notes": ""
-    }
+     {
+          "index": 1,
+          "comment": "001 සුතමයඤාණං",
+          "url": "https://www.youtube.com/watch?v=ULaVxmgSn_c",
+          "date": "2023-10-28",
+          "video_id": "ULaVxmgSn_c",
+          "date_string": "2023-Oct-28",
+          "line_number": 1,
+          "notes": ""
+     },
+     {
+          "index": 2,
+          "comment": "002 සුතමයඤාණං",
+          "url": "https://www.youtube.com/watch?v=oIi-yEZp23o",
+          "date": "2023-11-26",
+          "video_id": "oIi-yEZp23o",
+          "date_string": "2023-Nov-26",
+          "line_number": 2,
+          "notes": ""
+     },
+     {
+          "index": 3,
+          "comment": "003 සුතමයඤාණං",
+          "url": "https://www.youtube.com/watch?v=w1A0jmz1EVU",
+          "date": "2023-12-26",
+          "video_id": "w1A0jmz1EVU",
+          "date_string": "2023-Dec-26",
+          "line_number": 3,
+          "notes": ""
+     },
+     {
+          "index": 4,
+          "comment": "004 සුතමයඤාණං",
+          "url": "https://www.youtube.com/watch?v=DWkVdEulc-s",
+          "date": "2024-01-25",
+          "video_id": "DWkVdEulc-s",
+          "date_string": "2024-Jan-25",
+          "line_number": 4,
+          "notes": ""
+     },
+     {
+          "index": 5,
+          "comment": "005 සුතමයඤාණං",
+          "url": "https://www.youtube.com/watch?v=QmlgVuvEy2M",
+          "date": "2024-02-23",
+          "video_id": "QmlgVuvEy2M",
+          "date_string": "2024-Feb-23",
+          "line_number": 5,
+          "notes": ""
+     }
 ]
