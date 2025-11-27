@@ -71,7 +71,7 @@ def generate_siyuludesana_html():
     base_dir = "All_Playlists"
     info_file = os.path.join(base_dir, "SiyaluDesana_info.txt")
     template_file = os.path.join("scripts/templates", "SiyaluDesana_template.html")
-    output_file = os.path.join(base_dir, "SiyaluDesanaNew.html")
+    output_file = os.path.join(base_dir, "SiyaluDesana.html")
     nav_header_file = os.path.join("scripts/py", "navigation_header.html")
     
     # Parse the info file
