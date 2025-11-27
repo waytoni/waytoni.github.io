@@ -101,8 +101,8 @@ list_AllVideos_AA
 
 
 
-from scripts.py import build_series_SiyaluDesana
-build_series_SiyaluDesana
+from scripts import gen_SiyaluDesana
+gen_SiyaluDesana
 #build_series_ShortDhammaDiscussions
 
 from scripts import gen_homepage
