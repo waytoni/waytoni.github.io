@@ -20,7 +20,6 @@
 
 ## TIME ###
 # This information is necessary for all on-going series.
-
 සෑම අඟහරුවාදා දින සවස 2.00 සිට 5:00 දක්වා
 
 ## LOCATION ##

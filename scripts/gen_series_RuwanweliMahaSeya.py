@@ -9,7 +9,7 @@ from generate_series_page_helper import generate_series_page
 from gen_json_file import BuildDropDownMenuWithNavigation
 
 # Configuration variables
-ON_GOING = False  # Set to True if series is ongoing, False if completed
+ON_GOING = True  # Set to True if series is ongoing, False if completed
 DEBUG_INFO = False # Set to True for debugging, False for production
 
 # Define file paths
