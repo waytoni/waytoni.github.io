@@ -1,5 +1,6 @@
 import os
 import re
+import shutil
 
 def parse_siyuludesana_info(filename):
     """
@@ -69,7 +70,7 @@ def generate_siyuludesana_html():
     # File paths
     base_dir = "All_Playlists"
     info_file = os.path.join(base_dir, "SiyaluDesana_info.txt")
-    template_file = os.path.join(base_dir, "SiyaluDesana_template.html")
+    template_file = os.path.join("scripts/templates", "SiyaluDesana_template.html")
     output_file = os.path.join(base_dir, "SiyaluDesanaNew.html")
     nav_header_file = os.path.join("scripts/py", "navigation_header.html")
     
@@ -128,8 +129,15 @@ def generate_siyuludesana_html():
         print(f"Successfully generated {output_file}")
         print(f"Current series: {num_current_lines} items")
         print(f"Past series: {num_past_lines} items")
+        
+        old_html_file = 'All_Playlists/සියුලු_දේශනා.html'
+        shutil.copy2(output_file, old_html_file, follow_symlinks=False)
+        
     except Exception as e:
         print(f"Error writing output file: {e}")
 
+
+    
 if __name__ == "__main__":
     generate_siyuludesana_html()
+    
