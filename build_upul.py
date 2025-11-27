@@ -59,8 +59,13 @@ if menu_change == True:
     build_404Page
     from scripts.py import build_series_ADA_ParamarthaLokaya
     build_series_ADA_ParamarthaLokaya
-    from scripts.py import build_FileListForNotes
-    build_FileListForNotes
+    #from scripts.py import build_FileListForNotes
+    #build_FileListForNotes
+    
+    from scripts import gen_notes
+    gen_notes
+    
+    
     from scripts.py import build_page_ChiththaChithasika
     build_page_ChiththaChithasika
     from scripts.py import build_series_BCD
@@ -77,8 +82,8 @@ if menu_change == True:
     #build_series_YouthForTruth
     #from scripts.py import build_series_Thalawathugoda
     #build_series_Thalawathugoda
-    from scripts.py import build_series_SuthamayaHirigal
-    build_series_SuthamayaHirigal
+    #from scripts.py import build_series_SuthamayaHirigal
+    #build_series_SuthamayaHirigal
     
     
     
