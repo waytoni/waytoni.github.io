@@ -146,7 +146,7 @@ def main():
         if os.path.exists(chithasika_path):
             chithasika_images = get_image_files(chithasika_path)
             if chithasika_images:
-                fp.write('\n\t<h2>චිත්ත සහ චෛතසික චක්‍ර විග්‍රහය සඳහා</h2>\n')
+                fp.write('\n\t<h2><li>චිත්ත සහ චෛතසික චක්‍ර විග්‍රහය සඳහා</li></h2>\n')
                 write_image_grid(fp, chithasika_images, "Chithasika", "thumbnails")
         
         # Section 4: ChiththaVeethi folder images
@@ -154,7 +154,7 @@ def main():
         if os.path.exists(chiththaveethi_path):
             chiththaveethi_images = get_image_files(chiththaveethi_path)
             if chiththaveethi_images:
-                fp.write('\n\t<h2>චිත්ත වීති විග්‍රහය සඳහා</h2>\n')
+                fp.write('\n\t<h2><li>චිත්ත වීති විග්‍රහය සඳහා</li></h2>\n')
                 write_image_grid(fp, chiththaveethi_images, "ChiththaVeethi", "thumbnails")
         
         # Close HTML file
