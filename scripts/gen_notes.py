@@ -158,6 +158,7 @@ def main():
                 write_image_grid(fp, chiththaveethi_images, "ChiththaVeethi", "thumbnails")
         
         # Close HTML file
+        fp.write('</main>\n')
         fp.write('</body>\n')
         fp.write('</html>\n')
     
