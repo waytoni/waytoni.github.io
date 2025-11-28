@@ -2,6 +2,9 @@ import os
 import sys
 from PIL import Image
 
+sys.path.append('scripts/py')
+from utilities import *
+
 def generate_thumbnail(source_path, thumb_path, width=300):
     """Generate thumbnail for an image"""
     try:
@@ -52,8 +55,9 @@ def generate_thumbnails_for_folder(folder_path, thumbnails_base_path, folder_nam
             else:
                 print(f"Thumbnail already exists for: {filename}")
 
-def prepare_image_grid(image_files, base_folder="", thumb_folder=""):
-    image_grid = ''
+def write_image_grid(fp, image_files, base_folder="", thumb_folder=""):
+    """Write HTML grid for a set of image files"""
+    fp.write('\t<div class="grid-container">\n')
     
     for file in image_files:
         # Determine paths for image and thumbnail
@@ -64,11 +68,12 @@ def prepare_image_grid(image_files, base_folder="", thumb_folder=""):
             image_path = file
             thumb_path = f"{thumb_folder}/{file}"
         
-        image_grid += f'<div class="grid-item">'
-        image_grid += f'<a href="{image_path}"><img src="{thumb_path}" alt="{file}"></a>'
-        image_grid += f'<p>{file}</p>'
-        image_grid += '</div>'
-    return image_grid 
+        fp.write("\t\t<div class=\"grid-item\">\n")
+        fp.write(f'\t\t<a href="{image_path}"><img src="{thumb_path}" alt="{file}"></a>')
+        fp.write(f'\t\t<p>{file}</p>\n')
+        fp.write('\t\t</div>\n')
+    
+    fp.write('\t</div>\n')
 
 def get_image_files(folder_path):
     """Get list of image files from a folder"""
@@ -85,10 +90,9 @@ def get_image_files(folder_path):
 
 def main():
     basepath = './documents/NotesForDesana'
+    intro_file = os.path.join(basepath, 'NotesForDesana_intro.html')
     html_file = os.path.join(basepath, 'NotesForDesana.html')
-    navigation_file = 'scripts/py/navigation_header.html'  # Adjusted path
-    template_file = os.path.join('scripts', 'templates/NotesForDesana_template.html')
-   
+    series_title = 'සියලු දේශනා සඳහා සටහන්'
     
     Filelist_styles = """
     <link rel="stylesheet" type="text/css" href="/css/file_list.css">
@@ -112,73 +116,53 @@ def main():
         if os.path.exists(folder_path):
             print(f"Generating thumbnails for {folder} folder...")
             generate_thumbnails_for_folder(folder_path, thumbnails_path, folder)
-
-    # Read template
-    try:
-        with open(template_file, 'r', encoding='utf-8') as file:
-            template_content = file.read()
-    except FileNotFoundError:
-        print(f"Error: Template file {template_file} not found.")
-        return
     
-    # Replace navigation header
-    try:
-        with open(navigation_file, 'r', encoding='utf-8') as file:
-            navigation_content = file.read()
-        template_content = template_content.replace('$NAVIGATION_HEADER$', navigation_content)
-        print("Successfully replaced navigation header")
-    except FileNotFoundError:
-        print(f"Error: Navigation file {navigation_file} not found.")
-        return
+    # Create HTML file
+    print(f"Creating HTML file: {html_file}")
+    PrepareHeadSimpleStyles(html_file, series_title, Filelist_styles)
     
+    # Write introduction
+    with open(html_file, 'a', encoding='utf-8') as fp:
+        with open(intro_file, 'r', encoding='utf-8') as fintro:
+            page_intro = fintro.read()
+            fp.write(page_intro)
+        
+        # Section 1: Base folder images
+        base_images = get_image_files(basepath)
+        if base_images:
+            #fp.write('\n\t<h2>ප්‍රධාන සටහන්</h2>\n')
+            write_image_grid(fp, base_images, "", "thumbnails")
+        
+        # Section 2: General folder images
+        general_path = os.path.join(basepath, 'General')
+        if os.path.exists(general_path):
+            general_images = get_image_files(general_path)
+            if general_images:
+                #fp.write('\n\t<h2>සාමාන්‍ය සටහන්</h2>\n')
+                write_image_grid(fp, general_images, "General", "thumbnails")
+        
+        # Section 3: Chithasika folder images
+        chithasika_path = os.path.join(basepath, 'Chithasika')
+        if os.path.exists(chithasika_path):
+            chithasika_images = get_image_files(chithasika_path)
+            if chithasika_images:
+                fp.write('\n\t<h2><li>චිත්ත සහ චෛතසික චක්‍ර විග්‍රහය සඳහා</li></h2>\n')
+                write_image_grid(fp, chithasika_images, "Chithasika", "thumbnails")
+        
+        # Section 4: ChiththaVeethi folder images
+        chiththaveethi_path = os.path.join(basepath, 'ChiththaVeethi')
+        if os.path.exists(chiththaveethi_path):
+            chiththaveethi_images = get_image_files(chiththaveethi_path)
+            if chiththaveethi_images:
+                fp.write('\n\t<h2><li>චිත්ත වීති විග්‍රහය සඳහා</li></h2>\n')
+                write_image_grid(fp, chiththaveethi_images, "ChiththaVeethi", "thumbnails")
+        
+        # Close HTML file
+        fp.write('</main>\n')
+        fp.write('</body>\n')
+        fp.write('</html>\n')
     
-      
-    # Section 1: Base folder images
-    base_images = get_image_files(basepath)
-    if base_images:
-        base_images_content = prepare_image_grid(base_images, "", "thumbnails") 
-    
-    template_content = template_content.replace('$MAIN_FOLDER_IMAGES$', base_images_content)
-    print("Successfully replaced main folder images")
-    
-    # Section 2: General folder images
-    general_path = os.path.join(basepath, 'General')
-    if os.path.exists(general_path):
-        general_images = get_image_files(general_path)
-        if general_images:
-            general_images_content = prepare_image_grid(general_images, "General", "thumbnails")
-    
-    template_content = template_content.replace('$GENERAL_FOLDER_IMAGES$', general_images_content)
-    print("Successfully replaced general folder images")
-    
-    # Section 3: Chithasika folder images
-    chithasika_path = os.path.join(basepath, 'Chithasika')
-    if os.path.exists(chithasika_path):
-        chithasika_images = get_image_files(chithasika_path)
-        if chithasika_images:
-            chithasika_images_content = prepare_image_grid(chithasika_images, "Chithasika", "thumbnails")   
-    
-    template_content = template_content.replace('$CHITHASIKA_FOLDER_IMAGES$', chithasika_images_content)
-    print("Successfully replaced chithasika folder images") 
-    
-    # Section 4: ChiththaVeethi folder images
-    chiththaveethi_path = os.path.join(basepath, 'ChiththaVeethi')
-    if os.path.exists(chiththaveethi_path):
-        chiththaveethi_images = get_image_files(chiththaveethi_path)
-        if chiththaveethi_images:
-            chiththaveethi_images_content = prepare_image_grid(chiththaveethi_images, "ChiththaVeethi", "thumbnails")
-    
-    template_content = template_content.replace('$CHITHTHAVEETHI_FOLDER_IMAGES$', chiththaveethi_images_content)
-    print("Successfully replaced chiththaveethi folder images")
-
-    
-    # Write output file
-    try:
-        with open(html_file, 'w', encoding='utf-8') as file:
-            file.write(template_content)
-        print(f"Successfully generated {html_file}")
-    except Exception as e:
-        print(f"Error writing output file: {e}")
+    print("HTML file generation completed successfully!")
 
 if __name__ == "__main__":
     main()

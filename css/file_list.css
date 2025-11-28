@@ -71,7 +71,7 @@ body, h1, p {
 		.resource-section {
 			background: white;
 			border-radius: var(--border-radius);
-			padding: 1.5rem;
+			padding: 0rem;
 			margin-bottom: 2rem;
 			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 		}
