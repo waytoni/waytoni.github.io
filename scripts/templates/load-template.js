@@ -70,7 +70,7 @@ const templateLoader = new TemplateLoader();
 
 // Load templates when DOM is ready
 document.addEventListener('DOMContentLoaded', function() {
-    templateLoader.load('Topnavbar', 'templates/navbar.html');
+    templateLoader.load('Topnavbar', '/scripts/templates/navbar_insert_template.html');
     
     // You can load multiple templates
     // templateLoader.load('footer', 'templates/footer.html');
