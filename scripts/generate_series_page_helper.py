@@ -302,9 +302,13 @@ def generate_series_page(base_folder, html_file, json_file, css_file, on_going, 
             with open(zoom_file_path, 'r', encoding='utf-8') as f:
                 zoom_content = f.read()
             first_newline_index = zoom_content.find('\n')
-            zoom_content = zoom_content[first_newline_index+1:].strip()
+            #zoom_content = zoom_content[first_newline_index+1:].strip() # remove header line
+            #zoom_content = zoom_content.strip()
+            zoom_url = zoom_content[0:first_newline_index-1].strip()
+            zoom_content = zoom_content[first_newline_index+1:].strip() # remove header line
             
             if verbose:
+                print(zoom_url)
                 print(zoom_content)
         #     zoom_block = f'''
         # <div class="info-box">
@@ -312,7 +316,7 @@ def generate_series_page(base_folder, html_file, json_file, css_file, on_going, 
         # </div>'''
             zoom_block = f'''
             <div class="info-card">
-                <h3><i class="fa fa-video-camera"></i> Zoom සජීවීව සම්බන්ධ වීමට</h3>
+                <h3><i class="fa fa-video-camera"></i><a href="{zoom_url}">Zoom සජීවීව සම්බන්ධ වීමට</a></h3>
                 <p>{zoom_content}</p>
             </div>'''
 
