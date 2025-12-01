@@ -57,17 +57,16 @@ if menu_change == True:
     build_ZoomPage
     from scripts.py import build_404Page
     build_404Page
-    from scripts.py import build_series_ADA_ParamarthaLokaya
-    build_series_ADA_ParamarthaLokaya
+    #from scripts.py import build_series_ADA_ParamarthaLokaya
+    #build_series_ADA_ParamarthaLokaya
     #from scripts.py import build_FileListForNotes
     #build_FileListForNotes
     
-    from scripts import gen_notes
-    gen_notes
+    from scripts import gen_notes_v1
+    gen_notes_v1
     
-    
-    from scripts.py import build_page_ChiththaChithasika
-    build_page_ChiththaChithasika
+    #from scripts.py import build_page_ChiththaChithasika
+    #build_page_ChiththaChithasika
     from scripts.py import build_series_BCD
     build_series_BCD
     #from scripts.py import build_series_AbhidharmaAruth_EP
