@@ -27,7 +27,7 @@ def parse_siyuludesana_info(filename):
     for line in lines:
         # Remove leading/trailing whitespace
         line = line.strip()
-        print(line)
+        #print(line)
         # Skip empty lines
         if not line:
             continue
@@ -65,7 +65,7 @@ def parse_siyuludesana_info(filename):
 
 def generate_siyuludesana_html():
     """
-    Generate the SiyuluDesanaNew.html file by parsing the info file and using the template.
+    Generate the SiyuluDesana.html file by parsing the info file and using the template.
     """
     # File paths
     base_dir = "All_Playlists"

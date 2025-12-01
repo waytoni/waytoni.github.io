@@ -9,6 +9,8 @@
             --light-text: #666;
             --border-radius: 8px;
             --shadow: 0 4px 6px rgba(0,0,0,0.1);
+            /* --dark-color: #172f53; */
+            --dark-color: #5D4037;
         }
         
         body {
