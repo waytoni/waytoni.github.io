@@ -37,6 +37,7 @@ body, h1, p {
 			--light-color: #f5f9f5;
 			--text-color: #333;
 			--border-radius: 8px;
+			--dark-color: var(--primary-color);
 		}
 
 		body {
