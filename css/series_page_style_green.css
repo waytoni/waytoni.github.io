@@ -94,7 +94,9 @@ body {
     background-color: white;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-    padding: 20px;
+    padding:0px;
+    padding-top: 10px;
+    padding-left: 15px;
 }
 
 .info-card h3 {
