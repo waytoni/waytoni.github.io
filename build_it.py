@@ -1,16 +1,16 @@
 # Instructions for updating current set of files
 #
-# If there is an update (new video) in Kaluthala Bodhiya K lesson series
+# If there is an update (new video) in Kaluthala Bodhiya L series
 # then add an entry to the last line of the file: 
-#   KalutaraBodhiya/K_series/K_series_ytlinks.txt
+#   KalutaraBodhiya/L_series/L_series_ytlinks.txt
 #
-# If there is an update to the Thalawathugoda series,
+# If there is an update to the ThalawathugodaB series,
 # then add an entry to the last line of the file:
-#   NivanMagaUdesaDesana/Thalawathugoda/Thalawathugoda_ytlinks.txt
+#   NivanMagaUdesaDesana/ThalawathugodaB/ThalawathugodaB_ytlinks.txt
 #
-# If there is an update to the Abhidharma Aruth C (Polgasowita) series,
+# If there is an update to the Abhidharma Aruth D (Polgasowita) series,
 # then add an entry to the last line of the file:
-#   AbhidharmaAruth/C_series/AbhidharmaAruth_C_ytlinks.txt
+#   AbhidharmaAruth/D_series/AbhidharmaAruth_D_ytlinks.txt
 #
 # All files have the following format
 # <index> <optional description> <youtube link (URL)> <date>
@@ -28,10 +28,7 @@ if menu_change == True:
    
     from scripts import gen_notes_v1
     gen_notes_v1
-    
-    from scripts.py import build_series_BCD
-    build_series_BCD
-    
+       
 
 from scripts import gen_SiyaluDesana
 gen_SiyaluDesana

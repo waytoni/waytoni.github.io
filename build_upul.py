@@ -1,10 +1,10 @@
 # Instructions for updating current set of files
 #
-# If there is an update (new video) in Kaluthala Bodhiya K lesson series
+# If there is an update (new video) in Kaluthala Bodhiya L series
 # then add an entry to the last line of the file: 
 #   KalutaraBodhiya/L_series/L_series_ytlinks.txt
 #
-# If there is an update to the Thalawathugoda series,
+# If there is an update to the ThalawathugodaB series,
 # then add an entry to the last line of the file:
 #   NivanMagaUdesaDesana/ThalawathugodaB/ThalawathugodaB_ytlinks.txt
 #
@@ -55,8 +55,8 @@ if menu_change == True:
     #build_series_K
     from scripts.py import build_ZoomPage
     build_ZoomPage
-    from scripts.py import build_404Page
-    build_404Page
+    #from scripts.py import build_404Page
+    #build_404Page
     #from scripts.py import build_series_ADA_ParamarthaLokaya
     #build_series_ADA_ParamarthaLokaya
     #from scripts.py import build_FileListForNotes
@@ -67,8 +67,8 @@ if menu_change == True:
     
     #from scripts.py import build_page_ChiththaChithasika
     #build_page_ChiththaChithasika
-    from scripts.py import build_series_BCD
-    build_series_BCD
+    #from scripts.py import build_series_BCD
+    #build_series_BCD
     #from scripts.py import build_series_AbhidharmaAruth_EP
     #build_series_AbhidharmaAruth_EP
     #from scripts.py import build_series_AbhidharmaAruth_B1
