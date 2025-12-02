@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Split Images Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .container { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .section { border: 1px solid #ddd; padding: 10px; background: #f9f9f9; }
+        h2 { color: #333; border-bottom: 2px solid #666; padding-bottom: 5px; }
+        .image-info { font-family: monospace; background: #eee; padding: 5px; margin: 5px 0; }
+        img { max-width: 100%; height: auto; border: 1px solid #ccc; }
+        .dimensions { color: #666; font-size: 0.9em; }
+        .required { background: #e7f7e7; border-left: 4px solid #2ecc71; padding: 10px; margin: 10px 0; }
+        .optional { background: #f0f0f0; border-left: 4px solid #95a5a6; padding: 10px; margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <h1>Split Images Test</h1>
+    <p class="dimensions">Original: 9600 x 5417 | Left column: 85px | Header: 989px</p>
+    
+    <div class="required">
+        <h3>Required Files for Freeze Pane Viewer:</h3>
+        <ol>
+            <li><strong>header_right.jpg</strong> - Right part of header (for frozen top row)</li>
+            <li><strong>body_left.jpg</strong> - Left column body section (for frozen left column)</li>
+            <li><strong>body_right.jpg</strong> - Main content area (scrollable area)</li>
+        </ol>
+    </div>
+    
+    <div class="container">
+        <div class="section">
+            <h2>1. Header Right (Required)</h2>
+            <div class="image-info">header_right.jpg - For frozen header</div>
+            <img src="header_right.jpg" alt="Header Right" onerror="this.style.display='none';">
+        </div>
+        
+        <div class="section">
+            <h2>2. Body Left (Required)</h2>
+            <div class="image-info">body_left.jpg - For frozen left column</div>
+            <img src="body_left.jpg" alt="Body Left" onerror="this.style.display='none';">
+        </div>
+        
+        <div class="section">
+            <h2>3. Body Right (Required)</h2>
+            <div class="image-info">body_right.jpg - For main scrollable content</div>
+            <img src="body_right.jpg" alt="Body Right" onerror="this.style.display='none';">
+        </div>
+        
+        <div class="section">
+            <h2>4. Corner (Optional)</h2>
+            <div class="image-info">corner.jpg - Top-left corner intersection</div>
+            <img src="corner.jpg" alt="Corner" onerror="this.style.display='none';">
+        </div>
+    </div>
+    
+    <div class="optional">
+        <h3>Other Generated Files:</h3>
+        <p>These are for reference and debugging:</p>
+        <ul>
+            <li>body_left_full.jpg - Full left column (including header)</li>
+            <li>body_right_full.jpg - Full right part (including header)</li>
+            <li>body_left_header.jpg - Header part of left column</li>
+            <li>body_right_header.jpg - Header part of main content</li>
+            <li>split_visualization.png - Visual guide of the split</li>
+        </ul>
+    </div>
+    
+    <div style="margin-top: 30px; padding: 15px; background: #e3f2fd; border-left: 4px solid #2196f3;">
+        <h3>Next Steps:</h3>
+        <ol>
+            <li>Copy the 3 required files to your web server directory</li>
+            <li>Update the HTML freeze pane viewer to use these files</li>
+            <li>Test the viewer with the new split images</li>
+        </ol>
+        <p><strong>Note:</strong> The freeze pane HTML code needs to be updated to reference these split images.</p>
+    </div>
+</body>
+</html>

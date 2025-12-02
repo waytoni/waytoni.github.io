@@ -59,7 +59,7 @@
 
         /* Left column (frozen) */
         .left-column {
-            width: 300px; /* Fixed width for left column */
+            width: 85px; /* Fixed width for left column */
             background-color: #f8f8f8;
             border-right: 2px solid #666;
             position: relative;
@@ -220,7 +220,7 @@
         const TOTAL_WIDTH = 9600;
         const TOTAL_HEIGHT = 5417;
         const HEADER_HEIGHT = 989;
-        const LEFT_COLUMN_WIDTH = 300; // Width of the frozen left column
+        const LEFT_COLUMN_WIDTH = 85; // Width of the frozen left column
         
         // Split points (assuming you've split your images accordingly)
         // Header split: [0, 0] to [LEFT_COLUMN_WIDTH, HEADER_HEIGHT] is corner
@@ -313,8 +313,8 @@
             
             // Load your split images
             // You need to create these split images from your original body image
-            headerImage.src = 'header_right.jpg';         // Right part of header
-            leftColumnImage.src = 'body_left.jpg';        // Left part of body
+            headerImage.src = '/ChiththaChithasika/header_right.jpg';         // Right part of header
+            leftColumnImage.src = './body_left.jpg';        // Left part of body
             mainContentImage.src = 'body_right.jpg';     // Right part of body
             
             // For the corner, we'll use a section of the header image
