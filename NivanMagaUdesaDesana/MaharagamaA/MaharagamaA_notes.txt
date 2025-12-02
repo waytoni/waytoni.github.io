@@ -13,12 +13,7 @@
 සත්ව තල img::/documents/NotesForDesana/0005 සත්ව තල.jpg
 #12
 අනිච්ච වර්‍ගය (අනිත්‍ය සූත්‍රය, දුක්ඛ සූත්‍රය, අනත්ත සූත්‍රය, යදනිච්ච සූත්‍රය, යංදුක්ඛ සූත්‍රය, යදනත්ත සූත්‍රය) url::https://tipitaka.lk/sn-3-1-1-2/sinh
-අජ්ඣත්තානිච්ච සූත්‍රය url::https://tipitaka.lk/sn-4-1-1-1/sinh
-අජ්ඣත්තදුක්ඛ සූත්‍රය url::https://tipitaka.lk/sn-4-1-1-2/sinh
-අජ්ඣත්තානත්ත සූත්‍රය url::https://tipitaka.lk/sn-4-1-1-3/sinh
-බාහිරානිච්ච සූත්‍රය url::https://tipitaka.lk/sn-4-1-1-4/sinh
-බාහිරදුක්ඛ සූත්‍රය url::https://tipitaka.lk/sn-4-1-1-5/sinh
-බාහිරානත්ත සූත්‍රය url::https://tipitaka.lk/sn-4-1-1-6/sinh
+අනිච්ච වර්‍ගය (අජ්ඣත්තානිච්ච සූත්‍රය, අජ්ඣත්තදුක්ඛ සූත්‍රය, අජ්ඣත්තානත්ත සූත්‍රය, බාහිරානිච්ච සූත්‍රය, බාහිරදුක්ඛ සූත්‍රය, බාහිරදුක්ඛ සූත්‍රය, බාහිරානත්ත සූත්‍රය, ...) url::https://tipitaka.lk/sn-4-1-1/sinh
 අනිච්ච සූත්‍රය url::https://tipitaka.lk/sn-4-1-5-1/sinh
 දුක්ඛ සූත්‍රය url::https://tipitaka.lk/sn-4-1-5-2/sinh
 අනත්ත සූත්‍රයurl::https://tipitaka.lk/sn-4-1-5-3/sinh
