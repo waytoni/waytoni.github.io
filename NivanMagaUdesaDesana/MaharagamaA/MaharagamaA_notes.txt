@@ -11,6 +11,20 @@
 <a href="https://www.youtube.com/watch?v=om0UntoX_PI" target="_blank">002 රූප 28 පරමාර්ථ ධර්ම</a>
 සිත් බෙදෙන අයුරු img::/documents/NotesForDesana/0015 සිත් බෙදෙන අයුරු.jpeg
 සත්ව තල img::/documents/NotesForDesana/0005 සත්ව තල.jpg
+#12
+අනිත්‍ය සූත්‍රය url::https://tipitaka.lk/sn-3-1-1-2-1/sinh
+දුක්ඛ සූත්‍රය url::https://tipitaka.lk/sn-3-1-1-2-2/sinh
+අනත්ත සූත්‍රය url::https://tipitaka.lk/sn-3-1-1-2-3/sinh
+යදනිච්ච සූත්‍රය url::https://tipitaka.lk/sn-3-1-1-2-4/sinh
+යංදුක්ඛ සූත්‍රය url::https://tipitaka.lk/sn-3-1-1-2-5/sinh
+යදනත්ත සූත්‍රය url::https://tipitaka.lk/sn-3-1-1-2-6/sinh
+චක්ඛු සූත්‍රය url::https://tipitaka.lk/sn-3-5-1-1/sinh
+අජ්ඣත්තානිච්ච සූත්‍රය url::https://tipitaka.lk/sn-4-1-1-1/sinh
+අජ්ඣත්තදුක්ඛ සූත්‍රය url::https://tipitaka.lk/sn-4-1-1-2/sinh
+අජ්ඣත්තානත්ත සූත්‍රය url::https://tipitaka.lk/sn-4-1-1-3/sinh
+බාහිරානිච්ච සූත්‍රය url::https://tipitaka.lk/sn-4-1-1-4/sinh
+බාහිරදුක්ඛ සූත්‍රය url::https://tipitaka.lk/sn-4-1-1-5/sinh
+බාහිරානත්ත සූත්‍රය url::https://tipitaka.lk/sn-4-1-1-6/sinh
 #110
 ඛජ්ජනීය සුත්තං  pdf::/documents/pdfs/ඛජ්ජනීය සුත්තං.pdf
 ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
