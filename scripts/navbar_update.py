@@ -124,10 +124,83 @@ class StaticSiteBuilder:
         print(f"Summary: {successful}/{len(file_list)} files updated successfully")
         return successful
 
+
+
+class SmartSiteBuilder:
+    def __init__(self, template_dir='scripts/templates', indent_size=2):
+        self.template_dir = template_dir
+        self.indent_size = indent_size
+        self.components = self.load_components()
+    
+    def load_components(self):
+        components = {}
+        for component in ['navbar', 'footer', 'header']:
+            filepath = os.path.join(self.template_dir, f'{component}_template.html')
+            if os.path.exists(filepath):
+                with open(filepath, 'r', encoding='utf-8') as f:
+                    components[component] = f.read().strip()
+        return components
+    
+    def update_file_smart(self, html_file):
+        """Smart update that preserves surrounding formatting"""
+        with open(html_file, 'r', encoding='utf-8') as f:
+            lines = f.readlines()
+        
+        updated_lines = []
+        in_navbar = False
+        navbar_indent = 0
+        updated = False
+        
+        for i, line in enumerate(lines):
+            # Check if this line starts the navbar div
+            if 'class="topnav"' in line and 'id="Topnavbar"' in line:
+                in_navbar = True
+                updated = True
+                
+                # Calculate current indentation
+                navbar_indent = len(line) - len(line.lstrip())
+                indent = ' ' * navbar_indent
+                
+                # Add the opening div tag
+                updated_lines.append(line.rstrip('\n'))
+                
+                # Add the new navbar content with proper indentation
+                if 'navbar' in self.components:
+                    navbar_lines = self.components['navbar'].split('\n')
+                    for nav_line in navbar_lines:
+                        if nav_line.strip():  # Skip empty lines
+                            updated_lines.append(indent + '  ' + nav_line)
+                
+                # Skip original navbar content until we find the closing div
+                continue
+            
+            # Skip lines until we find the closing div for navbar
+            if in_navbar:
+                if line.strip().startswith('</div>'):
+                    in_navbar = False
+                    # Add closing div with original indentation
+                    updated_lines.append(' ' * navbar_indent + '</div>')
+                continue
+            
+            # Process footer similarly
+            if any(tag in line for tag in ['id="footer"', '<footer', 'class="footer"']):
+                # Similar logic for footer...
+                pass
+            else:
+                updated_lines.append(line.rstrip('\n'))
+        
+        if updated:
+            with open(html_file, 'w', encoding='utf-8') as f:
+                f.write('\n'.join(updated_lines))
+        
+        return updated
+
+
 # Usage Example 1: Update specific files
 if __name__ == "__main__":
     # Initialize builder
-    builder = StaticSiteBuilder('scripts/templates')
+    builderOld = StaticSiteBuilder('scripts/templates')
+    builder = SmartSiteBuilder('scripts/templates')
     
     # Define your list of files to update
     files_to_update = [
@@ -141,7 +214,10 @@ if __name__ == "__main__":
     
     # Option 1: Update only navbar in all specified files
     print("=== Updating Navbar Only ===")
-    builder.update_files(files_to_update, components_to_update=['navbar'])
+    builderOld.update_files(files_to_update, components_to_update=['navbar'])
+    
+    #for html_file in files_to_update:
+    #    builder.update_file_smart(html_file)
     
     # Option 2: Update navbar and footer
     #print("\n=== Updating Navbar and Footer ===")
