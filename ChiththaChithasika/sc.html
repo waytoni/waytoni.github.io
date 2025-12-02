@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frozen Header Chart</title>
+    <style>
+        /* Reset basic margins */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* We handle scrolling inside .scroll-viewport */
+            background-color: #f0f0f0;
+        }
+
+        /* 1. The Scroll Window 
+           This is the "frame" you look through. It handles all scrolling.
+        */
+        .scroll-viewport {
+            width: 100vw;
+            height: 100vh;
+            overflow: auto; /* Enables scrollbars */
+            position: relative;
+        }
+
+        /* 2. The Content Wrapper 
+           This forces the container to be exactly as wide as the images (9600px).
+           This ensures the browser doesn't try to shrink them differently.
+        */
+        .content-wrapper {
+            width: fit-content; 
+            min-width: 9600px; /* Enforces the real image width */
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* 3. The Sticky Header 
+           'top: 0' makes it freeze vertically.
+           It naturally scrolls horizontally with the rest of the page.
+        */
+        .header-section {
+            position: sticky;
+            top: 0;
+            z-index: 100; /* Keeps it on top of the body */
+            line-height: 0; /* Removes vertical gaps */
+        }
+
+        /* 4. The Body Section */
+        .body-section {
+            line-height: 0; /* Removes vertical gaps */
+        }
+
+        /* 5. Image Rules */
+        img {
+            display: block; /* Removes bottom whitespace */
+            max-width: none; /* CRITICAL: Prevents browser from shrinking image */
+            width: auto;     /* Uses natural width (9600px) */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="scroll-viewport">
+        <div class="content-wrapper">
+            
+            <div class="header-section">
+                <img src="cc_h.jpg" alt="Header Chart">
+            </div>
+
+            <div class="body-section">
+                <img src="cc_b.jpg" alt="Body Chart">
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
