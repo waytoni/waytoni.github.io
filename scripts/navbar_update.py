@@ -90,8 +90,10 @@ class StaticSiteBuilder:
             
             # Save if any updates were made
             if updated:
+                new_content = soup.prettify()
                 with open(html_file, 'w', encoding='utf-8') as f:
-                    f.write(str(soup))
+                #   f.write(str(soup))
+                    f.write(new_content)
                 return True
             else:
                 print(f"  ⚠ No components updated in {html_file}")
@@ -129,12 +131,12 @@ if __name__ == "__main__":
     
     # Define your list of files to update
     files_to_update = [
-        'index.html',
-        'Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html',    
-        # paramartha video
-        # chithatah chithisika
-        # B C D series
-
+        #'index.html',
+        'Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html', 
+        'KalutaraBodhiya/B_C_D_Batches.html',
+        'Paramartha_Video/Paramartha_Video.html',
+        'ChiththaChithasika/index.html', 
+        '404.html',
     ]
     
     # Option 1: Update only navbar in all specified files
