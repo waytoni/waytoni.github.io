@@ -37,18 +37,23 @@
             text-align: center;
             margin-bottom: 10px;
             border-radius: 0 0 var(--border-radius) var(--border-radius);
+            line-height: normal;
         }
         
         .hero-section h1 {
-            margin: 0 0 10px;
+            margin: 0 0 0px;
             font-size: 2.2rem;
         }
         
         .hero-section p {
-            margin: 5px 0;
+            margin: 0px 0;
             font-size: 1.1rem;
         }
         
+        .hero-section h2 {
+            margin: 5px 0 5px;
+            font-size: 1.1rem;
+        }
         .section-header {
             text-align: center;
             margin: 30px 0;
