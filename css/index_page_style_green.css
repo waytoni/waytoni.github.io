@@ -41,7 +41,7 @@
         }
         
         .hero-section h1 {
-            margin: 0 0 0px;
+            margin: 5px 0 5px;
             font-size: 2.2rem;
         }
         
@@ -51,8 +51,8 @@
         }
         
         .hero-section h2 {
-            margin: 5px 0 5px;
-            font-size: 1.1rem;
+            margin: 10px 0 10px;
+            font-size: 1.2rem;
         }
         .section-header {
             text-align: center;
