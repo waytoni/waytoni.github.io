@@ -206,46 +206,38 @@
         let imagesLoaded = 0;
         const totalImages = 3;
         
-        // Image dimensions - BASED ON YOUR ACTUAL FILES
-        // From your website: body_left.jpg is 85×4428, body_right.jpg is 9515×4428
-        const HEADER_WIDTH = 9600;
-        const HEADER_HEIGHT = 989;
-        const LEFT_COLUMN_WIDTH = 85;
-        const BODY_HEIGHT = 4428;  // From your body_left.jpg height
-        const MAIN_CONTENT_WIDTH = HEADER_WIDTH - LEFT_COLUMN_WIDTH;  // 9515
-        
-        console.log('Image dimensions (based on your files):', {
-            header: `${HEADER_WIDTH}x${HEADER_HEIGHT}`,
-            leftColumn: `${LEFT_COLUMN_WIDTH}x${BODY_HEIGHT}`,
-            mainContent: `${MAIN_CONTENT_WIDTH}x${BODY_HEIGHT}`,
-            bodyHeight: BODY_HEIGHT
-        });
+        // Discovered dimensions (from your debug output)
+        let HEADER_WIDTH = 9600;
+        let HEADER_HEIGHT = 989;
+        let LEFT_COLUMN_WIDTH = 85;
+        let BODY_HEIGHT = 5398;  // From your debug output
+        let MAIN_CONTENT_WIDTH = 9515;
         
         // Zoom settings
         let scale = 1.0;
         const MIN_SCALE = 0.05;
         const MAX_SCALE = 3.0;
-        const SCALE_STEP = 0.1;
+        const SCALE_STEP = 0.05;
         
         // Store image data
         let headerImageData = null;
         let leftColumnImageData = null;
         let mainContentImageData = null;
         
-        // Store actual image dimensions when loaded
-        let actualLeftColumnHeight = BODY_HEIGHT;
-        let actualMainContentHeight = BODY_HEIGHT;
-        
         // Calculate fit scale
         function calculateFitScale() {
             const viewportWidth = window.innerWidth;
             const viewportHeight = window.innerHeight - 50;
             
+            if (MAIN_CONTENT_WIDTH === 0) return 0.25;
+            
             // Calculate scale to fit width
             const widthScale = (viewportWidth - LEFT_COLUMN_WIDTH) / MAIN_CONTENT_WIDTH;
             
-            // Calculate total height at this scale (header + body)
-            const totalHeightAtScale = (HEADER_HEIGHT * widthScale) + (BODY_HEIGHT * widthScale);
+            // Calculate total height at this scale
+            const headerHeightAtScale = HEADER_HEIGHT * widthScale;
+            const bodyHeightAtScale = BODY_HEIGHT * widthScale;
+            const totalHeightAtScale = headerHeightAtScale + bodyHeightAtScale;
             
             // If total height fits, use width scale
             if (totalHeightAtScale <= viewportHeight) {
@@ -263,16 +255,14 @@
             const scaledHeaderHeight = Math.max(1, Math.floor(HEADER_HEIGHT * scale));
             const scaledHeaderWidth = Math.max(1, Math.floor(HEADER_WIDTH * scale));
             const scaledLeftColumnWidth = Math.max(1, Math.floor(LEFT_COLUMN_WIDTH * scale));
-            const scaledLeftColumnHeight = Math.max(1, Math.floor(actualLeftColumnHeight * scale));
+            const scaledLeftColumnHeight = Math.max(1, Math.floor(BODY_HEIGHT * scale));
             const scaledMainContentWidth = Math.max(1, Math.floor(MAIN_CONTENT_WIDTH * scale));
-            const scaledMainContentHeight = Math.max(1, Math.floor(actualMainContentHeight * scale));
+            const scaledMainContentHeight = Math.max(1, Math.floor(BODY_HEIGHT * scale));
             
-            console.log('Scaled dimensions:', {
-                scale: scale.toFixed(3),
-                header: `${scaledHeaderWidth}x${scaledHeaderHeight}`,
-                leftColumn: `${scaledLeftColumnWidth}x${scaledLeftColumnHeight}`,
-                mainContent: `${scaledMainContentWidth}x${scaledMainContentHeight}`,
-                'heightMatch': scaledLeftColumnHeight === scaledMainContentHeight
+            console.log('Initializing canvas with scale:', scale, {
+                headerCanvas: `${scaledHeaderWidth}x${scaledHeaderHeight}`,
+                leftCanvas: `${scaledLeftColumnWidth}x${scaledLeftColumnHeight}`,
+                mainCanvas: `${scaledMainContentWidth}x${scaledMainContentHeight}`
             });
             
             // Set header container and canvas
@@ -289,7 +279,7 @@
             mainContentCanvas.width = scaledMainContentWidth;
             mainContentCanvas.height = scaledMainContentHeight;
             
-            // Update scroll info
+            // Update UI
             updateScrollInfo();
             
             // Draw all sections
@@ -319,31 +309,19 @@
             const onImageLoad = function() {
                 imagesLoaded++;
                 if (imagesLoaded === totalImages) {
-                    console.log('Actual image dimensions from your files:', {
+                    console.log('Images loaded with dimensions:', {
                         header: `${headerImage.width}x${headerImage.height}`,
                         leftColumn: `${leftColumnImage.width}x${leftColumnImage.height}`,
                         mainContent: `${mainContentImage.width}x${mainContentImage.height}`
                     });
                     
-                    // Store actual dimensions
-                    actualLeftColumnHeight = leftColumnImage.height;
-                    actualMainContentHeight = mainContentImage.height;
-                    
-                    // CRITICAL: Check if heights match
-                    if (actualLeftColumnHeight !== actualMainContentHeight) {
-                        console.error('ERROR: Image heights do not match!');
-                        console.error(`  body_left.jpg height: ${actualLeftColumnHeight}`);
-                        console.error(`  body_right.jpg height: ${actualMainContentHeight}`);
-                        console.error('  Difference: ' + Math.abs(actualLeftColumnHeight - actualMainContentHeight) + 'px');
-                        console.error('Vertical scrolling will NOT sync correctly!');
-                        
-                        // Use the smaller height for both to maintain sync
-                        const minHeight = Math.min(actualLeftColumnHeight, actualMainContentHeight);
-                        console.warn(`Using min height (${minHeight}px) for both to maintain sync`);
-                        actualLeftColumnHeight = minHeight;
-                        actualMainContentHeight = minHeight;
+                    // Verify heights match
+                    if (leftColumnImage.height !== mainContentImage.height) {
+                        console.error('Height mismatch detected!');
+                        console.log('Using minimum height for both:', Math.min(leftColumnImage.height, mainContentImage.height));
+                        BODY_HEIGHT = Math.min(leftColumnImage.height, mainContentImage.height);
                     } else {
-                        console.log('✓ Perfect! Image heights match for vertical sync');
+                        BODY_HEIGHT = leftColumnImage.height;
                     }
                     
                     // Store image data
@@ -351,17 +329,20 @@
                     leftColumnImageData = leftColumnImage;
                     mainContentImageData = mainContentImage;
                     
+                    // Update dimensions
+                    HEADER_WIDTH = headerImage.width;
+                    HEADER_HEIGHT = headerImage.height;
+                    LEFT_COLUMN_WIDTH = leftColumnImage.width;
+                    MAIN_CONTENT_WIDTH = mainContentImage.width;
+                    
                     // Set initial scale
                     scale = calculateFitScale();
                     
                     initCanvas();
                     setupEventListeners();
                     
-                    // Center view
-                    setTimeout(() => {
-                        mainContentContainer.scrollTop = 0;
-                        drawAllSections();
-                    }, 100);
+                    // Initial draw
+                    drawAllSections();
                 }
             };
             
@@ -369,70 +350,13 @@
             leftColumnImage.onload = onImageLoad;
             mainContentImage.onload = onImageLoad;
             
-            headerImage.onerror = () => {
-                console.error('Failed to load cc_h.jpg');
-                headerImage = createPlaceholderImage(HEADER_WIDTH, HEADER_HEIGHT, 'Header', '#4a6fa5');
-            };
-            
-            leftColumnImage.onerror = () => {
-                console.error('Failed to load body_left.jpg');
-                leftColumnImage = createPlaceholderImage(LEFT_COLUMN_WIDTH, BODY_HEIGHT, 'Left Column', '#6a994e');
-            };
-            
-            mainContentImage.onerror = () => {
-                console.error('Failed to load body_right.jpg');
-                mainContentImage = createPlaceholderImage(MAIN_CONTENT_WIDTH, BODY_HEIGHT, 'Main Content', '#9b59b6');
-            };
-            
             // Load images
             headerImage.src = 'cc_h.jpg';
             leftColumnImage.src = 'body_left.jpg';
             mainContentImage.src = 'body_right.jpg';
         }
         
-        // Create placeholder image
-        function createPlaceholderImage(width, height, text, color) {
-            const img = new Image();
-            const canvas = document.createElement('canvas');
-            const ctx = canvas.getContext('2d');
-            
-            canvas.width = width;
-            canvas.height = height;
-            
-            ctx.fillStyle = color + '20';
-            ctx.fillRect(0, 0, width, height);
-            
-            ctx.strokeStyle = color + '40';
-            ctx.lineWidth = 1;
-            
-            for (let x = 0; x < width; x += 100) {
-                ctx.beginPath();
-                ctx.moveTo(x, 0);
-                ctx.lineTo(x, height);
-                ctx.stroke();
-            }
-            
-            for (let y = 0; y < height; y += 100) {
-                ctx.beginPath();
-                ctx.moveTo(0, y);
-                ctx.lineTo(width, y);
-                ctx.stroke();
-            }
-            
-            ctx.fillStyle = color;
-            ctx.font = 'bold 48px Arial';
-            ctx.textAlign = 'center';
-            ctx.textBaseline = 'middle';
-            ctx.fillText(text, width / 2, height / 2);
-            
-            ctx.font = '24px Arial';
-            ctx.fillText(`${width} × ${height}`, width / 2, height / 2 + 60);
-            
-            img.src = canvas.toDataURL();
-            return img;
-        }
-        
-        // Draw all sections - FIXED for vertical sync
+        // Draw all sections - FIXED VERSION
         function drawAllSections() {
             const scrollX = mainContentContainer.scrollLeft;
             const scrollY = mainContentContainer.scrollTop;
@@ -442,51 +366,45 @@
             leftColumnCtx.clearRect(0, 0, leftColumnCanvas.width, leftColumnCanvas.height);
             mainContentCtx.clearRect(0, 0, mainContentCanvas.width, mainContentCanvas.height);
             
-            // Draw HEADER (translate horizontally)
+            // Draw HEADER - horizontal translation only
             if (headerImageData && headerImageData.complete) {
                 headerCtx.save();
                 headerCtx.translate(-scrollX, 0);
                 
                 headerCtx.drawImage(
                     headerImageData,
-                    0, 0,
-                    headerImageData.width, headerImageData.height,
-                    0, 0,
-                    headerCanvas.width, headerCanvas.height
+                    0, 0, HEADER_WIDTH, HEADER_HEIGHT,
+                    0, 0, headerCanvas.width, headerCanvas.height
                 );
                 
                 headerCtx.restore();
             }
             
-            // Draw LEFT COLUMN (translate vertically)
+            // Draw LEFT COLUMN - vertical translation only
             if (leftColumnImageData && leftColumnImageData.complete) {
                 leftColumnCtx.save();
+                // Translate by the scaled scroll position
                 leftColumnCtx.translate(0, -scrollY);
                 
-                // Use actual image height for source, but canvas height for destination
                 leftColumnCtx.drawImage(
                     leftColumnImageData,
-                    0, 0,
-                    leftColumnImageData.width, actualLeftColumnHeight,
-                    0, 0,
-                    leftColumnCanvas.width, leftColumnCanvas.height
+                    0, 0, LEFT_COLUMN_WIDTH, BODY_HEIGHT,
+                    0, 0, leftColumnCanvas.width, leftColumnCanvas.height
                 );
                 
                 leftColumnCtx.restore();
             }
             
-            // Draw MAIN CONTENT (translate both)
+            // Draw MAIN CONTENT - both translations
             if (mainContentImageData && mainContentImageData.complete) {
                 mainContentCtx.save();
+                // Translate by the scaled scroll position
                 mainContentCtx.translate(-scrollX, -scrollY);
                 
-                // Use actual image height for source, but canvas height for destination
                 mainContentCtx.drawImage(
                     mainContentImageData,
-                    0, 0,
-                    mainContentImageData.width, actualMainContentHeight,
-                    0, 0,
-                    mainContentCanvas.width, mainContentCanvas.height
+                    0, 0, MAIN_CONTENT_WIDTH, BODY_HEIGHT,
+                    0, 0, mainContentCanvas.width, mainContentCanvas.height
                 );
                 
                 mainContentCtx.restore();
@@ -495,17 +413,20 @@
             updateScrollInfo();
         }
         
-        // Update zoom - FIXED to maintain vertical sync
+        // Update zoom with proper scroll preservation
         function updateZoom(newScale) {
             newScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, newScale));
             
-            // Get current visible area as percentage of total canvas
-            const scrollX = mainContentContainer.scrollLeft;
-            const scrollY = mainContentContainer.scrollTop;
+            if (scale === newScale) return;
             
-            // Calculate what portion of the image is currently at the top of viewport
-            const visibleTopPercent = scrollY / Math.max(1, mainContentCanvas.height);
-            const visibleLeftPercent = scrollX / Math.max(1, mainContentCanvas.width);
+            // Store current scroll position as percentages
+            const currentScrollX = mainContentContainer.scrollLeft;
+            const currentScrollY = mainContentContainer.scrollTop;
+            const maxScrollX = Math.max(1, mainContentCanvas.width - mainContentContainer.clientWidth);
+            const maxScrollY = Math.max(1, mainContentCanvas.height - mainContentContainer.clientHeight);
+            
+            const percentX = currentScrollX / maxScrollX;
+            const percentY = currentScrollY / maxScrollY;
             
             // Update scale
             scale = newScale;
@@ -513,18 +434,19 @@
             // Reinitialize canvas with new scale
             initCanvas();
             
-            // Calculate new scroll positions to show same portion of image
-            const newScrollX = visibleLeftPercent * mainContentCanvas.width;
-            const newScrollY = visibleTopPercent * mainContentCanvas.height;
+            // Calculate new scroll positions to maintain same percentages
+            const newMaxScrollX = Math.max(0, mainContentCanvas.width - mainContentContainer.clientWidth);
+            const newMaxScrollY = Math.max(0, mainContentCanvas.height - mainContentContainer.clientHeight);
             
-            // Apply with bounds checking
-            const maxScrollX = Math.max(0, mainContentCanvas.width - mainContentContainer.clientWidth);
-            const maxScrollY = Math.max(0, mainContentCanvas.height - mainContentContainer.clientHeight);
+            const newScrollX = percentX * newMaxScrollX;
+            const newScrollY = percentY * newMaxScrollY;
             
-            mainContentContainer.scrollLeft = Math.max(0, Math.min(newScrollX, maxScrollX));
-            mainContentContainer.scrollTop = Math.max(0, Math.min(newScrollY, maxScrollY));
+            // Apply new scroll positions
+            mainContentContainer.scrollLeft = Math.max(0, Math.min(newScrollX, newMaxScrollX));
+            mainContentContainer.scrollTop = Math.max(0, Math.min(newScrollY, newMaxScrollY));
             headerContainer.scrollLeft = mainContentContainer.scrollLeft;
             
+            // Redraw
             drawAllSections();
         }
         
@@ -571,15 +493,13 @@
                 document.body.style.cursor = 'default';
             }
             
-            // Add event listeners to all canvases
+            // Add event listeners
             [headerCanvas, leftColumnCanvas, mainContentCanvas].forEach(canvas => {
-                // Mouse events
                 canvas.addEventListener('mousedown', handleDragStart);
                 canvas.addEventListener('mousemove', handleDragMove);
                 canvas.addEventListener('mouseup', handleDragEnd);
                 canvas.addEventListener('mouseleave', handleDragEnd);
                 
-                // Touch events
                 canvas.addEventListener('touchstart', handleDragStart, { passive: false });
                 canvas.addEventListener('touchmove', handleDragMove, { passive: false });
                 canvas.addEventListener('touchend', handleDragEnd);
@@ -592,67 +512,6 @@
             mainContentContainer.addEventListener('scroll', () => {
                 headerContainer.scrollLeft = mainContentContainer.scrollLeft;
                 drawAllSections();
-            });
-            
-            headerContainer.addEventListener('scroll', () => {
-                mainContentContainer.scrollLeft = headerContainer.scrollLeft;
-                drawAllSections();
-            });
-            
-            // Keyboard navigation
-            document.addEventListener('keydown', (e) => {
-                const scrollStep = 50;
-                let scrollX = mainContentContainer.scrollLeft;
-                let scrollY = mainContentContainer.scrollTop;
-                
-                // Zoom with Ctrl
-                if ((e.ctrlKey || e.metaKey) && (e.key === '+' || e.key === '=')) {
-                    updateZoom(scale + SCALE_STEP);
-                    e.preventDefault();
-                    return;
-                }
-                if ((e.ctrlKey || e.metaKey) && e.key === '-') {
-                    updateZoom(scale - SCALE_STEP);
-                    e.preventDefault();
-                    return;
-                }
-                
-                // Navigation
-                switch(e.key) {
-                    case 'ArrowLeft':
-                        scrollX -= scrollStep;
-                        break;
-                    case 'ArrowRight':
-                        scrollX += scrollStep;
-                        break;
-                    case 'ArrowUp':
-                        scrollY -= scrollStep;
-                        break;
-                    case 'ArrowDown':
-                        scrollY += scrollStep;
-                        break;
-                    case 'Home':
-                        scrollX = 0;
-                        scrollY = 0;
-                        break;
-                    case 'End':
-                        scrollX = Math.max(0, mainContentCanvas.width - mainContentContainer.clientWidth);
-                        scrollY = Math.max(0, mainContentCanvas.height - mainContentContainer.clientHeight);
-                        break;
-                    default:
-                        return;
-                }
-                
-                const maxScrollX = Math.max(0, mainContentCanvas.width - mainContentContainer.clientWidth);
-                const maxScrollY = Math.max(0, mainContentCanvas.height - mainContentContainer.clientHeight);
-                scrollX = Math.max(0, Math.min(scrollX, maxScrollX));
-                scrollY = Math.max(0, Math.min(scrollY, maxScrollY));
-                
-                mainContentContainer.scrollLeft = scrollX;
-                mainContentContainer.scrollTop = scrollY;
-                headerContainer.scrollLeft = scrollX;
-                
-                e.preventDefault();
             });
             
             // Zoom controls
