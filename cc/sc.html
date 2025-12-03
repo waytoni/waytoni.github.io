@@ -206,19 +206,16 @@
         let imagesLoaded = 0;
         const totalImages = 3;
         
-        // Image dimensions - BASED ON ORIGINAL 9600×6387
-        const TOTAL_WIDTH = 9600;
-        const TOTAL_HEIGHT = 6387;
+        // Image dimensions - BASED ON YOUR ACTUAL FILES
+        // From your website: body_left.jpg is 85×4428, body_right.jpg is 9515×4428
+        const HEADER_WIDTH = 9600;
         const HEADER_HEIGHT = 989;
         const LEFT_COLUMN_WIDTH = 85;
+        const BODY_HEIGHT = 4428;  // From your body_left.jpg height
+        const MAIN_CONTENT_WIDTH = HEADER_WIDTH - LEFT_COLUMN_WIDTH;  // 9515
         
-        // Calculate body height (6387 - 989 = 5398)
-        const BODY_HEIGHT = TOTAL_HEIGHT - HEADER_HEIGHT;  // 5398 pixels
-        const MAIN_CONTENT_WIDTH = TOTAL_WIDTH - LEFT_COLUMN_WIDTH;  // 9515 pixels
-        
-        console.log('Image dimensions:', {
-            original: `${TOTAL_WIDTH}x${TOTAL_HEIGHT}`,
-            header: `${TOTAL_WIDTH}x${HEADER_HEIGHT}`,
+        console.log('Image dimensions (based on your files):', {
+            header: `${HEADER_WIDTH}x${HEADER_HEIGHT}`,
             leftColumn: `${LEFT_COLUMN_WIDTH}x${BODY_HEIGHT}`,
             mainContent: `${MAIN_CONTENT_WIDTH}x${BODY_HEIGHT}`,
             bodyHeight: BODY_HEIGHT
@@ -235,6 +232,10 @@
         let leftColumnImageData = null;
         let mainContentImageData = null;
         
+        // Store actual image dimensions when loaded
+        let actualLeftColumnHeight = BODY_HEIGHT;
+        let actualMainContentHeight = BODY_HEIGHT;
+        
         // Calculate fit scale
         function calculateFitScale() {
             const viewportWidth = window.innerWidth;
@@ -243,8 +244,8 @@
             // Calculate scale to fit width
             const widthScale = (viewportWidth - LEFT_COLUMN_WIDTH) / MAIN_CONTENT_WIDTH;
             
-            // Calculate total height at this scale
-            const totalHeightAtScale = (HEADER_HEIGHT + BODY_HEIGHT) * widthScale;
+            // Calculate total height at this scale (header + body)
+            const totalHeightAtScale = (HEADER_HEIGHT * widthScale) + (BODY_HEIGHT * widthScale);
             
             // If total height fits, use width scale
             if (totalHeightAtScale <= viewportHeight) {
@@ -260,18 +261,18 @@
         function initCanvas() {
             // Calculate scaled dimensions
             const scaledHeaderHeight = Math.max(1, Math.floor(HEADER_HEIGHT * scale));
-            const scaledHeaderWidth = Math.max(1, Math.floor(TOTAL_WIDTH * scale));
+            const scaledHeaderWidth = Math.max(1, Math.floor(HEADER_WIDTH * scale));
             const scaledLeftColumnWidth = Math.max(1, Math.floor(LEFT_COLUMN_WIDTH * scale));
-            const scaledLeftColumnHeight = Math.max(1, Math.floor(BODY_HEIGHT * scale));
+            const scaledLeftColumnHeight = Math.max(1, Math.floor(actualLeftColumnHeight * scale));
             const scaledMainContentWidth = Math.max(1, Math.floor(MAIN_CONTENT_WIDTH * scale));
-            const scaledMainContentHeight = Math.max(1, Math.floor(BODY_HEIGHT * scale));
+            const scaledMainContentHeight = Math.max(1, Math.floor(actualMainContentHeight * scale));
             
             console.log('Scaled dimensions:', {
                 scale: scale.toFixed(3),
                 header: `${scaledHeaderWidth}x${scaledHeaderHeight}`,
                 leftColumn: `${scaledLeftColumnWidth}x${scaledLeftColumnHeight}`,
                 mainContent: `${scaledMainContentWidth}x${scaledMainContentHeight}`,
-                'leftColumn.height === mainContent.height': scaledLeftColumnHeight === scaledMainContentHeight
+                'heightMatch': scaledLeftColumnHeight === scaledMainContentHeight
             });
             
             // Set header container and canvas
@@ -318,21 +319,31 @@
             const onImageLoad = function() {
                 imagesLoaded++;
                 if (imagesLoaded === totalImages) {
-                    console.log('Actual image dimensions:', {
+                    console.log('Actual image dimensions from your files:', {
                         header: `${headerImage.width}x${headerImage.height}`,
                         leftColumn: `${leftColumnImage.width}x${leftColumnImage.height}`,
                         mainContent: `${mainContentImage.width}x${mainContentImage.height}`
                     });
                     
-                    // CRITICAL: Verify heights match
-                    if (leftColumnImage.height !== mainContentImage.height) {
+                    // Store actual dimensions
+                    actualLeftColumnHeight = leftColumnImage.height;
+                    actualMainContentHeight = mainContentImage.height;
+                    
+                    // CRITICAL: Check if heights match
+                    if (actualLeftColumnHeight !== actualMainContentHeight) {
                         console.error('ERROR: Image heights do not match!');
-                        console.error(`  leftColumnImage.height: ${leftColumnImage.height}`);
-                        console.error(`  mainContentImage.height: ${mainContentImage.height}`);
-                        console.error(`  Expected both to be: ${BODY_HEIGHT}`);
+                        console.error(`  body_left.jpg height: ${actualLeftColumnHeight}`);
+                        console.error(`  body_right.jpg height: ${actualMainContentHeight}`);
+                        console.error('  Difference: ' + Math.abs(actualLeftColumnHeight - actualMainContentHeight) + 'px');
                         console.error('Vertical scrolling will NOT sync correctly!');
+                        
+                        // Use the smaller height for both to maintain sync
+                        const minHeight = Math.min(actualLeftColumnHeight, actualMainContentHeight);
+                        console.warn(`Using min height (${minHeight}px) for both to maintain sync`);
+                        actualLeftColumnHeight = minHeight;
+                        actualMainContentHeight = minHeight;
                     } else {
-                        console.log('✓ Image heights match for vertical sync');
+                        console.log('✓ Perfect! Image heights match for vertical sync');
                     }
                     
                     // Store image data
@@ -360,7 +371,7 @@
             
             headerImage.onerror = () => {
                 console.error('Failed to load cc_h.jpg');
-                headerImage = createPlaceholderImage(TOTAL_WIDTH, HEADER_HEIGHT, 'Header', '#4a6fa5');
+                headerImage = createPlaceholderImage(HEADER_WIDTH, HEADER_HEIGHT, 'Header', '#4a6fa5');
             };
             
             leftColumnImage.onerror = () => {
@@ -373,7 +384,7 @@
                 mainContentImage = createPlaceholderImage(MAIN_CONTENT_WIDTH, BODY_HEIGHT, 'Main Content', '#9b59b6');
             };
             
-            // Load images - use the ones from the Python script
+            // Load images
             headerImage.src = 'cc_h.jpg';
             leftColumnImage.src = 'body_left.jpg';
             mainContentImage.src = 'body_right.jpg';
@@ -391,7 +402,6 @@
             ctx.fillStyle = color + '20';
             ctx.fillRect(0, 0, width, height);
             
-            // Draw grid
             ctx.strokeStyle = color + '40';
             ctx.lineWidth = 1;
             
@@ -409,7 +419,6 @@
                 ctx.stroke();
             }
             
-            // Draw text
             ctx.fillStyle = color;
             ctx.font = 'bold 48px Arial';
             ctx.textAlign = 'center';
@@ -454,10 +463,11 @@
                 leftColumnCtx.save();
                 leftColumnCtx.translate(0, -scrollY);
                 
+                // Use actual image height for source, but canvas height for destination
                 leftColumnCtx.drawImage(
                     leftColumnImageData,
                     0, 0,
-                    leftColumnImageData.width, leftColumnImageData.height,
+                    leftColumnImageData.width, actualLeftColumnHeight,
                     0, 0,
                     leftColumnCanvas.width, leftColumnCanvas.height
                 );
@@ -470,10 +480,11 @@
                 mainContentCtx.save();
                 mainContentCtx.translate(-scrollX, -scrollY);
                 
+                // Use actual image height for source, but canvas height for destination
                 mainContentCtx.drawImage(
                     mainContentImageData,
                     0, 0,
-                    mainContentImageData.width, mainContentImageData.height,
+                    mainContentImageData.width, actualMainContentHeight,
                     0, 0,
                     mainContentCanvas.width, mainContentCanvas.height
                 );
@@ -484,32 +495,35 @@
             updateScrollInfo();
         }
         
-        // Update zoom
+        // Update zoom - FIXED to maintain vertical sync
         function updateZoom(newScale) {
             newScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, newScale));
             
-            // Store current scroll position as percentage
-            const currentScrollX = mainContentContainer.scrollLeft;
-            const currentScrollY = mainContentContainer.scrollTop;
-            const maxScrollX = Math.max(1, mainContentCanvas.width - mainContentContainer.clientWidth);
-            const maxScrollY = Math.max(1, mainContentCanvas.height - mainContentContainer.clientHeight);
+            // Get current visible area as percentage of total canvas
+            const scrollX = mainContentContainer.scrollLeft;
+            const scrollY = mainContentContainer.scrollTop;
             
-            const percentX = currentScrollX / maxScrollX;
-            const percentY = currentScrollY / maxScrollY;
+            // Calculate what portion of the image is currently at the top of viewport
+            const visibleTopPercent = scrollY / Math.max(1, mainContentCanvas.height);
+            const visibleLeftPercent = scrollX / Math.max(1, mainContentCanvas.width);
             
             // Update scale
             scale = newScale;
             
-            // Reinitialize
+            // Reinitialize canvas with new scale
             initCanvas();
             
-            // Restore scroll position
-            const newMaxScrollX = Math.max(0, mainContentCanvas.width - mainContentContainer.clientWidth);
-            const newMaxScrollY = Math.max(0, mainContentCanvas.height - mainContentContainer.clientHeight);
+            // Calculate new scroll positions to show same portion of image
+            const newScrollX = visibleLeftPercent * mainContentCanvas.width;
+            const newScrollY = visibleTopPercent * mainContentCanvas.height;
             
-            mainContentContainer.scrollLeft = percentX * newMaxScrollX;
-            mainContentContainer.scrollTop = percentY * newMaxScrollY;
-            headerContainer.scrollLeft = percentX * newMaxScrollX;
+            // Apply with bounds checking
+            const maxScrollX = Math.max(0, mainContentCanvas.width - mainContentContainer.clientWidth);
+            const maxScrollY = Math.max(0, mainContentCanvas.height - mainContentContainer.clientHeight);
+            
+            mainContentContainer.scrollLeft = Math.max(0, Math.min(newScrollX, maxScrollX));
+            mainContentContainer.scrollTop = Math.max(0, Math.min(newScrollY, maxScrollY));
+            headerContainer.scrollLeft = mainContentContainer.scrollLeft;
             
             drawAllSections();
         }
