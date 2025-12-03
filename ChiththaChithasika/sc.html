@@ -11,6 +11,7 @@
             height: 100%;
             background-color: #f0f0f0;
             overflow: hidden;
+            font-family: Arial, sans-serif;
         }
 
         .container {
@@ -21,50 +22,41 @@
             overflow: hidden;
         }
 
-        /* Top Row: Header + Top-Left Corner */
-        .top-row {
-            display: flex;
-            width: 100%;
+        /* Top Row: Header */
+        .header-row {
+            flex-shrink: 0;
             border-bottom: 2px solid #666;
             background-color: #fff;
+            position: relative;
+            overflow: hidden;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
-        /* Top-left corner (intersection of frozen row and column) */
-        .top-left-corner {
-            width: 300px; /* Same as left column width */
-            height: 150px; /* Same as header height */
-            border-right: 2px solid #666;
-            border-bottom: 2px solid #666;
-            background-color: #f8f8f8;
-            position: relative;
-            overflow: hidden;
-            box-sizing: border-box;
-        }
-
-        /* Main header area */
-        .header-container {
-            flex: 1;
-            height: 150px; /* Header height */
+        #headerContainer {
             position: relative;
             overflow: hidden;
         }
 
         /* Middle Row: Left Column + Main Content */
-        .middle-row {
+        .content-row {
             display: flex;
             flex: 1;
+            min-height: 0;
             width: 100%;
         }
 
         /* Left column (frozen) */
         .left-column {
-            width: 85px; /* Fixed width for left column */
+            flex-shrink: 0;
             background-color: #f8f8f8;
             border-right: 2px solid #666;
             position: relative;
             overflow: hidden;
-            box-sizing: border-box;
+        }
+
+        #leftColumnContainer {
+            position: relative;
+            overflow: hidden;
         }
 
         /* Main content area with scrollbars */
@@ -75,8 +67,13 @@
             background-color: #fafafa;
         }
 
-        /* Canvas for each section */
-        .canvas-container {
+        #mainContentContainer {
+            position: relative;
+        }
+
+        /* Canvas styling */
+        canvas {
+            display: block;
             position: absolute;
             top: 0;
             left: 0;
@@ -157,43 +154,38 @@
 </head>
 <body>
     <div class="container">
-        <!-- Top Row: Header + Corner -->
-        <div class="top-row">
-            <div class="top-left-corner" id="cornerContainer">
-                <canvas id="cornerCanvas"></canvas>
-            </div>
-            <div class="header-container" id="headerContainer">
-                <canvas id="headerCanvas"></canvas>
-            </div>
+        <!-- Top Row: Full Header -->
+        <div class="header-row" id="headerContainer">
+            <canvas id="headerCanvas"></canvas>
         </div>
         
         <!-- Middle Row: Left Column + Main Content -->
-        <div class="middle-row">
+        <div class="content-row">
             <div class="left-column" id="leftColumnContainer">
                 <canvas id="leftColumnCanvas"></canvas>
             </div>
             <div class="main-content" id="mainContentContainer">
-                <canvas id="mainContentCanvas"></canvas>
+                <div id="mainContentWrapper" style="position: relative;">
+                    <canvas id="mainContentCanvas"></canvas>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="zoom-controls">
         <button id="zoomOut">-</button>
-        <button id="resetZoom">25%</button>
+        <button id="resetZoom">Fit</button>
         <button id="zoomIn">+</button>
     </div>
 
-    <div class="scroll-info" id="scrollInfo">Scroll: H=0, V=0 | Zoom: 25%</div>
+    <div class="scroll-info" id="scrollInfo">Zoom: Fit</div>
 
     <script>
         // Get DOM elements
-        const cornerCanvas = document.getElementById('cornerCanvas');
         const headerCanvas = document.getElementById('headerCanvas');
         const leftColumnCanvas = document.getElementById('leftColumnCanvas');
         const mainContentCanvas = document.getElementById('mainContentCanvas');
         
-        const cornerContainer = document.getElementById('cornerContainer');
         const headerContainer = document.getElementById('headerContainer');
         const leftColumnContainer = document.getElementById('leftColumnContainer');
         const mainContentContainer = document.getElementById('mainContentContainer');
@@ -204,75 +196,106 @@
         const resetZoomBtn = document.getElementById('resetZoom');
         
         // Create contexts
-        const cornerCtx = cornerCanvas.getContext('2d');
         const headerCtx = headerCanvas.getContext('2d');
         const leftColumnCtx = leftColumnCanvas.getContext('2d');
         const mainContentCtx = mainContentCanvas.getContext('2d');
         
-        // Image variables - Now we need 3 images
-        let headerImage = null;          // Top header (right part)
-        let leftColumnImage = null;      // Left column (bottom part)
-        let mainContentImage = null;     // Main content area
+        // Image variables
+        let headerImage = null;
+        let leftColumnImage = null;
+        let mainContentImage = null;
         let imagesLoaded = 0;
         const totalImages = 3;
         
-        // Image dimensions and split configuration
-        const TOTAL_WIDTH = 9600;
-        const TOTAL_HEIGHT = 5417;
+        // Image dimensions
+        const HEADER_WIDTH = 9600;
         const HEADER_HEIGHT = 989;
-        const LEFT_COLUMN_WIDTH = 85; // Width of the frozen left column
+        const LEFT_COLUMN_WIDTH = 85;
+        const BODY_WIDTH = 9600;
+        const BODY_HEIGHT = 5417;
+        const MAIN_CONTENT_WIDTH = BODY_WIDTH - LEFT_COLUMN_WIDTH;
         
-        // Split points (assuming you've split your images accordingly)
-        // Header split: [0, 0] to [LEFT_COLUMN_WIDTH, HEADER_HEIGHT] is corner
-        //               [LEFT_COLUMN_WIDTH, 0] to [TOTAL_WIDTH, HEADER_HEIGHT] is header
-        // Body split:   [0, HEADER_HEIGHT] to [LEFT_COLUMN_WIDTH, TOTAL_HEIGHT] is left column
-        //               [LEFT_COLUMN_WIDTH, HEADER_HEIGHT] to [TOTAL_WIDTH, TOTAL_HEIGHT] is main content
+        console.log('Expected dimensions:', {
+            header: `${HEADER_WIDTH}x${HEADER_HEIGHT}`,
+            leftColumn: `${LEFT_COLUMN_WIDTH}x${BODY_HEIGHT}`,
+            mainContent: `${MAIN_CONTENT_WIDTH}x${BODY_HEIGHT}`
+        });
         
-        // Zoom/Scale settings
-        let scale = 0.25;
-        const MIN_SCALE = 0.1;
+        // Zoom settings
+        let scale = 1.0;
+        const MIN_SCALE = 0.05;
         const MAX_SCALE = 3.0;
         const SCALE_STEP = 0.1;
-        const DEFAULT_SCALE = 0.25;
+        
+        // Store original image data
+        let headerImageData = null;
+        let leftColumnImageData = null;
+        let mainContentImageData = null;
+        
+        // Calculate fit scale
+        function calculateFitScale() {
+            const viewportWidth = window.innerWidth;
+            const viewportHeight = window.innerHeight - 50;
+            
+            // Calculate scale to fit width
+            const widthScale = (viewportWidth - LEFT_COLUMN_WIDTH) / MAIN_CONTENT_WIDTH;
+            
+            // Calculate scale to fit height (accounting for header)
+            const availableHeight = viewportHeight - (HEADER_HEIGHT * widthScale);
+            const heightScale = availableHeight / BODY_HEIGHT;
+            
+            return Math.min(widthScale, heightScale) * 0.95;
+        }
         
         // Initialize canvases
         function initCanvas() {
             // Calculate scaled dimensions
-            const scaledHeaderHeight = HEADER_HEIGHT * scale;
-            const scaledLeftColumnWidth = LEFT_COLUMN_WIDTH * scale;
-            const scaledTotalWidth = TOTAL_WIDTH * scale;
-            const scaledTotalHeight = TOTAL_HEIGHT * scale;
+            const scaledHeaderHeight = Math.max(1, Math.floor(HEADER_HEIGHT * scale));
+            const scaledHeaderWidth = Math.max(1, Math.floor(HEADER_WIDTH * scale));
+            const scaledLeftColumnWidth = Math.max(1, Math.floor(LEFT_COLUMN_WIDTH * scale));
+            const scaledLeftColumnHeight = Math.max(1, Math.floor(BODY_HEIGHT * scale));
+            const scaledMainContentWidth = Math.max(1, Math.floor(MAIN_CONTENT_WIDTH * scale));
+            const scaledMainContentHeight = Math.max(1, Math.floor(BODY_HEIGHT * scale));
             
-            // Set container dimensions
-            cornerContainer.style.width = scaledLeftColumnWidth + 'px';
-            cornerContainer.style.height = scaledHeaderHeight + 'px';
+            console.log('Scaled dimensions:', {
+                scale: scale.toFixed(3),
+                header: `${scaledHeaderWidth}x${scaledHeaderHeight}`,
+                leftColumn: `${scaledLeftColumnWidth}x${scaledLeftColumnHeight}`,
+                mainContent: `${scaledMainContentWidth}x${scaledMainContentHeight}`
+            });
             
-            leftColumnContainer.style.width = scaledLeftColumnWidth + 'px';
-            
-            // Set canvas dimensions
-            cornerCanvas.width = scaledLeftColumnWidth;
-            cornerCanvas.height = scaledHeaderHeight;
-            
-            headerCanvas.width = (TOTAL_WIDTH - LEFT_COLUMN_WIDTH) * scale;
+            // Set header container and canvas
+            headerContainer.style.height = scaledHeaderHeight + 'px';
+            headerCanvas.width = scaledHeaderWidth;
             headerCanvas.height = scaledHeaderHeight;
             
+            // Set left column container and canvas
+            leftColumnContainer.style.width = scaledLeftColumnWidth + 'px';
             leftColumnCanvas.width = scaledLeftColumnWidth;
-            leftColumnCanvas.height = (TOTAL_HEIGHT - HEADER_HEIGHT) * scale;
+            leftColumnCanvas.height = scaledLeftColumnHeight;
             
-            mainContentCanvas.width = (TOTAL_WIDTH - LEFT_COLUMN_WIDTH) * scale;
-            mainContentCanvas.height = (TOTAL_HEIGHT - HEADER_HEIGHT) * scale;
+            // Set main content container and canvas
+            mainContentCanvas.width = scaledMainContentWidth;
+            mainContentCanvas.height = scaledMainContentHeight;
             
-            // Update zoom button text
-            updateZoomButtonText();
-            
-            console.log('Canvas dimensions initialized');
+            // Update scroll info
+            updateScrollInfo();
             
             // Draw all sections
             drawAllSections();
         }
         
-        // Update zoom button text
-        function updateZoomButtonText() {
+        // Update scroll info
+        function updateScrollInfo() {
+            const scrollX = mainContentContainer.scrollLeft;
+            const scrollY = mainContentContainer.scrollTop;
+            const maxScrollX = Math.max(0, mainContentCanvas.width - mainContentContainer.clientWidth);
+            const maxScrollY = Math.max(0, mainContentCanvas.height - mainContentContainer.clientHeight);
+            
+            const percentX = maxScrollX > 0 ? Math.round((scrollX / maxScrollX) * 100) : 0;
+            const percentY = maxScrollY > 0 ? Math.round((scrollY / maxScrollY) * 100) : 0;
+            
+            scrollInfo.textContent = `H: ${Math.round(scrollX)}/${Math.round(maxScrollX)} (${percentX}%) | V: ${Math.round(scrollY)}/${Math.round(maxScrollY)} (${percentY}%) | Zoom: ${Math.round(scale * 100)}%`;
             resetZoomBtn.textContent = `${Math.round(scale * 100)}%`;
         }
         
@@ -285,10 +308,41 @@
             const onImageLoad = function() {
                 imagesLoaded++;
                 if (imagesLoaded === totalImages) {
-                    console.log('All images loaded');
+                    console.log('Actual image dimensions:', {
+                        header: `${headerImage.width}x${headerImage.height}`,
+                        leftColumn: `${leftColumnImage.width}x${leftColumnImage.height}`,
+                        mainContent: `${mainContentImage.width}x${mainContentImage.height}`
+                    });
+                    
+                    // Verify dimensions
+                    if (leftColumnImage.height !== BODY_HEIGHT || mainContentImage.height !== BODY_HEIGHT) {
+                        console.warn('WARNING: Body images should be FULL HEIGHT (5417px). Current heights:', {
+                            leftColumn: leftColumnImage.height,
+                            mainContent: mainContentImage.height,
+                            expected: BODY_HEIGHT
+                        });
+                    }
+                    
+                    if (leftColumnImage.width + mainContentImage.width !== BODY_WIDTH) {
+                        console.warn('WARNING: Body image widths don\'t add up:', {
+                            leftColumn: leftColumnImage.width,
+                            mainContent: mainContentImage.width,
+                            sum: leftColumnImage.width + mainContentImage.width,
+                            expected: BODY_WIDTH
+                        });
+                    }
+                    
+                    // Store image data
+                    headerImageData = headerImage;
+                    leftColumnImageData = leftColumnImage;
+                    mainContentImageData = mainContentImage;
+                    
+                    // Set initial scale
+                    scale = calculateFitScale();
+                    
                     initCanvas();
                     setupEventListeners();
-                    centerView();
+                    drawAllSections();
                 }
             };
             
@@ -297,28 +351,24 @@
             mainContentImage.onload = onImageLoad;
             
             headerImage.onerror = () => {
-                console.error('Failed to load header image');
-                headerImage = createPlaceholderImage(TOTAL_WIDTH - LEFT_COLUMN_WIDTH, HEADER_HEIGHT, 'Header', '#4a6fa5');
+                console.error('Failed to load cc_h.jpg');
+                headerImage = createPlaceholderImage(HEADER_WIDTH, HEADER_HEIGHT, 'Header', '#4a6fa5');
             };
             
             leftColumnImage.onerror = () => {
-                console.error('Failed to load left column image');
-                leftColumnImage = createPlaceholderImage(LEFT_COLUMN_WIDTH, TOTAL_HEIGHT - HEADER_HEIGHT, 'Left Col', '#6a994e');
+                console.error('Failed to load body_left.jpg');
+                leftColumnImage = createPlaceholderImage(LEFT_COLUMN_WIDTH, BODY_HEIGHT, 'Left Column', '#6a994e');
             };
             
             mainContentImage.onerror = () => {
-                console.error('Failed to load main content image');
-                mainContentImage = createPlaceholderImage(TOTAL_WIDTH - LEFT_COLUMN_WIDTH, TOTAL_HEIGHT - HEADER_HEIGHT, 'Main Content', '#9b59b6');
+                console.error('Failed to load body_right.jpg');
+                mainContentImage = createPlaceholderImage(MAIN_CONTENT_WIDTH, BODY_HEIGHT, 'Main Content', '#9b59b6');
             };
             
-            // Load your split images
-            // You need to create these split images from your original body image
-            headerImage.src = '/ChiththaChithasika/header_right.jpg';         // Right part of header
-            leftColumnImage.src = './body_left.jpg';        // Left part of body
-            mainContentImage.src = 'body_right.jpg';     // Right part of body
-            
-            // For the corner, we'll use a section of the header image
-            // or create a separate corner image if needed
+            // Load images
+            headerImage.src = 'cc_h.jpg';
+            leftColumnImage.src = 'body_left.jpg';
+            mainContentImage.src = 'body_right.jpg';
         }
         
         // Create placeholder image
@@ -330,283 +380,191 @@
             canvas.width = width;
             canvas.height = height;
             
-            // Fill background
             ctx.fillStyle = color + '20';
             ctx.fillRect(0, 0, width, height);
             
-            // Draw pattern
-            ctx.strokeStyle = color + '40';
-            ctx.lineWidth = 1;
-            
-            for (let x = 0; x < width; x += 50) {
-                ctx.beginPath();
-                ctx.moveTo(x, 0);
-                ctx.lineTo(x, height);
-                ctx.stroke();
-            }
-            
-            for (let y = 0; y < height; y += 50) {
-                ctx.beginPath();
-                ctx.moveTo(0, y);
-                ctx.lineTo(width, y);
-                ctx.stroke();
-            }
-            
-            // Draw text
             ctx.fillStyle = color;
-            ctx.font = 'bold 24px Arial';
+            ctx.font = 'bold 48px Arial';
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
             ctx.fillText(text, width / 2, height / 2);
             
-            ctx.font = '16px Arial';
-            ctx.fillText(`${width} × ${height}`, width / 2, height / 2 + 40);
+            ctx.font = '24px Arial';
+            ctx.fillText(`${width} × ${height}`, width / 2, height / 2 + 60);
             
             img.src = canvas.toDataURL();
             return img;
         }
         
-        // Draw all sections
+        // Draw all sections - FIXED VERSION
         function drawAllSections() {
             const scrollX = mainContentContainer.scrollLeft;
             const scrollY = mainContentContainer.scrollTop;
             
-            // Clear all canvases
-            cornerCtx.clearRect(0, 0, cornerCanvas.width, cornerCanvas.height);
+            // Clear canvases
             headerCtx.clearRect(0, 0, headerCanvas.width, headerCanvas.height);
             leftColumnCtx.clearRect(0, 0, leftColumnCanvas.width, leftColumnCanvas.height);
             mainContentCtx.clearRect(0, 0, mainContentCanvas.width, mainContentCanvas.height);
             
-            // Draw corner (static, no translation needed)
-            if (headerImage.complete) {
-                // The corner is the top-left part of the header
-                // We'll draw a portion of the header image
-                cornerCtx.drawImage(
-                    headerImage,
-                    0, 0, // Start from (0,0) of header image (which is actually the right part)
-                    Math.min(LEFT_COLUMN_WIDTH, headerImage.width), HEADER_HEIGHT,
-                    0, 0,
-                    cornerCanvas.width, cornerCanvas.height
-                );
-            }
-            
-            // Draw header (translate horizontally based on scroll)
-            if (headerImage.complete) {
+            // Draw HEADER (translate horizontally only)
+            if (headerImageData && headerImageData.complete) {
                 headerCtx.save();
                 headerCtx.translate(-scrollX, 0);
                 
                 headerCtx.drawImage(
-                    headerImage,
+                    headerImageData,
                     0, 0,
-                    headerImage.width, HEADER_HEIGHT,
+                    HEADER_WIDTH, HEADER_HEIGHT,
                     0, 0,
-                    headerImage.width * scale, HEADER_HEIGHT * scale
+                    headerCanvas.width, headerCanvas.height
                 );
                 
                 headerCtx.restore();
             }
             
-            // Draw left column (translate vertically based on scroll)
-            if (leftColumnImage.complete) {
+            // Draw LEFT COLUMN (translate vertically only)
+            if (leftColumnImageData && leftColumnImageData.complete) {
                 leftColumnCtx.save();
                 leftColumnCtx.translate(0, -scrollY);
                 
                 leftColumnCtx.drawImage(
-                    leftColumnImage,
+                    leftColumnImageData,
                     0, 0,
-                    LEFT_COLUMN_WIDTH, leftColumnImage.height,
+                    LEFT_COLUMN_WIDTH, BODY_HEIGHT,
                     0, 0,
-                    LEFT_COLUMN_WIDTH * scale, leftColumnImage.height * scale
+                    leftColumnCanvas.width, leftColumnCanvas.height
                 );
                 
                 leftColumnCtx.restore();
             }
             
-            // Draw main content (translate both horizontally and vertically)
-            if (mainContentImage.complete) {
+            // Draw MAIN CONTENT (translate both ways)
+            if (mainContentImageData && mainContentImageData.complete) {
                 mainContentCtx.save();
                 mainContentCtx.translate(-scrollX, -scrollY);
                 
                 mainContentCtx.drawImage(
-                    mainContentImage,
+                    mainContentImageData,
                     0, 0,
-                    mainContentImage.width, mainContentImage.height,
+                    MAIN_CONTENT_WIDTH, BODY_HEIGHT,
                     0, 0,
-                    mainContentImage.width * scale, mainContentImage.height * scale
+                    mainContentCanvas.width, mainContentCanvas.height
                 );
                 
                 mainContentCtx.restore();
             }
             
             // Update scroll info
-            const maxScrollX = Math.max(0, mainContentCanvas.width - mainContentContainer.clientWidth);
-            const maxScrollY = Math.max(0, mainContentCanvas.height - mainContentContainer.clientHeight);
-            const percentX = maxScrollX > 0 ? Math.round((scrollX / maxScrollX) * 100) : 0;
-            const percentY = maxScrollY > 0 ? Math.round((scrollY / maxScrollY) * 100) : 0;
-            
-            scrollInfo.textContent = `H: ${Math.round(scrollX)}/${Math.round(maxScrollX)} (${percentX}%) | V: ${Math.round(scrollY)}/${Math.round(maxScrollY)} (${percentY}%) | Zoom: ${Math.round(scale * 100)}%`;
+            updateScrollInfo();
         }
         
-        // Center the view
-        function centerView() {
-            if (!mainContentCanvas.width || !mainContentContainer.clientWidth) return;
-            
-            const maxScrollX = Math.max(0, mainContentCanvas.width - mainContentContainer.clientWidth);
-            const maxScrollY = Math.max(0, mainContentCanvas.height - mainContentContainer.clientHeight);
-            
-            const centerX = maxScrollX / 2;
-            const centerY = maxScrollY / 2;
-            
-            mainContentContainer.scrollLeft = centerX;
-            mainContentContainer.scrollTop = centerY;
-            
-            drawAllSections();
-        }
-        
+        // Update zoom
         function updateZoom(newScale) {
-            // Clamp scale to min/max
             newScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, newScale));
             
-            // Get current scroll position
-            const scrollX = mainContentContainer.scrollLeft;
-            const scrollY = mainContentContainer.scrollTop;
+            // Get current scroll position as percentage
+            const scrollLeft = mainContentContainer.scrollLeft;
+            const scrollTop = mainContentContainer.scrollTop;
+            const maxScrollLeft = Math.max(1, mainContentCanvas.width - mainContentContainer.clientWidth);
+            const maxScrollTop = Math.max(1, mainContentCanvas.height - mainContentContainer.clientHeight);
             
-            // Calculate what's at the center of the viewport
-            const viewportCenterX = scrollX + (mainContentContainer.clientWidth / 2);
-            const viewportCenterY = scrollY + (mainContentContainer.clientHeight / 2);
-            
-            // Convert viewport center to image coordinates at current scale
-            const imageCenterX = viewportCenterX / scale;
-            const imageCenterY = viewportCenterY / scale;
+            const percentX = scrollLeft / maxScrollLeft;
+            const percentY = scrollTop / maxScrollTop;
             
             // Update scale
             scale = newScale;
             
-            // Reinitialize canvas with new scale
+            // Reinitialize canvas
             initCanvas();
             
-            // Convert image coordinates back to viewport coordinates at new scale
-            const newViewportCenterX = imageCenterX * scale;
-            const newViewportCenterY = imageCenterY * scale;
+            // Restore scroll position
+            const newMaxScrollLeft = Math.max(0, mainContentCanvas.width - mainContentContainer.clientWidth);
+            const newMaxScrollTop = Math.max(0, mainContentCanvas.height - mainContentContainer.clientHeight);
             
-            // Calculate new scroll position to keep the same point centered
-            const newScrollX = newViewportCenterX - (mainContentContainer.clientWidth / 2);
-            const newScrollY = newViewportCenterY - (mainContentContainer.clientHeight / 2);
+            mainContentContainer.scrollLeft = percentX * newMaxScrollLeft;
+            mainContentContainer.scrollTop = percentY * newMaxScrollTop;
+            headerContainer.scrollLeft = percentX * newMaxScrollLeft;
             
-            // Apply new scroll position with bounds checking
-            const maxScrollX = Math.max(0, mainContentCanvas.width - mainContentContainer.clientWidth);
-            const maxScrollY = Math.max(0, mainContentCanvas.height - mainContentContainer.clientHeight);
-            
-            const finalScrollX = Math.max(0, Math.min(newScrollX, maxScrollX));
-            const finalScrollY = Math.max(0, Math.min(newScrollY, maxScrollY));
-            
-            // Set scroll positions
-            mainContentContainer.scrollLeft = finalScrollX;
-            mainContentContainer.scrollTop = finalScrollY;
-            
-            // Draw all sections
             drawAllSections();
         }
         
+        // Setup event listeners
         function setupEventListeners() {
             let isDragging = false;
             let startX, startY, startScrollLeft, startScrollTop;
             
-            // Mouse drag for main content and header
-            [mainContentCanvas, headerCanvas].forEach(canvas => {
-                canvas.addEventListener('mousedown', (e) => {
-                    isDragging = true;
-                    startX = e.clientX;
-                    startY = e.clientY;
-                    startScrollLeft = mainContentContainer.scrollLeft;
-                    startScrollTop = mainContentContainer.scrollTop;
-                    canvas.style.cursor = 'grabbing';
-                    e.preventDefault();
-                });
+            // Drag handlers
+            function handleDragStart(e) {
+                isDragging = true;
+                startX = e.clientX || e.touches[0].clientX;
+                startY = e.clientY || e.touches[0].clientY;
+                startScrollLeft = mainContentContainer.scrollLeft;
+                startScrollTop = mainContentContainer.scrollTop;
+                document.body.style.cursor = 'grabbing';
+                e.preventDefault();
+            }
+            
+            function handleDragMove(e) {
+                if (!isDragging) return;
                 
-                canvas.addEventListener('mousemove', (e) => {
-                    if (!isDragging) return;
-                    
-                    const deltaX = e.clientX - startX;
-                    const deltaY = e.clientY - startY;
-                    
-                    // Update scroll position (inverse movement)
-                    const newScrollLeft = startScrollLeft - deltaX;
-                    const newScrollTop = startScrollTop - deltaY;
-                    
-                    // Apply with bounds checking
-                    const maxScrollX = Math.max(0, mainContentCanvas.width - mainContentContainer.clientWidth);
-                    const maxScrollY = Math.max(0, mainContentCanvas.height - mainContentContainer.clientHeight);
-                    
-                    const finalScrollLeft = Math.max(0, Math.min(newScrollLeft, maxScrollX));
-                    const finalScrollTop = Math.max(0, Math.min(newScrollTop, maxScrollY));
-                    
-                    mainContentContainer.scrollLeft = finalScrollLeft;
-                    mainContentContainer.scrollTop = finalScrollTop;
-                    
-                    e.preventDefault();
-                });
+                const currentX = e.clientX || e.touches[0].clientX;
+                const currentY = e.clientY || e.touches[0].clientY;
                 
-                canvas.addEventListener('mouseup', () => {
-                    isDragging = false;
-                    canvas.style.cursor = 'grab';
-                });
+                const deltaX = startX - currentX;
+                const deltaY = startY - currentY;
                 
-                canvas.addEventListener('mouseleave', () => {
-                    isDragging = false;
-                    canvas.style.cursor = 'grab';
-                });
+                const newScrollLeft = startScrollLeft + deltaX;
+                const newScrollTop = startScrollTop + deltaY;
+                
+                const maxScrollLeft = Math.max(0, mainContentCanvas.width - mainContentContainer.clientWidth);
+                const maxScrollTop = Math.max(0, mainContentCanvas.height - mainContentContainer.clientHeight);
+                
+                mainContentContainer.scrollLeft = Math.max(0, Math.min(newScrollLeft, maxScrollLeft));
+                mainContentContainer.scrollTop = Math.max(0, Math.min(newScrollTop, maxScrollTop));
+                headerContainer.scrollLeft = mainContentContainer.scrollLeft;
+                
+                e.preventDefault();
+            }
+            
+            function handleDragEnd() {
+                isDragging = false;
+                document.body.style.cursor = 'default';
+            }
+            
+            // Add event listeners
+            [headerCanvas, leftColumnCanvas, mainContentCanvas].forEach(canvas => {
+                // Mouse events
+                canvas.addEventListener('mousedown', handleDragStart);
+                canvas.addEventListener('mousemove', handleDragMove);
+                canvas.addEventListener('mouseup', handleDragEnd);
+                canvas.addEventListener('mouseleave', handleDragEnd);
+                
+                // Touch events
+                canvas.addEventListener('touchstart', handleDragStart, { passive: false });
+                canvas.addEventListener('touchmove', handleDragMove, { passive: false });
+                canvas.addEventListener('touchend', handleDragEnd);
+                canvas.addEventListener('touchcancel', handleDragEnd);
                 
                 canvas.style.cursor = 'grab';
             });
             
-            // Also allow dragging on left column (vertical scrolling only)
-            leftColumnCanvas.addEventListener('mousedown', (e) => {
-                isDragging = true;
-                startY = e.clientY;
-                startScrollTop = mainContentContainer.scrollTop;
-                leftColumnCanvas.style.cursor = 'grabbing';
-                e.preventDefault();
-            });
-            
-            leftColumnCanvas.addEventListener('mousemove', (e) => {
-                if (!isDragging) return;
-                
-                const deltaY = e.clientY - startY;
-                const newScrollTop = startScrollTop - deltaY;
-                
-                const maxScrollY = Math.max(0, mainContentCanvas.height - mainContentContainer.clientHeight);
-                const finalScrollTop = Math.max(0, Math.min(newScrollTop, maxScrollY));
-                
-                mainContentContainer.scrollTop = finalScrollTop;
-                
-                e.preventDefault();
-            });
-            
-            leftColumnCanvas.addEventListener('mouseup', () => {
-                isDragging = false;
-                leftColumnCanvas.style.cursor = 'grab';
-            });
-            
-            leftColumnCanvas.addEventListener('mouseleave', () => {
-                isDragging = false;
-                leftColumnCanvas.style.cursor = 'grab';
-            });
-            
-            leftColumnCanvas.style.cursor = 'grab';
-            
-            // Scroll event listener
+            // Scroll events
             mainContentContainer.addEventListener('scroll', () => {
+                headerContainer.scrollLeft = mainContentContainer.scrollLeft;
+                drawAllSections();
+            });
+            
+            headerContainer.addEventListener('scroll', () => {
+                mainContentContainer.scrollLeft = headerContainer.scrollLeft;
                 drawAllSections();
             });
             
             // Keyboard navigation
             document.addEventListener('keydown', (e) => {
-                const scrollStep = 100;
+                const scrollStep = 50;
                 let scrollX = mainContentContainer.scrollLeft;
                 let scrollY = mainContentContainer.scrollTop;
                 
-                // Handle Ctrl+/- for zoom
                 if ((e.ctrlKey || e.metaKey) && (e.key === '+' || e.key === '=')) {
                     updateZoom(scale + SCALE_STEP);
                     e.preventDefault();
@@ -614,11 +572,6 @@
                 }
                 if ((e.ctrlKey || e.metaKey) && e.key === '-') {
                     updateZoom(scale - SCALE_STEP);
-                    e.preventDefault();
-                    return;
-                }
-                if ((e.ctrlKey || e.metaKey) && e.key === '0') {
-                    updateZoom(DEFAULT_SCALE);
                     e.preventDefault();
                     return;
                 }
@@ -637,32 +590,17 @@
                         scrollY += scrollStep;
                         break;
                     case 'Home':
-                        if (e.ctrlKey) {
-                            scrollX = 0;
-                            scrollY = 0;
-                        } else {
-                            scrollX = 0;
-                        }
+                        scrollX = 0;
+                        scrollY = 0;
                         break;
                     case 'End':
-                        if (e.ctrlKey) {
-                            scrollX = mainContentCanvas.width - mainContentContainer.clientWidth;
-                            scrollY = mainContentCanvas.height - mainContentContainer.clientHeight;
-                        } else {
-                            scrollX = mainContentCanvas.width - mainContentContainer.clientWidth;
-                        }
-                        break;
-                    case 'PageUp':
-                        scrollY -= mainContentContainer.clientHeight * 0.9;
-                        break;
-                    case 'PageDown':
-                        scrollY += mainContentContainer.clientHeight * 0.9;
+                        scrollX = Math.max(0, mainContentCanvas.width - mainContentContainer.clientWidth);
+                        scrollY = Math.max(0, mainContentCanvas.height - mainContentContainer.clientHeight);
                         break;
                     default:
                         return;
                 }
                 
-                // Ensure scroll boundaries
                 const maxScrollX = Math.max(0, mainContentCanvas.width - mainContentContainer.clientWidth);
                 const maxScrollY = Math.max(0, mainContentCanvas.height - mainContentContainer.clientHeight);
                 scrollX = Math.max(0, Math.min(scrollX, maxScrollX));
@@ -670,6 +608,7 @@
                 
                 mainContentContainer.scrollLeft = scrollX;
                 mainContentContainer.scrollTop = scrollY;
+                headerContainer.scrollLeft = scrollX;
                 
                 e.preventDefault();
             });
@@ -677,68 +616,20 @@
             // Zoom controls
             zoomInBtn.addEventListener('click', () => updateZoom(scale + SCALE_STEP));
             zoomOutBtn.addEventListener('click', () => updateZoom(scale - SCALE_STEP));
-            resetZoomBtn.addEventListener('click', () => updateZoom(DEFAULT_SCALE));
+            resetZoomBtn.addEventListener('click', () => {
+                scale = calculateFitScale();
+                initCanvas();
+                drawAllSections();
+            });
             
-            // Mouse wheel zoom (Ctrl+Scroll)
-            mainContentContainer.addEventListener('wheel', (e) => {
+            // Mouse wheel zoom
+            document.addEventListener('wheel', (e) => {
                 if (e.ctrlKey) {
                     e.preventDefault();
                     const delta = e.deltaY > 0 ? -SCALE_STEP : SCALE_STEP;
                     updateZoom(scale + delta);
                 }
             }, { passive: false });
-            
-            // Touch support
-            let touchStartDistance = null;
-            
-            mainContentContainer.addEventListener('touchstart', (e) => {
-                if (e.touches.length === 1) {
-                    startX = e.touches[0].clientX;
-                    startY = e.touches[0].clientY;
-                    startScrollLeft = mainContentContainer.scrollLeft;
-                    startScrollTop = mainContentContainer.scrollTop;
-                } else if (e.touches.length === 2) {
-                    const dx = e.touches[0].clientX - e.touches[1].clientX;
-                    const dy = e.touches[0].clientY - e.touches[1].clientY;
-                    touchStartDistance = Math.sqrt(dx * dx + dy * dy);
-                    e.preventDefault();
-                }
-            }, { passive: false });
-            
-            mainContentContainer.addEventListener('touchmove', (e) => {
-                if (e.touches.length === 1 && touchStartDistance === null) {
-                    const deltaX = startX - e.touches[0].clientX;
-                    const deltaY = startY - e.touches[0].clientY;
-                    
-                    const newScrollLeft = startScrollLeft + deltaX;
-                    const newScrollTop = startScrollTop + deltaY;
-                    
-                    const maxScrollX = Math.max(0, mainContentCanvas.width - mainContentContainer.clientWidth);
-                    const maxScrollY = Math.max(0, mainContentCanvas.height - mainContentContainer.clientHeight);
-                    
-                    const finalScrollLeft = Math.max(0, Math.min(newScrollLeft, maxScrollX));
-                    const finalScrollTop = Math.max(0, Math.min(newScrollTop, maxScrollY));
-                    
-                    mainContentContainer.scrollLeft = finalScrollLeft;
-                    mainContentContainer.scrollTop = finalScrollTop;
-                    
-                    e.preventDefault();
-                } else if (e.touches.length === 2 && touchStartDistance !== null) {
-                    const dx = e.touches[0].clientX - e.touches[1].clientX;
-                    const dy = e.touches[0].clientY - e.touches[1].clientY;
-                    const touchDistance = Math.sqrt(dx * dx + dy * dy);
-                    
-                    const zoomFactor = touchDistance / touchStartDistance;
-                    updateZoom(scale * zoomFactor);
-                    
-                    touchStartDistance = touchDistance;
-                    e.preventDefault();
-                }
-            }, { passive: false });
-            
-            mainContentContainer.addEventListener('touchend', () => {
-                touchStartDistance = null;
-            });
         }
         
         // Handle window resize
