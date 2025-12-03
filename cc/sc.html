@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel-like Frozen Pane Viewer</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: #f0f0f0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+        }
+
+        /* Top Row: Header */
+        .header-row {
+            flex-shrink: 0;
+            border-bottom: 2px solid #666;
+            background-color: #fff;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #headerContainer {
+            position: relative;
+            overflow: hidden;
+            height: auto;
+        }
+
+        /* Middle Row: Left Column + Main Content */
+        .content-row {
+            display: flex;
+            flex: 1;
+            min-height: 0;
+            width: 100%;
+        }
+
+        /* Left column (frozen) */
+        .left-column {
+            flex-shrink: 0;
+            background-color: #f8f8f8;
+            border-right: 2px solid #666;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #leftColumnContainer {
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Main content area with scrollbars */
+        .main-content {
+            flex: 1;
+            position: relative;
+            overflow: auto;
+            background-color: #fafafa;
+        }
+
+        #mainContentContainer {
+            position: relative;
+        }
+
+        /* Canvas styling */
+        canvas {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        /* Custom scrollbar styling */
+        .main-content::-webkit-scrollbar {
+            width: 14px;
+            height: 14px;
+        }
+
+        .main-content::-webkit-scrollbar-track {
+            background: #e8e8e8;
+        }
+
+        .main-content::-webkit-scrollbar-thumb {
+            background: #666;
+            border-radius: 7px;
+            border: 3px solid #e8e8e8;
+        }
+
+        .main-content::-webkit-scrollbar-thumb:hover {
+            background: #444;
+        }
+
+        .main-content::-webkit-scrollbar-corner {
+            background: #e8e8e8;
+        }
+
+        .scroll-info {
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            background: rgba(0, 0, 0, 0.85);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .zoom-controls {
+            position: fixed;
+            top: 15px;
+            right: 15px;
+            z-index: 1000;
+            display: flex;
+            gap: 5px;
+        }
+
+        .zoom-controls button {
+            padding: 8px 12px;
+            background: rgba(0, 0, 0, 0.85);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background 0.2s;
+            min-width: 50px;
+        }
+
+        .zoom-controls button:hover {
+            background: rgba(0, 0, 0, 0.95);
+        }
+
+        #resetZoom {
+            background: rgba(52, 152, 219, 0.85);
+        }
+
+        #resetZoom:hover {
+            background: rgba(41, 128, 185, 0.95);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Top Row: Full Header -->
+        <div class="header-row" id="headerContainer">
+            <canvas id="headerCanvas"></canvas>
+        </div>
+        
+        <!-- Middle Row: Left Column + Main Content -->
+        <div class="content-row">
+            <div class="left-column" id="leftColumnContainer">
+                <canvas id="leftColumnCanvas"></canvas>
+            </div>
+            <div class="main-content" id="mainContentContainer">
+                <canvas id="mainContentCanvas"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <div class="zoom-controls">
+        <button id="zoomOut">-</button>
+        <button id="resetZoom">Fit</button>
+        <button id="zoomIn">+</button>
+    </div>
+
+    <div class="scroll-info" id="scrollInfo">Zoom: Fit</div>
+
+    <script>
+        // Get DOM elements
+        const headerCanvas = document.getElementById('headerCanvas');
+        const leftColumnCanvas = document.getElementById('leftColumnCanvas');
+        const mainContentCanvas = document.getElementById('mainContentCanvas');
+        
+        const headerContainer = document.getElementById('headerContainer');
+        const leftColumnContainer = document.getElementById('leftColumnContainer');
+        const mainContentContainer = document.getElementById('mainContentContainer');
+        
+        const scrollInfo = document.getElementById('scrollInfo');
+        const zoomInBtn = document.getElementById('zoomIn');
+        const zoomOutBtn = document.getElementById('zoomOut');
+        const resetZoomBtn = document.getElementById('resetZoom');
+        
+        // Create contexts
+        const headerCtx = headerCanvas.getContext('2d');
+        const leftColumnCtx = leftColumnCanvas.getContext('2d');
+        const mainContentCtx = mainContentCanvas.getContext('2d');
+        
+        // Image variables
+        let headerImage = null;
+        let leftColumnImage = null;
+        let mainContentImage = null;
+        let imagesLoaded = 0;
+        const totalImages = 3;
+        
+        // Image dimensions - BASED ON ORIGINAL 9600×6387
+        const TOTAL_WIDTH = 9600;
+        const TOTAL_HEIGHT = 6387;
+        const HEADER_HEIGHT = 989;
+        const LEFT_COLUMN_WIDTH = 85;
+        
+        // Calculate body height (6387 - 989 = 5398)
+        const BODY_HEIGHT = TOTAL_HEIGHT - HEADER_HEIGHT;  // 5398 pixels
+        const MAIN_CONTENT_WIDTH = TOTAL_WIDTH - LEFT_COLUMN_WIDTH;  // 9515 pixels
+        
+        console.log('Image dimensions:', {
+            original: `${TOTAL_WIDTH}x${TOTAL_HEIGHT}`,
+            header: `${TOTAL_WIDTH}x${HEADER_HEIGHT}`,
+            leftColumn: `${LEFT_COLUMN_WIDTH}x${BODY_HEIGHT}`,
+            mainContent: `${MAIN_CONTENT_WIDTH}x${BODY_HEIGHT}`,
+            bodyHeight: BODY_HEIGHT
+        });
+        
+        // Zoom settings
+        let scale = 1.0;
+        const MIN_SCALE = 0.05;
+        const MAX_SCALE = 3.0;
+        const SCALE_STEP = 0.1;
+        
+        // Store image data
+        let headerImageData = null;
+        let leftColumnImageData = null;
+        let mainContentImageData = null;
+        
+        // Calculate fit scale
+        function calculateFitScale() {
+            const viewportWidth = window.innerWidth;
+            const viewportHeight = window.innerHeight - 50;
+            
+            // Calculate scale to fit width
+            const widthScale = (viewportWidth - LEFT_COLUMN_WIDTH) / MAIN_CONTENT_WIDTH;
+            
+            // Calculate total height at this scale
+            const totalHeightAtScale = (HEADER_HEIGHT + BODY_HEIGHT) * widthScale;
+            
+            // If total height fits, use width scale
+            if (totalHeightAtScale <= viewportHeight) {
+                return widthScale * 0.95;
+            }
+            
+            // Otherwise calculate scale to fit height
+            const heightScale = viewportHeight / (HEADER_HEIGHT + BODY_HEIGHT);
+            return heightScale * 0.95;
+        }
+        
+        // Initialize canvases
+        function initCanvas() {
+            // Calculate scaled dimensions
+            const scaledHeaderHeight = Math.max(1, Math.floor(HEADER_HEIGHT * scale));
+            const scaledHeaderWidth = Math.max(1, Math.floor(TOTAL_WIDTH * scale));
+            const scaledLeftColumnWidth = Math.max(1, Math.floor(LEFT_COLUMN_WIDTH * scale));
+            const scaledLeftColumnHeight = Math.max(1, Math.floor(BODY_HEIGHT * scale));
+            const scaledMainContentWidth = Math.max(1, Math.floor(MAIN_CONTENT_WIDTH * scale));
+            const scaledMainContentHeight = Math.max(1, Math.floor(BODY_HEIGHT * scale));
+            
+            console.log('Scaled dimensions:', {
+                scale: scale.toFixed(3),
+                header: `${scaledHeaderWidth}x${scaledHeaderHeight}`,
+                leftColumn: `${scaledLeftColumnWidth}x${scaledLeftColumnHeight}`,
+                mainContent: `${scaledMainContentWidth}x${scaledMainContentHeight}`,
+                'leftColumn.height === mainContent.height': scaledLeftColumnHeight === scaledMainContentHeight
+            });
+            
+            // Set header container and canvas
+            headerContainer.style.height = scaledHeaderHeight + 'px';
+            headerCanvas.width = scaledHeaderWidth;
+            headerCanvas.height = scaledHeaderHeight;
+            
+            // Set left column container and canvas
+            leftColumnContainer.style.width = scaledLeftColumnWidth + 'px';
+            leftColumnCanvas.width = scaledLeftColumnWidth;
+            leftColumnCanvas.height = scaledLeftColumnHeight;
+            
+            // Set main content container and canvas
+            mainContentCanvas.width = scaledMainContentWidth;
+            mainContentCanvas.height = scaledMainContentHeight;
+            
+            // Update scroll info
+            updateScrollInfo();
+            
+            // Draw all sections
+            drawAllSections();
+        }
+        
+        // Update scroll info
+        function updateScrollInfo() {
+            const scrollX = mainContentContainer.scrollLeft;
+            const scrollY = mainContentContainer.scrollTop;
+            const maxScrollX = Math.max(0, mainContentCanvas.width - mainContentContainer.clientWidth);
+            const maxScrollY = Math.max(0, mainContentCanvas.height - mainContentContainer.clientHeight);
+            
+            const percentX = maxScrollX > 0 ? Math.round((scrollX / maxScrollX) * 100) : 0;
+            const percentY = maxScrollY > 0 ? Math.round((scrollY / maxScrollY) * 100) : 0;
+            
+            scrollInfo.textContent = `H: ${Math.round(scrollX)}/${Math.round(maxScrollX)} (${percentX}%) | V: ${Math.round(scrollY)}/${Math.round(maxScrollY)} (${percentY}%) | Zoom: ${Math.round(scale * 100)}%`;
+            resetZoomBtn.textContent = `${Math.round(scale * 100)}%`;
+        }
+        
+        // Load images
+        function loadImages() {
+            headerImage = new Image();
+            leftColumnImage = new Image();
+            mainContentImage = new Image();
+            
+            const onImageLoad = function() {
+                imagesLoaded++;
+                if (imagesLoaded === totalImages) {
+                    console.log('Actual image dimensions:', {
+                        header: `${headerImage.width}x${headerImage.height}`,
+                        leftColumn: `${leftColumnImage.width}x${leftColumnImage.height}`,
+                        mainContent: `${mainContentImage.width}x${mainContentImage.height}`
+                    });
+                    
+                    // CRITICAL: Verify heights match
+                    if (leftColumnImage.height !== mainContentImage.height) {
+                        console.error('ERROR: Image heights do not match!');
+                        console.error(`  leftColumnImage.height: ${leftColumnImage.height}`);
+                        console.error(`  mainContentImage.height: ${mainContentImage.height}`);
+                        console.error(`  Expected both to be: ${BODY_HEIGHT}`);
+                        console.error('Vertical scrolling will NOT sync correctly!');
+                    } else {
+                        console.log('✓ Image heights match for vertical sync');
+                    }
+                    
+                    // Store image data
+                    headerImageData = headerImage;
+                    leftColumnImageData = leftColumnImage;
+                    mainContentImageData = mainContentImage;
+                    
+                    // Set initial scale
+                    scale = calculateFitScale();
+                    
+                    initCanvas();
+                    setupEventListeners();
+                    
+                    // Center view
+                    setTimeout(() => {
+                        mainContentContainer.scrollTop = 0;
+                        drawAllSections();
+                    }, 100);
+                }
+            };
+            
+            headerImage.onload = onImageLoad;
+            leftColumnImage.onload = onImageLoad;
+            mainContentImage.onload = onImageLoad;
+            
+            headerImage.onerror = () => {
+                console.error('Failed to load cc_h.jpg');
+                headerImage = createPlaceholderImage(TOTAL_WIDTH, HEADER_HEIGHT, 'Header', '#4a6fa5');
+            };
+            
+            leftColumnImage.onerror = () => {
+                console.error('Failed to load body_left.jpg');
+                leftColumnImage = createPlaceholderImage(LEFT_COLUMN_WIDTH, BODY_HEIGHT, 'Left Column', '#6a994e');
+            };
+            
+            mainContentImage.onerror = () => {
+                console.error('Failed to load body_right.jpg');
+                mainContentImage = createPlaceholderImage(MAIN_CONTENT_WIDTH, BODY_HEIGHT, 'Main Content', '#9b59b6');
+            };
+            
+            // Load images - use the ones from the Python script
+            headerImage.src = 'cc_h.jpg';
+            leftColumnImage.src = 'body_left.jpg';
+            mainContentImage.src = 'body_right.jpg';
+        }
+        
+        // Create placeholder image
+        function createPlaceholderImage(width, height, text, color) {
+            const img = new Image();
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            
+            canvas.width = width;
+            canvas.height = height;
+            
+            ctx.fillStyle = color + '20';
+            ctx.fillRect(0, 0, width, height);
+            
+            // Draw grid
+            ctx.strokeStyle = color + '40';
+            ctx.lineWidth = 1;
+            
+            for (let x = 0; x < width; x += 100) {
+                ctx.beginPath();
+                ctx.moveTo(x, 0);
+                ctx.lineTo(x, height);
+                ctx.stroke();
+            }
+            
+            for (let y = 0; y < height; y += 100) {
+                ctx.beginPath();
+                ctx.moveTo(0, y);
+                ctx.lineTo(width, y);
+                ctx.stroke();
+            }
+            
+            // Draw text
+            ctx.fillStyle = color;
+            ctx.font = 'bold 48px Arial';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText(text, width / 2, height / 2);
+            
+            ctx.font = '24px Arial';
+            ctx.fillText(`${width} × ${height}`, width / 2, height / 2 + 60);
+            
+            img.src = canvas.toDataURL();
+            return img;
+        }
+        
+        // Draw all sections - FIXED for vertical sync
+        function drawAllSections() {
+            const scrollX = mainContentContainer.scrollLeft;
+            const scrollY = mainContentContainer.scrollTop;
+            
+            // Clear canvases
+            headerCtx.clearRect(0, 0, headerCanvas.width, headerCanvas.height);
+            leftColumnCtx.clearRect(0, 0, leftColumnCanvas.width, leftColumnCanvas.height);
+            mainContentCtx.clearRect(0, 0, mainContentCanvas.width, mainContentCanvas.height);
+            
+            // Draw HEADER (translate horizontally)
+            if (headerImageData && headerImageData.complete) {
+                headerCtx.save();
+                headerCtx.translate(-scrollX, 0);
+                
+                headerCtx.drawImage(
+                    headerImageData,
+                    0, 0,
+                    headerImageData.width, headerImageData.height,
+                    0, 0,
+                    headerCanvas.width, headerCanvas.height
+                );
+                
+                headerCtx.restore();
+            }
+            
+            // Draw LEFT COLUMN (translate vertically)
+            if (leftColumnImageData && leftColumnImageData.complete) {
+                leftColumnCtx.save();
+                leftColumnCtx.translate(0, -scrollY);
+                
+                leftColumnCtx.drawImage(
+                    leftColumnImageData,
+                    0, 0,
+                    leftColumnImageData.width, leftColumnImageData.height,
+                    0, 0,
+                    leftColumnCanvas.width, leftColumnCanvas.height
+                );
+                
+                leftColumnCtx.restore();
+            }
+            
+            // Draw MAIN CONTENT (translate both)
+            if (mainContentImageData && mainContentImageData.complete) {
+                mainContentCtx.save();
+                mainContentCtx.translate(-scrollX, -scrollY);
+                
+                mainContentCtx.drawImage(
+                    mainContentImageData,
+                    0, 0,
+                    mainContentImageData.width, mainContentImageData.height,
+                    0, 0,
+                    mainContentCanvas.width, mainContentCanvas.height
+                );
+                
+                mainContentCtx.restore();
+            }
+            
+            updateScrollInfo();
+        }
+        
+        // Update zoom
+        function updateZoom(newScale) {
+            newScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, newScale));
+            
+            // Store current scroll position as percentage
+            const currentScrollX = mainContentContainer.scrollLeft;
+            const currentScrollY = mainContentContainer.scrollTop;
+            const maxScrollX = Math.max(1, mainContentCanvas.width - mainContentContainer.clientWidth);
+            const maxScrollY = Math.max(1, mainContentCanvas.height - mainContentContainer.clientHeight);
+            
+            const percentX = currentScrollX / maxScrollX;
+            const percentY = currentScrollY / maxScrollY;
+            
+            // Update scale
+            scale = newScale;
+            
+            // Reinitialize
+            initCanvas();
+            
+            // Restore scroll position
+            const newMaxScrollX = Math.max(0, mainContentCanvas.width - mainContentContainer.clientWidth);
+            const newMaxScrollY = Math.max(0, mainContentCanvas.height - mainContentContainer.clientHeight);
+            
+            mainContentContainer.scrollLeft = percentX * newMaxScrollX;
+            mainContentContainer.scrollTop = percentY * newMaxScrollY;
+            headerContainer.scrollLeft = percentX * newMaxScrollX;
+            
+            drawAllSections();
+        }
+        
+        // Setup event listeners
+        function setupEventListeners() {
+            let isDragging = false;
+            let startX, startY, startScrollLeft, startScrollTop;
+            
+            // Drag handlers
+            function handleDragStart(e) {
+                isDragging = true;
+                startX = e.clientX || e.touches[0].clientX;
+                startY = e.clientY || e.touches[0].clientY;
+                startScrollLeft = mainContentContainer.scrollLeft;
+                startScrollTop = mainContentContainer.scrollTop;
+                document.body.style.cursor = 'grabbing';
+                e.preventDefault();
+            }
+            
+            function handleDragMove(e) {
+                if (!isDragging) return;
+                
+                const currentX = e.clientX || e.touches[0].clientX;
+                const currentY = e.clientY || e.touches[0].clientY;
+                
+                const deltaX = startX - currentX;
+                const deltaY = startY - currentY;
+                
+                const newScrollLeft = startScrollLeft + deltaX;
+                const newScrollTop = startScrollTop + deltaY;
+                
+                const maxScrollLeft = Math.max(0, mainContentCanvas.width - mainContentContainer.clientWidth);
+                const maxScrollTop = Math.max(0, mainContentCanvas.height - mainContentContainer.clientHeight);
+                
+                mainContentContainer.scrollLeft = Math.max(0, Math.min(newScrollLeft, maxScrollLeft));
+                mainContentContainer.scrollTop = Math.max(0, Math.min(newScrollTop, maxScrollTop));
+                headerContainer.scrollLeft = mainContentContainer.scrollLeft;
+                
+                e.preventDefault();
+            }
+            
+            function handleDragEnd() {
+                isDragging = false;
+                document.body.style.cursor = 'default';
+            }
+            
+            // Add event listeners to all canvases
+            [headerCanvas, leftColumnCanvas, mainContentCanvas].forEach(canvas => {
+                // Mouse events
+                canvas.addEventListener('mousedown', handleDragStart);
+                canvas.addEventListener('mousemove', handleDragMove);
+                canvas.addEventListener('mouseup', handleDragEnd);
+                canvas.addEventListener('mouseleave', handleDragEnd);
+                
+                // Touch events
+                canvas.addEventListener('touchstart', handleDragStart, { passive: false });
+                canvas.addEventListener('touchmove', handleDragMove, { passive: false });
+                canvas.addEventListener('touchend', handleDragEnd);
+                canvas.addEventListener('touchcancel', handleDragEnd);
+                
+                canvas.style.cursor = 'grab';
+            });
+            
+            // Scroll events
+            mainContentContainer.addEventListener('scroll', () => {
+                headerContainer.scrollLeft = mainContentContainer.scrollLeft;
+                drawAllSections();
+            });
+            
+            headerContainer.addEventListener('scroll', () => {
+                mainContentContainer.scrollLeft = headerContainer.scrollLeft;
+                drawAllSections();
+            });
+            
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                const scrollStep = 50;
+                let scrollX = mainContentContainer.scrollLeft;
+                let scrollY = mainContentContainer.scrollTop;
+                
+                // Zoom with Ctrl
+                if ((e.ctrlKey || e.metaKey) && (e.key === '+' || e.key === '=')) {
+                    updateZoom(scale + SCALE_STEP);
+                    e.preventDefault();
+                    return;
+                }
+                if ((e.ctrlKey || e.metaKey) && e.key === '-') {
+                    updateZoom(scale - SCALE_STEP);
+                    e.preventDefault();
+                    return;
+                }
+                
+                // Navigation
+                switch(e.key) {
+                    case 'ArrowLeft':
+                        scrollX -= scrollStep;
+                        break;
+                    case 'ArrowRight':
+                        scrollX += scrollStep;
+                        break;
+                    case 'ArrowUp':
+                        scrollY -= scrollStep;
+                        break;
+                    case 'ArrowDown':
+                        scrollY += scrollStep;
+                        break;
+                    case 'Home':
+                        scrollX = 0;
+                        scrollY = 0;
+                        break;
+                    case 'End':
+                        scrollX = Math.max(0, mainContentCanvas.width - mainContentContainer.clientWidth);
+                        scrollY = Math.max(0, mainContentCanvas.height - mainContentContainer.clientHeight);
+                        break;
+                    default:
+                        return;
+                }
+                
+                const maxScrollX = Math.max(0, mainContentCanvas.width - mainContentContainer.clientWidth);
+                const maxScrollY = Math.max(0, mainContentCanvas.height - mainContentContainer.clientHeight);
+                scrollX = Math.max(0, Math.min(scrollX, maxScrollX));
+                scrollY = Math.max(0, Math.min(scrollY, maxScrollY));
+                
+                mainContentContainer.scrollLeft = scrollX;
+                mainContentContainer.scrollTop = scrollY;
+                headerContainer.scrollLeft = scrollX;
+                
+                e.preventDefault();
+            });
+            
+            // Zoom controls
+            zoomInBtn.addEventListener('click', () => updateZoom(scale + SCALE_STEP));
+            zoomOutBtn.addEventListener('click', () => updateZoom(scale - SCALE_STEP));
+            resetZoomBtn.addEventListener('click', () => {
+                scale = calculateFitScale();
+                initCanvas();
+                drawAllSections();
+            });
+            
+            // Mouse wheel zoom
+            document.addEventListener('wheel', (e) => {
+                if (e.ctrlKey) {
+                    e.preventDefault();
+                    const delta = e.deltaY > 0 ? -SCALE_STEP : SCALE_STEP;
+                    updateZoom(scale + delta);
+                }
+            }, { passive: false });
+        }
+        
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            if (imagesLoaded === totalImages) {
+                drawAllSections();
+            }
+        });
+        
+        // Start loading images
+        loadImages();
+    </script>
+</body>
+</html>

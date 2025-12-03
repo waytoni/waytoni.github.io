@@ -35,6 +35,7 @@
         #headerContainer {
             position: relative;
             overflow: hidden;
+            height: auto;
         }
 
         /* Middle Row: Left Column + Main Content */
@@ -165,9 +166,7 @@
                 <canvas id="leftColumnCanvas"></canvas>
             </div>
             <div class="main-content" id="mainContentContainer">
-                <div id="mainContentWrapper" style="position: relative;">
-                    <canvas id="mainContentCanvas"></canvas>
-                </div>
+                <canvas id="mainContentCanvas"></canvas>
             </div>
         </div>
     </div>
@@ -207,18 +206,22 @@
         let imagesLoaded = 0;
         const totalImages = 3;
         
-        // Image dimensions
-        const HEADER_WIDTH = 9600;
+        // Image dimensions - BASED ON ORIGINAL 9600×6387
+        const TOTAL_WIDTH = 9600;
+        const TOTAL_HEIGHT = 6387;
         const HEADER_HEIGHT = 989;
         const LEFT_COLUMN_WIDTH = 85;
-        const BODY_WIDTH = 9600;
-        const BODY_HEIGHT = 5417;
-        const MAIN_CONTENT_WIDTH = BODY_WIDTH - LEFT_COLUMN_WIDTH;
         
-        console.log('Expected dimensions:', {
-            header: `${HEADER_WIDTH}x${HEADER_HEIGHT}`,
+        // Calculate body height (6387 - 989 = 5398)
+        const BODY_HEIGHT = TOTAL_HEIGHT - HEADER_HEIGHT;  // 5398 pixels
+        const MAIN_CONTENT_WIDTH = TOTAL_WIDTH - LEFT_COLUMN_WIDTH;  // 9515 pixels
+        
+        console.log('Image dimensions:', {
+            original: `${TOTAL_WIDTH}x${TOTAL_HEIGHT}`,
+            header: `${TOTAL_WIDTH}x${HEADER_HEIGHT}`,
             leftColumn: `${LEFT_COLUMN_WIDTH}x${BODY_HEIGHT}`,
-            mainContent: `${MAIN_CONTENT_WIDTH}x${BODY_HEIGHT}`
+            mainContent: `${MAIN_CONTENT_WIDTH}x${BODY_HEIGHT}`,
+            bodyHeight: BODY_HEIGHT
         });
         
         // Zoom settings
@@ -227,7 +230,7 @@
         const MAX_SCALE = 3.0;
         const SCALE_STEP = 0.1;
         
-        // Store original image data
+        // Store image data
         let headerImageData = null;
         let leftColumnImageData = null;
         let mainContentImageData = null;
@@ -240,18 +243,24 @@
             // Calculate scale to fit width
             const widthScale = (viewportWidth - LEFT_COLUMN_WIDTH) / MAIN_CONTENT_WIDTH;
             
-            // Calculate scale to fit height (accounting for header)
-            const availableHeight = viewportHeight - (HEADER_HEIGHT * widthScale);
-            const heightScale = availableHeight / BODY_HEIGHT;
+            // Calculate total height at this scale
+            const totalHeightAtScale = (HEADER_HEIGHT + BODY_HEIGHT) * widthScale;
             
-            return Math.min(widthScale, heightScale) * 0.95;
+            // If total height fits, use width scale
+            if (totalHeightAtScale <= viewportHeight) {
+                return widthScale * 0.95;
+            }
+            
+            // Otherwise calculate scale to fit height
+            const heightScale = viewportHeight / (HEADER_HEIGHT + BODY_HEIGHT);
+            return heightScale * 0.95;
         }
         
         // Initialize canvases
         function initCanvas() {
             // Calculate scaled dimensions
             const scaledHeaderHeight = Math.max(1, Math.floor(HEADER_HEIGHT * scale));
-            const scaledHeaderWidth = Math.max(1, Math.floor(HEADER_WIDTH * scale));
+            const scaledHeaderWidth = Math.max(1, Math.floor(TOTAL_WIDTH * scale));
             const scaledLeftColumnWidth = Math.max(1, Math.floor(LEFT_COLUMN_WIDTH * scale));
             const scaledLeftColumnHeight = Math.max(1, Math.floor(BODY_HEIGHT * scale));
             const scaledMainContentWidth = Math.max(1, Math.floor(MAIN_CONTENT_WIDTH * scale));
@@ -261,7 +270,8 @@
                 scale: scale.toFixed(3),
                 header: `${scaledHeaderWidth}x${scaledHeaderHeight}`,
                 leftColumn: `${scaledLeftColumnWidth}x${scaledLeftColumnHeight}`,
-                mainContent: `${scaledMainContentWidth}x${scaledMainContentHeight}`
+                mainContent: `${scaledMainContentWidth}x${scaledMainContentHeight}`,
+                'leftColumn.height === mainContent.height': scaledLeftColumnHeight === scaledMainContentHeight
             });
             
             // Set header container and canvas
@@ -314,22 +324,15 @@
                         mainContent: `${mainContentImage.width}x${mainContentImage.height}`
                     });
                     
-                    // Verify dimensions
-                    if (leftColumnImage.height !== BODY_HEIGHT || mainContentImage.height !== BODY_HEIGHT) {
-                        console.warn('WARNING: Body images should be FULL HEIGHT (5417px). Current heights:', {
-                            leftColumn: leftColumnImage.height,
-                            mainContent: mainContentImage.height,
-                            expected: BODY_HEIGHT
-                        });
-                    }
-                    
-                    if (leftColumnImage.width + mainContentImage.width !== BODY_WIDTH) {
-                        console.warn('WARNING: Body image widths don\'t add up:', {
-                            leftColumn: leftColumnImage.width,
-                            mainContent: mainContentImage.width,
-                            sum: leftColumnImage.width + mainContentImage.width,
-                            expected: BODY_WIDTH
-                        });
+                    // CRITICAL: Verify heights match
+                    if (leftColumnImage.height !== mainContentImage.height) {
+                        console.error('ERROR: Image heights do not match!');
+                        console.error(`  leftColumnImage.height: ${leftColumnImage.height}`);
+                        console.error(`  mainContentImage.height: ${mainContentImage.height}`);
+                        console.error(`  Expected both to be: ${BODY_HEIGHT}`);
+                        console.error('Vertical scrolling will NOT sync correctly!');
+                    } else {
+                        console.log('✓ Image heights match for vertical sync');
                     }
                     
                     // Store image data
@@ -342,7 +345,12 @@
                     
                     initCanvas();
                     setupEventListeners();
-                    drawAllSections();
+                    
+                    // Center view
+                    setTimeout(() => {
+                        mainContentContainer.scrollTop = 0;
+                        drawAllSections();
+                    }, 100);
                 }
             };
             
@@ -352,7 +360,7 @@
             
             headerImage.onerror = () => {
                 console.error('Failed to load cc_h.jpg');
-                headerImage = createPlaceholderImage(HEADER_WIDTH, HEADER_HEIGHT, 'Header', '#4a6fa5');
+                headerImage = createPlaceholderImage(TOTAL_WIDTH, HEADER_HEIGHT, 'Header', '#4a6fa5');
             };
             
             leftColumnImage.onerror = () => {
@@ -365,7 +373,7 @@
                 mainContentImage = createPlaceholderImage(MAIN_CONTENT_WIDTH, BODY_HEIGHT, 'Main Content', '#9b59b6');
             };
             
-            // Load images
+            // Load images - use the ones from the Python script
             headerImage.src = 'cc_h.jpg';
             leftColumnImage.src = 'body_left.jpg';
             mainContentImage.src = 'body_right.jpg';
@@ -383,6 +391,25 @@
             ctx.fillStyle = color + '20';
             ctx.fillRect(0, 0, width, height);
             
+            // Draw grid
+            ctx.strokeStyle = color + '40';
+            ctx.lineWidth = 1;
+            
+            for (let x = 0; x < width; x += 100) {
+                ctx.beginPath();
+                ctx.moveTo(x, 0);
+                ctx.lineTo(x, height);
+                ctx.stroke();
+            }
+            
+            for (let y = 0; y < height; y += 100) {
+                ctx.beginPath();
+                ctx.moveTo(0, y);
+                ctx.lineTo(width, y);
+                ctx.stroke();
+            }
+            
+            // Draw text
             ctx.fillStyle = color;
             ctx.font = 'bold 48px Arial';
             ctx.textAlign = 'center';
@@ -396,7 +423,7 @@
             return img;
         }
         
-        // Draw all sections - FIXED VERSION
+        // Draw all sections - FIXED for vertical sync
         function drawAllSections() {
             const scrollX = mainContentContainer.scrollLeft;
             const scrollY = mainContentContainer.scrollTop;
@@ -406,7 +433,7 @@
             leftColumnCtx.clearRect(0, 0, leftColumnCanvas.width, leftColumnCanvas.height);
             mainContentCtx.clearRect(0, 0, mainContentCanvas.width, mainContentCanvas.height);
             
-            // Draw HEADER (translate horizontally only)
+            // Draw HEADER (translate horizontally)
             if (headerImageData && headerImageData.complete) {
                 headerCtx.save();
                 headerCtx.translate(-scrollX, 0);
@@ -414,7 +441,7 @@
                 headerCtx.drawImage(
                     headerImageData,
                     0, 0,
-                    HEADER_WIDTH, HEADER_HEIGHT,
+                    headerImageData.width, headerImageData.height,
                     0, 0,
                     headerCanvas.width, headerCanvas.height
                 );
@@ -422,7 +449,7 @@
                 headerCtx.restore();
             }
             
-            // Draw LEFT COLUMN (translate vertically only)
+            // Draw LEFT COLUMN (translate vertically)
             if (leftColumnImageData && leftColumnImageData.complete) {
                 leftColumnCtx.save();
                 leftColumnCtx.translate(0, -scrollY);
@@ -430,7 +457,7 @@
                 leftColumnCtx.drawImage(
                     leftColumnImageData,
                     0, 0,
-                    LEFT_COLUMN_WIDTH, BODY_HEIGHT,
+                    leftColumnImageData.width, leftColumnImageData.height,
                     0, 0,
                     leftColumnCanvas.width, leftColumnCanvas.height
                 );
@@ -438,7 +465,7 @@
                 leftColumnCtx.restore();
             }
             
-            // Draw MAIN CONTENT (translate both ways)
+            // Draw MAIN CONTENT (translate both)
             if (mainContentImageData && mainContentImageData.complete) {
                 mainContentCtx.save();
                 mainContentCtx.translate(-scrollX, -scrollY);
@@ -446,7 +473,7 @@
                 mainContentCtx.drawImage(
                     mainContentImageData,
                     0, 0,
-                    MAIN_CONTENT_WIDTH, BODY_HEIGHT,
+                    mainContentImageData.width, mainContentImageData.height,
                     0, 0,
                     mainContentCanvas.width, mainContentCanvas.height
                 );
@@ -454,7 +481,6 @@
                 mainContentCtx.restore();
             }
             
-            // Update scroll info
             updateScrollInfo();
         }
         
@@ -462,28 +488,28 @@
         function updateZoom(newScale) {
             newScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, newScale));
             
-            // Get current scroll position as percentage
-            const scrollLeft = mainContentContainer.scrollLeft;
-            const scrollTop = mainContentContainer.scrollTop;
-            const maxScrollLeft = Math.max(1, mainContentCanvas.width - mainContentContainer.clientWidth);
-            const maxScrollTop = Math.max(1, mainContentCanvas.height - mainContentContainer.clientHeight);
+            // Store current scroll position as percentage
+            const currentScrollX = mainContentContainer.scrollLeft;
+            const currentScrollY = mainContentContainer.scrollTop;
+            const maxScrollX = Math.max(1, mainContentCanvas.width - mainContentContainer.clientWidth);
+            const maxScrollY = Math.max(1, mainContentCanvas.height - mainContentContainer.clientHeight);
             
-            const percentX = scrollLeft / maxScrollLeft;
-            const percentY = scrollTop / maxScrollTop;
+            const percentX = currentScrollX / maxScrollX;
+            const percentY = currentScrollY / maxScrollY;
             
             // Update scale
             scale = newScale;
             
-            // Reinitialize canvas
+            // Reinitialize
             initCanvas();
             
             // Restore scroll position
-            const newMaxScrollLeft = Math.max(0, mainContentCanvas.width - mainContentContainer.clientWidth);
-            const newMaxScrollTop = Math.max(0, mainContentCanvas.height - mainContentContainer.clientHeight);
+            const newMaxScrollX = Math.max(0, mainContentCanvas.width - mainContentContainer.clientWidth);
+            const newMaxScrollY = Math.max(0, mainContentCanvas.height - mainContentContainer.clientHeight);
             
-            mainContentContainer.scrollLeft = percentX * newMaxScrollLeft;
-            mainContentContainer.scrollTop = percentY * newMaxScrollTop;
-            headerContainer.scrollLeft = percentX * newMaxScrollLeft;
+            mainContentContainer.scrollLeft = percentX * newMaxScrollX;
+            mainContentContainer.scrollTop = percentY * newMaxScrollY;
+            headerContainer.scrollLeft = percentX * newMaxScrollX;
             
             drawAllSections();
         }
@@ -531,7 +557,7 @@
                 document.body.style.cursor = 'default';
             }
             
-            // Add event listeners
+            // Add event listeners to all canvases
             [headerCanvas, leftColumnCanvas, mainContentCanvas].forEach(canvas => {
                 // Mouse events
                 canvas.addEventListener('mousedown', handleDragStart);
@@ -565,6 +591,7 @@
                 let scrollX = mainContentContainer.scrollLeft;
                 let scrollY = mainContentContainer.scrollTop;
                 
+                // Zoom with Ctrl
                 if ((e.ctrlKey || e.metaKey) && (e.key === '+' || e.key === '=')) {
                     updateZoom(scale + SCALE_STEP);
                     e.preventDefault();
@@ -576,6 +603,7 @@
                     return;
                 }
                 
+                // Navigation
                 switch(e.key) {
                     case 'ArrowLeft':
                         scrollX -= scrollStep;
