@@ -1,11 +1,11 @@
 #4
-දුක්ඛ ලක්ඛණ සුත්තං pdf::/documents/pdfs/දුක්ඛ ලක්ඛණ සුත්තං.pdf
-හේතු සූත්‍රය pdf::/documents/pdfs/හේතු සූත්‍රය.pdf
-පඨම අස්සාද සුත්තං (PDF) pdf::/documents/pdfs/පඨම අස්සාද සුත්තං.pdf
+දුක්ඛ ලක්ඛණ සුත්තං pdf::/documents/SutraPDFs/දුක්ඛ ලක්ඛණ සුත්තං.pdf
+හේතු සූත්‍රය pdf::/documents/SutraPDFs/හේතු සූත්‍රය.pdf
+පඨම අස්සාද සුත්තං (PDF) pdf::/documents/SutraPDFs/පඨම අස්සාද සුත්තං.pdf
 පඨම අස්සාද සුත්තං (Web) url::https://tripitaka.online/sutta/3221
-දුතිය අස්සාද සුත්තං (PDF) pdf::/documents/pdfs/දුතිය අස්සාද සුත්තං.pdf
+දුතිය අස්සාද සුත්තං (PDF) pdf::/documents/SutraPDFs/දුතිය අස්සාද සුත්තං.pdf
 දුතිය අස්සාද සුත්තං (web) url::https://tripitaka.online/sutta/3222
-තතිය අස්සාද සුත්තං (PDF) pdf::/documents/pdfs/තතිය අස්සාද සුත්තං.pdf
+තතිය අස්සාද සුත්තං (PDF) pdf::/documents/SutraPDFs/තතිය අස්සාද සුත්තං.pdf
 තතිය අස්සාද සුත්තං (web) url::https://tripitaka.online/sutta/3223
 <div id="sutta">
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

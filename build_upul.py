@@ -16,28 +16,7 @@
 # <index> <optional description> <youtube link (URL)> <date>
 
 
-
-
-
-
-
-# from scripts.py import build_series_AbhidharmaAruth_D
-
-# from scripts.py import build_series_ThalawathugodaB
-# from scripts.py import build_series_MaharagamaA
-
-# from scripts.py import build_series_RuwanweliMahaSeya
-
-
-# from scripts.py import build_series_L
 # from scripts.py import build_series_ShortDhammaDiscussions
-
-
-
-
-
-
-
 
 
 menu_change = False 
@@ -45,14 +24,7 @@ menu_change = False
 if menu_change == True:
     from scripts import gen_series_past
     gen_series_past
-    #from scripts.py import build_series_AbhidharmaASeries
-    #build_series_AbhidharmaASeries
-    #from scripts.py import build_series_I
-    #build_series_I
-    #from scripts.py import build_series_J
-    #build_series_J
-    #from scripts.py import build_series_K
-    #build_series_K
+
     from scripts.py import build_ZoomPage
     build_ZoomPage
     #from scripts.py import build_404Page
@@ -65,27 +37,13 @@ if menu_change == True:
     from scripts import gen_notes_v1
     gen_notes_v1
     
+    from scripts import gen_SutraList
+    gen_SutraList
     #from scripts.py import build_page_ChiththaChithasika
     #build_page_ChiththaChithasika
     #from scripts.py import build_series_BCD
     #build_series_BCD
-    #from scripts.py import build_series_AbhidharmaAruth_EP
-    #build_series_AbhidharmaAruth_EP
-    #from scripts.py import build_series_AbhidharmaAruth_B1
-    #build_series_AbhidharmaAruth_B1
-    #from scripts.py import build_series_AbhidharmaAruth_B2
-    #build_series_AbhidharmaAruth_B2
-    #from scripts.py import build_series_AbhidharmaAruth_C
-    #build_series_AbhidharmaAruth_C
-    #from scripts.py import build_series_YouthForTruth
-    #build_series_YouthForTruth
-    #from scripts.py import build_series_Thalawathugoda
-    #build_series_Thalawathugoda
-    #from scripts.py import build_series_SuthamayaHirigal
-    #build_series_SuthamayaHirigal
-    
-    
-    
+
     # Update
     # Chithatha_Chithasika (old page), and Vishesha Desana
   
@@ -96,12 +54,6 @@ from testing import list_AllVideos_AA
 list_AllVideos_Jan9
 list_AllVideos_AA
 
-
-# build_series_RuwanweliMahaSeya
-# build_series_L
-# build_series_AbhidharmaAruth_D
-# build_series_ThalawathugodaB
-# build_series_MaharagamaA
 
 
 

@@ -75,7 +75,7 @@ img::036 -2024.04.26 Note_Page_2.jpg
 #54
 රේරුකානේ චන්ද්‍රවිමල හිමි විසින් ලියන ලද අභිධර්ම මාර්ගය (PDF) url::https://tipitaka.lk/library/484
 #58
-මහා සළායතනික සුත්තං pdf::/documents/pdfs/මහා සළායතනික සුත්තං.pdf
+මහා සළායතනික සුත්තං pdf::/documents/SutraPDFs/මහා සළායතනික සුත්තං.pdf
 මහා සළායතනික සුත්තං url::https://tripitaka.online/sutta/870
 #59
 ධම්මචක්කප්පවත්තන සූත්‍රය url::https://tipitaka.lk/sn-5-12-2

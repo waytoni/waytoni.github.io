@@ -2,7 +2,7 @@
 #7
 දේශනාව සඳහා සටහන: img::/documents/PNG/ආර්ය ලෝකය.png
 #11
-ඛජ්ජනීය සුත්තං  pdf::/documents/pdfs/ඛජ්ජනීය සුත්තං.pdf
+ඛජ්ජනීය සුත්තං  pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
 ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
 ඛජ්ජනීය සූත්‍ර කෙටි සජ්ජායනාව url::https://www.youtube.com/watch?v=hnfE4MWSn-U
 ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම pdf::/documents/pdfs/ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම.pdf
@@ -17,19 +17,19 @@ img::/documents/NotesForDesana/030 ජීවිතේන්ද්‍රිය.jp
 #23
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02 සන්තතිය.jpeg
 #24
-විභංග සුත්තං (PDF) pdf::/documents/pdfs/විභංග සුත්තං.pdf
-මහා නිදාන සුත්තං (PDF) pdf::/documents/pdfs/මහා නිදාන සුත්තං.pdf
-අචේලකස්සප සුත්තං (PDF) pdf::/documents/pdfs/අචේලකස්සප සුත්තං.pdf
+විභංග සුත්තං (PDF) pdf::/documents/SutraPDFs/විභංග සුත්තං.pdf
+මහා නිදාන සුත්තං (PDF) pdf::/documents/SutraPDFs/මහා නිදාන සුත්තං.pdf
+අචේලකස්සප සුත්තං (PDF) pdf::/documents/SutraPDFs/අචේලකස්සප සුත්තං.pdf
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02 සන්තතිය.jpeg
 #25
 pdf::/NivanMagaUdesaDesana/Thalawathugoda/docs/Thalawathugoda_2025-08-16.pdf
 #28
-මහානිදාන සූත්‍රය (PDF) pdf::/documents/pdfs/මහානිදාන සූත්‍රය.pdf
+මහානිදාන සූත්‍රය (PDF) pdf::/documents/SutraPDFs/මහානිදාන සූත්‍රය.pdf
 #29
-මහානිදාන සූත්‍රය (PDF) pdf::/documents/pdfs/මහානිදාන සූත්‍රය.pdf
+මහානිදාන සූත්‍රය (PDF) pdf::/documents/SutraPDFs/මහානිදාන සූත්‍රය.pdf
 #33
 img::docs/Thalawathugoda_20251101.png
-ධම්මචක්කප්පවත්ත සූත්‍රය pdf::/documents/pdfs/ධම්මචක්ක සූත්‍රය.pdf
+ධම්මචක්කප්පවත්ත සූත්‍රය pdf::/documents/SutraPDFs/ධම්මචක්ක සූත්‍රය.pdf
 ධම්මචක්කප්පවත්ත සූත්‍රය url::https://tipitaka.lk/sn-5-12-2
 <div style="max-width: 80ch; margin: 0 auto; text-align: left;" id="sutta">
 එවං මෙ සුතං, එකං සමයං භගවා බාරාණසියං විහරති ඉසිපතනෙ මිගදායෙ. තත්‍ර ඛො භගවා පඤ‍්චවග‍්ගියෙ භික‍්ඛූ ආමන‍්තෙසි: “ද‍්වෙ මෙ භික‍්ඛවෙ, අන‍්තා පබ‍්බජිතෙන න සෙවිතබ‍්බා. යොචායං කාමෙසු කාමසුඛල‍්ලිකානුයොගො හීනො ගම‍්මො පොථුජ‍්ජනිකො අනරියො අනත්‍ථසංහිතො, යො චායං අත‍්තකිලමථානුයොගො දුක‍්ඛො අනරියො අනත්‍ථසංහිතො. එතෙ තෙ භික‍්ඛවෙ, උභො අන‍්තෙ අනුපගම‍්ම මජ‍්ඣිමා පටිපදා තථාගතෙන අභිසම‍්බුද‍්ධා චක‍්ඛුකරණී ඤාණකරණී උපසමාය අභිඤ‍්ඤාය සම‍්බොධාය නිබ‍්බානාය සංවත‍්තති. කතමා ච සා, භික‍්ඛවෙ, මජ‍්ඣිමා පටිපදා තථාගතෙන අභිසම‍්බුද‍්ධා චක‍්ඛුකරණී ඤාණකරණී උපසමාය අභිඤ‍්ඤාය සම‍්බොධාය නිබ‍්බානාය සංවත‍්තති: අයමෙව අරියො අට‍්ඨඞ‍්ගිකො මග‍්ගො, සෙය්‍යථිදං: සම‍්මාදිට‍්ඨි සම‍්මාසඞ‍්කප‍්පො සම‍්මාවාචා සම‍්මාකම‍්මන‍්තො සම‍්මාආජීවො සම‍්මාවායාමො සම‍්මාසති සම‍්මාසමාධි. අයං ඛො සා භික‍්ඛවෙ, මජ‍්ඣිමා පටිපදා තථාගතෙන අභිසම‍්බුද‍්ධා චක‍්ඛුකරණී ඤාණකරණී උපසමාය අභිඤ‍්ඤාය සම‍්බොධාය නිබ‍්බානාය සංවත‍්තති.
@@ -44,8 +44,8 @@ img::docs/Thalawathugoda_20251101.png
 </div>
 img::docs/note_251101.jpg
 #34
-ධම්මචක්කප්පවත්ත සූත්‍රය pdf::/documents/pdfs/ධම්මචක්ක සූත්‍රය.pdf
-මජ්ජි සූත්‍රය pdf::/documents/pdfs/මජ්ජි සූත්‍රය.pdf
+ධම්මචක්කප්පවත්ත සූත්‍රය pdf::/documents/SutraPDFs/ධම්මචක්ක සූත්‍රය.pdf
+මජ්ජි සූත්‍රය pdf::/documents/SutraPDFs/මජ්ජි සූත්‍රය.pdf
 
 <div id="sutta">
 The following text is copied from <a href="https://tripitaka.online/sutta/10418" target="_blank">https://tripitaka.online/sutta/10418</a>

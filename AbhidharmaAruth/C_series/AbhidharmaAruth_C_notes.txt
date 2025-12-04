@@ -1,10 +1,10 @@
 #1
 #4
 #12
-ඛජ්ජනීය සුත්තං  pdf::/documents/pdfs/ඛජ්ජනීය සුත්තං.pdf
+ඛජ්ජනීය සුත්තං  pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
 ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
 ඛජ්ජනීය සූත්‍ර කෙටි සජ්ජායනාව url::https://www.youtube.com/watch?v=hnfE4MWSn-U
-ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම pdf::/documents/pdfs/ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම.pdf
+ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම pdf::/documents/SutraPDFs/ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම.pdf
 ආර්ය ලෝකය සටහන <a href="https://waytoni.com/documents/Sabba%20VER%201.01.html" target="_blank"><img src="/documents/NotesForDesana/thumbnails/ආර්ය ලෝකය.png"></a> (සටහන නව ටැබ් [tab] එකක විවෘත වේ.)
 
 
@@ -25,22 +25,22 @@
 
 
 #13
-ඛජ්ජනීය සුත්තං  pdf::/documents/pdfs/ඛජ්ජනීය සුත්තං.pdf
+ඛජ්ජනීය සුත්තං  pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
 ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
 ඛජ්ජනීය සූත්‍ර කෙටි සජ්ජායනාව url::https://www.youtube.com/watch?v=hnfE4MWSn-U
-ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම pdf::/documents/pdfs/ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම.pdf
+ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම pdf::/documents/SutraPDFs/ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම.pdf
 ආර්ය ලෝකය සටහන <a href="https://waytoni.com/documents/Sabba%20VER%201.01.html" target="_blank"><img src="/documents/NotesForDesana/thumbnails/ආර්ය ලෝකය.png"></a> (සටහන නව ටැබ් [tab] එකක විවෘත වේ.)
 #14
-ඛජ්ජනීය සුත්තං  pdf::/documents/pdfs/ඛජ්ජනීය සුත්තං.pdf
+ඛජ්ජනීය සුත්තං  pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
 ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
 ඛජ්ජනීය සූත්‍ර කෙටි සජ්ජායනාව url::https://www.youtube.com/watch?v=hnfE4MWSn-U
-ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම pdf::/documents/pdfs/ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම.pdf
+ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම pdf::/documents/SutraPDFs/ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම.pdf
 ආර්ය ලෝකය සටහන <a href="https://waytoni.com/documents/Sabba%20VER%201.01.html" target="_blank"><img src="/documents/NotesForDesana/thumbnails/ආර්ය ලෝකය.png"></a> (සටහන නව ටැබ් [tab] එකක විවෘත වේ.)
 #16 
 චූළවේදල්ල සූත්‍රය url::https://tipitaka.lk/mn-1-5-4
 මහාවේදල්ල සූත්‍රය url::https://tipitaka.lk/mn-1-5-3
 #17
-ඛජ්ජනීය සුත්තං  pdf::/documents/pdfs/ඛජ්ජනීය සුත්තං.pdf
+ඛජ්ජනීය සුත්තං  pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
 ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
 #18
 ස්කන්‍ධ විභඞ්ගය url::https://tipitaka.lk/ap-vbh-1-1
@@ -62,9 +62,9 @@ img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02 
 රේරුකානේ චන්දවිමල හිමියන්ගේ පටිච්ච සමුප්පාද විවරණය පොත (HTML) url::https://tipitaka.lk/library/474
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02 සන්තතිය.jpeg
 #26
-විභංග සුත්තං (PDF) pdf::/documents/pdfs/විභංග සුත්තං.pdf
-මහා නිදාන සුත්තං (PDF) pdf::/documents/pdfs/මහා නිදාන සුත්තං.pdf
-අචේලකස්සප සුත්තං (PDF) pdf::/documents/pdfs/අචේලකස්සප සුත්තං.pdf
+විභංග සුත්තං (PDF) pdf::/documents/SutraPDFs/විභංග සුත්තං.pdf
+මහා නිදාන සුත්තං (PDF) pdf::/documents/SutraPDFs/මහා නිදාන සුත්තං.pdf
+අචේලකස්සප සුත්තං (PDF) pdf::/documents/SutraPDFs/අචේලකස්සප සුත්තං.pdf
 img::/documents/images/පටිච්චසමුප්පාදය 03 Low Re.jpg
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02 සන්තතිය.jpeg
 #27
@@ -77,9 +77,9 @@ img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02 
 රේරුකානේ චන්දවිමල හිමියන්ගේ පටිච්ච සමුප්පාද විවරණය පොත (HTML) url::https://tipitaka.lk/library/474
 #200 
 #31
-මහානිදාන සූත්‍රය (PDF) pdf::/documents/pdfs/මහානිදාන සූත්‍රය.pdf
+මහානිදාන සූත්‍රය (PDF) pdf::/documents/SutraPDFs/මහානිදාන සූත්‍රය.pdf
 #33
-මහා නිදාන සූත්‍රය විස්තරය සංස්කරණය කරන ලද සටහන (PDF) pdf::/documents/pdfs/මහා නිදාන සූත්‍රය විස්තරය සංස්කරණය කරන ලද.pdf
+මහා නිදාන සූත්‍රය විස්තරය සංස්කරණය කරන ලද සටහන (PDF) pdf::/documents/SutraPDFs/මහා නිදාන සූත්‍රය විස්තරය සංස්කරණය කරන ලද.pdf
 #90
 රේරුකානේ චන්ද්‍රවිමල හිමි විසින් ලියන ලද පට්ඨාන මහා පකරණ සන්නය url::https://tipitaka.lk/library/494
 #100

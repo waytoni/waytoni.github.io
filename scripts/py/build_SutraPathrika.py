@@ -3,7 +3,7 @@ import re
 from utilities import *
 from build_series_menu import *
 
-pdf_folder = 'documents/pdfs'
+pdf_folder = 'documents/SutraPDFs'
 output_file = 'documents/SutraPathrika.html'
 
 series_title = 'සූත්‍ර පැහැදිලි කිරීමට භාවිතා කරන ලද පත්‍රිකා'

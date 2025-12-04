@@ -25,7 +25,7 @@
 #17
 පුණ්ණමා සූත්‍රය url::https://tipitaka.lk/sn-3-1-2-3-10/sinh
 #20
-ඛජ්ජනීය සුත්තං  pdf::/documents/pdfs/ඛජ්ජනීය සුත්තං.pdf
+ඛජ්ජනීය සුත්තං  pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
 ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
 #21
 ස්කන්‍ධ විභඞ්ගය url::https://tipitaka.lk/ap-vbh-1-1
@@ -47,9 +47,9 @@ img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02 
 රේරුකානේ චන්දවිමල හිමියන්ගේ පටිච්ච සමුප්පාද විවරණය පොත (HTML) url::https://tipitaka.lk/library/474
 #200 
 #250
-මහා සළායතනික සුත්තං pdf::/documents/pdfs/මහා සළායතනික සුත්තං.pdf
+මහා සළායතනික සුත්තං pdf::/documents/SutraPDFs/මහා සළායතනික සුත්තං.pdf
 මහා සළායතනික සුත්තං url::https://tripitaka.online/sutta/870
 #260
-මහා සළායතනික සුත්තං pdf::/documents/pdfs/මහා සළායතනික සුත්තං.pdf
+මහා සළායතනික සුත්තං pdf::/documents/SutraPDFs/මහා සළායතනික සුත්තං.pdf
 මහා සළායතනික සුත්තං url::https://tripitaka.online/sutta/870
 #1000

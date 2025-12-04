@@ -28,17 +28,16 @@ if menu_change == True:
    
     from scripts import gen_notes_v1
     gen_notes_v1
-       
+    
+    from scripts import gen_SutraList
+    gen_SutraList   
 
-from scripts import gen_SiyaluDesana
-gen_SiyaluDesana
-#build_series_ShortDhammaDiscussions
+    from scripts import gen_SiyaluDesana
+    gen_SiyaluDesana
+    #build_series_ShortDhammaDiscussions
 
 from scripts import gen_homepage
 gen_homepage
-
-from scripts.py import build_homepage
-build_homepage
 
 from scripts import gen_series_current
 gen_series_current
