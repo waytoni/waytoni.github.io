@@ -20,5 +20,5 @@ pdf_list = '\n'.join(
 content = content.replace('$SUTRA_PDFS$', pdf_list)
 
 # Write output
-with open('documents/SuthraPathrika.html', 'w', encoding='utf-8') as f:
+with open('documents/SutraPathrika.html', 'w', encoding='utf-8') as f:
     f.write(content)
