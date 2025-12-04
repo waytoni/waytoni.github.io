@@ -55,17 +55,12 @@ list_AllVideos_Jan9
 list_AllVideos_AA
 
 
-
-
 from scripts import gen_SiyaluDesana
 gen_SiyaluDesana
 #build_series_ShortDhammaDiscussions
 
 from scripts import gen_homepage
 gen_homepage
-
-#from scripts.py import build_homepage
-#build_homepage
 
 from scripts import gen_series_current
 gen_series_current

@@ -241,7 +241,7 @@ def generate_series_page(base_folder, html_file, json_file, css_file, on_going, 
         raise
     
     # Read navigation header
-    nav_header_path = os.path.join('scripts/py', 'navigation_header.html')
+    nav_header_path = os.path.join('scripts/templates', 'navigation_header_template.html')
     try:
         with open(nav_header_path, 'r', encoding='utf-8') as f:
             nav_header_content = f.read()
