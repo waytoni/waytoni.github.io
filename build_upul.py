@@ -49,10 +49,10 @@ if menu_change == True:
   
  
 #list_AllVideos
-from testing import list_AllVideos_Jan9
-from testing import list_AllVideos_AA
-list_AllVideos_Jan9
-list_AllVideos_AA
+from testing import gen_AllVideos
+from testing import gen_AllVideos_AA
+gen_AllVideos
+gen_AllVideos_AA
 
 
 from scripts import gen_SiyaluDesana

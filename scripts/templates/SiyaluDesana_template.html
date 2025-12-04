@@ -75,71 +75,13 @@ $CURRENT_SERIES$
        
 </h2>
         <br>
-        <!-- Search and Filter Section 
-        <div class="search-container">
-            <input type="text" class="search-box" placeholder="දේශනා සොයන්න..." id="searchInput">
-        </div>
-        <div class="filter-options">
-            <button class="filter-btn active" data-filter="all">සියලුම</button>
-            <button class="filter-btn" data-filter="current">දැනට පවත්වන</button>
-            <button class="filter-btn" data-filter="past">පසුගිය</button>
-            <button class="filter-btn" data-filter="special">විශේෂ</button>
-        </div>
-
-    -->
 
         <!-- Footer Links -->
         <div class="footer-links">
-            <h3><a href="AllVideos_V2.html">සියලුම දේශනා - @WayToNibbana YouTube Channel</a></h3>
+            <h3><a href="AllVideos.html">සියලුම දේශනා - @WayToNibbana YouTube Channel</a></h3>
             <h3><a href="AllVideos_AA.html">සියලුම දේශනා - Abhidharma Aruth - අභිධර්ම අරුත් YouTube Channel</a></h3>
         </div>
     </div>
-    <script>
-        // Improved JavaScript for functionality
-        document.addEventListener('DOMContentLoaded', function () {
-            // Search functionality
-            const searchInput = document.getElementById('searchInput');
-            if (searchInput) {
-                searchInput.addEventListener('input', function () {
-                    const searchTerm = this.value.toLowerCase();
-                    const seriesCards = document.querySelectorAll('.series-card');
-                    seriesCards.forEach(card => {
-                        const title = card.querySelector('.series-header').textContent
-                            .toLowerCase();
-                        if (title.includes(searchTerm)) {
-                            card.style.display = 'block';
-                        } else {
-                            card.style.display = 'none';
-                        }
-                    });
-                });
-            }
-            // Filter functionality
-            const filterButtons = document.querySelectorAll('.filter-btn');
-            filterButtons.forEach(button => {
-                button.addEventListener('click', function () {
-                    // Remove active class from all buttons
-                    filterButtons.forEach(btn => btn.classList.remove('active'));
-                    // Add active class to clicked button
-                    this.classList.add('active');
-                    const filter = this.getAttribute('data-filter');
-                    const seriesCards = document.querySelectorAll('.series-card');
-                    seriesCards.forEach(card => {
-                        if (filter === 'all') {
-                            card.style.display = 'block';
-                        } else {
-                            if (card.getAttribute('data-category') === filter) {
-                                card.style.display = 'block';
-                            } else {
-                                card.style.display = 'none';
-                            }
-                        }
-                    });
-                });
-            });
- 
 
-        });
-    </script>
 </body>
 </html>
