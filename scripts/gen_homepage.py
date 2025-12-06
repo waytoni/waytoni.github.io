@@ -181,8 +181,8 @@ def generate_homepage():
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     info_file = os.path.join(base_dir, 'Homepage', 'homepage_info.txt')
     template_file = os.path.join('scripts', 'templates/homepage_template.html')
-    navigation_file = os.path.join(os.path.dirname(__file__), 'navigation_header.html')
-    navigation_file = 'scripts/py/navigation_header.html'  # Adjusted path
+    navigation_file = os.path.join(os.path.dirname(__file__), 'navigation_header_template.html')
+    navigation_file = 'scripts/templates/navigation_header.html'  # Adjusted path
     messages_file = os.path.join(base_dir, 'Homepage', 'messages_new.html')
     output_file = os.path.join(base_dir, 'index.html')
     
