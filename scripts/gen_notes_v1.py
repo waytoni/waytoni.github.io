@@ -2,6 +2,7 @@ import os
 import sys
 from PIL import Image
 
+# this will be removed
 sys.path.append('scripts/py')
 from utilities import *
 
