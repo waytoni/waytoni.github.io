@@ -17,6 +17,7 @@
         
         body {
             font-family: 'Noto Sans Sinhala', sans-serif;
+            /* font-family: 'Abhaya Libre', sans-serif; */
             line-height: 1.6;
             color: var(--text-color);
             background-color: var(--light-color);

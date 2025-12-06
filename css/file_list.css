@@ -41,7 +41,8 @@ body, h1, p {
 		}
 
 		body {
-			font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+			/* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif, Gemunu Libre; */
+			font-family:  "Gemunu Libre", sans-serif;
 			line-height: 1.6;
 			color: var(--text-color);
 			background-color: var(--light-color);

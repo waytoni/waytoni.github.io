@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinhala Google Fonts Tester</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@400;700&family=Noto+Serif+Sinhala:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .font-test {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .font-test h2 {
+            margin-top: 0;
+            color: #0066cc;
+        }
+        .sinhala-sans {
+            font-family: 'Noto Sans Sinhala', sans-serif;
+        }
+        .sinhala-serif {
+            font-family: 'Noto Serif Sinhala', serif;
+        }
+        .sinhala-abhaya-serif {
+            font-family: 'Abhaya Libre', serif;
+        }
+        .font-sizes {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .sample {
+            padding: 10px;
+            border-left: 4px solid #0066cc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sinhala Google Fonts Tester</h1>
+    
+    <div class="font-test">
+        <h2>Noto Sans Sinhala</h2>
+        <div class="sinhala-sans font-sizes">
+            <div class="sample" style="font-size: 14px;">සිංහල වචනය - Regular 14px</div>
+            <div class="sample" style="font-size: 18px;">සිංහල වචනය - Regular 18px</div>
+            <div class="sample" style="font-size: 24px; font-weight: 700;">සිංහල වචනය - Bold 24px</div>
+        </div>
+    </div>
+
+    <div class="font-test">
+        <h2>Noto Serif Sinhala</h2>
+        <div class="sinhala-serif font-sizes">
+            <div class="sample" style="font-size: 14px;">සිංහල වචනය - Regular 14px</div>
+            <div class="sample" style="font-size: 18px;">සිංහල වචනය - Regular 18px</div>
+            <div class="sample" style="font-size: 24px; font-weight: 700;">සිංහල වචනය - Bold 24px</div>
+        </div>
+    </div>
+
+    <div class="font-test">
+        <h2>Abhaya Libre Sinhala</h2>
+        <div class="sinhala-abhaya-serif font-sizes">
+            <div class="sample" style="font-size: 14px;">සිංහල වචනය - Regular 14px</div>
+            <div class="sample" style="font-size: 18px;">සිංහල වචනය - Regular 18px</div>
+            <div class="sample" style="font-size: 24px; font-weight: 700;">සිංහල වචනය - Bold 24px</div>
+        </div>
+    </div>
+
+    <div class="font-test">
+        <h2>Paragraph Sample</h2>
+        <p class="sinhala-sans">
+            ශ්‍රී ලංකාවේ ප්‍රධාන ව්‍යාපාරිక ගතිවේගය අධිකාරයි. එය ජාතිසංghの සරිලි සිටින්නේ එකවත සිටින්න ඉදිරිපත් කරන ලදී.
+        </p>
+
+        <p class="ssinhala-abhaya-serif">
+            ශ්‍රී ලංකාවේ ප්‍රධාන ව්‍යාපාරිక ගතිවේගය අධිකාරයි. එය ජාතිසංghの සරිලි සිටින්නේ එකවත සිටින්න ඉදිරිපත් කරන ලදී.
+        </p>
+    </div>
+</body>
+</html>
