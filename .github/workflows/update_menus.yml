@@ -1,4 +1,4 @@
-name: Update Suthra Pathrika List on documennts/SutraPDFs Folder Change
+name: Update menus when navigation_header_template.html is updated
 
 on:
   push:
