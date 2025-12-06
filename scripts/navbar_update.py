@@ -205,11 +205,13 @@ if __name__ == "__main__":
     # Define your list of files to update
     files_to_update = [
         #'index.html',
-        'Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html', 
+
+        #'Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html', 
         'KalutaraBodhiya/B_C_D_Batches.html',
         'Paramartha_Video/Paramartha_Video.html',
         'ChiththaChithasika/index.html', 
         '404.html',
+        #The following files are updated using gen_navbar_place script 
     ]
     
     # Option 1: Update only navbar in all specified files
