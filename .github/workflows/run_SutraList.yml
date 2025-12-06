@@ -2,15 +2,11 @@ name: Update Suthra Pathrika List on documennts/SutraPDFs Folder Change
 
 on:
   push:
-    paths:
-      - 'documents/SutraPDFs/**'
-
-  pull_request:
     branches:
       - main
     paths:
       - 'documents/SutraPDFs/**'
- 
+
 jobs:
   run-SuthraPathrika-update:
     runs-on: ubuntu-latest
