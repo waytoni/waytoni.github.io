@@ -3,13 +3,13 @@ name: Update Suthra Pathrika List on documennts/SutraPDFs Folder Change
 on:
   push:
     paths:
-      - 'documennts/SutraPDFs/**'
+      - 'documents/SutraPDFs/**'
 
   pull_request:
     branches:
       - main
     paths:
-      - 'documennts/SutraPDFs/**'
+      - 'documents/SutraPDFs/**'
  
 jobs:
   run-SuthraPathrika-update:
