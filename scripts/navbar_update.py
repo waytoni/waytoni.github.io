@@ -204,16 +204,17 @@ if __name__ == "__main__":
     
     # Define your list of files to update
     files_to_update = [
-        #'index.html',
-
-     
-        'KalutaraBodhiya/B_C_D_Batches.html',
    
         'ChiththaChithasika/index.html', 
-        '404.html',
-        #The following files are updated using gen_navbar_replace script 
+
+        # The following files are updated using gen_navbar_replace script 
         #'Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html', 
         #'Paramartha_Video/Paramartha_Video.html',
+        
+        # The following files are updated using load-template.js script
+        # Paramartha_Video/ParamarthaDarama.html
+        # 404.html
+        # 'KalutaraBodhiya/B_C_D_Batches.html',
     ]
     
     # Option 1: Update only navbar in all specified files

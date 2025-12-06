@@ -27,12 +27,6 @@ if menu_change == True:
 
     from scripts.py import build_ZoomPage
     build_ZoomPage
-    #from scripts.py import build_404Page
-    #build_404Page
-    #from scripts.py import build_series_ADA_ParamarthaLokaya
-    #build_series_ADA_ParamarthaLokaya
-    #from scripts.py import build_FileListForNotes
-    #build_FileListForNotes
     
     from scripts import gen_notes
     gen_notes
@@ -50,6 +44,8 @@ if menu_change == True:
     # The following files are updated using load-template.js script
     # Paramartha_Video/ParamarthaDarama.html
     # 404.html
+    # KalutaraBodhiya/B_C_D_Batches.html
+    
     #from scripts.py import build_page_ChiththaChithasika
     #build_page_ChiththaChithasika
     #from scripts.py import build_series_BCD
