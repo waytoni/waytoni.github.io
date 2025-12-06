@@ -1,0 +1,34 @@
+name: Update Suthra Pathrika List on documennts/SutraPDFs Folder Change
+
+on:
+  push:
+    paths:
+      - 'documennts/SutraPDFs/**'
+
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'documennts/SutraPDFs/**'
+ 
+jobs:
+  run-SuthraPathrika-update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.11 # Set your desired Python version
+
+      - name: run SuthraPathrika update 
+        run: python scripts/gen_SutraList.py
+
+      - name: commit changes
+        run: |
+          git config user.name "$(git log -n 1 --pretty=format:%an)"
+          git config user.email "$(git log -n 1 --pretty=format:%ae)"
+          git commit -a -m "Updated Suthra Pathrika List"
+          git push

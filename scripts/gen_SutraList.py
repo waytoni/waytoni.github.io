@@ -1,15 +1,22 @@
 import os
 import glob
 
+template_file = 'scripts/templates/SutraPathrika_template.html'
         
 # Read template
-with open('scripts/templates/SutraPathrika_template.html', 'r', encoding='utf-8') as f:
-    content = f.read()
+# with open('scripts/templates/SutraPathrika_template.html', 'r', encoding='utf-8') as f:
+#    content = f.read()
+
+try:
+    with open(template_file, 'r', encoding='utf-8') as f:
+        template_content = f.read()
+except FileNotFoundError:
+        print(f"Error: Template file {template_file} not found.")
 
 # Replace navigation header
 with open('scripts/templates/navigation_header_template.html', 'r', encoding='utf-8') as f:
     nav_header = f.read()
-content = content.replace('$NAVIGATION_HEADER$', nav_header)
+content = template_content.replace('$NAVIGATION_HEADER$', nav_header)
 
 # Generate PDF list with hyperlinks
 pdf_files = sorted(glob.glob('documents/SutraPDFs/*.pdf'))
