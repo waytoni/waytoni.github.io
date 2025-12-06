@@ -34,11 +34,22 @@ if menu_change == True:
     #from scripts.py import build_FileListForNotes
     #build_FileListForNotes
     
-    from scripts import gen_notes_v1
-    gen_notes_v1
+    from scripts import gen_notes
+    gen_notes
     
     from scripts import gen_SutraList
     gen_SutraList
+    
+    # The following files are updated using gen_navbar_replace script 
+    #'Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html', 
+    #'Paramartha_Video/Paramartha_Video.html',
+    from scripts import gen_navbar_replace
+    gen_navbar_replace
+
+
+    # The following files are updated using load-template.js script
+    # Paramartha_Video/ParamarthaDarama.html
+    # 404.html
     #from scripts.py import build_page_ChiththaChithasika
     #build_page_ChiththaChithasika
     #from scripts.py import build_series_BCD
