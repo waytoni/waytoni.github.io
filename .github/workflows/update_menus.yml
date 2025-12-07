@@ -8,11 +8,10 @@ on:
   pull_request:
     branches:
       - main
-    paths:
-      - 'scripts/templates/navigation_header_template.html'
+    types: [opened, synchronize, reopened]
  
 jobs:
-  run-SuthraPathrika-update:
+  run-menus-update:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
