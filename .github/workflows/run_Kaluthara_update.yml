@@ -5,8 +5,13 @@ on:
     paths:
       - 'KalutaraBodhiya/L_series/L_series_ytlinks.txt'     
       - 'KalutaraBodhiya/L_series/L_series_notes.txt'     
+  pull_request:
+    branches:
+      - main
+    types: [opened, synchronize, reopened]
+
 jobs:
-  run-python-script-Kseries:
+  run-python-script-L-series:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
