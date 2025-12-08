@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GT-MBNDJTD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'GT-MBNDJTD');
+    </script>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="විශේෂ දේශනා - බුද්ධ ධර්ම දේශනා සහ වීඩියෝ එකතුව">
+    <title>විශේෂ දේශනා</title>
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="/css/nav_menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+    --primary-color: #2c5530;
+    --secondary-color: #6b8e23;
+    --accent-color: #d4af37;
+    --light-bg: #f8f9fa;
+    --dark-text: #333;
+    --light-text: #fff;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --dark-color: var(--primary-color);
+}
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Abhaya Libre', serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2c5c3f 0%, #4a7c59 100%);
+            color: white;
+            padding: 2rem 1rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            border-bottom: 5px solid #d4af37;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            padding: 1rem;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 4px solid #4a7c59;
+        }
+        
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        
+        .card h2 {
+            color: #2c5c3f;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+        
+        .card-link {
+            display: flex;
+            align-items: center;
+            color: #2c5c3f;
+            text-decoration: none;
+            cursor: pointer;
+            padding: 0.5rem 0;
+            transition: all 0.3s ease;
+            width: 100%;
+            background: none;
+            border: none;
+            font-family: inherit;
+            font-size: inherit;
+            text-align: left;
+        }
+        
+        .card-link:hover {
+            color: #d4af37;
+        }
+        
+        .card-link::before {
+            content: "📿 ";
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+        
+        .card-link.collapsed::before {
+            content: "📿 ";
+        }
+        
+        .card-link.expanded::before {
+            content: "🔽 ";
+        }
+        
+        .card-content {
+            padding: 1rem 0;
+            overflow: hidden;
+        }
+        
+        .collapse-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out, opacity 0.3s ease;
+            opacity: 0;
+        }
+        
+        .collapse-content.active {
+            max-height: 5000px; /* Large enough to fit content */
+            opacity: 1;
+            transition: max-height 0.5s ease-in, opacity 0.5s ease 0.2s;
+        }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin: 1rem 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .resources {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 1rem 0;
+            border-left: 3px solid #d4af37;
+        }
+        
+        .resources h3 {
+            color: #2c5c3f;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .resource-link {
+            display: inline-flex;
+            align-items: center;
+            background: #4a7c59;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 0.3rem 0.3rem 0.3rem 0;
+            transition: background 0.3s ease;
+        }
+        
+        .resource-link:hover {
+            background: #2c5c3f;
+        }
+        
+        .resource-link::before {
+            content: "📄 ";
+            margin-right: 5px;
+        }
+        
+        .date-badge {
+            display: inline-block;
+            background: #d4af37;
+            color: #2c5c3f;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .card-container {
+                padding: 0.5rem;
+            }
+            
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .card {
+                padding: 1rem;
+            }
+            
+            .card h2 {
+                font-size: 1.1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 10px;
+            }
+            
+            header h1 {
+                font-size: 1.5rem;
+            }
+            
+            .card-link::before {
+                margin-right: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation (Keep your existing nav) -->
+    <div class="topnav" id="Topnavbar">
+        <a href="https://waytoni.com/" class="active"><i style="font-size:24px" class="fa">&#xf015;</i></a>
+        <a href="/All_Playlists/SiyaluDesana.html">පසුගිය සහ සියලුම දේශනා</a>
+        <a href="/Paramartha_Video/Paramartha_Video.html">පරමාර්ථ ලෝකය දේශනා</a>
+        <a href="/Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html">අනිච්ච, දුක්ඛ, අනත්ත දේශනා</a>
+        <a href="/ChiththaChithasika/index.html">චිත්ත සහ චෛතසික</a>
+        <div class="dropdown">
+            <button class="dropbtn">දැනට පැවැත්වෙන දේශනා <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="/VisheshaDesana/RuwanweliMahaSeya/RuwanweliMahaSeya.html">පොහොදින රුවන්වැලි මහා සෑ අභියස පැවෙත්වෙන දේශනා මාලාව</a>
+                <a href="/KalutaraBodhiya/L_series/L_series.html">කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන (L series) දේශනා මාලාව</a>
+                <a href="/NivanMagaUdesaDesana/ThalawathugodaB/ThalawathugodaB.html">2025-26 තලවතුගොඩ පැවෙත්වෙන දේශනා මාලාව</a>
+                <a href="/AbhidharmaAruth/D_series/AbhidharmaAruthD.html">පොල්ගස්ඕවිට පැවෙත්වෙන දේශනා මාලාව (D කන්ඩායම)</a>
+                <a href="/NivanMagaUdesaDesana/MaharagamaA/MaharagamaA.html">මහරගම පැවෙත්වෙන දේශනා මාලාව (A කන්ඩායම)</a>
+                <a href="/VisheshaDesana/index.html">විශේෂ දේශනා</a>
+                <a href="/NivanMagaUdesaDesana/Thalawathugoda/Thalawathugoda.html">2025 තලවතුගොඩ පැවැත්වුන දේශනා මාලාව</a>
+                <a href="/AbhidharmaAruth/C_series/AbhidharmaAruthC.html">පොල්ගස්ඕවිට පැවැත්වුන දේශනා මාලාව (C කන්ඩායම)</a>
+                <a href="/KalutaraBodhiya/J_series/J_series.html">2024 කළුතර බෝධි පරිශ්‍රයේදී පැවැත්වුන දේශනා මාලාව (J Series)</a>
+                <a href="/KalutaraBodhiya/K_series/K_series.html">2025 කළුතර බෝධි පරිශ්‍රයේදී පැවැත්වුන දේශනා මාලාව (K Series)</a>
+                <a href="/AbhidharmaSeries/A_series/index.html">තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා</a>
+                <a href="/NivanMagaUdesaDesana/A_series/index.html">නිවන් මග උදෙසා දර්ශන ඥානය (A කණ්ඩායම)</a>
+            </div>
+        </div>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navFunction()">&#9776;</a>
+    </div>
+
+    <header>
+        <p style="margin-top: 10px; opacity: 0.9; font-size: 1.1rem;">ගරු අජන්ත සම්පත් ගුරුතුමන්ගේ</p>
+        <h1>විශේෂ දේශනා</h1>
+
+    </header>
+
+    <main class="container">
+        <div class="card-container" id="sermons-container">
+            <!-- Card 1 -->
+            <div class="card">
+                <span class="date-badge">2025-12-03</span>
+                <h2>
+                    <button class="card-link collapsed" onclick="toggleCard('card1', this)">
+                        කලුතර බෝධි පරිශ්‍රයේදී පැවෙත්වුන මහා නිදාන සූත්‍රය විස්තරය (3)
+                    </button>
+                </h2>
+                <div id="card1" class="collapse-content">
+                    <div class="card-content">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/VWCQZlMjoz0"
+                                title="03 හා නිදාන සුත්ත LIve Kalutara Bodiya 2025 12 03"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        
+                        <div class="resources">
+                            <h3>දේසනාව සඳහා පත්‍රිකාව (PDF):</h3>
+                            <a href="/documents/SutraPDFs/මහා නිදාන සූත්‍රය විස්තරය සංස්කරණය කරන ලද.pdf" 
+                               target="_blank" 
+                               class="resource-link">
+                                මහා නිදාන සූත්‍රය විස්තරය (PDF)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <span class="date-badge">2025-11-26</span>
+                <h2>
+                    <button class="card-link collapsed" onclick="toggleCard('card2', this)">
+                        කලුතර බෝධි පරිශ්‍රයේදී පැවෙත්වුන මහා නිදාන සූත්‍රය විස්තරය (2)
+                    </button>
+                </h2>
+                <div id="card2" class="collapse-content">
+                    <div class="card-content">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/XN7UuuytGZs"
+                                title="02 හා නිදාන සුත්ත LIve Kalutara Bodiya 2025 11 26"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        
+                        <div class="resources">
+                            <h3>දේසනාව සඳහා පත්‍රිකාව (PDF):</h3>
+                            <a href="/documents/SutraPDFs/මහා නිදාන සූත්‍රය විස්තරය සංස්කරණය කරන ලද.pdf" 
+                               target="_blank" 
+                               class="resource-link">
+                                මහා නිදාන සූත්‍රය විස්තරය (PDF)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <span class="date-badge">2025-11-19</span>
+                <h2>
+                    <button class="card-link collapsed" onclick="toggleCard('card3', this)">
+                        කලුතර බෝධි පරිශ්‍රයේදී පැවෙත්වුන මහා නිදාන සූත්‍රය විස්තරය (1)
+                    </button>
+                </h2>
+                <div id="card3" class="collapse-content">
+                    <div class="card-content">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/unYddCdpJt8"
+                                title="LIve මහා නිදාන සුත්ත"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        
+                        <div class="resources">
+                            <h3>දේසනාව සඳහා පත්‍රිකාව (PDF):</h3>
+                            <a href="/documents/SutraPDFs/මහා නිදාන සූත්‍රය විස්තරය සංස්කරණය කරන ලද.pdf" 
+                               target="_blank" 
+                               class="resource-link">
+                                මහා නිදාන සූත්‍රය විස්තරය (PDF)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+                <span class="date-badge">2025-09-15</span>
+                <h2>
+                    <button class="card-link collapsed" onclick="toggleCard('card4', this)">
+                        ගලෙන් බිඳුනු වැව (අනුරාධපුරය) 2025 09 15 මූලික හැදින්වීම
+                    </button>
+                </h2>
+                <div id="card4" class="collapse-content">
+                    <div class="card-content">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/yYMg18XY7JE"
+                                title="Anuradhapura ගලෙන් බිඳුනු වැව (අනුරාධපුරය) 2025 09 15 මූලික හැදින්වීම"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more cards as needed following the same pattern -->
+            <!-- You can continue with the rest of your original content -->
+
+
+
+
+
+        </div>
+    </main>
+
+    <script>
+        // Simple toggle function for card collapse/expand
+        function toggleCard(cardId, button) {
+            const content = document.getElementById(cardId);
+            const isActive = content.classList.contains('active');
+            
+            // Close all other cards
+            const allContents = document.querySelectorAll('.collapse-content');
+            const allButtons = document.querySelectorAll('.card-link');
+            
+            allContents.forEach(item => {
+                if (item.id !== cardId) {
+                    item.classList.remove('active');
+                }
+            });
+            
+            allButtons.forEach(btn => {
+                if (btn !== button) {
+                    btn.classList.remove('expanded');
+                    btn.classList.add('collapsed');
+                }
+            });
+            
+            // Toggle current card
+            if (isActive) {
+                content.classList.remove('active');
+                button.classList.remove('expanded');
+                button.classList.add('collapsed');
+            } else {
+                content.classList.add('active');
+                button.classList.remove('collapsed');
+                button.classList.add('expanded');
+                
+                // Optional: Smooth scroll to show the content
+                content.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        }
+
+        // Add numbering to cards on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.card');
+            cards.forEach((card, index) => {
+                const heading = card.querySelector('h2');
+                const currentText = heading.querySelector('.card-link').textContent;
+                heading.querySelector('.card-link').textContent = (index + 1) + '. ' + currentText;
+            });
+            
+            // Open first card by default (optional)
+            // const firstCard = document.querySelector('.card:first-child .card-link');
+            // if (firstCard) {
+            //     firstCard.click();
+            // }
+        });
+
+        // Keyboard accessibility
+        document.addEventListener('keydown', function(e) {
+            // Close all cards with Escape key
+            if (e.key === 'Escape') {
+                const allContents = document.querySelectorAll('.collapse-content.active');
+                const allButtons = document.querySelectorAll('.card-link.expanded');
+                
+                allContents.forEach(content => {
+                    content.classList.remove('active');
+                });
+                
+                allButtons.forEach(btn => {
+                    btn.classList.remove('expanded');
+                    btn.classList.add('collapsed');
+                });
+            }
+            
+            // Navigate between cards with arrow keys
+            if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+                e.preventDefault();
+                const currentCard = document.activeElement.closest('.card');
+                if (!currentCard) return;
+                
+                const allCards = Array.from(document.querySelectorAll('.card'));
+                const currentIndex = allCards.indexOf(currentCard);
+                
+                let nextIndex;
+                if (e.key === 'ArrowDown') {
+                    nextIndex = (currentIndex + 1) % allCards.length;
+                } else {
+                    nextIndex = (currentIndex - 1 + allCards.length) % allCards.length;
+                }
+                
+                const nextCard = allCards[nextIndex];
+                const nextButton = nextCard.querySelector('.card-link');
+                nextButton.focus();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -48,8 +48,6 @@ if menu_change == True:
     
     #from scripts.py import build_page_ChiththaChithasika
     #build_page_ChiththaChithasika
-    #from scripts.py import build_series_BCD
-    #build_series_BCD
 
     # Update
     # Chithatha_Chithasika (old page), and Vishesha Desana
