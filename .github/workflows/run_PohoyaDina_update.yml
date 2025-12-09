@@ -18,7 +18,7 @@ jobs:
         with:
           python-version: 3.11 # Set your desired Python version
 
-      - name: Read RuwanweliMahaSeya_series
+      - name: Update Ruwanweli Maha Seya series
         run: python scripts/gen_series_RuwanweliMahaSeya.py
 
       - name: commit changes

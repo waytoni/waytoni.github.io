@@ -23,7 +23,7 @@
 සළායතන වර්‍ගය &rarr; සළායතන සංයුත්තය &rarr; සබ්බ වර්‍ගය (සබ්බ සූත්‍රය,  &hellip;) url::https://tipitaka.lk/sn-4-1-3/sinh
 ඛන්‍ධක වර්‍ගය &rarr; උප්පාද වර්‍ගය (චක්ඛු සූත්‍රය, රූප සූත්‍රය, විඤ්ඤාණ සූත්‍රය, ඵස්ස සූත්‍රය, &hellip;, ඛන්‍ධ සූත්‍රය) url::https://tipitaka.lk/sn-3-5-1/sinh
 #13
-<a href="https://www.youtube.com/playlist?list=PLqESXbJ82aIg0mR-UZR7_2TbzU6lHOHY0" target="_blank">පරමාර්ථ ධර්ම</a>
+<a href="/Paramartha_Video/ParamarthaDharma.html">පරමාර්ථ ධර්ම - 5 videos</a>
 #110
 ඛජ්ජනීය සුත්තං  pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
 ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413

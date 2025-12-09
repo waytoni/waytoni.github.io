@@ -18,7 +18,7 @@ jobs:
         with:
           python-version: 3.11 # Set your desired Python version
 
-      - name: Read Vishesha Desana info
+      - name: Update Vishesha Desana series
         run: python scripts/gen_VisheshaDesana.py
 
       - name: commit changes

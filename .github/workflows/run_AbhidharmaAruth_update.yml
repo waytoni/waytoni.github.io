@@ -17,7 +17,7 @@ jobs:
         with:
           python-version: 3.11 # Python Version
 
-      - name: Run Python Script for Abhidharma Aruth Desana D
+      - name: Update Abhidharma Aruth Desana D seeries
         run: python scripts/gen_series_AbhidharmaAruthD.py
      
       - name: commit changes

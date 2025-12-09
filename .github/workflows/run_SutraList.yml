@@ -19,7 +19,7 @@ jobs:
         with:
           python-version: 3.11 # Set your desired Python version
 
-      - name: run SuthraPathrika update 
+      - name: run Suthra Pathrika update 
         run: python scripts/gen_SutraList.py
 
       - name: commit changes

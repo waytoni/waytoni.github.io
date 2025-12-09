@@ -22,7 +22,7 @@ jobs:
         with:
           python-version: 3.11 # Set your desired Python version
 
-      - name: Read L_serires
+      - name: Update Kaluthara Bohiya L_serires
         run: python scripts/gen_series_KalutharaL.py
 
       - name: commit changes
