@@ -86,7 +86,7 @@ def get_image_files(folder_path):
 def main():
     basepath = './documents/NotesForDesana'
     html_file = os.path.join(basepath, 'NotesForDesana.html')
-    navigation_file = 'scripts/py/navigation_header.html'  # Adjusted path
+    navigation_file = 'scripts/templates/navigation_header_template.html'  # Adjusted path
     template_file = os.path.join('scripts', 'templates/NotesForDesana_template.html')
    
     
