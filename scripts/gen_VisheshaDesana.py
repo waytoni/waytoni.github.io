@@ -491,7 +491,7 @@ def main():
     root_dir = os.path.dirname(script_dir)  # Go up one level to project root
     vishesha_dir = os.path.join(root_dir, 'VisheshaDesana')
     
-    template_path = os.path.join(templates_dir, 'vi_template.html')
+    template_path = os.path.join(templates_dir, 'VisheshaDesana_template.html')
     nav_path = os.path.join(templates_dir, 'navigation_header_template.html')
     info_path = os.path.join(vishesha_dir, 'vishesha_desana_info.txt')
     output_path = os.path.join(vishesha_dir, 'index.html')

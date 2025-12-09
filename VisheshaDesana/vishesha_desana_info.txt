@@ -144,6 +144,10 @@ https://www.youtube.com/embed/ASCDL8mE0bI?si=B445XrK_AuX-c1UW
 2024 08 18 Kalutara Bodhiya දර්ශන ඥානය.pdf
 ## NOTESLOCATION
 docs/2024 08 18  Kalutara Bodhiya දර්ශන ඥානය.pdf
+## NOTESDESCRIPTION
+2024 08 18 Kalutara Bodhiya රූ සටහන.pdf
+## NOTESLOCATION
+docs/2024 08 18 Kalutara Bodhiya රූ සටහන.pdf
 ## ZOOMINFO
 
 
@@ -159,7 +163,7 @@ https://www.youtube.com/embed/Vn09bpxfFCg?si=SRYZ4GkmhJbUzUzC
 ## NOTESDESCRIPTION
 මූලික පටිච්චසමුප්පාද දේශනාවකට උපකාරක වන දහම් කරුණු පෙළගැස්වීමකි.pdf
 ## NOTESLOCATION
-මූලික පටිච්චසමුප්පාද දේශනාවකට උපකාරක වන දහම් කරුණු පෙළගැස්වීමකි.pdf
+docs/මූලික පටිච්චසමුප්පාද දේශනාවකට උපකාරක වන දහම් කරුණු පෙළගැස්වීමකි.pdf
 ## ZOOMINFO
 
 

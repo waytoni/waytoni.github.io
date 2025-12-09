@@ -1,0 +1,29 @@
+name: Update Vishesha Deshana series 
+
+on:
+  push:
+    paths:
+      - 'VisheshaDeshana/VisheshaDesana_info.txt'     
+      - 'scripts/templates/VisheshaDesana_template.html'       
+   
+jobs:
+  run-python-script-VisheshaDesana:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.11 # Set your desired Python version
+
+      - name: Read Vishesha Desana info
+        run: python scripts/gen_VisheshaDesana.py
+
+      - name: commit changes
+        run: |
+          git config user.name "$(git log -n 1 --pretty=format:%an)"
+          git config user.email "$(git log -n 1 --pretty=format:%ae)"
+          git commit -a -m "updated Vishesha Desana series"
+          git push
