@@ -47,8 +47,7 @@ if menu_change == True:
     # 404.html
     # KalutaraBodhiya/B_C_D_Batches.html
     
-    #from scripts.py import build_page_ChiththaChithasika
-    #build_page_ChiththaChithasika
+ 
 
     # Update
     # Chithatha_Chithasika (old page), and Vishesha Desana

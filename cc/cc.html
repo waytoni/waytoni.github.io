@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freeze Pane Layout - Final Robust Solution</title>
+    <style>
+        /* --- General Layout & Reset --- */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden; 
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* --- Zoom Control Container --- */
+        #zoom-control-container {
+            position: absolute; 
+            top: 10px;
+            left: 10px;
+            z-index: 20; 
+            background: rgba(255, 255, 255, 0.9);
+            padding: 5px 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        #zoom-control-container button {
+            cursor: pointer;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            background: #eee;
+            border-radius: 3px;
+        }
+        #zoom-control-container span {
+            font-weight: bold;
+        }
+
+        /* --- 1. Header (Freeze Top) --- */
+        #header-container {
+            /* Width 100% means it spans the viewport width */
+            width: 100%;
+            height: 989px; 
+            flex-shrink: 0;
+            z-index: 10; 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Hides image parts scrolled out */
+            background-color: white; 
+        }
+        #header-img {
+            width: 9600px; /* Initial full width */
+            height: 100%;
+            display: block;
+            position: relative; /* Essential for JS translateX scroll sync */
+            transition: transform 0.2s ease-out, width 0.2s ease-out, height 0.2s ease-out; 
+            /* Added width/height to transition for smooth zooming */
+        }
+
+        /* --- 2. Main Content Area (Below Header) --- */
+        #body-content-wrapper {
+            display: flex;
+            flex-grow: 1; 
+            overflow: hidden; 
+        }
+
+        /* --- 3. Left Column (Freeze Left) --- */
+        #left-container {
+            width: 85px; 
+            flex-shrink: 0; 
+            z-index: 5; 
+            box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden; 
+        }
+        #left-img {
+            width: 100%;
+            height: 5398px; 
+            display: block;
+            position: relative; /* Essential for JS translateY scroll sync */
+            transition: transform 0.2s ease-out, width 0.2s ease-out, height 0.2s ease-out;
+        }
+
+        /* --- 4. Main Scrollable Area (Bottom Right) --- */
+        #main-scroll-area {
+            flex-grow: 1; 
+            overflow: auto; /* The sole scroll container */
+        }
+        #right-img {
+            width: 9515px; 
+            height: 5398px; 
+            display: block;
+            position: relative;
+            transition: width 0.2s ease-out, height 0.2s ease-out;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="zoom-control-container">
+        <button id="zoom-out-btn">-</button>
+        <span id="zoom-level-display">100%</span>
+        <button id="zoom-in-btn">+</button>
+    </div>
+
+    <div id="header-container">
+        <img id="header-img" src="cc_h.jpg" alt="Header">
+    </div>
+
+    <div id="body-content-wrapper">
+
+        <div id="left-container">
+            <img id="left-img" src="body_left.jpg" alt="Left Column">
+        </div>
+
+        <div id="main-scroll-area">
+            <img id="right-img" src="body_right.jpg" alt="Main Content">
+        </div>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mainScrollArea = document.getElementById('main-scroll-area');
+            const headerContainer = document.getElementById('header-container');
+            const leftContainer = document.getElementById('left-container');
+            
+            const leftImg = document.getElementById('left-img');
+            const headerImg = document.getElementById('header-img');
+            const rightImg = document.getElementById('right-img');
+
+            const zoomInBtn = document.getElementById('zoom-in-btn');
+            const zoomOutBtn = document.getElementById('zoom-out-btn');
+            const zoomLevelDisplay = document.getElementById('zoom-level-display');
+
+            // --- Configuration (Original Image Dimensions) ---
+            const originalHeaderHeight = 989;
+            const originalLeftWidth = 85;
+            const originalRightWidth = 9515;
+            const originalTotalWidth = originalLeftWidth + originalRightWidth; // 4609px
+            const originalBodyHeight = 5398; 
+
+            let currentZoom = 0.4; 
+            const zoomStep = 0.1; 
+            const minZoom = 0.1;   
+            const maxZoom = 3.0;   
+
+            // --- Scroll Synchronization Handler ---
+            const syncScroll = () => {
+                const scrollTop = mainScrollArea.scrollTop;
+                const scrollLeft = mainScrollArea.scrollLeft;
+
+                // 1. Vertical Sync (Left Column)
+                // Use transform for scroll sync only
+                leftImg.style.transform = `translateY(${-scrollTop}px)`;
+
+                // 2. Horizontal Sync (Header)
+                // Use transform for scroll sync only
+                headerImg.style.transform = `translateX(${-scrollLeft}px)`;
+                
+                // 3. Main Content (Right)
+                // No transform needed for position, only for scroll size (handled by width/height update below)
+                // We reset the transform property here to ensure no lingering scaling is applied.
+                rightImg.style.transform = 'none';
+            };
+
+            mainScrollArea.addEventListener('scroll', syncScroll);
+
+
+            // --- Zoom Handler: Directly manipulate width/height for accurate layout ---
+            const applyZoom = (newZoom) => {
+                // Check boundaries
+                if (newZoom < minZoom || newZoom > maxZoom) {
+                    return;
+                }
+                currentZoom = newZoom;
+
+                // 1. Update the display
+                zoomLevelDisplay.textContent = `${Math.round(currentZoom * 100)}%`;
+
+                // 2. Adjust the dimensions of the FROZEN CONTAINERS (DIVs)
+                // This ensures the surrounding layout is sized correctly via Flexbox.
+                headerContainer.style.height = `${originalHeaderHeight * currentZoom}px`;
+                leftContainer.style.width = `${originalLeftWidth * currentZoom}px`;
+
+                // 3. Adjust the dimensions of the IMAGES (Content sizing)
+                
+                // Header Image: Needs the full content width, scaled height.
+                headerImg.style.width = `${originalTotalWidth * currentZoom}px`;
+                headerImg.style.height = `${originalHeaderHeight * currentZoom}px`; // Match container height
+                
+                // Left Image: Needs the scaled width (from its container) and scaled body height.
+                leftImg.style.width = `${originalLeftWidth * currentZoom}px`;
+                leftImg.style.height = `${originalBodyHeight * currentZoom}px`;
+                
+                // Right Image: Defines the scroll range for the main area.
+                rightImg.style.width = `${originalRightWidth * currentZoom}px`;
+                rightImg.style.height = `${originalBodyHeight * currentZoom}px`;
+                
+                // 4. Reset scroll to top-left corner on zoom change to prevent out-of-bounds scrolling
+                mainScrollArea.scrollTop = 0;
+                mainScrollArea.scrollLeft = 0;
+                
+                // 5. Apply scroll offsets (which will now be calculated relative to the new dimensions)
+                syncScroll();
+            };
+
+            // Initialize: Set initial scale and container sizes
+            applyZoom(currentZoom);
+
+            // --- Button Listeners ---
+            zoomInBtn.addEventListener('click', () => {
+                applyZoom(currentZoom + zoomStep);
+            });
+
+            zoomOutBtn.addEventListener('click', () => {
+                applyZoom(currentZoom - zoomStep);
+            });
+        });
+    </script>
+
+</body>
+</html>

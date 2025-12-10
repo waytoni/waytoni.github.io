@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+
 """
 COMPLETE Image Splitter for Freeze Pane Viewer
 Splits the ORIGINAL complete image (9600×6387) into all needed parts
@@ -14,12 +14,12 @@ def split_complete_image(original_path, header_height=989, left_column_width=85)
     
     Args:
         original_path: Path to original complete image (cc.jpg, 9600×6387)
-        header_height: Height of the header section (989px)
-        left_column_width: Width of the frozen left column (85px)
+        header_height: Height of the header section (989px) 148
+        left_column_width: Width of the frozen left column (85px) 176
     """
     
     # Create output directory
-    output_dir = "complete_split"
+    output_dir = "cc/ex/complete_split"
     os.makedirs(output_dir, exist_ok=True)
     
     print(f"Splitting complete image with:")
@@ -198,15 +198,15 @@ def create_debug_visualization(original_img, header_height, left_column_width, o
 
 def main():
     parser = argparse.ArgumentParser(description='Split complete image for freeze pane viewer')
-    parser.add_argument('--image', default='cc.jpg', help='Path to complete image (default: cc.jpg)')
-    parser.add_argument('--header-height', type=int, default=989, help='Height of header in pixels (default: 989)')
-    parser.add_argument('--left-width', type=int, default=85, help='Width of left column in pixels (default: 85)')
+    parser.add_argument('--image', default='cc/ex/Full.jpg', help='Path to complete image (default: cc.jpg)')
+    parser.add_argument('--header-height', type=int, default=148, help='Height of header in pixels (default: 989)')
+    parser.add_argument('--left-width', type=int, default=176, help='Width of left column in pixels (default: 85)')
     
     args = parser.parse_args()
     
     print("=" * 60)
     print("COMPLETE Image Splitter for Freeze Pane Viewer")
-    print(f"Input: {args.image} (should be 9600×6387)")
+    print(f"Input: {args.image} (should be Width: 4609, Height: 2142)")
     print("=" * 60)
     
     split_complete_image(args.image, args.header_height, args.left_width)
