@@ -20,74 +20,27 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	
-    <link rel="stylesheet" type="text/css" href="/css/style_brown.css">
-	<link rel="stylesheet" type="text/css" href="/css/nav_menu.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;700&display=swap" rel="stylesheet">
-  
+	<link rel="stylesheet" type="text/css" href="/css/nav_menu.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	<script src="/scripts/nav_function.js"></script>
 
-    <script src="/scripts/templates/load-template.js"></script>
+	<style>
+	h1, h2, h3, p, a {
+		text-align: center;
+	}
+	</style>
+
+	<style>
+		h1,
+	 	h2, 
+		h3, 
+		p, 
+		a {
+			text-align: center;
+		}
+	</style>
 	<title>Zoom Info</title>
 </head>
 <body>
-
-    <div class="topnav" id="Topnavbar">
-    <!-- Content will be loaded here automatically by load-template.js-->
-    </div>
-
-   
-    
-    <div style="margin:5px 5px 5px 15px";>
-        <h1 id="meeting-title">නිවන් මග උදෙසා දර්ශන ඥානය දේශනා</h1>
-        <h2>කල්‍යාණ මිත්‍ර අජන්ත සම්පත් ගුරුතුමන් ගේ දේශනා මාලාව</h2>
-        <p></p>
-        <p><span id="meeting-day"></span> දින සවස <span id="meeting-time"></span> සිට <span id="meeting-end-time"> දක්වා</span> (ලංකාවේ වේලාවෙන්)</p>
-        <p><span id="meeting-venue">Venue</span></p>
-
-        <h2 id="meeting-note">No Message</h2>
-  
-        <h3>Zoom Meeting Details</h3>
-        <div id="zoom-details" style="margin-left: 20px;">
-            <li>Zoom ID: 899 1349 3367</li>
-            <li>Passcode: 100100</li>
-
-            <li>Link for the Zoom meeting: <a href="https://us06web.zoom.us/j/89913493367?pwd=UkQ2LzlUTUpKRG9QQTk5YUdTa0FIUT09">
-                https://us06web.zoom.us/j/89913493367?pwd=UkQ2LzlUTUpKRG9QQTk5YUdTa0FIUT09</a></li>
-        </div>
-    </div>
-
-
-    <script>
-        // Function to get URL parameters
-        function getQueryParams() {
-            const params = new URLSearchParams(window.location.search);
-            return {
-                time: params.get("time") || "Not provided",
-                etime: params.get("etime") || "Not provided",
-                day: params.get("day") || "Not provided",
-                venue: params.get("venue") || "",
-                note: params.get("note") || "",
-                title: params.get("title") || "Meeting Details"
-            };
-        }
-
-        // Function to display meeting details and update title
-        function displayMeetingDetails() {
-            const { time, etime, day, title, venue, note} = getQueryParams();
-            document.title = title;
-            document.getElementById("meeting-title").textContent = title;
-            document.getElementById("meeting-time").textContent = time;
-            document.getElementById("meeting-end-time").textContent = etime;
-            document.getElementById("meeting-day").textContent = day;
-            document.getElementById("meeting-venue").textContent = venue;
-            document.getElementById("meeting-note").textContent = note;
-        }
-        // Run on page load
-        window.onload = function () {
-            displayMeetingDetails();
-           // loadNavigation();
-        };
-    </script>
-

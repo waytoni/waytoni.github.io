@@ -41,3 +41,10 @@ if __name__ == "__main__":
     with open(output_path, 'w', encoding='utf-8') as f:
         f.write(html_content)
     print(f"Generated {output_path}")
+    
+    # Chiththa Chithasika Chart
+    html_content = generate_html_from_template("ChiththaChithasika_template.html")
+    output_path = "ChiththaChithasika/index.html"
+    with open(output_path, 'w', encoding='utf-8') as f:
+        f.write(html_content)
+    print(f"Generated {output_path}")

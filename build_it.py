@@ -17,17 +17,14 @@
 
 
 
-menu_change = False 
+menu_change = False
 
 if menu_change == True:
     from scripts import gen_series_past
     gen_series_past
 
-    from scripts.py import build_ZoomPage
-    build_ZoomPage
-   
-    from scripts import gen_notes_v1
-    gen_notes_v1
+    from scripts import gen_notes
+    gen_notes
     
     from scripts import gen_SutraList
     gen_SutraList   
