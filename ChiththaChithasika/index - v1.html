@@ -23,12 +23,23 @@
   <!-- Google Fonts for Sinhala -->
   <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
   <style>
-    
-/*
+   :root {
+            --primary-color: #2c5aa0;
+            --secondary-color: #d4af37;
+            --accent-color: #8b4513;
+            --light-bg: #f8f5f0;
+            --dark-text: #333;
+            --light-text: #666;
+            --border-radius: 8px;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            /* --dark-color: #172f53; */
+            --dark-color: #5D4037;
+        }
+
         .container {
             padding: 2px;
         }
-*/
+
         #myViewport {
             cursor: grab;
             display: flex;
@@ -48,11 +59,17 @@
             font-size: 80px;
         }
 
-        /*
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin: 0%;
+            width: 100%;
+            /* background-color: azure; */
+            background-color: var(--light-bg);
+        }
 
         h1 {
             font-family: 'Roboto', sans-serif;
-           
+            /*font-size: 5vw;*/
             font-size: 24pt;
             text-align: center;
             margin: 0% 0% 0% 0%;
@@ -62,10 +79,10 @@
 
         h2 {
             font-family: 'Roboto', sans-serif;
-          
-            font-size: 16pt;
+            font-size: 2vw;
             text-align: center;
-x
+            margin: 10% 5% 7% 5%;
+            letter-spacing: 5px;
             color: rgb(71, 59, 59);
         }
 
@@ -75,7 +92,7 @@ x
             text-align: center;
             color: rgb(71, 59, 59);
         }
-*/
+
         .image-container {
             display: flex;
             justify-content: center;
@@ -87,11 +104,8 @@ x
             max-width: 100%;
             height: auto;
         }
-
-
   </style>
   <link href="/css/nav_menu.css" rel="stylesheet" type="text/css"/>
-  <link href="/css/style_brown.css" rel="stylesheet" type="text/css"/>
   <script src="/scripts/nav_function.js"></script>
   <title>චිත්ත සහ චෛතසික Chiththa Saha Chithisika</title>
  </head>
@@ -127,12 +141,9 @@ x
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navFunction()">&#9776;</a>
     </div>
 
- <header>
-   <h2>ගරු අජන්තා සම්පත් ගුරුතුමා විසින් සකස් කරන ලද</h2>
+ 
+  <h3>ගරු අජන්තා සම්පත් ගුරුතුමා විසින් සකස් කරන ලද</h3>
   <h1>   චිත්ත සහ චෛතසික චක්‍රය </h1>
-</header>
-
-
   <div id="zoom-message">  </div>
   
   <div class="image-container" id="C1">
@@ -151,8 +162,8 @@ x
   </div>
 
   <div style="text-align: center; padding: 20px;  color: darkslategrey">
-    <a href="/ChiththaChithasika/ChiththaChithasikaFixedHeaderLeftCol.html">
-    <h2>ස්ථාවර ශීර්ෂයක් සහිත සහ zoom button ඇතුළත් චිත්ත සහ චෛතසික චක්‍රය (chart with fixed header and zoom buttons)</h2></a>
+   <a href="/ChiththaChithasika/ChiththaChithasikaFixedHeaderLeftCol.html">
+    <h3>ස්ථාවර ශීර්ෂයක් සහිත සහ zoom button ඇතුළත් චිත්ත සහ චෛතසික චක්‍රය (chart with fixed header and zoom buttons)</h3></a>
   </div>
   
   <script src="/scripts/wheelzoom.js" type="text/javascript">
