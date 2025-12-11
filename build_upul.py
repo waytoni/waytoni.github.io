@@ -41,13 +41,16 @@ if menu_change == True:
     from scripts import gen_navbar_replace
     gen_navbar_replace
 
-
+    from scripts import gen_VisheshaDesana
+    gen_VisheshaDesana
+    
     # The following files are updated using load-template.js script
     # Paramartha_Video/ParamarthaDarama.html
     # 404.html
     # KalutaraBodhiya/B_C_D_Batches.html
     
- 
+    from scripts import gen_SiyaluDesana
+    gen_SiyaluDesana
 
     # Update
     # Chithatha_Chithasika (old page), and Vishesha Desana
@@ -60,9 +63,8 @@ gen_AllVideos
 gen_AllVideos_AA
 
 
-from scripts import gen_SiyaluDesana
-gen_SiyaluDesana
-#build_series_ShortDhammaDiscussions
+
+
 
 from scripts import gen_homepage
 gen_homepage
