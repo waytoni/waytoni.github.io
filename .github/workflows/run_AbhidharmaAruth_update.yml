@@ -3,8 +3,8 @@ name: Update Abhidhamma Aruth Desana
 on:
   push:
     paths:    
-      - 'AbhidharmaAruth/C_series/AbhidharmaAruth_D_ytlinks.txt'   
-      - 'AbhidharmaAruth/C_series/AbhidharmaAruth_D_notes.txt'  
+      - 'AbhidharmaAruth/D_series/AbhidharmaAruth_D_ytlinks.txt'   
+      - 'AbhidharmaAruth/D_series/AbhidharmaAruth_D_notes.txt'  
 jobs:
   run-python-script-Abhidhamma-Aruth:
     runs-on: ubuntu-latest
