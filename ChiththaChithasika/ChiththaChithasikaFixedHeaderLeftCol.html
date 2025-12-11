@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Freeze Pane Layout - Final Robust Solution</title>
+    <title>චිත්ත සහ චෛතසික (with Freeze Panes)</title>
     <style>
         /* --- General Layout & Reset --- */
         body {
@@ -29,6 +29,8 @@
             display: flex;
             gap: 10px;
             align-items: center;
+            background-color: #FFD700; 
+            /* background-color: rgb(219, 241, 95); */
         }
         #zoom-control-container button {
             cursor: pointer;
@@ -36,9 +38,12 @@
             border: 1px solid #ccc;
             background: #eee;
             border-radius: 3px;
+            background-color: cyan;
+            font-size: 1.4em;
         }
         #zoom-control-container span {
             font-weight: bold;
+            font-size: 1.4em;
         }
 
         /* --- 1. Header (Freeze Top) --- */
