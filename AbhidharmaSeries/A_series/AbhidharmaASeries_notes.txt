@@ -4,6 +4,7 @@
 සඞ්ගීති සූත්‍රය url::https://tipitaka.lk/dn-3-10
 #1
 #2
+#29
 #123
 සමිද්ධි සත්තපඤ්හ සූත්‍රය  url::https://tipitaka.lk/sn-4-1-7-4
 #127 

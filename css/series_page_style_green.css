@@ -148,6 +148,7 @@ body {
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 1rem;
+    color: var(--dark-text);
 }
 
 .nav-buttons {
