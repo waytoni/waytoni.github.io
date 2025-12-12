@@ -17,13 +17,13 @@ DEBUG_INFO = False  # Set to True for debugging, False for production
 def gen_series(verbose_flag=False):
     try:
         # Generate the series page HTML
-        ytlink_file, notes_file = generate_series_page(
+        ytlink_file, notes_file, series_title_section = generate_series_page(
             base_folder, html_file, json_file, css_file, ON_GOING, DEBUG_INFO, verbose=verbose_flag
         )
         
         # Generate the JSON file with video links and notes
         json_file_full_path = os.path.join(base_folder,  json_file)
-        BuildDropDownMenuWithNavigation(ytlink_file, notes_file, json_file_full_path, verbose=verbose_flag)
+        BuildDropDownMenuWithNavigation(ytlink_file, notes_file, json_file_full_path, series_title_section, verbose=DEBUG_INFO)
         
         print(f"Successfully generated {html_file} and {json_file} in {base_folder}/")
         

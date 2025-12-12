@@ -1,3 +1,7 @@
+#0
+ශ්‍රී ලංකා තිපිටක පෙළ, අටුවා සහ සිංහල පරිවර්තනය url::https://tipitaka.lk
+දුක්ඛ සූත්‍රය url::https://tipitaka.lk/sn-4-4-14
+සඞ්ගීති සූත්‍රය url::https://tipitaka.lk/dn-3-10
 #1
 #2
 #123

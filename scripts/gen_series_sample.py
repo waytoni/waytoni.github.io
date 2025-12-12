@@ -18,16 +18,24 @@ html_file = "AAD1.html"  # Output HTML file name
 css_file = "series_page_style_green.css"  # CSS file to use
 json_file = "AAD1.json"  # Output JSON file name
 
+
+# තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය - දේශනා
+base_folder = "AbhidharmaSeries/A_series/"  # Replace with your series folder name
+html_file = "index.html"  # Output HTML file name
+css_file = "series_page_style_green.css"  # CSS file to use
+json_file = "AbhidharmaASeries.json"  # Output JSON file name
+
+
 def main():
     try:
         # Generate the series page HTML
-        ytlink_file, notes_file = generate_series_page(
+        ytlink_file, notes_file, series_title_section = generate_series_page(
             base_folder, html_file, json_file, css_file, ON_GOING, DEBUG_INFO
         )
         
         # Generate the JSON file with video links and notes
         json_file_full_path = os.path.join(base_folder,  json_file)
-        BuildDropDownMenuWithNavigation(ytlink_file, notes_file, json_file_full_path)
+        BuildDropDownMenuWithNavigation(ytlink_file, notes_file, json_file_full_path, series_title_section, verbose=DEBUG_INFO)
         
         print(f"Successfully generated {html_file} and {json_file} in {base_folder}/")
         
