@@ -3,7 +3,7 @@ name: Update homepage contents
 on:
   push:
     paths:
-      - 'Homepage/homepage_info.html'
+      - 'Homepage/homepage_info.txt'
       - 'Homepage/messages.html'  
 jobs:
   run-python-script-homepage-update:
