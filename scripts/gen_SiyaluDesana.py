@@ -72,7 +72,7 @@ def generate_siyuludesana_html():
     info_file = os.path.join(base_dir, "SiyaluDesana_info.txt")
     template_file = os.path.join("scripts/templates", "SiyaluDesana_template.html")
     output_file = os.path.join(base_dir, "SiyaluDesana.html")
-    nav_header_file = os.path.join("scripts/py", "navigation_header.html")
+    nav_header_file = os.path.join("scripts/templates", "navigation_header_template.html")
     
     # Parse the info file
     num_current_lines, current_series_lines, num_past_lines, past_series_lines = parse_siyuludesana_info(info_file)

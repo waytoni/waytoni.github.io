@@ -2,52 +2,19 @@
 BROKEN LINK CHECKER REPORT
 ============================================================
 
-Total links checked: 681
-Valid links: 135
-Broken links: 546
+Total links checked: 668
+Valid links: 134
+Broken links: 534
 
 BROKEN LINKS:
 ----------------------------------------
-URL: file://AbhidharmaSeries\A_series\AbhidharmaASeries_intro.html/Zoom_Info/zoom_info_Saturday2pm.html
-Status/Error: 404
---------------------
-URL: file://AbhidharmaSeries\A_series\AbhidharmaASeries_intro.html/documents/file_list.html
-Status/Error: 404
---------------------
 URL: https://fonts.googleapis.com/css2
 Status/Error: 400
---------------------
-URL: file://All_Playlists\new_siyalu_desana.html/images/favicon-16x16.png
-Status/Error: 404
---------------------
-URL: file://All_Playlists\new_siyalu_desana.html/VisheshaDesana/index.html
-Status/Error: 404
---------------------
-URL: file://All_Playlists\new_siyalu_desana.html/AllVideos_V2.html
-Status/Error: 404
---------------------
-URL: file://All_Playlists\new_siyalu_desana.html/AllVideos_AA.html
-Status/Error: 404
---------------------
-URL: file://All_Playlists\SiyaluDesana.html/images/favicon-16x16.png
-Status/Error: 404
 --------------------
 URL: file://All_Playlists\SiyaluDesana.html/AllVideos.html
 Status/Error: 404
 --------------------
 URL: file://All_Playlists\SiyaluDesana.html/AllVideos_AA.html
-Status/Error: 404
---------------------
-URL: file://All_Playlists\SiyaluDesanaNew.html/images/favicon-16x16.png
-Status/Error: 404
---------------------
-URL: file://All_Playlists\SiyaluDesanaNew.html/AllVideos_V2.html
-Status/Error: 404
---------------------
-URL: file://All_Playlists\SiyaluDesanaNew.html/AllVideos_AA.html
-Status/Error: 404
---------------------
-URL: file://All_Playlists\සියුලු_දේශනා.html/images/favicon-16x16.png
 Status/Error: 404
 --------------------
 URL: file://All_Playlists\සියුලු_දේශනා.html/AllVideos.html
@@ -68,10 +35,10 @@ Status/Error: 404
 URL: file://cc\ex\a2.html/header.jpg
 Status/Error: 404
 --------------------
-URL: file://cc\ex\a2.html/left.jpg
+URL: file://cc\ex\a2.html/right.jpg
 Status/Error: 404
 --------------------
-URL: file://cc\ex\a2.html/right.jpg
+URL: file://cc\ex\a2.html/left.jpg
 Status/Error: 404
 --------------------
 URL: file://cc\ex\a3.html/header.jpg
@@ -392,13 +359,13 @@ Status/Error: 404
 URL: file://documents\NotesForDesana\NotesForDesana.html/පටිච්චසමුප්පාදය 02 සන්තතිය.jpeg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesana.html/පටිච්චසමුප්පාදය 03.jpg
-Status/Error: 404
---------------------
 URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/පටිච්චසමුප්පාදය 02 සන්තතිය.jpeg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/පටිච්චසමුප්පාදය 03.jpg
+Status/Error: 404
+--------------------
+URL: file://documents\NotesForDesana\NotesForDesana.html/පටිච්චසමුප්පාදය 03.jpg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesana.html/General/0001 ලෝක ධාතුවේ පරමාර්ථ ධර්ම.png
@@ -419,10 +386,10 @@ Status/Error: 404
 URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/General/0002A රූප පරමාර්ථ.png
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesana.html/General/0003 ප්‍රසාද පිහිටා තිබෙන ස්ථාන.png
+URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/General/0003 ප්‍රසාද පිහිටා තිබෙන ස්ථාන.png
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/General/0003 ප්‍රසාද පිහිටා තිබෙන ස්ථාන.png
+URL: file://documents\NotesForDesana\NotesForDesana.html/General/0003 ප්‍රසාද පිහිටා තිබෙන ස්ථාන.png
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesana.html/General/0004 ආයතන ධාතු විග්‍රහය සහ පරමාර්ථ ධර්මයන්ගේ ආයුෂ.png
@@ -434,13 +401,13 @@ Status/Error: 404
 URL: file://documents\NotesForDesana\NotesForDesana.html/General/0004 ප්‍රසාද ඇසුරු කරගෙන පහල වන සිත් 89.png
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesana.html/General/0005 ලෝක ධාතුවේ සත්ව තල පිහිටුම.png
-Status/Error: 404
---------------------
 URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/General/0004 ප්‍රසාද ඇසුරු කරගෙන පහල වන සිත් 89.png
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/General/0005 ලෝක ධාතුවේ සත්ව තල පිහිටුම.png
+Status/Error: 404
+--------------------
+URL: file://documents\NotesForDesana\NotesForDesana.html/General/0005 ලෝක ධාතුවේ සත්ව තල පිහිටුම.png
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesana.html/General/0006 නියාම ධර්මතා.png
@@ -449,25 +416,25 @@ Status/Error: 404
 URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/General/0006 නියාම ධර්මතා.png
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/General/0010A කාමාවචර කුසල් අකුසල් සිත්.png
-Status/Error: 404
---------------------
 URL: file://documents\NotesForDesana\NotesForDesana.html/General/0010A කාමාවචර කුසල් අකුසල් සිත්.png
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesana.html/General/0010B කාමාවචර කුසල් අකුසල් සිත්.png
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/General/0010B කාමාවචර කුසල් අකුසල් සිත්.png
+URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/General/0010A කාමාවචර කුසල් අකුසල් සිත්.png
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesana.html/General/0013 අකුශල කුශල අව්‍යාකෘත ලෝකෝත්තර ධර්ම.png
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesana.html/General/0017 A චෛතසික පරමාර්ථ ධර්ම 52.png
+URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/General/0010B කාමාවචර කුසල් අකුසල් සිත්.png
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/General/0013 අකුශල කුශල අව්‍යාකෘත ලෝකෝත්තර ධර්ම.png
+Status/Error: 404
+--------------------
+URL: file://documents\NotesForDesana\NotesForDesana.html/General/0017 A චෛතසික පරමාර්ථ ධර්ම 52.png
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/General/0017 A චෛතසික පරමාර්ථ ධර්ම 52.png
@@ -479,25 +446,25 @@ Status/Error: 404
 URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/General/0017 B චෛතසික පරමාර්ථ ධර්ම 52.png
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/Chithasika/0016 චිත්ත චෛතසික ධර්ම සම්ප්‍රයෝගය.jpg
-Status/Error: 404
---------------------
 URL: file://documents\NotesForDesana\NotesForDesana.html/Chithasika/0016 චිත්ත චෛතසික ධර්ම සම්ප්‍රයෝගය.jpg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesana.html/Chithasika/0018 A රූප විභාගය සහ රූප කලාප විභාගය.jpg
 Status/Error: 404
 --------------------
+URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/Chithasika/0016 චිත්ත චෛතසික ධර්ම සම්ප්‍රයෝගය.jpg
+Status/Error: 404
+--------------------
 URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/Chithasika/0018 A රූප විභාගය සහ රූප කලාප විභාගය.jpg
+Status/Error: 404
+--------------------
+URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/Chithasika/කාලත්‍රයේම ලෝක ධාතුවේ පහලවෙන වීති හා වීතියට අදාල සිත්.jpg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesana.html/Chithasika/කාලත්‍රයේම ලෝක ධාතුවේ පහලවෙන වීති හා වීතියට අදාල සිත්.jpg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesana.html/Chithasika/චිත්ත චෛතසික ධර්ම ප්‍රත්‍යයෙන් උපදින රූප වගුව.jpg
-Status/Error: 404
---------------------
-URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/Chithasika/කාලත්‍රයේම ලෝක ධාතුවේ පහලවෙන වීති හා වීතියට අදාල සිත්.jpg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/Chithasika/චිත්ත චෛතසික ධර්ම ප්‍රත්‍යයෙන් උපදින රූප වගුව.jpg
@@ -521,22 +488,22 @@ Status/Error: 404
 URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/Chithasika/ශමථ කර්මස්ථාන සතළිස විනිශ්චය.png
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/ChiththaVeethi/0008 චක්ෂුර්ද්වාරික අතිමහන්තාරම්මණ වීථිය.jpg
-Status/Error: 404
---------------------
 URL: file://documents\NotesForDesana\NotesForDesana.html/ChiththaVeethi/0008 චක්ෂුර්ද්වාරික අතිමහන්තාරම්මණ වීථිය.jpg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesana.html/ChiththaVeethi/0009 කුසල්-අකුසල් කාම ජවන චිත්තයන් හා ප්‍රතිසංධි විපාක.jpg
 Status/Error: 404
 --------------------
+URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/ChiththaVeethi/0008 චක්ෂුර්ද්වාරික අතිමහන්තාරම්මණ වීථිය.jpg
+Status/Error: 404
+--------------------
 URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/ChiththaVeethi/0009 කුසල්-අකුසල් කාම ජවන චිත්තයන් හා ප්‍රතිසංධි විපාක.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesana.html/ChiththaVeethi/0011 A චිත්ත වීති උදාහරණ 1-6 .jpg
+URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/ChiththaVeethi/0011 A චිත්ත වීති උදාහරණ 1-6 .jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/ChiththaVeethi/0011 A චිත්ත වීති උදාහරණ 1-6 .jpg
+URL: file://documents\NotesForDesana\NotesForDesana.html/ChiththaVeethi/0011 A චිත්ත වීති උදාහරණ 1-6 .jpg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesana.html/ChiththaVeethi/0011 A01 සම්බුදුපියාණන්ට මුගලන් මහරහතුන්ට හා ආනන්ද හාමුදුරුවන්ට  තීර්තකයෙකු බැනීම.jpg
@@ -563,10 +530,10 @@ Status/Error: 404
 URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/ChiththaVeethi/0011 A04 සැදැහැවත් බෞද්ධයෙකු පන්සලක් දැකීම.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesana.html/ChiththaVeethi/0011 A05 යමෙකු මළපහ ගොඩක් දැකීම.jpg
+URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/ChiththaVeethi/0011 A05 යමෙකු මළපහ ගොඩක් දැකීම.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/ChiththaVeethi/0011 A05 යමෙකු මළපහ ගොඩක් දැකීම.jpg
+URL: file://documents\NotesForDesana\NotesForDesana.html/ChiththaVeethi/0011 A05 යමෙකු මළපහ ගොඩක් දැකීම.jpg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesana.html/ChiththaVeethi/0011 A06 යමෙකු රසවත් ආහාරයක් රස විදීම.jpg
@@ -608,37 +575,37 @@ Status/Error: 404
 URL: file://documents\NotesForDesana\NotesForDesana.html/ChiththaVeethi/0011 B10 සතෙකුට සම්බුදුපියාණන්ව දැකීම.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesana.html/ChiththaVeethi/0011 B11 යෝනිසෝ මනසිකාර යෙදෙන යමෙකුට බියකරු හඬක් ඇසීම.jpg
+URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/ChiththaVeethi/0011 B10 සතෙකුට සම්බුදුපියාණන්ව දැකීම.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/ChiththaVeethi/0011 B10 සතෙකුට සම්බුදුපියාණන්ව දැකීම.jpg
+URL: file://documents\NotesForDesana\NotesForDesana.html/ChiththaVeethi/0011 B11 යෝනිසෝ මනසිකාර යෙදෙන යමෙකුට බියකරු හඬක් ඇසීම.jpg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/ChiththaVeethi/0011 B11 යෝනිසෝ මනසිකාර යෙදෙන යමෙකුට බියකරු හඬක් ඇසීම.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/ChiththaVeethi/0011 B12 යෝනිසෝ මනසිකාර යෙදෙන යමෙකුට දරුණු පහරක් වැදීම.jpg
+URL: file://documents\NotesForDesana\NotesForDesana.html/ChiththaVeethi/0011 B12 යෝනිසෝ මනසිකාර යෙදෙන යමෙකුට දරුණු පහරක් වැදීම.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesana.html/ChiththaVeethi/0011 B12 යෝනිසෝ මනසිකාර යෙදෙන යමෙකුට දරුණු පහරක් වැදීම.jpg
+URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/ChiththaVeethi/0011 B12 යෝනිසෝ මනසිකාර යෙදෙන යමෙකුට දරුණු පහරක් වැදීම.jpg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesana.html/ChiththaVeethi/0011 B13 යෝනිසෝ මනසිකාර යෙදෙන යමෙකුට මළපහ ගොඩක් දැකීම.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesana.html/ChiththaVeethi/0011 B14 යෝනිසෝ මනසිකාර යෙදෙන යමෙකුට ආහාරයක් රස විදීම.jpg
+URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/ChiththaVeethi/0011 B13 යෝනිසෝ මනසිකාර යෙදෙන යමෙකුට මළපහ ගොඩක් දැකීම.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/ChiththaVeethi/0011 B13 යෝනිසෝ මනසිකාර යෙදෙන යමෙකුට මළපහ ගොඩක් දැකීම.jpg
+URL: file://documents\NotesForDesana\NotesForDesana.html/ChiththaVeethi/0011 B14 යෝනිසෝ මනසිකාර යෙදෙන යමෙකුට ආහාරයක් රස විදීම.jpg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/ChiththaVeethi/0011 B14 යෝනිසෝ මනසිකාර යෙදෙන යමෙකුට ආහාරයක් රස විදීම.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesana.html/ChiththaVeethi/0012 පටිච්චසමුප්පාදය.png
+URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/ChiththaVeethi/0012 පටිච්චසමුප්පාදය.png
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/ChiththaVeethi/0012 පටිච්චසමුප්පාදය.png
+URL: file://documents\NotesForDesana\NotesForDesana.html/ChiththaVeethi/0012 පටිච්චසමුප්පාදය.png
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesana.html/ChiththaVeethi/0014 A මාර්ග සහ ඵල සමාපත්ති විථී.jpg
@@ -653,10 +620,10 @@ Status/Error: 404
 URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/ChiththaVeethi/0014 B මාර්ග සහ ඵල සමාපත්ති විථී.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesana.html/ChiththaVeethi/0015 A ත්‍රිහේතුක පෘතග්ජනයාගේ සිත් 54.jpg
+URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/ChiththaVeethi/0015 A ත්‍රිහේතුක පෘතග්ජනයාගේ සිත් 54.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/ChiththaVeethi/0015 A ත්‍රිහේතුක පෘතග්ජනයාගේ සිත් 54.jpg
+URL: file://documents\NotesForDesana\NotesForDesana.html/ChiththaVeethi/0015 A ත්‍රිහේතුක පෘතග්ජනයාගේ සිත් 54.jpg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesana.html/ChiththaVeethi/0015 B1 දුර්ගති අහේතුක සිත් 37 (සතර අපා).jpg
@@ -680,28 +647,28 @@ Status/Error: 404
 URL: file://documents\NotesForDesana\NotesForDesana.html/ChiththaVeethi/0016 A චක්ෂුර්ද්වාරික අතිමහන්තාරම්මණ වීථි හා මහන්තාරම්මණ වීථි.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesana.html/ChiththaVeethi/0016 B චක්ෂුර්ද්වාරික පරිත්තාරම්මණ වීථි සය හා අතිපරිත්තාරම්මණ වීථි සය.jpg
+URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/ChiththaVeethi/0016 A චක්ෂුර්ද්වාරික අතිමහන්තාරම්මණ වීථි හා මහන්තාරම්මණ වීථි.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/ChiththaVeethi/0016 A චක්ෂුර්ද්වාරික අතිමහන්තාරම්මණ වීථි හා මහන්තාරම්මණ වීථි.jpg
+URL: file://documents\NotesForDesana\NotesForDesana.html/ChiththaVeethi/0016 B චක්ෂුර්ද්වාරික පරිත්තාරම්මණ වීථි සය හා අතිපරිත්තාරම්මණ වීථි සය.jpg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/ChiththaVeethi/0016 B චක්ෂුර්ද්වාරික පරිත්තාරම්මණ වීථි සය හා අතිපරිත්තාරම්මණ වීථි සය.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/ChiththaVeethi/0019 B සමථ භාවනා - ආනාපාන සතිය වැඩීම ආසන්නව පහල වන චිත්ත වීථි අනුව.jpg
+URL: file://documents\NotesForDesana\NotesForDesana.html/ChiththaVeethi/0019 B සමථ භාවනා - ආනාපාන සතිය වැඩීම ආසන්නව පහල වන චිත්ත වීථි අනුව.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesana.html/ChiththaVeethi/0019 B සමථ භාවනා - ආනාපාන සතිය වැඩීම ආසන්නව පහල වන චිත්ත වීථි අනුව.jpg
+URL: file://documents\NotesForDesana\NotesForDesana.html/thumbnails/ChiththaVeethi/0019 B සමථ භාවනා - ආනාපාන සතිය වැඩීම ආසන්නව පහල වන චිත්ත වීථි අනුව.jpg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/VisheshaDesana/2024 08 18  Kalutara Bodhiya දර්ශන ඥානය.pdf
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/0002 රූප පරමාර්ථ.jpg
+URL: file://documents\NotesForDesana\NotesForDesanaNew.html/0002 රූප පරමාර්ථ.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesanaNew.html/0002 රූප පරමාර්ථ.jpg
+URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/0002 රූප පරමාර්ථ.jpg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/0003 රූප කලාපය.jpg
@@ -740,13 +707,13 @@ Status/Error: 404
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/0010 ශරීරයෙහි සියලු ප්‍රසාද.jpg
 Status/Error: 404
 --------------------
+URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/0012 රූප කලාපය වර්ග.jpeg
+Status/Error: 404
+--------------------
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/0012 රූප කලාපය වර්ග.jpeg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/0013 ආයතන ලෙස විග්‍රහය.jpeg
-Status/Error: 404
---------------------
-URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/0012 රූප කලාපය වර්ග.jpeg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/0013 ආයතන ලෙස විග්‍රහය.jpeg
@@ -758,10 +725,10 @@ Status/Error: 404
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/0014 චෛතසික දෙපනස.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesanaNew.html/0015 සිත් බෙදෙන අයුරු.jpeg
+URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/0015 සිත් බෙදෙන අයුරු.jpeg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/0015 සිත් බෙදෙන අයුරු.jpeg
+URL: file://documents\NotesForDesana\NotesForDesanaNew.html/0015 සිත් බෙදෙන අයුරු.jpeg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/0016 චතුර්භූමික සිත් සහ ධර්ම.jpg
@@ -770,10 +737,10 @@ Status/Error: 404
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/0016 චතුර්භූමික සිත් සහ ධර්ම.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesanaNew.html/0017 ආයතන සැකසුම.jpg
+URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/0017 ආයතන සැකසුම.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/0017 ආයතන සැකසුම.jpg
+URL: file://documents\NotesForDesana\NotesForDesanaNew.html/0017 ආයතන සැකසුම.jpg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/0018 පරමාර්ථ සහ පංචස්කන්ධය.jpg
@@ -788,10 +755,10 @@ Status/Error: 404
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/0020 පරමාර්ථ ගති ලක්ෂණ.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesanaNew.html/0022 සිත් සතර ආකාරය.jpg
+URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/0022 සිත් සතර ආකාරය.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/0022 සිත් සතර ආකාරය.jpg
+URL: file://documents\NotesForDesana\NotesForDesanaNew.html/0022 සිත් සතර ආකාරය.jpg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/0023 89 ක් වූ සිත් බෙදෙන ආකාර.jpeg
@@ -803,10 +770,10 @@ Status/Error: 404
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/0024 ද්වාර සංග්‍රහය.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/0024 ද්වාර සංග්‍රහය.jpg
+URL: file://documents\NotesForDesana\NotesForDesanaNew.html/0060 අකුශල සංග්‍ර‍හය සාරාංශය.jpeg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesanaNew.html/0060 අකුශල සංග්‍ර‍හය සාරාංශය.jpeg
+URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/0024 ද්වාර සංග්‍රහය.jpg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/0060 අකුශල සංග්‍ර‍හය සාරාංශය.jpeg
@@ -818,25 +785,25 @@ Status/Error: 404
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/030 ජීවිතේන්ද්‍රිය.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesanaNew.html/ආර්ය ලෝකය.png
-Status/Error: 404
---------------------
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/ආර්ය ලෝකය.png
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesanaNew.html/පටිච්චසමුප්පාදය 02 සන්තතිය.jpeg
+URL: file://documents\NotesForDesana\NotesForDesanaNew.html/ආර්ය ලෝකය.png
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/පටිච්චසමුප්පාදය 02 සන්තතිය.jpeg
 Status/Error: 404
 --------------------
+URL: file://documents\NotesForDesana\NotesForDesanaNew.html/පටිච්චසමුප්පාදය 02 සන්තතිය.jpeg
+Status/Error: 404
+--------------------
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/පටිච්චසමුප්පාදය 03.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/පටිච්චසමුප්පාදය 03.jpg
+URL: file://documents\NotesForDesana\NotesForDesanaNew.html/General/0001 ලෝක ධාතුවේ පරමාර්ථ ධර්ම.png
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesanaNew.html/General/0001 ලෝක ධාතුවේ පරමාර්ථ ධර්ම.png
+URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/පටිච්චසමුප්පාදය 03.jpg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/General/0001 ලෝක ධාතුවේ පරමාර්ථ ධර්ම.png
@@ -851,10 +818,10 @@ Status/Error: 404
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/General/0002A රූප පරමාර්ථ.png
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesanaNew.html/General/0003 ප්‍රසාද පිහිටා තිබෙන ස්ථාන.png
+URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/General/0002A රූප පරමාර්ථ.png
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/General/0002A රූප පරමාර්ථ.png
+URL: file://documents\NotesForDesana\NotesForDesanaNew.html/General/0003 ප්‍රසාද පිහිටා තිබෙන ස්ථාන.png
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/General/0003 ප්‍රසාද පිහිටා තිබෙන ස්ථාන.png
@@ -866,10 +833,10 @@ Status/Error: 404
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/General/0004 ආයතන ධාතු විග්‍රහය සහ පරමාර්ථ ධර්මයන්ගේ ආයුෂ.png
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesanaNew.html/General/0004 ප්‍රසාද ඇසුරු කරගෙන පහල වන සිත් 89.png
+URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/General/0004 ප්‍රසාද ඇසුරු කරගෙන පහල වන සිත් 89.png
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/General/0004 ප්‍රසාද ඇසුරු කරගෙන පහල වන සිත් 89.png
+URL: file://documents\NotesForDesana\NotesForDesanaNew.html/General/0004 ප්‍රසාද ඇසුරු කරගෙන පහල වන සිත් 89.png
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/General/0005 ලෝක ධාතුවේ සත්ව තල පිහිටුම.png
@@ -899,10 +866,10 @@ Status/Error: 404
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/General/0013 අකුශල කුශල අව්‍යාකෘත ලෝකෝත්තර ධර්ම.png
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/General/0013 අකුශල කුශල අව්‍යාකෘත ලෝකෝත්තර ධර්ම.png
+URL: file://documents\NotesForDesana\NotesForDesanaNew.html/General/0017 A චෛතසික පරමාර්ථ ධර්ම 52.png
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesanaNew.html/General/0017 A චෛතසික පරමාර්ථ ධර්ම 52.png
+URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/General/0013 අකුශල කුශල අව්‍යාකෘත ලෝකෝත්තර ධර්ම.png
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/General/0017 A චෛතසික පරමාර්ථ ධර්ම 52.png
@@ -941,13 +908,16 @@ Status/Error: 404
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/Chithasika/චිත්ත චෛතසික සම්ප්‍රයෝගය  එකචිත්තක්ඛණික පටිච්චසමුප්පාදය.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/Chithasika/චිත්ත චෛතසික සම්ප්‍රයෝගය  එකචිත්තක්ඛණික පටිච්චසමුප්පාදය.jpg
-Status/Error: 404
---------------------
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/Chithasika/චිත්ත චෛතසික සම්ප්‍රයෝගය පුද්ගලයන්ට ලැබෙන සිත් භුමි වලට ලැබෙන සිත්.png
 Status/Error: 404
 --------------------
+URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/Chithasika/චිත්ත චෛතසික සම්ප්‍රයෝගය  එකචිත්තක්ඛණික පටිච්චසමුප්පාදය.jpg
+Status/Error: 404
+--------------------
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/Chithasika/චිත්ත චෛතසික සම්ප්‍රයෝගය පුද්ගලයන්ට ලැබෙන සිත් භුමි වලට ලැබෙන සිත්.png
+Status/Error: 404
+--------------------
+URL: file://documents\NotesForDesana\NotesForDesanaNew.html/Chithasika/ශමථ කර්මස්ථාන සතළිස විනිශ්චය.png
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/Chithasika/ශමථ කර්මස්ථාන සතළිස විනිශ්චය.png
@@ -959,19 +929,19 @@ Status/Error: 404
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/ChiththaVeethi/0008 චක්ෂුර්ද්වාරික අතිමහන්තාරම්මණ වීථිය.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesanaNew.html/Chithasika/ශමථ කර්මස්ථාන සතළිස විනිශ්චය.png
+URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/ChiththaVeethi/0009 කුසල්-අකුසල් කාම ජවන චිත්තයන් හා ප්‍රතිසංධි විපාක.jpg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/ChiththaVeethi/0009 කුසල්-අකුසල් කාම ජවන චිත්තයන් හා ප්‍රතිසංධි විපාක.jpg
-Status/Error: 404
---------------------
-URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/ChiththaVeethi/0009 කුසල්-අකුසල් කාම ජවන චිත්තයන් හා ප්‍රතිසංධි විපාක.jpg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/ChiththaVeethi/0011 A චිත්ත වීති උදාහරණ 1-6 .jpg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/ChiththaVeethi/0011 A චිත්ත වීති උදාහරණ 1-6 .jpg
+Status/Error: 404
+--------------------
+URL: file://documents\NotesForDesana\NotesForDesanaNew.html/ChiththaVeethi/0011 A01 සම්බුදුපියාණන්ට මුගලන් මහරහතුන්ට හා ආනන්ද හාමුදුරුවන්ට  තීර්තකයෙකු බැනීම.jpg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/ChiththaVeethi/0011 A01 සම්බුදුපියාණන්ට මුගලන් මහරහතුන්ට හා ආනන්ද හාමුදුරුවන්ට  තීර්තකයෙකු බැනීම.jpg
@@ -984,9 +954,6 @@ URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/ChiththaV
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/ChiththaVeethi/0011 A03 සැදැහැවත් බෞද්ධයෙකු සම්බුදුපියාණන්ව දැකීම.jpg
-Status/Error: 404
---------------------
-URL: file://documents\NotesForDesana\NotesForDesanaNew.html/ChiththaVeethi/0011 A01 සම්බුදුපියාණන්ට මුගලන් මහරහතුන්ට හා ආනන්ද හාමුදුරුවන්ට  තීර්තකයෙකු බැනීම.jpg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/ChiththaVeethi/0011 A03 සැදැහැවත් බෞද්ධයෙකු සම්බුදුපියාණන්ව දැකීම.jpg
@@ -1028,10 +995,10 @@ Status/Error: 404
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/ChiththaVeethi/0011 B07 සතෙකුට බියකරු හඬක් ඇසීම.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/ChiththaVeethi/0011 B08 සතෙකුට දරුණු පහරක් වැදීම.jpg
+URL: file://documents\NotesForDesana\NotesForDesanaNew.html/ChiththaVeethi/0011 B08 සතෙකුට දරුණු පහරක් වැදීම.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesanaNew.html/ChiththaVeethi/0011 B08 සතෙකුට දරුණු පහරක් වැදීම.jpg
+URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/ChiththaVeethi/0011 B08 සතෙකුට දරුණු පහරක් වැදීම.jpg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/ChiththaVeethi/0011 B09 යමෙකුට බියකරු හඬක් ඇසීම.jpg
@@ -1079,10 +1046,10 @@ Status/Error: 404
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/ChiththaVeethi/0014 A මාර්ග සහ ඵල සමාපත්ති විථී.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/ChiththaVeethi/0014 A මාර්ග සහ ඵල සමාපත්ති විථී.jpg
+URL: file://documents\NotesForDesana\NotesForDesanaNew.html/ChiththaVeethi/0014 B මාර්ග සහ ඵල සමාපත්ති විථී.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesanaNew.html/ChiththaVeethi/0014 B මාර්ග සහ ඵල සමාපත්ති විථී.jpg
+URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/ChiththaVeethi/0014 A මාර්ග සහ ඵල සමාපත්ති විථී.jpg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/ChiththaVeethi/0014 B මාර්ග සහ ඵල සමාපත්ති විථී.jpg
@@ -1094,10 +1061,10 @@ Status/Error: 404
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/ChiththaVeethi/0015 A ත්‍රිහේතුක පෘතග්ජනයාගේ සිත් 54.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesanaNew.html/ChiththaVeethi/0015 B1 දුර්ගති අහේතුක සිත් 37 (සතර අපා).jpg
+URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/ChiththaVeethi/0015 B1 දුර්ගති අහේතුක සිත් 37 (සතර අපා).jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/ChiththaVeethi/0015 B1 දුර්ගති අහේතුක සිත් 37 (සතර අපා).jpg
+URL: file://documents\NotesForDesana\NotesForDesanaNew.html/ChiththaVeethi/0015 B1 දුර්ගති අහේතුක සිත් 37 (සතර අපා).jpg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/ChiththaVeethi/0015 B2 සුගති අහේතුක සිත් 41 (උපතින් අන්ධ-ගොළු).jpg
@@ -1106,28 +1073,28 @@ Status/Error: 404
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/ChiththaVeethi/0015 B2 සුගති අහේතුක සිත් 41 (උපතින් අන්ධ-ගොළු).jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesanaNew.html/ChiththaVeethi/0015 C චක්ෂුර්ද්වාරික අතිමහන්තාරම්මණ විථිය.jpg
+URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/ChiththaVeethi/0015 C චක්ෂුර්ද්වාරික අතිමහන්තාරම්මණ විථිය.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/ChiththaVeethi/0015 C චක්ෂුර්ද්වාරික අතිමහන්තාරම්මණ විථිය.jpg
+URL: file://documents\NotesForDesana\NotesForDesanaNew.html/ChiththaVeethi/0015 C චක්ෂුර්ද්වාරික අතිමහන්තාරම්මණ විථිය.jpg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/ChiththaVeethi/0016 A චක්ෂුර්ද්වාරික අතිමහන්තාරම්මණ වීථි හා මහන්තාරම්මණ වීථි.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesanaNew.html/ChiththaVeethi/0016 B චක්ෂුර්ද්වාරික පරිත්තාරම්මණ වීථි සය හා අතිපරිත්තාරම්මණ වීථි සය.jpg
+URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/ChiththaVeethi/0016 A චක්ෂුර්ද්වාරික අතිමහන්තාරම්මණ වීථි හා මහන්තාරම්මණ වීථි.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/ChiththaVeethi/0016 A චක්ෂුර්ද්වාරික අතිමහන්තාරම්මණ වීථි හා මහන්තාරම්මණ වීථි.jpg
+URL: file://documents\NotesForDesana\NotesForDesanaNew.html/ChiththaVeethi/0016 B චක්ෂුර්ද්වාරික පරිත්තාරම්මණ වීථි සය හා අතිපරිත්තාරම්මණ වීථි සය.jpg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/ChiththaVeethi/0016 B චක්ෂුර්ද්වාරික පරිත්තාරම්මණ වීථි සය හා අතිපරිත්තාරම්මණ වීථි සය.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/ChiththaVeethi/0019 B සමථ භාවනා - ආනාපාන සතිය වැඩීම ආසන්නව පහල වන චිත්ත වීථි අනුව.jpg
+URL: file://documents\NotesForDesana\NotesForDesanaNew.html/ChiththaVeethi/0019 B සමථ භාවනා - ආනාපාන සතිය වැඩීම ආසන්නව පහල වන චිත්ත වීථි අනුව.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\NotesForDesanaNew.html/ChiththaVeethi/0019 B සමථ භාවනා - ආනාපාන සතිය වැඩීම ආසන්නව පහල වන චිත්ත වීථි අනුව.jpg
+URL: file://documents\NotesForDesana\NotesForDesanaNew.html/thumbnails/ChiththaVeethi/0019 B සමථ භාවනා - ආනාපාන සතිය වැඩීම ආසන්නව පහල වන චිත්ත වීථි අනුව.jpg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\NotesForDesana_intro - org.html/VisheshaDesana/2024 08 18  Kalutara Bodhiya දර්ශන ඥානය.pdf
@@ -1154,19 +1121,19 @@ Status/Error: 404
 URL: file://documents\NotesForDesana\notes_sample.html/0003 රූප කලාපය.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\notes_sample.html/0004 ලෝක ධාතු.jpg
+URL: file://documents\NotesForDesana\notes_sample.html/thumbnails/0003 රූප කලාපය.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\notes_sample.html/thumbnails/0003 රූප කලාපය.jpg
+URL: file://documents\NotesForDesana\notes_sample.html/0004 ලෝක ධාතු.jpg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\notes_sample.html/thumbnails/0004 ලෝක ධාතු.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\notes_sample.html/0005 සත්ව තල.jpg
+URL: file://documents\NotesForDesana\notes_sample.html/thumbnails/0005 සත්ව තල.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\notes_sample.html/thumbnails/0005 සත්ව තල.jpg
+URL: file://documents\NotesForDesana\notes_sample.html/0005 සත්ව තල.jpg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\notes_sample.html/0006 චක්ෂු සහ ශෝත ප්‍රසාද.jpg
@@ -1175,10 +1142,10 @@ Status/Error: 404
 URL: file://documents\NotesForDesana\notes_sample.html/thumbnails/0006 චක්ෂු සහ ශෝත ප්‍රසාද.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\notes_sample.html/0007 ජිහ්වා සහ ඝ්‍රාණ ප්‍රසාද.jpg
+URL: file://documents\NotesForDesana\notes_sample.html/thumbnails/0007 ජිහ්වා සහ ඝ්‍රාණ ප්‍රසාද.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\notes_sample.html/thumbnails/0007 ජිහ්වා සහ ඝ්‍රාණ ප්‍රසාද.jpg
+URL: file://documents\NotesForDesana\notes_sample.html/0007 ජිහ්වා සහ ඝ්‍රාණ ප්‍රසාද.jpg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\notes_sample.html/0010 ශරීරයෙහි සියලු ප්‍රසාද.jpg
@@ -1190,10 +1157,10 @@ Status/Error: 404
 URL: file://documents\NotesForDesana\notes_sample.html/0012 රූප කලාපය වර්ග.jpeg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\notes_sample.html/thumbnails/0012 රූප කලාපය වර්ග.jpeg
+URL: file://documents\NotesForDesana\notes_sample.html/0013 ආයතන ලෙස විග්‍රහය.jpeg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\notes_sample.html/0013 ආයතන ලෙස විග්‍රහය.jpeg
+URL: file://documents\NotesForDesana\notes_sample.html/thumbnails/0012 රූප කලාපය වර්ග.jpeg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\notes_sample.html/thumbnails/0013 ආයතන ලෙස විග්‍රහය.jpeg
@@ -1226,10 +1193,10 @@ Status/Error: 404
 URL: file://documents\NotesForDesana\notes_sample.html/0018 පරමාර්ථ සහ පංචස්කන්ධය.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\notes_sample.html/thumbnails/0018 පරමාර්ථ සහ පංචස්කන්ධය.jpg
+URL: file://documents\NotesForDesana\notes_sample.html/0020 පරමාර්ථ ගති ලක්ෂණ.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\notes_sample.html/0020 පරමාර්ථ ගති ලක්ෂණ.jpg
+URL: file://documents\NotesForDesana\notes_sample.html/thumbnails/0018 පරමාර්ථ සහ පංචස්කන්ධය.jpg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\notes_sample.html/thumbnails/0020 පරමාර්ථ ගති ලක්ෂණ.jpg
@@ -1241,10 +1208,10 @@ Status/Error: 404
 URL: file://documents\NotesForDesana\notes_sample.html/thumbnails/0022 සිත් සතර ආකාරය.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\notes_sample.html/thumbnails/0023 89 ක් වූ සිත් බෙදෙන ආකාර.jpeg
+URL: file://documents\NotesForDesana\notes_sample.html/0023 89 ක් වූ සිත් බෙදෙන ආකාර.jpeg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\notes_sample.html/0023 89 ක් වූ සිත් බෙදෙන ආකාර.jpeg
+URL: file://documents\NotesForDesana\notes_sample.html/thumbnails/0023 89 ක් වූ සිත් බෙදෙන ආකාර.jpeg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\notes_sample.html/0024 ද්වාර සංග්‍රහය.jpg
@@ -1256,10 +1223,10 @@ Status/Error: 404
 URL: file://documents\NotesForDesana\notes_sample.html/0060 අකුශල සංග්‍ර‍හය සාරාංශය.jpeg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\notes_sample.html/thumbnails/0060 අකුශල සංග්‍ර‍හය සාරාංශය.jpeg
+URL: file://documents\NotesForDesana\notes_sample.html/030 ජීවිතේන්ද්‍රිය.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\notes_sample.html/030 ජීවිතේන්ද්‍රිය.jpg
+URL: file://documents\NotesForDesana\notes_sample.html/thumbnails/0060 අකුශල සංග්‍ර‍හය සාරාංශය.jpeg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\notes_sample.html/thumbnails/030 ජීවිතේන්ද්‍රිය.jpg
@@ -1274,10 +1241,10 @@ Status/Error: 404
 URL: file://documents\NotesForDesana\notes_sample.html/පටිච්චසමුප්පාදය 02 සන්තතිය.jpeg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\notes_sample.html/පටිච්චසමුප්පාදය 03.jpg
+URL: file://documents\NotesForDesana\notes_sample.html/thumbnails/පටිච්චසමුප්පාදය 02 සන්තතිය.jpeg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\notes_sample.html/thumbnails/පටිච්චසමුප්පාදය 02 සන්තතිය.jpeg
+URL: file://documents\NotesForDesana\notes_sample.html/පටිච්චසමුප්පාදය 03.jpg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\notes_sample.html/thumbnails/පටිච්චසමුප්පාදය 03.jpg
@@ -1307,10 +1274,10 @@ Status/Error: 404
 URL: file://documents\NotesForDesana\notes_sample_original.html/documents/දර්ශන ඥානය මූලික සූත්‍ර 01.pdf
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\notes_sample_original.html/thumbnails/0002 රූප පරමාර්ථ.jpg
+URL: file://documents\NotesForDesana\notes_sample_original.html/0002 රූප පරමාර්ථ.jpg
 Status/Error: 404
 --------------------
-URL: file://documents\NotesForDesana\notes_sample_original.html/0002 රූප පරමාර්ථ.jpg
+URL: file://documents\NotesForDesana\notes_sample_original.html/thumbnails/0002 රූප පරමාර්ථ.jpg
 Status/Error: 404
 --------------------
 URL: file://documents\NotesForDesana\notes_sample_original.html/General/0001 ලෝක ධාතුවේ පරමාර්ථ ධර්ම.png
@@ -1446,9 +1413,6 @@ URL: file://scripts\templates\Paramartha_Video_template.html/DVD 10 Cover.jpeg
 Status/Error: 404
 --------------------
 URL: file://scripts\templates\series_page_template.html/css/$CSSFILE$
-Status/Error: 404
---------------------
-URL: file://scripts\templates\SiyaluDesana_template.html/images/favicon-16x16.png
 Status/Error: 404
 --------------------
 URL: file://scripts\templates\SiyaluDesana_template.html/AllVideos.html
@@ -1649,4 +1613,4 @@ Status/Error: 404
 
 SUMMARY:
 ----------------------------------------
-Success rate: 19.8%
+Success rate: 20.1%
