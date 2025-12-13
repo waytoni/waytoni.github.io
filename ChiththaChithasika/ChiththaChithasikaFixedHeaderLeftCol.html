@@ -143,6 +143,7 @@
 
     </div>
 
+    <!--
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const mainScrollArea = document.getElementById('main-scroll-area');
@@ -226,6 +227,123 @@
                 mainScrollArea.scrollLeft = 0;
                 
                 // 5. Apply scroll offsets (which will now be calculated relative to the new dimensions)
+                syncScroll();
+            };
+
+            // Initialize: Set initial scale and container sizes
+            applyZoom(currentZoom);
+
+            // --- Button Listeners ---
+            zoomInBtn.addEventListener('click', () => {
+                applyZoom(currentZoom + zoomStep);
+            });
+
+            zoomOutBtn.addEventListener('click', () => {
+                applyZoom(currentZoom - zoomStep);
+            });
+        });
+    </script>
+-->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mainScrollArea = document.getElementById('main-scroll-area');
+            const headerContainer = document.getElementById('header-container');
+            const leftContainer = document.getElementById('left-container');
+            
+            const leftImg = document.getElementById('left-img');
+            const headerImg = document.getElementById('header-img');
+            const rightImg = document.getElementById('right-img');
+
+            const zoomInBtn = document.getElementById('zoom-in-btn');
+            const zoomOutBtn = document.getElementById('zoom-out-btn');
+            const zoomLevelDisplay = document.getElementById('zoom-level-display');
+
+            // --- Configuration (Original Image Dimensions) ---
+            const originalHeaderHeight = 989;
+            const originalLeftWidth = 85;
+            const originalRightWidth = 9515;
+            const originalTotalWidth = originalLeftWidth + originalRightWidth; // 4609px
+            const originalBodyHeight = 5398; 
+
+            let currentZoom = 0.25; 
+            const zoomStep = 0.05; 
+            const minZoom = 0.1;   
+            const maxZoom = 2.0;   
+
+            // --- Scroll Synchronization Handler ---
+            const syncScroll = () => {
+                const scrollTop = mainScrollArea.scrollTop;
+                const scrollLeft = mainScrollArea.scrollLeft;
+
+                // 1. Vertical Sync (Left Column)
+                leftImg.style.transform = `translateY(${-scrollTop}px)`;
+
+                // 2. Horizontal Sync (Header)
+                headerImg.style.transform = `translateX(${-scrollLeft}px)`;
+                
+                // 3. Main Content (Right)
+                rightImg.style.transform = 'none';
+            };
+
+            mainScrollArea.addEventListener('scroll', syncScroll);
+
+            // --- NEW: Mouse Wheel Scrolling Handler ---
+            mainScrollArea.addEventListener('wheel', (e) => {
+                // Prevent the default browser action (usually vertical scroll on the body/viewport)
+                e.preventDefault(); 
+                
+                // Vertical Scrolling (Normal mouse wheel motion)
+                // e.deltaY is the vertical scroll amount
+                mainScrollArea.scrollTop += e.deltaY;
+                
+                // Horizontal Scrolling (Shift + mouse wheel, common for laptops)
+                // e.deltaX is the horizontal scroll amount
+                // If the user uses a trackpad or Shift key, e.deltaX will be non-zero.
+                if (e.deltaX !== 0) {
+                    mainScrollArea.scrollLeft += e.deltaX;
+                }
+                
+                // Since we manually set the scroll position, the 'scroll' event will fire, 
+                // which automatically calls syncScroll().
+            });
+            // --- END NEW SECTION ---
+
+
+            // --- Zoom Handler: Directly manipulate width/height for accurate layout ---
+            const applyZoom = (newZoom) => {
+                // Check boundaries
+                if (newZoom < minZoom || newZoom > maxZoom) {
+                    return;
+                }
+                currentZoom = newZoom;
+
+                // 1. Update the display
+                zoomLevelDisplay.textContent = `${Math.round(currentZoom * 100)}%`;
+
+                // 2. Adjust the dimensions of the FROZEN CONTAINERS (DIVs)
+                headerContainer.style.height = `${originalHeaderHeight * currentZoom}px`;
+                leftContainer.style.width = `${originalLeftWidth * currentZoom}px`;
+
+                // 3. Adjust the dimensions of the IMAGES (Content sizing)
+                
+                // Header Image
+                headerImg.style.width = `${originalTotalWidth * currentZoom}px`;
+                headerImg.style.height = `${originalHeaderHeight * currentZoom}px`; 
+                
+                // Left Image
+                leftImg.style.width = `${originalLeftWidth * currentZoom}px`;
+                leftImg.style.height = `${originalBodyHeight * currentZoom}px`;
+                
+                // Right Image
+                rightImg.style.width = `${originalRightWidth * currentZoom}px`;
+                rightImg.style.height = `${originalBodyHeight * currentZoom}px`;
+                
+                // 4. Reset scroll to top-left corner on zoom change
+                mainScrollArea.scrollTop = 0;
+                mainScrollArea.scrollLeft = 0;
+                
+                // 5. Apply scroll offsets
                 syncScroll();
             };
 
