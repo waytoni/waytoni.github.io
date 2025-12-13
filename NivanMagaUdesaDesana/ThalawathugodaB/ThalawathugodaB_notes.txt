@@ -21,7 +21,16 @@ img::/NivanMagaUdesaDesana/ThalawathugodaB/docs/ThalawathugodaB2_1080.jpg
 සමිද්ධි ලෝකපඤ්හ සූත්‍රය url::https://tipitaka.lk/sn-4-1-7-6
 #3
 <a href="https://www.youtube.com/playlist?list=PLqESXbJ82aIg0mR-UZR7_2TbzU6lHOHY0" target="_blank">පරමාර්ථ ධර්ම</a>
-
+#4
+img::/NivanMagaUdesaDesana/ThalawathugodaB/docs/2025-12-13 pic1.jpg 
+img::/NivanMagaUdesaDesana/ThalawathugodaB/docs/2025-12-13 pic2.jpg 
+img::/NivanMagaUdesaDesana/ThalawathugodaB/docs/2025-12-13 pic3.jpg 
+img::/NivanMagaUdesaDesana/ThalawathugodaB/docs/2025-12-13 pic4.jpg 
+img::/NivanMagaUdesaDesana/ThalawathugodaB/docs/2025-12-13 pic5.jpg 
+img::/NivanMagaUdesaDesana/ThalawathugodaB/docs/2025-12-13 pic6.jpg
+img::/NivanMagaUdesaDesana/ThalawathugodaB/docs/2025-12-13 pic7.jpg 
+img::/NivanMagaUdesaDesana/ThalawathugodaB/docs/2025-12-13 pic8.jpg
+img::/NivanMagaUdesaDesana/ThalawathugodaB/docs/2025-12-13 pic9.jpg
 #7
 #301
 #1000
