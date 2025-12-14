@@ -18,7 +18,8 @@
     }
     
     body {
-        font-family: 'Abhaya Libre', serif;
+        font-family: 'Noto Sans Sinhala', sans-serif;
+        /* font-family: 'Abhaya Libre', sans-serif; */
         line-height: 1.4;
         color: #333;
         background-color: #f9f9f9;
@@ -93,21 +94,39 @@
     .card-link:hover {
         color: #d4af37;
     }
-    
+    /*
     .card-link::before {
         content: "📿 ";
         margin-right: 10px;
         font-size: 1.2em;
     }
-    
+    */
+    .card-link::before {
+        content: "+ ";
+        margin-right: 10px;
+        font-size: 1.2em;
+    }
+
+    /*
     .card-link.collapsed::before {
         content: "📿 ";
     }
+*/
+
+    .card-link.collapsed::before {
+        content: "+ ";
+    }
     
+    /*
     .card-link.expanded::before {
         content: "🔽 ";
     }
-    
+    */
+
+    .card-link.expanded::before {
+        content: "- ";
+    }
+
     .card-content {
         padding: 1rem 0;
         overflow: hidden;
