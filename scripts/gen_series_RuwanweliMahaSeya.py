@@ -38,6 +38,6 @@ def gen_series():
 # RuwanweliMahaSeya
 base_folder = "VisheshaDesana/RuwanweliMahaSeya"  # Replace with your series folder name
 html_file = "RuwanweliMahaSeya.html"  # Output HTML file name
-css_file = "series_page_style_green.css"  # CSS file to use
+css_file = "series_page_style_green_RuwanweliSaya.css"  # CSS file to use
 json_file = "RuwanweliMahaSeya.json"  # Output JSON file name
 gen_series()

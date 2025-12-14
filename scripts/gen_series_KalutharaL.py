@@ -38,6 +38,6 @@ def gen_series():
 # L_series
 base_folder = "KalutaraBodhiya/L_series"  # Replace with your series folder name
 html_file = "L_series.html"  # Output HTML file name
-css_file = "series_page_style_green.css"  # CSS file to use
+css_file = "series_page_style_green_Kaluthara.css"  # CSS file to use
 json_file = "L_series.json"  # Output JSON file name
 gen_series()

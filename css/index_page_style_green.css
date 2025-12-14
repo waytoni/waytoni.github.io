@@ -30,8 +30,10 @@
         }
         
         .hero-section {
+            /* background: linear-gradient(rgba(44, 85, 48, 0.85), rgba(44, 85, 48, 0.85)), 
+                        url('/images/buddha-2909937_960_720.png') center/cover no-repeat;  */
             background: linear-gradient(rgba(44, 85, 48, 0.85), rgba(44, 85, 48, 0.85)), 
-                        url('/images/buddha-2909937_960_720.png') center/cover no-repeat;
+                        url('/images/ruwanweliseya-anuradhapura.jpg') center/cover no-repeat;            
             color: var(--light-text);
             padding: 10px 10px;
             text-align: center;
