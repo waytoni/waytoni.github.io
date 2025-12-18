@@ -10,7 +10,7 @@
 ## TITLE ##
 # This is the title used in the final HTML file
 
-පොල්ගස්ඕවිට පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (B කන්ඩායම - දෙවන කොටස)
+පොල්ගස්ඕවිට පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (B කන්ඩායම - දෙවන කොටස)
 
 ## SERIES_TITLE ##
 # This is optional. If not specified, sames the TITLE info will be used.
