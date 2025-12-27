@@ -24,6 +24,8 @@
 ඛන්‍ධක වර්‍ගය &rarr; උප්පාද වර්‍ගය (චක්ඛු සූත්‍රය, රූප සූත්‍රය, විඤ්ඤාණ සූත්‍රය, ඵස්ස සූත්‍රය, &hellip;, ඛන්‍ධ සූත්‍රය) url::https://tipitaka.lk/sn-3-5-1/sinh
 #13
 <a href="/Paramartha_Video/ParamarthaDharma.html">පරමාර්ථ ධර්ම - 5 videos</a>
+#15
+ද්විත්ව නිරෝධය pdf::/documents/SutraPDFs/ද්විත්ව නිරෝධය.pdf
 #110
 ඛජ්ජනීය සුත්තං  pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
 ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
