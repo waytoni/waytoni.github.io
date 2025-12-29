@@ -1,1 +1,0 @@
-css_file = "series_page_style_green_Kaluthara.css"  # CSS file to use
