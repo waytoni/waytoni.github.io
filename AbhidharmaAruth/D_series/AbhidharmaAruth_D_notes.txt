@@ -13,6 +13,9 @@
 </div>
 #6
 <a href="https://www.youtube.com/playlist?list=PLqESXbJ82aIg0mR-UZR7_2TbzU6lHOHY0" target="_blank">පරමාර්ථ ධර්ම</a>
-
+#9
+අභිධර්ම මාර්ගය පොතේ 2.4 අකුශල චෛතසික තුදුස url::https://pitaka.lk/books/abhidharma-margaya/3-4.html
+අභිධර්මයේ මූලික කරුණු පොතේ අකුශල චෛතසික තුදුස url::https://pitaka.lk/books/abhidharmaye-mulika-karunu/8-3.html
+අභිධර්ම මාර්ගය පොතේ 7.1 අකුශල සංග්‍ර‍හය url::https://pitaka.lk/books/abhidharma-margaya/8-1.html
 #200
 #1000
