@@ -20,7 +20,7 @@
 ## TIME ###
 # This information is necessary for all on-going series.
 
-<p>සෑම පොහොදිනකම පෙරවරු 8:00 සිට 11:00 දක්වා</p>
+<p>සෑම පොහොදිනකම පෙරවරු 8:00 සිට 10:30 දක්වා</p>
 
 ## LOCATION ##
 # This information is optional; however, add this for all on-going series
@@ -39,7 +39,7 @@
 # Use the date format YYYY-MM-DD
 # Provide the file name in Zoom_Info folder that contains the Zoom information.
 # Default file name is ZoomInfo_basic.html
-2025-11-11
+2025-01-31
 ZoomInfo_basic.html
 
 ## VIDEO_SELECTOR ##
