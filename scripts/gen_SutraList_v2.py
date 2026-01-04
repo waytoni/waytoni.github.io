@@ -1,31 +1,8 @@
 import os
 import glob
-import re
-import unicodedata
 
 template_file = 'scripts/templates/SutraPathrika_template.html'
-
-def normalize_sinhala(text):
-    """Normalize Sinhala text for better sorting"""
-    # Normalize to NFC form (canonical decomposition followed by canonical composition)
-    normalized = unicodedata.normalize('NFC', text)
-    return normalized
-
-def extract_link_text(html):
-    """Extract text from HTML link for sorting"""
-    # Remove HTML tags and get just the text
-    text = re.sub(r'<[^>]+>', '', html)
-    # Remove common prefixes if present
-    text = text.strip()
-    return text
-
-def sort_sinhala_key(item):
-    """Create a sorting key for Sinhala text"""
-    # Extract the text part from the HTML
-    text = extract_link_text(item)
-    # Normalize the text for consistent sorting
-    return normalize_sinhala(text)
-
+        
 # Read template
 try:
     with open(template_file, 'r', encoding='utf-8') as f:
@@ -55,6 +32,8 @@ if os.path.exists(shared_pdfs_file):
     # Parse the shared content to extract links
     # Assuming each link is in a separate <a> tag
     # We'll wrap each link in <li> tags
+    import re
+    # Find all anchor tags
     anchor_tags = re.findall(r'<a\s+[^>]*href="[^"]+"[^>]*>.*?</a>', shared_content, re.DOTALL)
     
     for anchor in anchor_tags:
@@ -62,9 +41,6 @@ if os.path.exists(shared_pdfs_file):
         cleaned_anchor = anchor.strip()
         if cleaned_anchor:
             pdf_list_items.append(f'<li>{cleaned_anchor}</li>')
-
-# Sort all items by Sinhala text
-pdf_list_items.sort(key=sort_sinhala_key)
 
 # Combine all items
 pdf_list = '\n'.join(pdf_list_items)
