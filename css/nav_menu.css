@@ -122,3 +122,8 @@ body {
     text-align: left;
   }
 }
+
+.pali {
+    font-family: 'Noto Sans Sinhala', sans-serif;
+    background-color: #fff3cd;
+}

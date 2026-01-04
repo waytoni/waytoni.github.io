@@ -27,6 +27,7 @@
 #15
 ද්විත්ව නිරෝධය pdf::/documents/SutraPDFs/ද්විත්ව නිරෝධය.pdf
 #16
+සුසීම සුත්තං pdf::/documents/SutraPDFs/සුසීම සුත්තං.pdf
 ද්විත්ව නිරෝධය pdf::/documents/SutraPDFs/ද්විත්ව නිරෝධය.pdf
 අභිධර්ම මාර්ගය පොතේ 2.4 අකුශල චෛතසික තුදුස url::https://pitaka.lk/books/abhidharma-margaya/3-4.html
 අභිධර්මයේ මූලික කරුණු පොතේ අකුශල චෛතසික තුදුස url::https://pitaka.lk/books/abhidharmaye-mulika-karunu/8-3.html

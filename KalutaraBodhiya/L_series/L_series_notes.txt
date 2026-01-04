@@ -26,6 +26,7 @@
 #13
 ද්විත්ව නිරෝධය pdf::/documents/SutraPDFs/ද්විත්ව නිරෝධය.pdf
 #14
+සුසීම සුත්තං pdf::/documents/SutraPDFs/සුසීම සුත්තං.pdf
 ද්විත්ව නිරෝධය pdf::/documents/SutraPDFs/ද්විත්ව නිරෝධය.pdf
 අභිධර්ම මාර්ගය පොතේ 2.4 අකුශල චෛතසික තුදුස url::https://pitaka.lk/books/abhidharma-margaya/3-4.html
 අභිධර්මයේ මූලික කරුණු පොතේ අකුශල චෛතසික තුදුස url::https://pitaka.lk/books/abhidharmaye-mulika-karunu/8-3.html
@@ -33,6 +34,7 @@
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 03.jpg
 img::/KalutaraBodhiya/L_series/docs/L14_20251228.jpg
 #15
+සුසීම සුත්තං pdf::/documents/SutraPDFs/සුසීම සුත්තං.pdf
 කොට්ඨිත අනිච්ච සූත්‍රය url::https://tipitaka.lk/sn-4-1-16-7/
 අතීත යදනිච්ච සූත්‍රය url::https://tipitaka.lk/sn-4-1-17-17/sinh
 <a href="https://drive.google.com/file/d/1N3SsVtu4lVoXpvQPyKXvRc3Abk92taHy/view?usp=sharing" target="_blank">
