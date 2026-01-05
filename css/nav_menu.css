@@ -124,9 +124,11 @@ body {
 }
 
 .pali {
-    font-family: 'Noto Sans Sinhala', sans-serif;
+    font-family: 'Noto Sans Sinhala', sans-serif; 
     /* color: #341C02; */
-    font-family: 'Abhaya Libre', sans-serif;
+    /* font-family: 'Abhaya Libre', sans-serif; */
+    font-size: 1.1em;
     color: #550000;
-    background-color: #ffed29;  
+    /* background-color: #ffed29;  
+    background-color: rgb(239, 240, 226); */
 }

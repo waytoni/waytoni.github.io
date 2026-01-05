@@ -2,8 +2,29 @@
 ශ්‍රී ලංකා තිපිටක පෙළ, අටුවා සහ සිංහල පරිවර්තනය url::https://tipitaka.lk
 දුක්ඛ සූත්‍රය url::https://tipitaka.lk/sn-4-4-14
 සඞ්ගීති සූත්‍රය url::https://tipitaka.lk/dn-3-10
+දේශනාවේ සටහන් url::https://drive.google.com/drive/folders/1tGRIO98ix67Jc5lVnvPSv9j1DvO1NifV
+සත්ව තල img::/documents/NotesForDesana/0005 සත්ව තල.jpg
 #1
+දේශනාවේ සටහන් url::https://drive.google.com/drive/folders/1G0XFK7Qjcpb0RZeCqphlVfnd1zARodGE
 #2
+දේශනාවේ සටහන් url::https://drive.google.com/drive/folders/1Ci-6ApGrtumbav4N8Xo1_Xs_XFDT6yG-
+ලෝක ධාතු img::/documents/NotesForDesana/0004 ලෝක ධාතු.jpg
+#3
+දේශනාවේ සටහන් url::https://drive.google.com/drive/folders/1GAJGiL3qW39zsVjwk9eeV3QIouc-w3vs
+#4
+දේශනාවේ සටහන් url::https://drive.google.com/drive/folders/1_PqMFIGSizta4he54Mwd3N13WyF76CXX
+#6
+දේශනාවේ සටහන් url::https://drive.google.com/drive/folders/12hDNXqzERYBx3jopzuQXqsOUFeItaEl2
+#7
+දේශනාවේ සටහන් url::https://drive.google.com/drive/folders/1PqWnTqw-Zgg-XnO_PbN-gJT_DWdPjGth
+#10
+දේශනාවේ සටහන් url::https://drive.google.com/drive/folders/1FKvOl8RC1D7IZ5IvHs1FMxZrk_PgN_C9
+#11
+දේශනාවේ සටහන් url::https://drive.google.com/drive/folders/1PGfd2mrvbzl8B-4XI4rzE4JXxhT8A2tr
+#13
+දේශනාවේ සටහන් url::https://drive.google.com/drive/folders/1qhxLY28wAa-ByJUs7g1TeH3SdmkB7xH5
+#22
+දේශනාවේ සටහන් url::https://drive.google.com/drive/folders/10dsuGIAIfucsF6BYZT7hO10l2XRju7Gp
 #29
 #123
 සමිද්ධි සත්තපඤ්හ සූත්‍රය  url::https://tipitaka.lk/sn-4-1-7-4
@@ -22,8 +43,8 @@
 #131
 ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
 #134
-Four Noble truths for Young Buddhist - English pdf::../documents/pdfs/Four Noble truths for Young Buddhist - English Final.pdf
-Four Noble truths for Young Buddhist -sinhala pdf::../documents/pdfs/Four Noble truths for Young Buddhist -sinhala.pdf
+Four Noble truths for Young Buddhist - English pdf::/documents/pdfs/Four Noble truths for Young Buddhist - English Final.pdf
+Four Noble truths for Young Buddhist -sinhala pdf::/documents/pdfs/Four Noble truths for Young Buddhist -sinhala.pdf
 #135
 ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
 #136
