@@ -1,10 +1,11 @@
-name: Update Ruwanweli Saya Deshana series Lesson Links
+name: Update Ruwanweli Saya Deshana series Lesson Links 
 
 on:
   push:
     paths:
-      - 'VisheshaDeshana/RuwanweliMahaSeya/RuwanweliMahaSeya_ytlinks.txt'     
-      - 'VisheshaDeshana/RuwanweliMahaSeya/RuwanweliMahaSeya_notes.txt'       
+      - 'VisheshaDesana/RuwanweliMahaSeya/RuwanweliMahaSeya_info.txt'     
+      - 'VisheshaDesana/RuwanweliMahaSeya/RuwanweliMahaSeya_notes.txt'    
+      - 'VisheshaDesana/RuwanweliMahaSeya/RuwanweliMahaSeya_ytlinks.txt'
    
 jobs:
   run-python-script-RuwanweliMahaSeya:
