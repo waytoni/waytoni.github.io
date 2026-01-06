@@ -32,6 +32,7 @@
 අභිධර්ම මාර්ගය පොතේ 2.4 අකුශල චෛතසික තුදුස url::https://pitaka.lk/books/abhidharma-margaya/3-4.html
 අභිධර්මයේ මූලික කරුණු පොතේ අකුශල චෛතසික තුදුස url::https://pitaka.lk/books/abhidharmaye-mulika-karunu/8-3.html
 අභිධර්ම මාර්ගය පොතේ 7.1 අකුශල සංග්‍ර‍හය url::https://pitaka.lk/books/abhidharma-margaya/8-1.html
+<a href="/documents/NotesForDesana/Chithasika/0017 සිත් චෛතසික පුද්ගල භුමි වගුව.jpg">සිත් චෛතසික පුද්ගල භුමි වගුව</a> img::/documents/NotesForDesana/Chithasika/0017 සිත් චෛතසික පුද්ගල භුමි වගුව.jpg
 #110
 ඛජ්ජනීය සුත්තං  pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
 ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
