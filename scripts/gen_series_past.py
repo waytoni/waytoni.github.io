@@ -49,42 +49,42 @@ json_file = "J_series.json"  # Output JSON file name
 gen_series()
 
 # I_series
-base_folder = "KalutaraBodhiya/I_series"  # Replace with your series folder name
+base_folder = "completed/KalutaraBodhiya/I_series"  # Replace with your series folder name
 html_file = "I_series.html"  # Output HTML file name
 css_file = "series_page_style_green_Kaluthara.css"  # CSS file to use
 json_file = "I_series.json"  # Output JSON file name
 gen_series()
 
 # H_series
-base_folder = "KalutaraBodhiya/H_series"  # Replace with your series folder name
+base_folder = "completed/KalutaraBodhiya/H_series"  # Replace with your series folder name
 html_file = "H_series.html"  # Output HTML file name
 css_file = "series_page_style_green_Kaluthara.css"  # CSS file to use
 json_file = "H_series.json"  # Output JSON file name
 gen_series()
 
 # G_series
-base_folder = "KalutaraBodhiya/G_series"  # Replace with your series folder name
+base_folder = "completed/KalutaraBodhiya/G_series"  # Replace with your series folder name
 html_file = "G_series.html"  # Output HTML file name
 css_file = "series_page_style_green_Kaluthara.css"  # CSS file to use
 json_file = "G_series.json"  # Output JSON file name
 gen_series()
 
 # F_series
-base_folder = "KalutaraBodhiya/F_series"  # Replace with your series folder name
+base_folder = "completed/KalutaraBodhiya/F_series"  # Replace with your series folder name
 html_file = "F_series.html"  # Output HTML file name
 css_file = "series_page_style_green_Kaluthara.css"  # CSS file to use
 json_file = "F_series.json"  # Output JSON file name
 gen_series()
 
 # E_series
-base_folder = "KalutaraBodhiya/E_series"  # Replace with your series folder name
+base_folder = "completed/KalutaraBodhiya/E_series"  # Replace with your series folder name
 html_file = "E_series.html"  # Output HTML file name
 css_file = "series_page_style_green_Kaluthara.css"  # CSS file to use
 json_file = "E_series.json"  # Output JSON file name
 gen_series()
 
 # A_series
-base_folder = "KalutaraBodhiya/A_series"  # Replace with your series folder name
+base_folder = "completed/KalutaraBodhiya/A_series"  # Replace with your series folder name
 html_file = "A_series.html"  # Output HTML file name
 css_file = "series_page_style_green_Kaluthara.css"  # CSS file to use
 json_file = "A_series.json"  # Output JSON file name
@@ -112,7 +112,7 @@ json_file = "AbhidharmaAruthB1.json"  # Output JSON file name
 gen_series()
 
 # AbhidharmaAruthEP
-base_folder = "AbhidharmaAruth/EP_series"  # Replace with your series folder name
+base_folder = "completed/AbhidharmaAruth/EP_series"  # Replace with your series folder name
 html_file = "AbhidharmaAruthEP.html"  # Output HTML file name
 css_file = "series_page_style_green.css"  # CSS file to use
 json_file = "AbhidharmaAruthEP.json"  # Output JSON file name
@@ -141,28 +141,28 @@ json_file = "AbhidharmaASeries.json"  # Output JSON file name
 gen_series()
 
 # සුතමයඤාණං - ඉත්තෑපාන අක්කර
-base_folder = "Suthamaya/Ittapane/"  # Replace with your series folder name
+base_folder = "completed/Suthamaya/Ittapane/"  # Replace with your series folder name
 html_file = "SuthamayaIttapane.html"  # Output HTML file name
 css_file = "series_page_style_green.css"  # CSS file to use
 json_file = "suthmaya_Ittapane.json"  # Output JSON file name
 gen_series()
 
 # සුතමයඤාණං - හිරිගල් ගොඩැල්ල ශ්‍රී පුෂ්පාරාමය
-base_folder = "Suthamaya/Hirigal/"  # Replace with your series folder name
+base_folder = "completed/Suthamaya/Hirigal/"  # Replace with your series folder name
 html_file = "SuthamayaHirigal.html"  # Output HTML file name
 css_file = "series_page_style_green.css"  # CSS file to use
 json_file = "suthmayaHirigal.json"  # Output JSON file name
 gen_series()
 
 # සුතමයඤාණං දේශනා මාලාව - ශ්‍රී සුධර්ශනාරාම මහා විහාරය මතුගම
-base_folder = "Suthamaya/Mathugama/"  # Replace with your series folder name
+base_folder = "completed/Suthamaya/Mathugama/"  # Replace with your series folder name
 html_file = "SuthamayaMathugama.html"  # Output HTML file name
 css_file = "series_page_style_green.css"  # CSS file to use
 json_file = "suthmayaMathugama.json"  # Output JSON file name
 gen_series()
 
 # YouthForTruth
-base_folder = "YouthForTruth"  # Replace with your series folder name
+base_folder = "completed/YouthForTruth"  # Replace with your series folder name
 html_file = "YouthForTruth.html"  # Output HTML file name
 css_file = "series_page_style_green.css"  # CSS file to use
 json_file = "YouthForTruth.json"  # Output JSON file name
