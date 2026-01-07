@@ -10,7 +10,7 @@
 ## TITLE ##
 # This is the title used in the final HTML file
 
-22024 කළුතර බෝධියේදී පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (J Series)
+2024 කළුතර බෝධියේදී පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (J Series)
 
 ## SERIES_TITLE ##
 # This is optional. If not specified, sames the TITLE info will be used.

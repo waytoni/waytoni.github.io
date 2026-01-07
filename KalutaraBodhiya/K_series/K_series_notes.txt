@@ -31,17 +31,22 @@
 ස්කන්‍ධ විභඞ්ගය url::https://tipitaka.lk/ap-vbh-1-1
 ඛජ්ජනීය සුත්තං  url::https://tipitaka.lk/sn-3-1-2-3-7
 #25
-img::/documents/images/පටිච්චසමුප්පාදය 02.jpg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpeg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpeg
 #26
-img::/documents/images/පටිච්චසමුප්පාදය 03 Low Re.jpg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpeg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpeg
 #27
-img::/documents/images/පටිච්චසමුප්පාදය 03 Low Re.jpg
-img::/documents/NotesForDesana/030 ජීවිතේන්ද්‍රිය.jpg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpeg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpeg
+img::/documents/NotesForDesana/0044 ජීවිතේන්ද්‍රිය.jpg
 #28
-img::/documents/NotesForDesana/030 ජීවිතේන්ද්‍රිය.jpg
-img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02 සන්තතිය.jpeg
+img::/documents/NotesForDesana/0044 ජීවිතේන්ද්‍රිය.jpg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpeg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpeg
 #29
-img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02 සන්තතිය.jpeg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpeg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpeg
 #30
 රේරුකානේ චන්දවිමල හිමියන්ගේ පටිච්ච සමුප්පාද විවරණය පොත (PDF) url::https://www.ogatharana.org/bookDownCounter.php?booknumber=17
 රේරුකානේ චන්දවිමල හිමියන්ගේ පටිච්ච සමුප්පාද විවරණය පොත (HTML) url::https://tipitaka.lk/library/474

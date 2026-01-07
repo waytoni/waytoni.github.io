@@ -52,21 +52,25 @@
 රේරුකානේ චන්දවිමල හිමියන්ගේ පටිච්ච සමුප්පාද විවරණය පොත (HTML) url::https://tipitaka.lk/library/474
 රේරුකානේ චන්දවිමල හිමියන්ගේ පටිච්ච සමුප්පාද විවරණය පොත (PDF) url::https://www.ogatharana.org/bookDownCounter.php?booknumber=17
 #22
-img::/documents/images/පටිච්චසමුප්පාදය 02.jpg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpeg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpeg
 #23
-img::/documents/images/පටිච්චසමුප්පාදය 03 Low Re.jpg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpeg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpeg
 #24
-img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02 සන්තතිය.jpeg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpeg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpeg
 #25
 රේරුකානේ චන්දවිමල හිමියන්ගේ පටිච්ච සමුප්පාද විවරණය පොත (PDF) url::https://www.ogatharana.org/bookDownCounter.php?booknumber=17
 රේරුකානේ චන්දවිමල හිමියන්ගේ පටිච්ච සමුප්පාද විවරණය පොත (HTML) url::https://tipitaka.lk/library/474
-img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02 සන්තතිය.jpeg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpeg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpeg
 #26
 විභංග සුත්තං (PDF) pdf::/documents/SutraPDFs/විභංග සුත්තං.pdf
 මහා නිදාන සුත්තං (PDF) pdf::/documents/SutraPDFs/මහා නිදාන සුත්තං.pdf
 අචේලකස්සප සුත්තං (PDF) pdf::/documents/SutraPDFs/අචේලකස්සප සුත්තං.pdf
-img::/documents/images/පටිච්චසමුප්පාදය 03 Low Re.jpg
-img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02 සන්තතිය.jpeg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpeg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpeg
 #27
 රේරුකානේ චන්දවිමල හිමියන්ගේ පටිච්ච සමුප්පාද විවරණය පොත (PDF) url::https://www.ogatharana.org/bookDownCounter.php?booknumber=17
 රේරුකානේ චන්දවිමල හිමියන්ගේ පටිච්ච සමුප්පාද විවරණය පොත (HTML) url::https://tipitaka.lk/library/474
