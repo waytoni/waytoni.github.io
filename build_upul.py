@@ -16,8 +16,6 @@
 # <index> <optional description> <youtube link (URL)> <date>
 
 
-# from scripts.py import build_series_ShortDhammaDiscussions
-
 
 menu_change = False
 
@@ -53,7 +51,7 @@ if menu_change == True:
     gen_SiyaluDesana
 
     # Update
-    # Chithatha_Chithasika (old page), and Vishesha Desana
+    # Chithatha_Chithasika (old page)
   
  
 #list_AllVideos
