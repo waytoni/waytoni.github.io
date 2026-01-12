@@ -29,7 +29,7 @@
 # This information is optional; however, add this for all on-going series
 # You may add html code to this selection.
 
-කළුතර බෝධි පරිශ්‍රයේදී 
+<a href="https://maps.app.goo.gl/3VKsNN4KB1ozcGZZ9">කළුතර බෝධි පරිශ්‍රයේදී</a> 
 
 ## CONTACT ##
 # This information is optional; however, add this for all on-going series
