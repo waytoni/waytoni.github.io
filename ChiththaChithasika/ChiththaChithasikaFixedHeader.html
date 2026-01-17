@@ -1,676 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <!-- Google tag (gtag.js) -->
-  <script async="" src="https://www.googletagmanager.com/gtag/js?id=GT-MBNDJTD">
-  </script>
-  <script>
-   window.dataLayer = window.dataLayer || [];
+     <!-- Google tag (gtag.js) -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=GT-MBNDJTD">
+    </script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'GT-MBNDJTD');
-  </script>
-  <link href="/favicon.ico" rel="icon" type="image/x-icon"/>
-  <link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
-  <link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
-  <link href="/site.webmanifest" rel="manifest"/>
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'GT-MBNDJTD');
+    </script>
+    <link href="/favicon.ico" rel="icon" type="image/x-icon"/>
+    <link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+    <link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+    <link href="/site.webmanifest" rel="manifest"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>චිත්ත සහ චෛතසික Chiththa Saha Chithisika with fixed header</title>
+    <title>චිත්ත සහ චෛතසික (with Frozen Panes)</title>
     <style>
-        body, html {
+        /* --- General Layout & Reset --- */
+        body {
             margin: 0;
             padding: 0;
-            height: 100%;
-            background-color: #f0f0f0;
-            overflow: hidden;
-        }
-
-        .container {
+            font-family: Arial, sans-serif;
+            overflow: hidden; 
             display: flex;
             flex-direction: column;
             height: 100vh;
-            width: 100vw;
-            overflow: hidden;
         }
 
-        /* Header canvas - dynamic height based on zoom */
-        .header-canvas-container {
-            width: 100%;
-            border-bottom: 2px solid #666;
-            background-color: #fff;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        #headerCanvas {
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-
-        /* Body canvas with scrollbar */
-        .body-canvas-container {
-            flex: 1;
-            width: 100%;
-            overflow: auto;
-            background-color: #fafafa;
-        }
-
-        .body-canvas-wrapper {
-            position: relative;
-            width: fit-content;
-            height: fit-content;
-        }
-
-        #bodyCanvas {
-            display: block;
-        }
-
-        /* Custom scrollbar styling */
-        .body-canvas-container::-webkit-scrollbar {
-            width: 14px;
-            height: 14px;
-        }
-
-        .body-canvas-container::-webkit-scrollbar-track {
-            background: #e8e8e8;
-        }
-
-        .body-canvas-container::-webkit-scrollbar-thumb {
-            background: #666;
-            border-radius: 7px;
-            border: 3px solid #e8e8e8;
-        }
-
-        .body-canvas-container::-webkit-scrollbar-thumb:hover {
-            background: #444;
-        }
-
-        .body-canvas-container::-webkit-scrollbar-corner {
-            background: #e8e8e8;
-        }
-
-        .scroll-info {
-            position: fixed;
-            bottom: 15px;
-            right: 15px;
-            background: rgba(0, 0, 0, 0.85);
-            color: white;
-            padding: 8px 15px;
-            border-radius: 6px;
-            font-family: 'Courier New', monospace;
-            font-size: 13px;
-            z-index: 1000;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-        }
-
-        .zoom-controls {
-            position: fixed;
-            top: 15px;
-            right: 15px;
-            z-index: 1000;
+        /* --- Zoom Control Container --- */
+        #zoom-control-container {
+            position: absolute; 
+            top: 10px;
+            left: 10px;
+            z-index: 20; 
+            background: rgba(255, 255, 255, 0.9);
+            padding: 5px 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
             display: flex;
-            gap: 5px;
+            gap: 10px;
+            align-items: center;
+            background-color: #FFD700; 
+            /* background-color: rgb(219, 241, 95); */
         }
-
-        .zoom-controls button {
-            padding: 8px 12px;
-            background: rgba(0, 0, 0, 0.85);
-            color: white;
-            border: none;
-            border-radius: 4px;
+        #zoom-control-container button {
             cursor: pointer;
-            font-size: 16px;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            background: #eee;
+            border-radius: 3px;
+            background-color: cyan;
+            font-size: 1.4em;
+        }
+        #zoom-control-container span {
             font-weight: bold;
-            transition: background 0.2s;
-            min-width: 50px;
+            font-size: 1.4em;
         }
 
-        .zoom-controls button:hover {
-            background: rgba(0, 0, 0, 0.95);
+        /* --- 1. Header (Freeze Top) --- */
+        #header-container {
+            /* Width 100% means it spans the viewport width */
+            width: 100%;
+            height: 989px; 
+            flex-shrink: 0;
+            z-index: 10; 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Hides image parts scrolled out */
+            background-color: white; 
+        }
+        #header-img {
+            width: 9600px; /* Initial full width */
+            height: 100%;
+            display: block;
+            position: relative; /* Essential for JS translateX scroll sync */
         }
 
-        #resetZoom {
-            background: rgba(52, 152, 219, 0.85);
+        /* --- 2. Main Content Area (Below Header) --- */
+        #body-content-wrapper {
+            display: flex;
+            flex-grow: 1; 
+            overflow: hidden; 
         }
 
-        #resetZoom:hover {
-            background: rgba(41, 128, 185, 0.95);
+        /* --- 3. Left Column (Freeze Left) --- */
+        #left-container {
+            width: 85px; 
+            flex-shrink: 0; 
+            z-index: 5; 
+            box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden; 
+        }
+        #left-img {
+            width: 100%;
+            height: 5398px; 
+            display: block;
+            position: relative; /* Essential for JS translateY scroll sync */
+        }
+
+        /* --- 4. Main Scrollable Area (Bottom Right) --- */
+        #main-scroll-area {
+            flex-grow: 1; 
+            overflow: auto; /* The sole scroll container */
+        }
+        #right-img {
+            width: 9515px; 
+            height: 5398px; 
+            display: block;
+            position: relative;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header-canvas-container" id="headerContainer">
-            <canvas id="headerCanvas"></canvas>
-        </div>
-        
-        <div class="body-canvas-container" id="bodyScrollContainer">
-            <div class="body-canvas-wrapper">
-                <canvas id="bodyCanvas"></canvas>
-            </div>
-        </div>
+
+    <div id="zoom-control-container">
+        <button id="zoom-out-btn">-</button>
+        <span id="zoom-level-display">100%</span>
+        <button id="zoom-in-btn">+</button>
     </div>
 
-    <div class="zoom-controls">
-        <button id="zoomOut">-</button>
-        <button id="resetZoom">25%</button>
-        <button id="zoomIn">+</button>
+    <div id="header-container">
+        <img id="header-img" src="cc_h.jpg" alt="Header">
     </div>
 
-    <div class="scroll-info" id="scrollInfo">Scroll: H=0, V=0 | Zoom: 25%</div>
+    <div id="body-content-wrapper">
+
+        <div id="left-container">
+            <img id="left-img" src="body_left.jpg" alt="Left Column">
+        </div>
+
+        <div id="main-scroll-area">
+            <img id="right-img" src="body_right.jpg" alt="Main Content">
+        </div>
+
+    </div>
 
     <script>
-        // Get DOM elements
-        const headerCanvas = document.getElementById('headerCanvas');
-        const bodyCanvas = document.getElementById('bodyCanvas');
-        const bodyScrollContainer = document.getElementById('bodyScrollContainer');
-        const headerContainer = document.getElementById('headerContainer');
-        const scrollInfo = document.getElementById('scrollInfo');
-        const zoomInBtn = document.getElementById('zoomIn');
-        const zoomOutBtn = document.getElementById('zoomOut');
-        const resetZoomBtn = document.getElementById('resetZoom');
-        
-        // Create contexts
-        const headerCtx = headerCanvas.getContext('2d');
-        const bodyCtx = bodyCanvas.getContext('2d');
-        
-        // Image variables
-        let headerImage = null;
-        let bodyImage = null;
-        let imagesLoaded = 0;
-        const totalImages = 2;
-        
-        // Image dimensions (from your specification)
-        const IMAGE_WIDTH = 9600;
-        const HEADER_HEIGHT = 989;
-        const BODY_HEIGHT = 5417;
-        
-        // Zoom/Scale settings - START AT 25%
-        let scale = 0.25; // Changed from 1.0 to 0.25
-        const MIN_SCALE = 0.1;
-        const MAX_SCALE = 3.0;
-        const SCALE_STEP = 0.1;
-        const DEFAULT_SCALE = 0.25; // Added default scale
-        
-        // Initialize canvases with proper dimensions
-        function initCanvas() {
-            // Calculate scaled dimensions
-            const scaledHeaderHeight = HEADER_HEIGHT * scale;
-            const scaledBodyHeight = BODY_HEIGHT * scale;
-            const scaledWidth = IMAGE_WIDTH * scale;
+        document.addEventListener('DOMContentLoaded', () => {
+            const mainScrollArea = document.getElementById('main-scroll-area');
+            const headerContainer = document.getElementById('header-container');
+            const leftContainer = document.getElementById('left-container');
             
-            // Set header canvas dimensions (full width)
-            headerCanvas.width = scaledWidth;
-            headerCanvas.height = scaledHeaderHeight;
-            
-            // Update header container
-            headerContainer.style.height = scaledHeaderHeight + 'px';
-            
-            // Set body canvas dimensions (full size)
-            bodyCanvas.width = scaledWidth;
-            bodyCanvas.height = scaledBodyHeight;
-            
-            // Update zoom button text
-            updateZoomButtonText();
-            
-            console.log('Canvas dimensions:', {
-                header: `${headerCanvas.width}x${headerCanvas.height}`,
-                body: `${bodyCanvas.width}x${bodyCanvas.height}`,
-                scale: scale
+            const leftImg = document.getElementById('left-img');
+            const headerImg = document.getElementById('header-img');
+            const rightImg = document.getElementById('right-img');
+
+            const zoomInBtn = document.getElementById('zoom-in-btn');
+            const zoomOutBtn = document.getElementById('zoom-out-btn');
+            const zoomLevelDisplay = document.getElementById('zoom-level-display');
+
+            // --- Configuration (Original Image Dimensions) ---
+            const originalHeaderHeight = 989;
+            const originalLeftWidth = 85;
+            const originalRightWidth = 9515;
+            const originalTotalWidth = originalLeftWidth + originalRightWidth; // 9600
+            const originalBodyHeight = 5398; 
+
+            let currentZoom = 0.25; 
+            const zoomStep = 0.025; 
+            const minZoom = 0.1;   
+            const maxZoom = 1.0;   
+
+            // --- Scroll Synchronization Handler ---
+            const syncScroll = () => {
+                const scrollTop = mainScrollArea.scrollTop;
+                const scrollLeft = mainScrollArea.scrollLeft;
+
+                // 1. Vertical Sync (Left Column)
+                leftImg.style.transform = `translateY(${-scrollTop}px)`;
+
+                // 2. Horizontal Sync (Header)
+                headerImg.style.transform = `translateX(${-scrollLeft}px)`;
+                
+                // 3. Main Content (Right)
+                rightImg.style.transform = 'none';
+            };
+
+            mainScrollArea.addEventListener('scroll', syncScroll);
+
+            // --- NEW: Mouse Wheel Scrolling Handler ---
+            mainScrollArea.addEventListener('wheel', (e) => {
+                // Prevent the default browser action (usually vertical scroll on the body/viewport)
+                e.preventDefault(); 
+                
+                // Vertical Scrolling (Normal mouse wheel motion)
+                // e.deltaY is the vertical scroll amount
+                mainScrollArea.scrollTop += e.deltaY;
+                
+                // Horizontal Scrolling (Shift + mouse wheel, common for laptops)
+                // e.deltaX is the horizontal scroll amount
+                // If the user uses a trackpad or Shift key, e.deltaX will be non-zero.
+                if (e.deltaX !== 0) {
+                    mainScrollArea.scrollLeft += e.deltaX;
+                }
+                
+                // Since we manually set the scroll position, the 'scroll' event will fire, 
+                // which automatically calls syncScroll().
             });
             
-            // Draw images at current scroll position
-            drawImages(bodyScrollContainer.scrollLeft, bodyScrollContainer.scrollTop);
-        }
-        
-        // Update zoom button text
-        function updateZoomButtonText() {
-            resetZoomBtn.textContent = `${Math.round(scale * 100)}%`;
-        }
-        
-        // Load images
-        headerImage = new Image();
-        bodyImage = new Image();
-        
-        headerImage.onload = bodyImage.onload = function() {
-            imagesLoaded++;
-            if (imagesLoaded === totalImages) {
-                console.log('Images loaded:', {
-                    header: `${headerImage.width}x${headerImage.height}`,
-                    body: `${bodyImage.width}x${bodyImage.height}`
-                });
-                initCanvas();
-                setupEventListeners();
-                
-                // Center the view after images load
-                setTimeout(() => {
-                    centerView();
-                }, 100);
-            }
-        };
-        
-        headerImage.onerror = function() {
-            console.error('Failed to load header image');
-            headerImage = createPlaceholderImage(IMAGE_WIDTH, HEADER_HEIGHT, 'Header Image', '#4a6fa5');
-        };
-        
-        bodyImage.onerror = function() {
-            console.error('Failed to load body image');
-            bodyImage = createPlaceholderImage(IMAGE_WIDTH, BODY_HEIGHT, 'Body Image', '#6a994e');
-        };
-        
-        headerImage.src = 'cc_h.jpg';
-        bodyImage.src = 'cc_b.jpg';
-        
-        // Create placeholder image if actual images fail to load
-        function createPlaceholderImage(width, height, text, color) {
-            const img = new Image();
-            const canvas = document.createElement('canvas');
-            const ctx = canvas.getContext('2d');
-            
-            canvas.width = width;
-            canvas.height = height;
-            
-            // Fill background
-            ctx.fillStyle = color + '20';
-            ctx.fillRect(0, 0, width, height);
-            
-            // Draw pattern
-            ctx.strokeStyle = color + '40';
-            ctx.lineWidth = 2;
-            ctx.setLineDash([10, 5]);
-            
-            for (let x = 0; x < width; x += 100) {
-                ctx.beginPath();
-                ctx.moveTo(x, 0);
-                ctx.lineTo(x, height);
-                ctx.stroke();
-            }
-            
-            for (let y = 0; y < height; y += 100) {
-                ctx.beginPath();
-                ctx.moveTo(0, y);
-                ctx.lineTo(width, y);
-                ctx.stroke();
-            }
-            
-            // Draw text
-            ctx.fillStyle = color;
-            ctx.font = 'bold 48px Arial';
-            ctx.textAlign = 'center';
-            ctx.textBaseline = 'middle';
-            ctx.fillText(text, width / 2, height / 2);
-            
-            ctx.font = '24px Arial';
-            ctx.fillText(`${width} × ${height}`, width / 2, height / 2 + 60);
-            
-            img.src = canvas.toDataURL();
-            return img;
-        }
-        
-        // Center the view on initial load
-        function centerView() {
-            if (!bodyCanvas.width || !bodyScrollContainer.clientWidth) return;
-            
-            const maxScrollX = Math.max(0, bodyCanvas.width - bodyScrollContainer.clientWidth);
-            const maxScrollY = Math.max(0, bodyCanvas.height - bodyScrollContainer.clientHeight);
-            
-            const centerX = maxScrollX / 2;
-            const centerY = maxScrollY / 2;
-            
-            bodyScrollContainer.scrollLeft = centerX;
-            bodyScrollContainer.scrollTop = centerY;
-            headerContainer.scrollLeft = centerX;
-            
-            drawImages(centerX, centerY);
-        }
-        
-        function drawImages(scrollX, scrollY) {
-            // Clear both canvases completely
-            headerCtx.clearRect(0, 0, headerCanvas.width, headerCanvas.height);
-            bodyCtx.clearRect(0, 0, bodyCanvas.width, bodyCanvas.height);
-            
-            // Draw header image with translation
-            if (headerImage.complete) {
-                headerCtx.save();
-                headerCtx.translate(-scrollX, 0);
-                
-                headerCtx.drawImage(
-                    headerImage,
-                    0, 0,
-                    IMAGE_WIDTH, HEADER_HEIGHT,
-                    0, 0,
-                    IMAGE_WIDTH * scale, HEADER_HEIGHT * scale
-                );
-                
-                headerCtx.restore();
-            }
-            
-            // Draw body image with translation
-            if (bodyImage.complete) {
-                bodyCtx.save();
-                
-                // Apply translation for both horizontal and vertical scrolling
-                bodyCtx.translate(-scrollX, -scrollY);
-                
-                // Draw the ENTIRE body image at its full scaled size
-                bodyCtx.drawImage(
-                    bodyImage,
-                    0, 0,
-                    IMAGE_WIDTH, BODY_HEIGHT,
-                    0, 0,
-                    IMAGE_WIDTH * scale, BODY_HEIGHT * scale
-                );
-                
-                bodyCtx.restore();
-            }
-            
-            // Update scroll info
-            const maxScrollX = Math.max(0, bodyCanvas.width - bodyScrollContainer.clientWidth);
-            const maxScrollY = Math.max(0, bodyCanvas.height - bodyScrollContainer.clientHeight);
-            const percentX = maxScrollX > 0 ? Math.round((scrollX / maxScrollX) * 100) : 0;
-            const percentY = maxScrollY > 0 ? Math.round((scrollY / maxScrollY) * 100) : 0;
-            
-            scrollInfo.textContent = `H: ${Math.round(scrollX)}/${Math.round(maxScrollX)} (${percentX}%) | V: ${Math.round(scrollY)}/${Math.round(maxScrollY)} (${percentY}%) | Zoom: ${Math.round(scale * 100)}%`;
-            
-            // Sync header scroll
-            headerContainer.scrollLeft = scrollX;
-        }
-        
-        function updateZoom(newScale) {
-            // Clamp scale to min/max
-            newScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, newScale));
-            
-            // Get current scroll position
-            const scrollX = bodyScrollContainer.scrollLeft;
-            const scrollY = bodyScrollContainer.scrollTop;
-            
-            // Calculate what's at the center of the viewport
-            const viewportCenterX = scrollX + (bodyScrollContainer.clientWidth / 2);
-            const viewportCenterY = scrollY + (bodyScrollContainer.clientHeight / 2);
-            
-            // Convert viewport center to image coordinates at current scale
-            const imageCenterX = viewportCenterX / scale;
-            const imageCenterY = viewportCenterY / scale;
-            
-            // Update scale
-            scale = newScale;
-            
-            // Reinitialize canvas with new scale
-            initCanvas();
-            
-            // Convert image coordinates back to viewport coordinates at new scale
-            const newViewportCenterX = imageCenterX * scale;
-            const newViewportCenterY = imageCenterY * scale;
-            
-            // Calculate new scroll position to keep the same point centered
-            const newScrollX = newViewportCenterX - (bodyScrollContainer.clientWidth / 2);
-            const newScrollY = newViewportCenterY - (bodyScrollContainer.clientHeight / 2);
-            
-            // Apply new scroll position with bounds checking
-            const maxScrollX = Math.max(0, bodyCanvas.width - bodyScrollContainer.clientWidth);
-            const maxScrollY = Math.max(0, bodyCanvas.height - bodyScrollContainer.clientHeight);
-            
-            const finalScrollX = Math.max(0, Math.min(newScrollX, maxScrollX));
-            const finalScrollY = Math.max(0, Math.min(newScrollY, maxScrollY));
-            
-            // Set scroll positions
-            bodyScrollContainer.scrollLeft = finalScrollX;
-            bodyScrollContainer.scrollTop = finalScrollY;
-            headerContainer.scrollLeft = finalScrollX;
-            
-            // Draw images at new position
-            drawImages(finalScrollX, finalScrollY);
-        }
-        
-        function setupEventListeners() {
-            let isDragging = false;
-            let startX, startY, startScrollLeft, startScrollTop;
-            
-            // Mouse drag for both canvases
-            [headerCanvas, bodyCanvas].forEach(canvas => {
-                canvas.addEventListener('mousedown', (e) => {
-                    isDragging = true;
-                    startX = e.clientX;
-                    startY = e.clientY;
-                    startScrollLeft = bodyScrollContainer.scrollLeft;
-                    startScrollTop = bodyScrollContainer.scrollTop;
-                    canvas.style.cursor = 'grabbing';
-                    e.preventDefault();
-                });
-                
-                canvas.addEventListener('mousemove', (e) => {
-                    if (!isDragging) return;
-                    
-                    const deltaX = e.clientX - startX;
-                    const deltaY = e.clientY - startY;
-                    
-                    // Update scroll position (inverse movement)
-                    const newScrollLeft = startScrollLeft - deltaX;
-                    const newScrollTop = startScrollTop - deltaY;
-                    
-                    // Apply with bounds checking
-                    const maxScrollX = Math.max(0, bodyCanvas.width - bodyScrollContainer.clientWidth);
-                    const maxScrollY = Math.max(0, bodyCanvas.height - bodyScrollContainer.clientHeight);
-                    
-                    const finalScrollLeft = Math.max(0, Math.min(newScrollLeft, maxScrollX));
-                    const finalScrollTop = Math.max(0, Math.min(newScrollTop, maxScrollY));
-                    
-                    bodyScrollContainer.scrollLeft = finalScrollLeft;
-                    bodyScrollContainer.scrollTop = finalScrollTop;
-                    headerContainer.scrollLeft = finalScrollLeft;
-                    
-                    e.preventDefault();
-                });
-                
-                canvas.addEventListener('mouseup', () => {
-                    isDragging = false;
-                    canvas.style.cursor = 'grab';
-                });
-                
-                canvas.addEventListener('mouseleave', () => {
-                    isDragging = false;
-                    canvas.style.cursor = 'grab';
-                });
-                
-                // Change cursor style
-                canvas.style.cursor = 'grab';
-            });
-            
-            // Scroll event listener for the body container
-            bodyScrollContainer.addEventListener('scroll', () => {
-                const scrollX = bodyScrollContainer.scrollLeft;
-                const scrollY = bodyScrollContainer.scrollTop;
-                
-                // Sync header scroll with body
-                headerContainer.scrollLeft = scrollX;
-                
-                drawImages(scrollX, scrollY);
-            });
-            
-            // Also sync when header is scrolled
-            headerContainer.addEventListener('scroll', () => {
-                const scrollX = headerContainer.scrollLeft;
-                
-                // Sync body scroll with header horizontally
-                bodyScrollContainer.scrollLeft = scrollX;
-                
-                drawImages(scrollX, bodyScrollContainer.scrollTop);
-            });
-            
-            // Keyboard navigation
-            document.addEventListener('keydown', (e) => {
-                const scrollStep = 100;
-                let scrollX = bodyScrollContainer.scrollLeft;
-                let scrollY = bodyScrollContainer.scrollTop;
-                
-                // Handle Ctrl+/- for zoom
-                if ((e.ctrlKey || e.metaKey) && (e.key === '+' || e.key === '=')) {
-                    updateZoom(scale + SCALE_STEP);
-                    e.preventDefault();
+
+            // --- Zoom Handler: Directly manipulate width/height for accurate layout ---
+            const applyZoom = (newZoom) => {
+                // Check boundaries
+                if (newZoom < minZoom || newZoom > maxZoom) {
                     return;
                 }
-                if ((e.ctrlKey || e.metaKey) && e.key === '-') {
-                    updateZoom(scale - SCALE_STEP);
-                    e.preventDefault();
-                    return;
-                }
-                if ((e.ctrlKey || e.metaKey) && e.key === '0') {
-                    updateZoom(DEFAULT_SCALE); // Changed from 1.0 to DEFAULT_SCALE
-                    e.preventDefault();
-                    return;
-                }
+                currentZoom = newZoom;
+
+                // 1. Update the display
+                zoomLevelDisplay.textContent = `${Math.round(currentZoom * 100)}%`;
+
+                // 2. Adjust the dimensions of the FROZEN CONTAINERS (DIVs)
+                headerContainer.style.height = `${originalHeaderHeight * currentZoom}px`;
+                leftContainer.style.width = `${originalLeftWidth * currentZoom}px`;
+
+                // 3. Adjust the dimensions of the IMAGES (Content sizing)
                 
-                switch(e.key) {
-                    case 'ArrowLeft':
-                        scrollX -= scrollStep;
-                        break;
-                    case 'ArrowRight':
-                        scrollX += scrollStep;
-                        break;
-                    case 'ArrowUp':
-                        scrollY -= scrollStep;
-                        break;
-                    case 'ArrowDown':
-                        scrollY += scrollStep;
-                        break;
-                    case 'Home':
-                        if (e.ctrlKey) {
-                            scrollX = 0;
-                            scrollY = 0;
-                        } else {
-                            scrollX = 0;
-                        }
-                        break;
-                    case 'End':
-                        if (e.ctrlKey) {
-                            scrollX = bodyCanvas.width - bodyScrollContainer.clientWidth;
-                            scrollY = bodyCanvas.height - bodyScrollContainer.clientHeight;
-                        } else {
-                            scrollX = bodyCanvas.width - bodyScrollContainer.clientWidth;
-                        }
-                        break;
-                    case 'PageUp':
-                        scrollY -= bodyScrollContainer.clientHeight * 0.9;
-                        break;
-                    case 'PageDown':
-                        scrollY += bodyScrollContainer.clientHeight * 0.9;
-                        break;
-                    default:
-                        return;
-                }
+                // Header Image
+                headerImg.style.width = `${originalTotalWidth * currentZoom}px`;
+                headerImg.style.height = `${originalHeaderHeight * currentZoom}px`; 
                 
-                // Ensure scroll boundaries
-                const maxScrollX = Math.max(0, bodyCanvas.width - bodyScrollContainer.clientWidth);
-                const maxScrollY = Math.max(0, bodyCanvas.height - bodyScrollContainer.clientHeight);
-                scrollX = Math.max(0, Math.min(scrollX, maxScrollX));
-                scrollY = Math.max(0, Math.min(scrollY, maxScrollY));
+                // Left Image
+                leftImg.style.width = `${originalLeftWidth * currentZoom}px`;
+                leftImg.style.height = `${originalBodyHeight * currentZoom}px`;
                 
-                // Apply scroll to both
-                bodyScrollContainer.scrollLeft = scrollX;
-                bodyScrollContainer.scrollTop = scrollY;
-                headerContainer.scrollLeft = scrollX;
+                // Right Image
+                rightImg.style.width = `${originalRightWidth * currentZoom}px`;
+                rightImg.style.height = `${originalBodyHeight * currentZoom}px`;
                 
-                e.preventDefault();
+                // 4. Reset scroll to top-left corner on zoom change
+                mainScrollArea.scrollTop = 0;
+                mainScrollArea.scrollLeft = 0;
+                
+                // 5. Apply scroll offsets
+                syncScroll();
+            };
+
+            // Initialize: Set initial scale and container sizes
+            applyZoom(currentZoom);
+
+            // --- Button Listeners ---
+            zoomInBtn.addEventListener('click', () => {
+                applyZoom(currentZoom + zoomStep);
             });
-            
-            // Zoom controls
-            zoomInBtn.addEventListener('click', () => updateZoom(scale + SCALE_STEP));
-            zoomOutBtn.addEventListener('click', () => updateZoom(scale - SCALE_STEP));
-            resetZoomBtn.addEventListener('click', () => updateZoom(DEFAULT_SCALE)); // Changed from 1.0 to DEFAULT_SCALE
-            
-            // Mouse wheel zoom (Ctrl+Scroll)
-            bodyScrollContainer.addEventListener('wheel', (e) => {
-                if (e.ctrlKey) {
-                    e.preventDefault();
-                    const delta = e.deltaY > 0 ? -SCALE_STEP : SCALE_STEP;
-                    updateZoom(scale + delta);
-                }
-            }, { passive: false });
-            
-            // Touch support for mobile devices
-            let touchStartDistance = null;
-            
-            bodyScrollContainer.addEventListener('touchstart', (e) => {
-                if (e.touches.length === 1) {
-                    startX = e.touches[0].clientX;
-                    startY = e.touches[0].clientY;
-                    startScrollLeft = bodyScrollContainer.scrollLeft;
-                    startScrollTop = bodyScrollContainer.scrollTop;
-                } else if (e.touches.length === 2) {
-                    // Pinch zoom start
-                    const dx = e.touches[0].clientX - e.touches[1].clientX;
-                    const dy = e.touches[0].clientY - e.touches[1].clientY;
-                    touchStartDistance = Math.sqrt(dx * dx + dy * dy);
-                    e.preventDefault();
-                }
-            }, { passive: false });
-            
-            bodyScrollContainer.addEventListener('touchmove', (e) => {
-                if (e.touches.length === 1 && touchStartDistance === null) {
-                    // Single finger scroll
-                    const deltaX = startX - e.touches[0].clientX;
-                    const deltaY = startY - e.touches[0].clientY;
-                    
-                    const newScrollLeft = startScrollLeft + deltaX;
-                    const newScrollTop = startScrollTop + deltaY;
-                    
-                    // Apply with bounds checking
-                    const maxScrollX = Math.max(0, bodyCanvas.width - bodyScrollContainer.clientWidth);
-                    const maxScrollY = Math.max(0, bodyCanvas.height - bodyScrollContainer.clientHeight);
-                    
-                    const finalScrollLeft = Math.max(0, Math.min(newScrollLeft, maxScrollX));
-                    const finalScrollTop = Math.max(0, Math.min(newScrollTop, maxScrollY));
-                    
-                    bodyScrollContainer.scrollLeft = finalScrollLeft;
-                    bodyScrollContainer.scrollTop = finalScrollTop;
-                    headerContainer.scrollLeft = finalScrollLeft;
-                    
-                    e.preventDefault();
-                } else if (e.touches.length === 2 && touchStartDistance !== null) {
-                    // Two finger pinch zoom
-                    const dx = e.touches[0].clientX - e.touches[1].clientX;
-                    const dy = e.touches[0].clientY - e.touches[1].clientY;
-                    const touchDistance = Math.sqrt(dx * dx + dy * dy);
-                    
-                    const zoomFactor = touchDistance / touchStartDistance;
-                    updateZoom(scale * zoomFactor);
-                    
-                    touchStartDistance = touchDistance;
-                    e.preventDefault();
-                }
-            }, { passive: false });
-            
-            bodyScrollContainer.addEventListener('touchend', () => {
-                touchStartDistance = null;
+
+            zoomOutBtn.addEventListener('click', () => {
+                applyZoom(currentZoom - zoomStep);
             });
-        }
-        
-        // Handle window resize
-        window.addEventListener('resize', () => {
-            if (imagesLoaded === totalImages) {
-                // Update header container height based on current scale
-                headerContainer.style.height = (HEADER_HEIGHT * scale) + 'px';
-                
-                const scrollX = bodyScrollContainer.scrollLeft;
-                const scrollY = bodyScrollContainer.scrollTop;
-                drawImages(scrollX, scrollY);
-            }
-        });
-        
-        // Initial setup when page loads
-        window.addEventListener('load', () => {
-            if (imagesLoaded === totalImages) {
-                // Center the view initially
-                centerView();
-            }
         });
     </script>
+
 </body>
 </html>
