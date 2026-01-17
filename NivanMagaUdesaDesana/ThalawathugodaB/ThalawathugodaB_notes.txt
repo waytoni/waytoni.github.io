@@ -38,5 +38,9 @@ img::/documents/NotesForDesana/පටිච්චසමුප්පාදය%200
 සුසීම සුත්තං pdf::/documents/SutraPDFs/සුසීම සුත්තං.pdf
 #7
 ඉන්ද්‍රියභාවනා සුත්තං pdf::/documents/SutraPDFs/ඉන්ද්‍රියභාවනා සුත්තං.pdf
+#8
+ඉන්ද්‍රියභාවනා සුත්තං pdf::/documents/SutraPDFs/ඉන්ද්‍රියභාවනා සුත්තං.pdf
+සංස්කාර පැහැදිලි කිරීම සඳහා භාවිත කල සූත්‍ර මාලාවක් pdf::/documents/SutraPDFs/සංස්කාර පැහැදිලි කිරීම සඳහා භාවිත කල සූත්‍ර මාලාවක්.pdf
+#9
 #301
 #1000
