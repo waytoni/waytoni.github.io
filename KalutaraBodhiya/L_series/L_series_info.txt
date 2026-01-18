@@ -3,16 +3,16 @@
 # This information must be present.
 # The introductory information will contain html code
 
-#            <h1>කල්‍යාණ මිත්‍ර අජන්ත සම්පත් ගුරුතුමා මෙහෙයවන</h1>
+#           <h1>කල්‍යාණ මිත්‍ර අජන්ත සම්පත් ගුරුතුමා මෙහෙයවන</h1>
             <h1>ගරු අජන්ත සම්පත් ගුරුතුමා</h1>
             <p>මෙහෙයවන</p>
-            <h1>2025 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව </h1>
+            <h1>2025-26 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව </h1>
             <p>දොළොස්වන (L) කන්ඩායම</p>
 
 ## TITLE ##
 # This is the title used in the final HTML file
 
-2025 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන දේශනා මාලාව (L Series)
+2025-26 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන දේශනා මාලාව (L Series)
 
 ## SERIES_TITLE ##
 # This is optional. If not specified, sames the TITLE info will be used.
@@ -42,8 +42,8 @@
 # Use the date format YYYY-MM-DD
 # Provide the file name in Zoom_Info folder that contains the Zoom information.
 # Default file name is ZoomInfo_basic.html
-2025-11-11
-ZoomInfo_basic.html
+2026-01-31
+ZoomInfo_special.html
 
 ## VIDEO_SELECTOR ##
 # The video_number given in this section will point to the video that will be shown when a series page is opened.
