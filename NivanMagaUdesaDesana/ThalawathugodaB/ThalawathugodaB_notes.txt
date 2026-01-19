@@ -42,6 +42,7 @@ img::/documents/NotesForDesana/පටිච්චසමුප්පාදය%200
 ඉන්ද්‍රියභාවනා සුත්තං pdf::/documents/SutraPDFs/ඉන්ද්‍රියභාවනා සුත්තං.pdf
 සංස්කාර පැහැදිලි කිරීම සඳහා භාවිත කල සූත්‍ර මාලාවක් pdf::/documents/SutraPDFs/සංස්කාර පැහැදිලි කිරීම සඳහා භාවිත කල සූත්‍ර මාලාවක්.pdf
 චිත්ත සහ චෛතසික චක්‍රය url::/ChiththaChithasika/index.html
+<a href="https://pitaka.lk/books/abhidharma-margaya/6-9.html">අභිධර්ම මාර්ගය පොතේ 5.9 කාමාවචර කුශලයේ විපාක</a>
 img::/NivanMagaUdesaDesana/ThalawathugodaB/docs/2026-01-17-pic1.jpg
 img::/NivanMagaUdesaDesana/ThalawathugodaB/docs/2026-01-17-pic2.jpg
 #9

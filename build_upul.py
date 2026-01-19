@@ -17,7 +17,7 @@
 
 
 
-menu_change = False
+menu_change = True
 
 if menu_change == True:
     from scripts import gen_series_past
@@ -45,7 +45,9 @@ if menu_change == True:
     # The following files are updated using load-template.js script
     # Paramartha_Video/ParamarthaDarama.html
     # 404.html
-    # KalutaraBodhiya/B_C_D_Batches.html
+    # completed/KalutaraBodhiya/B_C_D_Batches.html
+    # Chithatha_Chithasika/Chiththa_Chithasika.html
+   
     
     from scripts import gen_SiyaluDesana
     gen_SiyaluDesana
