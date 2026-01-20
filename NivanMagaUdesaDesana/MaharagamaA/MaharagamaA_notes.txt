@@ -60,6 +60,7 @@ img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
 #19
 චිත්ත සහ චෛතසික සටහන  url::/ChiththaChithasika/ChiththaChithasikaFixedHeader.html
+දුතිය කම්ම සුත්තං url::https://tripitaka.online/sutta/9109
 #110
 ඛජ්ජනීය සුත්තං  pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
 ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
