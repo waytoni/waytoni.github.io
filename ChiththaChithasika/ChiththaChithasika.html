@@ -19,6 +19,7 @@
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="/scripts/nav_function.js"></script>
+    <script src="/scripts/templates/load-template.js"></script>
      <link rel="stylesheet" type="text/css" href="/css/style_blue.css">
 	<style>
 		h1,
@@ -33,27 +34,9 @@
 	<title>චිත්ත සහ චෛතසික</title>
 </head>
 <body>
+
     <div class="topnav" id="Topnavbar">
-        <a href="https://waytoni.com/" class="active"><i style="font-size:24px" class="fa">&#xf015;</i></a>
-        <a href="../All_Playlists/SiyaluDesana.html">පසුගිය සහ සියලුම දේශනා</a>
-        <a href="../Paramartha_Video/Paramartha_Video.html">පරමාර්ථ ලෝකය දේශනා </a>
-        <a href="../Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html">අනිච්ච, දුක්ඛ, අනත්ත දේශනා </a>
-        <a href="../Chithatha_Chithasika/Chiththa_Chithasika.html">චිත්ත සහ චෛතසික</a>
-        <div class="dropdown">
-          <button class="dropbtn">දැනට පැවැත්වෙන දේශනා
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="../Nivan_Maga_Udesa/index.html">නිවන් මග උදෙසා දර්ශන ඥානය (A කණ්ඩායම)</a>
-            <a href="../Saturday_Abhidhamma_Lesson/index.html">තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා</a>
-            <a href="../Abhidharma_Aruth/">අභිධර්ම අරුත් දේශනා</a>
-            <a href="../KalutaraBodhiya/J_series/J_series.html">කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥානය (B කණ්ඩායම) දේශනා මාලාව</a>
-            <a href="../Suthamaya/SuthamayaHirigal.html">සුතමයඤාණං දේශනා</a>
-            <a href="../VisheshaDesana/index.html">විශේෂ දේශනා</a>
-            <a href="../KalutaraBodhiya/I_series/I_series.html">කළුතර බෝධි පරිශ්‍රයේදී පැවැත්වුන 9වෙනි දේශනා මාලාව</a>
-          </div>
-        </div> 
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navFunction()">&#9776;</a>
+    <!-- Content will be loaded here automatically by load-template.js-->
     </div>
 
     <h3>අජන්තා සම්පත් ගුරුතුමා විසින් සකස් කරන ලද</h3>
@@ -62,19 +45,19 @@
     <div id="zoom-message" id="C1"></div>
 
     <div class="image-container">
-        <img class="zoom" src="LowResoChart - Ajantha Sampath Guruthuma.jpg" id="CCC" alt="LowResoChart Ajantha Sampath Guruthuma.jpg">
+        <img class="zoom" src="/ChiththaChithasika/LowResoChart - Ajantha Sampath Guruthuma.jpg" id="CCC" alt="LowResoChart Ajantha Sampath Guruthuma.jpg">
     </div>
 
     <div class="container">
            
         <p></p>
-        <img id="sideA1" src="SideA1.jpg" alt="SideA-1" style="width: 100%;" />
+        <img id="sideA1" src="/ChiththaChithasika/SideA1.jpg" alt="SideA-1" style="width: 100%;" />
         <p></p>
         <img id="sideA2" src="SideA2.jpg" alt="SideA-2" width="100%"/>
     </div>
 
 
-    <script src="../scripts/wheelzoom.js" type="text/javascript"></script>
+    <script src="/scripts/wheelzoom.js" type="text/javascript"></script>
 
     <script>
         wheelzoom(document.querySelector('img.zoom'));

@@ -94,7 +94,7 @@ https://www.youtube.com/embed/2hDGaDHIYWQ
 ## NOTESDESCRIPTION
 2025 07 10 පටිච්චසමුප්පාදය සටහන
 ## NOTESLOCATION
-docs/2025 07 10 පටිච්චසමුප්පාදය සටහන.pdf
+./docs/2025 07 10 පටිච්චසමුප්පාදය සටහන.pdf
 ## ZOOMINFO
 
 ## CARDINFO
