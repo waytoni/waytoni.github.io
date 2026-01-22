@@ -3,7 +3,7 @@ name: Update Vishesha Deshana series
 on:
   push:
     paths:
-      - 'VisheshaDeshana/VisheshaDesana_info.txt'     
+      - 'VisheshaDeshana/vishesha_desana_info.txt'     
       - 'scripts/templates/VisheshaDesana_template.html'       
    
 jobs:
