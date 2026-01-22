@@ -124,7 +124,7 @@ Kalutara Bodhiya දර්ශන ඥානය (2024-12-22) v2
 දේසනාව සඳහා භාවිතා කරන මූලික සුත්‍ර
 නිබ්බේධික සුත්තං (PDF)
 ## NOTESLOCATION
-/documents/pdfs/නිබ්බේධික සුත්තං.pdf
+/documents/SutraPDFs/නිබ්බේධික සුත්තං.pdf
 ## NOTESDESCRIPTION
 නිබ්බේධික සුත්තං (Web Link)
 ## NOTESLOCATION
