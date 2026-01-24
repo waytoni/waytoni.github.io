@@ -35,10 +35,11 @@ def generate_thumbnails_for_folder(folder_path, thumbnails_base_path, folder_nam
     """Generate thumbnails for all images in a folder"""
     image_extensions = ('.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff')
     
+  
     for filename in os.listdir(folder_path):
         if filename.lower().endswith(image_extensions):
             source_path = os.path.join(folder_path, filename)
-            
+           
             # Determine thumbnail path based on whether it's a subfolder or base
             if folder_name:
                 thumb_path = os.path.join(thumbnails_base_path, folder_name, filename)
@@ -64,10 +65,11 @@ def prepare_image_grid(image_files, base_folder="", thumb_folder=""):
             image_path = file
             thumb_path = f"{thumb_folder}/{file}"
         
-        image_grid += f'<div class="grid-item">'
+        
+        image_grid += f'\t\t\t<div class="grid-item">'
         image_grid += f'<a href="{image_path}"><img src="{thumb_path}" alt="{file}"></a>'
         image_grid += f'<p>{file}</p>'
-        image_grid += '</div>'
+        image_grid += '</div>\n'
     return image_grid 
 
 def get_image_files(folder_path):
@@ -137,6 +139,7 @@ def main():
     base_images = get_image_files(basepath)
     if base_images:
         base_images_content = prepare_image_grid(base_images, "", "thumbnails") 
+        #base_images_content = prepare_image_grid(base_images, basepath, "thumbnails") 
     
     template_content = template_content.replace('$MAIN_FOLDER_IMAGES$', base_images_content)
     print("Successfully replaced main folder images")
