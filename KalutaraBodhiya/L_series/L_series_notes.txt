@@ -57,5 +57,8 @@ img::/KalutaraBodhiya/L_series/docs/L14_20251228.jpg
 #17
 චිත්ත සහ චෛතසික චක්‍රය url::/ChiththaChithasika/index.html
 <a href="https://pitaka.lk/books/abhidharma-margaya/6-9.html">අභිධර්ම මාර්ගය පොතේ 5.9 කාමාවචර කුශලයේ විපාක</a>
+#18
+චිත්ත සහ චෛතසික චක්‍රය url::/ChiththaChithasika/index.html
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpeg
 #99
 end
