@@ -31,8 +31,8 @@
 අභිධර්ම මාර්ගය පොතේ 2.4 අකුශල චෛතසික තුදුස url::https://pitaka.lk/books/abhidharma-margaya/3-4.html
 අභිධර්මයේ මූලික කරුණු පොතේ අකුශල චෛතසික තුදුස url::https://pitaka.lk/books/abhidharmaye-mulika-karunu/8-3.html
 අභිධර්ම මාර්ගය පොතේ 7.1 අකුශල සංග්‍ර‍හය url::https://pitaka.lk/books/abhidharma-margaya/8-1.html
-img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpeg
-img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpeg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
 img::/KalutaraBodhiya/L_series/docs/L14_20251228.jpg
 #15
 සුසීම සුත්තං pdf::/documents/SutraPDFs/සුසීම සුත්තං.pdf
@@ -59,6 +59,7 @@ img::/KalutaraBodhiya/L_series/docs/L14_20251228.jpg
 <a href="https://pitaka.lk/books/abhidharma-margaya/6-9.html">අභිධර්ම මාර්ගය පොතේ 5.9 කාමාවචර කුශලයේ විපාක</a>
 #18
 චිත්ත සහ චෛතසික චක්‍රය url::/ChiththaChithasika/index.html
-img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpeg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
 #99
 end
