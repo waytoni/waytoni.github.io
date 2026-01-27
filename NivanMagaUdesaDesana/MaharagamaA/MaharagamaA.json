@@ -41,7 +41,7 @@
      },
      {
           "index": 5,
-          "comment": "තිණ්ණං සංගති",
+          "comment": "ධර්මතා 18 තිණ්ණං සංගති",
           "url": "https://www.youtube.com/watch?v=PTfdF9tUFm4",
           "date": "2025-10-14",
           "video_id": "PTfdF9tUFm4",
@@ -51,7 +51,7 @@
      },
      {
           "index": 6,
-          "comment": "තිණ්ණං සංගති",
+          "comment": "ධර්මතා 18 තිණ්ණං සංගති",
           "url": "https://www.youtube.com/watch?v=k3rOMuBuj_4",
           "date": "2025-10-21",
           "video_id": "k3rOMuBuj_4",
@@ -171,7 +171,7 @@
      },
      {
           "index": 18,
-          "comment": "ද්වාර",
+          "comment": "පුද්ගල භවාංග",
           "url": "https://youtu.be/AwNYMe2IXrM",
           "date": "2026-01-13",
           "video_id": "AwNYMe2IXrM",
@@ -188,5 +188,15 @@
           "date_string": "2026-Jan-20",
           "line_number": 19,
           "notes": "<p>චිත්ත සහ චෛතසික සටහන <a href=\"/ChiththaChithasika/ChiththaChithasikaFixedHeader.html\" target=\"_blank\" >/ChiththaChithasika/ChiththaChithasikaFixedHeader.html</a></p>\n<p>දුතිය කම්ම සුත්තං <a href=\"https://tripitaka.online/sutta/9109\" target=\"_blank\" >https://tripitaka.online/sutta/9109</a></p>"
+     },
+     {
+          "index": 20,
+          "comment": "පටිච්චසමුප්පාදය",
+          "url": "https://www.youtube.com/watch?v=qGag4p-WkVU",
+          "date": "2026-01-27",
+          "video_id": "qGag4p-WkVU",
+          "date_string": "2026-Jan-27",
+          "line_number": 20,
+          "notes": ""
      }
 ]
