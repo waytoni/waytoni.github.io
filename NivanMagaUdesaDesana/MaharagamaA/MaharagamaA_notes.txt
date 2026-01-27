@@ -63,6 +63,7 @@ img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.
 දුතිය කම්ම සුත්තං url::https://tripitaka.online/sutta/9109
 #20
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
+img::/documents/NotesForDesana/චක්ෂුර්ද්වාරික%20අතිමහන්තාරම්මණ%20වීථිය.jpg
 #110
 ඛජ්ජනීය සුත්තං  pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
 ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
