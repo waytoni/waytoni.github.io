@@ -61,5 +61,8 @@ img::/KalutaraBodhiya/L_series/docs/L14_20251228.jpg
 චිත්ත සහ චෛතසික චක්‍රය url::/ChiththaChithasika/index.html
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
+img::/documents/NotesForDesana/0013 ආයතන ලෙස විග්‍රහය.jpeg
+img::/documents/NotesForDesana/0023 89 ක් වූ සිත් බෙදෙන ආකාර.jpeg 
+img::/documents/NotesForDesana/0022 සිත් සතර ආකාරය භූමීන් අනුව බෙදීම.jpeg
 #99
 end

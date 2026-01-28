@@ -64,7 +64,10 @@ img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.
 #20
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 img::/documents/NotesForDesana/චක්ෂුර්ද්වාරික%20අතිමහන්තාරම්මණ%20වීථිය.jpg
-#110
+img::/documents/NotesForDesana/0013 ආයතන ලෙස විග්‍රහය.jpeg
+img::/documents/NotesForDesana/0023 89 ක් වූ සිත් බෙදෙන ආකාර.jpeg 
+img::/documents/NotesForDesana/0022 සිත් සතර ආකාරය භූමීන් අනුව බෙදීම.jpeg
+#99
 ඛජ්ජනීය සුත්තං  pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
 ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
 ඛජ්ජනීය සූත්‍ර කෙටි සජ්ජායනාව url::https://www.youtube.com/watch?v=hnfE4MWSn-U

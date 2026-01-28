@@ -25,5 +25,9 @@
 ඉන්ද්‍රියභාවනා සුත්තං pdf::/documents/SutraPDFs/ඉන්ද්‍රියභාවනා සුත්තං.pdf
 #12
 චක්ෂුර්ද්වාරික අතිමහන්තාරම්මණ වීථිය img::/documents/NotesForDesana/චක්ෂුර්ද්වාරික අතිමහන්තාරම්මණ වීථිය.jpg
+#13
+img::/documents/NotesForDesana/0013 ආයතන ලෙස විග්‍රහය.jpeg
+img::/documents/NotesForDesana/0023 89 ක් වූ සිත් බෙදෙන ආකාර.jpeg 
+img::/documents/NotesForDesana/0022 සිත් සතර ආකාරය භූමීන් අනුව බෙදීම.jpeg
 #200
 #1000
