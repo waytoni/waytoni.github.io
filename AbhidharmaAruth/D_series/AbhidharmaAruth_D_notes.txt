@@ -29,5 +29,7 @@
 img::/documents/NotesForDesana/0013 ආයතන ලෙස විග්‍රහය.jpeg
 img::/documents/NotesForDesana/0023 89 ක් වූ සිත් බෙදෙන ආකාර.jpeg 
 img::/documents/NotesForDesana/0022 සිත් සතර ආකාරය භූමීන් අනුව බෙදීම.jpeg
+#14
+කම්ම සූත්‍රය pdf::/documents/SutraPDFs/කම්ම සූත්‍රය.pdf
 #200
 #1000
