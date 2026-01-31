@@ -29,8 +29,8 @@ if menu_change == True:
     from scripts import gen_notes
     gen_notes
     
-    from scripts import gen_SutraList_final
-    gen_SutraList_final
+    from scripts import gen_SutraList
+    gen_SutraList
     
     # The following files are updated using gen_navbar_replace script 
     #'Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html', 
