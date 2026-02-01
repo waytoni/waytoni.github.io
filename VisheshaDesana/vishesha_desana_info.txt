@@ -1,5 +1,22 @@
 ## CARDINFO
 ## DATE 
+2026-02-01
+## TITLE 
+2026-02-01 අනුරාධපුරය - නිතුල්ගොල්ලෑව ශ්‍රී ඉන්ද්‍රජෝත්‍යාරාම විහාරස්ථානය
+## YOUTUBE_LINK
+https://www.youtube.com/watch?v=JwGcXf5w0Bw
+## NOTES_DESCRIPTION
+# මහා නිදාන සූත්‍රය විස්තරය සංස්කරණය කරන ලද සටහන
+## NOTES_LOCATION
+# /documents/SutraPDFs/මහා නිදාන සූත්‍රය විස්තරය සංස්කරණය කරන ලද.pdf
+## ZOOMINFO
+https://us06web.zoom.us/j/89913493367?pwd=UkQ2LzlUTUpKRG9QQTk5YUdTa0FIUT09
+Zoom ID: 899 1349 3367
+Passcode: 100100 
+
+
+## CARDINFO
+## DATE 
 2025-12-03
 ## TITLE 
 025-12-03 කලුතර බෝධි පරිශ්‍රයේදී පැවෙත්වුන මහා නිදාන සූත්‍රය විස්තරය (3)
@@ -10,9 +27,6 @@ https://www.youtube.com/embed/VWCQZlMjoz0
 ## NOTES_LOCATION
 /documents/SutraPDFs/මහා නිදාන සූත්‍රය විස්තරය සංස්කරණය කරන ලද.pdf
 ## ZOOMINFO
-https://us06web.zoom.us/j/89913493367?pwd=UkQ2LzlUTUpKRG9QQTk5YUdTa0FIUT09
-Zoom ID: 899 1349 3367
-Passcode: 100100 
 
 ## CARDINFO
 ## DATE 
