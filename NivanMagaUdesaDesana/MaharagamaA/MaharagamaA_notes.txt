@@ -68,6 +68,7 @@ img::/documents/NotesForDesana/0013 ආයතන ලෙස විග්‍රහ
 img::/documents/NotesForDesana/0023 89 ක් වූ සිත් බෙදෙන ආකාර.jpeg 
 img::/documents/NotesForDesana/0022 සිත් සතර ආකාරය භූමීන් අනුව බෙදීම.jpeg
 #21
+රේරුකානේ චන්දවිමල හිමියන්ගේ පටිච්ච සමුප්පාද විවරණය පොතේ පටිච්චසමුප්පාදයේ නය සතර url::https://pitaka.lk/books/patichcha-samuppada-vivaranaya/13-12.html
 img::/documents/NotesForDesana/0013 ආයතන ලෙස විග්‍රහය.jpeg
 img::/documents/NotesForDesana/0022 සිත් සතර ආකාරය භූමීන් අනුව බෙදීම.jpeg
 img::/documents/NotesForDesana/0023 89 ක් වූ සිත් බෙදෙන ආකාර.jpeg 
