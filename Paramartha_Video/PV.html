@@ -683,44 +683,74 @@
         </div>
     </div>
 
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Select all links that point to YouTube
-    const videoLinks = document.querySelectorAll('a[href*="youtube.com/watch"]');
     const playerContainer = document.getElementById('video-player-container');
     const iframe = document.getElementById('main-video-iframe');
     const titleDisplay = document.getElementById('current-video-title');
 
+    // --- 1. FUNCTION TO PLAY VIDEO ---
+    function playVideo(urlStr, title) {
+        const url = new URL(urlStr);
+        const videoId = url.searchParams.get('v');
+        const timeStamp = url.searchParams.get('t') || '0s';
+        
+        let startTime = 0;
+        if (timeStamp) {
+            const match = timeStamp.match(/(?:(\d+)h)?(?:(\d+)m)?(?:(\d+)s)?/);
+            if (match) {
+                startTime = (parseInt(match[1] || 0) * 3600) + (parseInt(match[2] || 0) * 60) + parseInt(match[3] || 0);
+            }
+        }
+
+        // Set source and show player
+        iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&start=${startTime}`;
+        titleDisplay.innerText = title;
+        playerContainer.style.display = 'block';
+
+        // SCROLL TO TOP LINE ADDED HERE:
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+
+        // SAVE PROGRESS: Save this video URL and Title to local storage
+        localStorage.setItem('lastWatchedVideo', urlStr);
+        localStorage.setItem('lastWatchedTitle', title);
+    }
+
+    // --- 2. SETUP EVENT LISTENERS FOR LINKS ---
+    const videoLinks = document.querySelectorAll('a[href*="youtube.com/watch"]');
     videoLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault(); // Stop from opening YouTube app/tab
-            
-            const url = new URL(this.href);
-            const videoId = url.searchParams.get('v');
-            const timeStamp = url.searchParams.get('t') || '0s';
-            
-            // Convert timestamp (e.g., 1m18s) to seconds if necessary or pass directly
-            // YouTube embed uses 'start' parameter in seconds
-            let startTime = 0;
-            if (timeStamp) {
-                const match = timeStamp.match(/(?:(\d+)h)?(?:(\d+)m)?(?:(\d+)s)?/);
-                if (match) {
-                    startTime = (parseInt(match[1] || 0) * 3600) + (parseInt(match[2] || 0) * 60) + parseInt(match[3] || 0);
-                }
-            }
-
-            // Set the new iframe source
-            iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&start=${startTime}`;
-            
-            // Update title and show player
-            titleDisplay.innerText = this.innerText || "පරමාර්ථ ලෝකය දේශනා";
-            playerContainer.style.display = 'block';
-            
-            // Smooth scroll to player
-            playerContainer.scrollIntoView({ behavior: 'smooth' });
+            e.preventDefault();
+            playVideo(this.href, this.innerText || "පරමාර්ථ ලෝකය දේශනා");
         });
     });
+
+    // --- 3. RESUME PROGRESS ON LOAD ---
+    const savedUrl = localStorage.getItem('lastWatchedVideo');
+    const savedTitle = localStorage.getItem('lastWatchedTitle');
+
+    if (savedUrl && savedTitle) {
+        // Create a small 'Resume' notification/button
+        const resumeBtn = document.createElement('div');
+        resumeBtn.style = "background: #fff; padding: 10px; border: 1px solid var(--accent-color); border-radius: 5px; margin-bottom: 20px; text-align: center;";
+        resumeBtn.innerHTML = `
+            <p style="margin-bottom: 5px;">ඔබ අවසන් වරට නැරඹූ දේශනාව: <strong>${savedTitle}</strong></p>
+            <button id="resume-video" style="background: var(--primary-color); color: white; border: none; padding: 5px 15px; border-radius: 4px; cursor: pointer;">නැවත නරඹන්න (Resume)</button>
+        `;
+        
+        // Insert it before the grid
+        const container = document.querySelector('.container');
+        container.insertBefore(resumeBtn, container.querySelector('.page-title').nextSibling);
+
+        document.getElementById('resume-video').addEventListener('click', () => {
+            playVideo(savedUrl, savedTitle);
+            resumeBtn.style.display = 'none'; // Hide after clicking
+        });
+    }
 });
 </script>
+
+
 </body>
 </html>

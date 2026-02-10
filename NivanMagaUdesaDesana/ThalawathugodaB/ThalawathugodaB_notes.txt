@@ -56,8 +56,18 @@ img::/documents/NotesForDesana/0022 සිත් සතර ආකාරය භ�
 චිත්ත සහ චෛතසික චක්‍රය url::/ChiththaChithasika/index.html
 පටිච්චසමුප්පාදය img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 පටිච්චසමුප්පාදය img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
+img::/documents/NotesForDesana/0006 චක්ෂු සහ ශෝත ප්‍රසාද.jpg
+img::/documents/NotesForDesana/0007 ජිහ්වා සහ ඝ්‍රාණ ප්‍රසාද.jpg
+img::/documents/NotesForDesana/0008 කාය ප්‍රසාදය.jpg
+img::/documents/NotesForDesana/0009 වස්තු රූපය - හදවත තුළ.jpg
+img::/documents/NotesForDesana/0010 ශරීරයෙහි සියලු ප්‍රසාද.jpg
 #11
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
+img::/documents/NotesForDesana/0006 චක්ෂු සහ ශෝත ප්‍රසාද.jpg
+img::/documents/NotesForDesana/0007 ජිහ්වා සහ ඝ්‍රාණ ප්‍රසාද.jpg
+img::/documents/NotesForDesana/0008 කාය ප්‍රසාදය.jpg
+img::/documents/NotesForDesana/0009 වස්තු රූපය - හදවත තුළ.jpg
+img::/documents/NotesForDesana/0010 ශරීරයෙහි සියලු ප්‍රසාද.jpg
 #301
 #1000
