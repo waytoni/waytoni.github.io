@@ -46,5 +46,8 @@ img::/documents/NotesForDesana/0009 වස්තු රූපය - හදවත 
 img::/documents/NotesForDesana/0010 ශරීරයෙහි සියලු ප්‍රසාද.jpg
 img::/documents/NotesForDesana/0011 චක්ෂු ප්‍රසාදය ඇසුරු කරගෙන සිතක් පහළ වීම.jpeg
 img::/documents/NotesForDesana/0012 රූප කලාපය වර්ග.jpeg
+#19
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
 #200
 #1000
