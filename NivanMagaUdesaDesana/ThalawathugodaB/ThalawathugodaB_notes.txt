@@ -62,6 +62,7 @@ img::/documents/NotesForDesana/0008 කාය ප්‍රසාදය.jpg
 img::/documents/NotesForDesana/0009 වස්තු රූපය - හදවත තුළ.jpg
 img::/documents/NotesForDesana/0010 ශරීරයෙහි සියලු ප්‍රසාද.jpg
 #11
+විපල්ලාස සුත්තං pdf::/documents/SutraPDFs/විපල්ලාස සුත්තං.pdf
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
 img::/documents/NotesForDesana/0006 චක්ෂු සහ ශෝත ප්‍රසාද.jpg
