@@ -706,7 +706,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Set source and show player
         iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&start=${startTime}`;
-        titleDisplay.innerText = title;
+        titleDisplay.innerHTML = `${title} <a href="${urlStr}" target="_blank" style="font-size:0.8rem; margin-left:10px; color:var(--accent-color);">[YouTube Link]</a>`;
         playerContainer.style.display = 'block';
 
         // SCROLL TO TOP LINE ADDED HERE:
@@ -723,6 +723,7 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('click', function(e) {
             e.preventDefault();
             playVideo(this.href, this.innerText || "පරමාර්ථ ලෝකය දේශනා");
+            // console.log(`Playing video: ${this.href} with title: ${this.innerText}`);
         });
     });
 
