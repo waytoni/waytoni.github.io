@@ -47,6 +47,10 @@ img::/documents/NotesForDesana/0010 ශරීරයෙහි සියලු ප
 img::/documents/NotesForDesana/0011 චක්ෂු ප්‍රසාදය ඇසුරු කරගෙන සිතක් පහළ වීම.jpeg
 img::/documents/NotesForDesana/0012 රූප කලාපය වර්ග.jpeg
 විපල්ලාස සුත්තං pdf::/documents/SutraPDFs/විපල්ලාස සුත්තං.pdf
+#16
+විපල්ලාස සුත්තං pdf::/documents/SutraPDFs/විපල්ලාස සුත්තං.pdf
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
 #19
 #200
 #1000
