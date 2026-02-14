@@ -101,6 +101,10 @@
             <div id="video-container">
                 <!-- YouTube video will be embedded here -->
             </div>
+
+            <div style="padding: 15px; background: var(--dark-color); color: white; display: flex; justify-content: space-between; align-items: center;">
+                <h3 id="current-video-title" style="margin: 0; font-size: 1.1rem; min-height: auto;"> ... ... </h3>
+            </div>
         </div>
 
         <div class="notes-container">
@@ -174,6 +178,7 @@
             const videoId = selectedData.video_id;
             const notes = selectedData.notes;
             const videoContainer = document.getElementById('video-container');
+            const titleDisplay = document.getElementById('current-video-title');
             // Check if video_id starts with "INVALID:"
             if (videoId.startsWith('INVALID:')) {
                 // Extract the message after "INVALID:" and replace underscores with spaces
@@ -196,6 +201,10 @@
                 // Valid YouTube video - embed normally
                 videoContainer.innerHTML =
                     `<iframe class="youtube-frame" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>`;
+        
+                 titleDisplay.innerHTML = `${selectedData.index}. ${selectedData.comment} 
+                    <a href="${url}" target="_blank" 
+                    style="font-size:0.8rem; margin-left:10px; color:var(--accent-color);">[YouTube Link]</a>`;
             }
             const notesContainer = document.getElementById('notes');
             notesContainer.innerHTML = notes || '<p>මෙම දේශනාව සඳහා සටහන් නොමැත.</p>';
