@@ -43,7 +43,7 @@
 # Use the date format YYYY-MM-DD
 # Provide the file name in Zoom_Info folder that contains the Zoom information.
 # Default file name is ZoomInfo_basic.html
-2026-01-31
+2026-03-31
 ZoomInfo_special.html
 
 ## VIDEO_SELECTOR ##
