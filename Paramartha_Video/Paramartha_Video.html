@@ -34,6 +34,7 @@
             --primary-color: #8B4513;
             --secondary-color: #CD853F;
             --accent-color: #D2691E;
+            --message-color: rgb(255, 255, 0);
             --light-color: #F5F5DC;
             --dark-color: #5D4037;
             --text-color: #333;
@@ -987,7 +988,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Set source and show player
         iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&start=${startTime}`;
-        titleDisplay.innerHTML = `${title} <a href="${urlStr}" target="_blank" style="font-size:0.8rem; margin-left:10px; color:var(--accent-color);">[YouTube Link]</a>`;
+        titleDisplay.innerHTML = `${title} <a href="${urlStr}" target="_blank" 
+        style="font-size:1.0rem; margin-left:10px; color:var(--message-color);">[YouTube Link]</a>`;
         playerContainer.style.display = 'block';
 
         // SCROLL TO TOP LINE ADDED HERE:

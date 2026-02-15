@@ -70,5 +70,9 @@ img::/documents/NotesForDesana/0007 ජිහ්වා සහ ඝ්‍රාණ
 img::/documents/NotesForDesana/0008 කාය ප්‍රසාදය.jpg
 img::/documents/NotesForDesana/0009 වස්තු රූපය - හදවත තුළ.jpg
 img::/documents/NotesForDesana/0010 ශරීරයෙහි සියලු ප්‍රසාද.jpg
+#12
+චිත්ත සහ චෛතසික චක්‍රය url::/ChiththaChithasika/index.html
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
 #301
 #1000
