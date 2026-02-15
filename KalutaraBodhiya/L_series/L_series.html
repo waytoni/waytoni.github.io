@@ -219,7 +219,7 @@
         
                  titleDisplay.innerHTML = `${selectedData.index}. ${selectedData.comment} 
                     <a href="${url}" target="_blank" 
-                    style="font-size:0.8rem; margin-left:10px; color:var(--accent-color);">[YouTube Link]</a>`;
+                    style="font-size:1.0rem; margin-left:10px; color:var(--accent-color);">[YouTube Link]</a>`;
             }
             const notesContainer = document.getElementById('notes');
             notesContainer.innerHTML = notes || '<p>මෙම දේශනාව සඳහා සටහන් නොමැත.</p>';
@@ -229,7 +229,7 @@
         function displayLastEntry() {
             if (data.length > 0) {
                 // const lastEntry = data[data.length - 1];
-                const lastEntry = data[18];
+                const lastEntry = data[19];
                 const selector = document.getElementById('link-selector');
                 selector.value = lastEntry.url;
                 updateContent();
