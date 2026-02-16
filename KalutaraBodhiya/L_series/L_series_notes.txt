@@ -68,5 +68,8 @@ img::/documents/NotesForDesana/0022 සිත් සතර ආකාරය භ�
 විපල්ලාස සුත්තං pdf::/documents/SutraPDFs/විපල්ලාස සුත්තං.pdf
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
+#20
+චිත්ත සහ චෛතසික චක්‍රය url::/ChiththaChithasika/index.html
+img::/KalutaraBodhiya/L_series/docs/L20_20260215.jpg
 #99
 end
