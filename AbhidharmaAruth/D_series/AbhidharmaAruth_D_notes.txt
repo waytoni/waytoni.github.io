@@ -51,6 +51,9 @@ img::/documents/NotesForDesana/0012 රූප කලාපය වර්ග.jpeg
 විපල්ලාස සුත්තං pdf::/documents/SutraPDFs/විපල්ලාස සුත්තං.pdf
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
+#17
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
 #19
 #200
 #1000
