@@ -89,9 +89,8 @@ img::/documents/NotesForDesana/0044 ජීවිතේන්ද්‍රිය.j
 විභංග සුත්තං (PDF) pdf::/documents/SutraPDFs/විභංග සුත්තං.pdf
 මහා නිදාන සුත්තං (PDF) pdf::/documents/SutraPDFs/මහා නිදාන සුත්තං.pdf
 අචේලකස්සප සුත්තං (PDF) pdf::/documents/SutraPDFs/අචේලකස්සප සුත්තං.pdf
-img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpeg
-img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpeg
-pdf::/NivanMagaUdesaDesana/Thalawathugoda/docs/Thalawathugoda_2025-08-16.pdf
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
 මධුපිණ්ඩික සුත්තං (PDF) pdf::/documents/SutraPDFs/මධුපිණ්ඩික සුත්තං.pdf
 මධුපිණ්ඩික සුත්තං (Online) url::https://tripitaka.online/sutta/311
 මහාචත්තාරීසක සුත්තං (PDF) pdf::/documents/SutraPDFs/මහාචත්තාරීසක සුත්තං.pdf
