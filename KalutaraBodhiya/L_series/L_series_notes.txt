@@ -71,5 +71,7 @@ img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.
 #20
 චිත්ත සහ චෛතසික චක්‍රය url::/ChiththaChithasika/index.html
 img::/KalutaraBodhiya/L_series/docs/L20_20260215.jpg
+#21
+රේරුකානේ චන්දවිමල හිමියන්ගේ පටිච්ච සමුප්පාද විවරණය පොතේ පටිච්චසමුප්පාදයේ නය සතර url::https://pitaka.lk/books/patichcha-samuppada-vivaranaya/13-12.html
 #99
 end
