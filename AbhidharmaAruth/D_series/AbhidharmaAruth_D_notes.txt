@@ -54,6 +54,8 @@ img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.
 #17
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
+#18
+img::/documents/NotesForDesana/ප්‍රතිත්‍යසමුප්පාද සිදුවන ආකාර.jpg
 #19
 #200
 #1000
