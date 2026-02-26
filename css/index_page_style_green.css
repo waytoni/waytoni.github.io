@@ -144,7 +144,8 @@
         }
         
         .zoom-info {
-            background-color: #e8f4fd;
+            /* background-color: #e8f4fd; */
+            background-color: #fff9e6;
             border-radius: var(--border-radius);
             padding: 15px;
             margin: 20px 0;
