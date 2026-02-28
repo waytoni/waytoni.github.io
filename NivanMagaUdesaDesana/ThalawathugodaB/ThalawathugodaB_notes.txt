@@ -78,5 +78,7 @@ img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.
 pdf::/documents/SutraPDFs/චතු අරිය සත්‍ය පෙර පසු නොවි සිදුවන බව.pdf
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
+#14
+ඵෙණ පිණ්ඩූපම සූත්‍රය pdf::/documents/SutraPDFs/ඵෙණ පිණ්ඩූපම සූත්‍රය.pdf
 #301
 #1000
