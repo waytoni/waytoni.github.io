@@ -220,7 +220,7 @@ def parse_flexible_date(date_str):
     print(f"Warning: Could not parse date: {date_str}")
     return None
 
-def parse_notes(file_path, verbose=False):
+def parse_notes_old(file_path, verbose=False):
     notes = {}
     with open(file_path, 'r', encoding='utf-8') as file:
         current_index = None
@@ -272,7 +272,76 @@ def parse_notes(file_path, verbose=False):
     return notes
 
 
+import re
 
+def parse_notes(file_path, verbose=False):
+    notes = {}
+    with open(file_path, 'r', encoding='utf-8') as file:
+        current_index = None
+        current_notes = []
+        for line in file:
+            line = line.strip()
+            
+            # Skip empty lines
+            if not line:
+                continue
+                
+            # Check if line starts with #
+            if line.startswith('#'):
+                # Case 1: # followed immediately by number (e.g., #10) - new section
+                if re.match(r'#\d+', line):
+                    if current_index is not None:
+                        notes[current_index] = "\n".join(current_notes)
+                    current_index = int(line[1:])
+                    current_notes = []
+                # Case 2: # followed by space and text - comment line, ignore
+                elif line.startswith('# '):
+                    if verbose:
+                        print(f"Ignoring comment: {line}")
+                    continue
+                # Case 3: Any other # line - treat as comment and ignore
+                else:
+                    if verbose:
+                        print(f"Ignoring comment: {line}")
+                    continue
+            else:
+                # Process regular content lines
+                parts = re.split(pattern, line)
+                
+                # Check if there are more than one part
+                if len(parts) > 1:
+                    # Get the intro text as the first element of the list
+                    intro_text = "<p>" + parts[0].strip()
+                    # Initialize an empty string for the new string
+                    new_string = intro_text
+                    # Loop through the rest of the parts in pairs of keyword and text related to keyword
+                    for i in range(1, len(parts), 2):
+                        # Get the keyword and the text related to keyword
+                        keyword = parts[i].strip()
+                        text_related_to_keyword = parts[i+1].strip()
+                        # Check if the keyword is a valid keyword
+                        if keyword in keyword_dict:
+                            # Get the html tag for the keyword
+                            html_tag = keyword_dict[keyword]
+                            # Format the html tag with the text related to keyword
+                            html_tag = html_tag.format(text_related_to_keyword, text_related_to_keyword)
+                            # Append a space and the html tag to the new string
+                            new_string += " " + html_tag + "</p>"
+                        else:
+                            # If the keyword is not a valid keyword, append a space and the original pair of parts to the new string
+                            new_string += " " + keyword + "::" + text_related_to_keyword + "</p>"
+                else:
+                    # If there is only one part, use it as the new string
+                    new_string = "<p>" + parts[0] + "</p>"
+                
+                # Print the new string
+                if verbose:
+                    print(new_string)
+                current_notes.append(new_string)
+                
+        if current_index is not None:
+            notes[current_index] = "\n".join(current_notes)
+    return notes
 
 def BuildDropDownMenuWithNavigation(utlinks_file, notes_file, json_file, title="", verbose=False):
     

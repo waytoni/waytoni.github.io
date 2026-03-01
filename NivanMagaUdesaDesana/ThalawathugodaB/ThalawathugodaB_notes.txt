@@ -80,5 +80,8 @@ img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
 #14
 ඵෙණ පිණ්ඩූපම සූත්‍රය pdf::/documents/SutraPDFs/ඵෙණ පිණ්ඩූපම සූත්‍රය.pdf
+# කාලය: අතීත, අනාගත, වර්තමාන 
+# අවකාශය: අධ්‍යාත්ම, බාහිර, 
+# ලක්ෂණ: 
 #301
 #1000
