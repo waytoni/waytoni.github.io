@@ -24,8 +24,6 @@
 # This information is necessary for all on-going series.
 
 <p>සෑම ඉරිදාවකම ප.ව. 2:00 සිට ප.ව. 4:30 දක්වා</p>
-මාර්තු 1 වන දින කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන ධර්ම දේශනාව පෙ.ව. 8:30 ට ආරම්භ වේ.
-සවස පන්තිය නොපැවැත්වේ. 
 
 ## LOCATION ##
 # This information is optional; however, add this for all on-going series

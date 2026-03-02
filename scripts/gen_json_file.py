@@ -271,9 +271,6 @@ def parse_notes_old(file_path, verbose=False):
             notes[current_index] = "\n".join(current_notes)
     return notes
 
-
-import re
-
 def parse_notes(file_path, verbose=False):
     notes = {}
     with open(file_path, 'r', encoding='utf-8') as file:
