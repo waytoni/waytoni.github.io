@@ -238,5 +238,15 @@
           "date_string": "2026-Feb-24",
           "line_number": 24,
           "notes": ""
+     },
+     {
+          "index": 25,
+          "comment": "පටිච්චසමුප්පාදය",
+          "url": "https://www.youtube.com/watch?v=iiYXb_7QY9M",
+          "date": "2026-03-03",
+          "video_id": "iiYXb_7QY9M",
+          "date_string": "2026-Mar-03",
+          "line_number": 25,
+          "notes": ""
      }
 ]
