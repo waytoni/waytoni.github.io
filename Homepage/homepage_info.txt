@@ -8,8 +8,11 @@
     පැවැත්වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව</a></li>
     <li>සෑම පොහොදිනකම පෙරවරු 8:00 සිට 10:30 දක්වා</li>
     <li>විමසීම්: 0777 551 911 හෝ  071 433 95 94</li>
-    <li>ඊළඟ දේශනාව: 2026-03-02 </li>
-#    <li>ඊළඟ දේශනාව: 2026 පෙබරවාරි 01</li>
+    <li>ඊළඟ දේශනාව: 2026-04-01 </li>
+#    <li>ඊළඟ දේශනාව: 2026 අප්‍රේල් 01</li>
+# Duruthu, Nawam, Madin, Bak April 01
+# Wesak May 1, Adhi Poson May 30, Poson June 29, Esala July 29, Nikini Aug 27
+# Binara බිනර Sep 26, Wap වප් Oct 25, Il ඉල් Nov 24, Unduvap උඳුවප්  Dec 23. 
 
 ## SECTION_HEADER ##
     කළුතර බෝධින් වහන්සේ පරිශ්‍රය
