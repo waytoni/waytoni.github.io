@@ -57,6 +57,8 @@ img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.
 #18
 img::/documents/NotesForDesana/ප්‍රතිත්‍යසමුප්පාද සිදුවන ආකාර.jpg
 #19
+ඵෙණ පිණ්ඩූපම සූත්‍රය pdf::/documents/SutraPDFs/ඵෙණ පිණ්ඩූපම සූත්‍රය.pdf
+පෙණපිඬක් උපමා කොට වදාළ දෙසුම url::https://tripitaka.online/sutta/3571
 img::/documents/NotesForDesana/0002 රූප පරමාර්ථ.jpg
 img::/documents/NotesForDesana/0003 රූප කලාපය.jpg
 #200
