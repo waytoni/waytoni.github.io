@@ -84,5 +84,12 @@ img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.
 # කාලය: අතීත, අනාගත, වර්තමාන 
 # අවකාශය: අධ්‍යාත්ම, බාහිර, දුර, ළඟ
 # ලක්ෂණ: ගොරෝසු, සියුම්, හීන, උසස්
+#15
+ඛජ්ජනීය සුත්තං pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
+ඛජ්ජනීය සුත්තං url::https://tripitaka.online/sutta/3413
+pdf::/documents/SutraPDFs/ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම.pdf 
+img::/documents/NotesForDesana/0002 රූප පරමාර්ථ.jpg
+img::/NivanMagaUdesaDesana/ThalawathugodaB/docs/2026-03-07-pic1.jpg
+img::/NivanMagaUdesaDesana/ThalawathugodaB/docs/2026-03-07-pic2.jpg 
 #301
 #1000
