@@ -78,6 +78,8 @@ img::/documents/NotesForDesana/0023 89 ක් වූ සිත් බෙදෙ�
 #23
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
+#26
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 #99
 ඛජ්ජනීය සුත්තං  pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
 ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
