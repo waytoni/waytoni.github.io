@@ -248,5 +248,15 @@
           "date_string": "2026-Mar-03",
           "line_number": 25,
           "notes": ""
+     },
+     {
+          "index": 26,
+          "comment": "පටිච්චසමුප්පාදය",
+          "url": "https://www.youtube.com/watch?v=XN29niHAbis",
+          "date": "2026-03-10",
+          "video_id": "XN29niHAbis",
+          "date_string": "2026-Mar-10",
+          "line_number": 26,
+          "notes": ""
      }
 ]
