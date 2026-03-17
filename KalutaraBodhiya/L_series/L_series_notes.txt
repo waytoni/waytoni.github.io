@@ -77,6 +77,8 @@ img::/KalutaraBodhiya/L_series/docs/L20_20260215.jpg
 ඵෙණ පිණ්ඩූපම සූත්‍රය pdf::/documents/SutraPDFs/ඵෙණ පිණ්ඩූපම සූත්‍රය.pdf
 #23
 ඵෙණ පිණ්ඩූපම සූත්‍රය pdf::/documents/SutraPDFs/ඵෙණ පිණ්ඩූපම සූත්‍රය.pdf
+#24
+රේරුකානේ චන්දවිමල හිමියන්ගේ අභිධර්ම මාර්ගය පොතේ මරණෝත්පත්ති චතුෂ්කය - මරණ සතර url::https://pitaka.lk/books/abhidharma-margaya/6-10.html
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 #99
 end
