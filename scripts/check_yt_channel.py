@@ -46,7 +46,7 @@ CHANNELS = [
         # Only videos whose title contains this phrase will be added.
         # Set to None to accept all videos from the channel.
         "filter_phrase": "මහරගම",
-        "ytlinks_file": "NivanMagaUdesaDesana\MaharagamaA\MaharagamaA_ytlinks.txt",
+        "ytlinks_file": "NivanMagaUdesaDesana/MaharagamaA/MaharagamaA_ytlinks.txt",
     },
     {
         "name": "Abhidharma Aruth D series",
@@ -54,7 +54,7 @@ CHANNELS = [
         # Only videos whose title contains this phrase will be added.
         # Set to None to accept all videos from the channel.
         "filter_phrase": "පොල්ගස්ඔවිට",
-        "ytlinks_file": "AbhidharmaAruth\D_series\AbhidharmaAruth_D_ytlinks.txt",
+        "ytlinks_file": "AbhidharmaAruth/D_series/AbhidharmaAruth_D_ytlinks.txt",
     },
     # Add more channels as needed:
     # {
