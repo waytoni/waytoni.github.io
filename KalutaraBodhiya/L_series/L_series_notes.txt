@@ -80,5 +80,7 @@ img::/KalutaraBodhiya/L_series/docs/L20_20260215.jpg
 #24
 රේරුකානේ චන්දවිමල හිමියන්ගේ අභිධර්ම මාර්ගය පොතේ මරණෝත්පත්ති චතුෂ්කය - මරණ සතර url::https://pitaka.lk/books/abhidharma-margaya/6-10.html
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
+#25
+චතස්සො විඤ්ඤාණට්ඨිතියො - සතර විඥාන ස්ථිතී pdf::/documents/SutraPDFs/චතස්සො විඤ්ඤාණට්ඨිතියො -- සතර විඥාන ස්ථිතී.pdf
 #99
 end
