@@ -91,5 +91,7 @@ img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.
 img::/documents/NotesForDesana/0002 රූප පරමාර්ථ.jpg
 img::/NivanMagaUdesaDesana/ThalawathugodaB/docs/2026-03-07-pic1.jpg
 img::/NivanMagaUdesaDesana/ThalawathugodaB/docs/2026-03-07-pic2.jpg 
+#16
+pdf::/documents/pdfs/Pragna Paramithawa.pdf
 #301
 #1000
