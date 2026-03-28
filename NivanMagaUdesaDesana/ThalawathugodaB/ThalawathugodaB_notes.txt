@@ -92,6 +92,9 @@ img::/documents/NotesForDesana/0002 රූප පරමාර්ථ.jpg
 img::/NivanMagaUdesaDesana/ThalawathugodaB/docs/2026-03-07-pic1.jpg
 img::/NivanMagaUdesaDesana/ThalawathugodaB/docs/2026-03-07-pic2.jpg 
 #16
-pdf::/documents/pdfs/Pragna Paramithawa.pdf
+චතස්සො විඤ්ඤාණට්ඨිතියො - සතර විඥාන ස්ථිතී pdf::/documents/SutraPDFs/චතස්සො විඤ්ඤාණට්ඨිතියො -- සතර විඥාන ස්ථිතී.pdf
+ප්‍රඥා පාරමිතාව (print using A3 paper) pdf::/documents/pdfs/Pragna Paramithawa.pdf
+#17
+img::/documents/NotesForDesana/0010 ශරීරයෙහි සියලු ප්‍රසාද.jpg
 #301
 #1000
