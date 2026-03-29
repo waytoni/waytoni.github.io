@@ -95,6 +95,7 @@ img::/NivanMagaUdesaDesana/ThalawathugodaB/docs/2026-03-07-pic2.jpg
 චතස්සො විඤ්ඤාණට්ඨිතියො - සතර විඥාන ස්ථිතී pdf::/documents/SutraPDFs/චතස්සො විඤ්ඤාණට්ඨිතියො -- සතර විඥාන ස්ථිතී.pdf
 ප්‍රඥා පාරමිතාව (print using A3 paper) pdf::/documents/pdfs/Pragna Paramithawa.pdf
 #17
+චිත්ත සහ චෛතසික චක්‍රය url::/ChiththaChithasika/ChiththaChithasikaFixedHeader.html
 img::/documents/NotesForDesana/0010 ශරීරයෙහි සියලු ප්‍රසාද.jpg
 #301
 #1000
