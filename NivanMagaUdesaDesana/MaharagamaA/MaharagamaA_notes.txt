@@ -91,6 +91,9 @@ img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.
 චතස්සො විඤ්ඤාණට්ඨිතියො - සතර විඥාන ස්ථිතී pdf::/documents/SutraPDFs/චතස්සො විඤ්ඤාණට්ඨිතියො -- සතර විඥාන ස්ථිතී.pdf
 #28
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
+#29
+ධම්මචක්කප්පවත්ත සූත්‍රය pdf::/documents/SutraPDFs/ධම්මචක්ක සූත්‍රය.pdf
+ධම්මචක්කප්පවත්ත සූත්‍රය url::https://tipitaka.lk/sn-5-12-2
 #99
 ඛජ්ජනීය සුත්තං  pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
 ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
