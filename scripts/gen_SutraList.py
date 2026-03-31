@@ -42,7 +42,7 @@ content = template_content.replace('$NAVIGATION_HEADER$', nav_header)
 # Generate PDF list with hyperlinks from local PDFs
 pdf_files = sorted(glob.glob('documents/SutraPDFs/*.pdf'))
 pdf_list_items = [
-    f'<li><a href="/documents/SutraPDFs/{os.path.basename(pdf)}">{os.path.basename(pdf)}</a></li>'
+    f'<li><a href="/documents/SutraPDFs/{os.path.basename(pdf)}" target="_blank">{os.path.basename(pdf)}</a></li>'
     for pdf in pdf_files
 ]
 
