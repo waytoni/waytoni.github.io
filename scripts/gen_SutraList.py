@@ -46,6 +46,8 @@ pdf_list_items = [
     for pdf in pdf_files
 ]
 
+print(pdf_list_items)
+
 # Read and add shared PDF links from SharedPDFs.html
 shared_pdfs_file = 'documents/SutraPDFs/SharedPDFs.html'
 if os.path.exists(shared_pdfs_file):
@@ -57,6 +59,8 @@ if os.path.exists(shared_pdfs_file):
     # We'll wrap each link in <li> tags
     anchor_tags = re.findall(r'<a\s+[^>]*href="[^"]+"[^>]*>.*?</a>', shared_content, re.DOTALL)
     
+    print(anchor_tags)
+    
     for anchor in anchor_tags:
         # Clean up the anchor tag and wrap in li
         cleaned_anchor = anchor.strip()
@@ -64,7 +68,15 @@ if os.path.exists(shared_pdfs_file):
             pdf_list_items.append(f'<li>{cleaned_anchor}</li>')
 
 # Sort all items by Sinhala text
+
+print("==== Before Sorting ====")
+print(pdf_list_items)
+
 pdf_list_items.sort(key=sort_sinhala_key)
+
+
+print("==== After Sorting ====")
+print(pdf_list_items)
 
 # Combine all items
 pdf_list = '\n'.join(pdf_list_items)
