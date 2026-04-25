@@ -167,7 +167,8 @@ def process_channel(cfg: dict) -> bool:
         idx += 1
         url  = f"https://www.youtube.com/watch?v={video['video_id']}"
         date = format_date(video["published"])
-        line = f"{idx} {video['title']} {url} {date}"
+        # line = f"{idx} {video['title']} {url} {date}"
+        line = f"{idx}   {url} {date}"
         lines_to_append.append(line)
         print(f"  + [{idx}] {video['title']}  ({date})")
 
