@@ -23,6 +23,7 @@ jobs:
       - name: Check for new videos
         id: check
         run: python scripts/check_yt_channel.py
+          python build_it.py
 
       - name: Commit new entries (if any)
         run: |
