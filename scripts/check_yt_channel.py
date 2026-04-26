@@ -13,6 +13,7 @@ Usage:
 Configuration is done via the CHANNELS list below.
 """
 
+import os
 import re
 import sys
 import urllib.request
@@ -186,8 +187,16 @@ def process_channel(cfg: dict) -> bool:
 
 
 def main():
-    for cfg in CHANNELS:
-        process_channel(cfg)
+    any_updated = any(process_channel(cfg) for cfg in CHANNELS)
+
+    # Write a GitHub Actions output variable so the workflow can
+    # conditionally run the rebuild step.
+    # GITHUB_OUTPUT is set automatically by the Actions runner.
+    github_output = os.environ.get("GITHUB_OUTPUT")
+    if github_output:
+        with open(github_output, "a", encoding="utf-8") as fh:
+            fh.write(f"new_videos={'true' if any_updated else 'false'}\n")
+
     sys.exit(0)
 
 

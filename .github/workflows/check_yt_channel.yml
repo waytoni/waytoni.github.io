@@ -23,17 +23,16 @@ jobs:
       - name: Check for new videos
         id: check
         run: python scripts/check_yt_channel.py
-          python build_it.py
 
-      - name: Commit new entries (if any)
+      - name: Rebuild HTML pages
+        if: steps.check.outputs.new_videos == 'true'
+        run: python build_it.py
+
+      - name: Commit changes (if any)
+        if: steps.check.outputs.new_videos == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # Only commit if there are actual changes to tracked files
-          if git diff --quiet; then
-            echo "No changes to commit."
-          else
-            git add -A
-            git commit -m "auto: added new YouTube video entries"
-            git push
-          fi
+          git add -A
+          git commit -m "auto: added new YouTube video entries"
+          git push
