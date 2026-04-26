@@ -1,0 +1,39 @@
+name: Build YouTube Channel List for WayToNibbana and AbhidharmaAruth
+
+on:
+  schedule:
+    # Runs every day at 06:00 UTC
+    - cron: '0 6 * * *'
+  # Allow manual trigger from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  check-youtube-channel:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.11'
+
+      - name: Run script
+        env:
+          # This maps the GitHub Secret to an environment variable the script can see
+          AB_API_KEY: ${{ secrets.AB_YOUTUBE_API }}
+        run: python scripts/video_channel_list.py
+
+      - name: Commit changes (if any)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "auto: Updated YouTube channel video lists."
+            git push
+          fi
