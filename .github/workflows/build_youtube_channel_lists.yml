@@ -20,6 +20,9 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Install dependencies
+        run: pip install google-api-python-client isodate pytz
+
       - name: Run script
         env:
           # This maps the GitHub Secret to an environment variable the script can see
