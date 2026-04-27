@@ -91,5 +91,7 @@ img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.
 අනාගත ඵල පස - විඤ්ඤාණ, නාමරූප, සළායතන, ඵස්ස, වේදනා.
 #28 
 රේරුකානේ චන්දවිමල හිමියන්ගේ අභිධර්ම මාර්ගය පොතේ චතුරාර්‍ය්‍ය සත්‍යය url::https://pitaka.lk/books/abhidharma-margaya/8-4-4.html
+#29
+රේරුකානේ චන්දවිමල හිමියන්ගේ අභිධර්ම මාර්ගය පොතේ මාර්ගාඞ්ග url::https://pitaka.lk/books/abhidharma-margaya/8-2-3.html
 #99
 end
