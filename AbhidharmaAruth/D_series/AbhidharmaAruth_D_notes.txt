@@ -65,5 +65,7 @@ img::/documents/NotesForDesana/0003 රූප කලාපය.jpg
 චතස්සො විඤ්ඤාණට්ඨිතියො - සතර විඥාන ස්ථිතී pdf::/documents/SutraPDFs/චතස්සො විඤ්ඤාණට්ඨිතියො -- සතර විඥාන ස්ථිතී.pdf
 #21
 චිත්ත සහ චෛතසික සටහන  url::https://waytoni.com/ChiththaChithasika/ChiththaChithasikaFixedHeader.html
+#24
+<a href="https://drive.google.com/file/d/1YwM41gjwdRgYlT54fb64_iyd_qwr9mVM/view?usp=sharing" target="_blank">පටිච්චසමුප්පාදවිභඞ්ගො නනාවිධ මාතෘකා විවරනය</a>
 #200
 #1000
