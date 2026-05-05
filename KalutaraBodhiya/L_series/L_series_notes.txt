@@ -93,5 +93,10 @@ img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.
 රේරුකානේ චන්දවිමල හිමියන්ගේ අභිධර්ම මාර්ගය පොතේ චතුරාර්‍ය්‍ය සත්‍යය url::https://pitaka.lk/books/abhidharma-margaya/8-4-4.html
 #29
 රේරුකානේ චන්දවිමල හිමියන්ගේ අභිධර්ම මාර්ගය පොතේ මාර්ගාඞ්ග url::https://pitaka.lk/books/abhidharma-margaya/8-2-3.html
+#30
+රේරුකානේ චන්දවිමල හිමියන්ගේ චතුරාර්‍ය්‍ය සත්‍යය පොතේ චතුර්විධ දුඃඛ ස්වභාවයෝ url::https://pitaka.lk/books/chathurarya-sathya/8-7.html
+රේරුකානේ චන්දවිමල හිමියන්ගේ චතුරාර්‍ය්‍ය සත්‍යය පොතේ සමුදය සත්‍යයාගේ ස්වභාව සතර url::https://pitaka.lk/books/chathurarya-sathya/9-4.html
+රේරුකානේ චන්දවිමල හිමියන්ගේ චතුරාර්‍ය්‍ය සත්‍යය පොතේ නිරෝධ සත්‍යයාගේ ස්වභාව සතර url::https://pitaka.lk/books/chathurarya-sathya/10-8.html
+රේරුකානේ චන්දවිමල හිමියන්ගේ චතුරාර්‍ය්‍ය සත්‍යය පොතේ දුඃඛ නිරෝධගාමිනී ප්‍ර‍තිපදාර්‍ය්‍ය සත්‍යයාගේ ස්වභාව සතර url::https://pitaka.lk/books/chathurarya-sathya/11-12.html
 #99
 end
