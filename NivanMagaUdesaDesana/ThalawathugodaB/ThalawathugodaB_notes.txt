@@ -97,5 +97,8 @@ img::/NivanMagaUdesaDesana/ThalawathugodaB/docs/2026-03-07-pic2.jpg
 #17
 චිත්ත සහ චෛතසික චක්‍රය url::/ChiththaChithasika/ChiththaChithasikaFixedHeader.html
 img::/documents/NotesForDesana/0010 ශරීරයෙහි සියලු ප්‍රසාද.jpg
+#22
+චිත්ත සහ චෛතසික චක්‍රය url::/ChiththaChithasika/ChiththaChithasikaFixedHeader.html
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 #301
 #1000
