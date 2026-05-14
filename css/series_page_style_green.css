@@ -31,7 +31,8 @@ body {
 
 .hero-section {
     background: linear-gradient(rgba(44, 85, 48, 0.85), rgba(44, 85, 48, 0.85)),
-        url('/images/buddha-2909937_960_720.png') center/cover no-repeat;
+        /* url('/images/buddha-2909937_960_720.png') center/cover no-repeat; */
+        url('/images/KalutharaBodhiya.jpeg') center/cover no-repeat;
     color: var(--light-text);
     padding: 20px 20px;
     text-align: center;
@@ -43,7 +44,7 @@ body {
     margin: 0 0 0px;
     font-size: 1.8rem;
 }
-            
+
 .hero-section h2 {
     margin: 0 0 5px;
     font-size: 1.2rem;
@@ -52,7 +53,8 @@ body {
 
 .hero-section h2 a {
     margin: 0 0 15px;
-    color:  #d4af37; /* or use orange;  */
+    color: #d4af37;
+    /* or use orange;  */
     font-size: 1.2rem;
     font-weight: normal;
 }
@@ -60,7 +62,8 @@ body {
 .hero-section h2 a:hover {
     text-decoration: underline;
     font-weight: bold;
-    color: #f0c850; /* Slightly lighter gold for hover effect */
+    color: #f0c850;
+    /* Slightly lighter gold for hover effect */
 }
 
 .hero-section p {
@@ -94,7 +97,7 @@ body {
     background-color: white;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-    padding:0px;
+    padding: 0px;
     padding-top: 10px;
     padding-left: 15px;
 }
@@ -105,14 +108,16 @@ body {
     display: flex;
     align-items: center;
 }
+
 .info-card p {
-     padding: 0px;
+    padding: 0px;
 }
 
 .info-card p a {
     color: var(--primary-color);
     margin-top: 0;
 }
+
 .info-card h3 a {
     color: var(--primary-color);
     margin-top: 0;
@@ -178,6 +183,7 @@ body {
     border-radius: var(--border-radius);
 }
 
+/*
 #video-container {
     width: 100%;
     aspect-ratio: 16 / 9;
@@ -211,7 +217,7 @@ body {
     color: #000;
     font-weight: bold;
 }
-
+*/
 .notes-container {
     background-color: white;
     border-radius: var(--border-radius);

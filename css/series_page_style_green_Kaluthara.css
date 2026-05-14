@@ -43,7 +43,7 @@ body {
     margin: 0 0 0px;
     font-size: 1.8rem;
 }
-            
+
 .hero-section h2 {
     margin: 0 0 5px;
     font-size: 1.2rem;
@@ -52,7 +52,8 @@ body {
 
 .hero-section h2 a {
     margin: 0 0 15px;
-    color:  #d4af37; /* or use orange;  */
+    color: #d4af37;
+    /* or use orange;  */
     font-size: 1.2rem;
     font-weight: normal;
 }
@@ -60,7 +61,8 @@ body {
 .hero-section h2 a:hover {
     text-decoration: underline;
     font-weight: bold;
-    color: #f0c850; /* Slightly lighter gold for hover effect */
+    color: #f0c850;
+    /* Slightly lighter gold for hover effect */
 }
 
 .hero-section p {
@@ -94,7 +96,7 @@ body {
     background-color: white;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-    padding:0px;
+    padding: 0px;
     padding-top: 10px;
     padding-left: 15px;
 }
@@ -105,14 +107,16 @@ body {
     display: flex;
     align-items: center;
 }
+
 .info-card p {
-     padding: 0px;
+    padding: 0px;
 }
 
 .info-card p a {
     color: var(--primary-color);
     margin-top: 0;
 }
+
 .info-card h3 a {
     color: var(--primary-color);
     margin-top: 0;
@@ -177,6 +181,42 @@ body {
     border: none;
     border-radius: var(--border-radius);
 }
+
+/*
+#video-container {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    background: #000;
+}
+
+#yt-player {
+    width: 100%;
+    height: 100%;
+}
+
+.yt-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.yt-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.yt-btn.active-speed {
+    background-color: var(--accent-color);
+    color: #000;
+    font-weight: bold;
+}
+*/
 
 .notes-container {
     background-color: white;
@@ -286,4 +326,3 @@ body {
     margin-bottom: 8px;
     color: #856404;
 }
-
