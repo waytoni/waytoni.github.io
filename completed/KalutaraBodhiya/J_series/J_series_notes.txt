@@ -23,7 +23,7 @@ pdf::/VisheshaDesana/2024 08 18  Kalutara Bodhiya දර්ශන ඥානය.p
 #30 
 ඛජ්ජනීය සුත්තං (PDF) pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
 ඛජ්ජනීය සුත්තං (Online) url::https://tripitaka.online/sutta/3413
-මධුපිණ්ඩික සුත්තං (PDF) pdf::/documents/SutraPDFs/මධුපිණ්ඩික සුත්තං.pdf
+<a href="https://drive.google.com/file/d/1NqKm4QD0K9Wh_QMtgssO_fgN_og0_p2h/view?usp=sharing" target="_blank">මධුපිණ්ඩික සුත්තං (PDF)</a>
 මධුපිණ්ඩික සුත්තං (Online) url::https://tripitaka.online/sutta/311
 මහාචත්තාරීසක සුත්තං (PDF) pdf::/documents/SutraPDFs/මහාචත්තාරීසක සුත්තං.pdf
 මහාචත්තාරීසක සුත්තං (Online) url::https://tripitaka.online/sutta/739
@@ -41,7 +41,7 @@ pdf::/VisheshaDesana/2024 08 18  Kalutara Bodhiya දර්ශන ඥානය.p
 දේසනාව සඳහා පත්‍රිකාව (PDF) pdf::/documents/pdfs/Kalutara Bodhiya දර්ශන ඥානය (2024-12-22) v2.pdf
 ඛජ්ජනීය සුත්තං (PDF) pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
 ඛජ්ජනීය සුත්තං (Online) url::https://tripitaka.online/sutta/3413
-මධුපිණ්ඩික සුත්තං (PDF) pdf::/documents/SutraPDFs/මධුපිණ්ඩික සුත්තං.pdf
+<a href="https://drive.google.com/file/d/1NqKm4QD0K9Wh_QMtgssO_fgN_og0_p2h/view?usp=sharing" target="_blank">මධුපිණ්ඩික සුත්තං (PDF)</a>
 මධුපිණ්ඩික සුත්තං (Online) url::https://tripitaka.online/sutta/311
 මහාචත්තාරීසක සුත්තං (PDF) pdf::/documents/SutraPDFs/මහාචත්තාරීසක සුත්තං.pdf
 මහාචත්තාරීසක සුත්තං (Online) url::https://tripitaka.online/sutta/739
