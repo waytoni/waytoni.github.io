@@ -112,6 +112,12 @@ Four Noble truths for Young Buddhist - Sinhala pdf::/documents/pdfs/Four Noble t
 <a href="https://drive.google.com/file/d/1bCyw0w3MJXVM90xifKsb66vys_-p5tVH/view?usp=sharing" target="_blank">මජ්ජි සූත්‍රය</a>
 <a href="https://drive.google.com/file/d/1OFuzj-B1WQKxrDuaKNZCm_JfIj5Apegn/view?usp=sharing" target="_blank">චතු අරිය සත්‍ය පෙර පසු නොවි සිදුවන බව</a>
 රේරුකානේ චන්දවිමල හිමියන්ගේ චතුරාර්‍ය්‍ය සත්‍යය පොතේ ද්විවිධ වූ දේශනාව url::https://pitaka.lk/books/chathurarya-sathya/5.html
+<a href="https://drive.google.com/file/d/1NqKm4QD0K9Wh_QMtgssO_fgN_og0_p2h/view?usp=sharing" target="_blank">මධුපිණ්ඩික සුත්තං</a>
+ඛජ්ජනීය සුත්තං  pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
+ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
+ඛජ්ජනීය සූත්‍ර කෙටි සජ්ජායනාව url::https://www.youtube.com/watch?v=hnfE4MWSn-U
+ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම pdf::/documents/pdfs/ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම.pdf
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 අංගුත්තර නිකාය
 ඡක්ක නිපාතෝ
 <span class="pali">6.2.1.7. මජ්ඣේ සුත්තං</span>
