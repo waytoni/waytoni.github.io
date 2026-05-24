@@ -185,5 +185,8 @@ img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.
 <a href="https://drive.google.com/file/d/1xx-SqBcrHDSLexWocDcnEagYyguSxoeh/view?usp=sharing" target="_blank">සංයුත්ත නිකාය → නිදාන වර්‍ගය → අභිසමය සංයුත්තය → බුද්ධ වර්‍ගය → විභඞ්ග සූත්‍රය</a>
 <a href="https://drive.google.com/file/d/1NqKm4QD0K9Wh_QMtgssO_fgN_og0_p2h/view?usp=sharing" target="_blank">මධුපිණ්ඩික සුත්තං</a>
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
+#33
+ඛජ්ජනීය සුත්තං  pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
+ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම pdf::/documents/SutraPDFs/ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම.pdf
 #99
 end

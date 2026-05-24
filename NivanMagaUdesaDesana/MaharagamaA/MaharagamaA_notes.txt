@@ -116,7 +116,7 @@ Four Noble truths for Young Buddhist - Sinhala pdf::/documents/pdfs/Four Noble t
 ඛජ්ජනීය සුත්තං  pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
 ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
 ඛජ්ජනීය සූත්‍ර කෙටි සජ්ජායනාව url::https://www.youtube.com/watch?v=hnfE4MWSn-U
-ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම pdf::/documents/pdfs/ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම.pdf
+ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම pdf::/documents/SutraPDFs/ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම.pdf
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 අංගුත්තර නිකාය
 ඡක්ක නිපාතෝ
@@ -190,7 +190,7 @@ img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.
 ඛජ්ජනීය සුත්තං  pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
 ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
 ඛජ්ජනීය සූත්‍ර කෙටි සජ්ජායනාව url::https://www.youtube.com/watch?v=hnfE4MWSn-U
-ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම pdf::/documents/pdfs/ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම.pdf
+ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම pdf::/documents/SutraPDFs/ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම.pdf
 පටිච්චසමුප්පාදය img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 පටිච්චසමුප්පාදය img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
 img::/documents/NotesForDesana/0044 ජීවිතේන්ද්‍රිය.jpg
