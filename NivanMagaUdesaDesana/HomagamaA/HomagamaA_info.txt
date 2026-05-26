@@ -31,8 +31,8 @@
 # You may add html code to this selection.
 # RXPV+3FV, Homagama, Sri Lanka
 # Srī Śāsanavardhanārāma Temple ශ්‍රී ශාසනවර්ධනාරාම විහාරය මහකටුවාන
-<a href="https://maps.app.goo.gl/mxKfSU8W19toTsYU6">ශ්‍රී ශාසනවර්ධනාරාම විහාරය මහකටුවාන</a> 
-
+<a href="https://maps.app.goo.gl/mxKfSU8W19toTsYU6">ශ්‍රී ශාසනවර්ධනාරාම විහාරය මහකටුවාන</a>
+#<img src="/images/Homagama_QR.jpeg" style="width:100px;height:100px;">
 ## CONTACT ##
 # This information is optional; however, add this for all on-going series
 
