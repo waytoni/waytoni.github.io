@@ -1,0 +1,53 @@
+## INTRO ###
+# This is the introductory information of the page.
+# This information must be present.
+# The introductory information will contain html code
+# මහකටුවාන  පැවෙත්වෙන 
+# ඇවැසි දර්ශන ඥාණය  
+# අභිධර්මයේ ඇතුලත් මූලික කරුණු ඇසුරු කරගෙන ආරම්භ කරනු ලබන නව දේශනා මාලාව
+
+            <h1>ගරු අජන්ත සම්පත් ගුරුතුමා</h1>
+            <p>මෙහෙයවන</p>
+            <h1>අනුරාධපුරය සිංහ සමාජ ගොඩනැගිල්ලේ පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව</h1>
+            
+
+## TITLE ##
+# This is the title used in the final HTML file
+
+අනුරාධපුරය සිංහ සමාජ ගොඩනැගිල්ලේ පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව
+
+## SERIES_TITLE ##
+# This is optional. If not specified, sames the TITLE info will be used.
+# This is the default title used in the dropdown menu.
+
+අනුරාධපුරය සිංහ සමාජ ගොඩනැගිල්ලේ ආරම්භ වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව
+
+## TIME ###
+# This information is necessary for all on-going series.
+සෑම සෙනසුරාදාම දිනකම ප.ව. 1:30 සිට 3:30 දක්වා <mark>(මැයි 30 වෙසක් පොහොය දා සිට)</mark>
+
+## LOCATION ##
+# This information is optional; however, add this for all on-going series
+# You may add html code to this selection.
+සිංහ සමාජ ගොඩනැගිල්ල, අනුරාධපුරය (රෝහල අසල)
+# <a href="">සිංහ සමාජ ගොඩනැගිල්ල අනුරාධපුරය (රෝහල අසල)</a> 
+
+## CONTACT ##
+# This information is optional; however, add this for all on-going series
+
+__________________
+
+## ZOOM_INFO ##
+# This section is necessary only if special Zoom instructions are to be provided.
+# If included provide the date until which the Zoom information is valid.
+# Use the date format YYYY-MM-DD
+# Provide the file name in Zoom_Info folder that contains the Zoom information.
+# Default file name is ZoomInfo_basic.html
+2026-11-11
+ZoomInfo_basic.html
+
+## VIDEO_SELECTOR ##
+# The video_number given in this section will point to the video that will be shown when a series page is opened.
+# It is better to remove this section unless there is a special reason.
+100
+
