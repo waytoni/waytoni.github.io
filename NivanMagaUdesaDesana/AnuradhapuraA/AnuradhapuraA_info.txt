@@ -24,7 +24,7 @@
 
 ## TIME ###
 # This information is necessary for all on-going series.
-සෑම සෙනසුරාදාම දිනකම ප.ව. 1:30 සිට 3:30 දක්වා <mark>(මැයි 30 වෙසක් පොහොය දා සිට)</mark>
+සෑම පොහොදිනකම දිනකම ප.ව. 1:30 සිට 3:30 දක්වා <mark>(මැයි 30 වෙසක් පොහොය දා සිට)</mark>
 
 ## LOCATION ##
 # This information is optional; however, add this for all on-going series
