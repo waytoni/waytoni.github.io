@@ -29,8 +29,8 @@
 ## LOCATION ##
 # This information is optional; however, add this for all on-going series
 # You may add html code to this selection.
-සිංහ සමාජ ගොඩනැගිල්ල, අනුරාධපුරය (රෝහල අසල)
-# <a href="">සිංහ සමාජ ගොඩනැගිල්ල අනුරාධපුරය (රෝහල අසල)</a> 
+# සිංහ සමාජ ගොඩනැගිල්ල, අනුරාධපුරය (රෝහල අසල)
+<a href="https://maps.app.goo.gl/VgEzNvUGUXaaczmq8" target="_blank">සිංහ සමාජ ගොඩනැගිල්ල අනුරාධපුරය (රෝහල අසල)</a> 
 
 ## CONTACT ##
 # This information is optional; however, add this for all on-going series
