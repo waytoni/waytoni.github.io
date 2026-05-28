@@ -19,14 +19,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <link rel="stylesheet" type="text/css" href="/css/nav_menu.css">
-    <link rel="stylesheet" type="text/css" href="/css/series_page_style_green_RuwanweliSaya.css">
+    <link rel="stylesheet" type="text/css" href="/css/series_page_style_green.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="/scripts/nav_function.js"></script>
 
     
     
     
-    <title>සෑම පොහොදිනකම රුවන්වැලි මහාසෑය අභියස පැවෙත්වෙන දේශනා</title>
+    <title>අනුරාධපුරය සිංහ සමාජ ගොඩනැගිල්ලේ පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව</title>
 </head>
 <body>
 
@@ -64,27 +64,28 @@
 
     <div class="container">
         <div class="hero-section">
-            <h1>කල්‍යාණ මිත්‍ර අජන්ත සම්පත් ගුරුතුමා මෙහෙයවන</h1>
-            <h2>සෑම පොහොදිනකම රුවන්වැලි මහාසෑය අභියස පැවෙත්වෙන දේශනා මාලාව</h2>
+            <h1>ගරු අජන්ත සම්පත් ගුරුතුමා</h1>
+            <p>මෙහෙයවන</p>
+            <h1>අනුරාධපුරය සිංහ සමාජ ගොඩනැගිල්ලේ පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව</h1>
         </div>
 
         <div class="info-grid">
             
             <div class="info-card">
                 <h3><i class="fa fa-clock-o"></i> කාලය</h3>
-                <p><p>සෑම පොහොදිනකම පෙරවරු 8:00 සිට 10:30 දක්වා</p></p>
+                <p>සෑම පොහොදිනකම දිනකම ප.ව. 1:30 සිට 3:30 දක්වා <mark>(මැයි 30 වෙසක් පොහොය දා සිට)</mark></p>
             </div>
             
             
             <div class="info-card">
                 <h3><i class="fa fa-map-marker"></i> ස්ථානය</h3>
-                <p>රුවන්වැලි මහා සෑ පුදබිම - වැලිමළුව, බටහිර දොරටුව අභියස දී</p>
+                <p>සිංහ සමාජ ගොඩනැගිල්ල, අනුරාධපුරය (රෝහල අසල)</p>
             </div>
 
             
             <div class="info-card">
                 <h3><i class="fa fa-phone"></i> විමසීම්</h3>
-                <p>0777 551 911</p>
+                <p>__________________</p>
             </div>
 
             
@@ -138,10 +139,10 @@
 
     <script>
         let data;
-        let seriesTitle = "සෑම පොහොදිනකම රුවන්වැලි මහාසෑය අභියස පැවෙත්වෙන දේශනා"; // Changeable series title   
+        let seriesTitle = "අනුරාධපුරය සිංහ සමාජ ගොඩනැගිල්ලේ ආරම්භ වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව"; // Changeable series title   
         
         // Fetch the JSON data and populate the dropdown menu
-        fetch('RuwanweliMahaSeya.json').then(response => {
+        fetch('AnuradhapuraA.json').then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok ' + response.statusText);
             }
@@ -229,7 +230,7 @@
         function displayLastEntry() {
             if (data.length > 0) {
                 // const lastEntry = data[data.length - 1];
-                const lastEntry = data[11];
+                const lastEntry = data[-1];
                 const selector = document.getElementById('link-selector');
                 selector.value = lastEntry.url;
                 updateContent();

@@ -8,31 +8,30 @@
 
             <h1>ගරු අජන්ත සම්පත් ගුරුතුමා</h1>
             <p>මෙහෙයවන</p>
-            <h1>හෝමාගම මහකටුවාන ශ්‍රී ශාසනවර්ධනාරාම විහාරයේ පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව</h1>
+            <h1>අනුරාධපුරය සිංහ සමාජ ගොඩනැගිල්ලේ පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව</h1>
             
 
 ## TITLE ##
 # This is the title used in the final HTML file
 
-හෝමාගම ශ්‍රී ශාසනවර්ධනාරාම විහාරයේ පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව
+අනුරාධපුරය සිංහ සමාජ ගොඩනැගිල්ලේ පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව
 
 ## SERIES_TITLE ##
 # This is optional. If not specified, sames the TITLE info will be used.
 # This is the default title used in the dropdown menu.
 
-හෝමාගම ශ්‍රී ශාසනවර්ධනාරාම විහාරයේ ආරම්භ වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව
+අනුරාධපුරය සිංහ සමාජ ගොඩනැගිල්ලේ ආරම්භ වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව
 
 ## TIME ###
 # This information is necessary for all on-going series.
-සෑම සෙනසුරාදාම දිනකම පෙ.ව. 8:00 සිට 10:00 දක්වා <mark>(ජුනි 6 සිට)
+සෑම පොහොදිනකම දිනකම ප.ව. 1:30 සිට 3:30 දක්වා <mark>(මැයි 30 වෙසක් පොහොය දා සිට)</mark>
 
 ## LOCATION ##
 # This information is optional; however, add this for all on-going series
 # You may add html code to this selection.
-# RXPV+3FV, Homagama, Sri Lanka
-# Srī Śāsanavardhanārāma Temple ශ්‍රී ශාසනවර්ධනාරාම විහාරය මහකටුවාන
-<a href="https://maps.app.goo.gl/mxKfSU8W19toTsYU6">ශ්‍රී ශාසනවර්ධනාරාම විහාරය මහකටුවාන</a>
-#<img src="/images/Homagama_QR.jpeg" style="width:100px;height:100px;">
+සිංහ සමාජ ගොඩනැගිල්ල, අනුරාධපුරය (රෝහල අසල)
+# <a href="">සිංහ සමාජ ගොඩනැගිල්ල අනුරාධපුරය (රෝහල අසල)</a> 
+
 ## CONTACT ##
 # This information is optional; however, add this for all on-going series
 

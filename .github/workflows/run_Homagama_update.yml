@@ -1,0 +1,33 @@
+name: Update MaharagamaA series Lesson Links
+
+on:
+  push:
+    paths:
+      - 'NivanMagaUdesaDesana/HomagamaA/HomagamaA_ytlinks.txt'     
+      - 'NivanMagaUdesaDesana/HomagamaA/HomagamaA_notes.txt'     
+jobs:
+  run-python-script-HomagamaAseries:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.11 # Set your desired Python version
+
+      - name: Update HomagamaA series
+        run: python scripts/gen_series_HomagamaA.py
+
+      - name: commit changes
+        run: |
+          git config user.name "$(git log -n 1 --pretty=format:%an)"
+          git config user.email "$(git log -n 1 --pretty=format:%ae)"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "updated HomagamaA series"
+            git push
+          fi
