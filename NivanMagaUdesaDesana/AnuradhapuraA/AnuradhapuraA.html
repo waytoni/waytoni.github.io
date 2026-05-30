@@ -139,7 +139,7 @@
 
     <script>
         let data;
-        let seriesTitle = "අනුරාධපුරය සිංහ සමාජ ගොඩනැගිල්ලේ ආරම්භ වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව"; // Changeable series title   
+        let seriesTitle = "අනුරාධපුරය සිංහ සමාජ ගොඩනැගිල්ලේ පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව"; // Changeable series title   
         
         // Fetch the JSON data and populate the dropdown menu
         fetch('AnuradhapuraA.json').then(response => {
@@ -230,7 +230,7 @@
         function displayLastEntry() {
             if (data.length > 0) {
                 // const lastEntry = data[data.length - 1];
-                const lastEntry = data[-1];
+                const lastEntry = data[0];
                 const selector = document.getElementById('link-selector');
                 selector.value = lastEntry.url;
                 updateContent();

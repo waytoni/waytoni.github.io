@@ -20,7 +20,7 @@
 # This is optional. If not specified, sames the TITLE info will be used.
 # This is the default title used in the dropdown menu.
 
-අනුරාධපුරය සිංහ සමාජ ගොඩනැගිල්ලේ ආරම්භ වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව
+අනුරාධපුරය සිංහ සමාජ ගොඩනැගිල්ලේ පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව
 
 ## TIME ###
 # This information is necessary for all on-going series.
