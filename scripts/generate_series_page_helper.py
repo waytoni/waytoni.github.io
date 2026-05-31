@@ -352,3 +352,5 @@ def generate_series_page(base_folder, html_file, json_file, css_file, on_going, 
     
     print(f'HTML file creation complete for series {series_title_section}: {base_folder}: Generated {html_file} successfully. Video number: {video_number}')
     return ytlink_file, notes_file, series_title_section
+
+
