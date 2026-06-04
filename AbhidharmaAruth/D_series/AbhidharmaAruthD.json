@@ -262,11 +262,31 @@
      {
           "index": 27,
           "comment": "පටිච්චසමුප්පාදය",
+          "url": "https://www.youtube.com/watch?v=1edxNpm4T2c",
+          "date": "2026-05-21",
+          "video_id": "1edxNpm4T2c",
+          "date_string": "2026-May-21",
+          "line_number": 27,
+          "notes": ""
+     },
+     {
+          "index": 28,
+          "comment": "පටිච්චසමුප්පාදය",
           "url": "https://www.youtube.com/watch?v=jFI9RIYhHrA",
           "date": "2026-05-28",
           "video_id": "jFI9RIYhHrA",
           "date_string": "2026-May-28",
-          "line_number": 27,
+          "line_number": 28,
+          "notes": ""
+     },
+     {
+          "index": 29,
+          "comment": "පොල්ගස්ඕවිට පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (D කන්ඩායම)",
+          "url": "https://www.youtube.com/watch?v=1MWs79_f_Io",
+          "date": "2026-06-04",
+          "video_id": "1MWs79_f_Io",
+          "date_string": "2026-Jun-04",
+          "line_number": 29,
           "notes": ""
      }
 ]
