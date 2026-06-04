@@ -351,12 +351,82 @@
      },
      {
           "index": 36,
+          "comment": "ආවර්ජනා මහරගම YMBA ශාලාව දේශනා අංක 01",
+          "url": "https://www.youtube.com/watch?v=90nQtVStbpE",
+          "date": "2026-06-02",
+          "video_id": "90nQtVStbpE",
+          "date_string": "2026-Jun-02",
+          "line_number": 36,
+          "notes": ""
+     },
+     {
+          "index": 37,
+          "comment": "ආවර්ජනා මහරගම YMBA ශාලාව දේශනා අංක 02",
+          "url": "https://www.youtube.com/watch?v=VICqLNRj6V0",
+          "date": "2026-06-02",
+          "video_id": "VICqLNRj6V0",
+          "date_string": "2026-Jun-02",
+          "line_number": 37,
+          "notes": ""
+     },
+     {
+          "index": 38,
+          "comment": "ආවර්ජනා මහරගම YMBA ශාලාව දේශනා අංක 03",
+          "url": "https::to_be_uploaded",
+          "date": "2026-06-02",
+          "video_id": "INVALID: None:to_be_uploaded",
+          "date_string": "2026-Jun-02",
+          "line_number": 38,
+          "notes": ""
+     },
+     {
+          "index": 39,
+          "comment": "ආවර්ජනා මහරගම YMBA ශාලාව දේශනා අංක 04",
+          "url": "https::to_be_uploaded",
+          "date": "2026-06-02",
+          "video_id": "INVALID: None:to_be_uploaded",
+          "date_string": "2026-Jun-02",
+          "line_number": 39,
+          "notes": ""
+     },
+     {
+          "index": 40,
           "comment": "ආවර්ජනා මහරගම YMBA ශාලාව දේශනා අංක 05",
           "url": "https://www.youtube.com/watch?v=Dej84mGT5BE",
           "date": "2026-06-02",
           "video_id": "Dej84mGT5BE",
           "date_string": "2026-Jun-02",
-          "line_number": 36,
+          "line_number": 40,
+          "notes": ""
+     },
+     {
+          "index": 42,
+          "comment": "ආවර්ජනා මහරගම YMBA ශාලාව දේශනා අංක 06",
+          "url": "https://www.youtube.com/watch?v=854SZTfSVm8",
+          "date": "2026-06-02",
+          "video_id": "854SZTfSVm8",
+          "date_string": "2026-Jun-02",
+          "line_number": 41,
+          "notes": ""
+     },
+     {
+          "index": 43,
+          "comment": "ආවර්ජනා මහරගම YMBA ශාලාව දේශනා අංක 07",
+          "url": "https://www.youtube.com/watch?v=LjUAUYOHXp0",
+          "date": "2026-06-02",
+          "video_id": "LjUAUYOHXp0",
+          "date_string": "2026-Jun-02",
+          "line_number": 42,
+          "notes": ""
+     },
+     {
+          "index": 44,
+          "comment": "ආවර්ජනා මහරගම YMBA ශාලාව දේශනා අංක 08",
+          "url": "https://www.youtube.com/watch?v=rkGnvCa9WDk",
+          "date": "2026-06-02",
+          "video_id": "rkGnvCa9WDk",
+          "date_string": "2026-Jun-02",
+          "line_number": 43,
           "notes": ""
      }
 ]
