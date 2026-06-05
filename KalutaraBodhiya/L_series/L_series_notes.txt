@@ -106,7 +106,7 @@ img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.
 #31
 <a href="https://drive.google.com/file/d/1jmwqDz1E0CaeNfwkPrX5uTpqZH1ADHVy/view?usp=sharing" target="_blank">ධම්මචක්කප්පවත්තන සූත්‍රය</a>
 <a href="https://drive.google.com/file/d/1OFuzj-B1WQKxrDuaKNZCm_JfIj5Apegn/view?usp=sharing" target="_blank">චතු අරිය සත්‍ය පෙර පසු නොවි සිදුවන බව</a>
-<a href="https://drive.google.com/file/d/1AYoVIImYlVSmQqe2HyNch62VXIRP1yD-/view?usp=sharing">මහා නිදාන සූත්‍රය විස්තරය සංස්කරණය කරන ලද සටහන</a>
+<a href="https://drive.google.com/file/d/1AYoVIImYlVSmQqe2HyNch62VXIRP1yD-/view?usp=sharing" target="_blank">මහා නිදාන සූත්‍රය විස්තරය සංස්කරණය කරන ලද සටහන</a>
 <div id="sutta">
 <a href="https://drive.google.com/file/d/1YwM41gjwdRgYlT54fb64_iyd_qwr9mVM/view?usp=sharing" target="_blank">පටිච්චසමුප්පාදවිභඞ්ගො නනාවිධ මාතෘකා විවරනය</a>
 <a href="https://drive.google.com/file/d/1bCyw0w3MJXVM90xifKsb66vys_-p5tVH/view?usp=sharing" target="_blank">මජ්ජි සූත්‍රය</a>
@@ -194,5 +194,7 @@ img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.
 #34
 ඛජ්ජනීය සුත්තං  pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
 ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම pdf::/documents/SutraPDFs/ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම.pdf
+<a href="https://drive.google.com/file/d/1AYoVIImYlVSmQqe2HyNch62VXIRP1yD-/view?usp=sharing" target="_blank">මහා නිදාන සූත්‍රය විස්තරය සංස්කරණය කරන ලද සටහන</a>
+<a href="https://drive.google.com/file/d/1dy1CRkjKTP37TfBB1Y8e2OjM-U3ov9dT/view?usp=sharing">පච්චය පච්චයුප්පන්න සුත්තං</a>
 #99
 end
