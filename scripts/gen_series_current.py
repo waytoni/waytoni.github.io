@@ -139,8 +139,8 @@ html_file = "HomagamaA.html"  # Output HTML file name
 css_file = "series_page_style_green.css"  # CSS file to use
 json_file = "HomagamaA.json"  # Output JSON file name
 Homagamaga_series_title = "හෝමාගම ශ්‍රී ශාසනවර්ධනාරාම විහාරයේ ආරම්භ වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව"  # Series title to use in the JSON file
-gen_json_file_only(Homagamaga_series_title)
-# gen_series()
+# gen_json_file_only(Homagamaga_series_title)
+gen_series()
 
 # AnuradhapuraA
 base_folder = "NivanMagaUdesaDesana/AnuradhapuraA"  # Replace with your series folder name

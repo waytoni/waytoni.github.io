@@ -103,10 +103,6 @@
 
         </div>
         
-        <div>
-            <img src="/images/Homagama_travel.jpeg" alt="HomagamaA" style="width: 100%; height: auto;">
-        </div>
-
         <div class="video-container">
             <div class="video-controls">
                 <select id="link-selector" class="video-selector" onchange="updateContent()">
@@ -234,7 +230,7 @@
         function displayLastEntry() {
             if (data.length > 0) {
                 // const lastEntry = data[data.length - 1];
-                const lastEntry = data[-1];
+                const lastEntry = data[0];
                 const selector = document.getElementById('link-selector');
                 selector.value = lastEntry.url;
                 updateContent();
