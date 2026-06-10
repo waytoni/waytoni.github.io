@@ -107,7 +107,7 @@ img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.
 <a href="https://drive.google.com/file/d/1dy1CRkjKTP37TfBB1Y8e2OjM-U3ov9dT/view?usp=sharing" target="_blank">පච්චය පච්චයුප්පන්න සුත්තං</a>
 #25
 ඛජ්ජනීය සුත්තං  pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
-ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම pdf::/documents/SutraPDFs/ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම.pdf
-ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම (HTML for mobile) url::/documents/SutraPDFs/ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම for mobile.html
+ඛජ්ජනීය සූත්‍රය මාගධි පද වැල් හා සිංහල තේරුම pdf::/documents/SutraPDFs/ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම.pdf
+ඛජ්ජනීය සූත්‍රය මාගධි පද වැල් හා සිංහල තේරුම (ජංගම දුරකථන වලින් කියවීම සඳහා) url::/documents/SutraPDFs/ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම for mobile.html
 #301
 #1000
