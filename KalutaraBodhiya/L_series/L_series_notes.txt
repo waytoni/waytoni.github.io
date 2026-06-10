@@ -203,5 +203,6 @@ img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.
 <a href="https://drive.google.com/file/d/1dy1CRkjKTP37TfBB1Y8e2OjM-U3ov9dT/view?usp=sharing" target="_blank">පච්චය පච්චයුප්පන්න සුත්තං</a>
 පච්චය පච්චයුප්පන්න සුත්තං url::https://www.tripitaka.online/sutta/2108
 <a href="https://drive.google.com/file/d/1YwM41gjwdRgYlT54fb64_iyd_qwr9mVM/view?usp=sharing" target="_blank">පටිච්චසමුප්පාදවිභඞ්ගො නනාවිධ මාතෘකා විවරනය</a>
+අභිධර්ම මාර්ගය පොතේ "ප්‍ර‍ඥප්තිය" url::https://pitaka.lk/books/abhidharma-margaya/9-7.html
 #99
 end
