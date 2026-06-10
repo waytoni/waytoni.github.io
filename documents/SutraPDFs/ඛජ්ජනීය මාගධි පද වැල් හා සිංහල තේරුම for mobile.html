@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="si">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B9ZTNLS3FQ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-B9ZTNLS3FQ');
+    </script>
+    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" type="text/css" href="/css/nav_menu.css">
+    <link rel="stylesheet" type="text/css" href="/css/series_page_style_green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/scripts/nav_function.js"></script>
+
+
+
+    <title>ඛජ්ජනීය සූත්‍රය - මාගධී පද වැල් හා සිංහල තේරුම</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Noto+Sans+Sinhala:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0a0e17;
+            --text-color: #e2e8f0;
+            --accent-pali: #fbbf24;
+            /* Amber */
+            --accent-sinhala: #38bdf8;
+            /* Sky blue */
+            --card-bg: rgba(30, 41, 59, 0.6);
+            --card-border: rgba(148, 163, 184, 0.1);
+            --card-hover-border: rgba(56, 189, 248, 0.5);
+            --header-bg: rgba(10, 14, 23, 0.85);
+        }
+
+        body {
+            font-family: 'Inter', 'Noto Sans Sinhala', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-image:
+                radial-gradient(circle at 15% 50%, rgba(56, 189, 248, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 85% 30%, rgba(251, 191, 36, 0.05) 0%, transparent 50%);
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            background: var(--header-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 2rem 5%;
+            border-bottom: 1px solid var(--card-border);
+            z-index: 100;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, var(--accent-pali), var(--accent-sinhala));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .subtitle {
+            margin-top: 0.5rem;
+            color: #94a3b8;
+            font-weight: 300;
+            font-size: 1.1rem;
+        }
+
+        main {
+            padding: 3rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            color: var(--text-color);
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+
+        .tab-btn:hover {
+            border-color: var(--accent-pali);
+            box-shadow: 0 0 15px rgba(251, 191, 36, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .tab-btn.active {
+            background: rgba(251, 191, 36, 0.1);
+            border-color: var(--accent-pali);
+            color: var(--accent-pali);
+            font-weight: 600;
+        }
+
+        .khandha-section {
+            /* display: none; */
+            animation: fadeIn 0.5s ease;
+        }
+
+        .khandha-section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .phrases-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+            align-items: stretch;
+        }
+
+        .phrase-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 1.5rem;
+            flex: 1 1 200px;
+            max-width: 350px;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .phrase-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-pali), transparent);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .phrase-card.wide-card {
+            flex: 1 1 100%;
+            max-width: 100%;
+        }
+
+        .phrase-card:hover {
+            transform: translateY(-5px) scale(1.02);
+            border-color: var(--card-hover-border);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 0 20px rgba(56, 189, 248, 0.1);
+        }
+
+        .phrase-card:hover::before {
+            opacity: 1;
+        }
+
+        .pali-text {
+            color: var(--accent-pali);
+            font-size: 1.3rem;
+            font-weight: 600;
+            line-height: 1.5;
+            flex-grow: 1;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        .pali-text-special {
+            color: var(--accent-pali);
+            background: rgba(251, 191, 36, 0.1); 
+            background:hsl(from color h s l);
+            font-size: 1.3rem;
+            font-weight: 600;
+            line-height: 1.5;
+            flex-grow: 1;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        .sinhala-text {
+            color: var(--accent-sinhala);
+            font-size: 1.1rem;
+            line-height: 1.6;
+            border-top: 1px dashed rgba(148, 163, 184, 0.2);
+            padding-top: 1rem;
+            font-weight: 400;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        .sinhala-text-special {
+            color: var(--accent-sinhala);
+            background: rgba(251, 191, 36, 0.1); 
+            background:hsl(from color h s l);
+            font-size: 1.1rem;
+            line-height: 1.6;
+            border-top: 1px dashed rgba(148, 163, 184, 0.2);
+            padding-top: 1rem;
+            font-weight: 400;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        
+        .index-badge {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            font-size: 0.7rem;
+            color: rgba(148, 163, 184, 0.4);
+            background: rgba(0, 0, 0, 0.3);
+            padding: 0.2rem 0.5rem;
+            border-radius: 999px;
+        }
+
+        .notes-section {
+            margin-top: 5rem;
+            background: rgba(15, 23, 42, 0.7);
+            border-radius: 20px;
+            padding: 2rem;
+            border: 1px solid rgba(251, 191, 36, 0.2);
+            position: relative;
+        }
+
+        .notes-section::before {
+            content: 'සටහන් - Notes';
+            position: absolute;
+            top: -12px;
+            left: 2rem;
+            background: var(--bg-color);
+            padding: 0 1rem;
+            color: var(--accent-pali);
+            font-size: 0.9rem;
+            font-weight: 600;
+            border-radius: 99px;
+            border: 1px solid rgba(251, 191, 36, 0.2);
+        }
+
+        .note {
+            margin-bottom: 1rem;
+            color: #cbd5e1;
+            line-height: 1.6;
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+
+        .note:last-child {
+            margin-bottom: 0;
+        }
+
+        .note-icon {
+            color: var(--accent-sinhala);
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .phrase-card {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav" id="Topnavbar">
+        <a href="/index.html" class="active"><i style="font-size:24px" class="fa">&#xf015;</i></a>
+        <a href="/All_Playlists/SiyaluDesana.html">පසුගිය සහ සියලුම දේශනා</a>
+        <a href="/Paramartha_Video/Paramartha_Video.html">පරමාර්ථ ලෝකය දේශනා </a>
+        <a href="/Anichcha_Dukka_Anathma_Series/Anichcha_Dukka_Anathma.html">අනිච්ච, දුක්ඛ, අනත්ත දේශනා </a>
+        <a href="/ChiththaChithasika/index.html">චිත්ත සහ චෛතසික</a>
+        <div class="dropdown">
+            <button class="dropbtn">දැනට පැවැත්වෙන දේශනා
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="/VisheshaDesana/RuwanweliMahaSeya/RuwanweliMahaSeya.html">පොහොදින රුවන්වැලි මහා සෑ අභියස පැවෙත්වෙන දේශනා මාලාව</a>
+                <a href="/KalutaraBodhiya/L_series/L_series.html">කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන දේශනා මාලාව (L series)</a>
+                <a href="/AbhidharmaAruth/D_series/AbhidharmaAruthD.html">පොල්ගස්ඕවිට පැවෙත්වෙන දේශනා මාලාව (D කන්ඩායම)</a>
+                <a href="/NivanMagaUdesaDesana/ThalawathugodaB/ThalawathugodaB.html">තලවතුගොඩ පැවෙත්වෙන දේශනා මාලාව (B කන්ඩාය)</a>
+                <a href="/NivanMagaUdesaDesana/MaharagamaA/MaharagamaA.html">මහරගම පැවෙත්වෙන දේශනා මාලාව (A කන්ඩායම)</a>
+                <a href="/NivanMagaUdesaDesana/HomagamaA/HomagamaA.html">හෝමාගම පැවෙත්වෙන දේශනා මාලාව <mark>(ජුනි 6 සිට)</mark></a>
+                <a href="/NivanMagaUdesaDesana/AnuradhapuraA/AnuradhapuraA.html">අනුරාධපුරයේ පැවෙත්වෙන දේශනා මාලාව</a>
+                <a href="/VisheshaDesana/index.html">විශේෂ දේශනා</a>
+                <a href="/completed/NivanMagaUdesaDesana/Thalawathugoda/Thalawathugoda.html">2025 තලවතුගොඩ පැවැත්වුන දේශනා මාලාව</a>
+                <a href="/completed/AbhidharmaAruth/C_series/AbhidharmaAruthC.html">2025 පොල්ගස්ඕවිට පැවැත්වුන දේශනා මාලාව (C කන්ඩායම)</a>
+                <a href="/completed/KalutaraBodhiya/J_series/J_series.html">2024 කළුතර බෝධි පරිශ්‍රයේදී පැවැත්වුන දේශනා මාලාව (J Series)</a>
+       
+                <a href="/completed/AbhidharmaSeries/A_series/index.html">2020-24 තුන්කල්හි වෙනස් නොවන ලොව එකම විශ්ව දර්ශනය දේශනා</a>
+                <a href="/completed/NivanMagaUdesaDesana/A_series/index.html">2023-25 නිවන් මග උදෙසා දර්ශන ඥානය (A කණ්ඩායම)</a>
+            </div>
+        </div> 
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navFunction()">&#9776;</a>
+    </div>
+    <header>
+        <h1>ඛජ්ජනීය සූත්‍රය</h1>
+        <div class="subtitle">මාගධී පද වැල් හා සිංහල තේරුම</div>
+        <div class="subtitle">අජන්ත සම්පත් ගුරුතුමාගේ සටහනක් ඇසුරෙන්</div>
+    </header>
+
+    <main>
+        <!--
+        <div class="tabs">
+            <button class="tab-btn active" onclick="openTab(event, 'tab0')">රූප</button>
+            <button class="tab-btn " onclick="openTab(event, 'tab1')">වේදනා</button>
+            <button class="tab-btn " onclick="openTab(event, 'tab2')">සඤ්ඤා</button>
+            <button class="tab-btn " onclick="openTab(event, 'tab3')">සංඛාර</button>
+            <button class="tab-btn " onclick="openTab(event, 'tab4')">විඤ්ඤාණ</button>
+        </div>
+    -->
+        <div class="subtitle" style="text-align: center;"><br>රූප</div>
+
+        <div id="tab0" class="khandha-section">
+            <div class="phrases-container">
+                <div class="phrase-card">
+                    <span class="index-badge">A</span>
+                    <div class="pali-text">කිඤ‍්ච භික‍්ඛවෙ</div>
+                    <div class="sinhala-text">මක් නිසාද? මහණෙනි,</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">B</span>
+                    <div class="pali-text">රූපං</div>
+                    <div class="sinhala-text">රූපය</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">C</span>
+                    <div class="pali-text">වදේථ?</div>
+                    <div class="sinhala-text">කියල කියන්නේ</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">D</span>
+                    <div class="pali-text">රුප‍්පතීති</div>
+                    <div class="sinhala-text">පැහැරෙන (කිපෙන, පෙළෙන, ගැටෙන)</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">E</span>
+                    <div class="pali-text">ඛෝ භික්ඛවේ, තස්‌මා</div>
+                    <div class="sinhala-text">බැවින් මහණෙනි</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">F</span>
+                    <div class="pali-text">රූපන‍්ති</div>
+                    <div class="sinhala-text">රූපය</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">G</span>
+                    <div class="pali-text">වුච්චති.</div>
+                    <div class="sinhala-text">කියන්නේ</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">H</span>
+                    <div class="pali-text">කේන</div>
+                    <div class="sinhala-text-special">කුමකින්ද</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">I</span>
+                    <div class="pali-text">රුප‍්පති:</div>
+                    <div class="sinhala-text">පැහැරෙන්නේ (කිපෙන්නේ, පෙළෙන්නේ, ගැටෙන්නේ)</div>
+                </div>
+                <div class="phrase-card wide-card">
+                    <span class="index-badge">J</span>
+                    <div class="pali-text">
+                        සීතේනපි රුප්‌පති, උණ්‌හේනපි රුප්‌පති, ජිඝච්‌ඡායපි රුප්‌පති, පිපාසායපි රුප්‌පති, 
+                        ඩංසමකසවාතාතපසිරිංසපසම්‌ඵස්‌සේනපි රුප්‌පති.
+                    </div>
+                    <div class="sinhala-text">
+                    සීතලෙනුත් පැහැරෙනවා. උෂ්ණයෙනුත් පැහැරෙනවා. බඩගින්දරෙනුත් පැහැරෙනවා. පිපාසයෙනුත් පැහැරෙනවා. 
+                    මැසිමදුරු අව්සුළං සර්පයන් ආදී ස්පර්ශයෙනුත් පැහැරෙනවා.
+                    </div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">D</span>
+                    <div class="pali-text">රුප‍්පතීති</div>
+                    <div class="sinhala-text">පැහැරෙන (කිපෙන, පෙළෙන, ගැටෙන)</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">E</span>
+                    <div class="pali-text">ඛෝ භික්ඛවේ, තස්‌මා</div>
+                    <div class="sinhala-text">බැවින් මහණෙනි</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">F</span>
+                    <div class="pali-text">රූපන‍්ති</div>
+                    <div class="sinhala-text">රූපය</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">G</span>
+                    <div class="pali-text">වුච්චති.</div>
+                    <div class="sinhala-text">කියන්නේ.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subtitle" style="text-align: center;"><br>වේදනා</div>
+
+        <div id="tab1" class="khandha-section ">
+            <div class="phrases-container">
+                <div class="phrase-card">
+                    <span class="index-badge">A</span>
+                    <div class="pali-text">කිඤ‍්ච භික‍්ඛවෙ</div>
+                    <div class="sinhala-text">මක් නිසාද? මහණෙනි,</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">B</span>
+                    <div class="pali-text">වේදනං</div>
+                    <div class="sinhala-text">වේදනාව</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">C</span>
+                    <div class="pali-text">වදේථ?</div>
+                    <div class="sinhala-text">කියල කියන්නේ</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">D</span>
+                    <div class="pali-text">වෙදියතීති</div>
+                    <div class="sinhala-text">විඳින</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">E</span>
+                    <div class="pali-text">ඛෝ භික්ඛවේ, තස්‌මා</div>
+                    <div class="sinhala-text">බැවින් මහණෙනි</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">F</span>
+                    <div class="pali-text">වේදනාති</div>
+                    <div class="sinhala-text">වේදනාව</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">G</span>
+                    <div class="pali-text">වුච්චති.</div>
+                    <div class="sinhala-text">කියන්නේ.</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">H</span>
+                    <div class="pali-text">කිඤ‍්ච</div>
+                    <div class="sinhala-text">කුමක්ද</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">I</span>
+                    <div class="pali-text">වෙදියති</div>
+                    <div class="sinhala-text">විඳින්නේ</div>
+                </div>
+                <div class="phrase-card wide-card">
+                    <span class="index-badge">J</span>
+                    <div class="pali-text">සුඛම්‌පි වේදියති, දුක්‌ඛම්‌පි වේදියති, අදුක්‌ඛමසුඛම්‌පි වේදියති.</div>
+                    <div class="sinhala-text">සැපත් විඳිනවා. දුකත් විඳිනවා. දුක් සැප රහිත බවත් විඳිනවා.</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">D</span>
+                    <div class="pali-text">වෙදියතීති</div>
+                    <div class="sinhala-text">විඳින</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">E</span>
+                    <div class="pali-text">ඛෝ භික්ඛවේ, තස්‌මා</div>
+                    <div class="sinhala-text">බැවින් මහණෙනි</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">F</span>
+                    <div class="pali-text">වේදනාති</div>
+                    <div class="sinhala-text">වේදනාව</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">G</span>
+                    <div class="pali-text">වුච්චති.</div>
+                    <div class="sinhala-text">කියන්නේ.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subtitle" style="text-align: center;"><br>සඤ්ඤා</div>
+
+        <div id="tab2" class="khandha-section ">
+            <div class="phrases-container">
+                <div class="phrase-card">
+                    <span class="index-badge">A</span>
+                    <div class="pali-text">කිඤ‍්ච භික‍්ඛවෙ</div>
+                    <div class="sinhala-text">මක් නිසාද? මහණෙනි,</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">B</span>
+                    <div class="pali-text">සඤ්‌ඤං</div>
+                    <div class="sinhala-text">සඤ්ඤාව</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">C</span>
+                    <div class="pali-text">වදේථ?</div>
+                    <div class="sinhala-text">කියල කියන්නේ</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">D</span>
+                    <div class="pali-text">සඤ්‌ජානාතීති</div>
+                    <div class="sinhala-text">හඳුනා ගන්න</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">E</span>
+                    <div class="pali-text">ඛෝ භික්ඛවේ, තස්‌මා</div>
+                    <div class="sinhala-text">බැවින් මහණෙනි</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">F</span>
+                    <div class="pali-text">සඤේඤොති</div>
+                    <div class="sinhala-text">සඤ්ඤාව</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">G</span>
+                    <div class="pali-text">වුච්චති.</div>
+                    <div class="sinhala-text">කියන්නේ.</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">H</span>
+                    <div class="pali-text">කිඤ‍්ච</div>
+                    <div class="sinhala-text">කුමක්ද</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">I</span>
+                    <div class="pali-text">සඤ්‌ජානාති</div>
+                    <div class="sinhala-text">හඳුනාගන්නේ</div>
+                </div>
+                <div class="phrase-card wide-card">
+                    <span class="index-badge">J</span>
+                    <div class="pali-text">නීලම්‌පි සඤ්‌ජානාති, පීතකම්‌පි සඤ්‌ජානාති, 
+                        ලෝහිතකම්‌පි සඤ්‌ජානාති, ඕදාතම්‌පි සඤ්‌ජානාති
+                    </div>
+                    <div class="sinhala-text">නිල් පැහැයත් හඳුනාගන්නවා. කහ පැහැයත් හඳුනාගන්නවා. 
+                        රතු පැහැයත් හඳුනාගන්නවා. සුදු පැහැයත් හඳුනාගන්නවා.</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">D</span>
+                    <div class="pali-text">සඤ්‌ජානාතීති</div>
+                    <div class="sinhala-text">හඳුනා ගන්න</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">E</span>
+                    <div class="pali-text">ඛෝ භික්ඛවේ, තස්‌මා</div>
+                    <div class="sinhala-text">බැවින් මහණෙනි</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">F</span>
+                    <div class="pali-text">සඤ්‌ඤාති</div>
+                    <div class="sinhala-text">සඤ්ඤාව</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">G</span>
+                    <div class="pali-text">වුච්චති.</div>
+                    <div class="sinhala-text">කියන්නේ.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subtitle" style="text-align: center;"><br>සංඛාර</div>
+
+        <div id="tab3" class="khandha-section ">
+            <div class="phrases-container">
+                <div class="phrase-card">
+                    <span class="index-badge">A</span>
+                    <div class="pali-text">කිඤ‍්ච භික‍්ඛවෙ</div>
+                    <div class="sinhala-text">මක් නිසාද? මහණෙනි,</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">B</span>
+                    <div class="pali-text">සඞ‍්ඛාරෙ</div>
+                    <div class="sinhala-text">සංස්කාර</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">C</span>
+                    <div class="pali-text">වදේථ?</div>
+                    <div class="sinhala-text">කියල කියන්නේ</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">D</span>
+                    <div class="pali-text">සඞ‍්ඛතං අභිසඞ‍්ඛරොන‍්තීති</div>
+                    <div class="sinhala-text">සකස් කරන</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">E</span>
+                    <div class="pali-text">ඛෝ භික්ඛවේ, තස්‌මා</div>
+                    <div class="sinhala-text">බැවින් මහණෙනි</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">F</span>
+                    <div class="pali-text">සඞ‍්ඛාරාති</div>
+                    <div class="sinhala-text">සංස්කාර</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">G</span>
+                    <div class="pali-text-special">වුච්චන්ති.</div>
+                    <div class="sinhala-text">කියන්නේ.</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">H</span>
+                    <div class="pali-text">කිඤ‍්ච</div>
+                    <div class="sinhala-text">කුමක්ද</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">I</span>
+                    <div class="pali-text">සඞ‍්ඛතං අභිසඞ‍්ඛරොන‍්ති</div>
+                    <div class="sinhala-text">සකස් කරන්නේ</div>
+                </div>
+                <div class="phrase-card wide-card">
+                    <span class="index-badge">J</span>
+                    <div class="pali-text"><!--
+                        රූපං රූපත්‌තාය සංඛතං අභිසංඛරොන්‌ති, වේදනං වේදනත්‌තාය සංඛතං අභිසඞ‍්ඛරොන‍්තීති, සඤ්‌ඤං සඤ්‌ඤත්‌තාය සංඛතං අභිසංඛරොන්‌ති, 
+                        සංඛාරේ සංඛාරත්‌තාය සංඛතං අභිසංඛරොන්‌ති, විඤ්‌ඤාණං විඤ්‌ඤාණත්‌තාය සංඛතං අභිසංඛරොන්‌ති
+                    -->
+                        රූපං රූපත‍්තාය සඞ‍්ඛතං අභිසඞ‍්ඛරොන‍්ති. වෙදනං වෙදනත‍්තාය සඞ‍්ඛතං අභිසඞ‍්ඛරොන‍්ති. සඤ‍්ඤං සඤ‍්ඤත‍්තාය සඞ‍්ඛතං අභිසඞ‍්ඛරොන‍්ති. 
+                        සඞ‍්ඛාරෙ සඞ‍්ඛාරත‍්තාය සඞ‍්ඛතං අභිසඞ‍්ඛරොන‍්ති, විඤ‍්ඤාණං විඤ‍්ඤාණත‍්තාය සඞ‍්ඛතං අභිසඞ‍්ඛරොන‍්ති.
+                    </div>
+                    <div class="sinhala-text">
+                        රූපයක් පිණිසමයි සංඛතය අභිසංස්කරණය කරන්නේ. 
+                        වේදනාව වේදනාවක් පිණිසමයි සංඛතය අභිසංස්කරණය කරන්නේ. 
+                        සඤ්ඤාව සඤ්ඤාවක් පිණිසමයි සංඛතය අභිසංස්කරණය කරන්නේ. 
+                        සංස්කාර සංස්කාර පිණිසමයි සංඛතය අභිසංස්කරණය කරන්නේ. 
+                        විඤ්ඤාණය විඤ්ඤාණයක් පිණිසමයි සංඛතය අභිසංස්කරණය කරන්නේ. 
+                    </div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">D</span>
+                    <div class="pali-text">සංඛතං අභිසංඛරොන්‌තීති</div>
+                    <div class="sinhala-text">සකස් කරන</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">E</span>
+                    <div class="pali-text">ඛෝ භික්ඛවේ, තස්‌මා</div>
+                    <div class="sinhala-text">බැවින් මහණෙනි</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">F</span>
+                    <div class="pali-text">සංඛාරාති</div>
+                    <div class="sinhala-text">සංස්කාර</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">G</span>
+                    <div class="pali-text-special">වුච්චන්ති.</div>
+                    <div class="sinhala-text">කියන්නේ.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subtitle" style="text-align: center;"><br>විඤ්ඤාණ</div>
+
+        <div id="tab4" class="khandha-section ">
+            <div class="phrases-container">
+                <div class="phrase-card">
+                    <span class="index-badge">A</span>
+                    <div class="pali-text">කිඤ‍්ච භික‍්ඛවෙ</div>
+                    <div class="sinhala-text">මක් නිසාද? මහණෙනි,</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">B</span>
+                    <div class="pali-text">විඤ‍්ඤාණං</div>
+                    <div class="sinhala-text">විඤ්ඤාණය</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">C</span>
+                    <div class="pali-text">වදේථ?</div>
+                    <div class="sinhala-text">කියල කියන්නේ</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">D</span>
+                    <div class="pali-text">විජානාතීති</div>
+                    <div class="sinhala-text">දැනගන්න</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">E</span>
+                    <div class="pali-text">ඛෝ භික්ඛවේ, තස්‌මා</div>
+                    <div class="sinhala-text">බැවින් මහණෙනි</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">F</span>
+                    <div class="pali-text">විඤ‍්ඤාණන‍්ති</div>
+                    <div class="sinhala-text">විඤ්ඤාණය</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">G</span>
+                    <div class="pali-text">වුච්චති.</div>
+                    <div class="sinhala-text">කියන්නේ.</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">H</span>
+                    <div class="pali-text">කිඤ‍්ච</div>
+                    <div class="sinhala-text">කුමක්ද</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">I</span>
+                    <div class="pali-text">විජානාති</div>
+                    <div class="sinhala-text">දැනගන්නේ</div>
+                </div>
+                <div class="phrase-card wide-card">
+                    <span class="index-badge">J</span>
+                    <div class="pali-text">අම‍්බිලම‍්පි විජානාති, තිත‍්තකම‍්පි විජානාති, කටුකම‍්පි විජානාති, 
+                        මධුරකම‍්පි විජානාති, ඛාරිකම‍්පි විජානාති, අඛාරිකම‍්පි විජානාති, 
+                        ලොණිකම‍්පි විජානාති, අලොණිකම‍්පි විජානාති.</div>
+                    <div class="sinhala-text">ඇඹුල් බවත් දැනගන්නවා.
+                        තිත්ත බවත් දැනගන්නවා. කටුක බවත් දැනගන්නවා. මිහිරි බවත් දැනගන්නවා. 
+                        කර රසයත් දැනගන්නවා. කර රස නැති බවත් විශේෂයෙන් දැනගන්නවා. ලුණු රසයත් දැනගන්නවා. 
+                        ලුණු නොවන රසයත් දැනගන්නවා.</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">D</span>
+                    <div class="pali-text">විජානාතීති</div>
+                    <div class="sinhala-text">දැනගන්න</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">E</span>
+                    <div class="pali-text">ඛෝ භික්ඛවේ, තස්‌මා</div>
+                    <div class="sinhala-text">බැවින් මහණෙනි</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">F</span>
+                    <div class="pali-text">විඤ‍්ඤාණන‍්ති</div>
+                    <div class="sinhala-text">විඤ්ඤාණය</div>
+                </div>
+                <div class="phrase-card">
+                    <span class="index-badge">G</span>
+                    <div class="pali-text">වුච්චති.</div>
+                    <div class="sinhala-text">කියන්නේ.</div>
+                </div>
+            </div>
+        </div>
+<!--
+        <div class="tabs">
+            <button class="tab-btn active" onclick="openTab(event, 'tab0')">රූප</button>
+            <button class="tab-btn " onclick="openTab(event, 'tab1')">වේදනා</button>
+            <button class="tab-btn " onclick="openTab(event, 'tab2')">සඤ්ඤා</button>
+            <button class="tab-btn " onclick="openTab(event, 'tab3')">සංඛාර</button>
+            <button class="tab-btn " onclick="openTab(event, 'tab4')">විඤ්ඤාණ</button>
+        </div>
+    -->
+
+        <div class="subtitle" style="text-align: center;">~~~~~~~~</div>
+
+        <div class="notes-section">
+            <div class="note">
+                <span class="note-icon">✦</span>
+                විදර්ශනා මාර්ගය ඉපදවීම උදෙසා ඉහත මාගධි පද වැල් උපනිස්සය වේ.
+            </div>
+            <div class="note">
+                <span class="note-icon">✦</span>
+                B හා D තීරු වල ඇති කාරණා ලෞකිකව දෙකක් වුවද ලෝකෝත්තර වශයෙන් එකකි. 
+                    (උදාහරණ: පැහැරෙන බවම (ක්‍රියාවම) රූපයයි/අනිච්චයි)
+            </div>
+        </div>
+    </main>
+<!--
+    <script>
+        function openTab(evt, tabName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("khandha-section");
+            for (i = 0; i < x.length; i++) {
+                x[i].classList.remove("active");
+            }
+            
+            tablinks = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+                if (tablinks[i].getAttribute("onclick").includes(tabName)) {
+                    tablinks[i].classList.add("active");
+                }
+            }
+            
+            document.getElementById(tabName).classList.add("active");
+            
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+-->
+</body>
+
+</html>

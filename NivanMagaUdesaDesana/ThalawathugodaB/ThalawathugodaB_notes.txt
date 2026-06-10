@@ -108,5 +108,6 @@ img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.
 #25
 ඛජ්ජනීය සුත්තං  pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
 ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම pdf::/documents/SutraPDFs/ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම.pdf
+ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම (HTML for mobile) url::/documents/SutraPDFs/ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම for mobile.html
 #301
 #1000
