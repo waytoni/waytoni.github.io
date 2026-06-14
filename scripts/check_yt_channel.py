@@ -57,6 +57,12 @@ CHANNELS = [
         "filter_phrase": "පොල්ගස්ඔවිට",
         "ytlinks_file": "AbhidharmaAruth/D_series/AbhidharmaAruth_D_ytlinks.txt",
     },
+    {
+        "name": "Homagama A series",
+        "channel_id": "UC63kf7W9KLLCj0jK6HF5PdA",
+        "filter_phrase": "හෝමාගම",
+        "ytlinks_file": "NivanMagaUdesaDesana/HomagamaA/HomagamaA_ytlinks.txt",
+    },
     # Add more channels as needed:
     # {
     #     "name": "KalutaraBodhiya L series",
