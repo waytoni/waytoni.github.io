@@ -109,5 +109,7 @@ img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.
 ඛජ්ජනීය සුත්තං  pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
 ඛජ්ජනීය සූත්‍රය මාගධි පද වැල් හා සිංහල තේරුම pdf::/documents/SutraPDFs/ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම.pdf
 ඛජ්ජනීය සූත්‍රය මාගධි පද වැල් හා සිංහල තේරුම (ජංගම දුරකථන වලින් කියවීම සඳහා) url::/documents/SutraPDFs/ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම for mobile.html
+26 
+විහාර සුත්තං url::https://www.tripitaka.online/sutta/3100
 #301
 #1000

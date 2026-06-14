@@ -186,6 +186,10 @@ img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.
 
 මජ්ඣේ සූත්‍රය නිමා විය. 
 </div>
+#35
+ඛජ්ජනීය සුත්තං  pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
+ඛජ්ජනීය සූත්‍රය මාගධි පද වැල් හා සිංහල තේරුම pdf::/documents/SutraPDFs/ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම.pdf
+<a href="https://drive.google.com/file/d/1AYoVIImYlVSmQqe2HyNch62VXIRP1yD-/view?usp=sharing" target="_blank">මහා නිදාන සූත්‍රය විස්තරය සංස්කරණය කරන ලද සටහන</a>
 #99
 ඛජ්ජනීය සුත්තං  pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
 ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
