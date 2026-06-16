@@ -46,5 +46,5 @@ ZoomInfo_basic.html
 ## VIDEO_SELECTOR ##
 # The video_number given in this section will point to the video that will be shown when a series page is opened.
 # It is better to remove this section unless there is a special reason.
-35
+36
 
