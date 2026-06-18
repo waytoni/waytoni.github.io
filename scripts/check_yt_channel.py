@@ -42,12 +42,12 @@ CHANNELS = [
         "ytlinks_file": "KalutaraBodhiya/L_series/L_series_ytlinks.txt",
     },
     {
-        "name": "Maharagama A series",
+        "name": "Maharagama B series",
         "channel_id": "UC63kf7W9KLLCj0jK6HF5PdA",
         # Only videos whose title contains this phrase will be added.
         # Set to None to accept all videos from the channel.
         "filter_phrase": "මහරගම",
-        "ytlinks_file": "NivanMagaUdesaDesana/MaharagamaA/MaharagamaA_ytlinks.txt",
+        "ytlinks_file": "NivanMagaUdesaDesana/MaharagamaB/MaharagamaB_ytlinks.txt",
     },
     {
         "name": "Abhidharma Aruth D series",

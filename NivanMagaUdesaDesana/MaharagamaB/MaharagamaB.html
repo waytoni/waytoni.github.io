@@ -27,7 +27,7 @@
 
 
 
-    <title>පොල්ගස්ඕවිට පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (B කන්ඩායම - දෙවන කොටස)</title>
+    <title>මහරගම තරුණ බෞද්ධ මන්දිරයේ පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (B Series)</title>
 </head>
 
 <body>
@@ -67,21 +67,30 @@
 
     <div class="container">
         <div class="hero-section">
-            <h1>ගරු අජන්ත සම්පත් ගුරුතුමා මෙහෙයවූ</h1>
-            <h2>පොල්ගස්ඕවිට කුරුළුබැද්ද පරිශ්‍රයේ දී පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව</h2>
-            <p>(B කන්ඩායම - දෙවන කොටස)</p>
+            <h1>ගරු අජන්ත සම්පත් ගුරුතුමා</h1>
+            <p>මෙහෙයවන</p>
+            <h1>මහරගම තරුණ බෞද්ධ මන්දිරයේ පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව</h1>
+            <p>(දෙවන (B) කන්ඩායම)</p>
         </div>
 
         <div class="info-grid">
             
+            <div class="info-card">
+                <h3><i class="fa fa-clock-o"></i> කාලය</h3>
+                <p>සෑම අඟහරුවාදා දින සවස 2.00 සිට 4:30 දක්වා</p>
+            </div>
 
             
             <div class="info-card">
                 <h3><i class="fa fa-map-marker"></i> ස්ථානය</h3>
-                <p>පොල්ගස්ඕවිට, පලාගම (කුරුළුබැද්ද)</p>
+                <p><a href="https://maps.app.goo.gl/NfCpKq6jXhVaJ9Wx8">මහරගම තරුණ බෞද්ධ මන්දිරය, 25 විද්‍යාකර මාවත, මහරගම</a></p>
             </div>
 
             
+            <div class="info-card">
+                <h3><i class="fa fa-phone"></i> විමසීම්</h3>
+                <p>077 341 9060 හෝ  0714 333 205</p>
+            </div>
 
 
             <div class="info-card">
@@ -90,9 +99,16 @@
             </div>
 
             
+            <div class="info-card">
+                <h3><i class="fa fa-video-camera"></i><a href="https://us06web.zoom.us/j/89913493367?pwd=UkQ2LzlUTUpKRG9QQTk5YUdTa0FIUT0">Zoom සජීවීව සම්බන්ධ වීමට</a></h3>
+                <p><p style="margin: 0; margin-top: 0; margin-bottom: 0; font-size: 0.8em;"><strong>Meeting ID:</strong> 899 1349 3367</p>
+        <p style="margin: 0; margin-top: 0; margin-bottom: 0; font-size: 0.8em;"><strong>Passcode:</strong> 100100</p></p>
+            </div>
 
         </div>
-
+        <div>
+            <img src="/images/MaharagamaB.jpeg" alt="MaharagamaB" style="width: 100%; height: auto;">
+        </div>
         <div class="video-container">
             <div class="video-controls">
                 <select id="link-selector" class="video-selector" onchange="updateContent()">
@@ -160,7 +176,7 @@
     <script src="https://www.youtube.com/iframe_api"></script>
     <script>
         let data;
-        let seriesTitle = "පොල්ගස්ඕවිට පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (C කන්ඩායම - තෙවැන කොටස)"; // Changeable series title   
+        let seriesTitle = "මහරගම තරුණ බෞද්ධ මන්දිරයේ පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (B Series)"; // Changeable series title   
         let ytPlayer = null;
 
         function onYouTubeIframeAPIReady() {
@@ -200,7 +216,7 @@
         }
 
         // Fetch the JSON data and populate the dropdown menu
-        fetch('AbhidharmaAruthB2.json').then(response => {
+        fetch('MaharagamaB.json').then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok ' + response.statusText);
             }
@@ -291,7 +307,7 @@
         function displayLastEntry() {
             if (data.length > 0) {
                 // const lastEntry = data[data.length - 1];
-                const lastEntry = data[0];
+                const lastEntry = data[-1];
                 const selector = document.getElementById('link-selector');
                 selector.value = lastEntry.url;
                 updateContent();
