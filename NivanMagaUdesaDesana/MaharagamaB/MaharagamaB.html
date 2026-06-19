@@ -106,9 +106,7 @@
             </div>
 
         </div>
-        <div>
-            <img src="/images/MaharagamaB.jpeg" alt="MaharagamaB" style="width: 100%; height: auto;">
-        </div>
+
         <div class="video-container">
             <div class="video-controls">
                 <select id="link-selector" class="video-selector" onchange="updateContent()">
@@ -307,7 +305,7 @@
         function displayLastEntry() {
             if (data.length > 0) {
                 // const lastEntry = data[data.length - 1];
-                const lastEntry = data[-1];
+                const lastEntry = data[5];
                 const selector = document.getElementById('link-selector');
                 selector.value = lastEntry.url;
                 updateContent();
