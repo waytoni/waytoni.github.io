@@ -18,11 +18,13 @@ import re
 import sys
 import urllib.request
 import xml.etree.ElementTree as ET
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 # ---------------------------------------------------------------------------
 # Configuration — add / remove channels here
+# You can add an optional "after_date": "YYYY-MM-DD" to a channel to only
+# include videos published after that date.
 # ---------------------------------------------------------------------------
 CHANNELS = [
     {
@@ -46,6 +48,7 @@ CHANNELS = [
         "channel_id": "UC63kf7W9KLLCj0jK6HF5PdA",
         # Only videos whose title contains this phrase will be added.
         # Set to None to accept all videos from the channel.
+        "after_date": "2026-06-22",
         "filter_phrase": "මහරගම",
         "ytlinks_file": "NivanMagaUdesaDesana/MaharagamaB/MaharagamaB_ytlinks.txt",
     },
@@ -54,6 +57,7 @@ CHANNELS = [
         "channel_id": "UCHB486800OSZYo-umwIo72w",
         # Only videos whose title contains this phrase will be added.
         # Set to None to accept all videos from the channel.
+        "after_date": "2026-06-22",
         "filter_phrase": "පොල්ගස්ඔවිට",
         "ytlinks_file": "AbhidharmaAruth/D_series/AbhidharmaAruth_D_ytlinks.txt",
     },
@@ -140,6 +144,7 @@ def process_channel(cfg: dict) -> bool:
     name          = cfg["name"]
     channel_id    = cfg["channel_id"]
     filter_phrase = cfg.get("filter_phrase")
+    after_date    = cfg.get("after_date")
     ytlinks_file  = Path(cfg["ytlinks_file"])
 
     print(f"\n[{name}]")
@@ -157,6 +162,17 @@ def process_channel(cfg: dict) -> bool:
     if filter_phrase:
         videos = [v for v in videos if filter_phrase in v["title"]]
         print(f"  Filter '{filter_phrase}': {len(videos)} matching video(s) in feed.")
+
+    # Apply optional date filter
+    if after_date:
+        try:
+            limit_dt = datetime.fromisoformat(after_date)
+            if limit_dt.tzinfo is None:
+                limit_dt = limit_dt.replace(tzinfo=timezone.utc)
+            videos = [v for v in videos if v["published"] > limit_dt]
+            print(f"  Filter after date '{after_date}': {len(videos)} matching video(s) in feed.")
+        except ValueError:
+            print(f"  WARNING: Invalid after_date format '{after_date}'. Expected YYYY-MM-DD.")
 
     known_ids  = load_known_ids(ytlinks_file)
     new_videos = [v for v in videos if v["video_id"] not in known_ids]
