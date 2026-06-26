@@ -39,7 +39,7 @@
 # Use the date format YYYY-MM-DD
 # Provide the file name in Zoom_Info folder that contains the Zoom information.
 # Default file name is ZoomInfo_basic.html
-2025-01-31
+2026-12-31
 ZoomInfo_basic.html
 
 ## VIDEO_SELECTOR ##
@@ -47,3 +47,9 @@ ZoomInfo_basic.html
 # It is better to remove this section unless there is a special reason.
 100
 
+## EXTRA_CONTENT ##
+# This section can be used to insert custom HTML content like images
+<div class="info-card" style="text-align: center;">
+    <!--p><em>විශේෂ නිවේදනයක් මෙහි ඇතුලත් කළ හැක.</em></p-->
+    <img src="/images/PosonPoya2026.jpeg" alt="Example" style="max-width: 100%; border-radius: 8px;"> 
+</div>

@@ -26,7 +26,8 @@ def parse_info_file(info_file, on_going, debug_info):
         'LOCATION': '',
         'CONTACT': '',
         'ZOOM_INFO': '',
-        'VIDEO_SELECTOR': ''
+        'VIDEO_SELECTOR': '',
+        'EXTRA_CONTENT': ''
     }
     
     current_section = None
@@ -137,7 +138,7 @@ def parse_info_file(info_file, on_going, debug_info):
     
     return (sections['INTRO'], sections['TITLE'], sections['SERIES_TITLE'],
             sections['TIME'], sections['LOCATION'], sections['CONTACT'],
-            zoom_file, video_number)
+            zoom_file, video_number, sections['EXTRA_CONTENT'])
 
 def generate_series_page(base_folder, html_file, json_file, css_file, on_going, debug_info, verbose=False):
     """
@@ -215,7 +216,7 @@ def generate_series_page(base_folder, html_file, json_file, css_file, on_going, 
     
     # Parse info file
     intro_section, title_section, series_title_section, time_section, \
-    location_section, contact_section, zoom_file, video_number = parse_info_file(
+    location_section, contact_section, zoom_file, video_number, extra_content = parse_info_file(
         info_file, on_going, debug_info)
     
     # Process video number
@@ -328,6 +329,13 @@ def generate_series_page(base_folder, html_file, json_file, css_file, on_going, 
     else:
         template_content = template_content.replace('$ZOOM_INFO_BLOCK$', '')
     
+
+    # Replace EXTRA_CONTENT block
+    if extra_content:
+        template_content = template_content.replace('$EXTRA_CONTENT_BLOCK$', extra_content)
+    else:
+        template_content = template_content.replace('$EXTRA_CONTENT_BLOCK$', '')
+    
     # Replace JSON file
     template_content = template_content.replace('$JSON_FILE$', json_file)
     
@@ -430,7 +438,7 @@ def generateSeriesPageNew(base_folder, html_file, json_file, css_file, on_going,
     
     # Parse info file
     intro_section, title_section, series_title_section, time_section, \
-    location_section, contact_section, zoom_file, video_number = parse_info_file(
+    location_section, contact_section, zoom_file, video_number, extra_content = parse_info_file(
         info_file, on_going, debug_info)
     
     # Process video number
@@ -542,6 +550,13 @@ def generateSeriesPageNew(base_folder, html_file, json_file, css_file, on_going,
             template_content = template_content.replace('$ZOOM_INFO_BLOCK$', '')
     else:
         template_content = template_content.replace('$ZOOM_INFO_BLOCK$', '')
+    
+
+    # Replace EXTRA_CONTENT block
+    if extra_content:
+        template_content = template_content.replace('$EXTRA_CONTENT_BLOCK$', extra_content)
+    else:
+        template_content = template_content.replace('$EXTRA_CONTENT_BLOCK$', '')
     
     # Replace JSON file
     template_content = template_content.replace('$JSON_FILE$', json_file)
