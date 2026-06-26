@@ -13,7 +13,11 @@
             --dark-color: #5D4037;
         }
         
-        body {
+        input, select, textarea, button {
+    font-family: inherit;
+}
+
+body {
             font-family: 'Noto Sans Sinhala', Arial, sans-serif;
             line-height: 1.6;
             color: var(--dark-text);

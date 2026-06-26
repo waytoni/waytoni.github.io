@@ -1,3 +1,7 @@
+input, select, textarea, button {
+    font-family: inherit;
+}
+
 h1 {
     font-size: 24pt;
 }

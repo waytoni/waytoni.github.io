@@ -17,7 +17,11 @@
             box-sizing: border-box;
         }
         
-        body {
+        input, select, textarea, button {
+    font-family: inherit;
+}
+
+body {
             font-family: 'Noto Sans Sinhala', Arial, sans-serif;
             line-height: 1.6;
             color: var(--text-color);

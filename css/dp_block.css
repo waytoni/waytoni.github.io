@@ -1,3 +1,7 @@
+input, select, textarea, button {
+    font-family: inherit;
+}
+
 /* Dropdown Block */
 .dp-block{
     background: #f9f9f9;
