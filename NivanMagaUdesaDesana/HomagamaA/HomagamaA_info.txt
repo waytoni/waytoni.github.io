@@ -24,7 +24,7 @@
 
 ## TIME ###
 # This information is necessary for all on-going series.
-සෑම සෙනසුරාදාම දිනකම පෙ.ව. 8:00 සිට 10:00 දක්වා <mark>(ජුනි 6 සිට)
+සෑම සෙනසුරාදාම දිනකම පෙ.ව. 8:00 සිට 10:00 දක්වා <mark>(ජුනි 27 සිට)
 
 ## LOCATION ##
 # This information is optional; however, add this for all on-going series
