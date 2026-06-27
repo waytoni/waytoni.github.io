@@ -64,7 +64,7 @@ CHANNELS = [
     {
         "name": "Homagama A series",
         "channel_id": "UC63kf7W9KLLCj0jK6HF5PdA",
-        "filter_phrase": "හෝමාගම",
+        "filter_phrase": "මහකටුවාන",
         "ytlinks_file": "NivanMagaUdesaDesana/HomagamaA/HomagamaA_ytlinks.txt",
     },
     # Add more channels as needed:
