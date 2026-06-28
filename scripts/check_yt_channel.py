@@ -76,7 +76,7 @@ CHANNELS = [
     {
         "name": "Anuradhapura Ruwanmaliseya Podo Dina series",
         "channel_id": "UC63kf7W9KLLCj0jK6HF5PdA",
-        "filter_phrase": "Anuradhapura Ruwanmaliseya",
+        "filter_phrase": "Ruwanmaliseya",
         "ytlinks_file": "VisheshaDesana/RuwanweliMahaSeya/RuwanweliMahaSeya_ytlinks.txt",
     },
     # Add more channels as needed:
