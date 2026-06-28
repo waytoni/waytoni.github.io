@@ -67,6 +67,18 @@ CHANNELS = [
         "filter_phrase": "මහකටුවාන",
         "ytlinks_file": "NivanMagaUdesaDesana/HomagamaA/HomagamaA_ytlinks.txt",
     },
+    {
+        "name": "Lions Club Anuradhapura series",
+        "channel_id": "UC63kf7W9KLLCj0jK6HF5PdA",
+        "filter_phrase": "Lions Club",
+        "ytlinks_file": "NivanMagaUdesaDesana/AnuradhapuraA/AnuradhapuraA_ytlinks.txt",
+    },
+    {
+        "name": "Anuradhapura Ruwanmaliseya Podo Dina series",
+        "channel_id": "UC63kf7W9KLLCj0jK6HF5PdA",
+        "filter_phrase": "Anuradhapura Ruwanmaliseya",
+        "ytlinks_file": "VisheshaDesana/RuwanweliMahaSeya/RuwanweliMahaSeya_ytlinks.txt",
+    },
     # Add more channels as needed:
     # {
     #     "name": "KalutaraBodhiya L series",
