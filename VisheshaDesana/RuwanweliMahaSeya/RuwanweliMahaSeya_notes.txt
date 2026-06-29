@@ -32,4 +32,8 @@ img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.
 #13
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
+#14
+img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
 #1000
