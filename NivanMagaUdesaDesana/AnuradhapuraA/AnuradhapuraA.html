@@ -1,38 +1,44 @@
 <!DOCTYPE html>
 <html lang="si">
+
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-B9ZTNLS3FQ"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'G-B9ZTNLS3FQ');
+        gtag('config', 'G-B9ZTNLS3FQ');
     </script>
-    
+
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">   
+    <link rel="manifest" href="/site.webmanifest">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@300;400;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/nav_menu.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@300;400;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/series_page_style_green.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="/scripts/nav_function.js"></script>
 
-    
-    
-    
+
+
+
     <title>අනුරාධපුරය සිංහ සමාජ ගොඩනැගිල්ලේ පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව</title>
 </head>
-<body>
 
+<body>
+    
  
     <div class="topnav" id="Topnavbar">
         <a href="/index.html" class="active"><i style="font-size:24px" class="fa">&#xf015;</i></a>
@@ -79,7 +85,7 @@
                 <h3><i class="fa fa-clock-o"></i> කාලය</h3>
                 <p>සෑම පොහොදිනකම දිනකම ප.ව. 1:30 සිට 3:30 දක්වා</p>
             </div>
-            
+
             
             <div class="info-card">
                 <h3><i class="fa fa-map-marker"></i> ස්ථානය</h3>
@@ -92,12 +98,12 @@
                 <p>__________________</p>
             </div>
 
-            
+
             <div class="info-card">
                 <h3><i class="fa fa-file"></i>දේශනා සඳහා සටහන්</h3>
-            <p><a href="/documents/NotesForDesana/NotesForDesana.html">සියලු දේශනා සඳහා සටහන්</a></p>
+                <p><a href="/documents/NotesForDesana/NotesForDesana.html">සියලු දේශනා සඳහා සටහන්</a></p>
             </div>
-            
+
             
             <div class="info-card">
                 <h3><i class="fa fa-video-camera"></i><a href="https://us06web.zoom.us/j/89913493367?pwd=UkQ2LzlUTUpKRG9QQTk5YUdTa0FIUT0">Zoom සජීවීව සම්බන්ධ වීමට</a></h3>
@@ -106,12 +112,12 @@
             </div>
 
         </div>
-        
+
         <div class="info-card" style="text-align: center;">
     <!--p><em>විශේෂ නිවේදනයක් මෙහි ඇතුලත් කළ හැක.</em></p-->
     <!--img src="/images/PosonPoya2026.jpeg" alt="Example" style="max-width: 100%; border-radius: 8px;"--> 
 </div>
-        
+
         <div class="video-container">
             <div class="video-controls">
                 <select id="link-selector" class="video-selector" onchange="updateContent()">
@@ -122,12 +128,13 @@
                     <button class="nav-button" onclick="navigate(1)">මීළඟ දේශනාව</button>
                 </div>
             </div>
-            
+
             <div id="video-container">
                 <!-- YouTube video will be embedded here -->
             </div>
 
-            <div style="padding: 15px; background: var(--dark-color); color: white; display: flex; justify-content: space-between; align-items: center;">
+            <div
+                style="padding: 15px; background: var(--dark-color); color: white; display: flex; justify-content: space-between; align-items: center;">
                 <h3 id="current-video-title" style="margin: 0; font-size: 1.1rem; min-height: auto;"> ... ... </h3>
             </div>
         </div>
@@ -149,7 +156,7 @@
     <script>
         let data;
         let seriesTitle = "අනුරාධපුරය සිංහ සමාජ ගොඩනැගිල්ලේ පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව"; // Changeable series title   
-        
+
         // Fetch the JSON data and populate the dropdown menu
         fetch('AnuradhapuraA.json').then(response => {
             if (!response.ok) {
@@ -163,7 +170,7 @@
         }).catch(error => {
             console.error('There has been a problem with your fetch operation:', error);
         });
-        
+
         // Function to populate the dropdown menu
         function populateDropdown() {
             const selector = document.getElementById('link-selector');
@@ -176,7 +183,7 @@
                 selector.appendChild(option);
             });
         }
-        
+
         // Function to update the YouTube video and notes based on the selected option
         function updateContent_old() {
             const selector = document.getElementById('link-selector');
@@ -185,16 +192,16 @@
             const index = selectedOption.dataset.index;
             const notes = data.find(item => item.index == index).notes;
             const videoContainer = document.getElementById('video-container');
-            
-            videoContainer.innerHTML = 
+
+            videoContainer.innerHTML =
                 `<iframe class="youtube-frame" src="${url.replace('watch?v=', 'embed/')}" frameborder="0" allowfullscreen></iframe>`;
-            
+
             const notesContainer = document.getElementById('notes');
             notesContainer.innerHTML = notes || '<p>මෙම දේශනාව සඳහා සටහන් නොමැත.</p>';
         }
-        
 
-          function updateContent() {
+
+        function updateContent() {
             const selector = document.getElementById('link-selector');
             const selectedOption = selector.options[selector.selectedIndex];
             const url = selectedOption.value;
@@ -226,15 +233,15 @@
                 // Valid YouTube video - embed normally
                 videoContainer.innerHTML =
                     `<iframe class="youtube-frame" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>`;
-        
-                 titleDisplay.innerHTML = `${selectedData.index}. ${selectedData.comment} 
+
+                titleDisplay.innerHTML = `${selectedData.index}. ${selectedData.comment} 
                     <a href="${url}" target="_blank" 
                     style="font-size:1.0rem; margin-left:10px; color:var(--accent-color);">[YouTube Link]</a>`;
             }
             const notesContainer = document.getElementById('notes');
             notesContainer.innerHTML = notes || '<p>මෙම දේශනාව සඳහා සටහන් නොමැත.</p>';
         }
-        
+
         // Function to display the last entry from the JSON data on the initial load
         function displayLastEntry() {
             if (data.length > 0) {
@@ -245,7 +252,7 @@
                 updateContent();
             }
         }
-        
+
         // Function to navigate to the previous or next video
         function navigate(direction) {
             const selector = document.getElementById('link-selector');
@@ -258,15 +265,16 @@
             selector.selectedIndex = newIndex;
             updateContent();
         }
-        
+
         // Font size slider functionality
         const fontSizeSlider = document.getElementById('fontSizeSlider');
         const notesContent = document.getElementById('notes');
-        
+
         fontSizeSlider.addEventListener('input', function () {
             const newFontSize = `${fontSizeSlider.value}px`;
             notesContent.style.fontSize = newFontSize;
         });
     </script>
 </body>
+
 </html>

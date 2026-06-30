@@ -14,9 +14,7 @@
     box-sizing: border-box;
 }
 
-input, select, textarea, button {
-    font-family: inherit;
-}
+
 
 body {
     font-family: 'Noto Sans Sinhala', Arial, sans-serif;
@@ -25,6 +23,14 @@ body {
     color: var(--dark-text);
     line-height: 1.6;
     background-color: #f5f5f5;
+}
+
+input,
+select,
+textarea,
+button {
+    /* font-family: inherit; */
+    font-family: 'Noto Sans Sinhala', Arial, sans-serif;
 }
 
 .container {
@@ -47,7 +53,7 @@ body {
     margin: 0 0 0px;
     font-size: 1.8rem;
 }
-            
+
 .hero-section h2 {
     margin: 0 0 5px;
     font-size: 1.2rem;
@@ -56,7 +62,8 @@ body {
 
 .hero-section h2 a {
     margin: 0 0 15px;
-    color:  #d4af37; /* or use orange;  */
+    color: #d4af37;
+    /* or use orange;  */
     font-size: 1.2rem;
     font-weight: normal;
 }
@@ -64,7 +71,8 @@ body {
 .hero-section h2 a:hover {
     text-decoration: underline;
     font-weight: bold;
-    color: #f0c850; /* Slightly lighter gold for hover effect */
+    color: #f0c850;
+    /* Slightly lighter gold for hover effect */
 }
 
 .hero-section p {
@@ -98,7 +106,7 @@ body {
     background-color: white;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-    padding:0px;
+    padding: 0px;
     padding-top: 10px;
     padding-left: 15px;
 }
@@ -109,14 +117,16 @@ body {
     display: flex;
     align-items: center;
 }
+
 .info-card p {
-     padding: 0px;
+    padding: 0px;
 }
 
 .info-card p a {
     color: var(--primary-color);
     margin-top: 0;
 }
+
 .info-card h3 a {
     color: var(--primary-color);
     margin-top: 0;
