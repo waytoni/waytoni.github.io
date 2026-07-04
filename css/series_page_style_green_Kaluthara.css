@@ -157,6 +157,7 @@ body {
     border-radius: 4px;
     font-size: 1rem;
     color: var(--dark-text);
+    font-family: 'Noto Sans Sinhala', Arial, sans-serif;
 }
 
 .nav-buttons {
