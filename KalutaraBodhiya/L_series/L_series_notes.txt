@@ -211,5 +211,6 @@ img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.
 #37
 <a href="https://drive.google.com/file/d/1AYoVIImYlVSmQqe2HyNch62VXIRP1yD-/view?usp=sharing" target="_blank">මහා නිදාන සූත්‍රය විස්තරය සංස්කරණය කරන ලද සටහන</a>
 මහාචත්තාරීසක සුත්තං (PDF) pdf::/documents/SutraPDFs/මහාචත්තාරීසක සුත්තං.pdf
+මහාචත්තාරීසක සුත්තං (Online) url::https://tripitaka.online/sutta/739
 #99
 end
