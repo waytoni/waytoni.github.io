@@ -10,6 +10,9 @@ img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
 රේරුකානේ චන්දවිමල හිමියන්ගේ අභිධර්ම මාර්ගය පොත් ලබා ගැනීමට (PDF හෝ HTML ආකාරයට): url::https://tipitaka.lk/library/462
 pdf::docs/ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 004 - 2026 06 27.pdf
 img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
+#5
+img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 #7
 #100
 පටිච්චසමුප්පාදය img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
