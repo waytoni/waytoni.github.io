@@ -29,7 +29,8 @@
 # You may add html code to this selection.
 
 <a href="https://maps.app.goo.gl/NfCpKq6jXhVaJ9Wx8">මහරගම තරුණ බෞද්ධ මන්දිරය, 25 විද්‍යාකර මාවත, මහරගම</a>
-
+<p style="font-size: 0.7rem;">මහරගම නගරයෙන් දෙහිවල පාරට හැරී ටික දුරක් පැමිණි විට සිංගර් සේවා මධ්‍යස්ථානය හා ජලාපවාහන මණ්ඩලය
+ අතරින් දකුණට ඇති විද්‍යාකර මාවතට ඇතුළු වී ජල ටැංකිය අසලදී වමට ඇති බෞද්ධ මන්දිර පෙදෙසට යොමු වූ විට YMBA බෞද්ධ මන්දිරය දිස්වේ (ඇවිදගෙන ඒමට විනාඩි 4 ක් පමණ ගත වේ).</p>
 ## CONTACT ##
 # This information is optional; however, add this for all on-going series
 
@@ -49,3 +50,12 @@ ZoomInfo_basic.html
 # It is better to remove this section unless there is a special reason.
 36
 
+## EXTRA_CONTENT ##
+# This section can be used to insert custom HTML content like images
+<div class="info-card" style="text-align: center;">
+<!--
+<p>ගමන් මාර්ගය - මහරගම නගරයෙන් දෙහිවල පාරට හැරී ටික දුරක් පැමිණි විට සිංගර් සේවා මධ්‍යස්ථානය හා ජලාපවාහන මණ්ඩලය
+ අතරින් දකුණට ඇති විද්‍යාකර මාවතට ඇතුළු වී ජල ටැංකිය අසලදී වමට ඇති බෞද්ධ මන්දිර පෙදෙසට යොමු වූ විට බෞද්ධ මන්දිරය 
+ (මහරගම තරුණ බෞද්ධ සංගමය) දිස්වේ (ඇවිදගෙන ඒමට විනාඩි 4 ක් පමණ ගත වේ).</p>
+ -->
+</div>
