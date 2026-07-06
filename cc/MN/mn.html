@@ -20,8 +20,8 @@
             --card-bg: #ffffff;
             --border-color: #efebe6;
             --accent-color: #d4af37;
-            --pratiloma-color: rgb(198, 237, 238);
-            --anuloma-color: rgb(180, 241, 174);
+            --pratiloma-color: rgb(248, 220, 207);
+            --anuloma-color: rgb(221, 248, 218);
             --verse-font-size: 1.2rem;
         }
 
@@ -133,8 +133,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 15px;
-            padding: 10px;
+            gap: 10px;
+            padding: 5px;
             margin-bottom: 1rem;
             background-color: var(--card-bg);
             border-radius: 8px;
@@ -213,12 +213,18 @@
     </div>
     <header>
         <div class="font-control-container">
-            <label for="fontSizeSlider">අකුරු ප්‍රමාණය / Font Size</label>
+            <label for="fontSizeSlider">අකුරු ප්‍රමාණය</label>
             <input id="fontSizeSlider" max="2.5" min="0.8" step="0.1" type="range" value="1.2" />
         </div>
 
-        <div class="vagga">ගරු අජන්ත සම්පත් ගුරුතුමාගේ සටහනක් ඇසුරෙන්</div>
-        <div class="nikaya">මෙම පිටුවේ අන්තර්ගතය https://www.tripitaka.online/sutta/179 වෙතින් පිටපත් කර ඇත.</div>
+        <div class="vagga">ගරු අජන්ත සම්පත් ගුරුතුමාගේ
+            <a href="https://drive.google.com/file/d/1AYoVIImYlVSmQqe2HyNch62VXIRP1yD-/view?usp=sharing"
+                target="_blank">සටහනක්</a> ඇසුරෙන්
+        </div>
+        <div class="nikaya">මෙම පිටුවේ අන්තර්ගතය
+            <a href="https://www.tripitaka.online/sutta/179">https://www.tripitaka.online/sutta/179</a> වෙතින් පිටපත් කර
+            ඇත.
+        </div>
         <h2 class="subtitle">2. දීඝ නිකාය &rArr; මහා වග්ගෝ &rArr; මහා නිදාන සුත්තං</h2>
         <h2>2. පසුබිමෙහි ඇති දේ ගැන වදාළ දීර්ඝ දෙසුම (මහා නිදාන සූත්‍රය)</h2>
 
@@ -836,7 +842,7 @@
         <!-- Table 1 -->
         <div class="table-container">
             <table class="sutta-table">
-                <tr>
+                <tr style="background-color: var(--pratiloma-color);">
                     <td style="text-align: center; padding: 0; border: none;">
                         <a href="#text-3a" id="table-3a" style="text-decoration: none;"><span
                                 class="highlight">[3A]</span></a>
@@ -847,7 +853,7 @@
                             සොකපරිදෙවදුක්ඛදොමනස්සුපායාසා<br />සම්භවන්ති. එවමෙතස්ස කෙවලස්ස දුක්ඛක්ඛන්ධස්ස<br />සමුදයො
                             හොති.</span></td>
                 </tr>
-                <tr>
+                <tr style="background-color: var(--pratiloma-color);">
                     <td rowspan="7"
                         style="border: none; background-color: transparent; text-align: center; vertical-align: middle; padding: 20px; width: 200px;">
                         <div
@@ -864,37 +870,37 @@
                     <td style="text-align: center;">පච්චයා</td>
                     <td style="text-align: center;">ජාති</td>
                 </tr>
-                <tr>
+                <tr style="background-color: var(--pratiloma-color);">
                     <td style="text-align: center;">උපාදාන</td>
                     <td style="text-align: center;">පච්චයා</td>
                     <td style="text-align: center;">භවො</td>
                 </tr>
-                <tr>
+                <tr style="background-color: var(--pratiloma-color);">
                     <td style="text-align: center;">තණ්හා</td>
                     <td style="text-align: center;">පච්චයා</td>
                     <td style="text-align: center;">උපාදානං</td>
                 </tr>
-                <tr>
+                <tr style="background-color: var(--pratiloma-color);">
                     <td style="text-align: center;">වෙදනා</td>
                     <td style="text-align: center;">පච්චයා</td>
                     <td style="text-align: center;">තණ්හා</td>
                 </tr>
-                <tr>
+                <tr style="background-color: var(--pratiloma-color);">
                     <td style="text-align: center;">ඵස්ස</td>
                     <td style="text-align: center;">පච්චයා</td>
                     <td style="text-align: center;">වෙදනා</td>
                 </tr>
-                <tr>
+                <tr style="background-color: var(--pratiloma-color);">
                     <td style="text-align: center;">නාමරූප</td>
                     <td style="text-align: center;">පච්චයා</td>
                     <td style="text-align: center;">ඵස්සො</td>
                 </tr>
-                <tr>
+                <tr style="background-color: var(--pratiloma-color);">
                     <td style="text-align: center;">විඤ්ඤාණ</td>
                     <td style="text-align: center;">පච්චයා</td>
                     <td style="text-align: center;">නාමරූපං</td>
                 </tr>
-                <tr>
+                <tr style="background-color: var(--pratiloma-color);">
                     <td style="text-align: center; padding: 0; border: none;">
                         <a href="#text-3b" id="table-3b" style="text-decoration: none;"><span
                                 class="highlight">[3B]</span></a>
@@ -905,8 +911,9 @@
                 </tr>
             </table>
         </div>
-        <img alt="table2" src="table2.png" />
-        <!-- Table 2 -->
+        <!-- Table 2 
+        <img alt="table2" src="table2.png" /-->
+
         <div class="table-container">
             <table class="sutta-table">
                 <tr>
@@ -978,11 +985,12 @@
                 </tr>
             </table>
         </div>
-        <img alt="table3a" src="table3a.png" />
-        <!-- Table 3A -->
+        <!-- Table 3A 
+        <img alt="table3a" src="table3a.png" /   -->
+
         <div class="table-container">
             <table class="sutta-table">
-                <tr>
+                <tr style="background-color: var(--pratiloma-color);">
                     <td
                         style="border: none; background-color: var(--pratiloma-color); text-align: center; vertical-align: middle; ">
                         <div><a href="#text-5a" id="table-5a" style="text-decoration: none;"><span
@@ -1009,9 +1017,7 @@
                         </div>
                     </td>
                 </tr>
-                <tr>
-                    <!--style="border: none; background-color: transparent; text-align: center; vertical-align: middle; padding: 20px; width: 150px;">
-                        &nbsp;-->
+                <tr style="background-color: var(--pratiloma-color);">
                     <td rowspan="3"
                         style="border: none; background-color: var(--pratiloma-color); text-align: center; vertical-align: middle; ">
                         <div
@@ -1028,17 +1034,17 @@
                     <td style="text-align: center;"> </td>
                     <td style="text-align: center;">ජාතිනිරොධො</td>
                 </tr>
-                <tr>
+                <tr style="background-color: var(--pratiloma-color);">
                     <td style="text-align: center;">උපාදානනිරොධා</td>
                     <td style="text-align: center;"> </td>
                     <td style="text-align: center;">භවනිරොධො</td>
                 </tr>
-                <tr>
+                <tr style="background-color: var(--pratiloma-color);">
                     <td style="text-align: center;">තණ්හානිරොධා</td>
                     <td style="text-align: center;"> </td>
                     <td style="text-align: center;">උපාදානනිරොධො</td>
                 </tr>
-                <tr>
+                <tr style="background-color: var(--pratiloma-color);">
                     <td style="text-align: center; padding: 0; border: none; background-color: var(--pratiloma-color);">
                         <a href="#text-5b" id="table-5b" style="text-decoration: none;"><span
                                 class="highlight">[5B]</span></a>
@@ -1047,7 +1053,7 @@
                     <td style="text-align: center;"> </td>
                     <td style="text-align: center;">තණ්හානිරොධො</td>
                 </tr>
-                <tr>
+                <tr style="background-color: var(--anuloma-color);">
                     <td
                         style="border: none; background-color: var(--anuloma-color); text-align: center; vertical-align: middle; ">
                         <div><a href="#text-6a" id="table-6a" style="text-decoration: none;"><span
@@ -1068,7 +1074,7 @@
                         </div>
                     </td>
                 </tr>
-                <tr>
+                <tr style="background-color: var(--anuloma-color);">
                     <td rowspan="7"
                         style="border: none; background-color: var(--anuloma-color); text-align: center; vertical-align: middle;  ">
                         <div
@@ -1085,37 +1091,37 @@
                     <td style="text-align: center;">පටිච්ච</td>
                     <td style="text-align: center;">පරියෙසනා</td>
                 </tr>
-                <tr>
+                <tr style="background-color: var(--anuloma-color);">
                     <td style="text-align: center;">පරියෙසනං</td>
                     <td style="text-align: center;">පටිච්ච</td>
                     <td style="text-align: center;">ලාභො</td>
                 </tr>
-                <tr>
+                <tr style="background-color: var(--anuloma-color);">
                     <td style="text-align: center;">ලාභං</td>
                     <td style="text-align: center;">පටිච්ච</td>
                     <td style="text-align: center;">විනිච්ඡයො</td>
                 </tr>
-                <tr>
+                <tr style="background-color: var(--anuloma-color);">
                     <td style="text-align: center;">විනිච්ඡයං</td>
                     <td style="text-align: center;">පටිච්ච</td>
                     <td style="text-align: center;">ඡන්දරාගො</td>
                 </tr>
-                <tr>
+                <tr style="background-color: var(--anuloma-color);">
                     <td style="text-align: center;">ඡන්දරාගං</td>
                     <td style="text-align: center;">පටිච්ච</td>
                     <td style="text-align: center;">අජ්ඣොසානං</td>
                 </tr>
-                <tr>
+                <tr style="background-color: var(--anuloma-color);">
                     <td style="text-align: center;">අජ්ඣොසානං</td>
                     <td style="text-align: center;">පටිච්ච</td>
                     <td style="text-align: center;">පරිග්ගහො</td>
                 </tr>
-                <tr>
+                <tr style="background-color: var(--anuloma-color);">
                     <td style="text-align: center;">පරිග්ගහං</td>
                     <td style="text-align: center;">පටිච්ච</td>
                     <td style="text-align: center;">මච්ඡරියං</td>
                 </tr>
-                <tr>
+                <tr style="background-color: var(--anuloma-color);">
                     <td style="text-align: center; border: none; background-color: var(--anuloma-color)"><a
                             href="#text-6b" id="table-6b" style="text-decoration: none;"><span
                                 class="highlight">[6B]</span></a></td>
@@ -1126,8 +1132,9 @@
             </table>
         </div>
         <br />
-        <img alt="table3b" src="table3b.png" />
-        <!-- Table 3B -->
+        <!-- Table 3B 
+        <img alt="table3b" src="table3b.png" /-->
+
         <div class="table-container">
             <table class="sutta-table">
                 <tr>
@@ -1139,14 +1146,14 @@
                             ඇසුවෝය.</span>
                     </td>
                 </tr>
-                <tr>
+                <tr style="background-color: var(--pratiloma-color);">
                     <td style="text-align: center; border: none;"><a href="#text-7a" id="table-7a"
                             style="text-decoration: none;"><span class="highlight">[7A]</span></a></td>
                     <td style="text-align: center;">මච්ඡරියං (නිරොධා)</td>
                     <td style="text-align: center;"> </td>
                     <td style="text-align: center;">ආරක්ඛොනිරොධො</td>`
                 </tr>
-                <tr>
+                <tr style="background-color: var(--pratiloma-color);">
                     <td rowspan="6"
                         style="border: none; background-color: transparent; text-align: center; vertical-align: middle;  width: 150px;">
                         <div
@@ -1162,32 +1169,32 @@
                     <td style="text-align: center;"> </td>
                     <td style="text-align: center;">මච්ඡරියංනිරොධා</td>
                 </tr>
-                <tr>
+                <tr style="background-color: var(--pratiloma-color);">
                     <td style="text-align: center;">අජ්ඣොසානං (නිරොධා)</td>
                     <td style="text-align: center;"> </td>
                     <td style="text-align: center;">පරිග්ගහොනිරොධා</td>
                 </tr>
-                <tr>
+                <tr style="background-color: var(--pratiloma-color);">
                     <td style="text-align: center;">ඡන්දරාගං (නිරොධා)</td>
                     <td style="text-align: center;"> </td>
                     <td style="text-align: center;">අජ්ඣොසානංනිරොධා</td>
                 </tr>
-                <tr>
+                <tr style="background-color: var(--pratiloma-color);">
                     <td style="text-align: center;">විනිච්ඡයං (නිරොධා)</td>
                     <td style="text-align: center;"> </td>
                     <td style="text-align: center;">ඡන්දරාගොනිරොධා</td>
                 </tr>
-                <tr>
+                <tr style="background-color: var(--pratiloma-color);">
                     <td style="text-align: center;">ලාභං (නිරොධා)</td>
                     <td style="text-align: center;"> </td>
                     <td style="text-align: center;">විනිච්ඡයොනිරොධා</td>
                 </tr>
-                <tr>
+                <tr style="background-color: var(--pratiloma-color);">
                     <td style="text-align: center;">පරියෙසනං (නිරොධා)</td>
                     <td style="text-align: center;"> </td>
                     <td style="text-align: center;">ලාභොනිරොධා</td>
                 </tr>
-                <tr>
+                <tr style="background-color: var(--pratiloma-color);">
                     <td style="border: none; text-align: center;"><a href="#text-7b" id="table-7b"
                             style="text-decoration: none;"><span class="highlight">[7B]</span></a></td>
                     <td style="text-align: center;">තණ්හං (නිරොධා)</td>

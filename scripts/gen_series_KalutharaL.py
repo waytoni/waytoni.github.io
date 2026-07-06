@@ -5,6 +5,7 @@ import sys
 # Add the scripts directory to the path so we can import the helper modules
 sys.path.append('scripts')
 
+from generate_series_page_helper import generateSeriesPageNew
 from generate_series_page_helper import generate_series_page
 from gen_json_file import BuildDropDownMenuWithNavigation
 
@@ -14,11 +15,11 @@ DEBUG_INFO = False # Set to True for debugging, False for production
 
 # Define file paths
 
-def gen_series():
+def gen_series(template_name="series_page_template.html"):
     try:
         # Generate the series page HTML
-        ytlink_file, notes_file, series_title_section = generate_series_page(
-            base_folder, html_file, json_file, css_file, ON_GOING, DEBUG_INFO
+        ytlink_file, notes_file, series_title_section = generateSeriesPageNew(
+            base_folder, html_file, json_file, css_file, ON_GOING, DEBUG_INFO, template_name
         )
         
         # Generate the JSON file with video links and notes
@@ -40,4 +41,4 @@ base_folder = "KalutaraBodhiya/L_series"  # Replace with your series folder name
 html_file = "L_series.html"  # Output HTML file name
 css_file = "series_page_style_green_Kaluthara.css"  # CSS file to use
 json_file = "L_series.json"  # Output JSON file name
-gen_series()
+gen_series(template_name='SeriesPageTemplateWithControls.html')
