@@ -1,71 +1,26 @@
+@import url("series_page_base.css");
+
 :root {
-    --primary-color: #2c5530;
-    --secondary-color: #6b8e23;
-    --accent-color: #d4af37;
-    --light-bg: #f8f9fa;
-    --dark-text: #333;
-    --light-text: #fff;
-    --border-radius: 8px;
-    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --dark-color: var(--primary-color);
-}
-
-* {
-    box-sizing: border-box;
-}
-
-input,
-select,
-textarea,
-button {
-    font-family: inherit;
-}
-
-body {
-    font-family: 'Noto Sans Sinhala', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: var(--dark-text);
-    line-height: 1.6;
-    background-color: #f5f5f5;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+    --hero-bg-image: url('/images/ruwanweliseya-anuradhapura.jpg');
+    --hero-padding: 5px 5px;
+    --hero-margin-bottom: 5px;
+    --hero-h1-size: 2.2rem;
+    --hero-h2-size: 1.2rem;
 }
 
 .hero-section {
-    /* background: linear-gradient(rgba(44, 85, 48, 0.85), rgba(44, 85, 48, 0.85)), 
-                        url('/images/buddha-2909937_960_720.png') center/cover no-repeat;  */
-    background: linear-gradient(rgba(44, 85, 48, 0.85), rgba(44, 85, 48, 0.85)),
-        url('/images/ruwanweliseya-anuradhapura.jpg') center/cover no-repeat;
-    /* background: linear-gradient(rgba(44, 85, 48, 0.85), rgba(44, 85, 48, 0.85)), 
-                        url('/images/RuwanweliSaya1.jpg') center/cover no-repeat;       */
-    color: var(--light-text);
-    padding: 10px 10px;
-    text-align: center;
-    margin-bottom: 10px;
-    border-radius: 0 0 var(--border-radius) var(--border-radius);
     line-height: normal;
 }
 
 .hero-section h1 {
     margin: 5px 0 5px;
-    font-size: 2.2rem;
-}
-
-.hero-section p {
-    margin: 0px 0;
-    font-size: 1.1rem;
 }
 
 .hero-section h2 {
     margin: 10px 0 10px;
-    font-size: 1.2rem;
 }
 
+/* Unique Index Page Styles below */
 .section-header {
     text-align: center;
     margin: 30px 0;
@@ -115,14 +70,8 @@ body {
     font-weight: bold;
 }
 
-.card-input,
-select,
-textarea,
-button {
-    font-family: inherit;
-}
-
-body {
+/* Fix for previous typo: body { padding: 15px; } -> .card-body { padding: 15px; } */
+.card-body {
     padding: 15px;
 }
 
@@ -159,7 +108,6 @@ body {
 }
 
 .zoom-info {
-    /* background-color: #e8f4fd; */
     background-color: #fff9e6;
     border-radius: var(--border-radius);
     padding: 15px;
@@ -199,22 +147,14 @@ body {
     z-index: 1;
 }
 
-.chiththa-card .card-header,
-.chiththa-card .card-input,
-select,
-textarea,
-button {
-    font-family: inherit;
-}
-
-body {
+/* Fixed typo where body { position: relative; z-index: 2; } was applied globally */
+.chiththa-card .card-body {
     position: relative;
     z-index: 2;
 }
 
 .chiththa-card .card-body a {
     color: #d4af37;
-    /* Using the accent color for better visibility */
     text-decoration: none;
     font-weight: bold;
 }
@@ -222,15 +162,12 @@ body {
 .chiththa-card .card-body a:hover {
     text-decoration: underline;
     color: #f0c850;
-    /* Slightly lighter gold for hover effect */
 }
-
 
 .image-card {
     background-size: cover;
     background-position: center;
     position: relative;
-    /*color: white; */
     color: darkgreen;
     --card-image: url('/images/cc_chart_small.jpg');
     background-image: var(--card-image);
@@ -247,32 +184,20 @@ body {
     z-index: 1;
 }
 
-.image-card .card-header,
-.image-card .card-input,
-select,
-textarea,
-button {
-    font-family: inherit;
-}
-
-body {
+/* Fixed typo where body { position: relative; z-index: 2; } was applied globally */
+.image-card .card-body {
     position: relative;
     z-index: 2;
 }
 
 .image-card .card-body a {
-
-
     color: darkgreen;
-    /* color: #d4af37; 
-            color: darkblue;  */
     text-decoration: none;
     font-weight: bold;
 }
 
 .image-card .card-body a:hover {
     text-decoration: underline;
-    /* color: #f0c850; */
     color: darkblue;
 }
 
@@ -283,7 +208,6 @@ body {
     color: #666;
     font-size: 0.9rem;
 }
-
 
 @media (max-width: 768px) {
     .card-container {
