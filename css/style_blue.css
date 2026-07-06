@@ -1,3 +1,5 @@
+@import url("series_page_base.css");
+
 /* Additional CSS for improvements */
 :root {
     --primary-color: #2c5aa0;
@@ -6,31 +8,15 @@
     --light-bg: #f8f5f0;
     --dark-text: #333;
     --light-text: #666;
-    --border-radius: 8px;
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* --dark-color: #172f53; */
     --dark-color: #5D4037;
 }
 
-input,
-select,
-textarea,
-button {
-    font-family: inherit;
-}
-
 body {
-    font-family: 'Noto Sans Sinhala', Arial, sans-serif;
-    line-height: 1.6;
-    color: var(--dark-text);
     background-color: var(--light-bg);
-    margin: 0;
-    padding: 0;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
     padding: 0 20px;
 }
 

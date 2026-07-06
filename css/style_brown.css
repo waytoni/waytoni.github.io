@@ -1,33 +1,24 @@
-input, select, textarea, button {
-    font-family: inherit;
+@import url("series_page_base.css");
+
+:root {
+    --primary-color: #8B4513;
+    --secondary-color: #CD853F;
+    --accent-color: #D2691E;
+    --light-color: #F5F5DC;
+    --dark-color: #5D4037;
+    --text-color: #333;
+    --white: #fff;
+    /* Map to base variables */
+    --dark-text: var(--text-color);
+    --light-bg: var(--light-color);
 }
 
-    
-        :root {
-            --primary-color: #8B4513;
-            --secondary-color: #CD853F;
-            --accent-color: #D2691E;
-            --light-color: #F5F5DC;
-            --dark-color: #5D4037;
-            --text-color: #333;
-            --white: #fff;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Noto Sans Sinhala', sans-serif;
-            /* font-family: 'Abhaya Libre', sans-serif; */
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--light-color);
-        }
-        
-        /* Header Styles */
+body {
+    color: var(--text-color);
+    background-color: var(--light-color);
+}
+
+/* Header Styles */
         header {
             background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
             color: var(--white);
