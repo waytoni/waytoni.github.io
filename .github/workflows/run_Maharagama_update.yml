@@ -1,10 +1,10 @@
-name: Update MaharagamaA series Lesson Links
+name: Update MaharagamaB series Lesson Links
 
 on:
   push:
     paths:
-      - 'NivanMagaUdesaDesana/MaharagamaA/MaharagamaA_ytlinks.txt'     
-      - 'NivanMagaUdesaDesana/MaharagamaA/MaharagamaA_notes.txt'     
+      - 'NivanMagaUdesaDesana/MaharagamaB/MaharagamaB_ytlinks.txt'     
+      - 'NivanMagaUdesaDesana/MaharagamaB/MaharagamaB_notes.txt'     
 jobs:
   run-python-script-MaharagamaAseries:
     runs-on: ubuntu-latest
@@ -17,8 +17,8 @@ jobs:
         with:
           python-version: 3.11 # Set your desired Python version
 
-      - name: Update MaharagamaA serires
-        run: python scripts/gen_series_MaharagamaA.py
+      - name: Update MaharagamaB serires
+        run: python scripts/gen_series_MaharagamaB.py
 
       - name: commit changes
         run: |
@@ -28,6 +28,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "updated MaharagamaA series"
+            git commit -m "updated MaharagamaB series"
             git push
           fi
