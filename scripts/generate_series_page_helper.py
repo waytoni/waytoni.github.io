@@ -263,11 +263,11 @@ def generate_series_page(base_folder, html_file, json_file, css_file, on_going, 
     # Replace intro section
     template_content = template_content.replace('$INTRO_SECTION$', intro_section)
     
-    # Replace time block
+    # Replace time block කාලය 
     if on_going and time_section:
         time_block = f'''
             <div class="info-card">
-                <h3><i class="fa fa-clock-o"></i> කාලය</h3>
+                <h3><i class="fa fa-clock-o"></i>වේලාව</h3>
                 <p>{time_section}</p>
             </div>'''
         template_content = template_content.replace('$TIME_BLOCK$', time_block)
@@ -485,11 +485,11 @@ def generateSeriesPageNew(base_folder, html_file, json_file, css_file, on_going,
     # Replace intro section
     template_content = template_content.replace('$INTRO_SECTION$', intro_section)
     
-    # Replace time block
+    # Replace time block   වේලාව    කාලය  
     if on_going and time_section:
         time_block = f'''
             <div class="info-card">
-                <h3><i class="fa fa-clock-o"></i> කාලය</h3>
+                <h3><i class="fa fa-clock-o"></i> වේලාව</h3>
                 <p>{time_section}</p>
             </div>'''
         template_content = template_content.replace('$TIME_BLOCK$', time_block)
