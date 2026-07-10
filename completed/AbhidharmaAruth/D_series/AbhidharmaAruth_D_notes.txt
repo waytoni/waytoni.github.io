@@ -1,0 +1,89 @@
+#1
+#4
+<div id="sutta">
+<h3>රේරුකානේ චන්දවිමල හිමියන්ගේ පොත්</h3>
+            <ol>
+            <li>අභිධර්ම මාර්ගය පොත <a href="https://tipitaka.lk/library/484" target="_blank">PDF ලෙස</a> හෝ <a href="https://pitaka.lk/books/abhidharma-margaya/index.html" target="_blank">වෙබ් පිටුවක් ලෙස</a></li>
+            <li>අභිධර්මයේ මූලික කරුණු පොත <a href="https://www.ogatharana.org/bookDownCounter.php?booknumber=15"  target="_blank">PDF ලෙස</a> හෝ <a href="https://pitaka.lk/books/abhidharmaye-mulika-karunu/index.html" target="_blank">වෙබ් පිටුවක් ලෙස</a></li>
+            <li> චතුරාර්‍ය්‍ය සත්‍යය පොත <a href="https://www.ogatharana.org/bookDownCounter.php?booknumber=9" target="_blank">PDF ලෙස</a> හෝ <a href="https://pitaka.lk/books/chathurarya-sathya/index.html" target="_blank">වෙබ් පිටුවක් ලෙස</a></li>
+            <li>පටිච්ච සමුප්පාද විවරණය පොත <a href="https://www.ogatharana.org/bookDownCounter.php?booknumber=17" target="_blank">PDF ලෙස</a> හෝ <a href="https://pitaka.lk/books/patichcha-samuppada-vivaranaya/index.html" target="_blank">වෙබ් පිටුවක් ලෙස</a></li>
+            <li>පොහොය දිනය පොත <a href="https://tipitaka.lk/library/498" target="_blank">PDF ලෙස</a> හෝ <a href="https://pitaka.lk/books/pohoya-dinaya/index.html">වෙබ් පිටුවක් ලෙස</a></li>
+            <li>රේරුකානේ චන්දවිමල හිමියන්ගේ සියුලු පොත් සඳහා: <a href="https://www.ogatharana.org/" target="_blank">https://www.ogatharana.org/</a> හෝ <a href="https://tipitaka.lk/library/462" target="_blank">https://tipitaka.lk/library/462</a></li>
+        </ol>
+</div>
+#6
+<a href="https://www.youtube.com/playlist?list=PLqESXbJ82aIg0mR-UZR7_2TbzU6lHOHY0" target="_blank">පරමාර්ථ ධර්ම</a>
+#8
+චිත්ත සහ චෛතසික චක්‍රය url::/ChiththaChithasika/index.html
+#9
+අභිධර්ම මාර්ගය පොතේ 2.4 අකුශල චෛතසික තුදුස url::https://pitaka.lk/books/abhidharma-margaya/3-4.html
+අභිධර්මයේ මූලික කරුණු පොතේ අකුශල චෛතසික තුදුස url::https://pitaka.lk/books/abhidharmaye-mulika-karunu/8-3.html
+අභිධර්ම මාර්ගය පොතේ 7.1 අකුශල සංග්‍ර‍හය url::https://pitaka.lk/books/abhidharma-margaya/8-1.html
+ද්විත්ව නිරෝධය pdf::/documents/SutraPDFs/ද්විත්ව නිරෝධය.pdf
+#10
+සුසීම සුත්තං pdf::/documents/SutraPDFs/සුසීම සුත්තං.pdf
+#11
+සංස්කාර පැහැදිලි කිරීම සඳහා භාවිත කල සූත්‍ර මාලාවක් pdf::/documents/SutraPDFs/සංස්කාර පැහැදිලි කිරීම සඳහා භාවිත කල සූත්‍ර මාලාවක්.pdf
+ඉන්ද්‍රියභාවනා සුත්තං pdf::/documents/SutraPDFs/ඉන්ද්‍රියභාවනා සුත්තං.pdf
+#12
+චක්ෂුර්ද්වාරික අතිමහන්තාරම්මණ වීථිය img::/documents/NotesForDesana/චක්ෂුර්ද්වාරික අතිමහන්තාරම්මණ වීථිය.jpg
+#13
+img::/documents/NotesForDesana/0013 ආයතන ලෙස විග්‍රහය.jpeg
+img::/documents/NotesForDesana/0023 89 ක් වූ සිත් බෙදෙන ආකාර.jpeg 
+img::/documents/NotesForDesana/0022 සිත් සතර ආකාරය භූමීන් අනුව බෙදීම.jpeg
+#14
+කම්ම සූත්‍රය pdf::/documents/SutraPDFs/කම්ම සූත්‍රය.pdf
+චක්ෂුර්ද්වාරික අතිමහන්තාරම්මණ වීථිය img::/documents/NotesForDesana/චක්ෂුර්ද්වාරික අතිමහන්තාරම්මණ වීථිය.jpg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
+#15
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
+img::/documents/NotesForDesana/0006 චක්ෂු සහ ශෝත ප්‍රසාද.jpg
+img::/documents/NotesForDesana/0007 ජිහ්වා සහ ඝ්‍රාණ ප්‍රසාද.jpg
+img::/documents/NotesForDesana/0008 කාය ප්‍රසාදය.jpg
+img::/documents/NotesForDesana/0009 වස්තු රූපය - හදවත තුළ.jpg
+img::/documents/NotesForDesana/0010 ශරීරයෙහි සියලු ප්‍රසාද.jpg
+img::/documents/NotesForDesana/0011 චක්ෂු ප්‍රසාදය ඇසුරු කරගෙන සිතක් පහළ වීම.jpeg
+img::/documents/NotesForDesana/0012 රූප කලාපය වර්ග.jpeg
+විපල්ලාස සුත්තං pdf::/documents/SutraPDFs/විපල්ලාස සුත්තං.pdf
+#16
+විපල්ලාස සුත්තං pdf::/documents/SutraPDFs/විපල්ලාස සුත්තං.pdf
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
+#17
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
+#18
+img::/documents/NotesForDesana/ප්‍රතිත්‍යසමුප්පාද සිදුවන ආකාර.jpg
+#19
+ඵෙණ පිණ්ඩූපම සූත්‍රය pdf::/documents/SutraPDFs/ඵෙණ පිණ්ඩූපම සූත්‍රය.pdf
+පෙණපිඬක් උපමා කොට වදාළ දෙසුම url::https://tripitaka.online/sutta/3571
+img::/documents/NotesForDesana/0002 රූප පරමාර්ථ.jpg
+img::/documents/NotesForDesana/0003 රූප කලාපය.jpg
+#20
+චතස්සො විඤ්ඤාණට්ඨිතියො - සතර විඥාන ස්ථිතී pdf::/documents/SutraPDFs/චතස්සො විඤ්ඤාණට්ඨිතියො -- සතර විඥාන ස්ථිතී.pdf
+#21
+චිත්ත සහ චෛතසික සටහන  url::https://waytoni.com/ChiththaChithasika/ChiththaChithasikaFixedHeader.html
+#24
+<a href="https://drive.google.com/file/d/1YwM41gjwdRgYlT54fb64_iyd_qwr9mVM/view?usp=sharing" target="_blank">පටිච්චසමුප්පාදවිභඞ්ගො නනාවිධ මාතෘකා විවරනය</a>
+#25
+<a href="https://drive.google.com/file/d/1YwM41gjwdRgYlT54fb64_iyd_qwr9mVM/view?usp=sharing" target="_blank">පටිච්චසමුප්පාදවිභඞ්ගො නනාවිධ මාතෘකා විවරනය</a>
+අභිධම‍්මපිටක &rarr; විභඞ‍්ගප‍්පකරණං &rarr; පටිච‍්චසමුප‍්පාද විභඞ‍්ගො url::https://tipitaka.lk/ap-vbh-6/
+ගුරුතුමා විසින් පටිච‍්චසමුප‍්පාද විභඞ්ගය අධ්යයනය සඳහා සකස්කරන ලද විශේෂ සටහන <a href="https://drive.google.com/file/d/1rGH4AQTxIpzSYKb3n6zTD3-huChBj2A2/view?usp=sharing">විභඞ්ගප්පකරණං V 1.05 Final.pdf</a>  
+#26
+<a href="https://drive.google.com/file/d/1jmwqDz1E0CaeNfwkPrX5uTpqZH1ADHVy/view?usp=sharing" target="_blank">ධම්මචක්කප්පවත්තන සූත්‍රය</a>
+<a href="https://drive.google.com/file/d/1OFuzj-B1WQKxrDuaKNZCm_JfIj5Apegn/view?usp=sharing" target="_blank">චතු අරිය සත්‍ය පෙර පසු නොවි සිදුවන බව</a>
+#29
+<a href="https://drive.google.com/file/d/1dy1CRkjKTP37TfBB1Y8e2OjM-U3ov9dT/view?usp=sharing" target="_blank">පච්චය පච්චයුප්පන්න සුත්තං</a>
+#30
+ඛජ්ජනීය සුත්තං  pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
+ඛජ්ජනීය සූත්‍රය මාගධි පද වැල් හා සිංහල තේරුම pdf::/documents/SutraPDFs/ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම.pdf
+<a href="https://drive.google.com/file/d/1AYoVIImYlVSmQqe2HyNch62VXIRP1yD-/view?usp=sharing" target="_blank">මහා නිදාන සූත්‍රය විස්තරය සංස්කරණය කරන ලද සටහන</a>
+#31
+ඛජ්ජනීය සුත්තං  pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
+ඛජ්ජනීය සූත්‍රය මාගධි පද වැල් හා සිංහල තේරුම pdf::/documents/SutraPDFs/ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම.pdf
+<a href="https://drive.google.com/file/d/1AYoVIImYlVSmQqe2HyNch62VXIRP1yD-/view?usp=sharing" target="_blank">මහා නිදාන සූත්‍රය විස්තරය සංස්කරණය කරන ලද සටහන</a>
+<a href="https://drive.google.com/file/d/1dy1CRkjKTP37TfBB1Y8e2OjM-U3ov9dT/view?usp=sharing" target="_blank">සංයුත්ත නිකාය → නිදාන වර්‍ගය → අභිසමය සංයුත්තය → ආහාර වර්‍ගය → පච්චය (පච්චයුප්පන්න) සූත්‍රය</a>
+#200
+#1000

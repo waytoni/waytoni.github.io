@@ -147,12 +147,12 @@ json_file = "M_series.json"  # Output JSON file name
 gen_series(template_name='SeriesPageTemplateWithControls.html')
 
 
-# AbhidharmaAruthD
-base_folder = "AbhidharmaAruth/D_series"  # Replace with your series folder name
-html_file = "AbhidharmaAruthD.html"  # Output HTML file name
+# AbhidharmaAruthE
+base_folder = "AbhidharmaAruth/E_series"  # Replace with your series folder name
+html_file = "AbhidharmaAruthE.html"  # Output HTML file name
 css_file = "series_page_style_green.css"  # CSS file to use
-json_file = "AbhidharmaAruthD.json"  # Output JSON file name
-gen_series()
+json_file = "AbhidharmaAruthE.json"  # Output JSON file name
+gen_series(template_name='SeriesPageTemplateWithControls.html')
 
 # ThalawathugodaB
 base_folder = "NivanMagaUdesaDesana/ThalawathugodaB/"  # Replace with your series folder name

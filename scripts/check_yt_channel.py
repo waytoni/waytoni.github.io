@@ -53,13 +53,13 @@ CHANNELS = [
         "ytlinks_file": "NivanMagaUdesaDesana/MaharagamaB/MaharagamaB_ytlinks.txt",
     },
     {
-        "name": "Abhidharma Aruth D series",
+        "name": "Abhidharma Aruth E series",
         "channel_id": "UCHB486800OSZYo-umwIo72w",
         # Only videos whose title contains this phrase will be added.
         # Set to None to accept all videos from the channel.
-        "after_date": "2026-06-22",
+        "after_date": "2026-07-21",
         "filter_phrase": "පොල්ගස්ඔවිට",
-        "ytlinks_file": "AbhidharmaAruth/D_series/AbhidharmaAruth_D_ytlinks.txt",
+        "ytlinks_file": "AbhidharmaAruth/E_series/AbhidharmaAruth_E_ytlinks.txt",
     },
     {
         "name": "Homagama A series",

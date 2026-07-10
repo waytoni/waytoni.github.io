@@ -23,14 +23,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@300;400;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/nav_menu.css">
-    <link rel="stylesheet" type="text/css" href="/css/series_page_style_green_Kaluthara.css">
+    <link rel="stylesheet" type="text/css" href="/css/series_page_style_green.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="/scripts/nav_function.js"></script>
 
 
 
 
-    <title>කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වුන හයවෙනි  දේශනා මාලාව (F Series)</title>
+    <title>පොල්ගස්ඕවිට පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (E කන්ඩායම - පස්වන කොටස)</title>
 </head>
 
 <body>
@@ -76,22 +76,30 @@
 
     <div class="container">
         <div class="hero-section">
-            <h1>ගරු අජන්ත සම්පත් ගුරුතුමා මෙහෙයවූ</h1>
-            <h2>2019 කළුතර බෝධි පරිශ්‍රයේදී පැවැත්වුන දේශනා මාලාව </h2>
-            <p>හයවෙනි  (F) කන්ඩායම</p>
-<p><strong>දේශනා 1 සිට 5 දක්වා ලබා ගත නොහැක.</strong></p>
+            <h1>ගරු අජන්ත සම්පත් ගුරුතුමා</h1>
+            <p>මෙහෙයවන</p>
+            <h1>පොල්ගස් ඕවිට කුරුළුබැද්ද පරිශ්‍රයේ දී පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව</h1>
+            <p>(පස්වන (E) කන්ඩායම) </p>
         </div>
 
         <div class="info-grid">
             
+            <div class="info-card">
+                <h3><i class="fa fa-clock-o"></i> කාලය</h3>
+                <p><p>අඟහරුවාදා පෙ.ව. 8:30 සිට 11:00 දක්වා (<mark>ජූලි 21 සිට</mark>)</p></p>
+            </div>
 
             
             <div class="info-card">
                 <h3><i class="fa fa-map-marker"></i> ස්ථානය</h3>
-                <p>කළුතර බෝධි පරිශ්‍රයේදී</p>
+                <p>පොල්ගස්ඕවිට, පලාගම (කුරුළුබැද්ද)</p>
             </div>
 
             
+            <div class="info-card">
+                <h3><i class="fa fa-phone"></i> විමසීම්</h3>
+                <p>071 448 0752 හෝ 077 704 7174</p>
+            </div>
 
 
             <div class="info-card">
@@ -100,6 +108,11 @@
             </div>
 
             
+            <div class="info-card">
+                <h3><i class="fa fa-video-camera"></i><a href="https://us06web.zoom.us/j/89913493367?pwd=UkQ2LzlUTUpKRG9QQTk5YUdTa0FIUT0">Zoom සජීවීව සම්බන්ධ වීමට</a></h3>
+                <p><p style="margin: 0; margin-top: 0; margin-bottom: 0; font-size: 0.8em;"><strong>Meeting ID:</strong> 899 1349 3367</p>
+        <p style="margin: 0; margin-top: 0; margin-bottom: 0; font-size: 0.8em;"><strong>Passcode:</strong> 100100</p></p>
+            </div>
 
         </div>
 
@@ -172,7 +185,7 @@
     <script src="https://www.youtube.com/iframe_api"></script>
     <script>
         let data;
-        let seriesTitle = "කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වුන හයවෙනි  දේශනා මාලාව (F Series)"; // Changeable series title   
+        let seriesTitle = "පොල්ගස්ඕවිට පැවෙත්වෙන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (E කන්ඩායම)"; // Changeable series title   
         let ytPlayer = null;
 
         function onYouTubeIframeAPIReady() {
@@ -212,7 +225,7 @@
         }
 
         // Fetch the JSON data and populate the dropdown menu
-        fetch('F_series.json').then(response => {
+        fetch('AbhidharmaAruthE.json').then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok ' + response.statusText);
             }

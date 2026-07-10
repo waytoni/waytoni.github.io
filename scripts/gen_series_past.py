@@ -90,6 +90,13 @@ css_file = "series_page_style_green_Kaluthara.css"  # CSS file to use
 json_file = "A_series.json"  # Output JSON file name
 gen_series(template_name='SeriesPageTemplateWithControls.html')
 
+# AbhidharmaAruthD
+base_folder = "completed/AbhidharmaAruth/D_series"  # Replace with your series folder name
+html_file = "AbhidharmaAruthD.html"  # Output HTML file name
+css_file = "series_page_style_green.css"  # CSS file to use
+json_file = "AbhidharmaAruthD.json"  # Output JSON file name
+gen_series(template_name='SeriesPageTemplateWithControls.html')
+
 # AbhidharmaAruthC
 base_folder = "completed/AbhidharmaAruth/C_series"  # Replace with your series folder name
 html_file = "AbhidharmaAruthC.html"  # Output HTML file name

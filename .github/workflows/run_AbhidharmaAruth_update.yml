@@ -3,8 +3,8 @@ name: Update Abhidhamma Aruth Desana
 on:
   push:
     paths:    
-      - 'AbhidharmaAruth/D_series/AbhidharmaAruth_D_ytlinks.txt'   
-      - 'AbhidharmaAruth/D_series/AbhidharmaAruth_D_notes.txt'  
+      - 'AbhidharmaAruth/E_series/AbhidharmaAruth_E_ytlinks.txt'   
+      - 'AbhidharmaAruth/E_series/AbhidharmaAruth_E_notes.txt'  
 jobs:
   run-python-script-Abhidhamma-Aruth:
     runs-on: ubuntu-latest
@@ -17,8 +17,8 @@ jobs:
         with:
           python-version: 3.11 # Python Version
 
-      - name: Update Abhidharma Aruth Desana D seeries
-        run: python scripts/gen_series_AbhidharmaAruthD.py
+      - name: Update Abhidharma Aruth Desana E seeries
+        run: python scripts/gen_series_AbhidharmaAruthE.py
      
       - name: commit changes
         run: |
@@ -28,6 +28,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "updated Abhidhamma Aruth Desana D Series"
+            git commit -m "updated Abhidhamma Aruth Desana E Series"
             git push
           fi
