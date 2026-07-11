@@ -159,7 +159,7 @@ base_folder = "NivanMagaUdesaDesana/ThalawathugodaB/"  # Replace with your serie
 html_file = "ThalawathugodaB.html"  # Output HTML file name
 css_file = "series_page_style_green_Ganelanda.css"  # CSS file to use
 json_file = "ThalawathugodaB.json"  # Output JSON file name
-gen_series()
+gen_series(template_name='SeriesPageTemplateWithControls.html')
 
 # MaharagamaB
 base_folder = "NivanMagaUdesaDesana/MaharagamaB"  # Replace with your series folder name
@@ -182,4 +182,4 @@ base_folder = "NivanMagaUdesaDesana/AnuradhapuraA"  # Replace with your series f
 html_file = "AnuradhapuraA.html"  # Output HTML file name
 css_file = "series_page_style_green.css"  # CSS file to use
 json_file = "AnuradhapuraA.json"  # Output JSON file name
-gen_series()
+gen_series(template_name='SeriesPageTemplateWithControls.html')
