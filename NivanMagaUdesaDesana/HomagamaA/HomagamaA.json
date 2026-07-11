@@ -43,10 +43,20 @@
           "index": 5,
           "comment": "ධර්මතා 18",
           "url": "https://www.youtube.com/watch?v=4L14wcAs0r0",
-          "date": "2026-07-03",
+          "date": "2026-07-04",
           "video_id": "4L14wcAs0r0",
-          "date_string": "2026-Jul-03",
+          "date_string": "2026-Jul-04",
           "line_number": 5,
+          "notes": ""
+     },
+     {
+          "index": 6,
+          "comment": "ධර්මතා 18",
+          "url": "https://www.youtube.com/watch?v=XA0Xgt7R7K8",
+          "date": "2026-07-11",
+          "video_id": "XA0Xgt7R7K8",
+          "date_string": "2026-Jul-11",
+          "line_number": 6,
           "notes": ""
      }
 ]
