@@ -14,6 +14,9 @@ img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
 img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
 img::/documents/NotesForDesana/චක්ෂුර්ද්වාරික අතිමහන්තාරම්මණ වීථිය.jpg
 #7
+img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
+#8
+img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
 #100
 පටිච්චසමුප්පාදය img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 පටිච්චසමුප්පාදය img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
