@@ -16,6 +16,8 @@ img::/documents/NotesForDesana/චක්ෂුර්ද්වාරික අත
 #7
 img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
 #8
+# සංයුත්ත නිකාය &rarr; සළායතන වර්ගය &rarr; සළායතන සංයුත්තං &rarr; අනිච්ච වර්ගය url::https://www.tripitaka.online/sutta/4196
+# සංයුත්ත නිකාය &rarr; සළායතන වර්ගය &rarr; සළායතන සංයුත්තං &rarr; අනිච්ච වර්ගය url::https://tipitaka.lk/sn-4-1-1
 img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
 #100
 පටිච්චසමුප්පාදය img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg

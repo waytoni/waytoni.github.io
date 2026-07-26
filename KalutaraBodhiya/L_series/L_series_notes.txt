@@ -213,5 +213,7 @@ img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.
 මහා නිදාන සුත්තං pdf::/documents/SutraPDFs/මහා නිදාන සුත්තං.pdf
 මහාචත්තාරීසක සුත්තං (PDF) pdf::/documents/SutraPDFs/මහාචත්තාරීසක සුත්තං.pdf
 මහාචත්තාරීසක සුත්තං (Online) url::https://tripitaka.online/sutta/739
+#38
+img::/images/2026_07_26_L_Awarjana.jpeg"
 #99
 end
