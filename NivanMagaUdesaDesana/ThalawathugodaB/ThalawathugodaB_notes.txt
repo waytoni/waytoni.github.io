@@ -117,5 +117,9 @@ img::/documents/NotesForDesana/ප්%E2%80%8Dරතිත්%E2%80%8Dයසම�
 img::/documents/NotesForDesana/ප්%E2%80%8Dරතිත්%E2%80%8Dයසමුප්පාද%20සිදුවන%20ආකාර.jpg
 #31
 img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
+#32
+චිත්ත සහ චෛතසික චක්‍රය url::/ChiththaChithasika/ChiththaChithasikaFixedHeader.html
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
+img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
 #301
 #1000

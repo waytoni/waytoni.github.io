@@ -8,5 +8,15 @@
           "date_string": "2026-Jul-21",
           "line_number": 1,
           "notes": ""
+     },
+     {
+          "index": 2,
+          "comment": "මූලික දේශනා",
+          "url": "https://www.youtube.com/watch?v=SYGVKG7iW78",
+          "date": "2026-07-28",
+          "video_id": "SYGVKG7iW78",
+          "date_string": "2026-Jul-28",
+          "line_number": 2,
+          "notes": ""
      }
 ]

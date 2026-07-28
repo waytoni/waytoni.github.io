@@ -10,12 +10,17 @@ img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
 රේරුකානේ චන්දවිමල හිමියන්ගේ අභිධර්ම මාර්ගය පොත් ලබා ගැනීමට (PDF හෝ HTML ආකාරයට): url::https://tipitaka.lk/library/462
 pdf::docs/ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 004 - 2026 06 27.pdf
 img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
+#5
+pdf::docs/05 ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 005 - 2026 07 04.pdf
 #6
+pdf::docs/06 ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 006 - 2026 07 11.pdf
 img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
 img::/documents/NotesForDesana/චක්ෂුර්ද්වාරික අතිමහන්තාරම්මණ වීථිය.jpg
 #7
+pdf::docs/07 ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 007 - 2026 07 18.pdf
 img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
 #8
+pdf::docs/08 ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 008 - 2026 07 25.pdf
 # සංයුත්ත නිකාය &rarr; සළායතන වර්ගය &rarr; සළායතන සංයුත්තං &rarr; අනිච්ච වර්ගය url::https://www.tripitaka.online/sutta/4196
 # සංයුත්ත නිකාය &rarr; සළායතන වර්ගය &rarr; සළායතන සංයුත්තං &rarr; අනිච්ච වර්ගය url::https://tipitaka.lk/sn-4-1-1
 img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
