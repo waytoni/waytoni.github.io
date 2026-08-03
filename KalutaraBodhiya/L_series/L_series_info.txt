@@ -50,3 +50,10 @@ ZoomInfo_special.html
 # It is better to remove this section unless there is a special reason.
 100
 
+## EXTRA_CONTENT ##
+# This section can be used to insert custom HTML content like images
+<div class="info-card" style="text-align: center;">
+<!--
+
+ -->
+</div>
