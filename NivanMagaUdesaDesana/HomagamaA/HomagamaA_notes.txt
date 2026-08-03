@@ -24,6 +24,8 @@ pdf::docs/08 ශාසනවර්ධනාරාමය හෝමාගම ම�
 # සංයුත්ත නිකාය &rarr; සළායතන වර්ගය &rarr; සළායතන සංයුත්තං &rarr; අනිච්ච වර්ගය url::https://www.tripitaka.online/sutta/4196
 # සංයුත්ත නිකාය &rarr; සළායතන වර්ගය &rarr; සළායතන සංයුත්තං &rarr; අනිච්ච වර්ගය url::https://tipitaka.lk/sn-4-1-1
 img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
+#9
+pdf::docs/09 ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 009 - 2026 08 01.pdf
 #100
 පටිච්චසමුප්පාදය img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 පටිච්චසමුප්පාදය img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg

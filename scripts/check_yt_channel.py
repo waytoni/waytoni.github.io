@@ -36,12 +36,13 @@ CHANNELS = [
         "ytlinks_file": "NivanMagaUdesaDesana/ThalawathugodaB/ThalawathugodaB_ytlinks.txt",
     },
     {
-        "name": "Kaluthara L series",
+        "name": "Kaluthara M series",
         "channel_id": "UC63kf7W9KLLCj0jK6HF5PdA",
         # Only videos whose title contains this phrase will be added.
         # Set to None to accept all videos from the channel.
-        "filter_phrase": "Kalutara Bodhiya L",
-        "ytlinks_file": "KalutaraBodhiya/L_series/L_series_ytlinks.txt",
+        "after_date": "2026-08-03",
+        "filter_phrase": "Kalutara Bodhiya",
+        "ytlinks_file": "KalutaraBodhiya/M_series/M_series_ytlinks.txt",
     },
     {
         "name": "Maharagama B series",
@@ -76,7 +77,7 @@ CHANNELS = [
     {
         "name": "Anuradhapura Ruwanmaliseya Podo Dina series",
         "channel_id": "UC63kf7W9KLLCj0jK6HF5PdA",
-        "after_date": "2026-07-29",
+        "after_date": "2026-08-20",
         "filter_phrase": "Ruwanmaliseya",
         "ytlinks_file": "VisheshaDesana/RuwanweliMahaSeya/RuwanweliMahaSeya_ytlinks.txt",
     },
