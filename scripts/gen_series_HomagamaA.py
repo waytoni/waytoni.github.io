@@ -36,7 +36,7 @@ def gen_series(template_name='SeriesPageTemplateWithControls.html'):
 
 
 # HomagamaA
-base_folder = "NivanMagaUdesaDesana/HomagamaA"  # Replace with your series folder name
+base_folder = "current/HomagamaA"  # Replace with your series folder name
 html_file = "HomagamaA.html"  # Output HTML file name
 css_file = "series_page_style_green.css"  # CSS file to use
 json_file = "HomagamaA.json"  # Output JSON file name

@@ -28,12 +28,13 @@ from pathlib import Path
 # ---------------------------------------------------------------------------
 CHANNELS = [
     {
-        "name": "ThalawathugodaB series",
+        "name": "ThalawathugodaC series",
         "channel_id": "UC63kf7W9KLLCj0jK6HF5PdA",
         # Only videos whose title contains this phrase will be added.
         # Set to None to accept all videos from the channel.
+        "after_date": "2026-08-06",
         "filter_phrase": "තලවතුගොඩ",
-        "ytlinks_file": "NivanMagaUdesaDesana/ThalawathugodaB/ThalawathugodaB_ytlinks.txt",
+        "ytlinks_file": "current/ThalawathugodaC/ThalawathugodaC_ytlinks.txt",
     },
     {
         "name": "Kaluthara M series",
@@ -42,7 +43,7 @@ CHANNELS = [
         # Set to None to accept all videos from the channel.
         "after_date": "2026-08-03",
         "filter_phrase": "Kalutara Bodhiya",
-        "ytlinks_file": "KalutaraBodhiya/M_series/M_series_ytlinks.txt",
+        "ytlinks_file": "current/KalutaraBodhiyaM/M_series_ytlinks.txt",
     },
     {
         "name": "Maharagama B series",
@@ -51,7 +52,7 @@ CHANNELS = [
         # Set to None to accept all videos from the channel.
         "after_date": "2026-06-22",
         "filter_phrase": "මහරගම",
-        "ytlinks_file": "NivanMagaUdesaDesana/MaharagamaB/MaharagamaB_ytlinks.txt",
+        "ytlinks_file": "current/MaharagamaB/MaharagamaB_ytlinks.txt",
     },
     {
         "name": "Abhidharma Aruth E series",
@@ -60,26 +61,26 @@ CHANNELS = [
         # Set to None to accept all videos from the channel.
         "after_date": "2026-07-21",
         "filter_phrase": "පොල්ගස්ඔවිට",
-        "ytlinks_file": "AbhidharmaAruth/E_series/AbhidharmaAruth_E_ytlinks.txt",
+        "ytlinks_file": "current/AbhidharmaAruthE/AbhidharmaAruth_E_ytlinks.txt",
     },
     {
         "name": "Homagama A series",
         "channel_id": "UC63kf7W9KLLCj0jK6HF5PdA",
         "filter_phrase": "හෝමාගම",
-        "ytlinks_file": "NivanMagaUdesaDesana/HomagamaA/HomagamaA_ytlinks.txt",
+        "ytlinks_file": "current/HomagamaA/HomagamaA_ytlinks.txt",
     },
     {
         "name": "Lions Club Anuradhapura series",
         "channel_id": "UC63kf7W9KLLCj0jK6HF5PdA",
         "filter_phrase": "Lions Club",
-        "ytlinks_file": "NivanMagaUdesaDesana/AnuradhapuraA/AnuradhapuraA_ytlinks.txt",
+        "ytlinks_file": "current/AnuradhapuraA/AnuradhapuraA_ytlinks.txt",
     },
     {
         "name": "Anuradhapura Ruwanmaliseya Podo Dina series",
         "channel_id": "UC63kf7W9KLLCj0jK6HF5PdA",
         "after_date": "2026-08-20",
         "filter_phrase": "Ruwanmaliseya",
-        "ytlinks_file": "VisheshaDesana/RuwanweliMahaSeya/RuwanweliMahaSeya_ytlinks.txt",
+        "ytlinks_file": "current/RuwanweliMahaSeya/RuwanweliMahaSeya_ytlinks.txt",
     },
     # Add more channels as needed:
     # {

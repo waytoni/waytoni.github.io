@@ -485,11 +485,12 @@ def generate_html_file(template_path, nav_path, info_path, output_path):
 def main():
     # Define file paths
     script_dir = os.path.dirname(os.path.abspath(__file__))
+
     
     # Script is in scripts folder
     templates_dir = os.path.join(script_dir, 'templates')
     root_dir = os.path.dirname(script_dir)  # Go up one level to project root
-    vishesha_dir = os.path.join(root_dir, 'VisheshaDesana')
+    vishesha_dir = os.path.join(root_dir, 'current/VisheshaDesana')
     
     template_path = os.path.join(templates_dir, 'VisheshaDesana_template.html')
     nav_path = os.path.join(templates_dir, 'navigation_header_template.html')

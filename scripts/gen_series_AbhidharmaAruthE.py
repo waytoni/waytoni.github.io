@@ -36,7 +36,7 @@ def gen_series(template_name='SeriesPageTemplateWithControls.html'):
 
 
 # AbhidharmaAruthE
-base_folder = "AbhidharmaAruth/E_series"  # Replace with your series folder name
+base_folder = "current/AbhidharmaAruthE"  # Replace with your series folder name
 html_file = "AbhidharmaAruthE.html"  # Output HTML file name
 css_file = "series_page_style_green.css"  # CSS file to use
 json_file = "AbhidharmaAruthE.json"  # Output JSON file name
