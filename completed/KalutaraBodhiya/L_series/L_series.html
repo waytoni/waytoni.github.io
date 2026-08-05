@@ -87,10 +87,6 @@
             </div>
 
             
-            <div class="info-card">
-                <h3><i class="fa fa-phone"></i> විමසීම්</h3>
-                <p>077 031 0768</p>
-            </div>
 
 
             <div class="info-card">
@@ -305,7 +301,7 @@
         function displayLastEntry() {
             if (data.length > 0) {
                 // const lastEntry = data[data.length - 1];
-                const lastEntry = data[44];
+                const lastEntry = data[0];
                 const selector = document.getElementById('link-selector');
                 selector.value = lastEntry.url;
                 updateContent();
