@@ -17,7 +17,7 @@
 
 
 
-menu_change = True
+menu_change = False
 
 if menu_change == True:
     from scripts import gen_series_past
