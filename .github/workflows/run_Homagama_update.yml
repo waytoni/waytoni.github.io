@@ -3,8 +3,8 @@ name: Update MaharagamaA series Lesson Links
 on:
   push:
     paths:
-      - 'NivanMagaUdesaDesana/HomagamaA/HomagamaA_ytlinks.txt'     
-      - 'NivanMagaUdesaDesana/HomagamaA/HomagamaA_notes.txt'     
+      - 'current/HomagamaA/HomagamaA_ytlinks.txt'     
+      - 'current/HomagamaA/HomagamaA_notes.txt'     
 jobs:
   run-python-script-HomagamaAseries:
     runs-on: ubuntu-latest

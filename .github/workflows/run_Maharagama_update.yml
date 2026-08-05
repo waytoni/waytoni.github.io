@@ -3,8 +3,8 @@ name: Update MaharagamaB series Lesson Links
 on:
   push:
     paths:
-      - 'NivanMagaUdesaDesana/MaharagamaB/MaharagamaB_ytlinks.txt'     
-      - 'NivanMagaUdesaDesana/MaharagamaB/MaharagamaB_notes.txt'     
+      - 'current/MaharagamaB/MaharagamaB_ytlinks.txt'     
+      - 'current/MaharagamaB/MaharagamaB_notes.txt'     
 jobs:
   run-python-script-MaharagamaAseries:
     runs-on: ubuntu-latest

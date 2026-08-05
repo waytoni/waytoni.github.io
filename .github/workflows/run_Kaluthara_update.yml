@@ -3,8 +3,8 @@ name: Update L series Lesson Links
 on:
   push:
     paths:
-      - 'KalutaraBodhiya/L_series/L_series_ytlinks.txt'     
-      - 'KalutaraBodhiya/L_series/L_series_notes.txt'     
+      - 'current/KalutaraBodhiyaM/M_series_ytlinks.txt'     
+      - 'current/KalutaraBodhiyaM/M_series_notes.txt'     
   pull_request:
     branches:
       - main

@@ -3,8 +3,8 @@ name: Update MaharagamaA series Lesson Links
 on:
   push:
     paths:
-      - 'NivanMagaUdesaDesana/AnuradhapuraA/AnuradhapuraA_ytlinks.txt'     
-      - 'NivanMagaUdesaDesana/AnuradhapuraA/AnuradhapuraA_notes.txt'     
+      - 'current/AnuradhapuraA/AnuradhapuraA_ytlinks.txt'     
+      - 'current/AnuradhapuraA/AnuradhapuraA_notes.txt'     
 jobs:
   run-python-script-AnuradhapuraAseries-update:
     runs-on: ubuntu-latest
