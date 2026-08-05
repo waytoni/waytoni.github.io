@@ -21,7 +21,7 @@ from xml.etree import ElementTree as ET
 def iter_html_files(root: str):
 	for dirpath, dirnames, filenames in os.walk(root):
 		# skip hidden, underscore, and ignored dirs (testing, working)
-		ignored_dirs = {"testing", "working", "scripts"}
+		ignored_dirs = {"testing", "working", "scripts", "Homepage"}
 		dirnames[:] = [
 			d for d in dirnames
 			if not d.startswith(".") and not d.startswith("_") and d.lower() not in ignored_dirs
