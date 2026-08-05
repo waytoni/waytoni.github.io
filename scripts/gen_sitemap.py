@@ -14,7 +14,7 @@ from __future__ import annotations
 import argparse
 import os
 import posixpath
-from datetime import datetime
+from datetime import datetime, timezone
 from xml.etree import ElementTree as ET
 
 
@@ -40,7 +40,7 @@ def url_for(root: str, filepath: str, base_url: str) -> str:
 
 def file_lastmod(filepath: str) -> str:
 	ts = os.path.getmtime(filepath)
-	return datetime.utcfromtimestamp(ts).date().isoformat()
+	return datetime.fromtimestamp(ts, timezone.utc).date().isoformat()
 
 
 def build_sitemap(site_root: str, base_url: str) -> ET.Element:
