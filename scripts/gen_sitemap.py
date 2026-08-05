@@ -27,7 +27,7 @@ def iter_html_files(root: str):
 			if not d.startswith(".") and not d.startswith("_") and d.lower() not in ignored_dirs
 		]
 		for fname in filenames:
-			if fname.startswith(".") or fname.startswith("_"):
+			if fname.startswith(".") or fname.startswith("_") or fname.startswith("google"):
 				continue
 			if not fname.lower().endswith(".html"):
 				continue
