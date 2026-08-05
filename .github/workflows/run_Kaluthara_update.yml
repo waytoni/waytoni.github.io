@@ -23,7 +23,7 @@ jobs:
           python-version: 3.11 # Set your desired Python version
 
       - name: Update Kaluthara Bohiya L_serires
-        run: python scripts/gen_series_KalutharaL.py
+        run: python scripts/gen_series_KalutharaM.py
 
       - name: commit changes
         run: |
