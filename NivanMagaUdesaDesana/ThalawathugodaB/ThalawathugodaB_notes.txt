@@ -121,5 +121,9 @@ img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
 චිත්ත සහ චෛතසික චක්‍රය url::/ChiththaChithasika/ChiththaChithasikaFixedHeader.html
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
+#33
+pdf::docs/ආවර්ජනා වැඩසටහන 2026.pdf
+#34
+pdf::docs/ආවර්ජනා වැඩසටහන 2026.pdf
 #301
 #1000

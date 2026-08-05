@@ -36,9 +36,9 @@ def gen_series(template_name="series_page_template.html"):
         sys.exit(1)
 
 
-# L_series
-base_folder = "KalutaraBodhiya/L_series"  # Replace with your series folder name
-html_file = "L_series.html"  # Output HTML file name
+# M_series
+base_folder = "KalutaraBodhiya/M_series"  # Replace with your series folder name
+html_file = "M_series.html"  # Output HTML file name
 css_file = "series_page_style_green_Kaluthara.css"  # CSS file to use
-json_file = "L_series.json"  # Output JSON file name
+json_file = "M_series.json"  # Output JSON file name
 gen_series(template_name='SeriesPageTemplateWithControls.html')
