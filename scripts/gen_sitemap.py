@@ -20,8 +20,12 @@ from xml.etree import ElementTree as ET
 
 def iter_html_files(root: str):
 	for dirpath, dirnames, filenames in os.walk(root):
-		# skip hidden and underscore dirs
-		dirnames[:] = [d for d in dirnames if not d.startswith(".") and not d.startswith("_")]
+		# skip hidden, underscore, and ignored dirs (testing, working)
+		ignored_dirs = {"testing", "working", "scripts"}
+		dirnames[:] = [
+			d for d in dirnames
+			if not d.startswith(".") and not d.startswith("_") and d.lower() not in ignored_dirs
+		]
 		for fname in filenames:
 			if fname.startswith(".") or fname.startswith("_"):
 				continue
@@ -78,11 +82,14 @@ def indent(elem, level=0):
 			elem.tail = i
 
 
+DEFAULT_BASE_URL = "https://waytoni.com"
+
+
 def main():
 	p = argparse.ArgumentParser(description="Generate sitemap.xml for a static site")
-	p.add_argument("--site-root", required=True, help="Path to site root directory")
-	p.add_argument("--base-url", required=True, help="Base URL, e.g. https://example.com")
-	p.add_argument("--output", required=True, help="Output sitemap file path")
+	p.add_argument("--site-root", default=".", help="Path to site root directory (default: .)")
+	p.add_argument("--base-url", default=DEFAULT_BASE_URL, help=f"Base URL (default: {DEFAULT_BASE_URL})")
+	p.add_argument("--output", default="sitemap.xml", help="Output sitemap file path (default: sitemap.xml)")
 	args = p.parse_args()
 
 	urlset = build_sitemap(args.site_root, args.base_url)
