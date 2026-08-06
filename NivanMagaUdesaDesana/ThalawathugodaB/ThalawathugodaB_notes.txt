@@ -125,5 +125,7 @@ img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
 pdf::docs/ආවර්ජනා වැඩසටහන 2026.pdf
 #34
 pdf::docs/ආවර්ජනා වැඩසටහන 2026.pdf
+#35
+pdf::docs/ආවර්ජනා වැඩසටහන 2026.pdf
 #301
 #1000
