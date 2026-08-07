@@ -32,5 +32,15 @@
 32 පටිච්චසමුප්පාදය  https://www.youtube.com/watch?v=V-crRtywXBI 2026-Jul-25
 33 ආවර්ජනා පළමු දින https://www.youtube.com/watch?v=qW-s94c5ryA 2026-Aug-01
 34 ආවර්ජනා දෙවන දින https://www.youtube.com/watch?v=OeD3piOkF8I 2026-Aug-05
-35 001 ආවර්ජනා තලවතුගොඩ පළමු දින සමාරම්භය https://www.youtube.com/watch?v=c7Nx6SkvwP8 2026-Aug-01
-36 002 ආවර්ජනා ගනේලන්ද පුරාණ විහාරය- දිල්රුක්ෂි බදුරලිය මහත්මියගේ කණ්ඩායම https://www.youtube.com/watch?v=YZ4lNNUG_U4 2026-Aug-01
+35 001 ආවර්ජනා (පළමු දින) තලවතුගොඩ පළමු දින සමාරම්භය https://www.youtube.com/watch?v=c7Nx6SkvwP8 2026-Aug-01
+36 002 ආවර්ජනා (පළමු දින) ගනේලන්ද පුරාණ විහාරය- දිල්රුක්ෂි බදුරලිය මහත්මියගේ කණ්ඩායම https://www.youtube.com/watch?v=YZ4lNNUG_U4 2026-Aug-01
+37 003 ආවර්ජනා (පළමු දින) ගනේලන්ද පුරාණ විහාරය- හර්ෂ පෙරේරා මහතාගේ කණ්ඩායම https://www.youtube.com/watch?v=gaBiNg-_JG8 2026-Aug-01
+38 004 ආවර්ජනා (පළමු දින) ගනේලන්ද පුරාණ විහාරය- මධුෂාණි ඒකනායක මෙනවියගේ ZOOM කණ්ඩායම https://www.youtube.com/watch?v=_sbeC-CVBoc 2026-Aug-01
+39 005 ආවර්ජනා (පළමු දින) ගනේලන්ද පුරාණ විහාරය- සරත් පෙරේරා මහතා https://www.youtube.com/watch?v=PGvpNQAQ0VE 2026-Aug-01
+40 006 ආවර්ජනා (පළමු දින) ගනේලන්ද පුරාණ විහාරය- චන්ද්‍රා අමරතුංග මහත්මිය https://www.youtube.com/watch?v=nJMJiXOH9ZY 2026-Aug-01
+41 001 ආවර්ජනා (දෙවන දින) ගනේලන්ද පුරාණ විහාරය - ආරාධිතයන් පිළිගැනීම හා මූලික ආරම්භය https://www.youtube.com/watch?v=CqPI9h2-HAQ 2026-Aug-05
+42 002 ආවර්ජනා (දෙවන දින) ගනේලන්ද පුරාණ විහාරය- සචිනි රණසිංහ https://www.youtube.com/watch?v=p8gUr4dwzQw 2026-Aug-05
+43 003 ආවර්ජනා (දෙවන දින) ගනේලන්ද පුරාණ විහාරය- ප්‍රදීපා සරෝජනී මහත්මියගේ කණ්ඩායම https://www.youtube.com/watch?v=LJI7trHK-hs 2026-Aug-05
+44 004 ආවර්ජනා (දෙවන දින) ගනේලන්ද පුරාණ විහාරය- ආරාධි දේශනා හා ගුරු අනුශාසනාව https://www.youtube.com/watch?v=Dc7B-bPaFJw 2026-Aug-05
+45 005 ආවර්ජනා (දෙවන දින) ගනේලන්ද පුරාණ විහාරය- ඉමේෂා පෙරේරා මහත්මියගේ කණ්ඩායම https://www.youtube.com/watch?v=Wx32Zs5zcQY 2026-Aug-05
+46 006 ආවර්ජනා (දෙවන දින) ගනේලන්ද පුරාණ විහාරය- හර්ෂ පෙරේරා මහතාගේ කණ්ඩායම https://www.youtube.com/watch?v=38ocvTFWArg  2026-Aug-05
