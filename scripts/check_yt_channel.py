@@ -50,7 +50,7 @@ CHANNELS = [
         "channel_id": "UC63kf7W9KLLCj0jK6HF5PdA",
         # Only videos whose title contains this phrase will be added.
         # Set to None to accept all videos from the channel.
-        "after_date": "2026-06-22",
+        "after_date": "2026-08-11",
         "filter_phrase": "මහරගම",
         "ytlinks_file": "current/MaharagamaB/MaharagamaB_ytlinks.txt",
     },

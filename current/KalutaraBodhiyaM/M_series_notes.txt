@@ -5,6 +5,8 @@ img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
 #1
 රේරුකානේ චන්දවිමල හිමියන්ගේ පොත් ලබා ගැනීමට (PDF හෝ HTML ආකාරයට): url::https://tipitaka.lk/library/462
 pdf::docs/M 01 Kalutara Bodhiya 2026 08 02 මූලික දේශනා.pdf
+#2
+pdf::docs/M 02 Kalutara Bodhiya 2026 08 09 මූලික දේශනා.pdf
 #900
 සත්ව තල img::/documents/NotesForDesana/0005 සත්ව තල.jpg
 ආයතන ලෙස විග්‍රහය img::/documents/NotesForDesana/0013 ආයතන ලෙස විග්‍රහය.jpeg
