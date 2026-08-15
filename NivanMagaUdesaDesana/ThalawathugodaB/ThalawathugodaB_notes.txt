@@ -122,9 +122,8 @@ img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
 #33
-pdf::docs/ආවර්ජනා වැඩසටහන 2026.pdf
 #34
-pdf::docs/ආවර්ජනා වැඩසටහන 2026.pdf
+img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
 #35
 pdf::docs/ආවර්ජනා වැඩසටහන 2026.pdf
 #36
@@ -148,6 +147,10 @@ pdf::docs/ආවර්ජනා වැඩසටහන 2026.pdf
 #45
 pdf::docs/ආවර්ජනා වැඩසටහන 2026.pdf
 #46
+pdf::docs/ආවර්ජනා වැඩසටහන 2026.pdf
+#47
+pdf::docs/ආවර්ජනා වැඩසටහන 2026.pdf
+#48
 pdf::docs/ආවර්ජනා වැඩසටහන 2026.pdf
 #301
 #1000
