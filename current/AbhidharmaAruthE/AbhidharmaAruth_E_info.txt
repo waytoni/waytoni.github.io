@@ -23,7 +23,7 @@
 ## TIME ###
 # This information is necessary for all on-going series.
 
-<p>අඟහරුවාදා පෙ.ව. 8:30 සිට 11:00 දක්වා (<mark>ජූලි 21 සිට</mark>)</p>
+<p>අඟහරුවාදා පෙ.ව. 8:30 සිට 11:00 දක්වා</p>
 
 ## LOCATION ##
 # This information is optional; however, add this for all on-going series
