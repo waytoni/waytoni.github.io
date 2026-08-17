@@ -122,7 +122,11 @@ img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
 #33
+ඛජ්ජනීය සුත්තං  pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
+ඛජ්ජනීය සූත්‍රය මාගධි පද වැල් හා සිංහල තේරුම pdf::/documents/SutraPDFs/ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම.pdf
 #34
+මහානිදාන සූත්‍රය (PDF) pdf::/documents/SutraPDFs/මහානිදාන සූත්‍රය.pdf
+මහා නිදාන සූත්‍රය විස්තරය සංස්කරණය කරන ලද සටහන (PDF) pdf::/documents/SutraPDFs/මහා නිදාන සූත්‍රය විස්තරය සංස්කරණය කරන ලද.pdf
 img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
 #35
 pdf::docs/ආවර්ජනා වැඩසටහන 2026.pdf
