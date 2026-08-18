@@ -81,7 +81,7 @@ img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.
 #31
 මහානිදාන සූත්‍රය (PDF) pdf::/documents/SutraPDFs/මහානිදාන සූත්‍රය.pdf
 #33
-මහා නිදාන සූත්‍රය විස්තරය සංස්කරණය කරන ලද සටහන (PDF) pdf::/documents/SutraPDFs/මහා නිදාන සූත්‍රය විස්තරය සංස්කරණය කරන ලද.pdf
+<a href="https://drive.google.com/file/d/1AYoVIImYlVSmQqe2HyNch62VXIRP1yD-/view?usp=sharing" target="_blank">මහා නිදාන සූත්‍රය විස්තරය සංස්කරණය කරන ලද සටහන</a>
 #90
 රේරුකානේ චන්ද්‍රවිමල හිමි විසින් ලියන ලද පට්ඨාන මහා පකරණ සන්නය url::https://tipitaka.lk/library/494
 #100
