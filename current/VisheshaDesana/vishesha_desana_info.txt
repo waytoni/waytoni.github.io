@@ -10,8 +10,6 @@ https://www.youtube.com/watch?v=UtUeJz511yA
 # මහා නිදාන සූත්‍රය විස්තරය සංස්කරණය කරන ලද සටහන
 ## NOTES_LOCATION
 /documents/NotesForDesana/මුල් උපත පසු උපත.jpg
-# /documents/SutraPDFs/මහා නිදාන සූත්‍රය විස්තරය සංස්කරණය කරන ලද.pdf
-# <img src="/images/2026-06-21_Kalutara.jpeg">
 # ## ZOOMINFO
 # https://us06web.zoom.us/j/89913493367?pwd=UkQ2LzlUTUpKRG9QQTk5YUdTa0FIUT09
 # Zoom ID: 899 1349 3367
@@ -27,7 +25,6 @@ https://www.youtube.com/watch?v=4xbimYY0dqg
 ## NOTES_DESCRIPTION
 # මහා නිදාන සූත්‍රය විස්තරය සංස්කරණය කරන ලද සටහන
 ## NOTES_LOCATION
-# /documents/SutraPDFs/මහා නිදාන සූත්‍රය විස්තරය සංස්කරණය කරන ලද.pdf
 ## ZOOMINFO
 https://us06web.zoom.us/j/89913493367?pwd=UkQ2LzlUTUpKRG9QQTk5YUdTa0FIUT09
 Zoom ID: 899 1349 3367
@@ -70,7 +67,7 @@ https://www.youtube.com/embed/unYddCdpJt8
 ## NOTESDESCRIPTION
 මහා නිදාන සූත්‍රය විස්තරය සංස්කරණය කරන ලද සටහන
 ## NOTESLOCATION
-/documents/SutraPDFs/මහා නිදාන සූත්‍රය විස්තරය සංස්කරණය කරන ලද.pdf
+"https://drive.google.com/file/d/1AYoVIImYlVSmQqe2HyNch62VXIRP1yD-/view?usp=sharing"
 ## ZOOMINFO
 
 ## CARDINFO
