@@ -22,7 +22,7 @@
 
 ## TIME ###
 # This information is necessary for all on-going series.
-සෑම අඟහරුවාදා දින සවස 2.00 සිට 4:30 දක්වා
+සෑම අඟහරුවාදා දින සවස 2.00 සිට 5:00 දක්වා
 
 ## LOCATION ##
 # This information is optional; however, add this for all on-going series
@@ -34,7 +34,8 @@
 ## CONTACT ##
 # This information is optional; however, add this for all on-going series
 
-077 341 9060 හෝ  0714 333 205
+# 077 341 9060 හෝ  0714 333 205
+0714 333 205
 
 ## ZOOM_INFO ##
 # This section is necessary only if special Zoom instructions are to be provided.
