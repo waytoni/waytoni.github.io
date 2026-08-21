@@ -39,7 +39,7 @@ Before updating the site for the first time, make sure you have the following fr
 
 ### Part 2: Day-to-Day Workflow for Adding New Videos
 
-Follow these 5 simple steps whenever a new video or lecture needs to be added:
+Follow these 5 simple steps whenever a new video needs to be added:
 
 #### Step 1: Fetch Latest Changes
 * Open **GitHub Desktop**.
@@ -59,11 +59,11 @@ Follow these 5 simple steps whenever a new video or lecture needs to be added:
    * **`<index>`**: The next sequential video number (e.g. if the previous line was `10`, use `11`).
    * **`[optional description/title]`**: Brief title or note from YouTube (Sinhala or English).
    * **`<YouTube URL>`**: Full YouTube link (e.g., `https://www.youtube.com/watch?v=...`).
-   * **`<Date>`**: Date of the sermon in `YYYY-MM-DD` format (e.g., `2026-08-22`).
+   * **`<Date>`**: Date of the sermon in `YYYY-MMM-DD` format (e.g., `2026-Aug-01`).
 
    **Example:**
    ```text
-   11 නිවන් මග උදෙසා දර්ශන ඥානය https://www.youtube.com/watch?v=zJUU2Bn3gl8 2026-08-22
+   11 නිවන් මග උදෙසා දර්ශන ඥානය https://www.youtube.com/watch?v=zJUU2Bn3gl8 2026-Aug-01
    ```
 
 5. Save the file (`Ctrl + S` on Windows / `Cmd + S` on Mac).
@@ -93,7 +93,7 @@ Follow these 5 simple steps whenever a new video or lecture needs to be added:
 1. Switch back to **GitHub Desktop**.
 2. You will see a list of modified files on the left panel (the updated text file, generated HTML, and JSON files).
 3. At the bottom-left:
-   * In the **Summary** box, write a brief note (e.g., `Add video 11 to Maharagama B`).
+   * In the **Summary** box, write a brief note (e.g., `Added video 11 to Maharagama B`).
    * Click the blue **Commit to main** button.
 4. Click **Push origin** in the top bar.
 
