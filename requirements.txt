@@ -1,0 +1,11 @@
+# Core image processing (for generating thumbnails and notes)
+Pillow>=9.0.0
+
+# YouTube Data API interaction (for listing videos and playlist metadata)
+google-api-python-client>=2.0.0
+isodate>=0.6.0
+pytz>=2022.1
+
+# HTML parsing and web requests (for navbar updates and sitemap generator)
+beautifulsoup4>=4.9.0
+requests>=2.25.0
