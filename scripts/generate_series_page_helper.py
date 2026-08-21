@@ -4,6 +4,146 @@ import re
 import datetime
 import logging
 
+def is_valid_url(url_str):
+    """Check if the string is a valid HTTP/HTTPS URL."""
+    if not url_str:
+        return False
+    return bool(re.match(r'^https?://[^\s]+$', url_str.strip(), re.IGNORECASE))
+
+def parse_zoom_info_file(zoom_info_file_path=None):
+    """
+    Parse Zoom information from ZoomInfo/ZoomInfo.txt (or current/ZoomInfo/ZoomInfo.txt).
+    
+    Format of ZoomInfo.txt:
+      A section starts after the line '## ZoomName'.
+      Lines beginning with '#' are comments.
+      The first non-comment line in that section is the name of the ZoomName section (e.g. basic or special).
+      The next non-comment line is evaluated as the Zoom URL.
+      If it is a valid URL, it is set as zoom_url and the remaining lines become zoom_content.
+      If it is NOT a valid URL, that line is included in zoom_content and zoom_url is set to empty string.
+    
+    Returns:
+        dict: { zoom_name: (zoom_url, zoom_content), ... }
+    """
+    if zoom_info_file_path and os.path.exists(zoom_info_file_path):
+        target_path = zoom_info_file_path
+    elif os.path.exists('ZoomInfo/ZoomInfo.txt'):
+        target_path = 'ZoomInfo/ZoomInfo.txt'
+    elif os.path.exists('current/ZoomInfo/ZoomInfo.txt'):
+        target_path = 'current/ZoomInfo/ZoomInfo.txt'
+    elif os.path.exists('Zoom_Info/ZoomInfo.txt'):
+        target_path = 'Zoom_Info/ZoomInfo.txt'
+    else:
+        return {}
+    
+    try:
+        with open(target_path, 'r', encoding='utf-8') as f:
+            lines = f.readlines()
+    except Exception:
+        return {}
+    
+    sections = {}
+    current_name = None
+    current_lines = []
+    
+    def store_section(name, lines_list):
+        if not name:
+            return
+        filtered = []
+        for l in lines_list:
+            l_str = l.rstrip('\r\n')
+            stripped = l_str.strip()
+            if stripped.startswith('#'):
+                continue
+            if not stripped and not filtered:
+                continue
+            filtered.append(l_str)
+            
+        while filtered and not filtered[-1].strip():
+            filtered.pop()
+            
+        if not filtered:
+            sections[name] = ("", "")
+            return
+            
+        first_line = filtered[0].strip()
+        if is_valid_url(first_line):
+            zoom_url = first_line
+            zoom_content = '\n'.join(filtered[1:]).strip()
+        else:
+            zoom_url = ""
+            zoom_content = '\n'.join(filtered).strip()
+            
+        sections[name] = (zoom_url, zoom_content)
+    
+    for line in lines:
+        stripped = line.strip()
+        
+        if re.match(r'^##\s*ZoomName\b', stripped, re.IGNORECASE):
+            if current_name is not None:
+                store_section(current_name, current_lines)
+            current_name = None
+            current_lines = []
+            continue
+            
+        if stripped.startswith('#') and not stripped.startswith('##'):
+            continue
+            
+        if current_name is None:
+            if stripped:
+                current_name = stripped
+                current_lines = []
+        else:
+            current_lines.append(line)
+            
+    if current_name is not None:
+        store_section(current_name, current_lines)
+        
+    return sections
+
+def get_zoom_info(zoom_name, zoom_info_file_path=None):
+    """
+    Retrieve (zoom_url, zoom_content) for a given zoom_name.
+    """
+    if not zoom_name:
+        return "", ""
+    zoom_dict = parse_zoom_info_file(zoom_info_file_path)
+    clean_name = zoom_name.strip()
+    if clean_name in zoom_dict:
+        return zoom_dict[clean_name]
+    for k, v in zoom_dict.items():
+        if k.lower() == clean_name.lower():
+            return v
+    return "", ""
+
+def build_zoom_info_block(zoom_name, zoom_info_file_path=None, verbose=False):
+    """
+    Build HTML for ZOOM_INFO_BLOCK based on zoom_name from ZoomInfo.txt.
+    """
+    if not zoom_name:
+        return ''
+    zoom_url, zoom_content = get_zoom_info(zoom_name, zoom_info_file_path)
+    if verbose:
+        print(f"Zoom Name: {zoom_name}")
+        print(f"Zoom URL: {zoom_url}")
+        print(f"Zoom Content: {zoom_content}")
+    
+    if not zoom_url and not zoom_content:
+        return ''
+        
+    if zoom_url:
+        return f'''
+            <div class="info-card">
+                <h3><i class="fa fa-video-camera"></i><a href="{zoom_url}">Zoom සජීවීව සම්බන්ධ වීමට</a></h3>
+                <p>{zoom_content}</p>
+            </div>'''
+    else:
+        return f'''
+            <div class="info-card">
+                <h3><i class="fa fa-video-camera"></i>Zoom සජීවීව සම්බන්ධ වීමට</h3>
+                <p>{zoom_content}</p>
+            </div>'''
+
 def parse_info_file(info_file, on_going, debug_info):
     """
     Parse the info file and extract various sections.
@@ -15,7 +155,7 @@ def parse_info_file(info_file, on_going, debug_info):
     
     Returns:
         tuple: (intro_section, title_section, series_title_section, time_section, 
-                location_section, contact_section, zoom_section, video_number)
+                location_section, contact_section, zoom_name, video_number, extra_content)
     """
     
     sections = {
@@ -92,39 +232,14 @@ def parse_info_file(info_file, on_going, debug_info):
         sections['SERIES_TITLE'] = sections['TITLE']
     
     # Process ZOOM_INFO section
-    zoom_file = "ZoomInfo_basic.html"
+    zoom_name = ""
     if sections['ZOOM_INFO']:
-        zoom_lines = sections['ZOOM_INFO'].strip().split('\n')
-        if len(zoom_lines) == 2:
-            date_str = zoom_lines[0].strip()
-            zoom_filename = zoom_lines[1].strip()
-            
-            # Validate date format
-            try:
-                zoom_date = datetime.datetime.strptime(date_str, '%Y-%m-%d').date()
-                current_date = datetime.datetime.now().date()
-                
-                # Check if date is within 5 days
-                if (zoom_date - current_date).days >= -5:
-                    # Check if zoom file exists
-                    zoom_file_path = os.path.join('Zoom_Info', zoom_filename)
-                    if os.path.exists(zoom_file_path):
-                        zoom_file = zoom_filename
-                    else:
-                        if debug_info:
-                            logging.warning(f"Zoom file {zoom_file_path} not found")
-                        sections['ZOOM_INFO'] = ""
-                else:
-                    sections['ZOOM_INFO'] = ""
-                    
-            except ValueError:
-                if debug_info:
-                    logging.warning(f"Invalid date format in ZOOM_INFO: {date_str}")
-                sections['ZOOM_INFO'] = ""
-        else:
-            if debug_info:
-                logging.warning("ZOOM_INFO section should have exactly 2 lines")
-            sections['ZOOM_INFO'] = ""
+        zoom_lines = [l.strip() for l in sections['ZOOM_INFO'].split('\n') if l.strip() and not (l.strip().startswith('#') and not l.strip().startswith('##'))]
+        if zoom_lines:
+            raw_name = zoom_lines[-1].strip()
+            raw_name = re.sub(r'^ZoomInfo_', '', raw_name, flags=re.IGNORECASE)
+            raw_name = re.sub(r'\.html$', '', raw_name, flags=re.IGNORECASE)
+            zoom_name = raw_name.strip()
     
     # Process VIDEO_SELECTOR section
     video_number = None
@@ -138,7 +253,7 @@ def parse_info_file(info_file, on_going, debug_info):
     
     return (sections['INTRO'], sections['TITLE'], sections['SERIES_TITLE'],
             sections['TIME'], sections['LOCATION'], sections['CONTACT'],
-            zoom_file, video_number, sections['EXTRA_CONTENT'])
+            zoom_name, video_number, sections['EXTRA_CONTENT'])
 
 def generate_series_page(base_folder, html_file, json_file, css_file, on_going, debug_info, verbose=False):
     """
@@ -297,34 +412,13 @@ def generate_series_page(base_folder, html_file, json_file, css_file, on_going, 
         template_content = template_content.replace('$CONTACT_BLOCK$', '')
     
     # Replace zoom info block
-    if on_going:
+    if on_going and zoom_file:
         try:
-            zoom_file_path = os.path.join('Zoom_Info', zoom_file)
-            with open(zoom_file_path, 'r', encoding='utf-8') as f:
-                zoom_content = f.read()
-            first_newline_index = zoom_content.find('\n')
-            #zoom_content = zoom_content[first_newline_index+1:].strip() # remove header line
-            #zoom_content = zoom_content.strip()
-            zoom_url = zoom_content[0:first_newline_index-1].strip()
-            zoom_content = zoom_content[first_newline_index+1:].strip() # remove header line
-            
-            if verbose:
-                print(zoom_url)
-                print(zoom_content)
-        #     zoom_block = f'''
-        # <div class="info-box">
-        #     {zoom_content}
-        # </div>'''
-            zoom_block = f'''
-            <div class="info-card">
-                <h3><i class="fa fa-video-camera"></i><a href="{zoom_url}">Zoom සජීවීව සම්බන්ධ වීමට</a></h3>
-                <p>{zoom_content}</p>
-            </div>'''
-
+            zoom_block = build_zoom_info_block(zoom_file, verbose=verbose)
             template_content = template_content.replace('$ZOOM_INFO_BLOCK$', zoom_block)
         except Exception as e:
             if debug_info:
-                logging.warning(f"Error reading zoom file {zoom_file_path}: {e}")
+                logging.warning(f"Error processing zoom info for {zoom_file}: {e}")
             template_content = template_content.replace('$ZOOM_INFO_BLOCK$', '')
     else:
         template_content = template_content.replace('$ZOOM_INFO_BLOCK$', '')
@@ -519,34 +613,13 @@ def generateSeriesPageNew(base_folder, html_file, json_file, css_file, on_going,
         template_content = template_content.replace('$CONTACT_BLOCK$', '')
     
     # Replace zoom info block
-    if on_going:
+    if on_going and zoom_file:
         try:
-            zoom_file_path = os.path.join('Zoom_Info', zoom_file)
-            with open(zoom_file_path, 'r', encoding='utf-8') as f:
-                zoom_content = f.read()
-            first_newline_index = zoom_content.find('\n')
-            #zoom_content = zoom_content[first_newline_index+1:].strip() # remove header line
-            #zoom_content = zoom_content.strip()
-            zoom_url = zoom_content[0:first_newline_index-1].strip()
-            zoom_content = zoom_content[first_newline_index+1:].strip() # remove header line
-            
-            if verbose:
-                print(zoom_url)
-                print(zoom_content)
-        #     zoom_block = f'''
-        # <div class="info-box">
-        #     {zoom_content}
-        # </div>'''
-            zoom_block = f'''
-            <div class="info-card">
-                <h3><i class="fa fa-video-camera"></i><a href="{zoom_url}">Zoom සජීවීව සම්බන්ධ වීමට</a></h3>
-                <p>{zoom_content}</p>
-            </div>'''
-
+            zoom_block = build_zoom_info_block(zoom_file, verbose=verbose)
             template_content = template_content.replace('$ZOOM_INFO_BLOCK$', zoom_block)
         except Exception as e:
             if debug_info:
-                logging.warning(f"Error reading zoom file {zoom_file_path}: {e}")
+                logging.warning(f"Error processing zoom info for {zoom_file}: {e}")
             template_content = template_content.replace('$ZOOM_INFO_BLOCK$', '')
     else:
         template_content = template_content.replace('$ZOOM_INFO_BLOCK$', '')
