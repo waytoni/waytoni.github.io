@@ -36,7 +36,7 @@ def gen_series(template_name="series_page_template.html"):
 
 
 # ThalawathugodaB
-base_folder = "NivanMagaUdesaDesana/ThalawathugodaB/"  # Replace with your series folder name
+base_folder = "NivanMagaUdesaDesana/ThalawathugodaB"  # Replace with your series folder name
 html_file = "ThalawathugodaB.html"  # Output HTML file name
 css_file = "series_page_style_green_Ganelanda.css"  # CSS file to use
 json_file = "ThalawathugodaB.json"  # Output JSON file name
