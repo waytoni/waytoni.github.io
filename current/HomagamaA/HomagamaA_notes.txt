@@ -39,6 +39,7 @@ pdf::docs/12 ශාසනවර්ධනාරාමය හෝමාගම ම�
 කතමා ච භික්ඛවෙ, ජාති pdf::/documents/SutraPDFs/කතමා ච භික්ඛවෙ, ජාති.pdf
 <p><a href="https://drive.google.com/file/d/1P2odKtaDAg88bZQAT7PmmapLjROPDF2s/view?usp=sharing" target="_blank">ඛුද‍්දකනිකායො → මහානිර්දේශය → කලහවිවාදසූත්‍රනිර්දේශය (11.6)</a></p> 
 කලහවිවාදසූත්‍රනිර්දේශය 11.6 url::https://tipitaka.lk/kn-mn-11-6
+ඛජ්ජනීය සුත්තං  pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
 #100
 පටිච්චසමුප්පාදය img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 පටිච්චසමුප්පාදය img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
