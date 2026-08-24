@@ -16,7 +16,7 @@
 # This is optional. If not specified, sames the TITLE info will be used.
 # This is the default title used in the dropdown menu.
 
-2025 කළුතර බෝධියේ පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව
+2025 කළුතර බෝධියේ පැවැත්වුන නිවන් මග උදෙසා දර්ශන ඥානය දේශනා මාලාව (K series)
 
 ## TIME ###
 # This information is necessary for all on-going series.
