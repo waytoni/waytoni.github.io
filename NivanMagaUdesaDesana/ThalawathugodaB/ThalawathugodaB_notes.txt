@@ -131,6 +131,7 @@ img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
 #35
 මහානිදාන සූත්‍රය (PDF) pdf::/documents/SutraPDFs/මහානිදාන සූත්‍රය.pdf
 <a href="https://drive.google.com/file/d/1AYoVIImYlVSmQqe2HyNch62VXIRP1yD-/view?usp=sharing" target="_blank">මහා නිදාන සූත්‍රය විස්තරය සංස්කරණය කරන ලද සටහන</a>
+කතමා ච භික්ඛවෙ, ජාති pdf::/documents/SutraPDFs/කතමා ච භික්ඛවෙ, ජාති.pdf
 #36
 pdf::docs/ආවර්ජනා වැඩසටහන 2026.pdf
 #37
