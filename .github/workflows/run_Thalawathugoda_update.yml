@@ -3,8 +3,8 @@ name: Update Thalawathugoda Lesson Links
 on:
   push:
     paths:
-      - 'NivanMagaUdesaDesana/ThalawathugodaB/ThalawathugodaB_ytlinks.txt'
-      - 'NivanMagaUdesaDesana/ThalawathugodaB/ThalawathugodaB_notes.txt'
+      - 'current/ThalawathugodaC/ThalawathugodaC_ytlinks.txt'
+      - 'current/ThalawathugodaC/ThalawathugodaC_notes.txt'
  
 jobs:
   run-python-script-Thalawathugoda:
@@ -19,7 +19,7 @@ jobs:
           python-version: 3.11 # Set your desired Python version
 
       - name: Update Thalawathugoda B series
-        run: python scripts/gen_series_ThalawathugodaB.py
+        run: python scripts/gen_series_ThalawathugodaC.py
 
       - name: commit changes
         run: |
@@ -29,6 +29,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "updated Thalawathugoda B series desana"
+            git commit -m "updated Thalawathugoda C series desana"
             git push
           fi

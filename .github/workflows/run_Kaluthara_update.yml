@@ -11,7 +11,7 @@ on:
     types: [opened, synchronize, reopened]
 
 jobs:
-  run-python-script-L-series:
+  run-python-script-M-series:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -22,7 +22,7 @@ jobs:
         with:
           python-version: 3.11 # Set your desired Python version
 
-      - name: Update Kaluthara Bohiya L_serires
+      - name: Update Kaluthara Bohiya M_serires
         run: python scripts/gen_series_KalutharaM.py
 
       - name: commit changes
@@ -33,6 +33,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "updated L series"
+            git commit -m "updated M series"
             git push
           fi
