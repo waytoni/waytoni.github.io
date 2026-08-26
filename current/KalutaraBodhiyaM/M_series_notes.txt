@@ -9,6 +9,8 @@ pdf::docs/M 01 Kalutara Bodhiya 2026 08 02 මූලික දේශනා.pdf
 pdf::docs/M 02 Kalutara Bodhiya 2026 08 09 මූලික දේශනා.pdf
 #3
 pdf::docs/M 03 Kalutara Bodhiya 2026 08 16 මූලික දේශනා.pdf
+#4
+pdf::docs/M 04 Kalutara Bodhiya 2026 08 23 මූලික දේශනා.pdf
 #900
 සත්ව තල img::/documents/NotesForDesana/0005 සත්ව තල.jpg
 ආයතන ලෙස විග්‍රහය img::/documents/NotesForDesana/0013 ආයතන ලෙස විග්‍රහය.jpeg

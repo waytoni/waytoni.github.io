@@ -23,7 +23,7 @@
 ## TIME ###
 # This information is necessary for all on-going series.
 
-<p>සෑම ඉරිදාවකම ප.ව. 2:00 සිට ප.ව. 4:30 දක්වා <mark>(අගෝස්තු 2 සිට)</mark></p>
+<p>සෑම ඉරිදාවකම ප.ව. 2:00 සිට ප.ව. 5:00 දක්වා</p>
 
 ## LOCATION ##
 # This information is optional; however, add this for all on-going series

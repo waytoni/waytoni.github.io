@@ -20,7 +20,7 @@
 ## TIME ###
 # This information is necessary for all on-going series.
 
-<p>සෑම පොහොදිනකම පෙරවරු 8:00 සිට 10:30 දක්වා</p>
+<p>සෑම පොහොදිනකම පෙරවරු 8:00 සිට 11:00 දක්වා</p>
 
 ## LOCATION ##
 # This information is optional; however, add this for all on-going series
@@ -46,5 +46,6 @@ basic
 # This section can be used to insert custom HTML content like images
 <div class="info-card" style="text-align: center;">
     <!--p><em>විශේෂ නිවේදනයක් මෙහි ඇතුලත් කළ හැක.</em></p-->
-    <!--img src="/images/PosonPoya2026.jpeg" alt="Example" style="max-width: 100%; border-radius: 8px;"!--> 
+    <!--img src="/images/PosonPoya2026.jpeg" alt="Phoho Dina Annoucement" style="max-width: 100%; border-radius: 8px;"-->
+    <img src="/images/260829_Anuradhapura.jpeg" alt="Phoho Dina Annoucement" style="max-width: 100%; border-radius: 8px;">
 </div>

@@ -166,6 +166,7 @@ def parse_info_file(info_file, on_going, debug_info):
         'LOCATION': '',
         'CONTACT': '',
         'ZOOM_INFO': '',
+        'PLAYLIST': '',
         'VIDEO_SELECTOR': '',
         'EXTRA_CONTENT': ''
     }
@@ -253,7 +254,7 @@ def parse_info_file(info_file, on_going, debug_info):
     
     return (sections['INTRO'], sections['TITLE'], sections['SERIES_TITLE'],
             sections['TIME'], sections['LOCATION'], sections['CONTACT'],
-            zoom_name, video_number, sections['EXTRA_CONTENT'])
+            zoom_name, sections['PLAYLIST'], video_number, sections['EXTRA_CONTENT'])
 
 def generate_series_page(base_folder, html_file, json_file, css_file, on_going, debug_info, verbose=False):
     """
@@ -331,7 +332,7 @@ def generate_series_page(base_folder, html_file, json_file, css_file, on_going, 
     
     # Parse info file
     intro_section, title_section, series_title_section, time_section, \
-    location_section, contact_section, zoom_file, video_number, extra_content = parse_info_file(
+    location_section, contact_section, zoom_file, playlist_section, video_number, extra_content = parse_info_file(
         info_file, on_going, debug_info)
     
     # Process video number
@@ -422,6 +423,18 @@ def generate_series_page(base_folder, html_file, json_file, css_file, on_going, 
             template_content = template_content.replace('$ZOOM_INFO_BLOCK$', '')
     else:
         template_content = template_content.replace('$ZOOM_INFO_BLOCK$', '')
+    
+    # Replace playlist block
+    if playlist_section:
+        playlist_url = playlist_section.strip()
+        playlist_block = f'''
+            <div class="info-card">
+                <h3><i class="fa fa-youtube-play"></i><a href="{playlist_url}" target="_blank">YouTube Playlist</a></h3>
+                <p><a href="{playlist_url}" target="_blank">දේශනා මාලාවේ සියලුම දේශනා</a></p>
+            </div>'''
+        template_content = template_content.replace('$PLAYLIST_BLOCK$', playlist_block)
+    else:
+        template_content = template_content.replace('$PLAYLIST_BLOCK$', '')
     
 
     # Replace EXTRA_CONTENT block
@@ -532,7 +545,7 @@ def generateSeriesPageNew(base_folder, html_file, json_file, css_file, on_going,
     
     # Parse info file
     intro_section, title_section, series_title_section, time_section, \
-    location_section, contact_section, zoom_file, video_number, extra_content = parse_info_file(
+    location_section, contact_section, zoom_file, playlist_section, video_number, extra_content = parse_info_file(
         info_file, on_going, debug_info)
     
     # Process video number
@@ -624,6 +637,18 @@ def generateSeriesPageNew(base_folder, html_file, json_file, css_file, on_going,
     else:
         template_content = template_content.replace('$ZOOM_INFO_BLOCK$', '')
     
+    # Replace playlist block
+    if playlist_section:
+        playlist_url = playlist_section.strip()
+        playlist_block = f'''
+            <div class="info-card">
+                <h3><i class="fa fa-youtube-play"></i><a href="{playlist_url}" target="_blank">YouTube Playlist</a></h3>
+                <p><a href="{playlist_url}" target="_blank">දේශනා මාලාවේ සියලුම දේශනා</a></p>
+            </div>'''
+        template_content = template_content.replace('$PLAYLIST_BLOCK$', playlist_block)
+    else:
+        template_content = template_content.replace('$PLAYLIST_BLOCK$', '')
+    # දේශනා පෙළගැස්ම
 
     # Replace EXTRA_CONTENT block
     if extra_content:
