@@ -146,7 +146,7 @@ gen_series(template_name='SeriesPageTemplateWithControls.html')
 # gen_series(template_name='SeriesPageTemplateWithControls.html')
 
 
-# ThalawathugodaB
+# ThalawathugodaC
 base_folder = "current/ThalawathugodaC"  # Replace with your series folder name
 html_file = "ThalawathugodaC.html"  # Output HTML file name
 css_file = "series_page_style_green_Ganelanda.css"  # CSS file to use
