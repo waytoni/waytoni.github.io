@@ -56,7 +56,8 @@ CHANNELS = [
     },
     {
         "name": "Abhidharma Aruth E series",
-        "channel_id": "UCHB486800OSZYo-umwIo72w",
+        # "channel_id": "UCHB486800OSZYo-umwIo72w",
+        "channel_id": "UC63kf7W9KLLCj0jK6HF5PdA",
         # Only videos whose title contains this phrase will be added.
         # Set to None to accept all videos from the channel.
         "after_date": "2026-07-21",

@@ -37,6 +37,9 @@
 # 077 341 9060 හෝ  0714 333 205
 0714 333 205
 
+## PLAYLIST ##
+https://www.youtube.com/playlist?list=PLqESXbJ82aIiZRSfaS1N24O3CXZp2EkP4
+
 ## ZOOM_INFO ##
 # Specify the Zoom section name from ZoomInfo.txt (e.g. basic or special)
 basic
