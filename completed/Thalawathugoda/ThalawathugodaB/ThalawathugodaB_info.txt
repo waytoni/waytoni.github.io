@@ -41,6 +41,9 @@
 # Specify the Zoom section name from ZoomInfo.txt (e.g. basic or special)
 # special
 
+## PLAYLIST ##
+https://www.youtube.com/playlist?list=PLqESXbJ82aIhg3jBQ7WJ82xl3WG3GQ5eX
+
 ## VIDEO_SELECTOR ##
 # The video_number given in this section will point to the video that will be shown when a series page is opened.
 # It is better to remove this section unless there is a special reason.
