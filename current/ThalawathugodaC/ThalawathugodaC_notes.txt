@@ -13,41 +13,12 @@
 
 
 #1000
-රෝහිතස්ස සූත්‍රය url::https://tipitaka.lk/sn-1-2-3-6/sinh
-<a href="https://www.youtube.com/playlist?list=PLqESXbJ82aIg0mR-UZR7_2TbzU6lHOHY0" target="_blank">පරමාර්ථ ධර්ම</a>
-img::/NivanMagaUdesaDesana/ThalawathugodaB/docs/ThalawathugodaB2_1080.jpg
-රෝහිතස්ස සූත්‍රය url::https://tipitaka.lk/sn-1-2-3-6/sinh
-සබ්බ සූත්‍රය  url::https://tipitaka.lk/sn-4-1-3-1
-සමිද්ධි සත්තපඤ්හ සූත්‍රය url::https://tipitaka.lk/sn-4-1-7-4 
-සමිද්ධි දුක්ඛපඤ්හ සූත්‍රය url::https://tipitaka.lk/sn-4-1-7-5
-සමිද්ධි ලෝකපඤ්හ සූත්‍රය url::https://tipitaka.lk/sn-4-1-7-6
-ශරීරයෙහි සියලු ප්‍රසාද img::/documents/NotesForDesana/0010 ශරීරයෙහි සියලු ප්‍රසාද.jpg
-img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
-සුසීම සුත්තං pdf::/documents/SutraPDFs/සුසීම සුත්තං.pdf
-ඉන්ද්‍රියභාවනා සුත්තං pdf::/documents/SutraPDFs/ඉන්ද්‍රියභාවනා සුත්තං.pdf
-සංස්කාර පැහැදිලි කිරීම සඳහා භාවිත කල සූත්‍ර මාලාවක් pdf::/documents/SutraPDFs/සංස්කාර පැහැදිලි කිරීම සඳහා භාවිත කල සූත්‍ර මාලාවක්.pdf
-චිත්ත සහ චෛතසික චක්‍රය url::/ChiththaChithasika/index.html
-<a href="https://pitaka.lk/books/abhidharma-margaya/6-9.html">අභිධර්ම මාර්ගය පොතේ 5.9 කාමාවචර කුශලයේ විපාක</a>
-විපල්ලාස සුත්තං pdf::/documents/SutraPDFs/විපල්ලාස සුත්තං.pdf
-චිත්ත සහ චෛතසික චක්‍රය url::/ChiththaChithasika/index.html
-පටිච්චසමුප්පාදය img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
-පටිච්චසමුප්පාදය img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
-img::/documents/NotesForDesana/0006 චක්ෂු සහ ශෝත ප්‍රසාද.jpg
-img::/documents/NotesForDesana/0007 ජිහ්වා සහ ඝ්‍රාණ ප්‍රසාද.jpg
-img::/documents/NotesForDesana/0008 කාය ප්‍රසාදය.jpg
-img::/documents/NotesForDesana/0009 වස්තු රූපය - හදවත තුළ.jpg
-img::/documents/NotesForDesana/0010 ශරීරයෙහි සියලු ප්‍රසාද.jpg
-pdf::/documents/SutraPDFs/චතු අරිය සත්‍ය පෙර පසු නොවි සිදුවන බව.pdf
-ඵෙණ පිණ්ඩූපම සූත්‍රය pdf::/documents/SutraPDFs/ඵෙණ පිණ්ඩූපම සූත්‍රය.pdf
-පෙණපිඬක් උපමා කොට වදාළ දෙසුම url::https://tripitaka.online/sutta/3571
+
+
 # කාලය: අතීත, අනාගත, වර්තමාන 
 # අවකාශය: අධ්‍යාත්ම, බාහිර, දුර, ළඟ
 # ලක්ෂණ: ගොරෝසු, සියුම්, හීන, උසස්
-ඛජ්ජනීය සුත්තං pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
-ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම pdf::/documents/SutraPDFs/ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම.pdf 
-ඛජ්ජනීය සූත්‍රය මාගධි පද වැල් හා සිංහල තේරුම (ජංගම දුරකථන වලින් කියවීම සඳහා) url::/documents/SutraPDFs/ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම for mobile.html
-චතස්සො විඤ්ඤාණට්ඨිතියො - සතර විඥාන ස්ථිතී pdf::/documents/SutraPDFs/චතස්සො විඤ්ඤාණට්ඨිතියො -- සතර විඥාන ස්ථිතී.pdf
-ප්‍රඥා පාරමිතාව (print using A3 paper) pdf::/documents/pdfs/Pragna Paramithawa.pdf
+
 
 
 <a href="https://drive.google.com/file/d/1jmwqDz1E0CaeNfwkPrX5uTpqZH1ADHVy/view?usp=sharing" target="_blank">ධම්මචක්කප්පවත්තන සූත්‍රය</a>

@@ -50,10 +50,4 @@ img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.
 රේරුකානේ චන්දවිමල හිමියන්ගේ පටිච්ච සමුප්පාද විවරණය පොත (PDF) url::https://www.ogatharana.org/bookDownCounter.php?booknumber=17
 රේරුකානේ චන්දවිමල හිමියන්ගේ පටිච්ච සමුප්පාද විවරණය පොත (HTML) url::https://tipitaka.lk/library/474
 #200 
-#250
-මහා සළායතනික සුත්තං pdf::/documents/SutraPDFs/මහා සළායතනික සුත්තං.pdf
-මහා සළායතනික සුත්තං url::https://tripitaka.online/sutta/870
-#260
-මහා සළායතනික සුත්තං pdf::/documents/SutraPDFs/මහා සළායතනික සුත්තං.pdf
-මහා සළායතනික සුත්තං url::https://tripitaka.online/sutta/870
 #1000

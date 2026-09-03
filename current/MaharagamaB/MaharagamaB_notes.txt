@@ -14,62 +14,6 @@ img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
 <p><a href="https://drive.google.com/file/d/1xr_x5VpmRY0n3J4s04BmSc1sNlsHlXcs/view?usp=sharing" target="_blank">සංයුත්ත නිකාය → සළායතන සංයුත්තය → අනිච්ච වර්ගය - මතක තබා ගැනීමට උපකාරී වන කෙටි විග්‍රහය</a></p> 
 img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
 #99
-සංයුත්තනිකාය ඛන්ධවග්ගය  අනිච්චවග්ගො pdf::/documents/SutraPDFs/සංයුත්තනිකාය ඛන්ධවග්ගය  අනිච්චවග්ගො.pdf 
-සංයුත්තනිකාය සබ්බානිච්චවග්ගො pdf::/documents/SutraPDFs/සංයුත්තනිකාය සබ්බානිච්චවග්ගො.pdf 
-සංයුත්තනිකාය උප්පාදවග්ගෝ pdf::/documents/SutraPDFs/සංයුත්තනිකාය උප්පාදවග්ගෝ.pdf 
-සබ්බ සුත්ත pdf::/documents/SutraPDFs/සබ්බ සුත්ත.pdf 
-සංයුත්තනිකාය සළායතනවග්ගෝ අනිච්චවග්ගො pdf::/documents/SutraPDFs/සංයුත්තනිකාය සළායතනවග්ගෝ අනිච්චවග්ගො.pdf
-ඛන්‍ධ සංයුත්තය &rarr; අනිච්ච වර්‍ගය (අනිත්‍ය සූත්‍රය, දුක්ඛ සූත්‍රය, අනත්ත සූත්‍රය, යදනිච්ච සූත්‍රය, යංදුක්ඛ සූත්‍රය, යදනත්ත සූත්‍රය) url::https://tipitaka.lk/sn-3-1-1-2/sinh
-සළායතන වර්‍ගය &rarr; සළායතන සංයුත්තය &rarr; අනිච්ච වර්‍ගය (අජ්ඣත්තානිච්ච සූත්‍රය, අජ්ඣත්තදුක්ඛ සූත්‍රය, අජ්ඣත්තානත්ත සූත්‍රය, බාහිරානිච්ච සූත්‍රය, බාහිරදුක්ඛ සූත්‍රය, බාහිරදුක්ඛ සූත්‍රය, බාහිරානත්ත සූත්‍රය, ...) url::https://tipitaka.lk/sn-4-1-1/sinh
-සළායතන වර්‍ගය &rarr; සළායතන සංයුත්තය &rarr; සබ්බනිච්ච වර්‍ගය (අනිච්ච සූත්‍රය, දුක්ඛ සූත්‍රය, අනත්ත සූත්‍රය, &hellip;) url::https://tipitaka.lk/sn-4-1-5/sinh
-සළායතන වර්‍ගය &rarr; සළායතන සංයුත්තය &rarr; සබ්බ වර්‍ගය (සබ්බ සූත්‍රය,  &hellip;) url::https://tipitaka.lk/sn-4-1-3/sinh
-ඛන්‍ධක වර්‍ගය &rarr; උප්පාද වර්‍ගය (චක්ඛු සූත්‍රය, රූප සූත්‍රය, විඤ්ඤාණ සූත්‍රය, ඵස්ස සූත්‍රය, &hellip;, ඛන්‍ධ සූත්‍රය) url::https://tipitaka.lk/sn-3-5-1/sinh
-<a href="/Paramartha_Video/ParamarthaDharma.html">පරමාර්ථ ධර්ම - 5 videos</a>
-ද්විත්ව නිරෝධය pdf::/documents/SutraPDFs/ද්විත්ව නිරෝධය.pdf
-සුසීම සුත්තං pdf::/documents/SutraPDFs/සුසීම සුත්තං.pdf
-ද්විත්ව නිරෝධය pdf::/documents/SutraPDFs/ද්විත්ව නිරෝධය.pdf
-අභිධර්ම මාර්ගය පොතේ 2.4 අකුශල චෛතසික තුදුස url::https://pitaka.lk/books/abhidharma-margaya/3-4.html
-අභිධර්මයේ මූලික කරුණු පොතේ අකුශල චෛතසික තුදුස url::https://pitaka.lk/books/abhidharmaye-mulika-karunu/8-3.html
-අභිධර්ම මාර්ගය පොතේ 7.1 අකුශල සංග්‍ර‍හය url::https://pitaka.lk/books/abhidharma-margaya/8-1.html
-<a href="/documents/NotesForDesana/Chithasika/0017 සිත් චෛතසික පුද්ගල භුමි වගුව.jpg">සිත් චෛතසික පුද්ගල භුමි වගුව</a> img::/documents/NotesForDesana/Chithasika/0017 සිත් චෛතසික පුද්ගල භුමි වගුව.jpg
-චිත්ත සහ චෛතසික සටහන url::/ChiththaChithasika/index.html
-img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
-img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
-චිත්ත සහ චෛතසික සටහන  url::/ChiththaChithasika/ChiththaChithasikaFixedHeader.html
-දුතිය කම්ම සුත්තං url::https://tripitaka.online/sutta/9109
-රේරුකානේ චන්දවිමල හිමියන්ගේ පටිච්ච සමුප්පාද විවරණය පොතේ පටිච්චසමුප්පාදයේ නය සතර url::https://pitaka.lk/books/patichcha-samuppada-vivaranaya/13-12.html
-img::/documents/NotesForDesana/0013 ආයතන ලෙස විග්‍රහය.jpeg
-img::/documents/NotesForDesana/0022 සිත් සතර ආකාරය භූමීන් අනුව බෙදීම.jpeg
-img::/documents/NotesForDesana/0023 89 ක් වූ සිත් බෙදෙන ආකාර.jpeg 
-විපල්ලාස සුත්තං pdf::/documents/SutraPDFs/විපල්ලාස සුත්තං.pdf
-ඵෙණ පිණ්ඩූපම සූත්‍රය pdf::/documents/SutraPDFs/ඵෙණ පිණ්ඩූපම සූත්‍රය.pdf
-රේරුකානේ චන්දවිමල හිමියන්ගේ අභිධර්ම මාර්ගය පොතේ විපාක දානානුක්‍ර‍ම කර්ම චතුෂ්කය url::https://pitaka.lk/books/abhidharma-margaya/6-6.html
-රේරුකානේ චන්දවිමල හිමියන්ගේ අභිධර්ම මාර්ගය පොතේ මරණෝත්පත්ති චතුෂ්කය - මරණ සතර url::https://pitaka.lk/books/abhidharma-margaya/6-10.html
-img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
-# නොදන්නා කම නිසා රූප හටගනියි - අවිද්‍යාව 
-# බැඳෙන ගතිය නිසා රූප හටගනියි - තණ්හාව
-# කර්ම බලය නිසා රූප හටගනියි - කර්මය 
-# පැවැත්වීමේ බලය නිසා රූප හටගනියි - ආහර
-# රූපයේ ඉපදීමේ ලක්ෂණය - නිබ්බන්ති
-ධම්මචක්කප්පවත්ත සූත්‍රය pdf::/documents/SutraPDFs/ධම්මචක්ක සූත්‍රය.pdf
-ධම්මචක්කප්පවත්ත සූත්‍රය url::https://tipitaka.lk/sn-5-12-2
-රේරුකානේ චන්දවිමල හිමියන්ගේ අභිධර්ම මාර්ගය පොතේ මාර්ගාඞ්ග url::https://pitaka.lk/books/abhidharma-margaya/8-2-3.html
-රේරුකානේ චන්දවිමල හිමියන්ගේ අභිධර්ම මාර්ගය පොතේ සංයෝජන url::https://pitaka.lk/books/abhidharma-margaya/8-1-7.html
-රේරුකානේ චන්දවිමල හිමියන්ගේ චතුරාර්‍ය්‍ය සත්‍යය පොතේ චතුර්විධ දුඃඛ ස්වභාවයෝ url::https://pitaka.lk/books/chathurarya-sathya/8-7.html
-රේරුකානේ චන්දවිමල හිමියන්ගේ චතුරාර්‍ය්‍ය සත්‍යය පොතේ සමුදය සත්‍යයාගේ ස්වභාව සතර url::https://pitaka.lk/books/chathurarya-sathya/9-4.html
-රේරුකානේ චන්දවිමල හිමියන්ගේ චතුරාර්‍ය්‍ය සත්‍යය පොතේ නිරෝධ සත්‍යයාගේ ස්වභාව සතර url::https://pitaka.lk/books/chathurarya-sathya/10-8.html
-රේරුකානේ චන්දවිමල හිමියන්ගේ චතුරාර්‍ය්‍ය සත්‍යය පොතේ දුඃඛ නිරෝධගාමිනී ප්‍ර‍තිපදාර්‍ය්‍ය සත්‍යයාගේ ස්වභාව සතර url::https://pitaka.lk/books/chathurarya-sathya/11-12.html
-මනසිකාරය, වීථිපටිපාදක-ජවනපටිපාදක-ආරම්මණ පටිපාදක, යි තෙ වැදෑරුම් ය.
-ස්කන්ධ පංචකය හේතු පල ලෙස විමිසනවිට 1) දුක (ස්කන්ධ පංචකය) පිරිසිඳ දකිනවා 2) දුකට හේතුව ප්‍රහාණය වෙනවා 3) නිවන අරමුණු වෙනවා 4) ආර්‍ය්‍ය අෂ්ටාංගික මාර්ග අංග අට යෙදෙනවා.
-<a href="https://drive.google.com/file/d/1jmwqDz1E0CaeNfwkPrX5uTpqZH1ADHVy/view?usp=sharing" target="_blank">ධම්මචක්කප්පවත්තන සූත්‍රය</a>
-<a href="https://drive.google.com/file/d/1OFuzj-B1WQKxrDuaKNZCm_JfIj5Apegn/view?usp=sharing" target="_blank">චතු අරිය සත්‍ය පෙර පසු නොවි සිදුවන බව</a>
-Four Noble truths for Young Buddhist - Sinhala pdf::/documents/pdfs/Four Noble truths for Young Buddhist -sinhala.pdf
-<a href="https://drive.google.com/file/d/1jmwqDz1E0CaeNfwkPrX5uTpqZH1ADHVy/view?usp=sharing" target="_blank">ධම්මචක්කප්පවත්තන සූත්‍රය</a>
-<a href="https://drive.google.com/file/d/1bCyw0w3MJXVM90xifKsb66vys_-p5tVH/view?usp=sharing" target="_blank">මජ්ජි සූත්‍රය</a>
-<a href="https://drive.google.com/file/d/1OFuzj-B1WQKxrDuaKNZCm_JfIj5Apegn/view?usp=sharing" target="_blank">චතු අරිය සත්‍ය පෙර පසු නොවි සිදුවන බව</a>
-රේරුකානේ චන්දවිමල හිමියන්ගේ චතුරාර්‍ය්‍ය සත්‍යය පොතේ ද්විවිධ වූ දේශනාව url::https://pitaka.lk/books/chathurarya-sathya/5.html
-<a href="https://drive.google.com/file/d/1NqKm4QD0K9Wh_QMtgssO_fgN_og0_p2h/view?usp=sharing" target="_blank">මධුපිණ්ඩික සුත්තං</a>
-ඛජ්ජනීය සුත්තං  pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
-ඛජ්ජනීය සූත්‍ර කෙටි සජ්ජායනාව url::https://www.youtube.com/watch?v=hnfE4MWSn-U
-ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම pdf::/documents/SutraPDFs/ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම.pdf
+
+
 #1000
