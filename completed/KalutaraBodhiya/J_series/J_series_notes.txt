@@ -1,26 +1,26 @@
-#1
-#2
-#3
-#4
-#5
-#6
-#9 
+## 1
+## 2
+## 3
+## 4
+## 5
+## 6
+## 9 
 නිවන් මග උදෙසා දර්ශන ඥානය සඳහා මූලික සූත්‍ර pdf::/documents/දර්ශන ඥානය මූලික සූත්‍ර 01.pdf
-#10
+## 10
 නිවන් මග උදෙසා දර්ශන ඥානය සඳහා මූලික සූත්‍ර pdf::/documents/දර්ශන ඥානය මූලික සූත්‍ර 01.pdf
-#11
-#12
-#15 
+## 11
+## 12
+## 15 
 pdf::/VisheshaDesana/2024 08 18  Kalutara Bodhiya දර්ශන ඥානය.pdf
-#25
+## 25
 මහා සළායතනික සුත්තං pdf::/documents/SutraPDFs/මහා සළායතනික සුත්තං.pdf
 මහා සළායතනික සුත්තං url::https://tripitaka.online/sutta/870
-#26
+## 26
 මහා සළායතනික සුත්තං pdf::/documents/SutraPDFs/මහා සළායතනික සුත්තං.pdf
 මහා සළායතනික සුත්තං url::https://tripitaka.online/sutta/870
-#27
-#28
-#30 
+## 27
+## 28
+## 30 
 ඛජ්ජනීය සුත්තං (PDF) pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
 <a href="https://drive.google.com/file/d/1NqKm4QD0K9Wh_QMtgssO_fgN_og0_p2h/view?usp=sharing" target="_blank">මධුපිණ්ඩික සුත්තං (PDF)</a>
 මධුපිණ්ඩික සුත්තං (Online) url::https://tripitaka.online/sutta/311
@@ -36,7 +36,7 @@ pdf::/VisheshaDesana/2024 08 18  Kalutara Bodhiya දර්ශන ඥානය.p
 ගද්දූලබද්ධ සුත්තං (Online) url::https://tripitaka.online/sutta/3575
 නිබ්බේධික සුත්තං (PDF) pdf::/documents/SutraPDFs/නිබ්බේධික සුත්තං.pdf
 නිබ්බේධික සුත්තං (Online) url::https://tripitaka.online/sutta/10420
-#31
+## 31
 දේසනාව සඳහා පත්‍රිකාව (PDF) pdf::/documents/pdfs/Kalutara Bodhiya දර්ශන ඥානය (2024-12-22) v2.pdf
 ඛජ්ජනීය සුත්තං (PDF) pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
 <a href="https://drive.google.com/file/d/1NqKm4QD0K9Wh_QMtgssO_fgN_og0_p2h/view?usp=sharing" target="_blank">මධුපිණ්ඩික සුත්තං (PDF)</a>
@@ -53,10 +53,10 @@ pdf::/VisheshaDesana/2024 08 18  Kalutara Bodhiya දර්ශන ඥානය.p
 ගද්දූලබද්ධ සුත්තං (Online) url::https://tripitaka.online/sutta/3575
 නිබ්බේධික සුත්තං (PDF) pdf::/documents/SutraPDFs/නිබ්බේධික සුත්තං.pdf
 නිබ්බේධික සුත්තං (Online) url::https://tripitaka.online/sutta/10420
-#32
+## 32
 ආවර්ජනාව දේශනා සාරාංශය pdf::docs/Niwan Maga Udesa (2025-01-04) v2 - Share Compress.pdf
-#33
+## 33
 ආවර්ජනාව දේශනා සාරාංශය pdf::docs/Niwan Maga Udesa (2025-01-04) v2 - Share Compress.pdf
-#34
+## 34
 ආවර්ජනාව දේශනා සාරාංශය pdf::docs/Niwan Maga Udesa (2025-01-04) v2 - Share Compress.pdf
-#1000
+## 1000

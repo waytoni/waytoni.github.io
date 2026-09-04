@@ -1,6 +1,6 @@
-#1
-#4
-#12
+## 1
+## 4
+## 12
 ඛජ්ජනීය සුත්තං  pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
 ඛජ්ජනීය සූත්‍ර කෙටි සජ්ජායනාව url::https://www.youtube.com/watch?v=hnfE4MWSn-U
 ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම pdf::/documents/SutraPDFs/ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම.pdf
@@ -23,68 +23,68 @@
 අම්‌බිලම්‌පි විජානාති, තිත්‌තකම්‌පි විජානාති, කටුකම්‌පි විජානාති, මධුරකම්‌පි විජානාති, ඛාරිකම්‌පි විජානාති, අඛාරිකම්‌පි විජානාති, ලෝණිකම්‌පි විජානාති, අලෝණිකම්‌පි විජානාති. විජානාතීති ඛෝ භික්ඛවේ, තස්‌මා විඤ්‌ඤාණන්‌ති වුච්‌චති. 
 
 
-#13
+## 13
 ඛජ්ජනීය සුත්තං  pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
 ඛජ්ජනීය සූත්‍ර කෙටි සජ්ජායනාව url::https://www.youtube.com/watch?v=hnfE4MWSn-U
 ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම pdf::/documents/SutraPDFs/ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම.pdf
 ආර්ය ලෝකය සටහන <a href="https://waytoni.com/documents/Sabba%20VER%201.01.html" target="_blank"><img src="/documents/NotesForDesana/thumbnails/ආර්ය ලෝකය.png"></a> (සටහන නව ටැබ් [tab] එකක විවෘත වේ.)
-#14
+## 14
 ඛජ්ජනීය සුත්තං  pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
 ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
 ඛජ්ජනීය සූත්‍ර කෙටි සජ්ජායනාව url::https://www.youtube.com/watch?v=hnfE4MWSn-U
 ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම pdf::/documents/SutraPDFs/ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම.pdf
 ආර්ය ලෝකය සටහන <a href="https://waytoni.com/documents/Sabba%20VER%201.01.html" target="_blank"><img src="/documents/NotesForDesana/thumbnails/ආර්ය ලෝකය.png"></a> (සටහන නව ටැබ් [tab] එකක විවෘත වේ.)
-#16 
+## 16 
 චූළවේදල්ල සූත්‍රය url::https://tipitaka.lk/mn-1-5-4
 මහාවේදල්ල සූත්‍රය url::https://tipitaka.lk/mn-1-5-3
-#17
+## 17
 ඛජ්ජනීය සුත්තං  pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
 ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
-#18
+## 18
 ස්කන්‍ධ විභඞ්ගය url::https://tipitaka.lk/ap-vbh-1-1
 ඛජ්ජනීය සුත්තං  url::https://tipitaka.lk/sn-3-1-2-3-7
-#20
+## 20
 රේරුකානේ චන්දවිමල හිමියන්ගේ චතුරාර්‍ය්‍ය සත්‍යය පොත (PDF) url::https://www.ogatharana.org/bookDownCounter.php?booknumber=9
 රේරුකානේ චන්දවිමල හිමියන්ගේ චතුරාර්‍ය්‍ය සත්‍යය පොත (HTML) url::https://tipitaka.lk/library/470
-#21
+## 21
 රේරුකානේ චන්දවිමල හිමියන්ගේ පටිච්ච සමුප්පාද විවරණය පොත (HTML) url::https://tipitaka.lk/library/474
 රේරුකානේ චන්දවිමල හිමියන්ගේ පටිච්ච සමුප්පාද විවරණය පොත (PDF) url::https://www.ogatharana.org/bookDownCounter.php?booknumber=17
-#22
+## 22
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
-#23
+## 23
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
-#24
+## 24
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
-#25
+## 25
 රේරුකානේ චන්දවිමල හිමියන්ගේ පටිච්ච සමුප්පාද විවරණය පොත (PDF) url::https://www.ogatharana.org/bookDownCounter.php?booknumber=17
 රේරුකානේ චන්දවිමල හිමියන්ගේ පටිච්ච සමුප්පාද විවරණය පොත (HTML) url::https://tipitaka.lk/library/474
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
-#26
+## 26
 විභංග සුත්තං (PDF) pdf::/documents/SutraPDFs/විභංග සුත්තං.pdf
 මහා නිදාන සුත්තං (PDF) pdf::/documents/SutraPDFs/මහා නිදාන සුත්තං.pdf
 අචේලකස්සප සුත්තං (PDF) pdf::/documents/SutraPDFs/අචේලකස්සප සුත්තං.pdf
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
-#27
+## 27
 රේරුකානේ චන්දවිමල හිමියන්ගේ පටිච්ච සමුප්පාද විවරණය පොත (PDF) url::https://www.ogatharana.org/bookDownCounter.php?booknumber=17
 රේරුකානේ චන්දවිමල හිමියන්ගේ පටිච්ච සමුප්පාද විවරණය පොත (HTML) url::https://tipitaka.lk/library/474
-#28
+## 28
 අභිධර්ම පිඨකය විභඞ්ගප්පකරණං - පටිච්චසමුප්පාද-සුත්තන්තභාජනියං pdf::/documents/pdfs/අභිධර්ම පිඨකය විභඞ්ගප්පකරණං - පටිච්චසමුප්පාද-සුත්තන්තභාජනියං.pdf
-#29
+## 29
 රේරුකානේ චන්දවිමල හිමියන්ගේ පටිච්ච සමුප්පාද විවරණය පොත (PDF) url::https://www.ogatharana.org/bookDownCounter.php?booknumber=17
 රේරුකානේ චන්දවිමල හිමියන්ගේ පටිච්ච සමුප්පාද විවරණය පොත (HTML) url::https://tipitaka.lk/library/474
-#200 
-#31
+## 200 
+## 31
 මහානිදාන සූත්‍රය (PDF) pdf::/documents/SutraPDFs/මහානිදාන සූත්‍රය.pdf
-#33
+## 33
 <a href="https://drive.google.com/file/d/1AYoVIImYlVSmQqe2HyNch62VXIRP1yD-/view?usp=sharing" target="_blank">මහා නිදාන සූත්‍රය විස්තරය සංස්කරණය කරන ලද සටහන</a>
-#90
+## 90
 රේරුකානේ චන්ද්‍රවිමල හිමි විසින් ලියන ලද පට්ඨාන මහා පකරණ සන්නය url::https://tipitaka.lk/library/494
-#100
+## 100
 img::/documents/NotesForDesana/ආර්ය ලෝකය.png
 ආර්ය ලෝකය සටහන url::/documents/Sabba VER 1.01.html
-#1000
+## 1000

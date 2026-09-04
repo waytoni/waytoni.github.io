@@ -1,15 +1,15 @@
-#0
+## 0
 # img::/documents/NotesForDesana/මුල් උපත පසු උපත.jpg
 රේරුකානේ චන්දවිමල හිමියන්ගේ පොත් ලබා ගැනීමට (PDF හෝ HTML ආකාරයට): url::https://tipitaka.lk/library/462
 img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
-#1
+## 1
 රේරුකානේ චන්දවිමල හිමියන්ගේ පොත් ලබා ගැනීමට (PDF හෝ HTML ආකාරයට): url::https://tipitaka.lk/library/462
 pdf::docs/M 01 Kalutara Bodhiya 2026 08 02 මූලික දේශනා.pdf
-#2
+## 2
 pdf::docs/M 02 Kalutara Bodhiya 2026 08 09 මූලික දේශනා.pdf
-#3
+## 3
 pdf::docs/M 03 Kalutara Bodhiya 2026 08 16 මූලික දේශනා.pdf
-#4
+## 4
 pdf::docs/M 04 Kalutara Bodhiya 2026 08 23 මූලික දේශනා.pdf
-#5
+## 5
 pdf::docs/M 05 Kalutara Bodhiya 2026 08 30 මූලික දේශනා.pdf

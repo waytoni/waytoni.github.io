@@ -144,9 +144,9 @@ Four Noble truths for Young Buddhist - Sinhala pdf::/documents/pdfs/Four Noble t
 ස්කන්ධ පංචකය හේතු පල ලෙස විමිසනවිට 1) දුක (ස්කන්ධ පංචකය) පිරිසිඳ දකිනවා 2) දුකට හේතුව ප්‍රහාණය වෙනවා 3) නිවන අරමුණු වෙනවා 4) ආර්‍ය්‍ය අෂ්ටාංගික මාර්ග අංග අට යෙදෙනවා.
 
 
-#900
+## 900
 
-#1100
+## 1100
 පඨම සඤ්ඤා සුත්තං pdf::/documents/SutraPDFs/පඨම සඤ්ඤා සුත්තං.pdf
 මනසිකාර සුත්තං pdf::/documents/SutraPDFs/මනසිකාර සුත්තං 02.pdf
 සංයුත්තනිකාය ඛන්ධවග්ගය  අනිච්චවග්ගො pdf::/documents/SutraPDFs/සංයුත්තනිකාය ඛන්ධවග්ගය  අනිච්චවග්ගො.pdf 
@@ -167,7 +167,7 @@ Four Noble truths for Young Buddhist - Sinhala pdf::/documents/pdfs/Four Noble t
 අභිධර්ම මාර්ගය පොතේ 7.1 අකුශල සංග්‍ර‍හය url::https://pitaka.lk/books/abhidharma-margaya/8-1.html
 
 
-#1700
+## 1700
 
 <a href="https://pitaka.lk/books/abhidharma-margaya/6-9.html">අභිධර්ම මාර්ගය පොතේ 5.9 කාමාවචර කුශලයේ විපාක</a>
 
@@ -180,7 +180,7 @@ Four Noble truths for Young Buddhist - Sinhala pdf::/documents/pdfs/Four Noble t
 වර්තමාන ඵල පස - විඤ්ඤාණ, නාමරූප, සළායතන, ඵස්ස, වේදනා.
 වර්තමාන හේතු පස - තණ්හා, උපාදාන, භව, අවිජ්ජා, සංඛාර.
 අනාගත ඵල පස - විඤ්ඤාණ, නාමරූප, සළායතන, ඵස්ස, වේදනා.
-#2800 
+## 2800 
 රේරුකානේ චන්දවිමල හිමියන්ගේ අභිධර්ම මාර්ගය පොතේ චතුරාර්‍ය්‍ය සත්‍යය url::https://pitaka.lk/books/abhidharma-margaya/8-4-4.html
 රේරුකානේ චන්දවිමල හිමියන්ගේ අභිධර්ම මාර්ගය පොතේ මාර්ගාඞ්ග url::https://pitaka.lk/books/abhidharma-margaya/8-2-3.html
 රේරුකානේ චන්දවිමල හිමියන්ගේ චතුරාර්‍ය්‍ය සත්‍යය පොතේ චතුර්විධ දුඃඛ ස්වභාවයෝ url::https://pitaka.lk/books/chathurarya-sathya/8-7.html
@@ -192,7 +192,7 @@ Four Noble truths for Young Buddhist - Sinhala pdf::/documents/pdfs/Four Noble t
 # දුකට හේතුව ප්‍රහාණය වෙනවා 
 # නිවන අරමුණු වෙනවා 
 # ආර්‍ය්‍ය අෂ්ටාංගික මාර්ග අංග අට යෙදෙනවා
-#3100
+## 3100
 
 
 
@@ -265,15 +265,15 @@ Four Noble truths for Young Buddhist - Sinhala pdf::/documents/pdfs/Four Noble t
 
 මජ්ඣේ සූත්‍රය නිමා විය. 
 </div>
-#3200
+## 3200
 <a href="https://drive.google.com/file/d/1OFuzj-B1WQKxrDuaKNZCm_JfIj5Apegn/view?usp=sharing" target="_blank">චතු අරිය සත්‍ය පෙර පසු නොවි සිදුවන බව</a>
 <a href="https://drive.google.com/file/d/1YwM41gjwdRgYlT54fb64_iyd_qwr9mVM/view?usp=sharing" target="_blank">පටිච්චසමුප්පාදවිභඞ්ගො නනාවිධ මාතෘකා විවරනය</a>
 <a href="https://drive.google.com/file/d/1xx-SqBcrHDSLexWocDcnEagYyguSxoeh/view?usp=sharing" target="_blank">සංයුත්ත නිකාය → නිදාන වර්‍ගය → අභිසමය සංයුත්තය → බුද්ධ වර්‍ගය → විභඞ්ග සූත්‍රය</a>
 <a href="https://drive.google.com/file/d/1NqKm4QD0K9Wh_QMtgssO_fgN_og0_p2h/view?usp=sharing" target="_blank">මධුපිණ්ඩික සුත්තං</a>
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
-#3300
+## 3300
 
-#3400
+## 3400
 <a href="https://drive.google.com/file/d/1AYoVIImYlVSmQqe2HyNch62VXIRP1yD-/view?usp=sharing" target="_blank">මහා නිදාන සූත්‍රය විස්තරය සංස්කරණය කරන ලද සටහන</a>
 <a href="https://drive.google.com/file/d/1dy1CRkjKTP37TfBB1Y8e2OjM-U3ov9dT/view?usp=sharing" target="_blank">පච්චය පච්චයුප්පන්න සුත්තං</a>
 පච්චය පච්චයුප්පන්න සුත්තං url::https://www.tripitaka.online/sutta/2108

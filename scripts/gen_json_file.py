@@ -35,58 +35,6 @@ def parse_utlinks(file_path):
                     })
     return utlinks
 
-def parse_ytlinks_v1(file_path, title=""):
-  
-    utlinks = []
-    with open(file_path, 'r', encoding='utf-8') as file:
-        for line_num, line in enumerate(file, 1):
-            line = line.strip()
-            
-            if not line or line.startswith('#'):  # Skip empty lines and comments
-                continue
-            
-            # Improved regex to handle both alphabetic and numeric months in dates
-            # Pattern explanation:
-            # (\d+)                    - index number
-            # \s+                      - whitespace
-            # (.*?)                    - comment (non-greedy)
-            # \s+                      - whitespace  
-            # (https?://[^\s]+)        - URL (stops at whitespace)
-            # \s+                      - whitespace
-            # (\d{4}-[A-Za-z0-9]+-\d{1,2}) - date format (YYYY-Month-DD or YYYY-MM-DD)
-            match = re.match(r'(\d+)\s+(.*?)\s+(https?://[^\s]+)\s+(\d{4}-[A-Za-z0-9]+-\d{1,2})', line)
-            
-            if match:
-                index, comment, url, date_str = match.groups()
-                
-                # Clean up comment field
-                comment = comment.strip()
-                if not comment or comment.startswith("http"):
-                   #comment = ""
-                    comment = title
-                
-                # Parse date
-                parsed_date = parse_flexible_date(date_str)
-                
-                utlinks.append({
-                    'index': int(index),
-                    'comment': comment,
-                    'url': url,
-                    'date': parsed_date,
-                    'video_id': extract_youtube_id(url),
-                    'date_string': date_str,
-                    'line_number': line_num
-                })
-            else:
-                print(f"Warning: Could not parse line {line_num}: {line}")
-                # Debug: show what parts we can extract
-                parts = line.split()
-                if len(parts) >= 4:
-                    print(f"  Parts found: index={parts[0]}, url={parts[-2] if len(parts) > 2 else 'N/A'}, date={parts[-1]}")
-    
-    return utlinks
-
-
 def parse_ytlinks(file_path, title=""):
     utlinks = []
     with open(file_path, 'r', encoding='utf-8') as file:
@@ -220,56 +168,6 @@ def parse_flexible_date(date_str):
     print(f"Warning: Could not parse date: {date_str}")
     return None
 
-def parse_notes_old(file_path, verbose=False):
-    notes = {}
-    with open(file_path, 'r', encoding='utf-8') as file:
-        current_index = None
-        current_notes = []
-        for line in file:
-            line = line.strip()
-            if line.startswith('#'):
-                if current_index is not None:
-                    notes[current_index] = "\n".join(current_notes)
-                current_index = int(line[1:])
-                current_notes = []
-            else:
-                #current_notes.append(line)
-                
-                parts = re.split(pattern, line)
-                
-                # Check if there are more than one part
-                if len(parts) > 1:
-                    # Get the intro text as the first element of the list
-                    intro_text = "<p>" + parts[0].strip()
-                    # Initialize an empty string for the new string
-                    new_string = intro_text
-                    # Loop through the rest of the parts in pairs of keyword and text related to keyword
-                    for i in range(1, len(parts), 2):
-                        # Get the keyword and the text related to keyword
-                        keyword = parts[i].strip()
-                        text_related_to_keyword = parts[i+1].strip()
-                        # Check if the keyword is a valid keyword
-                        if keyword in keyword_dict:
-                            # Get the html tag for the keyword
-                            html_tag = keyword_dict[keyword]
-                            # Format the html tag with the text related to keyword
-                            html_tag = html_tag.format(text_related_to_keyword, text_related_to_keyword)
-                            # Append a space and the html tag to the new string
-                            new_string += " " + html_tag + "</p>"
-                        else:
-                            # If the keyword is not a valid keyword, append a space and the original pair of parts to the new string
-                            new_string += " " + keyword + "::" + text_related_to_keyword + "</p>"
-                else:
-                    # If there is only one part, use it as the new string
-                    new_string = "<p>" + parts[0] + "</p>"
-                # Print the new string
-                if verbose:
-                    print(new_string)
-                current_notes.append(new_string)
-                
-        if current_index is not None:
-            notes[current_index] = "\n".join(current_notes)
-    return notes
 
 def parse_notes(file_path, verbose=False):
     notes = {}
@@ -283,24 +181,23 @@ def parse_notes(file_path, verbose=False):
             if not line:
                 continue
                 
-            # Check if line starts with #
-            if line.startswith('#'):
-                # Case 1: # followed immediately by number (e.g., #10) - new section
-                if re.match(r'#\d+', line):
+            # Check if line starts with ## (section)
+            if line.startswith('## '):
+                match = re.match(r'^##\s*(\d+)', line)
+                if match:
                     if current_index is not None:
                         notes[current_index] = "\n".join(current_notes)
-                    current_index = int(line[1:])
+                    current_index = int(match.group(1))
                     current_notes = []
-                # Case 2: # followed by space and text - comment line, ignore
-                elif line.startswith('# '):
-                    if verbose:
-                        print(f"Ignoring comment: {line}")
-                    continue
-                # Case 3: Any other # line - treat as comment and ignore
                 else:
                     if verbose:
-                        print(f"Ignoring comment: {line}")
+                        print(f"Ignoring invalid section header: {line}")
                     continue
+            # Check if line starts with # (comment)
+            elif line.startswith('#'):
+                if verbose:
+                    print(f"Ignoring comment: {line}")
+                continue
             else:
                 # Process regular content lines
                 parts = re.split(pattern, line)

@@ -1,37 +1,37 @@
-#1
-#7
+## 1
+## 7
 දේශනාව සඳහා සටහන: img::/documents/PNG/ආර්ය ලෝකය.png
-#11
+## 11
 ඛජ්ජනීය සුත්තං  pdf::/documents/SutraPDFs/ඛජ්ජනීය සුත්තං.pdf
 ඛජ්ජනීය සුත්තං  url::https://tripitaka.online/sutta/3413
 ඛජ්ජනීය සූත්‍ර කෙටි සජ්ජායනාව url::https://www.youtube.com/watch?v=hnfE4MWSn-U
 ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම pdf::/documents/SutraPDFs/ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම.pdf
-#12
-#15
-#20
+## 12
+## 15
+## 20
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
-#21
+## 21
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
-#22
+## 22
 img::/documents/NotesForDesana/0044 ජීවිතේන්ද්‍රිය.jpg
-#23
+## 23
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
-#24
+## 24
 විභංග සුත්තං (PDF) pdf::/documents/SutraPDFs/විභංග සුත්තං.pdf
 මහා නිදාන සුත්තං (PDF) pdf::/documents/SutraPDFs/මහා නිදාන සුත්තං.pdf
 අචේලකස්සප සුත්තං (PDF) pdf::/documents/SutraPDFs/අචේලකස්සප සුත්තං.pdf
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
-#25
+## 25
 pdf::/completed/NivanMagaUdesaDesana/Thalawathugoda/docs/Thalawathugoda_2025-08-16.pdf
-#28
+## 28
 මහානිදාන සූත්‍රය (PDF) pdf::/documents/SutraPDFs/මහානිදාන සූත්‍රය.pdf
-#29
+## 29
 මහානිදාන සූත්‍රය (PDF) pdf::/documents/SutraPDFs/මහානිදාන සූත්‍රය.pdf
-#33
+## 33
 img::docs/Thalawathugoda_20251101.png
 ධම්මචක්කප්පවත්ත සූත්‍රය pdf::/documents/SutraPDFs/ධම්මචක්ක සූත්‍රය.pdf
 ධම්මචක්කප්පවත්ත සූත්‍රය url::https://tipitaka.lk/sn-5-12-2
@@ -48,7 +48,7 @@ img::docs/Thalawathugoda_20251101.png
 </div>
 img::docs/note_251101.jpg
 Four Noble truths for Young Buddhist - Sinhala pdf::/documents/pdfs/Four Noble truths for Young Buddhist -sinhala.pdf
-#34
+## 34
 ධම්මචක්කප්පවත්ත සූත්‍රය pdf::/documents/SutraPDFs/ධම්මචක්ක සූත්‍රය.pdf
 මජ්ජි සූත්‍රය pdf::/documents/SutraPDFs/මජ්ජි සූත්‍රය.pdf
 
@@ -122,4 +122,4 @@ The following text is copied from <a href="https://tripitaka.online/sutta/10418"
 
 මජ්ඣේ සූත්‍රය නිමා විය. 
 </div>
-#1000
+## 1000

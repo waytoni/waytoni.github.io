@@ -1,9 +1,9 @@
-#1
-#2
-#7
+## 1
+## 2
+## 7
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
-#8
+## 8
 කොට්ඨිත අනිච්ච සූත්‍රය url::https://tipitaka.lk/sn-4-1-16-7/
 අතීත යදනිච්ච සූත්‍රය url::https://tipitaka.lk/sn-4-1-17-17/sinh
 <a href="https://drive.google.com/file/d/1N3SsVtu4lVoXpvQPyKXvRc3Abk92taHy/view?usp=sharing" target="_blank">
@@ -22,20 +22,20 @@ img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.
 මහණෙනි, මෙසේ දක්නා ශ්‍රැතවත් ආර්‍ය්‍යශ්‍රාවක ඇසෙහිත් කලකිරෙයි ... මේ බැව් පිණිස අනෙකක් නැතැ යි දැනගනි යි.
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
-#9
+## 9
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
-#10
-#12
+## 10
+## 12
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
-#13
+## 13
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
-#14
+## 14
 img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
-#16
+## 16
 img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
-#1000
+## 1000
