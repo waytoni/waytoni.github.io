@@ -42,9 +42,16 @@ if __name__ == "__main__":
         f.write(html_content)
     print(f"Generated {output_path}")
     
-    # Chiththa Chithasika Chart
+    # Chiththa Chithasika Chart - to be removed
     html_content = generate_html_from_template("ChiththaChithasika_template.html")
     output_path = "ChiththaChithasika/index.html"
+    with open(output_path, 'w', encoding='utf-8') as f:
+        f.write(html_content)
+    print(f"Generated {output_path}")
+    
+        # Chiththa Chithasika Chart
+    html_content = generate_html_from_template("ChiththaChaithasika_template.html")
+    output_path = "ChiththaChaithasika/index.html"
     with open(output_path, 'w', encoding='utf-8') as f:
         f.write(html_content)
     print(f"Generated {output_path}")

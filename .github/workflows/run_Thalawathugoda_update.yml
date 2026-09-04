@@ -18,7 +18,7 @@ jobs:
         with:
           python-version: 3.11 # Set your desired Python version
 
-      - name: Update Thalawathugoda B series
+      - name: Update Thalawathugoda C series
         run: python scripts/gen_series_ThalawathugodaC.py
 
       - name: commit changes
