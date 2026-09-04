@@ -125,11 +125,43 @@
             display: block;
             position: relative;
         }
+
+        /* --- Header Override (reduce vertical space) --- */
+        #desktop-message header {
+            padding: 0.5rem 0;
+        }
+        #desktop-message header h1 {
+            font-size: 1.4rem;
+            margin: 0.2rem 0;
+        }
+        #desktop-message header h3 {
+            font-size: 1rem;
+            margin: 0.2rem 0;
+        }
+
+        /* --- Desktop Instructions --- */
+        #desktop-instructions {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            z-index: 20;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 12px 18px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-family: 'Noto Sans Sinhala', Arial, sans-serif;
+            font-size: 0.95em;
+            color: #333;
+            line-height: 1.5;
+            border: 1px solid #e0e0e0;
+            display: none;
+        }
     </style>
 </head>
 <body>
 
     <div id="desktop-message"> </div>
+    <div id="desktop-instructions"> </div>
 
 
     <div id="zoom-control-container">
@@ -208,23 +240,24 @@
 
             // --- NEW: Mouse Wheel Scrolling Handler ---
             mainScrollArea.addEventListener('wheel', (e) => {
-                // Prevent the default browser action (usually vertical scroll on the body/viewport)
+                // Prevent the default browser action
                 e.preventDefault(); 
                 
-                // Vertical Scrolling (Normal mouse wheel motion)
-                // e.deltaY is the vertical scroll amount
-                mainScrollArea.scrollTop += e.deltaY;
-                
-                // Horizontal Scrolling (Shift + mouse wheel, common for laptops)
-                // e.deltaX is the horizontal scroll amount
-                // If the user uses a trackpad or Shift key, e.deltaX will be non-zero.
-                if (e.deltaX !== 0) {
-                    mainScrollArea.scrollLeft += e.deltaX;
+                if (e.shiftKey) {
+                    // If Shift is pressed, treat the scroll as horizontal.
+                    // Some browsers convert Shift+Scroll to deltaX, others keep it in deltaY.
+                    const hDelta = e.deltaX !== 0 ? e.deltaX : e.deltaY;
+                    mainScrollArea.scrollLeft += hDelta;
+                } else {
+                    // Normal vertical scrolling
+                    mainScrollArea.scrollTop += e.deltaY;
+                    
+                    // Trackpad horizontal scrolling
+                    if (e.deltaX !== 0) {
+                        mainScrollArea.scrollLeft += e.deltaX;
+                    }
                 }
-                
-                // Since we manually set the scroll position, the 'scroll' event will fire, 
-                // which automatically calls syncScroll().
-            });
+            }, { passive: false });
             
 
             // --- Zoom Handler: Directly manipulate width/height for accurate layout ---
@@ -293,7 +326,11 @@
     const content_mobile = document.querySelector('#mobile-message');
     if (isMobile() == false) {
       content_desktop.innerHTML =
-        '<header><h3>ගරු අජන්තා සම්පත් ගුරුතුමා විසින් සකස් කරන ලද</h3><h1>චිත්ත සහ චෛතසික සටහන</h1></header>'
+        '<header><h3>ගරු අජන්තා සම්පත් ගුරුතුමා විසින් සකස් කරන ලද</h3><h1>චිත්ත සහ චෛතසික සටහන</h1></header>';
+        
+      const desktop_instructions = document.querySelector('#desktop-instructions');
+      desktop_instructions.style.display = 'block';
+      desktop_instructions.innerHTML = '<strong>Navigation Instructions:</strong><br>• Scroll vertically to move up/down<br>• Shift + Scroll to move left/right';
     }
     else {
         content_mobile.innerHTML =
