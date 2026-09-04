@@ -55,10 +55,10 @@ img::/KalutaraBodhiya/L_series/docs/L14_20251228.jpg
 #16
 ඉන්ද්‍රියභාවනා සුත්තං pdf::/documents/SutraPDFs/ඉන්ද්‍රියභාවනා සුත්තං.pdf
 #17
-චිත්ත සහ චෛතසික චක්‍රය url::/ChiththaChithasika/index.html
+චිත්ත සහ චෛතසික චක්‍රය url::/ChiththaChaithasika/index.html
 <a href="https://pitaka.lk/books/abhidharma-margaya/6-9.html">අභිධර්ම මාර්ගය පොතේ 5.9 කාමාවචර කුශලයේ විපාක</a>
 #18
-චිත්ත සහ චෛතසික චක්‍රය url::/ChiththaChithasika/index.html
+චිත්ත සහ චෛතසික චක්‍රය url::/ChiththaChaithasika/index.html
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
 img::/documents/NotesForDesana/0013 ආයතන ලෙස විග්‍රහය.jpeg
@@ -69,7 +69,7 @@ img::/documents/NotesForDesana/0022 සිත් සතර ආකාරය භ�
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
 #20
-චිත්ත සහ චෛතසික චක්‍රය url::/ChiththaChithasika/index.html
+චිත්ත සහ චෛතසික චක්‍රය url::/ChiththaChaithasika/index.html
 img::/KalutaraBodhiya/L_series/docs/L20_20260215.jpg
 #21
 රේරුකානේ චන්දවිමල හිමියන්ගේ පටිච්ච සමුප්පාද විවරණය පොතේ පටිච්චසමුප්පාදයේ නය සතර url::https://pitaka.lk/books/patichcha-samuppada-vivaranaya/13-12.html

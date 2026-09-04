@@ -14,7 +14,7 @@
 #6
 <a href="https://www.youtube.com/playlist?list=PLqESXbJ82aIg0mR-UZR7_2TbzU6lHOHY0" target="_blank">පරමාර්ථ ධර්ම</a>
 #8
-චිත්ත සහ චෛතසික චක්‍රය url::/ChiththaChithasika/index.html
+චිත්ත සහ චෛතසික චක්‍රය url::/ChiththaChaithasika/index.html
 #9
 අභිධර්ම මාර්ගය පොතේ 2.4 අකුශල චෛතසික තුදුස url::https://pitaka.lk/books/abhidharma-margaya/3-4.html
 අභිධර්මයේ මූලික කරුණු පොතේ අකුශල චෛතසික තුදුස url::https://pitaka.lk/books/abhidharmaye-mulika-karunu/8-3.html
@@ -64,7 +64,7 @@ img::/documents/NotesForDesana/0003 රූප කලාපය.jpg
 #20
 චතස්සො විඤ්ඤාණට්ඨිතියො - සතර විඥාන ස්ථිතී pdf::/documents/SutraPDFs/චතස්සො විඤ්ඤාණට්ඨිතියො -- සතර විඥාන ස්ථිතී.pdf
 #21
-චිත්ත සහ චෛතසික සටහන  url::https://waytoni.com/ChiththaChithasika/ChiththaChithasikaFixedHeader.html
+චිත්ත සහ චෛතසික සටහන  url::https://waytoni.com/ChiththaChaithasika/ChiththaChaithasika.html
 #24
 <a href="https://drive.google.com/file/d/1YwM41gjwdRgYlT54fb64_iyd_qwr9mVM/view?usp=sharing" target="_blank">පටිච්චසමුප්පාදවිභඞ්ගො නනාවිධ මාතෘකා විවරනය</a>
 #25

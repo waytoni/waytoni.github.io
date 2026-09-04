@@ -13,19 +13,3 @@
 
 
 #1000
-
-
-# කාලය: අතීත, අනාගත, වර්තමාන 
-# අවකාශය: අධ්‍යාත්ම, බාහිර, දුර, ළඟ
-# ලක්ෂණ: ගොරෝසු, සියුම්, හීන, උසස්
-
-
-
-<a href="https://drive.google.com/file/d/1jmwqDz1E0CaeNfwkPrX5uTpqZH1ADHVy/view?usp=sharing" target="_blank">ධම්මචක්කප්පවත්තන සූත්‍රය</a>
-<a href="https://drive.google.com/file/d/1OFuzj-B1WQKxrDuaKNZCm_JfIj5Apegn/view?usp=sharing" target="_blank">චතු අරිය සත්‍ය පෙර පසු නොවි සිදුවන බව</a>
-චිත්ත සහ චෛතසික චක්‍රය url::/ChiththaChithasika/ChiththaChithasikaFixedHeader.html
-
-
-<a href="https://drive.google.com/file/d/1YwM41gjwdRgYlT54fb64_iyd_qwr9mVM/view?usp=sharing" target="_blank">පටිච්චසමුප්පාදවිභඞ්ගො නනාවිධ මාතෘකා විවරනය</a>
-<a href="https://drive.google.com/file/d/1dy1CRkjKTP37TfBB1Y8e2OjM-U3ov9dT/view?usp=sharing" target="_blank">පච්චය පච්චයුප්පන්න සුත්තං</a>
-

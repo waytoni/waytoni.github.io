@@ -108,7 +108,7 @@ img::/documents/NotesForDesana/0044 ජීවිතේන්ද්‍රිය.j
 <a href="https://drive.google.com/file/d/1OFuzj-B1WQKxrDuaKNZCm_JfIj5Apegn/view?usp=sharing" target="_blank">චතු අරිය සත්‍ය පෙර පසු නොවි සිදුවන බව</a>
 Four Noble truths for Young Buddhist - Sinhala pdf::/documents/pdfs/Four Noble truths for Young Buddhist -sinhala.pdf
 
-චිත්ත සහ චෛතසික සටහන  url::https://waytoni.com/ChiththaChithasika/ChiththaChithasikaFixedHeader.html
+චිත්ත සහ චෛතසික සටහන  url::https://waytoni.com/ChiththaChaithasika/ChiththaChaithasika.html
 
 
 

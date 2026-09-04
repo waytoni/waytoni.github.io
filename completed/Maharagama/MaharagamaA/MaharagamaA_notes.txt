@@ -53,13 +53,13 @@
 <span class='pali'>එවං පස‍්සං භික‍්ඛවෙ සුතවා අරියසාවකො චක‍්ඛුස‍්මිම‍්පි නිබ‍්බින්‍දති -පෙ- නාපරං ඉත්‍ථත‍්තායාති පජානාතීති.</span>
 මහණෙනි, මෙසේ දක්නා ශ්‍රැතවත් ආර්‍ය්‍යශ්‍රාවක ඇසෙහිත් කලකිරෙයි ... මේ බැව් පිණිස අනෙකක් නැතැ යි දැනගනි යි.
 පටිච්චසමුප්පාදය img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
-චිත්ත සහ චෛතසික චක්‍රය url::/ChiththaChithasika/index.html
+චිත්ත සහ චෛතසික චක්‍රය url::/ChiththaChaithasika/index.html
 #18
-චිත්ත සහ චෛතසික සටහන url::/ChiththaChithasika/index.html
+චිත්ත සහ චෛතසික සටහන url::/ChiththaChaithasika/index.html
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
 #19
-චිත්ත සහ චෛතසික සටහන  url::/ChiththaChithasika/ChiththaChithasikaFixedHeader.html
+චිත්ත සහ චෛතසික සටහන  url::/ChiththaChaithasika/ChiththaChaithasika.html
 දුතිය කම්ම සුත්තං url::https://tripitaka.online/sutta/9109
 #20
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
