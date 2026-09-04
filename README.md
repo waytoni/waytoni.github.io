@@ -39,7 +39,7 @@ Before updating the site for the first time, make sure you have the following fr
 
 ### Part 2: Day-to-Day Workflow for Adding New Videos
 
-Follow these 5 simple steps whenever a new video needs to be added:
+Follow these 6 simple steps whenever a new video needs to be added:
 
 #### Step 1: Fetch Latest Changes
 * Open **GitHub Desktop**.
@@ -70,7 +70,24 @@ Follow these 5 simple steps whenever a new video needs to be added:
 
 ---
 
-#### Step 3: Build the Website
+#### Step 3: Add Video Notes (Optional)
+If you have PDF notes, images, or additional URLs for the video, you can add them to the corresponding `_notes.txt` file (e.g., `current/MaharagamaB/MaharagamaB_notes.txt`).
+1. Open the `_notes.txt` file.
+2. Start a new section for the video by typing `## ` followed by the video index number (e.g., `## 11`).
+3. Below the section header, add your notes using the supported tags (`pdf::`, `img::`, `url::`).
+4. To add private comments that will not appear on the website, simply start the line with a single `#`.
+
+**Example:**
+```text
+## 11
+# This is a private comment just for the editor
+pdf::/documents/MaharagamaB/note11.pdf
+```
+5. Save the file.
+
+---
+
+#### Step 4: Build the Website
 1. In VS Code, open [`build_it.py`](file:///Users/upul/Documents/GitHub/waytoni.github.io/build_it.py) from the root folder.
 2. Run the script:
    * Go to the top menu: **Run** > **Run Without Debugging** (or press `Ctrl + F5` / `F5`).
@@ -82,14 +99,14 @@ Follow these 5 simple steps whenever a new video needs to be added:
 
 ---
 
-#### Step 4: Preview Your Changes Locally
+#### Step 5: Preview Your Changes Locally
 1. In VS Code's file tree, locate `index.html` (or the specific series `.html` file).
 2. Right-click the file and select **Open with Five Server** (or **Open with Live Server**).
 3. Check the page in your browser to confirm that the new video appears correctly with its link and notes.
 
 ---
 
-#### Step 5: Publish Changes Online
+#### Step 6: Publish Changes Online
 1. Switch back to **GitHub Desktop**.
 2. You will see a list of modified files on the left panel (the updated text file, generated HTML, and JSON files).
 3. At the bottom-left:
