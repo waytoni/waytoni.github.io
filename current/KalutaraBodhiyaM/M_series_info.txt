@@ -48,3 +48,8 @@ https://www.youtube.com/playlist?list=PLKFH1WQyEQsE
 # It is better to remove this section unless there is a special reason.
 100
 
+## EXTRA_CONTENT ##
+<ul>
+<li><mark><a href="/Homepage/Announcement.html">ගුරුතුමාගේ
+ උතුම් මෙහෙවරට දායක වීමට විදේශ රටවලින් සහභාගිවන්නන්ට අවස්ථාවක්</a></mark></li>
+</ul>
