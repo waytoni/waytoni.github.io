@@ -13,7 +13,7 @@
 රෝහිතස්ස සූත්‍රය url::https://tipitaka.lk/sn-1-2-3-6/sinh
 ## 2
 <a href="https://www.youtube.com/playlist?list=PLqESXbJ82aIg0mR-UZR7_2TbzU6lHOHY0" target="_blank">පරමාර්ථ ධර්ම</a>
-img::/NivanMagaUdesaDesana/ThalawathugodaB/docs/ThalawathugodaB2_1080.jpg
+img::docs/ThalawathugodaB2_1080.jpg
 රෝහිතස්ස සූත්‍රය url::https://tipitaka.lk/sn-1-2-3-6/sinh
 සබ්බ සූත්‍රය  url::https://tipitaka.lk/sn-4-1-3-1
 සමිද්ධි සත්තපඤ්හ සූත්‍රය url::https://tipitaka.lk/sn-4-1-7-4 
@@ -22,15 +22,15 @@ img::/NivanMagaUdesaDesana/ThalawathugodaB/docs/ThalawathugodaB2_1080.jpg
 ## 3
 <a href="https://www.youtube.com/playlist?list=PLqESXbJ82aIg0mR-UZR7_2TbzU6lHOHY0" target="_blank">පරමාර්ථ ධර්ම</a>
 ## 4
-img::/NivanMagaUdesaDesana/ThalawathugodaB/docs/2025-12-13 pic1.jpg 
-img::/NivanMagaUdesaDesana/ThalawathugodaB/docs/2025-12-13 pic2.jpg 
-img::/NivanMagaUdesaDesana/ThalawathugodaB/docs/2025-12-13 pic3.jpg 
-img::/NivanMagaUdesaDesana/ThalawathugodaB/docs/2025-12-13 pic4.jpg 
-img::/NivanMagaUdesaDesana/ThalawathugodaB/docs/2025-12-13 pic5.jpg 
-img::/NivanMagaUdesaDesana/ThalawathugodaB/docs/2025-12-13 pic6.jpg
-img::/NivanMagaUdesaDesana/ThalawathugodaB/docs/2025-12-13 pic7.jpg 
-img::/NivanMagaUdesaDesana/ThalawathugodaB/docs/2025-12-13 pic8.jpg
-img::/NivanMagaUdesaDesana/ThalawathugodaB/docs/2025-12-13 pic9.jpg
+img::docs/2025-12-13 pic1.jpg 
+img::docs/2025-12-13 pic2.jpg 
+img::docs/2025-12-13 pic3.jpg 
+img::docs/2025-12-13 pic4.jpg 
+img::docs/2025-12-13 pic5.jpg 
+img::docs/2025-12-13 pic6.jpg
+img::docs/2025-12-13 pic7.jpg 
+img::docs/2025-12-13 pic8.jpg
+img::docs/2025-12-13 pic9.jpg
 ## 5
 ශරීරයෙහි සියලු ප්‍රසාද img::/documents/NotesForDesana/0010 ශරීරයෙහි සියලු ප්‍රසාද.jpg
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
@@ -43,11 +43,11 @@ img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.
 සංස්කාර පැහැදිලි කිරීම සඳහා භාවිත කල සූත්‍ර මාලාවක් pdf::/documents/SutraPDFs/සංස්කාර පැහැදිලි කිරීම සඳහා භාවිත කල සූත්‍ර මාලාවක්.pdf
 චිත්ත සහ චෛතසික චක්‍රය url::/ChiththaChaithasika/index.html
 <a href="https://pitaka.lk/books/abhidharma-margaya/6-9.html">අභිධර්ම මාර්ගය පොතේ 5.9 කාමාවචර කුශලයේ විපාක</a>
-img::/NivanMagaUdesaDesana/ThalawathugodaB/docs/2026-01-17-pic1.jpg
-img::/NivanMagaUdesaDesana/ThalawathugodaB/docs/2026-01-17-pic2.jpg
+img::docs/2026-01-17-pic1.jpg
+img::docs/2026-01-17-pic2.jpg
 ## 9
 චිත්ත සහ චෛතසික චක්‍රය url::/ChiththaChaithasika/index.html
-img::/NivanMagaUdesaDesana/ThalawathugodaB/docs/2026-01-24-pic1.jpg
+img::docs/2026-01-24-pic1.jpg
 img::/documents/NotesForDesana/චක්ෂුර්ද්වාරික%20අතිමහන්තාරම්මණ%20වීථිය.jpg
 img::/documents/NotesForDesana/0013 ආයතන ලෙස විග්‍රහය.jpeg
 img::/documents/NotesForDesana/0023 89 ක් වූ සිත් බෙදෙන ආකාර.jpeg 
@@ -89,8 +89,8 @@ img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.
 ඛජ්ජනීය සුත්තං url::https://tripitaka.online/sutta/3413
 ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම pdf::/documents/SutraPDFs/ඛජ්ජනීය මාගධි පද වැල් හා සිංහල තේරුම.pdf 
 img::/documents/NotesForDesana/0002 රූප පරමාර්ථ.jpg
-img::/NivanMagaUdesaDesana/ThalawathugodaB/docs/2026-03-07-pic1.jpg
-img::/NivanMagaUdesaDesana/ThalawathugodaB/docs/2026-03-07-pic2.jpg 
+img::docs/2026-03-07-pic1.jpg
+img::docs/2026-03-07-pic2.jpg 
 ## 16
 චතස්සො විඤ්ඤාණට්ඨිතියො - සතර විඥාන ස්ථිතී pdf::/documents/SutraPDFs/චතස්සො විඤ්ඤාණට්ඨිතියො -- සතර විඥාන ස්ථිතී.pdf
 ප්‍රඥා පාරමිතාව (print using A3 paper) pdf::/documents/pdfs/Pragna Paramithawa.pdf
