@@ -97,6 +97,10 @@ def parse_ytlinks(file_path, title=""):
 from urllib.parse import urlparse, parse_qs
 
 def extract_youtube_id(url):
+    # Ensure scheme exists for urlparse to correctly identify hostname
+    if not url.startswith('http://') and not url.startswith('https://'):
+        url = 'https://' + url
+
     parsed = urlparse(url)
     host_and_path = f"{parsed.hostname}{parsed.path}"
 
@@ -108,6 +112,10 @@ def extract_youtube_id(url):
 
         # Example: https://www.youtube.com/embed/VIDEO_ID
         if parsed.path.startswith("/embed/"):
+            return parsed.path.split("/")[2]
+
+        # Example: https://www.youtube.com/live/VIDEO_ID
+        if parsed.path.startswith("/live/"):
             return parsed.path.split("/")[2]
 
         # Example: https://www.youtube.com/v/VIDEO_ID
