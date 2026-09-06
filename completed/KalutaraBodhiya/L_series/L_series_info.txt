@@ -41,8 +41,7 @@
 # Use the date format YYYY-MM-DD
 # Provide the file name in Zoom_Info folder that contains the Zoom information.
 # Default file name is ZoomInfo_basic.html
-2026-01-18
-ZoomInfo_special.html
+
 
 ## VIDEO_SELECTOR ##
 # The video_number given in this section will point to the video that will be shown when a series page is opened.

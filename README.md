@@ -75,13 +75,18 @@ If you have PDF notes, images, or additional URLs for the video, you can add the
 1. Open the `_notes.txt` file.
 2. Start a new section for the video by typing `## ` followed by the video index number (e.g., `## 11`).
 3. Below the section header, add your notes using the supported tags (`pdf::`, `img::`, `url::`).
-4. To add private comments that will not appear on the website, simply start the line with a single `#`.
+4. You can also use the `include::` tag to insert notes from other files:
+   - `include::Dhammachakka` - Inserts `documents/lib/Dhammachakka.txt`
+   - `include::docs/kachchaniya` - Inserts `docs/kachchaniya.txt` relative to the current folder.
+   - `include::common::first_desana` - Inserts only the `## first_desana` section from `documents/lib/common.txt`.
+5. To add private comments that will not appear on the website, simply start the line with a single `#`.
 
 **Example:**
 ```text
 ## 11
 # This is a private comment just for the editor
 pdf::/documents/MaharagamaB/note11.pdf
+include::common::first_desana
 ```
 5. Save the file.
 

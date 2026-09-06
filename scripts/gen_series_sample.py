@@ -34,10 +34,10 @@ def gen_series(template_name='SeriesPageTemplateWithControls.html'):
         sys.exit(1)
         
 
-# සුතමයඤාණං දේශනා මාලාව - ශ්‍රී සුධර්ශනාරාම මහා විහාරය මතුගම
-base_folder = "completed/Suthamaya/Mathugama/"  # Replace with your series folder name
-html_file = "SuthamayaMathugama.html"  # Output HTML file name
+# සුතමයඤාණං - ඉත්තෑපාන අක්කර
+base_folder = "completed/Suthamaya/Ittapane/"  # Replace with your series folder name
+html_file = "SuthamayaIttapane.html"  # Output HTML file name
 css_file = "series_page_style_green.css"  # CSS file to use
-json_file = "suthmayaMathugama.json"  # Output JSON file name
+json_file = "suthmaya_Ittapane.json"  # Output JSON file name
 
 gen_series()

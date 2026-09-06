@@ -177,72 +177,115 @@ def parse_flexible_date(date_str):
     return None
 
 
-def parse_notes(file_path, verbose=False):
-    notes = {}
-    with open(file_path, 'r', encoding='utf-8') as file:
-        current_index = None
-        current_notes = []
-        for line in file:
+import os
+
+def read_lines_with_includes(file_path, section_to_extract=None):
+    lines = []
+    if not os.path.exists(file_path):
+        print(f"Warning: File not found: {file_path}")
+        return lines
+        
+    with open(file_path, 'r', encoding='utf-8') as f:
+        in_section = True if section_to_extract is None else False
+        for line in f:
             line = line.strip()
             
-            # Skip empty lines
-            if not line:
-                continue
-                
-            # Check if line starts with ## (section)
+            # Check for section headers
             if line.startswith('## '):
-                match = re.match(r'^##\s*(\d+)', line)
-                if match:
-                    if current_index is not None:
-                        notes[current_index] = "\n".join(current_notes)
-                    current_index = int(match.group(1))
-                    current_notes = []
+                header = line[3:].strip()
+                if section_to_extract is not None:
+                    if header == section_to_extract:
+                        in_section = True
+                        continue
+                    elif in_section:
+                        break # Found next section, we are done
+            
+            if in_section:
+                if line.startswith('include::'):
+                    parts = line.split('::')
+                    file_ref = parts[1].strip()
+                    sec_name = parts[2].strip() if len(parts) > 2 else None
+                    
+                    if '/' in file_ref or '\\' in file_ref or file_ref.startswith('.'):
+                        target_path = os.path.join(os.path.dirname(file_path), file_ref + ".txt")
+                        target_path = os.path.normpath(target_path)
+                    else:
+                        repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+                        target_path = os.path.join(repo_root, 'documents', 'lib', file_ref + ".txt")
+                        
+                    lines.extend(read_lines_with_includes(target_path, sec_name))
                 else:
-                    if verbose:
-                        print(f"Ignoring invalid section header: {line}")
-                    continue
-            # Check if line starts with # (comment)
-            elif line.startswith('#'):
-                if verbose:
-                    print(f"Ignoring comment: {line}")
-                continue
+                    lines.append(line)
+    return lines
+
+def parse_notes(file_path, verbose=False):
+    notes = {}
+    
+    lines = read_lines_with_includes(file_path)
+    
+    current_index = None
+    current_notes = []
+    for line in lines:
+        line = line.strip()
+        
+        # Skip empty lines
+        if not line:
+            continue
+            
+        # Check if line starts with ## (section)
+        if line.startswith('## '):
+            match = re.match(r'^##\s*(\d+)', line)
+            if match:
+                if current_index is not None:
+                    notes[current_index] = "\n".join(current_notes)
+                current_index = int(match.group(1))
+                current_notes = []
             else:
-                # Process regular content lines
-                parts = re.split(pattern, line)
-                
-                # Check if there are more than one part
-                if len(parts) > 1:
-                    # Get the intro text as the first element of the list
-                    intro_text = "<p>" + parts[0].strip()
-                    # Initialize an empty string for the new string
-                    new_string = intro_text
-                    # Loop through the rest of the parts in pairs of keyword and text related to keyword
-                    for i in range(1, len(parts), 2):
-                        # Get the keyword and the text related to keyword
-                        keyword = parts[i].strip()
-                        text_related_to_keyword = parts[i+1].strip()
-                        # Check if the keyword is a valid keyword
-                        if keyword in keyword_dict:
-                            # Get the html tag for the keyword
-                            html_tag = keyword_dict[keyword]
-                            # Format the html tag with the text related to keyword
-                            html_tag = html_tag.format(text_related_to_keyword, text_related_to_keyword)
-                            # Append a space and the html tag to the new string
-                            new_string += " " + html_tag + "</p>"
-                        else:
-                            # If the keyword is not a valid keyword, append a space and the original pair of parts to the new string
-                            new_string += " " + keyword + "::" + text_related_to_keyword + "</p>"
-                else:
-                    # If there is only one part, use it as the new string
-                    new_string = "<p>" + parts[0] + "</p>"
-                
-                # Print the new string
                 if verbose:
-                    print(new_string)
-                current_notes.append(new_string)
-                
-        if current_index is not None:
-            notes[current_index] = "\n".join(current_notes)
+                    print(f"Ignoring invalid section header: {line}")
+                continue
+        # Check if line starts with # (comment)
+        elif line.startswith('#'):
+            if verbose:
+                print(f"Ignoring comment: {line}")
+            continue
+        else:
+            # Process regular content lines
+            parts = re.split(pattern, line)
+            
+            # Check if there are more than one part
+            if len(parts) > 1:
+                # Get the intro text as the first element of the list
+                intro_text = "<p>" + parts[0].strip()
+                # Initialize an empty string for the new string
+                new_string = intro_text
+                # Loop through the rest of the parts in pairs of keyword and text related to keyword
+                for i in range(1, len(parts), 2):
+                    # Get the keyword and the text related to keyword
+                    keyword = parts[i].strip()
+                    text_related_to_keyword = parts[i+1].strip()
+                    # Check if the keyword is a valid keyword
+                    if keyword in keyword_dict:
+                        # Get the html tag for the keyword
+                        html_tag = keyword_dict[keyword]
+                        # Format the html tag with the text related to keyword
+                        html_tag = html_tag.format(text_related_to_keyword, text_related_to_keyword)
+                        # Append a space and the html tag to the new string
+                        new_string += " " + html_tag + "</p>"
+                    else:
+                        # If the keyword is not a valid keyword, append a space and the original pair of parts to the new string
+                        new_string += " " + keyword + "::" + text_related_to_keyword + "</p>"
+            else:
+                # If there is only one part, use it as the new string
+                new_string = "<p>" + parts[0] + "</p>"
+            
+            # Print the new string
+            if verbose:
+                print(new_string)
+            current_notes.append(new_string)
+            
+    if current_index is not None:
+        notes[current_index] = "\n".join(current_notes)
     return notes
 
 def BuildDropDownMenuWithNavigation(utlinks_file, notes_file, json_file, title="", verbose=False):
