@@ -11,5 +11,7 @@
         </ol>
 </div>
 ## 6
+## 8
+include::common::AbhidharmayeMulikaKarunu
 ## 200
 ## 1000
