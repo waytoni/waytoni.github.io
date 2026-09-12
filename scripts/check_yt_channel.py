@@ -33,7 +33,7 @@ CHANNELS = [
         # Only videos whose title contains this phrase will be added.
         # Set to None to accept all videos from the channel.
         "after_date": "2026-08-29",
-        "filter_phrase": "තලවතුගොඩ",
+        "filter_phrase": "ගනේලන්ද",
         "ytlinks_file": "current/ThalawathugodaC/ThalawathugodaC_ytlinks.txt",
     },
     {
