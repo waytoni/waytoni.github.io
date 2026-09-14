@@ -36,6 +36,13 @@
 		<div>
 			<h1>සියලු දේශනා සඳහා සටහන්</h1>
 			<ul>
+				<li style="display: none;">
+					<div id="not-Sri-Lanka" style="display: none;">
+						<h2><mark><a href="/Homepage/Announcement.html">ගුරුතුමාගේ උතුම් මෙහෙවරට දායක වීමට විදේශ රටවලින්
+								සහභාගිවන්නන්ට
+								අවස්ථාවක්</a></mark></h2>
+					</div>
+				</li>
 				<li>
 					<h2>රේරුකානේ චන්දවිමල හිමියන්ගේ පොත්</h2>
 				</li>
@@ -84,6 +91,8 @@
 					</ol>
 				</li>
 			-->
+
+
 				<li>
 					<h2>විශේෂ දේශනා සඳහා භාවිතා කරන ලද පත්‍රිකා</h2>
 				</li>
@@ -145,6 +154,58 @@
 			</div>
 		</section>
 	</main>
+
+	<script>
+		(function () {
+			function checkGeo() {
+				var notSL = document.getElementById('not-Sri-Lanka');
+				if (!notSL) return;
+
+				function reveal() {
+					notSL.style.display = 'block';
+					var parentLi = notSL.closest ? notSL.closest('li') : notSL.parentElement;
+					if (parentLi && parentLi.tagName === 'LI') {
+						parentLi.style.display = 'list-item';
+					}
+				}
+
+				fetch('https://ipapi.co/json/')
+					.then(function (res) {
+						if (!res.ok) throw new Error('ipapi failed');
+						return res.json();
+					})
+					.then(function (data) {
+						var country = data.country_code || data.country;
+						if (country && country !== 'LK') {
+							reveal();
+						}
+					})
+					.catch(function () {
+						fetch('https://api.country.is')
+							.then(function (res) { return res.json(); })
+							.then(function (data) {
+								if (data && data.country && data.country !== 'LK') {
+									reveal();
+								}
+							})
+							.catch(function () {
+								try {
+									var tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+									if (tz && tz !== 'Asia/Colombo') {
+										reveal();
+									}
+								} catch (e) { }
+							});
+					});
+			}
+
+			if (document.readyState === 'loading') {
+				document.addEventListener('DOMContentLoaded', checkGeo);
+			} else {
+				checkGeo();
+			}
+		})();
+	</script>
 </body>
 
 </html>
