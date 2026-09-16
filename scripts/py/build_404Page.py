@@ -39,7 +39,7 @@ page_body = """
         <br>
         <h2>404</h2>
         <br>
-        <img src="/images/favicon-32x32.png" alt="404">
+        <img src="/favicon-32x32.png" alt="404">
         <br>
         <h1>Page not found.</h1>
     </center>

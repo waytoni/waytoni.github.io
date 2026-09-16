@@ -260,7 +260,7 @@ def PrepareHead(text_filename, series_title):
         fp.write('\t<link rel="stylesheet" type="text/css" href="../css/nav_menu.css">\n')
         fp.write('\t<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">\n')
         fp.write('\t<script src="../scripts/menu_function.js"></script>\n')
-        fp.write('\t<link rel="icon" type="image/png" href="../images/favicon-16x16.png" sizes="16x16" />\n')
+
         title_line = '\t<title>'+ series_title + '</title>\n'
         fp.write(title_line)
         
