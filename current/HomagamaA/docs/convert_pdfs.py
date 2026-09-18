@@ -1,5 +1,6 @@
 import glob
 import os
+# pyrefly: ignore [missing-import]
 import pypdf
 
 # Locate script directory so it converts PDF files in the directory it resides in (or works relative to it)
