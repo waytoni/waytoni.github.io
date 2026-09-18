@@ -49,3 +49,5 @@ https://www.youtube.com/playlist?list=PLqESXbJ82aIh0TSUNguDqj4ba3ak64b0_
 # It is better to remove this section unless there is a special reason.
 100
 
+## EXTRA_CONTENT ##
+# <a href="https://drive.google.com/drive/folders/1wo5xF8e29zAzx1J2FoCQxM-sbpV3lyCX" target="_blank">ශ්‍රී ශාසනවර්ධනාරාම විහාරයේ පැවෙත්වෙන සියලු දේශනා සඳහා සටහන්</a>
