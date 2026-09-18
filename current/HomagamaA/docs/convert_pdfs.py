@@ -42,17 +42,8 @@ template = """<!DOCTYPE html>
             margin-bottom: 25px;
             word-wrap: break-word;
         }}
-        .page-block {{
+        .content-body {{
             margin-bottom: 30px;
-        }}
-        .page-num {{
-            font-weight: bold;
-            color: #2e7d32;
-            background: #e8f5e9;
-            padding: 4px 10px;
-            border-radius: 4px;
-            display: inline-block;
-            margin-bottom: 12px;
         }}
         p {{
             margin-bottom: 12px;
@@ -72,7 +63,9 @@ template = """<!DOCTYPE html>
 <body>
     <div class="container">
         <h1>{title}</h1>
-        {content}
+        <div class="content-body">
+            <p>{content}</p>
+        </div>
     </div>
 </body>
 </html>"""
@@ -83,20 +76,18 @@ for pdf in pdf_files:
     html_path = os.path.join(script_dir, base_name + '.html')
     
     reader = pypdf.PdfReader(pdf)
-    content_blocks = []
+    text_pages = []
     
-    for idx, page in enumerate(reader.pages, 1):
+    for page in reader.pages:
         text = page.extract_text() or ''
-        # Escape basic HTML special chars
-        safe_text = text.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
-        block = f'<div class="page-block">\n<span class="page-num">පිටුව {idx}</span>\n<p>{safe_text}</p>\n</div>'
-        content_blocks.append(block)
+        text_pages.append(text)
     
-    full_content = '\n'.join(content_blocks)
-    html_out = template.format(title=base_name, content=full_content)
+    full_text = '\n\n'.join(text_pages)
+    safe_text = full_text.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+    html_out = template.format(title=base_name, content=safe_text)
     
     with open(html_path, 'w', encoding='utf-8') as f:
         f.write(html_out)
     created_files.append(html_path)
 
-print(f'Successfully generated {len(created_files)} HTML files.')
+print(f'Successfully generated {len(created_files)} HTML files without page separations.')
