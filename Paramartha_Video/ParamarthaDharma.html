@@ -48,6 +48,26 @@
   </header>
   <!-- Main Content -->
   <div class="container">
+    <div id="video-player-container" style="display: none; margin-bottom: 30px; background: #000; 
+        border-radius: 8px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+            <iframe id="main-video-iframe" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                src="" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+        <div style="padding: 15px; background: var(--dark-color, #5D4037); color: white; display: flex; 
+            justify-content: space-between; align-items: center;">
+            <h3 id="current-video-title" style="margin: 0; font-size: 1.1rem; min-height: auto;">දැන් වාදනය වේ...
+            </h3>
+            <button onclick="document.getElementById('video-player-container').style.display='none'; 
+                document.getElementById('main-video-iframe').src='';" style="background: var(--accent-color, #D2691E);
+                color: white; border: none; padding: 5px 15px; 
+                border-radius: 4px; cursor: pointer;"> වසා දමන්න (Close) </button>
+        </div>
+    </div>
+
     <div class="page-title">
       <!--
           <h1>පරමාර්ථ ධර්ම</h1>
@@ -60,52 +80,77 @@
     <div class="video-grid">
       <!-- Video 1 -->
       <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/8wxz7BTUDtY" title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
+        
+        <div class="video-thumbnail" style="position: relative; height: 200px; background: #000; overflow: hidden; cursor: pointer;">
+          <a href="https://www.youtube.com/watch?v=8wxz7BTUDtY" class="video-link" style="display: block; width: 100%; height: 100%;">
+            <img src="https://img.youtube.com/vi/8wxz7BTUDtY/hqdefault.jpg" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.8; transition: opacity 0.3s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.8">
+            <i class="fa fa-play-circle" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: rgba(255,255,255,0.9); font-size: 3.5rem; text-shadow: 0 2px 10px rgba(0,0,0,0.5); pointer-events: none;"></i>
+          </a>
+        </div>
+
         <div class="video-info">
           <span class="video-number">1/5</span>
-          <h3>රූප 28 පරමාර්ථ ධර්ම</h3>
+          <h3><a href="#" class="video-link-title" style="color: inherit; text-decoration: none;">රූප 28 පරමාර්ථ ධර්ම</a></h3>
         </div>
       </div>
       <!-- Video 2 -->
       <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/om0UntoX_PI" title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
+        
+        <div class="video-thumbnail" style="position: relative; height: 200px; background: #000; overflow: hidden; cursor: pointer;">
+          <a href="https://www.youtube.com/watch?v=om0UntoX_PI" class="video-link" style="display: block; width: 100%; height: 100%;">
+            <img src="https://img.youtube.com/vi/om0UntoX_PI/hqdefault.jpg" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.8; transition: opacity 0.3s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.8">
+            <i class="fa fa-play-circle" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: rgba(255,255,255,0.9); font-size: 3.5rem; text-shadow: 0 2px 10px rgba(0,0,0,0.5); pointer-events: none;"></i>
+          </a>
+        </div>
+
         <div class="video-info">
           <span class="video-number">2/5</span>
-          <h3>රූප 28 පරමාර්ථ ධර්ම</h3>
+          <h3><a href="#" class="video-link-title" style="color: inherit; text-decoration: none;">රූප 28 පරමාර්ථ ධර්ම</a></h3>
         </div>
       </div>
       <!-- Video 3 -->
       <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/KFc-aVtYRsM" title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
+        
+        <div class="video-thumbnail" style="position: relative; height: 200px; background: #000; overflow: hidden; cursor: pointer;">
+          <a href="https://www.youtube.com/watch?v=KFc-aVtYRsM" class="video-link" style="display: block; width: 100%; height: 100%;">
+            <img src="https://img.youtube.com/vi/KFc-aVtYRsM/hqdefault.jpg" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.8; transition: opacity 0.3s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.8">
+            <i class="fa fa-play-circle" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: rgba(255,255,255,0.9); font-size: 3.5rem; text-shadow: 0 2px 10px rgba(0,0,0,0.5); pointer-events: none;"></i>
+          </a>
+        </div>
+
         <div class="video-info">
           <span class="video-number">3/5</span>
-          <h3>නාම පරමාර්ථ ධර්ම</h3>
+          <h3><a href="#" class="video-link-title" style="color: inherit; text-decoration: none;">නාම පරමාර්ථ ධර්ම</a></h3>
         </div>
       </div>
       <!-- Video 4 -->
       <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/Mfs8ShokRT4" title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
+        
+        <div class="video-thumbnail" style="position: relative; height: 200px; background: #000; overflow: hidden; cursor: pointer;">
+          <a href="https://www.youtube.com/watch?v=Mfs8ShokRT4" class="video-link" style="display: block; width: 100%; height: 100%;">
+            <img src="https://img.youtube.com/vi/Mfs8ShokRT4/hqdefault.jpg" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.8; transition: opacity 0.3s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.8">
+            <i class="fa fa-play-circle" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: rgba(255,255,255,0.9); font-size: 3.5rem; text-shadow: 0 2px 10px rgba(0,0,0,0.5); pointer-events: none;"></i>
+          </a>
+        </div>
+
         <div class="video-info">
           <span class="video-number">4/5</span>
-          <h3>රූප 28 පරමාර්ථ ධර්ම</h3>
+          <h3><a href="#" class="video-link-title" style="color: inherit; text-decoration: none;">රූප 28 පරමාර්ථ ධර්ම</a></h3>
         </div>
       </div>
       <!-- Video 5 -->
       <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/0dXyUf_JPcs" title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
+        
+        <div class="video-thumbnail" style="position: relative; height: 200px; background: #000; overflow: hidden; cursor: pointer;">
+          <a href="https://www.youtube.com/watch?v=0dXyUf_JPcs" class="video-link" style="display: block; width: 100%; height: 100%;">
+            <img src="https://img.youtube.com/vi/0dXyUf_JPcs/hqdefault.jpg" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.8; transition: opacity 0.3s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.8">
+            <i class="fa fa-play-circle" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: rgba(255,255,255,0.9); font-size: 3.5rem; text-shadow: 0 2px 10px rgba(0,0,0,0.5); pointer-events: none;"></i>
+          </a>
+        </div>
+
         <div class="video-info">
           <span class="video-number">5/5</span>
-          <h3>රූප 28 පරමාර්ථ ධර්ම</h3>
+          <h3><a href="#" class="video-link-title" style="color: inherit; text-decoration: none;">රූප 28 පරමාර්ථ ධර්ම</a></h3>
         </div>
       </div>
 
@@ -116,39 +161,82 @@
   </div>
   <!--
     <div>
-        <h3>අනිච්ච, දුක්ඛ, අනත්ත ප්‍රඥප්ති අර්ථය ඉක්මවූ ධර්මතා අර්ථය - 1/10</h3>
+        <h3><a href="#" class="video-link-title" style="color: inherit; text-decoration: none;">අනිච්ච, දුක්ඛ, අනත්ත ප්‍රඥප්ති අර්ථය ඉක්මවූ ධර්මතා අර්ථය - 1/10</a></h3>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/tjBjtSv4VSI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-        <h3>අනිච්ච, දුක්ඛ, අනත්ත ප්‍රඥප්ති අර්ථය ඉක්මවූ ධර්මතා අර්ථය - 2/20</h3>
+        <h3><a href="#" class="video-link-title" style="color: inherit; text-decoration: none;">අනිච්ච, දුක්ඛ, අනත්ත ප්‍රඥප්ති අර්ථය ඉක්මවූ ධර්මතා අර්ථය - 2/20</a></h3>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/7H-yKVIjsXo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-        <h3>අනිච්ච, දුක්ඛ, අනත්ත ප්‍රඥප්ති අර්ථය ඉක්මවූ ධර්මතා අර්ථය - 3/10</h3>
+        <h3><a href="#" class="video-link-title" style="color: inherit; text-decoration: none;">අනිච්ච, දුක්ඛ, අනත්ත ප්‍රඥප්ති අර්ථය ඉක්මවූ ධර්මතා අර්ථය - 3/10</a></h3>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/7loVrGMtHpw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-        <h3>අනිච්ච, දුක්ඛ, අනත්ත ප්‍රඥප්ති අර්ථය ඉක්මවූ ධර්මතා අර්ථය - 4/10</h3>
+        <h3><a href="#" class="video-link-title" style="color: inherit; text-decoration: none;">අනිච්ච, දුක්ඛ, අනත්ත ප්‍රඥප්ති අර්ථය ඉක්මවූ ධර්මතා අර්ථය - 4/10</a></h3>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/NCAvjIC0Umc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-        <h3>අනිච්ච, දුක්ඛ, අනත්ත ප්‍රඥප්ති අර්ථය ඉක්මවූ ධර්මතා අර්ථය - 5/10</h3>
+        <h3><a href="#" class="video-link-title" style="color: inherit; text-decoration: none;">අනිච්ච, දුක්ඛ, අනත්ත ප්‍රඥප්ති අර්ථය ඉක්මවූ ධර්මතා අර්ථය - 5/10</a></h3>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/t7XMTp8eYPY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-        <h3>අනිච්ච, දුක්ඛ, අනත්ත ප්‍රඥප්ති අර්ථය ඉක්මවූ ධර්මතා අර්ථය - 6/10</h3>
+        <h3><a href="#" class="video-link-title" style="color: inherit; text-decoration: none;">අනිච්ච, දුක්ඛ, අනත්ත ප්‍රඥප්ති අර්ථය ඉක්මවූ ධර්මතා අර්ථය - 6/10</a></h3>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/aIHmCDoRpQU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-        <h3>අනිච්ච, දුක්ඛ, අනත්ත ප්‍රඥප්ති අර්ථය ඉක්මවූ ධර්මතා අර්ථය - 7/10</h3>
+        <h3><a href="#" class="video-link-title" style="color: inherit; text-decoration: none;">අනිච්ච, දුක්ඛ, අනත්ත ප්‍රඥප්ති අර්ථය ඉක්මවූ ධර්මතා අර්ථය - 7/10</a></h3>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/tagLjiXf3oM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-        <h3>නිච්ච, දුක්ඛ, අනත්ත ප්‍රඥප්ති අර්ථය ඉක්මවූ ධර්මතා අර්ථය - 8/10</h3>
+        <h3><a href="#" class="video-link-title" style="color: inherit; text-decoration: none;">නිච්ච, දුක්ඛ, අනත්ත ප්‍රඥප්ති අර්ථය ඉක්මවූ ධර්මතා අර්ථය - 8/10</a></h3>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/oQ75M0XbkIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-        <h3>අනිච්ච, දුක්ඛ, අනත්ත ප්‍රඥප්ති අර්ථය ඉක්මවූ ධර්මතා අර්ථය - 9/10</h3>
+        <h3><a href="#" class="video-link-title" style="color: inherit; text-decoration: none;">අනිච්ච, දුක්ඛ, අනත්ත ප්‍රඥප්ති අර්ථය ඉක්මවූ ධර්මතා අර්ථය - 9/10</a></h3>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/lmYFVbCY7Zc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-        <h3>අනිච්ච, දුක්ඛ, අනත්ත ප්‍රඥප්ති අර්ථය ඉක්මවූ ධර්මතා අර්ථය - 10/10 </h3>
+        <h3><a href="#" class="video-link-title" style="color: inherit; text-decoration: none;">අනිච්ච, දුක්ඛ, අනත්ත ප්‍රඥප්ති අර්ථය ඉක්මවූ ධර්මතා අර්ථය - 10/10 </a></h3>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/hotQ_KgEEd0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
     </div>
   -->
   <center>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const playerContainer = document.getElementById('video-player-container');
+        const iframe = document.getElementById('main-video-iframe');
+        const titleDisplay = document.getElementById('current-video-title');
+
+        function playVideo(urlStr, title) {
+            const url = new URL(urlStr);
+            const videoId = url.searchParams.get('v');
+            
+            iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+            titleDisplay.innerHTML = `${title} <a href="${urlStr}" target="_blank" style="font-size:1.0rem; margin-left:10px; color:#ff0;">[YouTube Link]</a>`;
+            playerContainer.style.display = 'block';
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Attach to thumbnails
+        const videoLinks = document.querySelectorAll('a.video-link');
+        videoLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                // Get title from the associated h3
+                const titleNode = this.closest('.video-card').querySelector('h3');
+                const title = titleNode ? titleNode.textContent : 'පරමාර්ථ ධර්ම දේශනා';
+                playVideo(this.href, title);
+            });
+        });
+
+        // Attach to titles
+        const titleLinks = document.querySelectorAll('a.video-link-title');
+        titleLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const thumbLink = this.closest('.video-card').querySelector('a.video-link');
+                if (thumbLink) {
+                    playVideo(thumbLink.href, this.textContent);
+                }
+            });
+        });
+    });
+  </script>
+
 </body>
 
 </html>
