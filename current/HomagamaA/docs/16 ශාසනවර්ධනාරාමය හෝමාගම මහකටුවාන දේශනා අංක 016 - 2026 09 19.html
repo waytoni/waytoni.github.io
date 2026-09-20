@@ -60,7 +60,12 @@
     <div class="container">
         <h2>නමෝ තස්ස භගවතෝ අරහතෝ සම්මා සම්බුද්ධස්ස.... !!!</h2>
         <h1>ශ්‍රී ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 016 - 2026 09 19</h1>
-        <div class="content-body">
+        <div class="slider-container" style="text-align: center; margin-top: 20px;">
+        <label for="fontSizeSlider">Font size: <small>අ</small> </label>
+        <input type="range" id="fontSizeSlider" min="12" max="48" value="16">
+        <span style="font-size: 2em;"> අ</span>
+    </div>
+        <div id="content" class="content-body">
             <p>එදිනෙදා ජීවිතයේදී අජ්ජතික හා බහිද්ද වශයෙන් හේතු යෙදී සකස් වන්නාවූ ජිවිත අත්දැකීම් 
                 (පෙනීම, ඇසීම, දැනීම, දැනගැනීම (හිතීම) (දිට්ඨ, සුත, මුත, විඤ්ඤාත)) 
                 සත්‍ය වශයෙන් ඇති දේ යැයි සිතා එසේ සකස් වන්නාවූ මනෝමුලික ධර්මතා වලට 
@@ -71,7 +76,7 @@
                 සිදුවන්නේ හේතු ඵල දහමට අනුවය. එසේ හේතු ඵල දහමට අනුව සකස් වන්නාවූ 
                 ධර්මතාවයන් පිළිබඳව නොදන්නා නිසා (අවිද්‍යාව) සකස් වන ධර්මතා 
                 නිච්ච, සුඛ, සුභ, අත්ත කරගනිමින් ලෝභ, ද්වේශාදී පාපීය ධර්මතා නිසා 
-                සසර/දුක/ලෝකය/මාරයා සකස් කර ගැනීම සත්වයාගේ සාමාන්‍ය ස්වභාවයවේ .</p>
+                සසර/දුක/ලෝකය/මාරයා සකස් කර ගැනීම සත්වයාගේ සාමාන්‍ය ස්වභාවයවේ.</p>
             <p>භාග්‍යවතුන් වහන්සේ ආර්ය සත්‍ය දේශනාව තුළින් මෙසේ හේතුන් නිසා සකස් වන්නාවූ 
                 ස්කන්ධ පංචකයන්ගේ සමුදය වරදවා තේරුම් ගනිමින් සත්වයා දුක සකස් කරගන්නාවූ 
                 ආකාරය දේශනා කරන ලදී. මෙසේ සකස් වන්නාවූ ස්කන්ධ පංචකය මනෝමුලික 
@@ -117,9 +122,19 @@
             </ul>
             <p>ලෙසින් රූප හා නාම ධර්මතා උපාදානස්කන්ධ ලෙස සකස් වීම සිදුවේ. මෙහිදී තේරුම් ගත යුතු අනෙක් කරුණ නම් "ඨිති" වීම් වශයෙන් උපාදානස්කන්ධ හතරක් සකස් වනවා සේම විඤ්ඤාණයද අවසන් වශයෙන් තණ්හාවෙන් බැදී ඒ ඒ නාම රූප ධර්මතා දැනගැනීම් වශයෙන් උපාදානස්කන්ධ මට්ටමට වැඩි එය විඤ්ඤාණය උපාදානස්කන්ධ ලෙසින් වැඩි උපාදානස්කන්ධ ධර්මතා පහක් ලෙස පැවතීම වේ.</p>
             <p>දේශනාවේ YouTube සබැදියාව: 
-                <a href="https://www.youtube.com/watch?v=_heo9KwlIhM">
+                <a href="https://www.youtube.com/watch?v=_heo9KwlIhM" target="_blank">
                     ශ්‍රී ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 016 - 2026 09 19</a></p>
         </div>
     </div>
+
+    <script>
+    const fontSizeSlider = document.getElementById('fontSizeSlider');
+    const textContent = document.getElementById('content');
+
+    fontSizeSlider.addEventListener('input', function () {
+        const newFontSize = `${fontSizeSlider.value}px`;
+        textContent.style.fontSize = newFontSize;
+    });
+    </script>
 </body>
 </html>
