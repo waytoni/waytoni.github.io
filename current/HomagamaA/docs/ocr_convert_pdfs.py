@@ -3,6 +3,11 @@ import os
 import fitz  # PyMuPDF
 import pytesseract
 # pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+
+import platform
+if platform.system() == 'Windows':
+    pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+
 from PIL import Image
 import io
 
@@ -120,7 +125,9 @@ for pdf in pdf_files:
             # Convert bytes to PIL Image for pytesseract
             img = Image.open(io.BytesIO(img_bytes))
             
-            # Read Sinhala text from image
+            # Read Sinhala text from image using local tessdata directory
+            tessdata_path = os.path.join(script_dir, "tessdata")
+            os.environ['TESSDATA_PREFIX'] = tessdata_path
             text = pytesseract.image_to_string(img, lang='sin')
             
             # Escape HTML and wrap paragraphs
