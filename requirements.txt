@@ -9,3 +9,5 @@ pytz>=2022.1
 # HTML parsing and web requests (for navbar updates and sitemap generator)
 beautifulsoup4>=4.9.0
 requests>=2.25.0
+pytesseract
+PyMuPDF
