@@ -7,6 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="/css/nav_menu.css">
+    <link rel="stylesheet" type="text/css" href="/css/series_page_style_green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/scripts/nav_function.js"></script>
+    <script src="/scripts/templates/load-template.js"></script>
     <style>
         body {
             font-family: 'Noto Sans Sinhala', sans-serif;
@@ -52,9 +58,17 @@
     </style>
 </head>
 <body>
+    <div class="topnav" id="Topnavbar">
+    <!-- Content loaded dynamically by load-template.js -->
+    </div>
     <div class="container">
         <h1>09 ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 009 - 2026 08 01</h1>
-        <div class="content-body">
+                <div class="slider-container" style="text-align: center; margin-top: 20px;">
+        <label for="fontSizeSlider">Font size: <small>අ</small> </label>
+        <input type="range" id="fontSizeSlider" min="12" max="48" value="16">
+        <span style="font-size: 2em;"> අ</span>
+    </div>
+<div id="content" class="content-body">
             <p>කාලත්‍රයේම අනාත්මියව සකස් වන්නාවූ මුල් උපතේ සකස් වීම නිච්ච වශයෙන් ගෙන. අවිද්‍යාව, තණ්හාව නිසා සකස් වන්නාවූ දෙවන උපත නිසා ඒ අනාත්මියව සකස් වන්නාවූ අසම්පුර්ණ ක්‍රියාවෝ මම, මගේ, මගේ ආත්මය ලෙසින් ගෙන සත්වයා සසර ගමනේ යයි. එනම් ජීවිතයේ අත්දැකීම් ලෙස පෙනීම, ඇසීම, දැනීම, දැනගැනීම (හිතීම) (දිට්ඨ, සුත, මුත, විඤ්ඤාත) යන කරුණු/කෘත්‍යයන් වලට රාගයෙන්, ද්වේශයෙන්, මෝහයෙන් හෙවත් පාපිය ධර්මතා (14) ඇසුරු කරගනිමින් මුල් උපතට නැවත සිතමින් කාය කර්ම, වචී කර්ම, මනෝ කර්ම සිදු කිරීම ආදී ක්‍රියාවෝ නිසා දුක සකස් කරගැනීම සිදු වේ.</p>
 
             <p>අප කාලත්‍රයේම එදිනෙදා දිට්ඨ, සුත, මුත, විඤ්ඤාත ලෙසින් ඇසුරු කරන්නේ හේතු සමුහයක ඵලයන් වේ. මෙසේ දිට්ඨ, සුත, මුත, විඤ්ඤාත වශයෙන් ලැබෙන්නේ ස්කන්ධ පංචකයකගේ සකස් වීමක්ය (රූප, වේදනා, සංඥා, සංස්කාර, විඤ්ඤාණ). මෙලෙසින් සකස් වන්නාවූ ස්කන්ධ පංචකයන්ගේ සකස් වීම සඳහා යෙදෙන්නාවූ හේතුන් අප විසින් නුවණින් විමසීම සිදු කල යුතුය. මෙසේ විමසීමෙන් ධර්මතා සකස් වන්නාවූ ක්‍රියාවලිය සම්බන්ධව අවබෝධය ලබා ගැනීමට හැකිවේ.</p>
@@ -101,5 +115,15 @@
             <p>දේශනාවේ YouTube සබැඳියාව : ශ්‍රී ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 009 - 2026 08 01</p>
         </div>
     </div>
+
+    <script>
+    const fontSizeSlider = document.getElementById('fontSizeSlider');
+    const textContent = document.getElementById('content');
+
+    fontSizeSlider.addEventListener('input', function () {
+        const newFontSize = `${fontSizeSlider.value}px`;
+        textContent.style.fontSize = newFontSize;
+    });
+    </script>
 </body>
 </html>

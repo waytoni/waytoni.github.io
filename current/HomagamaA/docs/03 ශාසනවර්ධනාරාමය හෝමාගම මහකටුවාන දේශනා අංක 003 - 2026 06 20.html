@@ -7,6 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="/css/nav_menu.css">
+    <link rel="stylesheet" type="text/css" href="/css/series_page_style_green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/scripts/nav_function.js"></script>
+    <script src="/scripts/templates/load-template.js"></script>
     <style>
         body {
             font-family: 'Noto Sans Sinhala', sans-serif;
@@ -52,9 +58,17 @@
     </style>
 </head>
 <body>
+    <div class="topnav" id="Topnavbar">
+    <!-- Content loaded dynamically by load-template.js -->
+    </div>
     <div class="container">
         <h1>03 ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 003 - 2026 06 20</h1>
-        <div class="content-body">
+                <div class="slider-container" style="text-align: center; margin-top: 20px;">
+        <label for="fontSizeSlider">Font size: <small>අ</small> </label>
+        <input type="range" id="fontSizeSlider" min="12" max="48" value="16">
+        <span style="font-size: 2em;"> අ</span>
+    </div>
+<div id="content" class="content-body">
 <p>ශ්‍රී ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා<br>අංක 003 - 2026 06 20</p>
 <p>ධර්මාවබෝධය සඳහා ජීවිතය තේරුම් ගැනීමේදී සිදුවන්නාවූ කෘත්‍යන් ලෙස පෙනීම,ඇසීම,දැනීම,දැනගැනීම (හිතීම) (දිට්ඨ ,සුත ,මුත,විඤ්ඤාත) යනාදී ධර්මතා හතරක් ලෙස හඳුනා ගත යුතුය. එනම් දැනීම කියන්නාවූ ප්‍රධාන කෘත්‍ය මෙතැනදී මූලික වීමක් සිදුවේ.</p>
 <p>පොදුවේ කාලත්‍රයේ සත්ත්වයට දැනගැනීම යන කරුණ මූලික වශයෙන් සිදුවන දෙයකි. දැනගැනීම මූලික වශයෙන් කොටස් හයක් ලෙස හඳුනා ගත හැකිය එනම් රූප පිළිබඳව දැනගැනීම,ශබ්ද පිළිබඳව දැනගැනීම,ගන්ධ පිළිබඳව දැනගැනීම,රස පිළිබඳව දැනගැනීම, පොට්ඨබ්බ / ස්පර්ශය පිළිබඳව දැනගැනීම,ධම්ම/සිතුවිලි පිළිබඳව දැනගැනීම යනාදී වශයෙන් දැනගැනීම් ජීවිතයේ එදිනෙදා ක්‍රියා හයක් සිදුවේ. මෙසේ දැනගන්නා දේවල් කොටස් දෙකකට බෙදා දැක්විය හැකිය එනම්.</p>
@@ -93,5 +107,15 @@
 <p><a href="https://www.youtube.com/watch?v=WHK3Acmd4lw" target="_blank">https://www.youtube.com/watch?v=WHK3Acmd4lw</a></p>
         </div>
     </div>
+
+    <script>
+    const fontSizeSlider = document.getElementById('fontSizeSlider');
+    const textContent = document.getElementById('content');
+
+    fontSizeSlider.addEventListener('input', function () {
+        const newFontSize = `${fontSizeSlider.value}px`;
+        textContent.style.fontSize = newFontSize;
+    });
+    </script>
 </body>
 </html>

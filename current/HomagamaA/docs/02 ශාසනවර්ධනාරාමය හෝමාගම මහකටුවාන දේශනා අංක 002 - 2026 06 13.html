@@ -7,6 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="/css/nav_menu.css">
+    <link rel="stylesheet" type="text/css" href="/css/series_page_style_green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/scripts/nav_function.js"></script>
+    <script src="/scripts/templates/load-template.js"></script>
     <style>
         body {
             font-family: 'Noto Sans Sinhala', sans-serif;
@@ -52,9 +58,17 @@
     </style>
 </head>
 <body>
+    <div class="topnav" id="Topnavbar">
+    <!-- Content loaded dynamically by load-template.js -->
+    </div>
     <div class="container">
         <h1>02 ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 002 - 2026 06 13</h1>
-        <div class="content-body">
+                <div class="slider-container" style="text-align: center; margin-top: 20px;">
+        <label for="fontSizeSlider">Font size: <small>අ</small> </label>
+        <input type="range" id="fontSizeSlider" min="12" max="48" value="16">
+        <span style="font-size: 2em;"> අ</span>
+    </div>
+<div id="content" class="content-body">
             <p>ශ්‍රී ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා<br>අංක 002 - 2026 06 13</p>
             <p>අප ජීවිතයේ ධර්මය අවබෝධ කරගැනීම සඳහා පළමුවෙන්ම අධ්‍යනය කල යුත්තේ ලෝකෝත්තර වූ උතුම් දහම අවබෝධ කරගැනීමට අවශ්‍ය විදර්ශනා භූමිය සකසා ගැනීමය. භාග්‍යවතුන්වහන්සේගේ දේශනාව ලෝකය ඉක්මවීමට අවශ්‍ය ධර්මතා මත පදනම්ව දේශනා කර ඇත. එහිදී එදිනෙදා අප බැඳී සිටින ලෞකික ධර්මතා වලින් ඈත්ව මෙම විදර්ශනා භූමිය අධ්‍යනය කිරීමෙන් සත්‍ය අවබෝධයට යාමට කටයුතු දා කලයුතුය.</p>
             <p>භාග්‍යවතුන්වහන්සේගේ මූලික ධර්ම ව්‍යවහාරය සමග ගත් කල අප ඉන්න තැනට මේ ජීවත් වීම පිළිබඳව හොඳ අවබෝධයක් ලබා ගත යුතුය. එහිදී එදිනෙදා අප ජීවත්වීම යනුවෙන් හඳුන්වාගන්නා අපට පෙනීම,ඇසීම,දැනීම,දැනගැනීම (සිතීම) (දිට්ඨ ,සුත ,මුත,විඤ්ඤාත) යන කරුණු/කෘත්‍ය හතර ඔස්සේ ජීවිතය අධ්‍යනය කර ගත යුතුය.</p>
@@ -91,5 +105,15 @@
             <p><a href="https://www.youtube.com/watch?v=tK_-dPYFRBo">https://www.youtube.com/watch?v=tK_-dPYFRBo</a></p>
         </div>
     </div>
+
+    <script>
+    const fontSizeSlider = document.getElementById('fontSizeSlider');
+    const textContent = document.getElementById('content');
+
+    fontSizeSlider.addEventListener('input', function () {
+        const newFontSize = `${fontSizeSlider.value}px`;
+        textContent.style.fontSize = newFontSize;
+    });
+    </script>
 </body>
 </html>

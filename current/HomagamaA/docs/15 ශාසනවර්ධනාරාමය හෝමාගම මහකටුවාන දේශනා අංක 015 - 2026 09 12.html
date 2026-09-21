@@ -7,6 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="/css/nav_menu.css">
+    <link rel="stylesheet" type="text/css" href="/css/series_page_style_green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/scripts/nav_function.js"></script>
+    <script src="/scripts/templates/load-template.js"></script>
     <style>
         body {
             font-family: 'Noto Sans Sinhala', sans-serif;
@@ -52,9 +58,17 @@
     </style>
 </head>
 <body>
+    <div class="topnav" id="Topnavbar">
+    <!-- Content loaded dynamically by load-template.js -->
+    </div>
     <div class="container">
         <h1>15 ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 015 - 2026 09 12</h1>
-        <div class="content-body">
+                <div class="slider-container" style="text-align: center; margin-top: 20px;">
+        <label for="fontSizeSlider">Font size: <small>අ</small> </label>
+        <input type="range" id="fontSizeSlider" min="12" max="48" value="16">
+        <span style="font-size: 2em;"> අ</span>
+    </div>
+<div id="content" class="content-body">
 <p>නමෝ තස්ස භගවතො අරහතො සම්මා සම්බුද්ධස්ස.... !!!</p>
 <p>ශ්‍රි ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 015 - 2026 09 12</p>
 <p>කලාත්‍රයේම සත්වයා දුක සකස් කරගැනීම සිදු කරනුයේ කර්මය නිසා අනාත්මියව සකස් වන්නාවූ ප්‍රවෘත්ති විපාක එනම් ඵලයන් අහේතුක ලෙස සකස් වන්නාවූ ද්විපංච විඤ්ඤාණයන්ට (කුසලාකුසල වශයෙන්) (පංචස්කන්ධයන්ට) ලෝභ,ද්වේශ,මෝහාදී පාපිය ධර්මතා නිසා මූලික උපත දෙන උපතකට මනෝමූලිකව සකස් කරගනිමින් එසේ සකස් කරගන්නා පංච උපාදානස්කන්ධයන් වලට කාය කර්ම,වචී කර්ම ,මනෝ කර්ම සිදු කිරීමෙනි. මෙසේ අනාත්මියව සකස් වන්නාවූ ස්කන්ධ පන්චකයන් සකස් වීමේ වේගය නිසා හා ඒවා හටගෙන නිරුද්ධ වී යාමේ ක්‍රියාවලිය නිසා මූල විඤ්ඤාණය සමග යෙදෙන අවිද්‍යාව හේතු කරගනිමින් ස්කන්ධ පන්චකයන් මම, මගේ, මගේ ආත්මය කරගනිමින් නිච්ච, සුඛ, අත්ත වශයෙන් ගෙන පංචස්කන්ධයන් ඇසුරු කිරීම සිදු කරනු ලැබේ. නමුත් ආර්‍ය සත්‍ය දේශනාව මගින් භාග්‍යවතුන් වහන්සේ දේශනා කරන්නේ කලාත්‍රයේම මෙසේ හේතු යෙදීමෙන් සකස් වන්නාවූ යම් ධර්මතාවයක් තිබේද ඒ සියළු ධර්මතාවයෝ අනිච්ච, දුක්ඛ, අනාත්ම ලක්ෂණයන්ගෙන් යුක්ත වන බවයි. එනම් මෙසේ සත්වයන් ඇතැයි සිතා සිටින සකස් වන්නාවූ පංචස්කන්ධ ධර්මතාවයන් නොතිබීම හටගෙන ඉතුරු නැතිවම නිරුද්ධ වී යන ස්වභාවයෙන් යුක්තවන ධර්මතා වේ.එහිදී භාග්‍යවතුන් වහන්සේ දේශනා කරන්නේ කලාත්‍රයේම හේතු යෙදීමෙන් යම් ධර්මතාවයක් උපදීද ඒ හේතුන් වල පවත්නා විකලත්වය නිසා හේතු නිරෝධ වී යන විටදී ඵලයන් නිරුද්ධ වී යන ස්වභාවයෙන් මෙලස පවත්නා සංඛත ධර්මතා යුක්ත වන බවය.</p>
@@ -76,5 +90,15 @@
 <p>දේශනාවේ YouTube සබැඳියාව :(13886) ශ්‍රි ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 015 - 2026 09 12 - YouTube</p>
         </div>
     </div>
+
+    <script>
+    const fontSizeSlider = document.getElementById('fontSizeSlider');
+    const textContent = document.getElementById('content');
+
+    fontSizeSlider.addEventListener('input', function () {
+        const newFontSize = `${fontSizeSlider.value}px`;
+        textContent.style.fontSize = newFontSize;
+    });
+    </script>
 </body>
 </html>

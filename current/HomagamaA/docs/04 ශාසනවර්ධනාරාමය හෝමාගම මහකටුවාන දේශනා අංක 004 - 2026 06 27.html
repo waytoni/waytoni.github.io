@@ -7,6 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="/css/nav_menu.css">
+    <link rel="stylesheet" type="text/css" href="/css/series_page_style_green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/scripts/nav_function.js"></script>
+    <script src="/scripts/templates/load-template.js"></script>
     <style>
         body {
             font-family: 'Noto Sans Sinhala', sans-serif;
@@ -52,9 +58,17 @@
     </style>
 </head>
 <body>
+    <div class="topnav" id="Topnavbar">
+    <!-- Content loaded dynamically by load-template.js -->
+    </div>
     <div class="container">
         <h1>04 ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 004 - 2026 06 27</h1>
-        <div class="content-body">
+                <div class="slider-container" style="text-align: center; margin-top: 20px;">
+        <label for="fontSizeSlider">Font size: <small>අ</small> </label>
+        <input type="range" id="fontSizeSlider" min="12" max="48" value="16">
+        <span style="font-size: 2em;"> අ</span>
+    </div>
+<div id="content" class="content-body">
             <p>ශ්‍රී ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 004 - 2026 06 27</p>
 
             <p>ජීවත්වීම , ජීවත් වනවා යන හැඟීම සත්වයාගේ ජීවිතයේ තේරුම් ගනුයේ එදිනෙදා සකස් වන පෙනීම, ඇසීම,දැනීම,දැනගැනීම (දිට්ඨ ,සුත ,මුත,විඤ්ඤාත) ආදී ක්‍රියාවන් රැසක් නිසාය . එම ක්‍රියාවන් විද්‍යාමානව පවතින වර්තමාන මොහොතට සකස් වන ක්‍රියාවන්‍ය. එසේ සකස් වන්නාවූ ක්‍රියාවන් මූලික කරගෙන සත්වයා ජීවත්වීම යන හැඟීම සෑම විටම සකස් කරගන්නා කරුණකි. මෙසේ සකස් කරගන්නා මූලික ක්‍රියාවන් නිසා එම මූලික ක්‍රියාවන් වල ඉපදීම යන කෘත්‍ය විද්‍යාමාන වන කරුණක් ලෙස දැකිවිය හැකිය. එනම්</p>
@@ -134,5 +148,15 @@
             <p>දේශනාවේ YouTube සබැඳියාව : <a href="https://www.youtube.com/watch?v=ApjJgCRvT-A">https://www.youtube.com/watch?v=ApjJgCRvT-A</a></p>
         </div>
     </div>
+
+    <script>
+    const fontSizeSlider = document.getElementById('fontSizeSlider');
+    const textContent = document.getElementById('content');
+
+    fontSizeSlider.addEventListener('input', function () {
+        const newFontSize = `${fontSizeSlider.value}px`;
+        textContent.style.fontSize = newFontSize;
+    });
+    </script>
 </body>
 </html>

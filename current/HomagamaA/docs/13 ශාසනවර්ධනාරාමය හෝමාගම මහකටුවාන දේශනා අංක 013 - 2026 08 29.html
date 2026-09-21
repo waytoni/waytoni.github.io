@@ -7,6 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="/css/nav_menu.css">
+    <link rel="stylesheet" type="text/css" href="/css/series_page_style_green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/scripts/nav_function.js"></script>
+    <script src="/scripts/templates/load-template.js"></script>
     <style>
         body {
             font-family: 'Noto Sans Sinhala', sans-serif;
@@ -52,9 +58,17 @@
     </style>
 </head>
 <body>
+    <div class="topnav" id="Topnavbar">
+    <!-- Content loaded dynamically by load-template.js -->
+    </div>
     <div class="container">
         <h1>13 ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 013 - 2026 08 29</h1>
-        <div class="content-body">
+                <div class="slider-container" style="text-align: center; margin-top: 20px;">
+        <label for="fontSizeSlider">Font size: <small>අ</small> </label>
+        <input type="range" id="fontSizeSlider" min="12" max="48" value="16">
+        <span style="font-size: 2em;"> අ</span>
+    </div>
+<div id="content" class="content-body">
             <p>නමෝ තස්ස භගවතො අරහතො සම්මා සම්බුද්ධස්ස.... !!!</p>
             <p>ශ්‍රී ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 013 - 2026 08 29</p>
             <p>ජීවත්වීම ලෙස කලාත්‍රයේම සකස් වන්නාවූ මූලික නාම රූප ධර්මතා විඤ්ඤාණයෙන් දැනගනිමින් එසේ දැනගන්නාවූ නාම රූප ධර්මතා ලෝභ, ද්වේශ, මෝහාදී පාපිය ධර්මතා නිසා මූලික ස්වරූපයන් මනෝමූලිකව වෙනස් කරගනිමින් එසේ සකස් කරගත් ධර්මතා වලට කාය කර්ම, වචී කර්ම, මනෝ කර්ම යන්නාවූ කෘතයන් සිදු කිරීම වශයෙන් ද. එසේ මනෝ මූලිකව සකස් කරගත්තාවූ ධර්මතා විදීමට ඇති කැමැත්ත නිසා සත්වයා සසර, ලෝකය, දුක සකස් කරගනිමින් භව ගමනේ යාම සිදු කරයි. ආර්ය පර්යේෂණ දේශනාවේදී භාග්‍යවතුන් වහන්සේ දේශනා කරන්නේ මෙසේ කලාත්‍රයේම සත්වයා ලෝභ, ද්වේශ, මෝහාදී පාපිය ධර්මතා වලින් බැඳෙන්නේ අනාත්මියව හේතු සමූහ වශයෙන් යෙදී නොතිබීම හටගෙන ඉතුරු නැතිවම නිරුද්ධ වන්නාවූ "ස්කන්ධ පංචකයකට" ලෙසිනි. වර්ණ, ශබ්ධ, ගන්ධ, රස, පොට්ඨබ්බ, ධම්ම ලෙසින් යෙදෙන්නාවූ අරමුණු, ඇස, කන, නාසය, දිව, කය, හදය වස්තු රූපය යන්නාවූ භූමින් ප්‍රත්‍ය කරගනිමින් එසේ සකස් වන්නාවූ ආරම්මණයන් ඒ ඒ ආකාරයෙන් මූල විඤ්ඤාණයෙන් දැනගැනීමක් වශයෙන් ස්කන්ධ පංචකයාගේ සමුදය වීම ලෙසින් අප දැනගත යුතුවේ.</p>
@@ -72,5 +86,15 @@
             <p>දේශනාවේ YouTube සබැඳියාව : <a href="https://www.youtube.com/watch?v=nSyogyKWgP8">https://www.youtube.com/watch?v=nSyogyKWgP8</a></p>
         </div>
     </div>
+
+    <script>
+    const fontSizeSlider = document.getElementById('fontSizeSlider');
+    const textContent = document.getElementById('content');
+
+    fontSizeSlider.addEventListener('input', function () {
+        const newFontSize = `${fontSizeSlider.value}px`;
+        textContent.style.fontSize = newFontSize;
+    });
+    </script>
 </body>
 </html>
