@@ -13,5 +13,7 @@
 ## 6
 ## 8
 include::common::AbhidharmayeMulikaKarunu
+## 10
+# long version 10 ධර්මතා 18 - සබ්බ  https://www.youtube.com/watch?v=sotq6TynGw8 2026-Sep-22
 ## 200
 ## 1000
