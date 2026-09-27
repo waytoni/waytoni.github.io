@@ -106,7 +106,7 @@ created_files = []
 
 for pdf in pdf_files:
     base_name = os.path.splitext(os.path.basename(pdf))[0]
-    html_path = os.path.join(script_dir, base_name + '.html')
+    html_path = os.path.join(base_folder, base_name + '.html')
     
     # Skip if HTML already exists (so it only processes new PDFs)
     if os.path.exists(html_path):
@@ -127,7 +127,8 @@ for pdf in pdf_files:
             img = Image.open(io.BytesIO(img_bytes))
             
             # Read Sinhala text from image using local tessdata directory
-            tessdata_path = os.path.join(script_dir, "tessdata")
+            # tessdata_path = os.path.join(script_dir, "tessdata")
+            tessdata_path = os.path.join(base_folder, "tessdata")
             os.environ['TESSDATA_PREFIX'] = tessdata_path
             text = pytesseract.image_to_string(img, lang='sin')
             
