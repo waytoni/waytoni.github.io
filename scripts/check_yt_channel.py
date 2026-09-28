@@ -73,14 +73,14 @@ CHANNELS = [
     {
         "name": "Lions Club Anuradhapura series",
         "channel_id": "UC63kf7W9KLLCj0jK6HF5PdA",
-        "filter_phrase": "Lions Club",
+        "filter_phrase": "Ruwanmaliseya 1:30 PM",
         "ytlinks_file": "current/AnuradhapuraA/AnuradhapuraA_ytlinks.txt",
     },
     {
         "name": "Anuradhapura Ruwanmaliseya Podo Dina series",
         "channel_id": "UC63kf7W9KLLCj0jK6HF5PdA",
-        "after_date": "2026-08-20",
-        "filter_phrase": "Ruwanmaliseya",
+        "after_date": "2026-10-20",
+        "filter_phrase": "Ruwanmaliseya 8:00 AM",
         "ytlinks_file": "current/RuwanweliMahaSeya/RuwanweliMahaSeya_ytlinks.txt",
     },
     # Add more channels as needed:
