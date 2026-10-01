@@ -49,7 +49,7 @@
 1
 
 ## EXTRA_CONTENT ##
-<ul>
-<li><mark><a href="/Homepage/Announcement.html">ගුරුතුමාගේ
- උතුම් මෙහෙවරට දායක වීමට විදේශ රටවලින් සහභාගිවන්නන්ට අවස්ථාවක්</a></mark></li>
-</ul>
+#<ul>
+#<li><mark><a href="/Homepage/Announcement.html">ගුරුතුමාගේ
+# උතුම් මෙහෙවරට දායක වීමට විදේශ රටවලින් සහභාගිවන්නන්ට අවස්ථාවක්</a></mark></li>
+#</ul>

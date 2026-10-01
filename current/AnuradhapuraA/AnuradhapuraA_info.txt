@@ -2,7 +2,6 @@
 # This is the introductory information of the page.
 # This information must be present.
 # The introductory information will contain html code
-# මහකටුවාන  පැවෙත්වෙන 
 # ඇවැසි දර්ශන ඥාණය  
 # අභිධර්මයේ ඇතුලත් මූලික කරුණු ඇසුරු කරගෙන ආරම්භ කරනු ලබන නව දේශනා මාලාව
 
