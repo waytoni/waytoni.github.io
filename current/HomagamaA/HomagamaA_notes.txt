@@ -66,4 +66,6 @@ HTML: URL::docs/15 ශාසනවර්ධනාරාමය හෝමාගම
 PDF: pdf::docs/16 ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 016 - 2026 09 19.pdf
 HTML: URL::docs/16 ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 016 - 2026 09 19.html
 include::common::HomagamaAllNotes
+## 17
+include::common::HomagamaAllNotes
 ## 99
