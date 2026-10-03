@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 100" width="550" height="100">
+    <path id="mohotha"
+    d="M 250 75 q 25 -100 50 0" 
+    stroke="blue" stroke-width="4" stroke-linecap="round" fill="none" />
+    <path d="M 250, 10 L 250,90" stroke="cyan" stroke-width="1" />
+    <path d="M 300, 10 L 300,90" stroke="cyan" stroke-width="1" />
+
+    <path id="peramohotha"  d="M 0 75 q 25 -100 50 0"  stroke="#009ee3" 
+    stroke-width="2" stroke-linecap="round" fill="none"/>
+
+    <path id="pasumohotha"  d="M 300 75 q 25 -100 50 0"  stroke="green" 
+    stroke-width="2" stroke-linecap="round" fill="none"/>
+
+    <use href="#peramohotha" transform="translate(50, 0)"></use>
+    <use href="#peramohotha" transform="translate(100, 0)"></use>
+    <use href="#peramohotha" transform="translate(150, 0)"></use>
+    <use href="#peramohotha" transform="translate(200, 0)"></use>
+    <text x="275" y="20" font-size="20" text-anchor="middle" fill="blue">වර්තමාන මොහොත</text>
+    <text x="125" y="90" font-size="20" text-anchor="middle" fill="#009ee3">පෙර මොහොත</text>
+    <text x="425" y="90" font-size="20" text-anchor="middle" fill="green">පසු/අනාගත මොහොත </text>
+    <use href="#pasumohotha" transform="translate(50, 0)"></use>
+    <use href="#pasumohotha" transform="translate(100, 0)"></use>
+    <use href="#pasumohotha" transform="translate(150, 0)"></use>
+    <use href="#pasumohotha" transform="translate(200, 0)"></use>
+</svg>

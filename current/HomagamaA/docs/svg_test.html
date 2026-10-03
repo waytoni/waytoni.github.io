@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Circle at location (50, 50) -->
+  <circle cx="50" cy="50" r="20" fill="blue" />
+  
+  <!-- Circle moved to location (150, 50) using attributes -->
+  <circle cx="150" cy="50" r="20" fill="red" />
+  
+  <!-- Group translated to a different location (200, 50) -->
+  <g transform="translate(250, 30)">
+    <rect x="0" y="0" width="40" height="40" fill="green" />
+  </g>
+
+<text x="75" y="60" font-size="30" text-anchor="middle" fill="red">SVG</text>
+<path d="M 0 50 q 25 -100 50 0" stroke="blue" stroke-width="2" fill="none"/>
+
+  <defs>
+   <path id="lineAC" d="M 0 50 q 25 -100 50 0" stroke="red" stroke-width="1" fill="none"/>
+  </defs>
+
+ <use href="#lineAC" transform="translate(200, 0)"></use>
+ <use href="#lineAC" transform="translate(100, 300)"></use>
+    
+
+
+  <!--rect width="100" height="50" x="10" y="100" fill="cyan"></rect>
+  <circle cx="75" cy="50" r="40" fill="yellow" />
+  <text x="75" y="60" font-size="30" text-anchor="middle" fill="red">SVG</text-->
+
+
+  <!-- Draw the paths -->
+<path id="lineAB" d="M 100 350 l 150 -300" stroke="red" stroke-width="4"/>
+<path id="lineBC" d="M 250 50 l 150 300" stroke="red" stroke-width="4"/>
+<path id="lineMID" d="M 175 200 l 150 0" stroke="cyan" stroke-width="4"/>
+<path id="AC" d="M 100 350 q 150 -300 300 0" stroke="blue" stroke-width="4" fill="none"/>
+<path d="M 0 500 q 250 -999 500 0" stroke="blue" stroke-width="4" fill="none"></path>
+</svg>
+
+</body>
+</html>
