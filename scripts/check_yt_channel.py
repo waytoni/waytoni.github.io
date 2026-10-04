@@ -41,7 +41,7 @@ CHANNELS = [
         "channel_id": "UC63kf7W9KLLCj0jK6HF5PdA",
         # Only videos whose title contains this phrase will be added.
         # Set to None to accept all videos from the channel.
-        "after_date": "2026-08-03",
+        "after_date": "2026-10-01",
         "filter_phrase": "Kalutara Bodhiya",
         "ytlinks_file": "current/KalutaraBodhiyaM/M_series_ytlinks.txt",
     },
@@ -50,7 +50,7 @@ CHANNELS = [
         "channel_id": "UC63kf7W9KLLCj0jK6HF5PdA",
         # Only videos whose title contains this phrase will be added.
         # Set to None to accept all videos from the channel.
-        "after_date": "2026-08-11",
+        "after_date": "2026-10-01",
         "filter_phrase": "මහරගම",
         "ytlinks_file": "current/MaharagamaB/MaharagamaB_ytlinks.txt",
     },
@@ -60,7 +60,7 @@ CHANNELS = [
         "channel_id": "UC63kf7W9KLLCj0jK6HF5PdA",
         # Only videos whose title contains this phrase will be added.
         # Set to None to accept all videos from the channel.
-        "after_date": "2026-07-21",
+        "after_date": "2026-10-01",
         "filter_phrase": "පොල්ගස්ඔවිට",
         "ytlinks_file": "current/AbhidharmaAruthE/AbhidharmaAruth_E_ytlinks.txt",
     },
