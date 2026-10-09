@@ -27,3 +27,6 @@ HTML: URL::docs/M 08 Kalutara Bodhiya 2026 09 20 මූලික දේශනා
 ## 9
 PDF: pdf::docs/M 09 Kalutara Bodhiya 2026 09 27 මූලික දේශනා.pdf
 HTML: URL::docs/M 09 Kalutara Bodhiya 2026 09 27 මූලික දේශනා.html
+## 10
+pdf::docs/M 10 Kalutara Bodhiya 2026 10 04 මූලික දේශනා.pdf
+
