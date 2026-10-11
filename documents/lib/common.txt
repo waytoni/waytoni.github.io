@@ -15,3 +15,5 @@
 <li>අභිධර්මයේ මූලික කරුණු පොත <a href="https://www.ogatharana.org/bookDownCounter.php?booknumber=15"  target="_blank">PDF ලෙස</a> හෝ <a href="https://pitaka.lk/books/abhidharmaye-mulika-karunu/index.html" target="_blank">වෙබ් පිටුවක් ලෙස</a></li>
 ## HomagamaAllNotes
 <a href="https://drive.google.com/drive/folders/1wo5xF8e29zAzx1J2FoCQxM-sbpV3lyCX" target="_blank">ශ්‍රී ශාසනවර්ධනාරාම විහාරයේ පැවෙත්වෙන සියලු දේශනා සඳහා සටහන්</a>
+## KalutaraMPDfNotes
+<a href="https://drive.google.com/drive/folders/1hjsWyz-ExyKOTIt42eiYBF7k0R6j7_8z" target="_blank">කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන දහතුන්වන (M) කන්ඩායමේ දේශනා සඳහා සටහන්</a>
