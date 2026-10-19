@@ -256,13 +256,21 @@
             notesContainer.innerHTML = notes || '<p>මෙම දේශනාව සඳහා සටහන් නොමැත.</p>';
         }
 
-        // Function to display the last entry from the JSON data on the initial load
+        // Function to display the requested entry (via ?v=1..N) or the default entry on initial load
         function displayLastEntry() {
             if (data.length > 0) {
                 // const lastEntry = data[data.length - 1];
                 const lastEntry = $LASTENTRY$;
                 const selector = document.getElementById('link-selector');
-                selector.value = lastEntry.url;
+                const params = new URLSearchParams(window.location.search);
+                const requested = parseInt(params.get('v'), 10);
+
+                if (!isNaN(requested) && requested >= 1 && requested <= data.length) {
+                    const matchedIndex = data.findIndex(item => item.index == requested);
+                    selector.selectedIndex = matchedIndex !== -1 ? matchedIndex : requested - 1;
+                } else {
+                    selector.value = lastEntry.url;
+                }
                 updateContent();
             }
         }

@@ -26,6 +26,7 @@ PATTERNS = {
     "මුල": "මූල",
     "මුලික": "මූලික",
     "සදහා":"සඳහා",
+    "අනාත්මිය": "අනාත්මීය",
 }
 
 # Patterns that should only match as a complete Sinhala word
