@@ -1,0 +1,19 @@
+# ==============================================================================
+# Possible Sinhala Word Corrections Report
+# Folder: current/HomagamaA/docs
+# Total HTML files scanned: 22
+# Files with matches: 0
+# Total matches found: 0
+#
+# Instructions:
+#   1. Review the matches listed below.
+#   2. Delete or comment out (add '#' at the start of the line) any item
+#      that you DO NOT want replaced.
+#   3. Run `python scripts/replace_sinhala_words.py` to apply the approved
+#      replacements.
+#
+# Columns:
+#   FILE | LINE:COL | MATCH -> REPLACEMENT | WORD_PREVIEW | CONTEXT
+# ==============================================================================
+
+# No matching patterns found in any HTML files.
