@@ -8,9 +8,10 @@ PDF: pdf::docs/02 ශාසනවර්ධනාරාමය හෝමාගම 
 HTML: URL::docs/02 ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 002 - 2026 06 13.html
 include::common::HomagamaAllNotes
 ## 3
-pdf::docs/03 ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 003 - 2026 06 20.pdf
-img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
+PDF: pdf::docs/03 ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 003 - 2026 06 20.pdf
+HTML: URL::docs/03 ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 003 - 2026 06 20.html
 include::common::HomagamaAllNotes
+img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
 ## 4
 රේරුකානේ චන්දවිමල හිමියන්ගේ අභිධර්ම මාර්ගය පොත් ලබා ගැනීමට (PDF හෝ HTML ආකාරයට): url::https://tipitaka.lk/library/462
 pdf::docs/04 ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 004 - 2026 06 27.pdf

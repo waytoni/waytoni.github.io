@@ -41,6 +41,8 @@ body {
     padding: 0 15px;
 }
 
+.content-body { font-size: 15px; }
+
 .hero-section {
     background: linear-gradient(rgba(44, 85, 48, 0.85), rgba(44, 85, 48, 0.85)),
         var(--hero-bg-image) center/cover no-repeat;
