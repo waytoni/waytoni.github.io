@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="si">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B9ZTNLS3FQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-B9ZTNLS3FQ');
+    </script>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>2026 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන දේශනා මාලාව (M Series) - සටහන්</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/nav_menu.css">
+    <link rel="stylesheet" type="text/css" href="/css/series_page_style_green_Kaluthara.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/scripts/nav_function.js"></script>
+    <script src="/scripts/templates/load-template.js"></script>
+    <style>
+        body {
+            font-family: "Noto Sans Sinhala", "Iskoola Pota", "Nirmala UI", sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .notes-table-container {
+            max-width: 1100px;
+            margin: 30px auto;
+            background: #ffffff;
+            padding: 30px 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #1b5e20;
+            font-size: 1.6rem;
+            text-align: center;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        .table-responsive {
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 12px 15px;
+            border: 1px solid rgba(148, 163, 184, 0.3);
+            text-align: left;
+        }
+        th {
+            background-color: #2c5530;
+            color: #ffffff;
+            font-weight: 600;
+        }
+        tr:nth-child(even) {
+            background-color: rgba(201, 231, 235, 0.2);
+        }
+        tr:hover {
+            background-color: rgba(44, 85, 48, 0.06);
+        }
+        td a {
+            color: #1b5e20;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        td a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .notes-table-container {
+                padding: 15px 15px;
+                margin: 15px;
+            }
+            h1 {
+                font-size: 1.3rem;
+            }
+            th, td {
+                padding: 8px 10px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav" id="Topnavbar">
+        <!-- Content loaded dynamically by load-template.js -->
+    </div>
+
+    <div class="notes-table-container">
+        <h1>2026 කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන දේශනා මාලාව (M Series) - දේශනා සහ සටහන්</h1>
+
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>දේශනාව (Video)</th>
+                        <th>PDF සටහන</th>
+                        <th>HTML සටහන</th>
+                    </tr>
+                </thead>
+                <tbody id="notes-table-body">
+                    <!-- Populated dynamically from M_series.json -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        fetch('M_series.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                return response.json();
+            })
+            .then(data => {
+                const tbody = document.getElementById('notes-table-body');
+                const parser = new DOMParser();
+
+                data.forEach(item => {
+                    if (!item.index || item.index < 1 || !item.notes) return;
+
+                    const doc = parser.parseFromString(item.notes, 'text/html');
+                    const links = Array.from(doc.querySelectorAll('a'));
+
+                    const pdfLink = links.find(a => {
+                        const href = a.getAttribute('href') || '';
+                        return /^docs\/M\s+\d+\s+Kalutara.*\.pdf$/i.test(href);
+                    });
+
+                    const htmlLink = links.find(a => {
+                        const href = a.getAttribute('href') || '';
+                        return /^docs\/M\s+\d+\s+Kalutara.*\.html$/i.test(href);
+                    });
+
+                    if (!pdfLink && !htmlLink) return;
+
+                    const tr = document.createElement('tr');
+
+                    // 1st Column: Video link
+                    const tdVideo = document.createElement('td');
+                    const aVideo = document.createElement('a');
+                    aVideo.href = `https://waytoni.com/current/KalutaraBodhiyaM/M_series.html?v=${item.index}`;
+                    const paddedIndex = String(item.index).padStart(2, '0');
+                    aVideo.textContent = `${paddedIndex}. ${item.comment || ''} (${item.date || ''})`;
+                    tdVideo.appendChild(aVideo);
+                    tr.appendChild(tdVideo);
+
+                    // 2nd Column: PDF link
+                    const tdPdf = document.createElement('td');
+                    if (pdfLink) {
+                        const href = pdfLink.getAttribute('href');
+                        const aPdf = document.createElement('a');
+                        aPdf.href = href;
+                        aPdf.target = '_blank';
+                        aPdf.textContent = href.replace(/^docs\//, '');
+                        tdPdf.appendChild(aPdf);
+                    }
+                    tr.appendChild(tdPdf);
+
+                    // 3rd Column: HTML link
+                    const tdHtml = document.createElement('td');
+                    if (htmlLink) {
+                        const href = htmlLink.getAttribute('href');
+                        const aHtml = document.createElement('a');
+                        aHtml.href = href;
+                        aHtml.textContent = href.replace(/^docs\//, '');
+                        tdHtml.appendChild(aHtml);
+                    }
+                    tr.appendChild(tdHtml);
+
+                    tbody.appendChild(tr);
+                });
+            })
+            .catch(error => {
+                console.error('Error loading M_series.json:', error);
+            });
+    </script>
+</body>
+
+</html>

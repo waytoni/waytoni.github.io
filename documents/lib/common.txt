@@ -16,4 +16,6 @@
 ## HomagamaAllNotes
 <a href="https://drive.google.com/drive/folders/1wo5xF8e29zAzx1J2FoCQxM-sbpV3lyCX" target="_blank">ශ්‍රී ශාසනවර්ධනාරාම විහාරයේ පැවෙත්වෙන සියලු දේශනා සඳහා සටහන්</a>
 ## KalutaraMPDfNotes
-<a href="https://drive.google.com/drive/folders/1hjsWyz-ExyKOTIt42eiYBF7k0R6j7_8z" target="_blank">කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන දහතුන්වන (M) කන්ඩායමේ දේශනා සඳහා සටහන්</a>
+<a href="https://drive.google.com/drive/folders/1hjsWyz-ExyKOTIt42eiYBF7k0R6j7_8z" target="_blank">කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන දහතුන්වන (M) කන්ඩායමේ දේශනා සඳහා PDF සටහන්</a>
+## KalutaraMSummary
+<a href="/current/KalutaraBodhiyaM/docs/M_series_notes.html" target="_blank">කළුතර බෝධි පරිශ්‍රයේදී පැවෙත්වෙන දහතුන්වන (M) කන්ඩායමේ දේශනා සඳහා PDF සහ HTML සටහන්</a>
