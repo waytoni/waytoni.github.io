@@ -32,7 +32,7 @@ CHANNELS = [
         "channel_id": "UC63kf7W9KLLCj0jK6HF5PdA",
         # Only videos whose title contains this phrase will be added.
         # Set to None to accept all videos from the channel.
-        "after_date": "2026-08-29",
+        "after_date": "2026-10-20",
         "filter_phrase": "ගනේලන්ද",
         "ytlinks_file": "current/ThalawathugodaC/ThalawathugodaC_ytlinks.txt",
     },
