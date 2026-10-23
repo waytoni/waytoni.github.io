@@ -48,6 +48,8 @@ PDF: pdf::docs/M 11 Kalutara Bodhiya 2026 10 11 මූලික දේශනා.
 HTML: URL::docs/M 11 Kalutara Bodhiya 2026 10 11 මූලික දේශනා.html
 include::common::KalutaraMPDfNotes
 ## 12
+PDF: pdf::docs/M 12 Kalutara Bodhiya 2026 10 18 මූලික දේශනා.pdf
+HTML: URL::docs/M 12 Kalutara Bodhiya 2026 10 18 මූලික දේශනා.html
 include::common::KalutaraMPDfNotes
 ## 13
 include::common::KalutaraMPDfNotes

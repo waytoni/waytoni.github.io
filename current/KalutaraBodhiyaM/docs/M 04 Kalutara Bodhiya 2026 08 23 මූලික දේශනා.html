@@ -54,6 +54,31 @@
             p {
                 margin-bottom: 12px;
             }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 15px 0;
+                /* background-color: rgba(30, 41, 59, 0.4); */
+                border-radius: 8px;
+                overflow: hidden;
+            }
+
+            th, td {
+                padding: 12px 15px;
+                border: 1px solid rgba(148, 163, 184, 0.2);
+                text-align: left;
+            }
+
+            th {
+                background-color: rgba(15, 23, 42, 0.8);
+                color: #fbbf24;
+                /* font-weight: 600; */
+            }
+
+            tr:nth-child(even) {
+                /* background-color: rgba(30, 41, 59, 0.2); */
+                background-color: rgba(201, 231, 235, 0.2);
+            }
             @media (max-width: 600px) {
                 .container {
                     padding: 15px 20px;
@@ -252,73 +277,73 @@
         විඤ්ඤාණය (භවාංග සිත) යෙදී අරමුණු ගැනීම සිදු නොවේ. (සියළු භූමින් මෙනෙහි කරන්න)</p>
 
 
-            <div class="table-responsive">
-            <table>
-                <tbody>
-                    <tr>
-                        <td colspan="3" style="text-align: center;">
-                        තින්නං සංගති
-                        <svg width="100%" height="40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 40" style="display: block; width: 100%; margin: 10px auto;"">
-                            <path d="M 0 35 Q 0 20 15 20 L 45 20 Q 50 20 50 5 Q 50 20 55 20 L 85 20 Q 100 20 100 35" stroke="black" stroke-width="1" fill="none" stroke-linecap="round"/>
-                        </svg>
-                        </td>
-                        <td></td>
-                    </tr>
-                
-                    <tr>
-                        <th>භාහිර අරමුණු</th>
-                        <th>ආයතන / භූමිය / ඉන්ද්‍රියයන්</th>
-                        <th>භවංග ප්‍රත්‍ය</th>
-                        <th>ඵලය</th>
-                    </tr>
-                    <tr>
-                        <td>රූප</td>
-                        <td>ඇස/චක්ඛු</td>
-                        <td>මූල චිත්තය/විඤ්ඤාණය</td>
-                        <td>චක්ඛු විඤ්ඤාණය (ස්කන්ධ 5 කි)</td>
-                    </tr>
-                    <tr>
-                        <td>ශබ්ද</td>
-                        <td>කන/සෝත</td>
-                        <td>මූල චිත්තය/විඤ්ඤාණය</td>
-                        <td>සෝත විඤ්ඤාණය (ස්කන්ධ 5 කි)</td>
-                    </tr>
-                    <tr>
-                        <td>ගන්ධ</td>
-                        <td>නාසය/ඝාන</td>
-                        <td>මූල චිත්තය/විඤ්ඤාණය</td>
-                        <td>ඝාන විඤ්ඤාණය (ස්කන්ධ 5 කි)</td>
-                    </tr>
-                    <tr>
-                        <td>රස</td>
-                        <td>දිව/ජිව්හා</td>
-                        <td>මූල චිත්තය/විඤ්ඤාණය</td>
-                        <td>ජිව්හා විඤ්ඤාණය (ස්කන්ධ 5 කි)</td>
-                    </tr>
-                    <tr>
-                        <td>පොට්ඨබ්බ</td>
-                        <td>කය/කාය</td>
-                        <td>මූල චිත්තය/විඤ්ඤාණය</td>
-                        <td>කාය විඤ්ඤාණය (ස්කන්ධ 5 කි)</td>
-                    </tr>
-                    <tr>
-                        <td>ධම්ම</td>
-                        <td>මන/මනස (හදය වස්තු ප්‍රසාදය)</td>
-                        <td>මූල චිත්තය/විඤ්ඤාණය</td>
-                        <td>මනෝ විඤ්ඤාණය (ස්කන්ධ 5 කි)</td>
-                    </tr>
-                    <tr>
-                        <td colspan="3" style="text-align: center;">
-                        <svg width="100%" height="40" preserveAspectRatio="none" viewBox="0 0 100 40" xmlns="http://www.w3.org/2000/svg" style="display: block; width: 100%; margin: 10px auto;">
-                            <path d="M 0 5 Q 0 20 15 20 L 45 20 Q 50 20 50 35 Q 50 20 55 20 L 85 20 Q 100 20 100 5" stroke="#000" stroke-width="2" fill="none" vector-effect="non-scaling-stroke" stroke-linecap="round"/>
-                        </svg>
-                        හේතු
-                        </td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-            </div>
+        <div class="table-responsive">
+        <table>
+            <tbody>
+                <tr>
+                    <td colspan="3" style="text-align: center;">
+                    තින්නං සංගති
+                    <svg width="100%" height="40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 40" style="display: block; width: 100%; margin: 10px auto;"">
+                        <path d="M 0 35 Q 0 20 15 20 L 45 20 Q 50 20 50 5 Q 50 20 55 20 L 85 20 Q 100 20 100 35" stroke="black" stroke-width="1" fill="none" stroke-linecap="round"/>
+                    </svg>
+                    </td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <th>බාහිර අරමුණු</th>
+                    <th>ආයතන/භූමිය/<br>ඉන්ද්‍රියන්</th>
+                    <th>භවාංග ප්‍රත්‍ය</th>
+                    <th>ඵලය</th>
+                </tr>
+                <tr>
+                    <td>රූප</td>
+                    <td>ඇස/චක්ඛු</td>
+                    <td>මූල චිත්තය/විඤ්ඤාණය</td>
+                    <td>චක්ඛු විඤ්ඤාණය (ස්කන්ධ 5 කි)</td>
+                </tr>
+                <tr>
+                    <td>ශබ්ද</td>
+                    <td>කන/සෝත</td>
+                    <td>මූල චිත්තය/විඤ්ඤාණය</td>
+                    <td>සෝත විඤ්ඤාණය (ස්කන්ධ 5 කි)</td>
+                </tr>
+                <tr>
+                    <td>ගන්ධ</td>
+                    <td>නාසය/ඝාන</td>
+                    <td>මූල චිත්තය/විඤ්ඤාණය</td>
+                    <td>ඝාන විඤ්ඤාණය (ස්කන්ධ 5 කි)</td>
+                </tr>
+                <tr>
+                    <td>රස</td>
+                    <td>දිව/ජිව්හා</td>
+                    <td>මූල චිත්තය/විඤ්ඤාණය</td>
+                    <td>ජිව්හා විඤ්ඤාණය (ස්කන්ධ 5 කි)</td>
+                </tr>
+                <tr>
+                    <td>පොට්ඨබ්බ</td>
+                    <td>කය/කාය</td>
+                    <td>මූල චිත්තය/විඤ්ඤාණය</td>
+                    <td>කාය විඤ්ඤාණය (ස්කන්ධ 5 කි)</td>
+                </tr>
+                <tr>
+                    <td>ධම්ම</td>
+                    <td>මන/මනස <br>(හදය වස්තු ප්‍රසාදය)</td>
+                    <td>මූල චිත්තය/විඤ්ඤාණය</td>
+                    <td>මනෝ විඤ්ඤාණය (ස්කන්ධ 5 කි)</td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="text-align: center;">
+                    <svg width="100%" height="40" preserveAspectRatio="none" viewBox="0 0 100 40" xmlns="http://www.w3.org/2000/svg" style="display: block; width: 100%; margin: 10px auto;">
+                        <path d="M 0 5 Q 0 20 15 20 L 45 20 Q 50 20 50 35 Q 50 20 55 20 L 85 20 Q 100 20 100 5" stroke="#000" stroke-width="2" fill="none" vector-effect="non-scaling-stroke" stroke-linecap="round"/>
+                    </svg>
+                    හේතු
+                    </td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
         
 
     <p>මෙසේ දැනගත යුත්තේ කාලාත්‍රයේම සත්තත්වයේ පවත්නා ක්‍රියාකාරිත්වය නම් මෙම ධර්මතා 18 

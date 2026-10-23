@@ -54,6 +54,31 @@
             p {
                 margin-bottom: 12px;
             }
+                        table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 15px 0;
+                /* background-color: rgba(30, 41, 59, 0.4); */
+                border-radius: 8px;
+                overflow: hidden;
+            }
+
+            th, td {
+                padding: 12px 15px;
+                border: 1px solid rgba(148, 163, 184, 0.2);
+                text-align: left;
+            }
+
+            th {
+                background-color: rgba(15, 23, 42, 0.8);
+                color: #fbbf24;
+                /* font-weight: 600; */
+            }
+
+            tr:nth-child(even) {
+                /* background-color: rgba(30, 41, 59, 0.2); */
+                background-color: rgba(201, 231, 235, 0.2);
+            }
             @media (max-width: 600px) {
                 .container {
                     padding: 15px 20px;
@@ -106,8 +131,8 @@
                     <thead>
                         <tr>
                             <th>බාහිර අරමුණු</th>
-                            <th>ආයතන/භූමිය/ඉන්ද්‍රියයන්</th>
-                            <th>භවංග ප්‍රත්‍ය</th>
+                            <th>ආයතන/භූමිය/<br>ඉන්ද්‍රියන්</th>
+                            <th>භවාංග ප්‍රත්‍ය</th>
                             <th>ඵලය</th>
                         </tr>
                     </thead>
@@ -144,7 +169,7 @@
                         </tr>
                         <tr>
                             <td>ධම්ම</td>
-                            <td>මන/මනස (හදය වස්තු ප්‍රසාදය)</td>
+                            <td>මන/මනස <br>(හදය වස්තු ප්‍රසාදය)</td>
                             <td>මූල චිත්තය/විඤ්ඤාණය</td>
                             <td>මනෝ විඤ්ඤාණය (ස්කන්ධ 5 කි)</td>
                         </tr>
