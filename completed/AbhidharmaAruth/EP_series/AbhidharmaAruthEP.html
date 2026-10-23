@@ -162,7 +162,6 @@
         </div>
     </div>
 
-    <script src="https://www.youtube.com/iframe_api"></script>
     <script>
         let data;
         let seriesTitle = "පොල්ගස්ඕවිට පැවෙත් වුන අභිධර්ම අරුත් දේශනා මාලාව (EP කන්ඩායම)"; // Changeable series title   
@@ -176,7 +175,10 @@
         function initPlayer() {
             const iframe = document.getElementById('yt-player');
             if (iframe && window.YT && window.YT.Player) {
-                if (ytPlayer) {
+                if (ytPlayer && ytPlayer.getIframe && ytPlayer.getIframe() === iframe) {
+                    return;
+                }
+                if (ytPlayer && ytPlayer.destroy) {
                     ytPlayer.destroy();
                 }
                 ytPlayer = new YT.Player('yt-player', {
@@ -258,6 +260,12 @@
             const notes = selectedData.notes;
             const videoContainer = document.getElementById('video-container');
             const titleDisplay = document.getElementById('current-video-title');
+
+            if (ytPlayer && ytPlayer.destroy) {
+                ytPlayer.destroy();
+            }
+            ytPlayer = null;
+
             // Check if video_id starts with "INVALID:"
             if (videoId.startsWith('INVALID:')) {
                 // Extract the message after "INVALID:" and replace underscores with spaces
@@ -286,7 +294,7 @@
                     style="font-size:1.0rem; margin-left:10px; color:var(--accent-color);">[YouTube Link]</a>`;
 
                 // Initialize YT Player for the new iframe
-                setTimeout(initPlayer, 50);
+                initPlayer();
             }
             const notesContainer = document.getElementById('notes');
             notesContainer.innerHTML = notes || '<p>මෙම දේශනාව සඳහා සටහන් නොමැත.</p>';
@@ -296,14 +304,20 @@
         function displayLastEntry() {
             if (data.length > 0) {
                 // const lastEntry = data[data.length - 1];
-                const lastEntry = data[0];
+                const lastEntry = data[0] || data[data.length - 1];
                 const selector = document.getElementById('link-selector');
                 const params = new URLSearchParams(window.location.search);
                 const requested = parseInt(params.get('v'), 10);
 
-                if (!isNaN(requested) && requested >= 1 && requested <= data.length) {
+                if (!isNaN(requested)) {
                     const matchedIndex = data.findIndex(item => item.index == requested);
-                    selector.selectedIndex = matchedIndex !== -1 ? matchedIndex : requested - 1;
+                    if (matchedIndex !== -1) {
+                        selector.selectedIndex = matchedIndex;
+                    } else if (requested >= 1 && requested <= data.length) {
+                        selector.selectedIndex = requested - 1;
+                    } else {
+                        selector.value = lastEntry.url;
+                    }
                 } else {
                     selector.value = lastEntry.url;
                 }
@@ -333,6 +347,7 @@
             notesContent.style.fontSize = newFontSize;
         });
     </script>
+    <script src="https://www.youtube.com/iframe_api" async></script>
 </body>
 
 </html>

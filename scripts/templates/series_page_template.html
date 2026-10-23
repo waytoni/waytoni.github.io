@@ -194,14 +194,20 @@
         function displayLastEntry() {
             if (data.length > 0) {
                 // const lastEntry = data[data.length - 1];
-                const lastEntry = $LASTENTRY$;
+                const lastEntry = $LASTENTRY$ || data[data.length - 1];
                 const selector = document.getElementById('link-selector');
                 const params = new URLSearchParams(window.location.search);
                 const requested = parseInt(params.get('v'), 10);
 
-                if (!isNaN(requested) && requested >= 1 && requested <= data.length) {
+                if (!isNaN(requested)) {
                     const matchedIndex = data.findIndex(item => item.index == requested);
-                    selector.selectedIndex = matchedIndex !== -1 ? matchedIndex : requested - 1;
+                    if (matchedIndex !== -1) {
+                        selector.selectedIndex = matchedIndex;
+                    } else if (requested >= 1 && requested <= data.length) {
+                        selector.selectedIndex = requested - 1;
+                    } else {
+                        selector.value = lastEntry.url;
+                    }
                 } else {
                     selector.value = lastEntry.url;
                 }
