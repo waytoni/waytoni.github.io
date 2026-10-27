@@ -33,6 +33,7 @@ PATTERNS = {
     "හදුන්වනු": "හඳුන්වනු",
     "හදුන්වන්නේ":  "හඳුන්වන්නේ",
     "හදුන්වයි": "හඳුන්වයි",
+    "සමුහ": "සමූහ",
 }
 
 # Patterns that should only match as a complete Sinhala word
