@@ -20,6 +20,7 @@ img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
 include::common::HomagamaAllNotes
 ## 5
 pdf::docs/05 ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 005 - 2026 07 04.pdf
+URL::docs/05 ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 005 - 2026 07 04.html
 include::common::HomagamaAllNotes
 ## 6
 pdf::docs/06 ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 006 - 2026 07 11.pdf
