@@ -42,6 +42,31 @@
             .content-body {
                 margin-bottom: 30px;
             }
+            .slider-container {
+                position: fixed;
+                bottom: 15px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 20;
+                background-color: #FFD700;
+                padding: 5px 15px;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                white-space: nowrap;
+                line-height: 1.2;
+            }
+            .slider-container label {
+                font-weight: bold;
+            }
+            .slider-container input[type="range"] {
+                cursor: pointer;
+            }
+            body {
+                padding-bottom: 80px;
+            }
             p {
                 margin-bottom: 12px;
             }
@@ -62,7 +87,7 @@
 
         <div class="container">
             <h1>ශ්‍රී ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 010 - 2026 08 08</h1>
-            <div class="slider-container" style="text-align: center; margin-top: 20px;">
+            <div class="slider-container">
                 <label for="fontSizeSlider">Font size: <small>අ</small> </label>
                 <input type="range" id="fontSizeSlider" min="12" max="48" value="16">
                 <span style="font-size: 2em;"> අ</span>
