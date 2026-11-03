@@ -2,8 +2,10 @@ import os
 import glob
 import re
 
-docs_dir = r"e:\src\github\waytoni_io\waytoni_desktop\waytoni.github.io\current\HomagamaA\docs"
-html_files = sorted(glob.glob(os.path.join(docs_dir, "*.html")))
+dirs = [
+    r"e:\src\github\waytoni_io\waytoni_desktop\waytoni.github.io\current\HomagamaA\docs",
+    r"e:\src\github\waytoni_io\waytoni_desktop\waytoni.github.io\current\KalutaraBodhiyaM\docs",
+]
 
 css_addition = """            .slider-container {
                 position: fixed;
@@ -29,43 +31,40 @@ css_addition = """            .slider-container {
             }
             body {
                 padding-bottom: 80px;
-            }"""
+            }
+"""
 
-updated = []
-skipped = []
+for docs_dir in dirs:
+    html_files = sorted(glob.glob(os.path.join(docs_dir, "*.html")))
+    updated = []
+    skipped = []
 
-for filepath in html_files:
-    name = os.path.basename(filepath)
-    with open(filepath, "r", encoding="utf-8") as f:
-        content = f.read()
+    for filepath in html_files:
+        name = os.path.basename(filepath)
+        with open(filepath, "r", encoding="utf-8") as f:
+            content = f.read()
 
-    if "slider-container" not in content:
-        skipped.append((name, "no slider-container"))
-        continue
+        if "slider-container" not in content:
+            skipped.append((name, "no slider-container"))
+            continue
 
-    if "position: fixed;" in content and ".slider-container {" in content:
-        skipped.append((name, "already updated"))
-        continue
+        if "position: fixed;" in content and ".slider-container {" in content:
+            skipped.append((name, "already updated"))
+            continue
 
-    content_new = content.replace(
-        '<div class="slider-container" style="text-align: center; margin-top: 20px;">',
-        '<div class="slider-container">',
-    )
+        content_new = content.replace(
+            '<div class="slider-container" style="text-align: center; margin-top: 20px;">',
+            '<div class="slider-container">',
+        )
 
-    pattern = r"(\.content-body\s*\{\s*margin-bottom:\s*30px;\s*\})"
-    if re.search(pattern, content_new):
-        content_new = re.sub(pattern, r"\1\n" + css_addition, content_new, count=1)
-    else:
-        skipped.append((name, "pattern not matched"))
-        continue
+        if "</style>" in content_new:
+            content_new = content_new.replace("</style>", css_addition + "        </style>", 1)
+        else:
+            skipped.append((name, "no </style> tag"))
+            continue
 
-    with open(filepath, "w", encoding="utf-8") as f:
-        f.write(content_new)
-    updated.append(name)
+        with open(filepath, "w", encoding="utf-8") as f:
+            f.write(content_new)
+        updated.append(name)
 
-print(f"Updated {len(updated)} files:")
-for u in updated:
-    print(f"  + {u}")
-print(f"Skipped {len(skipped)} files:")
-for s, reason in skipped:
-    print(f"  - {s} ({reason})")
+    print(f"[{os.path.basename(os.path.dirname(docs_dir))}] Updated: {len(updated)}, Skipped: {len(skipped)}")
