@@ -9,6 +9,16 @@
             <li>රේරුකානේ චන්දවිමල හිමියන්ගේ සියුලු පොත් සඳහා: <a href="https://www.ogatharana.org/" target="_blank">https://www.ogatharana.org/</a> හෝ <a href="https://tipitaka.lk/library/462" target="_blank">https://tipitaka.lk/library/462</a></li>
         </ol>
 </div>
+## pictures
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
+img::/documents/NotesForDesana/0006 චක්ෂු සහ ශෝත ප්‍රසාද.jpg
+img::/documents/NotesForDesana/0007 ජිහ්වා සහ ඝ්‍රාණ ප්‍රසාද.jpg
+img::/documents/NotesForDesana/0008 කාය ප්‍රසාදය.jpg
+img::/documents/NotesForDesana/0009 වස්තු රූපය - හදවත තුළ.jpg
+img::/documents/NotesForDesana/0010 ශරීරයෙහි සියලු ප්‍රසාද.jpg
+## rupaparamartha
+img::/documents/NotesForDesana/0002 රූප පරමාර්ථ.jpg"
 ## rohithassa
 රෝහිතස්ස සූත්‍රය url::https://tipitaka.lk/sn-1-2-3-6/sinh
 ## AbhidharmayeMulikaKarunu
