@@ -92,4 +92,8 @@ include::common::HomagamaAllNotes
 PDF: pdf::docs/20 ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 020 - 2026 10 24.pdf
 HTML: URL::docs/20 ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 020 - 2026 10 24.html
 include::common::HomagamaAllNotes
+## 21
+PDF pdf::docs/21 ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 021 - 2026 10 31.pdf
+HTML URL::docs/21 ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 021 - 2026 10 31.html
+include::common::HomagamaAllNotes
 ## 99
