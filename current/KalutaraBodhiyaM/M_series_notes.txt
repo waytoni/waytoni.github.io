@@ -56,6 +56,8 @@ PDF: pdf::docs/M 13 Kalutara Bodhiya 2026 11 01 මූලික දේශනා.
 HTML: URL::docs/M 13 Kalutara Bodhiya 2026 11 01 මූලික දේශනා.html
 include::common::KalutaraMSummary
 ## 14
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
+img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
 include::common::KalutaraMSummary
 ## 15
 include::common::KalutaraMSummary
