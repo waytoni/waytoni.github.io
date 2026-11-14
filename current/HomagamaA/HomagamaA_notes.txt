@@ -96,4 +96,8 @@ include::common::HomagamaAllNotes
 PDF pdf::docs/21 ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 021 - 2026 10 31.pdf
 HTML URL::docs/21 ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 021 - 2026 10 31.html
 include::common::HomagamaAllNotes
+## 22
+ඛන්‍ධ සූත්‍රය url::https://tipitaka.lk/sn-3-1-1-5-6/sinh
+include::common::HomagamaAllNotes
+img::/documents/NotesForDesana/0060 අකුශල සංග්‍ර‍හය සාරාංශය.jpeg
 ## 99
