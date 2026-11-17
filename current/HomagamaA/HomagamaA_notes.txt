@@ -98,6 +98,8 @@ HTML URL::docs/21 ශාසනවර්ධනාරාමය හෝමාගම 
 include::common::HomagamaAllNotes
 ## 22
 ඛන්‍ධ සූත්‍රය url::https://tipitaka.lk/sn-3-1-1-5-6/sinh
+PDF pdf::docs/22 ශ්‍රි ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 022 - 2026 11 14.pdf
+HTML URL::docs/22 ශ්‍රි ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 022 - 2026 11 14.html
 include::common::HomagamaAllNotes
 img::/documents/NotesForDesana/0060 අකුශල සංග්‍ර‍හය සාරාංශය.jpeg
 ## 99
