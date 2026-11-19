@@ -62,6 +62,8 @@ include::common::KalutaraMSummary
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
 img::/documents/LowRes/ධර්මතා 18 හි උපත.jpeg
 ## 15
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.jpg
+img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
 include::common::KalutaraMSummary
 ## 16
 include::common::KalutaraMSummary
