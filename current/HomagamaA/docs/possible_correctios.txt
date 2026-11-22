@@ -1,7 +1,7 @@
 # ==============================================================================
 # Possible Sinhala Word Corrections Report
 # Folder: current/HomagamaA/docs
-# Total HTML files scanned: 31
+# Total HTML files scanned: 32
 # Files with matches: 1
 # Total matches found: 2
 #
