@@ -103,4 +103,21 @@ PDF pdf::docs/22 ශ්‍රි ශාසනවර්ධනාරාමය හ�
 HTML URL::docs/22 ශ්‍රි ශාසනවර්ධනාරාමය හෝමාගම මහකටුවාන දේශනා අංක 022 - 2026 11 14.html
 include::common::HomagamaAllNotes
 img::/documents/NotesForDesana/0060 අකුශල සංග්‍ර‍හය සාරාංශය.jpeg
+## 23
+රේරුකානේ චන්දවිමල හිමියන්ගේ අභිධර්ම මාර්ගය පොතේ
+අකුශල සංග්‍ර‍හය url::https://pitaka.lk/books/abhidharma-margaya/8-1.html
+අකුශල චෛතසික සම්ප්‍රයෝගය url::https://pitaka.lk/books/abhidharma-margaya/3-8.html
+ලෝභමූල සිත් ඇති වන අවස්ථා url::https://pitaka.lk/books/abhidharma-margaya/2-6.html
+ද්වේෂ මූල සිත් දෙක url::https://pitaka.lk/books/abhidharma-margaya/2-8.html
+මෝහමූල සිත් දෙක url::https://pitaka.lk/books/abhidharma-margaya/2-9.html
+include::common::HomagamaAllNotes
+img::/documents/NotesForDesana/0060 අකුශල සංග්‍ර‍හය සාරාංශය.jpeg
+## 24
+include::common::HomagamaAllNotes
+## 25
+include::common::HomagamaAllNotes
+## 26
+include::common::HomagamaAllNotes
+## 27
+include::common::HomagamaAllNotes
 ## 99

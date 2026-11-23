@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>අකුසල් ගති ලක්ෂණය</title>
+<style>
+  body { margin: 0; padding: 16px; background: #fff; font-family: "Iskoola Pota", "Noto Sans Sinhala", "Nirmala UI", sans-serif; }
+  .wrap { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; min-width: 900px; table-layout: fixed; background: #fff; }
+  td, th { border: 1px solid #222; text-align: center; padding: 0; font-weight: 400; }
+  .num { background: #e60000; color: #fff; font-size: 24px; height: 40px; }
+  .corner { width: 160px; background: #fff; }
+  .title { font-size: 28px; font-weight: 700; line-height: 1.3; padding: 8px; width: 160px; }
+  .col { height: 220px; vertical-align: middle; }
+  .col span { writing-mode: vertical-rl; transform: rotate(180deg); display: inline-block; font-size: 28px; font-weight: 700; }
+  .label { background: #4aa3c4; font-size: 24px; font-weight: 700; height: 40px; }
+  .red { background: #e60000; color: #fff; font-size: 24px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<table id="t"></table>
+</div>
+<script>
+const cols = ["මෝහ","අහිරික","අනොත්තප්ප","උද්ධච්ච","ලෝභ","දිට්ඨි","මාන","දෝස","ඉස්සා","මච්ඡරිය","කුක්කුච්ච","ථීන","මිද්ධ","විචිකිච්ඡා"];
+// row label -> { column number : value }
+const rows = [
+  ["ආශ්‍රව",  {1:1,5:1,6:1}],
+  ["ඕඝ",      {1:2,5:2,6:2}],
+  ["යෝග",     {1:3,5:3,6:3}],
+  ["ග්‍රන්ථ",  {5:4,6:4,8:1}],
+  ["උපාදාන",  {5:5,6:5}],
+  ["නීවරණ",   {1:4,4:1,5:6,8:2,11:1,12:1,13:1,14:1}],
+  ["අනුශය",   {1:5,5:7,6:6,7:1,8:3,14:2}],
+  ["සංයෝජන",  {1:6,4:2,5:8,6:7,7:2,8:4,9:1,10:1,14:3}],
+  ["ක්ලේශ",   {1:7,2:1,3:1,4:3,5:9,6:8,7:3,8:5,12:2,14:4}]
+];
+let h = '<tr><td class="corner"></td>';
+for (let i = 1; i <= 14; i++) h += `<td class="num">${i}</td>`;
+h += '</tr><tr><th class="title">අකුසල්<br>ගති<br>ලක්ෂණය</th>';
+cols.forEach(c => h += `<th class="col"><span>${c}</span></th>`);
+h += '</tr>';
+rows.forEach(([name, vals]) => {
+  h += `<tr><td class="label">${name}</td>`;
+  for (let i = 1; i <= 14; i++) {
+    h += vals[i] ? `<td class="red">${vals[i]}</td>` : '<td></td>';
+  }
+  h += '</tr>';
+});
+document.getElementById('t').innerHTML = h;
+</script>
+</body>
+</html>
