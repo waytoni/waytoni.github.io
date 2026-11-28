@@ -69,7 +69,8 @@ img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 01.
 img::/documents/NotesForDesana/පටිච්චසමුප්පාදය 02.jpg
 img::/documents/NotesForDesana/0060 අකුශල සංග්‍ර‍හය සාරාංශය.jpeg
 ## 16
-pdf::docs/M 16 Kalutara Bodhiya 2026 11 22 මූලික දේශනා.pdf
+PDF: pdf::docs/M 16 Kalutara Bodhiya 2026 11 22 මූලික දේශනා.pdf
+HTML: URL::docs/M 16 Kalutara Bodhiya 2026 11 22 මූලික දේශනා.html
 include::common::KalutaraMSummary
 ## 17
 include::common::KalutaraMSummary
